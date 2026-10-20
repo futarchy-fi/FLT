@@ -3590,6 +3590,7 @@ public import FLT.Mazur.ArithmeticOneGonFamily
 public import FLT.Mazur.ArithmeticOneGonFieldFibers
 public import FLT.Mazur.ArithmeticOneGonGeneralizedCurve
 public import FLT.Mazur.ArithmeticOneGonOriginalFiber
+public import FLT.Mazur.ArithmeticOneGonOriginalRoots
 public import FLT.Mazur.ArithmeticOneGonRoots
 public import FLT.Mazur.ArithmeticOneGonRotations
 public import FLT.Mazur.ArithmeticOneGonSubgroupAmple
