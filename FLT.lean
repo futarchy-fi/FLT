@@ -4243,11 +4243,17 @@ public import FLT.Mazur.CurveUniformFieldDegreeBound
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
 public import FLT.Mazur.CyclicAuxiliaryPrescribedNormalizedNeighborhood
+public import FLT.Mazur.CyclicBoundaryAmpleModuli
+public import FLT.Mazur.CyclicBoundaryFaithfulLift
+public import FLT.Mazur.CyclicBoundaryFaithfulOpen
 public import FLT.Mazur.CyclicBoundaryGroupSections
+public import FLT.Mazur.CyclicBoundaryOriginalAmpleModuli
 public import FLT.Mazur.CyclicBoundaryOriginalMarkings
 public import FLT.Mazur.CyclicBoundaryParameterAction
 public import FLT.Mazur.CyclicBoundaryParameterSections
 public import FLT.Mazur.CyclicBoundarySectionMarking
+public import FLT.Mazur.CyclicBoundaryTestSubgroup
+public import FLT.Mazur.CyclicBoundaryUniversalSubgroup
 public import FLT.Mazur.CyclicCharacteristicAffineArrowGeometry
 public import FLT.Mazur.CyclicCharacteristicAffineCartierClassification
 public import FLT.Mazur.CyclicCharacteristicAffineCoefficientCoherence
@@ -6013,6 +6019,8 @@ public import FLT.Mazur.FiniteSectionProjectivePresentation
 public import FLT.Mazur.FiniteSeparablePointFactor
 public import FLT.Mazur.FiniteSeparatedLineSheafDescent
 public import FLT.Mazur.FiniteSubframeSelections
+public import FLT.Mazur.FiniteSubgroupAmpleComponents
+public import FLT.Mazur.FiniteSubgroupAmpleOpen
 public import FLT.Mazur.FiniteSubgroupClassPresheaf
 public import FLT.Mazur.FiniteSubgroupComparisonBaseChangeCriterion
 public import FLT.Mazur.FiniteSubgroupComparisonLocus
@@ -8989,6 +8997,7 @@ public import FLT.Mazur.PolygonArithmeticZeroTower
 public import FLT.Mazur.PolygonAtlas
 public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonAtlasSmoothLocus
+public import FLT.Mazur.PolygonBoundaryAmpleParameter
 public import FLT.Mazur.PolygonBoundaryClosedLayer
 public import FLT.Mazur.PolygonBoundaryClosedLifting
 public import FLT.Mazur.PolygonBoundaryCoefficientNaturality
@@ -11030,6 +11039,7 @@ public import FLT.Mazur.ProperAmpleFiberEnvelope
 public import FLT.Mazur.ProperAmpleFiberModel
 public import FLT.Mazur.ProperAmpleFiberNeighborhood
 public import FLT.Mazur.ProperAmpleFiberNoetherian
+public import FLT.Mazur.ProperAmpleFiberOpen
 public import FLT.Mazur.ProperAmpleRetainedChartCover
 public import FLT.Mazur.ProperAmpleRetainedProjIso
 public import FLT.Mazur.ProperAmpleSectionAffine
