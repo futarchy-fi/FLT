@@ -11743,6 +11743,7 @@ public import FLT.Mazur.RingPairInvariantLocalization
 public import FLT.Mazur.RingedSpaceIdealLocus
 public import FLT.Mazur.RootsOfUnityAlgebra
 public import FLT.Mazur.RootsOfUnityAlgebraPoints
+public import FLT.Mazur.RootsOfUnityPolynomialPresentation
 public import FLT.Mazur.RootsOfUnityScheme
 public import FLT.Mazur.ScalarAlgebraicClosureTests
 public import FLT.Mazur.ScalarClosedGeometricLifts
