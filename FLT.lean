@@ -4004,6 +4004,8 @@ public import FLT.Mazur.CechSortingMaps
 public import FLT.Mazur.CechSortingRecursiveHomotopy
 public import FLT.Mazur.CechSortingTupleChains
 public import FLT.Mazur.CharacterAlgebraScalarExtension
+public import FLT.Mazur.CharacterCoefficientCartesian
+public import FLT.Mazur.CharacterFiniteCoefficientModel
 public import FLT.Mazur.CharacterGroupBaseChange
 public import FLT.Mazur.CharacterScalarBialgebra
 public import FLT.Mazur.CharacterSchemeBaseChange
@@ -8525,6 +8527,8 @@ public import FLT.Mazur.OddWeierstrassThreeTorsionEtale
 public import FLT.Mazur.OddWeierstrassThreeTorsionFinite
 public import FLT.Mazur.OddWeierstrassThreeTorsionUnramified
 public import FLT.Mazur.OneGonActionRotations
+public import FLT.Mazur.OneGonAdicAlgebraicEmbedding
+public import FLT.Mazur.OneGonAdicAlgebraicReduction
 public import FLT.Mazur.OneGonAdicBoundaryLevel
 public import FLT.Mazur.OneGonAdicCanonicalCyclicity
 public import FLT.Mazur.OneGonAdicCanonicalOrbit
@@ -8544,6 +8548,7 @@ public import FLT.Mazur.OneGonAdicCharacterStructure
 public import FLT.Mazur.OneGonAdicCharacterTower
 public import FLT.Mazur.OneGonAdicChartProjection
 public import FLT.Mazur.OneGonAdicChartRestriction
+public import FLT.Mazur.OneGonAdicFiniteCoefficientBase
 public import FLT.Mazur.OneGonAdicFiniteSubgroup
 public import FLT.Mazur.OneGonAdicInitialParameter
 public import FLT.Mazur.OneGonAdicInitialRoots
@@ -8595,6 +8600,12 @@ public import FLT.Mazur.OneGonFaithfulCompleteDivisor
 public import FLT.Mazur.OneGonFaithfulCompleteSubgroup
 public import FLT.Mazur.OneGonFaithfulCyclicAmple
 public import FLT.Mazur.OneGonFaithfulCyclicLine
+public import FLT.Mazur.OneGonFiniteCoefficientClosed
+public import FLT.Mazur.OneGonFiniteCoefficientCoordinates
+public import FLT.Mazur.OneGonFiniteCoefficientCurve
+public import FLT.Mazur.OneGonFiniteCoefficientEmbedding
+public import FLT.Mazur.OneGonFiniteCoefficientPolynomial
+public import FLT.Mazur.OneGonFiniteCoefficientRecovery
 public import FLT.Mazur.OneGonFormalCoordinates
 public import FLT.Mazur.OneGonGlobalPushout
 public import FLT.Mazur.OneGonGluing
