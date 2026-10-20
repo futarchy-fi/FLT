@@ -5830,6 +5830,7 @@ public import FLT.Mazur.FiniteFiberOriginalOpenSpread
 public import FLT.Mazur.FiniteFiberSurjectiveDescent
 public import FLT.Mazur.FiniteFieldRankLength
 public import FLT.Mazur.FiniteFlatAffineLocalFree
+public import FLT.Mazur.FiniteFlatClosedComparison
 public import FLT.Mazur.FiniteFlatCoefficientIdeal
 public import FLT.Mazur.FiniteFlatCoefficientIso
 public import FLT.Mazur.FiniteFlatDegreeOpen
