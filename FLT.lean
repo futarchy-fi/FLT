@@ -11945,6 +11945,7 @@ public import FLT.Mazur.RootsOfUnityArithmeticPullback
 public import FLT.Mazur.RootsOfUnityCartier
 public import FLT.Mazur.RootsOfUnityGroupBaseChange
 public import FLT.Mazur.RootsOfUnityInclusionBaseChange
+public import FLT.Mazur.RootsOfUnityIntrinsicOrbit
 public import FLT.Mazur.RootsOfUnityLaurentKernel
 public import FLT.Mazur.RootsOfUnityNonEtale
 public import FLT.Mazur.RootsOfUnityPolynomialPresentation
