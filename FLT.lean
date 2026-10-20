@@ -12579,6 +12579,7 @@ public import FLT.Mazur.SchemeRelationPrincipalNumerator
 public import FLT.Mazur.SchemeRelationPrincipalSpectrum
 public import FLT.Mazur.SchemeRelationPrincipalTensorSections
 public import FLT.Mazur.SchemeRelationQcqsBoundaryNumerator
+public import FLT.Mazur.SchemeRelationQcqsIdealBoundaryNumerator
 public import FLT.Mazur.SchemeRelationReanchoring
 public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
