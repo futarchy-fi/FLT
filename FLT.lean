@@ -11761,6 +11761,7 @@ public import FLT.Mazur.RootsOfUnityCartier
 public import FLT.Mazur.RootsOfUnityLaurentKernel
 public import FLT.Mazur.RootsOfUnityNonEtale
 public import FLT.Mazur.RootsOfUnityPolynomialPresentation
+public import FLT.Mazur.RootsOfUnityPrimePowerOrbit
 public import FLT.Mazur.RootsOfUnityScheme
 public import FLT.Mazur.ScalarAlgebraicClosureTests
 public import FLT.Mazur.ScalarClosedGeometricLifts
