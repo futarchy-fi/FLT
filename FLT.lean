@@ -15200,6 +15200,7 @@ public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCenter
 public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCoordinates
 public import FLT.Mazur.WeierstrassDividedSuccessorRetainedGluing
 public import FLT.Mazur.WeierstrassDividedSuccessorUnitAction
+public import FLT.Mazur.WeierstrassDividedTangentBranchFormula
 public import FLT.Mazur.WeierstrassDividedTangentCech
 public import FLT.Mazur.WeierstrassDividedTangentCechIso
 public import FLT.Mazur.WeierstrassDividedTangentConjugation
