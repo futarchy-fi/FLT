@@ -3288,6 +3288,7 @@ public import FLT.Mazur.AffineLocallyFreeRelationCharpoly
 public import FLT.Mazur.AffineLocallyFreeRelationNorm
 public import FLT.Mazur.AffineLocallyFreeRelationTrace
 public import FLT.Mazur.AffineLocallyFreeRelationTraceUnit
+public import FLT.Mazur.AffineLocallyFreeSimultaneousTrace
 public import FLT.Mazur.AffineLocallyFreeTraceSurjectivity
 public import FLT.Mazur.AffineMinimalPrimeFiniteOpen
 public import FLT.Mazur.AffineModuleCoalgebraDescent
