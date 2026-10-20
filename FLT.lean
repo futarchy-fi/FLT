@@ -4532,6 +4532,7 @@ public import FLT.Mazur.CyclicHomNormalizedFppfCoverage
 public import FLT.Mazur.CyclicHomNormalizedFppfCoverageUnrestricted
 public import FLT.Mazur.CyclicHomNormalizedGeometricOrbit
 public import FLT.Mazur.CyclicHomNormalizedImageSieve
+public import FLT.Mazur.CyclicHomNormalizedLocalOrbit
 public import FLT.Mazur.CyclicHomNormalizedLocus
 public import FLT.Mazur.CyclicHomNormalizedModuli
 public import FLT.Mazur.CyclicHomNormalizedRelabelAction
