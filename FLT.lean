@@ -14651,6 +14651,7 @@ public import FLT.Mazur.WeierstrassDividedOriginalNodeBase
 public import FLT.Mazur.WeierstrassDividedOriginalScaleOpen
 public import FLT.Mazur.WeierstrassDividedOriginalXOpen
 public import FLT.Mazur.WeierstrassDividedPairSecant
+public import FLT.Mazur.WeierstrassDividedPairSecantEvaluation
 public import FLT.Mazur.WeierstrassDividedPairSecantGeometry
 public import FLT.Mazur.WeierstrassDividedPolygonAdjacencyClassification
 public import FLT.Mazur.WeierstrassDividedPolygonClosingCriterion
