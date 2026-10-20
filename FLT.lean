@@ -4242,6 +4242,7 @@ public import FLT.Mazur.CyclicCharacteristicAffineEquationPullback
 public import FLT.Mazur.CyclicCharacteristicAffineFunctionRelation
 public import FLT.Mazur.CyclicCharacteristicAffineGeometricResidual
 public import FLT.Mazur.CyclicCharacteristicAffineInvariantReconstruction
+public import FLT.Mazur.CyclicCharacteristicAffineLocalResidual
 public import FLT.Mazur.CyclicCharacteristicAffineOppositeCover
 public import FLT.Mazur.CyclicCharacteristicAffineOppositeDescent
 public import FLT.Mazur.CyclicCharacteristicAffineOppositeTests
@@ -4356,6 +4357,9 @@ public import FLT.Mazur.CyclicCharacteristicInvariantPrincipalSpectrum
 public import FLT.Mazur.CyclicCharacteristicInvariantSectionRings
 public import FLT.Mazur.CyclicCharacteristicInvariantSections
 public import FLT.Mazur.CyclicCharacteristicInvariantSheaf
+public import FLT.Mazur.CyclicCharacteristicInvertibleResidual
+public import FLT.Mazur.CyclicCharacteristicLocalArrowOrbit
+public import FLT.Mazur.CyclicCharacteristicLocalOrbit
 public import FLT.Mazur.CyclicCharacteristicLocallyNormalizedModuli
 public import FLT.Mazur.CyclicCharacteristicLocallyRingedDescent
 public import FLT.Mazur.CyclicCharacteristicLocusFiniteType
@@ -4383,6 +4387,7 @@ public import FLT.Mazur.CyclicCharacteristicOrbitComparisons
 public import FLT.Mazur.CyclicCharacteristicOrbitFiniteQuotient
 public import FLT.Mazur.CyclicCharacteristicOrbitIntegerOpens
 public import FLT.Mazur.CyclicCharacteristicOrbitOpens
+public import FLT.Mazur.CyclicCharacteristicOrbitResidualHomeomorphism
 public import FLT.Mazur.CyclicCharacteristicOrbitTopology
 public import FLT.Mazur.CyclicCharacteristicOriginalAffineComparison
 public import FLT.Mazur.CyclicCharacteristicParameterFiniteType
@@ -4450,14 +4455,17 @@ public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedSections
 public import FLT.Mazur.CyclicCharacteristicResidualAffineComparison
 public import FLT.Mazur.CyclicCharacteristicResidualChartQuotient
 public import FLT.Mazur.CyclicCharacteristicResidualCongruenceSpectrum
+public import FLT.Mazur.CyclicCharacteristicResidualDegreeTorsion
 public import FLT.Mazur.CyclicCharacteristicResidualHomeomorphism
 public import FLT.Mazur.CyclicCharacteristicResidualIntegerCongruence
+public import FLT.Mazur.CyclicCharacteristicResidualPrincipalBasis
 public import FLT.Mazur.CyclicCharacteristicResidualPrincipalOpens
 public import FLT.Mazur.CyclicCharacteristicResidualProjection
 public import FLT.Mazur.CyclicCharacteristicResidualRelation
 public import FLT.Mazur.CyclicCharacteristicResidualSectionComparison
 public import FLT.Mazur.CyclicCharacteristicResidualSectionEquivalence
 public import FLT.Mazur.CyclicCharacteristicResidualSectionReconstruction
+public import FLT.Mazur.CyclicCharacteristicResidualSpectrumHomeomorphism
 public import FLT.Mazur.CyclicCharacteristicResidualTorsionCriterion
 public import FLT.Mazur.CyclicCharacteristicResidualTransitionDescent
 public import FLT.Mazur.CyclicCharacteristicResidualTransitionTests
@@ -7669,6 +7677,8 @@ public import FLT.Mazur.LocallyRingedOpenBasic
 public import FLT.Mazur.LocallyRingedOpenImage
 public import FLT.Mazur.LocallyRingedOpenInclusion
 public import FLT.Mazur.LocallyRingedOpenPullback
+public import FLT.Mazur.LocallyRingedPrincipalAffineness
+public import FLT.Mazur.LocallyRingedPrincipalComparison
 public import FLT.Mazur.LocallyRingedSchemeChartUnion
 public import FLT.Mazur.LocallyRingedSectionPointIdeal
 public import FLT.Mazur.LocallySmoothFiniteFlatCartier
@@ -12066,6 +12076,7 @@ public import FLT.Mazur.SchemeLineBundleCategory
 public import FLT.Mazur.SchemeLineCanonicalFunctor
 public import FLT.Mazur.SchemeLineDescentCategory
 public import FLT.Mazur.SchemeLineDescentRefinement
+public import FLT.Mazur.SchemeLocalSectionEquality
 public import FLT.Mazur.SchemeMinimalPrimeFinitePullback
 public import FLT.Mazur.SchemeMinimalPrimeFiniteTargetOpen
 public import FLT.Mazur.SchemeModulePullbackOpenUnits
@@ -12074,6 +12085,7 @@ public import FLT.Mazur.SchemeModulePullbackUnits
 public import FLT.Mazur.SchemeMonoIdealPullback
 public import FLT.Mazur.SchemeMonoidUnitEvaluation
 public import FLT.Mazur.SchemeNaturalUnitLocus
+public import FLT.Mazur.SchemeNaturalUnitSectionTorsion
 public import FLT.Mazur.SchemeNilpotentSectionDetection
 public import FLT.Mazur.SchemeNoetherianDenseFiniteOpen
 public import FLT.Mazur.SchemeNoetherianUniformKernelPower
@@ -14067,6 +14079,7 @@ public import FLT.Mazur.WeierstrassDividedEqualityTerminalParametersHomExt
 public import FLT.Mazur.WeierstrassDividedEqualityTerminalZeroParameters
 public import FLT.Mazur.WeierstrassDividedEvenCompleteClosedComparison
 public import FLT.Mazur.WeierstrassDividedExactCoefficientDepth
+public import FLT.Mazur.WeierstrassDividedExtendedPartialAddition
 public import FLT.Mazur.WeierstrassDividedExterior
 public import FLT.Mazur.WeierstrassDividedExteriorBranchIntersections
 public import FLT.Mazur.WeierstrassDividedExteriorCubicContraction
@@ -15011,11 +15024,18 @@ public import FLT.Mazur.WeierstrassDividedRevisedTerminalReflection
 public import FLT.Mazur.WeierstrassDividedRevisedTwistedIso
 public import FLT.Mazur.WeierstrassDividedSecantComparison
 public import FLT.Mazur.WeierstrassDividedSecantFormula
+public import FLT.Mazur.WeierstrassDividedSecantLeftOverlap
+public import FLT.Mazur.WeierstrassDividedSecantOriginalAction
+public import FLT.Mazur.WeierstrassDividedSecantOverlapProjections
+public import FLT.Mazur.WeierstrassDividedSecantPartialOverlap
 public import FLT.Mazur.WeierstrassDividedSecantPointGeometry
 public import FLT.Mazur.WeierstrassDividedSecantRefinementComparison
 public import FLT.Mazur.WeierstrassDividedSecantResidue
+public import FLT.Mazur.WeierstrassDividedSecantRightOverlap
+public import FLT.Mazur.WeierstrassDividedSecantSchemeAction
 public import FLT.Mazur.WeierstrassDividedSecantSmoothPoint
 public import FLT.Mazur.WeierstrassDividedSecantSource
+public import FLT.Mazur.WeierstrassDividedSecantSwap
 public import FLT.Mazur.WeierstrassDividedSecondAtlasNodeRestriction
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlas
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlasClosing
@@ -15101,6 +15121,8 @@ public import FLT.Mazur.WeierstrassDividedSuccessorUnitAction
 public import FLT.Mazur.WeierstrassDividedTangentCech
 public import FLT.Mazur.WeierstrassDividedTangentCechIso
 public import FLT.Mazur.WeierstrassDividedTangentConjugation
+public import FLT.Mazur.WeierstrassDividedTangentFormula
+public import FLT.Mazur.WeierstrassDividedTangentSource
 public import FLT.Mazur.WeierstrassDividedTangentTransport
 public import FLT.Mazur.WeierstrassDividedTangentTransportAction
 public import FLT.Mazur.WeierstrassDividedTangentTriple
