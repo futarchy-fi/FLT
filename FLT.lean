@@ -14442,6 +14442,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteResidueOverlap
 public import FLT.Mazur.WeierstrassDividedFiniteSecantInput
 public import FLT.Mazur.WeierstrassDividedFiniteSmoothInput
 public import FLT.Mazur.WeierstrassDividedFiniteSmoothOpen
+public import FLT.Mazur.WeierstrassDividedFiniteSmoothSecant
 public import FLT.Mazur.WeierstrassDividedFiniteStageRetention
 public import FLT.Mazur.WeierstrassDividedFiniteTangentBranchLift
 public import FLT.Mazur.WeierstrassDividedFiniteTangentBranchSmooth
@@ -14760,6 +14761,8 @@ public import FLT.Mazur.WeierstrassDividedMixedKernelPoints
 public import FLT.Mazur.WeierstrassDividedNegativeBranchSource
 public import FLT.Mazur.WeierstrassDividedNegativeTangentOutput
 public import FLT.Mazur.WeierstrassDividedNegativeTangentScheme
+public import FLT.Mazur.WeierstrassDividedNegativeTangentSecantOutput
+public import FLT.Mazur.WeierstrassDividedNegativeTangentSecantScheme
 public import FLT.Mazur.WeierstrassDividedNegativeTangentSlope
 public import FLT.Mazur.WeierstrassDividedNilpotentEarlierTerminal
 public import FLT.Mazur.WeierstrassDividedNilpotentInfinity
@@ -15246,6 +15249,7 @@ public import FLT.Mazur.WeierstrassDividedRevisedTerminalBase
 public import FLT.Mazur.WeierstrassDividedRevisedTerminalReflection
 public import FLT.Mazur.WeierstrassDividedRevisedTwistedIso
 public import FLT.Mazur.WeierstrassDividedRightSmoothReciprocalPresentation
+public import FLT.Mazur.WeierstrassDividedSecantBranchCases
 public import FLT.Mazur.WeierstrassDividedSecantComparison
 public import FLT.Mazur.WeierstrassDividedSecantFormula
 public import FLT.Mazur.WeierstrassDividedSecantLeftOverlap
@@ -15253,6 +15257,7 @@ public import FLT.Mazur.WeierstrassDividedSecantOriginalAction
 public import FLT.Mazur.WeierstrassDividedSecantOverlapProjections
 public import FLT.Mazur.WeierstrassDividedSecantPartialOverlap
 public import FLT.Mazur.WeierstrassDividedSecantPointGeometry
+public import FLT.Mazur.WeierstrassDividedSecantPrimeSmooth
 public import FLT.Mazur.WeierstrassDividedSecantRefinementComparison
 public import FLT.Mazur.WeierstrassDividedSecantResidue
 public import FLT.Mazur.WeierstrassDividedSecantRightOverlap
@@ -15536,10 +15541,13 @@ public import FLT.Mazur.WeierstrassDividedThreeSeedOrientation
 public import FLT.Mazur.WeierstrassDividedThreeSeedState
 public import FLT.Mazur.WeierstrassDividedTripleBranchCommonOutput
 public import FLT.Mazur.WeierstrassDividedTripleBranchOutput
+public import FLT.Mazur.WeierstrassDividedTripleBranchSecantContraction
 public import FLT.Mazur.WeierstrassDividedTripleDepthCoefficients
 public import FLT.Mazur.WeierstrassDividedTripleNegativeBranchContraction
 public import FLT.Mazur.WeierstrassDividedTripleNegativeBranchOutput
 public import FLT.Mazur.WeierstrassDividedTripleNormalizedBranchLift
+public import FLT.Mazur.WeierstrassDividedTripleSecantCases
+public import FLT.Mazur.WeierstrassDividedTripleSecantCoverage
 public import FLT.Mazur.WeierstrassDividedTripleTangentBranchCoverage
 public import FLT.Mazur.WeierstrassDividedTwistedAtlas
 public import FLT.Mazur.WeierstrassDividedTwistedAtlasGluing
