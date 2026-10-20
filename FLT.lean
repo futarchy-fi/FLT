@@ -11429,6 +11429,7 @@ public import FLT.Mazur.RankStageCoreBoundaryCoefficients
 public import FLT.Mazur.RankStageCoreBoundaryTransitions
 public import FLT.Mazur.RankStageCoreCoefficientTransitions
 public import FLT.Mazur.RankStageCoreOriginalEnvelope
+public import FLT.Mazur.RankStageFiniteAtlasCoverage
 public import FLT.Mazur.RankStageFiniteCoreCoverage
 public import FLT.Mazur.RankStageInitialBoundaryLifting
 public import FLT.Mazur.RankStageInvariantTransitions
