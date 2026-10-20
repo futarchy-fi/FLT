@@ -14216,6 +14216,9 @@ public import FLT.Mazur.WeierstrassDividedFiniteChartStructure
 public import FLT.Mazur.WeierstrassDividedFiniteContraction
 public import FLT.Mazur.WeierstrassDividedFiniteExteriorPullback
 public import FLT.Mazur.WeierstrassDividedFiniteFlat
+public import FLT.Mazur.WeierstrassDividedFiniteGlobalNegation
+public import FLT.Mazur.WeierstrassDividedFiniteGlobalNegationInitial
+public import FLT.Mazur.WeierstrassDividedFiniteGlobalNegationStep
 public import FLT.Mazur.WeierstrassDividedFiniteIteration
 public import FLT.Mazur.WeierstrassDividedFiniteLineBoundary
 public import FLT.Mazur.WeierstrassDividedFiniteLineBoundaryGeometry
@@ -14225,6 +14228,8 @@ public import FLT.Mazur.WeierstrassDividedFiniteLineReciprocals
 public import FLT.Mazur.WeierstrassDividedFiniteLineScaling
 public import FLT.Mazur.WeierstrassDividedFiniteNegation
 public import FLT.Mazur.WeierstrassDividedFiniteNegationContraction
+public import FLT.Mazur.WeierstrassDividedFiniteNegationCover
+public import FLT.Mazur.WeierstrassDividedFiniteNegationOverlap
 public import FLT.Mazur.WeierstrassDividedFiniteNodeComponents
 public import FLT.Mazur.WeierstrassDividedFiniteNodeContractions
 public import FLT.Mazur.WeierstrassDividedFiniteOriginalScaleOpen
@@ -14373,6 +14378,7 @@ public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioMap
 public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioNaturality
 public import FLT.Mazur.WeierstrassDividedFullResidueAtlas
 public import FLT.Mazur.WeierstrassDividedGenericCurve
+public import FLT.Mazur.WeierstrassDividedGenericNegation
 public import FLT.Mazur.WeierstrassDividedGlobalActionAssociativity
 public import FLT.Mazur.WeierstrassDividedGlobalActionConstruction
 public import FLT.Mazur.WeierstrassDividedGlobalActionIdentity
@@ -14517,8 +14523,10 @@ public import FLT.Mazur.WeierstrassDividedInteriorHorizontalCyclicInput
 public import FLT.Mazur.WeierstrassDividedInteriorHorizontalCyclicPair
 public import FLT.Mazur.WeierstrassDividedInteriorTensorOutputGeometry
 public import FLT.Mazur.WeierstrassDividedKernelClosure
+public import FLT.Mazur.WeierstrassDividedKernelClosureNegation
 public import FLT.Mazur.WeierstrassDividedKernelContraction
 public import FLT.Mazur.WeierstrassDividedKernelFinite
+public import FLT.Mazur.WeierstrassDividedKernelNegationComparison
 public import FLT.Mazur.WeierstrassDividedKernelSmoothEmbedding
 public import FLT.Mazur.WeierstrassDividedKernelSmoothRecovery
 public import FLT.Mazur.WeierstrassDividedKernelSmoothStep
@@ -14899,6 +14907,11 @@ public import FLT.Mazur.WeierstrassDividedResidueNormalizationCompatibility
 public import FLT.Mazur.WeierstrassDividedResidueOrderedNormalization
 public import FLT.Mazur.WeierstrassDividedResidueSplitCubic
 public import FLT.Mazur.WeierstrassDividedResidueTangentNormalization
+public import FLT.Mazur.WeierstrassDividedResolvedNegation
+public import FLT.Mazur.WeierstrassDividedResolvedOriginalOpen
+public import FLT.Mazur.WeierstrassDividedResolvedPartialAddition
+public import FLT.Mazur.WeierstrassDividedResolvedProductOpens
+public import FLT.Mazur.WeierstrassDividedResolvedProductOverlap
 public import FLT.Mazur.WeierstrassDividedResolvedSmoothAction
 public import FLT.Mazur.WeierstrassDividedResolvedSmoothActionLaws
 public import FLT.Mazur.WeierstrassDividedResolvedSmoothActionSquare
@@ -16498,6 +16511,7 @@ public import FLT.Mazur.WeierstrassResidueOneGonIso
 public import FLT.Mazur.WeierstrassResidueTangentCoefficientTower
 public import FLT.Mazur.WeierstrassResidueTangentComponentData
 public import FLT.Mazur.WeierstrassResidueTangentEquationData
+public import FLT.Mazur.WeierstrassResolvedKernelNegation
 public import FLT.Mazur.WeierstrassResolvedKernelSections
 public import FLT.Mazur.WeierstrassResolvedKernelSmoothCoverage
 public import FLT.Mazur.WeierstrassResolvedKernelSmoothEmbedding
