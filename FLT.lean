@@ -3426,6 +3426,7 @@ public import FLT.Mazur.AffineSeparatedFamilyExt
 public import FLT.Mazur.AffineSeparatedPullbackGenerators
 public import FLT.Mazur.AffineSmoothEtaleCoordinates
 public import FLT.Mazur.AffineSmoothFiniteFlatCartier
+public import FLT.Mazur.AffineSmoothNilpotentLift
 public import FLT.Mazur.AffineSourcePullbackSections
 public import FLT.Mazur.AffineSourceSectionComparison
 public import FLT.Mazur.AffineSpectrumKernelIdeal
@@ -4711,7 +4712,9 @@ public import FLT.Mazur.DiagonalizableCobarAlgebra
 public import FLT.Mazur.DiagonalizableCobarContraction
 public import FLT.Mazur.DiagonalizableCobarCoordinates
 public import FLT.Mazur.DiagonalizableCoefficientReduction
+public import FLT.Mazur.DiagonalizableCofaceIdentities
 public import FLT.Mazur.DiagonalizableInfinitesimalIdeal
+public import FLT.Mazur.DiagonalizableInfinitesimalNaturality
 public import FLT.Mazur.DiagonalizableSquareZeroCocycle
 public import FLT.Mazur.DiagonalizableSquareZeroCoefficients
 public import FLT.Mazur.DifferenceNodeAlgebra
@@ -12811,6 +12814,7 @@ public import FLT.Mazur.SmoothHilbertSourceRepresentable
 public import FLT.Mazur.SmoothHilbertTestCover
 public import FLT.Mazur.SmoothInvariantOpenAllEtaleLifts
 public import FLT.Mazur.SmoothLocalNilpotentLift
+public import FLT.Mazur.SmoothNilpotentLocalLift
 public import FLT.Mazur.SmoothNodalFamilyDimension
 public import FLT.Mazur.SmoothNonspecialDivisorCover
 public import FLT.Mazur.SmoothNonspecialDivisorLift
@@ -13983,7 +13987,13 @@ public import FLT.Mazur.WeierstrassCubicPushforwardH1
 public import FLT.Mazur.WeierstrassCubicQuotient
 public import FLT.Mazur.WeierstrassCubicQuotientChart
 public import FLT.Mazur.WeierstrassCubicSection
+public import FLT.Mazur.WeierstrassDiagonalizableCorrection
+public import FLT.Mazur.WeierstrassDiagonalizableDefect
+public import FLT.Mazur.WeierstrassDiagonalizableErrorCoordinates
 public import FLT.Mazur.WeierstrassDiagonalizableInfinitesimalKernel
+public import FLT.Mazur.WeierstrassDiagonalizableKernelNaturality
+public import FLT.Mazur.WeierstrassDiagonalizableLiftUniqueness
+public import FLT.Mazur.WeierstrassDiagonalizableLocalLift
 public import FLT.Mazur.WeierstrassDilatationAlgebra
 public import FLT.Mazur.WeierstrassDilatationArithmeticCoefficientRestriction
 public import FLT.Mazur.WeierstrassDilatationArithmeticNormalizationRestriction
@@ -17201,6 +17211,7 @@ public import FLT.Mazur.WeierstrassSmoothHorizontalTensorGlobalAction
 public import FLT.Mazur.WeierstrassSmoothHorizontalTensorInput
 public import FLT.Mazur.WeierstrassSmoothHorizontalUnitEvaluation
 public import FLT.Mazur.WeierstrassSmoothInfinitesimalAddition
+public import FLT.Mazur.WeierstrassSmoothInfinitesimalNaturality
 public import FLT.Mazur.WeierstrassSmoothInfinitesimalPoints
 public import FLT.Mazur.WeierstrassSmoothInfinityCommutativity
 public import FLT.Mazur.WeierstrassSmoothInfinityDomain
