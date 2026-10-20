@@ -3836,6 +3836,7 @@ public import FLT.Mazur.BoundaryCorrectionMixedNumerators
 public import FLT.Mazur.BoundaryCorrectionOperatorIndependence
 public import FLT.Mazur.BoundaryCorrectionQuotient
 public import FLT.Mazur.BoundaryCorrectionReductionCertificate
+public import FLT.Mazur.BoundaryCorrectionScalarVanishing
 public import FLT.Mazur.BoundaryCorrectionTensorCoordinates
 public import FLT.Mazur.BoundaryExchangeLocalization
 public import FLT.Mazur.BoundaryExchangeObstruction
