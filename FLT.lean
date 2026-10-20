@@ -14952,6 +14952,7 @@ public import FLT.Mazur.WeierstrassDividedRevisedTerminalReflection
 public import FLT.Mazur.WeierstrassDividedRevisedTwistedIso
 public import FLT.Mazur.WeierstrassDividedSecantComparison
 public import FLT.Mazur.WeierstrassDividedSecantFormula
+public import FLT.Mazur.WeierstrassDividedSecantResidue
 public import FLT.Mazur.WeierstrassDividedSecantSource
 public import FLT.Mazur.WeierstrassDividedSecondAtlasNodeRestriction
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlas
