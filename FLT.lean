@@ -11592,6 +11592,7 @@ public import FLT.Mazur.RankStageOriginalMixedCoreTests
 public import FLT.Mazur.RankStageOriginalMixedIdeals
 public import FLT.Mazur.RankStageOriginalMixedTests
 public import FLT.Mazur.RankStageOriginalPrincipalNumerators
+public import FLT.Mazur.RankStageOriginalScalarAnnihilation
 public import FLT.Mazur.RankStageOriginalScalarAtlasApproximation
 public import FLT.Mazur.RankStageOriginalScalarCauchy
 public import FLT.Mazur.RankStageOriginalScalarSupport
