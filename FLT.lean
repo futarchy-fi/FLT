@@ -14480,6 +14480,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteAffineProper
 public import FLT.Mazur.WeierstrassDividedFiniteAtlas
 public import FLT.Mazur.WeierstrassDividedFiniteChartStructure
 public import FLT.Mazur.WeierstrassDividedFiniteContraction
+public import FLT.Mazur.WeierstrassDividedFiniteDeepNormalizedBranchInput
 public import FLT.Mazur.WeierstrassDividedFiniteDeepNormalizedBranchLift
 public import FLT.Mazur.WeierstrassDividedFiniteDeeperBranchLift
 public import FLT.Mazur.WeierstrassDividedFiniteDeeperBranchNodal
