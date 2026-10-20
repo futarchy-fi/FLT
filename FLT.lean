@@ -14756,6 +14756,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchLift
 public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchNodal
 public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchPartial
 public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchTerminal
+public import FLT.Mazur.WeierstrassDividedFiniteFamilyComparison
 public import FLT.Mazur.WeierstrassDividedFiniteFlat
 public import FLT.Mazur.WeierstrassDividedFiniteFlatBranchLift
 public import FLT.Mazur.WeierstrassDividedFiniteFlatSourceExt
