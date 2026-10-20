@@ -14860,6 +14860,7 @@ public import FLT.Mazur.WeierstrassDividedResidueNormalizationCompatibility
 public import FLT.Mazur.WeierstrassDividedResidueOrderedNormalization
 public import FLT.Mazur.WeierstrassDividedResidueSplitCubic
 public import FLT.Mazur.WeierstrassDividedResidueTangentNormalization
+public import FLT.Mazur.WeierstrassDividedResolvedNegation
 public import FLT.Mazur.WeierstrassDividedResolvedSmoothAction
 public import FLT.Mazur.WeierstrassDividedResolvedSmoothActionLaws
 public import FLT.Mazur.WeierstrassDividedResolvedSmoothActionSquare
