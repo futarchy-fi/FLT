@@ -11588,6 +11588,7 @@ public import FLT.Mazur.RankStageStableKernelObstruction
 public import FLT.Mazur.RankStageStableTransitions
 public import FLT.Mazur.RankStageStagewiseKernelObstruction
 public import FLT.Mazur.RankStageStructureMaps
+public import FLT.Mazur.RankStageTopKernelObstruction
 public import FLT.Mazur.RankStageTransitionTopology
 public import FLT.Mazur.RankStageUniformKernelNumerators
 public import FLT.Mazur.RankStratumTopNilpotence
