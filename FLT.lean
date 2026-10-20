@@ -7015,6 +7015,7 @@ public import FLT.Mazur.HilbertSourceResidualRankLifts
 public import FLT.Mazur.HilbertSourceResidualRankObstructions
 public import FLT.Mazur.HilbertSourceResidualTestDescent
 public import FLT.Mazur.HilbertSourceScalarLocalDetection
+public import FLT.Mazur.HilbertSourceScalarLocalNoetherian
 public import FLT.Mazur.HilbertSourceScalarNilpotenceLifts
 public import FLT.Mazur.HilbertSourceScalarResidualStages
 public import FLT.Mazur.HilbertSourceTestChartGenerators
