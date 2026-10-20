@@ -14337,6 +14337,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteDeeperBranchPartial
 public import FLT.Mazur.WeierstrassDividedFiniteDeeperBranchTerminal
 public import FLT.Mazur.WeierstrassDividedFiniteExteriorPullback
 public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchLift
+public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchNodal
 public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchPartial
 public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchTerminal
 public import FLT.Mazur.WeierstrassDividedFiniteFlat
