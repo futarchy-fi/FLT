@@ -15121,6 +15121,7 @@ public import FLT.Mazur.WeierstrassDividedTangentCechIso
 public import FLT.Mazur.WeierstrassDividedTangentConjugation
 public import FLT.Mazur.WeierstrassDividedTangentFormula
 public import FLT.Mazur.WeierstrassDividedTangentOverlapProjections
+public import FLT.Mazur.WeierstrassDividedTangentRefinementComparison
 public import FLT.Mazur.WeierstrassDividedTangentRelations
 public import FLT.Mazur.WeierstrassDividedTangentSecantComparison
 public import FLT.Mazur.WeierstrassDividedTangentSecantOverlap
