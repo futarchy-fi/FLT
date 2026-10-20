@@ -27,7 +27,7 @@ set_option backward.isDefEq.respectTransparency false
 variable {S : Scheme} {E F : GeneralizedEllipticCurve S} {n : ℕ}
 
 /-- Transport along a full curve isomorphism retains the subgroup and its actual inclusion. -/
-def transportCompatibleIso (H : E.FiniteSubgroup n) (c : E ≅ F) :
+def toricTransportCompatibleIso (H : E.FiniteSubgroup n) (c : E ≅ F) :
     CompatibleIso H (H.transport c) where
   curve := c
   subgroup := Iso.refl H.carrier
@@ -55,13 +55,13 @@ def toricCompatibleIso (H J : E.FiniteSubgroup n)
 def toricCompatibleIsoOver (H : E.FiniteSubgroup n) (J : F.FiniteSubgroup n)
     (c : E ≅ F) (e : MultiplicativeGroupScheme.gm K ≅ F.group) [IsMonHom e.hom] :
     CompatibleIso H J :=
-  (H.transportCompatibleIso c).trans ((H.transport c).toricCompatibleIso J e)
+  (H.toricTransportCompatibleIso c).trans ((H.transport c).toricCompatibleIso J e)
 
 /-- The comparison's ambient map is exactly the supplied generalized-curve isomorphism. -/
 theorem toricCompatibleIsoOver_curve (H : E.FiniteSubgroup n) (J : F.FiniteSubgroup n)
     (c : E ≅ F) (e : MultiplicativeGroupScheme.gm K ≅ F.group) [IsMonHom e.hom] :
     (H.toricCompatibleIsoOver J c e).curve = c := by
-  simp only [toricCompatibleIsoOver, transportCompatibleIso, toricCompatibleIso,
+  simp only [toricCompatibleIsoOver, toricTransportCompatibleIso, toricCompatibleIso,
     CompatibleIso.trans, CompatibleIso.symm,
     ToricFiniteSubgroupRootsClassification.compatibleIso_curve, Iso.refl_symm, Iso.trans_refl]
 
