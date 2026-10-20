@@ -4457,6 +4457,7 @@ public import FLT.Mazur.CyclicCharacteristicResidualCongruenceSpectrum
 public import FLT.Mazur.CyclicCharacteristicResidualDegreeTorsion
 public import FLT.Mazur.CyclicCharacteristicResidualHomeomorphism
 public import FLT.Mazur.CyclicCharacteristicResidualIntegerCongruence
+public import FLT.Mazur.CyclicCharacteristicResidualPrincipalBasis
 public import FLT.Mazur.CyclicCharacteristicResidualPrincipalOpens
 public import FLT.Mazur.CyclicCharacteristicResidualProjection
 public import FLT.Mazur.CyclicCharacteristicResidualRelation
