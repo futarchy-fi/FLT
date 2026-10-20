@@ -2707,6 +2707,7 @@ public import FLT.Mazur.AdditiveComplexSumHomologyInclusion
 public import FLT.Mazur.AdditiveSheafModuleTransport
 public import FLT.Mazur.AdditiveSheafMultiplication
 public import FLT.Mazur.AdicAffineMorphismLift
+public import FLT.Mazur.AdicBoundaryCorrectionDescent
 public import FLT.Mazur.AdicCommonModelFiltration
 public import FLT.Mazur.AdicCompleteAffinePoints
 public import FLT.Mazur.AdicCompleteLocalPoints
@@ -2729,6 +2730,7 @@ public import FLT.Mazur.AdicCompletionScalars
 public import FLT.Mazur.AdicCompletionSeparatedExt
 public import FLT.Mazur.AdicCompletionSpectrumCover
 public import FLT.Mazur.AdicConormalTargetCompletion
+public import FLT.Mazur.AdicCorrectionClosure
 public import FLT.Mazur.AdicCotangentHomComparison
 public import FLT.Mazur.AdicCotangentHomDerivative
 public import FLT.Mazur.AdicCotangentHomMap
@@ -2776,6 +2778,9 @@ public import FLT.Mazur.AdicInfinitesimalOriginalHomotopy
 public import FLT.Mazur.AdicInfinitesimalPresentationLift
 public import FLT.Mazur.AdicInfinitesimalSpaceFunctor
 public import FLT.Mazur.AdicInfinitesimalSpaceMap
+public import FLT.Mazur.AdicLinearImageDescent
+public import FLT.Mazur.AdicLinearReductionLifts
+public import FLT.Mazur.AdicLinearReductionProperty
 public import FLT.Mazur.AdicLocalPointTopology
 public import FLT.Mazur.AdicLocalizedFirstCotangent
 public import FLT.Mazur.AdicLocalizedH1Comparison
@@ -6927,6 +6932,9 @@ public import FLT.Mazur.HilbertOpenInclusionExtension
 public import FLT.Mazur.HilbertOpenInclusionFamilies
 public import FLT.Mazur.HilbertOpenIntrinsicClassification
 public import FLT.Mazur.HilbertOpenOverlapCoherence
+public import FLT.Mazur.HilbertOrbitAdicBoundaryDescent
+public import FLT.Mazur.HilbertOrbitAdicReducedLifts
+public import FLT.Mazur.HilbertOrbitAdicReductionAbsorption
 public import FLT.Mazur.HilbertOrbitBoundaryAdicCertificate
 public import FLT.Mazur.HilbertOrbitBoundaryAmbientCorrections
 public import FLT.Mazur.HilbertOrbitBoundaryAtlas
@@ -11469,6 +11477,7 @@ public import FLT.Mazur.RelativeAbelFiberOriginalSquare
 public import FLT.Mazur.RelativeAcyclicClassDivisor
 public import FLT.Mazur.RelativeAcyclicClassDivisorNaturality
 public import FLT.Mazur.RelativeAcyclicPicardOpen
+public import FLT.Mazur.RelativeAdicAbsorption
 public import FLT.Mazur.RelativeAmpleAffineBaseChange
 public import FLT.Mazur.RelativeAmpleBaseChange
 public import FLT.Mazur.RelativeAmpleFpqcDescent
@@ -14499,6 +14508,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteOriginalXOpen
 public import FLT.Mazur.WeierstrassDividedFiniteOverlap
 public import FLT.Mazur.WeierstrassDividedFiniteProper
 public import FLT.Mazur.WeierstrassDividedFiniteReciprocalInput
+public import FLT.Mazur.WeierstrassDividedFiniteReindexedSmoothSecant
 public import FLT.Mazur.WeierstrassDividedFiniteResidueNodes
 public import FLT.Mazur.WeierstrassDividedFiniteResidueOverlap
 public import FLT.Mazur.WeierstrassDividedFiniteSecantInput
@@ -14836,12 +14846,22 @@ public import FLT.Mazur.WeierstrassDividedNodalBranchTerminalConstant
 public import FLT.Mazur.WeierstrassDividedNodalDepthAvailability
 public import FLT.Mazur.WeierstrassDividedNodalFirstBranchCommonOutput
 public import FLT.Mazur.WeierstrassDividedNodalFirstBranchOutput
+public import FLT.Mazur.WeierstrassDividedNodalIntermediateAdditionCoverage
+public import FLT.Mazur.WeierstrassDividedNodalIntermediateAdditionGluing
+public import FLT.Mazur.WeierstrassDividedNodalIntermediateAdditionOverlap
+public import FLT.Mazur.WeierstrassDividedNodalIntermediateAdditionSource
+public import FLT.Mazur.WeierstrassDividedNodalIntermediateAdditionSourceCoverage
 public import FLT.Mazur.WeierstrassDividedNodalIntermediateBranchCommonOutput
 public import FLT.Mazur.WeierstrassDividedNodalIntermediateBranchCoverage
 public import FLT.Mazur.WeierstrassDividedNodalIntermediateBranchOutput
 public import FLT.Mazur.WeierstrassDividedNodalIntermediateBranchSmooth
 public import FLT.Mazur.WeierstrassDividedNodalIntermediateNegativeBranchContraction
 public import FLT.Mazur.WeierstrassDividedNodalIntermediateNegativeBranchOutput
+public import FLT.Mazur.WeierstrassDividedNodalIntermediateSecantContraction
+public import FLT.Mazur.WeierstrassDividedNodalIntermediateSecantCoverage
+public import FLT.Mazur.WeierstrassDividedNodalIntermediateSecantGluing
+public import FLT.Mazur.WeierstrassDividedNodalIntermediateSecantNeighborhood
+public import FLT.Mazur.WeierstrassDividedNodalIntermediateSecantNeighborhoodCover
 public import FLT.Mazur.WeierstrassDividedNodalIntermediateTangentCoverage
 public import FLT.Mazur.WeierstrassDividedNodalIntermediateTangentGluing
 public import FLT.Mazur.WeierstrassDividedNodalIntermediateTangentNeighborhood
@@ -15232,6 +15252,9 @@ public import FLT.Mazur.WeierstrassDividedReciprocalTangentExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalTangentFormula
 public import FLT.Mazur.WeierstrassDividedReciprocalTangentOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalTangentScheme
+public import FLT.Mazur.WeierstrassDividedReindexedSecantFlatSourceExt
+public import FLT.Mazur.WeierstrassDividedReindexedSecantOpenGluing
+public import FLT.Mazur.WeierstrassDividedReindexedTangentSecantExt
 public import FLT.Mazur.WeierstrassDividedResidualIntegralLift
 public import FLT.Mazur.WeierstrassDividedResidualLiftAlgebra
 public import FLT.Mazur.WeierstrassDividedResidualLiftAtlas
