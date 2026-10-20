@@ -8499,6 +8499,7 @@ public import FLT.Mazur.OddWeierstrassThreeTorsionUnramified
 public import FLT.Mazur.OneGonActionRotations
 public import FLT.Mazur.OneGonAdicCharacterAffineEffectivity
 public import FLT.Mazur.OneGonAdicCharacterChartTower
+public import FLT.Mazur.OneGonAdicCharacterCoordinates
 public import FLT.Mazur.OneGonAdicCharacterEffectivityUnique
 public import FLT.Mazur.OneGonAdicCharacterGroupEffectivity
 public import FLT.Mazur.OneGonAdicCharacterIntrinsicReduction
