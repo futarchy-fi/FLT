@@ -4005,6 +4005,7 @@ public import FLT.Mazur.CechSortingRecursiveHomotopy
 public import FLT.Mazur.CechSortingTupleChains
 public import FLT.Mazur.CharacterAlgebraScalarExtension
 public import FLT.Mazur.CharacterCoefficientCartesian
+public import FLT.Mazur.CharacterCoefficientSeparatedExt
 public import FLT.Mazur.CharacterFiniteCoefficientModel
 public import FLT.Mazur.CharacterGroupBaseChange
 public import FLT.Mazur.CharacterScalarBialgebra
@@ -4117,10 +4118,12 @@ public import FLT.Mazur.CoefficientAcyclicLineDivisor
 public import FLT.Mazur.CoefficientCartesianHomDescent
 public import FLT.Mazur.CoefficientCartesianProperty
 public import FLT.Mazur.CoefficientConnectedNeighborhood
+public import FLT.Mazur.CoefficientFactorizationDescent
 public import FLT.Mazur.CoefficientImmersionClosedDescent
 public import FLT.Mazur.CoefficientIndependentLineDescent
 public import FLT.Mazur.CoefficientInverseEquations
 public import FLT.Mazur.CoefficientIsomorphismDescent
+public import FLT.Mazur.CoefficientModelActualRecovery
 public import FLT.Mazur.CoefficientModelFiniteness
 public import FLT.Mazur.CoefficientModelHomDescent
 public import FLT.Mazur.CoefficientModelLimit
@@ -8534,6 +8537,7 @@ public import FLT.Mazur.OddWeierstrassThreeTorsionUnramified
 public import FLT.Mazur.OneGonActionRotations
 public import FLT.Mazur.OneGonAdicAlgebraicEmbedding
 public import FLT.Mazur.OneGonAdicAlgebraicReduction
+public import FLT.Mazur.OneGonAdicAlgebraicSmoothModel
 public import FLT.Mazur.OneGonAdicBoundaryLevel
 public import FLT.Mazur.OneGonAdicCanonicalCyclicity
 public import FLT.Mazur.OneGonAdicCanonicalOrbit
@@ -8554,6 +8558,7 @@ public import FLT.Mazur.OneGonAdicCharacterTower
 public import FLT.Mazur.OneGonAdicChartProjection
 public import FLT.Mazur.OneGonAdicChartRestriction
 public import FLT.Mazur.OneGonAdicFiniteCoefficientBase
+public import FLT.Mazur.OneGonAdicFiniteSmoothStage
 public import FLT.Mazur.OneGonAdicFiniteSubgroup
 public import FLT.Mazur.OneGonAdicInitialParameter
 public import FLT.Mazur.OneGonAdicInitialRoots
@@ -8561,7 +8566,12 @@ public import FLT.Mazur.OneGonAdicModuliChart
 public import FLT.Mazur.OneGonAdicPrescribedBoundary
 public import FLT.Mazur.OneGonAdicPuncturedCoarse
 public import FLT.Mazur.OneGonAdicPuncturedModuli
+public import FLT.Mazur.OneGonAdicRecoveredSmoothFactor
 public import FLT.Mazur.OneGonAdicReductionCartesian
+public import FLT.Mazur.OneGonAdicSmoothFactorRecovery
+public import FLT.Mazur.OneGonAdicSmoothModelClosed
+public import FLT.Mazur.OneGonAdicSmoothModelRecovery
+public import FLT.Mazur.OneGonAdicSmoothModelReduction
 public import FLT.Mazur.OneGonAdicSmoothProjection
 public import FLT.Mazur.OneGonAdicSubgroupCartier
 public import FLT.Mazur.OneGonAdicSubgroupReductionIdeal
@@ -8650,6 +8660,7 @@ public import FLT.Mazur.OneGonRootsOfUnityPrimePowerCyclic
 public import FLT.Mazur.OneGonRootsOfUnitySubgroup
 public import FLT.Mazur.OneGonScalarExtension
 public import FLT.Mazur.OneGonSeparated
+public import FLT.Mazur.OneGonSmoothCoefficientProjection
 public import FLT.Mazur.OneGonSmoothEquationProjection
 public import FLT.Mazur.OneGonSmoothingAffinePresentation
 public import FLT.Mazur.OneGonSmoothingAuxiliaryOverlap
