@@ -4356,6 +4356,7 @@ public import FLT.Mazur.CyclicCharacteristicInvariantPrincipalSpectrum
 public import FLT.Mazur.CyclicCharacteristicInvariantSectionRings
 public import FLT.Mazur.CyclicCharacteristicInvariantSections
 public import FLT.Mazur.CyclicCharacteristicInvariantSheaf
+public import FLT.Mazur.CyclicCharacteristicInvertibleResidual
 public import FLT.Mazur.CyclicCharacteristicLocalArrowOrbit
 public import FLT.Mazur.CyclicCharacteristicLocalOrbit
 public import FLT.Mazur.CyclicCharacteristicLocallyNormalizedModuli
