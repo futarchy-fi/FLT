@@ -15244,6 +15244,7 @@ public import FLT.Mazur.WeierstrassDividedShearGluing
 public import FLT.Mazur.WeierstrassDividedShearInitialExterior
 public import FLT.Mazur.WeierstrassDividedShearNextBoundary
 public import FLT.Mazur.WeierstrassDividedShearPreviousBoundary
+public import FLT.Mazur.WeierstrassDividedShearTangentSlope
 public import FLT.Mazur.WeierstrassDividedSkippedAtlasRange
 public import FLT.Mazur.WeierstrassDividedSkippedChartSupport
 public import FLT.Mazur.WeierstrassDividedSkippedTensorIntersection
