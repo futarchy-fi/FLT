@@ -7755,6 +7755,7 @@ public import FLT.Mazur.LocalizedStalkSmoothGenerization
 public import FLT.Mazur.LocalizedTensorCancellation
 public import FLT.Mazur.LocalizedTensorExactness
 public import FLT.Mazur.LocalizedTracePower
+public import FLT.Mazur.LocallyClosedPrincipalNeighborhood
 public import FLT.Mazur.LocallyFiniteFreeOpenCover
 public import FLT.Mazur.LocallyFiniteTypeSeparablePointFactor
 public import FLT.Mazur.LocallyFramedSplitLineCoverIndependence
