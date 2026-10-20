@@ -6725,6 +6725,7 @@ public import FLT.Mazur.HilbertFamilyTruncatedRelations
 public import FLT.Mazur.HilbertFiniteAffineNeighborhood
 public import FLT.Mazur.HilbertFiniteAmbientPresentation
 public import FLT.Mazur.HilbertFiniteBoundaryDomain
+public import FLT.Mazur.HilbertFiniteDomainBoundaryTrace
 public import FLT.Mazur.HilbertFiniteDomainErrorVanishing
 public import FLT.Mazur.HilbertFiniteDomainPrincipalCoverage
 public import FLT.Mazur.HilbertFiniteFreeBoundaryIntegral
