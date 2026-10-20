@@ -15561,6 +15561,7 @@ public import FLT.Mazur.WeierstrassDividedTangentLowerContraction
 public import FLT.Mazur.WeierstrassDividedTangentLowerEquation
 public import FLT.Mazur.WeierstrassDividedTangentLowerFormula
 public import FLT.Mazur.WeierstrassDividedTangentLowerOutput
+public import FLT.Mazur.WeierstrassDividedTangentLowerResidue
 public import FLT.Mazur.WeierstrassDividedTangentLowerScheme
 public import FLT.Mazur.WeierstrassDividedTangentOpenGluing
 public import FLT.Mazur.WeierstrassDividedTangentOriginalAction
