@@ -14450,6 +14450,7 @@ public import FLT.Mazur.WeierstrassDividedDeepNodalTangentGluing
 public import FLT.Mazur.WeierstrassDividedDeepNodalTangentNeighborhood
 public import FLT.Mazur.WeierstrassDividedDeepNodalTangentNeighborhoodCover
 public import FLT.Mazur.WeierstrassDividedDeepNormalizedBranchContraction
+public import FLT.Mazur.WeierstrassDividedDeepPromotedAddition
 public import FLT.Mazur.WeierstrassDividedDepthAffine
 public import FLT.Mazur.WeierstrassDividedDepthAvailability
 public import FLT.Mazur.WeierstrassDividedDepthBoundary
