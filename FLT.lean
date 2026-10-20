@@ -14443,6 +14443,7 @@ public import FLT.Mazur.WeierstrassDividedCrossDepthTangentSecantScheme
 public import FLT.Mazur.WeierstrassDividedCyclicSmoothParameter
 public import FLT.Mazur.WeierstrassDividedDataFormulaComparison
 public import FLT.Mazur.WeierstrassDividedDeepAmbientAddition
+public import FLT.Mazur.WeierstrassDividedDeepAmbientCoverage
 public import FLT.Mazur.WeierstrassDividedDeepCommonFormula
 public import FLT.Mazur.WeierstrassDividedDeepCommonModel
 public import FLT.Mazur.WeierstrassDividedDeepExtendedOverlap
