@@ -8415,6 +8415,7 @@ public import FLT.Mazur.OpenRestrictionClosed
 public import FLT.Mazur.OpenRestrictionInclusion
 public import FLT.Mazur.OpenRestrictionLimitMap
 public import FLT.Mazur.OpenSchemeParameters
+public import FLT.Mazur.OpenSectionFamilyLocalFactorization
 public import FLT.Mazur.OpenSectionFilteredColimit
 public import FLT.Mazur.OpenSectionMonicity
 public import FLT.Mazur.OpenSectionTopComparison
