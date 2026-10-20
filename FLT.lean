@@ -15951,6 +15951,7 @@ public import FLT.Mazur.WeierstrassDividedTripleDepthCoefficients
 public import FLT.Mazur.WeierstrassDividedTripleNegativeBranchContraction
 public import FLT.Mazur.WeierstrassDividedTripleNegativeBranchOutput
 public import FLT.Mazur.WeierstrassDividedTripleNormalizedBranchLift
+public import FLT.Mazur.WeierstrassDividedTriplePromotedAddition
 public import FLT.Mazur.WeierstrassDividedTriplePromotedSecant
 public import FLT.Mazur.WeierstrassDividedTriplePromotedTangent
 public import FLT.Mazur.WeierstrassDividedTripleResolvedSecant
