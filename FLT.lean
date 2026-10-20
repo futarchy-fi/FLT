@@ -14478,6 +14478,7 @@ public import FLT.Mazur.WeierstrassDividedInteriorHorizontalCyclicInput
 public import FLT.Mazur.WeierstrassDividedInteriorHorizontalCyclicPair
 public import FLT.Mazur.WeierstrassDividedInteriorTensorOutputGeometry
 public import FLT.Mazur.WeierstrassDividedKernelClosure
+public import FLT.Mazur.WeierstrassDividedKernelClosureNegation
 public import FLT.Mazur.WeierstrassDividedKernelContraction
 public import FLT.Mazur.WeierstrassDividedKernelFinite
 public import FLT.Mazur.WeierstrassDividedKernelSmoothEmbedding
