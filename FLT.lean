@@ -4191,6 +4191,7 @@ public import FLT.Mazur.ConstantCyclicFiniteEtale
 public import FLT.Mazur.ConstantCyclicGenerator
 public import FLT.Mazur.ConstantCyclicGroup
 public import FLT.Mazur.ConstantCyclicInclusion
+public import FLT.Mazur.ConstantCyclicRelabel
 public import FLT.Mazur.ConstantCyclicRelativeClosed
 public import FLT.Mazur.ConstantCyclicRelativeGeometry
 public import FLT.Mazur.ConstantCyclicSchemeAction
@@ -4246,14 +4247,20 @@ public import FLT.Mazur.CurveUniformFieldDegreeBound
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
 public import FLT.Mazur.CyclicAuxiliaryPrescribedNormalizedNeighborhood
+public import FLT.Mazur.CyclicBoundaryAmpleAction
+public import FLT.Mazur.CyclicBoundaryAmpleInvariantModuli
 public import FLT.Mazur.CyclicBoundaryAmpleModuli
+public import FLT.Mazur.CyclicBoundaryFaithfulAction
 public import FLT.Mazur.CyclicBoundaryFaithfulLift
 public import FLT.Mazur.CyclicBoundaryFaithfulOpen
 public import FLT.Mazur.CyclicBoundaryGroupSections
+public import FLT.Mazur.CyclicBoundaryLiftSubgroup
+public import FLT.Mazur.CyclicBoundaryOriginalAmpleLift
 public import FLT.Mazur.CyclicBoundaryOriginalAmpleModuli
 public import FLT.Mazur.CyclicBoundaryOriginalMarkings
 public import FLT.Mazur.CyclicBoundaryParameterAction
 public import FLT.Mazur.CyclicBoundaryParameterSections
+public import FLT.Mazur.CyclicBoundaryRelabelSubgroup
 public import FLT.Mazur.CyclicBoundarySectionMarking
 public import FLT.Mazur.CyclicBoundaryTestSubgroup
 public import FLT.Mazur.CyclicBoundaryUniversalSubgroup
@@ -8385,6 +8392,7 @@ public import FLT.Mazur.OneGonClosedGroupInclusion
 public import FLT.Mazur.OneGonCocone
 public import FLT.Mazur.OneGonCoefficientTransport
 public import FLT.Mazur.OneGonCompleteAmpleCyclicSubgroup
+public import FLT.Mazur.OneGonCompleteAmpleParameterLift
 public import FLT.Mazur.OneGonCompleteBoundaryCartesian
 public import FLT.Mazur.OneGonCompleteBoundaryMarking
 public import FLT.Mazur.OneGonCompleteBoundarySubgroup
@@ -9108,6 +9116,7 @@ public import FLT.Mazur.PolygonCompatibleVeronese
 public import FLT.Mazur.PolygonCompatibleZeroCoefficients
 public import FLT.Mazur.PolygonCompleteAdicIdealSeparation
 public import FLT.Mazur.PolygonCompleteAffinePresentation
+public import FLT.Mazur.PolygonCompleteAmpleParameterLift
 public import FLT.Mazur.PolygonCompleteAuxiliaryPrescribedCharacteristicCover
 public import FLT.Mazur.PolygonCompleteBaseMarkings
 public import FLT.Mazur.PolygonCompleteBoundaryAmple
@@ -11399,6 +11408,7 @@ public import FLT.Mazur.RelativeCoproductPullCover
 public import FLT.Mazur.RelativeCyclicSubgroup
 public import FLT.Mazur.RelativeCyclicSubgroupComparison
 public import FLT.Mazur.RelativeCyclicSubgroupPullbackComparison
+public import FLT.Mazur.RelativeCyclicSubgroupRelabel
 public import FLT.Mazur.RelativeCyclicSubgroupSmoothOpen
 public import FLT.Mazur.RelativeDimensionBaseChangeOpen
 public import FLT.Mazur.RelativeDirectImageComposition
