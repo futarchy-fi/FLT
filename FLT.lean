@@ -3587,6 +3587,7 @@ public import FLT.Mazur.ArbitraryGeometricProperCore
 public import FLT.Mazur.ArbitraryPicardAffineEtaleChart
 public import FLT.Mazur.ArbitraryPicardEtaleTranslation
 public import FLT.Mazur.ArithmeticOneGonFamily
+public import FLT.Mazur.ArithmeticOneGonFiberTorus
 public import FLT.Mazur.ArithmeticOneGonFieldFibers
 public import FLT.Mazur.ArithmeticOneGonGeneralizedCurve
 public import FLT.Mazur.ArithmeticOneGonOriginalFiber
