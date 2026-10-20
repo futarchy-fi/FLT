@@ -14658,6 +14658,7 @@ public import FLT.Mazur.WeierstrassDividedOneSeedOrientation
 public import FLT.Mazur.WeierstrassDividedOneSeedState
 public import FLT.Mazur.WeierstrassDividedOppositeBoundarySupport
 public import FLT.Mazur.WeierstrassDividedOppositeInputs
+public import FLT.Mazur.WeierstrassDividedOppositeSecantDomain
 public import FLT.Mazur.WeierstrassDividedOrderedAdjacentComponents
 public import FLT.Mazur.WeierstrassDividedOrderedPairCoverage
 public import FLT.Mazur.WeierstrassDividedOrderedRetainedSections
