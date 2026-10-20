@@ -7583,6 +7583,7 @@ public import FLT.Mazur.IntersectionSectionGluing
 public import FLT.Mazur.IntersectionSectionLimitCoordinates
 public import FLT.Mazur.IntersectionUnitCocycle
 public import FLT.Mazur.IntersectionUnitCocycleRecovery
+public import FLT.Mazur.InvariantAffineOpenNormCoefficient
 public import FLT.Mazur.InvariantBoundaryPullback
 public import FLT.Mazur.InvariantFiniteDomainTrace
 public import FLT.Mazur.InvariantFiniteFreeTraceUnit
