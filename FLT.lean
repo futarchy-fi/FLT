@@ -14457,6 +14457,7 @@ public import FLT.Mazur.WeierstrassDividedDeepNormalizedBranchContraction
 public import FLT.Mazur.WeierstrassDividedDeepPartialOverlap
 public import FLT.Mazur.WeierstrassDividedDeepPromotedAddition
 public import FLT.Mazur.WeierstrassDividedDeepReciprocalExtendedOverlap
+public import FLT.Mazur.WeierstrassDividedDeepReciprocalExtendedPullback
 public import FLT.Mazur.WeierstrassDividedDeepReciprocalOverlap
 public import FLT.Mazur.WeierstrassDividedDeepReciprocalSecant
 public import FLT.Mazur.WeierstrassDividedDeepReciprocalTangent
