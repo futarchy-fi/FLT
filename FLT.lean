@@ -11584,6 +11584,7 @@ public import FLT.Mazur.RankStagePrescribedLiftingProperty
 public import FLT.Mazur.RankStagePrincipalCoreCorrections
 public import FLT.Mazur.RankStageRelationTransitions
 public import FLT.Mazur.RankStageRescaledGlobalKernelTowers
+public import FLT.Mazur.RankStageStableKernelObstruction
 public import FLT.Mazur.RankStageStableTransitions
 public import FLT.Mazur.RankStageStagewiseKernelObstruction
 public import FLT.Mazur.RankStageStructureMaps
