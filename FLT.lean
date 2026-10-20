@@ -7634,6 +7634,7 @@ public import FLT.Mazur.InvariantOpenRelationFunctions
 public import FLT.Mazur.InvariantOpenRelationIntegralCoordinates
 public import FLT.Mazur.InvariantOpenRelationMap
 public import FLT.Mazur.InvariantOpenRelationSectionScalars
+public import FLT.Mazur.InvariantPrincipalWholeCore
 public import FLT.Mazur.InvariantScalarGoingDown
 public import FLT.Mazur.InvariantSectionObstruction
 public import FLT.Mazur.IrreducibleComponentAmple
