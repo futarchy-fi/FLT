@@ -8542,6 +8542,7 @@ public import FLT.Mazur.OneGonNilpotentDiagonalizableLift
 public import FLT.Mazur.OneGonNilpotentIntrinsicHomLift
 public import FLT.Mazur.OneGonNilpotentSmoothAffine
 public import FLT.Mazur.OneGonNilpotentSurjectiveCharacterLift
+public import FLT.Mazur.OneGonNilpotentSurjectiveHomLift
 public import FLT.Mazur.OneGonNodalCoefficientGroupMap
 public import FLT.Mazur.OneGonNodalCoefficientGroupProjection
 public import FLT.Mazur.OneGonNodeNormalizationIdeal
