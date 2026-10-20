@@ -15407,6 +15407,7 @@ public import FLT.Mazur.WeierstrassDividedTangentBranchFormula
 public import FLT.Mazur.WeierstrassDividedTangentBranchMap
 public import FLT.Mazur.WeierstrassDividedTangentBranchOutput
 public import FLT.Mazur.WeierstrassDividedTangentBranchOutputResidue
+public import FLT.Mazur.WeierstrassDividedTangentBranchRefinedCoordinates
 public import FLT.Mazur.WeierstrassDividedTangentBranchResidue
 public import FLT.Mazur.WeierstrassDividedTangentBranchResidueUnit
 public import FLT.Mazur.WeierstrassDividedTangentBranchScheme
