@@ -5965,6 +5965,7 @@ public import FLT.Mazur.FiniteRelationColimit
 public import FLT.Mazur.FiniteRelationCompatibleHomDescent
 public import FLT.Mazur.FiniteRelationCoverDescent
 public import FLT.Mazur.FiniteRelationDetection
+public import FLT.Mazur.FiniteRelationEndpointImmersion
 public import FLT.Mazur.FiniteRelationFiniteHomDescent
 public import FLT.Mazur.FiniteRelationHomDescent
 public import FLT.Mazur.FiniteRelationHomEquality
