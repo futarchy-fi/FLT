@@ -4709,6 +4709,7 @@ public import FLT.Mazur.DiagonalizableCobarAlgebra
 public import FLT.Mazur.DiagonalizableCobarContraction
 public import FLT.Mazur.DiagonalizableCobarCoordinates
 public import FLT.Mazur.DiagonalizableCoefficientReduction
+public import FLT.Mazur.DiagonalizableCofaceIdentities
 public import FLT.Mazur.DiagonalizableInfinitesimalIdeal
 public import FLT.Mazur.DiagonalizableInfinitesimalNaturality
 public import FLT.Mazur.DiagonalizableSquareZeroCocycle
