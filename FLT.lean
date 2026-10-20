@@ -3559,6 +3559,7 @@ public import FLT.Mazur.AmpleLineBundle
 public import FLT.Mazur.AmpleLineLimitDescent
 public import FLT.Mazur.AmpleOpenAffineRecovery
 public import FLT.Mazur.AmpleOpenImage
+public import FLT.Mazur.AmplePositiveTensorPower
 public import FLT.Mazur.AmplePreimageSectionCover
 public import FLT.Mazur.AmplePrincipalLocality
 public import FLT.Mazur.AmpleRetainedChartGeneration
@@ -7478,6 +7479,9 @@ public import FLT.Mazur.IntegralAlgebraicallyClosedLifting
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
 public import FLT.Mazur.IntegralCurveCartierFinite
+public import FLT.Mazur.IntegralCyclotomicCoordinates
+public import FLT.Mazur.IntegralCyclotomicCover
+public import FLT.Mazur.IntegralCyclotomicOrbit
 public import FLT.Mazur.IntegralDimension
 public import FLT.Mazur.IntegralImageIdealStalk
 public import FLT.Mazur.IntegralPointExtension
@@ -7624,6 +7628,7 @@ public import FLT.Mazur.LaurentStageParameterTorus
 public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentTopParameterSubstitution
 public import FLT.Mazur.LaurentUnitCoefficientPoint
+public import FLT.Mazur.LaurentUnitKernel
 public import FLT.Mazur.LaurentUnitMarkingCancellation
 public import FLT.Mazur.LaurentUnitMultiplication
 public import FLT.Mazur.LaurentUnitPointNaturality
@@ -8454,6 +8459,7 @@ public import FLT.Mazur.OneGonFaithfulCyclicLine
 public import FLT.Mazur.OneGonFormalCoordinates
 public import FLT.Mazur.OneGonGlobalPushout
 public import FLT.Mazur.OneGonGluing
+public import FLT.Mazur.OneGonIdentityDivisorAmple
 public import FLT.Mazur.OneGonIntegral
 public import FLT.Mazur.OneGonLocalDescent
 public import FLT.Mazur.OneGonLocalizedEqualizer
@@ -8478,6 +8484,8 @@ public import FLT.Mazur.OneGonProductNormalization
 public import FLT.Mazur.OneGonProductTorus
 public import FLT.Mazur.OneGonQuotient
 public import FLT.Mazur.OneGonRetainedFiberReduced
+public import FLT.Mazur.OneGonRootsOfUnityPrimePowerAmple
+public import FLT.Mazur.OneGonRootsOfUnityPrimePowerCyclic
 public import FLT.Mazur.OneGonRootsOfUnitySubgroup
 public import FLT.Mazur.OneGonScalarExtension
 public import FLT.Mazur.OneGonSeparated
@@ -11788,6 +11796,8 @@ public import FLT.Mazur.RootsOfUnityCartier
 public import FLT.Mazur.RootsOfUnityLaurentKernel
 public import FLT.Mazur.RootsOfUnityNonEtale
 public import FLT.Mazur.RootsOfUnityPolynomialPresentation
+public import FLT.Mazur.RootsOfUnityPrimePowerIdeal
+public import FLT.Mazur.RootsOfUnityPrimePowerOrbit
 public import FLT.Mazur.RootsOfUnityScheme
 public import FLT.Mazur.ScalarAlgebraicClosureTests
 public import FLT.Mazur.ScalarClosedGeometricLifts
@@ -12840,6 +12850,7 @@ public import FLT.Mazur.SuccessiveIncidenceCoefficientMap
 public import FLT.Mazur.SuccessiveIncidenceLaurentRestriction
 public import FLT.Mazur.SuccessiveIncidencePolygonChart
 public import FLT.Mazur.SuccessiveIncidencePolygonRestriction
+public import FLT.Mazur.SupportedIdealPowerComparison
 public import FLT.Mazur.SupportedReductionLocalization
 public import FLT.Mazur.SurjectiveAlgHomKernelEquiv
 public import FLT.Mazur.SurjectiveDominantEpi
@@ -12898,6 +12909,7 @@ public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TorusPointUnitEquiv
 public import FLT.Mazur.TorusRootsOfUnityCartier
+public import FLT.Mazur.TorusRootsOfUnityPrimePowerCyclic
 public import FLT.Mazur.TorusRootsOfUnitySubgroup
 public import FLT.Mazur.TranscendentalAcyclicTranslation
 public import FLT.Mazur.TranscendentalAffineOpenOrbit
@@ -14401,6 +14413,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchNodal
 public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchPartial
 public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchTerminal
 public import FLT.Mazur.WeierstrassDividedFiniteFlat
+public import FLT.Mazur.WeierstrassDividedFiniteFlatBranchLift
 public import FLT.Mazur.WeierstrassDividedFiniteGlobalNegation
 public import FLT.Mazur.WeierstrassDividedFiniteGlobalNegationInitial
 public import FLT.Mazur.WeierstrassDividedFiniteGlobalNegationStep
@@ -14439,6 +14452,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteTensorCharts
 public import FLT.Mazur.WeierstrassDividedFiniteTensorGeometry
 public import FLT.Mazur.WeierstrassDividedFiniteTensorIntersection
 public import FLT.Mazur.WeierstrassDividedFiniteTensorOverlap
+public import FLT.Mazur.WeierstrassDividedFiniteTripleBranchLift
 public import FLT.Mazur.WeierstrassDividedFiniteYBoundary
 public import FLT.Mazur.WeierstrassDividedFiniteYStep
 public import FLT.Mazur.WeierstrassDividedFirstActionAtlas
@@ -14743,13 +14757,22 @@ public import FLT.Mazur.WeierstrassDividedMixedKernelAction
 public import FLT.Mazur.WeierstrassDividedMixedKernelActionLaws
 public import FLT.Mazur.WeierstrassDividedMixedKernelPair
 public import FLT.Mazur.WeierstrassDividedMixedKernelPoints
+public import FLT.Mazur.WeierstrassDividedNegativeBranchSource
+public import FLT.Mazur.WeierstrassDividedNegativeTangentOutput
+public import FLT.Mazur.WeierstrassDividedNegativeTangentScheme
+public import FLT.Mazur.WeierstrassDividedNegativeTangentSlope
 public import FLT.Mazur.WeierstrassDividedNilpotentEarlierTerminal
 public import FLT.Mazur.WeierstrassDividedNilpotentInfinity
 public import FLT.Mazur.WeierstrassDividedNilpotentNonadjacentIntersection
+public import FLT.Mazur.WeierstrassDividedNodalBranchCommonOutput
 public import FLT.Mazur.WeierstrassDividedNodalDepthAvailability
+public import FLT.Mazur.WeierstrassDividedNodalNegativeBranchContraction
+public import FLT.Mazur.WeierstrassDividedNodalNegativeBranchOutput
 public import FLT.Mazur.WeierstrassDividedNodalSecondNormalization
+public import FLT.Mazur.WeierstrassDividedNodalTangentBranchCoverage
 public import FLT.Mazur.WeierstrassDividedNonadjacentGlobalIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentTensorIntersection
+public import FLT.Mazur.WeierstrassDividedNormalizedBranchContraction
 public import FLT.Mazur.WeierstrassDividedOddCompleteClosedComparison
 public import FLT.Mazur.WeierstrassDividedOlderAtlasIndex
 public import FLT.Mazur.WeierstrassDividedOlderConicExteriorDisjoint
@@ -15266,6 +15289,8 @@ public import FLT.Mazur.WeierstrassDividedSecondResidualLifts
 public import FLT.Mazur.WeierstrassDividedSecondResidualPunctures
 public import FLT.Mazur.WeierstrassDividedSecondResidualRestriction
 public import FLT.Mazur.WeierstrassDividedShearBranchCoverage
+public import FLT.Mazur.WeierstrassDividedShearBranchOverlap
+public import FLT.Mazur.WeierstrassDividedShearBranchOverlapCoverage
 public import FLT.Mazur.WeierstrassDividedShearBranchSource
 public import FLT.Mazur.WeierstrassDividedShearContraction
 public import FLT.Mazur.WeierstrassDividedShearData
@@ -15282,6 +15307,9 @@ public import FLT.Mazur.WeierstrassDividedShearGluing
 public import FLT.Mazur.WeierstrassDividedShearInitialExterior
 public import FLT.Mazur.WeierstrassDividedShearNextBoundary
 public import FLT.Mazur.WeierstrassDividedShearPreviousBoundary
+public import FLT.Mazur.WeierstrassDividedShearTangentOutput
+public import FLT.Mazur.WeierstrassDividedShearTangentScheme
+public import FLT.Mazur.WeierstrassDividedShearTangentSlope
 public import FLT.Mazur.WeierstrassDividedSkippedAtlasRange
 public import FLT.Mazur.WeierstrassDividedSkippedChartSupport
 public import FLT.Mazur.WeierstrassDividedSkippedTensorIntersection
@@ -15366,6 +15394,7 @@ public import FLT.Mazur.WeierstrassDividedTangentSecantComparison
 public import FLT.Mazur.WeierstrassDividedTangentSecantOverlap
 public import FLT.Mazur.WeierstrassDividedTangentSecantScheme
 public import FLT.Mazur.WeierstrassDividedTangentSource
+public import FLT.Mazur.WeierstrassDividedTangentThreeDomainCover
 public import FLT.Mazur.WeierstrassDividedTangentTransport
 public import FLT.Mazur.WeierstrassDividedTangentTransportAction
 public import FLT.Mazur.WeierstrassDividedTangentTriple
@@ -15505,6 +15534,13 @@ public import FLT.Mazur.WeierstrassDividedThreeSeedAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedThreeSeedAtlasSystem
 public import FLT.Mazur.WeierstrassDividedThreeSeedOrientation
 public import FLT.Mazur.WeierstrassDividedThreeSeedState
+public import FLT.Mazur.WeierstrassDividedTripleBranchCommonOutput
+public import FLT.Mazur.WeierstrassDividedTripleBranchOutput
+public import FLT.Mazur.WeierstrassDividedTripleDepthCoefficients
+public import FLT.Mazur.WeierstrassDividedTripleNegativeBranchContraction
+public import FLT.Mazur.WeierstrassDividedTripleNegativeBranchOutput
+public import FLT.Mazur.WeierstrassDividedTripleNormalizedBranchLift
+public import FLT.Mazur.WeierstrassDividedTripleTangentBranchCoverage
 public import FLT.Mazur.WeierstrassDividedTwistedAtlas
 public import FLT.Mazur.WeierstrassDividedTwistedAtlasGluing
 public import FLT.Mazur.WeierstrassDividedTwistedAtlasRestriction
