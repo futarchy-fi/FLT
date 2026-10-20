@@ -14973,6 +14973,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveSplitZero
 public import FLT.Mazur.WeierstrassDividedPrecedingAtlasRange
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedProjectiveLift
+public import FLT.Mazur.WeierstrassDividedReciprocalExtendedAddition
 public import FLT.Mazur.WeierstrassDividedReciprocalExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalFormula
 public import FLT.Mazur.WeierstrassDividedReciprocalInfinityCoverage
