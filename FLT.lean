@@ -2769,6 +2769,7 @@ public import FLT.Mazur.AdicFormallySmoothResidueLift
 public import FLT.Mazur.AdicFormallySmoothStages
 public import FLT.Mazur.AdicIdealCompletionRange
 public import FLT.Mazur.AdicIdealFilteredMap
+public import FLT.Mazur.AdicIdealPowerComparison
 public import FLT.Mazur.AdicInfinitesimalConormal
 public import FLT.Mazur.AdicInfinitesimalConormalFunctor
 public import FLT.Mazur.AdicInfinitesimalCotangentSpace
