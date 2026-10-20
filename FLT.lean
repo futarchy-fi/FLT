@@ -15132,6 +15132,7 @@ public import FLT.Mazur.WeierstrassDividedTangentOverlapProjections
 public import FLT.Mazur.WeierstrassDividedTangentRefinementComparison
 public import FLT.Mazur.WeierstrassDividedTangentRelations
 public import FLT.Mazur.WeierstrassDividedTangentReverseComparison
+public import FLT.Mazur.WeierstrassDividedTangentReverseCover
 public import FLT.Mazur.WeierstrassDividedTangentReverseScheme
 public import FLT.Mazur.WeierstrassDividedTangentSchemeAction
 public import FLT.Mazur.WeierstrassDividedTangentSecantComparison
