@@ -8969,6 +8969,7 @@ public import FLT.Mazur.PolygonArithmeticZeroTower
 public import FLT.Mazur.PolygonAtlas
 public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonAtlasSmoothLocus
+public import FLT.Mazur.PolygonBoundaryAmpleParameter
 public import FLT.Mazur.PolygonBoundaryClosedLayer
 public import FLT.Mazur.PolygonBoundaryClosedLifting
 public import FLT.Mazur.PolygonBoundaryCoefficientNaturality
