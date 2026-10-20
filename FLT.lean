@@ -7478,6 +7478,7 @@ public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IdealQuotientSectionLift
 public import FLT.Mazur.IdealSheafAdicStalkSeparation
 public import FLT.Mazur.IdealSheafAffineTestErrors
+public import FLT.Mazur.IdealSheafClopenStabilization
 public import FLT.Mazur.IdealSheafClosedCoreTests
 public import FLT.Mazur.IdealSheafClosedTransitions
 public import FLT.Mazur.IdealSheafFactorizationSupport
@@ -7636,6 +7637,7 @@ public import FLT.Mazur.InvariantOpenRelationFunctions
 public import FLT.Mazur.InvariantOpenRelationIntegralCoordinates
 public import FLT.Mazur.InvariantOpenRelationMap
 public import FLT.Mazur.InvariantOpenRelationSectionScalars
+public import FLT.Mazur.InvariantPrincipalWholeCore
 public import FLT.Mazur.InvariantScalarGoingDown
 public import FLT.Mazur.InvariantSectionObstruction
 public import FLT.Mazur.IrreducibleComponentAmple
@@ -11540,11 +11542,14 @@ public import FLT.Mazur.RankOneDirectImageSection
 public import FLT.Mazur.RankOneSectionDivisorUniqueness
 public import FLT.Mazur.RankOpenCompatibleAlgebraization
 public import FLT.Mazur.RankOpenHomogeneousAlgebraization
+public import FLT.Mazur.RankOpenHomogeneousFamilies
+public import FLT.Mazur.RankOpenTopBoundaryOverlap
 public import FLT.Mazur.RankStageAffineBoundaryLifts
 public import FLT.Mazur.RankStageAffineNeighborhoods
 public import FLT.Mazur.RankStageBoundaryIdeal
 public import FLT.Mazur.RankStageBoundarySeedTower
 public import FLT.Mazur.RankStageBoundedCoreCover
+public import FLT.Mazur.RankStageClopenKernelObstruction
 public import FLT.Mazur.RankStageCoherentAffineCores
 public import FLT.Mazur.RankStageCoherentCoreCoverage
 public import FLT.Mazur.RankStageCoherentOverlapNumerators
@@ -11590,6 +11595,7 @@ public import FLT.Mazur.RankStageOriginalAtlasErrors
 public import FLT.Mazur.RankStageOriginalAtlasTower
 public import FLT.Mazur.RankStageOriginalBoundaryCoefficients
 public import FLT.Mazur.RankStageOriginalBoundaryCoherentNumerators
+public import FLT.Mazur.RankStageOriginalBoundaryProduct
 public import FLT.Mazur.RankStageOriginalBoundaryRestriction
 public import FLT.Mazur.RankStageOriginalBoundaryScalarObstruction
 public import FLT.Mazur.RankStageOriginalBoundaryTests
@@ -11600,6 +11606,9 @@ public import FLT.Mazur.RankStageOriginalGeometricAtlasApproximation
 public import FLT.Mazur.RankStageOriginalMixedCoreTests
 public import FLT.Mazur.RankStageOriginalMixedIdeals
 public import FLT.Mazur.RankStageOriginalMixedTests
+public import FLT.Mazur.RankStageOriginalPrincipalNumerators
+public import FLT.Mazur.RankStageOriginalProductAnnihilation
+public import FLT.Mazur.RankStageOriginalScalarAnnihilation
 public import FLT.Mazur.RankStageOriginalScalarAtlasApproximation
 public import FLT.Mazur.RankStageOriginalScalarCauchy
 public import FLT.Mazur.RankStageOriginalScalarSupport
@@ -11618,6 +11627,7 @@ public import FLT.Mazur.RankStageTopBoundaryOverlap
 public import FLT.Mazur.RankStageTopKernelObstruction
 public import FLT.Mazur.RankStageTransitionTopology
 public import FLT.Mazur.RankStageUniformKernelNumerators
+public import FLT.Mazur.RankStratumClopenStabilization
 public import FLT.Mazur.RankStratumTopNilpotence
 public import FLT.Mazur.RationalCyclicCartierGenerator
 public import FLT.Mazur.RationalCyclicGeneratorChange
