@@ -13460,6 +13460,7 @@ public import FLT.Mazur.WeierstrassClosureSmoothGroupOperations
 public import FLT.Mazur.WeierstrassCoefficientAddition
 public import FLT.Mazur.WeierstrassCoefficientAffineProduct
 public import FLT.Mazur.WeierstrassCoefficientChartPreimage
+public import FLT.Mazur.WeierstrassCoefficientChartTransport
 public import FLT.Mazur.WeierstrassCoefficientFieldCover
 public import FLT.Mazur.WeierstrassCoefficientGeneralizedIso
 public import FLT.Mazur.WeierstrassCoefficientGroup
