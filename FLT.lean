@@ -14286,6 +14286,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteSecantInput
 public import FLT.Mazur.WeierstrassDividedFiniteSmoothInput
 public import FLT.Mazur.WeierstrassDividedFiniteSmoothOpen
 public import FLT.Mazur.WeierstrassDividedFiniteStageRetention
+public import FLT.Mazur.WeierstrassDividedFiniteTangentInput
 public import FLT.Mazur.WeierstrassDividedFiniteTensorAtlas
 public import FLT.Mazur.WeierstrassDividedFiniteTensorCharts
 public import FLT.Mazur.WeierstrassDividedFiniteTensorGeometry
@@ -14726,10 +14727,12 @@ public import FLT.Mazur.WeierstrassDividedOriginalNodeBase
 public import FLT.Mazur.WeierstrassDividedOriginalScaleOpen
 public import FLT.Mazur.WeierstrassDividedOriginalSmoothPresentation
 public import FLT.Mazur.WeierstrassDividedOriginalSmoothScale
+public import FLT.Mazur.WeierstrassDividedOriginalSmoothTangentPresentation
 public import FLT.Mazur.WeierstrassDividedOriginalXOpen
 public import FLT.Mazur.WeierstrassDividedPairSecant
 public import FLT.Mazur.WeierstrassDividedPairSecantEvaluation
 public import FLT.Mazur.WeierstrassDividedPairSecantGeometry
+public import FLT.Mazur.WeierstrassDividedPairTangentGeometry
 public import FLT.Mazur.WeierstrassDividedPolygonAdjacencyClassification
 public import FLT.Mazur.WeierstrassDividedPolygonClosingCriterion
 public import FLT.Mazur.WeierstrassDividedPolygonComparisonCharts
@@ -14971,6 +14974,7 @@ public import FLT.Mazur.WeierstrassDividedResolvedSmoothAction
 public import FLT.Mazur.WeierstrassDividedResolvedSmoothActionLaws
 public import FLT.Mazur.WeierstrassDividedResolvedSmoothActionSquare
 public import FLT.Mazur.WeierstrassDividedResolvedSmoothTranslation
+public import FLT.Mazur.WeierstrassDividedResolvedTangent
 public import FLT.Mazur.WeierstrassDividedRetainedAdjacentParameters
 public import FLT.Mazur.WeierstrassDividedRetainedChartIso
 public import FLT.Mazur.WeierstrassDividedRetainedChartOpen
@@ -15132,6 +15136,15 @@ public import FLT.Mazur.WeierstrassDividedTangentCech
 public import FLT.Mazur.WeierstrassDividedTangentCechIso
 public import FLT.Mazur.WeierstrassDividedTangentConjugation
 public import FLT.Mazur.WeierstrassDividedTangentFormula
+public import FLT.Mazur.WeierstrassDividedTangentLeftOverlap
+public import FLT.Mazur.WeierstrassDividedTangentOriginalAction
+public import FLT.Mazur.WeierstrassDividedTangentOverlapProjections
+public import FLT.Mazur.WeierstrassDividedTangentRefinementComparison
+public import FLT.Mazur.WeierstrassDividedTangentRelations
+public import FLT.Mazur.WeierstrassDividedTangentSchemeAction
+public import FLT.Mazur.WeierstrassDividedTangentSecantComparison
+public import FLT.Mazur.WeierstrassDividedTangentSecantOverlap
+public import FLT.Mazur.WeierstrassDividedTangentSecantScheme
 public import FLT.Mazur.WeierstrassDividedTangentSource
 public import FLT.Mazur.WeierstrassDividedTangentTransport
 public import FLT.Mazur.WeierstrassDividedTangentTransportAction
