@@ -15939,6 +15939,7 @@ public import FLT.Mazur.WeierstrassDividedThreeSeedAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedThreeSeedAtlasSystem
 public import FLT.Mazur.WeierstrassDividedThreeSeedOrientation
 public import FLT.Mazur.WeierstrassDividedThreeSeedState
+public import FLT.Mazur.WeierstrassDividedTripleAdditionOverlap
 public import FLT.Mazur.WeierstrassDividedTripleAdditionSource
 public import FLT.Mazur.WeierstrassDividedTripleBranchCommonOutput
 public import FLT.Mazur.WeierstrassDividedTripleBranchOutput
