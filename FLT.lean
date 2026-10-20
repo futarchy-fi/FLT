@@ -11564,6 +11564,7 @@ public import FLT.Mazur.RankStageOriginalMixedTests
 public import FLT.Mazur.RankStageOriginalScalarAtlasApproximation
 public import FLT.Mazur.RankStageOriginalScalarCauchy
 public import FLT.Mazur.RankStageOriginalScalarSupport
+public import FLT.Mazur.RankStageOverlapScalarObstruction
 public import FLT.Mazur.RankStagePrescribedBoundaryLifting
 public import FLT.Mazur.RankStagePrescribedBoundaryTower
 public import FLT.Mazur.RankStagePrescribedLiftingProperty
