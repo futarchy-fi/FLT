@@ -1,0 +1,122 @@
+/-
+Copyright (c) 2026 krandder. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: krandder
+-/
+module
+
+public import FLT.Mazur.WeierstrassDividedDeepIntermediateOverlap
+public import FLT.Mazur.WeierstrassDividedDeepAmbientAddition
+public import FLT.Mazur.WeierstrassDividedNodalIntermediateAmbientAddition
+public import FLT.Mazur.OpenImmersionImageUnionGluedOverlap
+
+/-!
+# Compare the entire intermediate and deep-node ambient extensions
+
+The literal four pairwise intersections cover the full overlap. The new
+cross-depth comparison handles the intermediate/deep-node chart intersection.
+-/
+
+@[expose] public noncomputable section
+open AlgebraicGeometry CategoryTheory Limits
+namespace FLT.Mazur.WeierstrassDividedDepth
+open WeierstrassDilatation WeierstrassIntegralChart
+set_option quotPrecheck false
+set_option backward.isDefEq.respectTransparency false
+set_option backward.defeqAttrib.useBackward true
+attribute [local irreducible] finiteGlobalModel finiteGlobalStructure rootShearCurve
+  nodalSecondShear nodalSecondQuotient
+variable {R : Type} [CommRing R] [IsDomain R]
+  [IsBezout R] [IsLocalRing R] [IsNoetherianRing R]
+  {W : WeierstrassCurve R} {π : R} {n k m : ℕ} (D : SplitNodeDepth W π m)
+  (data : (i : Fin (n + 1)) → Data W π (0 + i.val)) (hkk : k + k ≤ n)
+  (d : Data W π k)
+  (j : ℕ) (hj : j ≤ n) (hkj : k + k ≤ j)
+local notation "a" => dividedPairLeft W (π ^ k) d.b3 d.b4 d.b6
+local notation "c" => dividedPairRight W (π ^ k) d.b3 d.b4 d.b6
+local notation "hπ" => D.uniformizer_ne_zero
+local notation "base" => finiteGlobalStructure hπ data j hj
+local notation "U" => (base).smoothLocus
+local notation "t" => (U).ι ≫ base
+local notation "O" => nodalDeepAdditionOpen D data hkk d a c
+local notation "P" => suppliedDividedSmoothInputOpen d a c
+
+local notation "V" => deepSmoothSourceOpen D data hkk d a c
+local notation "pair" => deepCommonInput D data hkk d a c j hj hkj
+local notation "Old" => finiteResolvedReciprocalExtendedOpen hπ data j hj
+local notation "i" => finiteResolvedReciprocalExtendedInput hπ data j hj
+
+variable {l r : ℕ} (hs : 3 * l ≤ m) (hrl : r ≤ l) (hrm : r ≤ m - 3 * l)
+  (hsn : l + r ≤ n) (d' : Data W π l)
+  (hlj : l ≤ j) (hsj : l + r ≤ j)
+local notation "a'" => dividedPairLeft W (π ^ l) d'.b3 d'.b4 d'.b6
+local notation "c'" => dividedPairRight W (π ^ l) d'.b3 d'.b4 d'.b6
+local notation "left" => nodalIntermediateAmbientInput D hs hrl hrm data hsn d' j hj hlj
+local notation "right" => deepAmbientInput D data hkk d j hj hkj
+local notation "L" => nodalIntermediateAmbientOpen D hs hrl hrm data hsn d' j hj hlj
+local notation "N" => deepAmbientOpen D data hkk d j hj hkj
+local notation "fl" => nodalIntermediateAmbientAddition D hs hrl hrm data hsn d' j hj hlj hsj
+local notation "fr" => deepAmbientAddition D data hkk d j hj hkj
+
+local notation "ol" => nodalIntermediateAmbientLocal D hs hrl hrm data hsn d' j hj hsj
+local notation "orr" => deepAmbientLocal D data hkk d j hj hkj
+
+/-- The old/deep-node literal intersection has its constructed comparison. -/
+theorem intermediateDeepAmbient_oldDeep :
+    pullback.fst (left false) (right true) ≫ ol false =
+      pullback.snd (left false) (right true) ≫ orr true :=
+  deepCommonOutput_reciprocalExtendedOverlap
+    D data hkk d a c j hj hkj _ _ pullback.condition
+
+/-- The intermediate/old literal intersection has its constructed comparison. -/
+theorem intermediateDeepAmbient_intermediateOld :
+    pullback.fst (left true) (right false) ≫ ol true =
+      pullback.snd (left true) (right false) ≫ orr false :=
+  (nodalIntermediateCommonOutput_reciprocalExtendedOverlap
+    D hs hrl hrm data hsn d' a' c' j hj hlj hsj _ _ pullback.condition.symm).symm
+
+/-- The new/new literal intersection uses the full cross-depth comparison. -/
+theorem intermediateDeepAmbient_newIntersection :
+    pullback.fst (left true) (right true) ≫ ol true =
+      pullback.snd (left true) (right true) ≫ orr true :=
+  deepCommonOutput_intermediateOverlap D data hkk d a c
+    j hj hkj hs hrl hrm hsn d' a' c' hlj hsj _ _ pullback.condition
+
+/-- The common old chart agrees with itself. -/
+theorem intermediateDeepAmbient_oldOld :
+    pullback.fst (left false) (right false) ≫ ol false =
+      pullback.snd (left false) (right false) ≫ orr false := by
+  exact congrArg (· ≫ finiteResolvedReciprocalExtendedPartialAddition hπ data j hj)
+    ((cancel_mono (Old).ι).mp pullback.condition)
+
+/-- All four literal chart intersections have equal constructed outputs. -/
+theorem intermediateDeepAmbient_local (b b' : Bool) :
+    pullback.fst (left b) (right b') ≫ ol b =
+      pullback.snd (left b) (right b') ≫ orr b' := by
+  cases b <;> cases b'
+  · exact intermediateDeepAmbient_oldOld
+      D data hkk d j hj hkj hs hrl hrm hsn d' hlj hsj
+  · exact intermediateDeepAmbient_oldDeep
+      D data hkk d j hj hkj hs hrl hrm hsn d' hlj hsj
+  · exact intermediateDeepAmbient_intermediateOld
+      D data hkk d j hj hkj hs hrl hrm hsn d' hlj hsj
+  · exact intermediateDeepAmbient_newIntersection
+      D data hkk d j hj hkj hs hrl hrm hsn d' hlj hsj
+
+/-- The two entire ambient extensions agree on their actual full fiber product. -/
+theorem intermediateDeepAmbient_pullback :
+    pullback.fst (L).ι (N).ι ≫ fl = pullback.snd (L).ι (N).ι ≫ fr :=
+  openImageUnionGlue_pullback_eq left right ol orr _ _
+    (intermediateDeepAmbient_local D data hkk d j hj hkj
+      hs hrl hrm hsn d' hlj hsj)
+
+/-- Every common-source comparison follows from the full fiber-product equality. -/
+theorem intermediateDeepAmbient_overlap {X : Scheme}
+    (p : X ⟶ (L).toScheme) (q : X ⟶ (N).toScheme)
+    (hpq : p ≫ (L).ι = q ≫ (N).ι) : p ≫ fl = q ≫ fr := by
+  have h := congrArg (pullback.lift p q hpq ≫ ·)
+    (intermediateDeepAmbient_pullback D data hkk d j hj hkj
+      hs hrl hrm hsn d' hlj hsj)
+  simpa only [pullback.lift_fst_assoc, pullback.lift_snd_assoc] using h
+
+end FLT.Mazur.WeierstrassDividedDepth
