@@ -3842,6 +3842,7 @@ public import FLT.Mazur.BlowupReesRatioTransition
 public import FLT.Mazur.BlowupReesZeroComponent
 public import FLT.Mazur.BoundaryCorrectionAdicAmbient
 public import FLT.Mazur.BoundaryCorrectionAdicCertificate
+public import FLT.Mazur.BoundaryCorrectionAdicEquationIdeal
 public import FLT.Mazur.BoundaryCorrectionAmbientEquations
 public import FLT.Mazur.BoundaryCorrectionBoundaryImage
 public import FLT.Mazur.BoundaryCorrectionBoundaryKernel
