@@ -8654,6 +8654,7 @@ public import FLT.Mazur.OneGonZeroTorusComparison
 public import FLT.Mazur.OpenAtlasTripleGluing
 public import FLT.Mazur.OpenChartSectionPullback
 public import FLT.Mazur.OpenCoverDimension
+public import FLT.Mazur.OpenCoverFullBoundaryDetection
 public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
 public import FLT.Mazur.OpenDirectImageRestriction
