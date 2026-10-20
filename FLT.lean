@@ -6925,6 +6925,7 @@ public import FLT.Mazur.HilbertOpenInclusionExtension
 public import FLT.Mazur.HilbertOpenInclusionFamilies
 public import FLT.Mazur.HilbertOpenIntrinsicClassification
 public import FLT.Mazur.HilbertOpenOverlapCoherence
+public import FLT.Mazur.HilbertOrbitAdicReductionAbsorption
 public import FLT.Mazur.HilbertOrbitBoundaryAdicCertificate
 public import FLT.Mazur.HilbertOrbitBoundaryAmbientCorrections
 public import FLT.Mazur.HilbertOrbitBoundaryAtlas
