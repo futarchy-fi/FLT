@@ -6752,6 +6752,7 @@ public import FLT.Mazur.HilbertFiniteFreeQuotientRefinement
 public import FLT.Mazur.HilbertFiniteFreeRelationErrorVanishing
 public import FLT.Mazur.HilbertFiniteFreeRelationPrincipalCoverage
 public import FLT.Mazur.HilbertFiniteFreeScalarCoordinates
+public import FLT.Mazur.HilbertFiniteFreeTraceUnit
 public import FLT.Mazur.HilbertFiniteInvariantAffineBasis
 public import FLT.Mazur.HilbertFiniteLabelBoundaryLifts
 public import FLT.Mazur.HilbertFiniteLabelRefinement
