@@ -14707,6 +14707,7 @@ public import FLT.Mazur.WeierstrassDividedMixedKernelPair
 public import FLT.Mazur.WeierstrassDividedMixedKernelPoints
 public import FLT.Mazur.WeierstrassDividedNegativeBranchSource
 public import FLT.Mazur.WeierstrassDividedNegativeTangentOutput
+public import FLT.Mazur.WeierstrassDividedNegativeTangentScheme
 public import FLT.Mazur.WeierstrassDividedNegativeTangentSlope
 public import FLT.Mazur.WeierstrassDividedNilpotentEarlierTerminal
 public import FLT.Mazur.WeierstrassDividedNilpotentInfinity
