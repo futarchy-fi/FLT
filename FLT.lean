@@ -12260,6 +12260,7 @@ public import FLT.Mazur.SchemeScalarAvoidanceCover
 public import FLT.Mazur.SchemeScalarAvoidanceIdeal
 public import FLT.Mazur.SchemeScalarBadPrimeDenominators
 public import FLT.Mazur.SchemeScalarBoundaryUnitCover
+public import FLT.Mazur.SchemeScalarChartDescent
 public import FLT.Mazur.SchemeScalarConstructibleImage
 public import FLT.Mazur.SchemeScalarFiniteBadPrimes
 public import FLT.Mazur.SchemeScalarFullAtlas
