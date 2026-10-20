@@ -15002,6 +15002,7 @@ public import FLT.Mazur.WeierstrassDividedSecantOriginalAction
 public import FLT.Mazur.WeierstrassDividedSecantPointGeometry
 public import FLT.Mazur.WeierstrassDividedSecantRefinementComparison
 public import FLT.Mazur.WeierstrassDividedSecantResidue
+public import FLT.Mazur.WeierstrassDividedSecantSchemeAction
 public import FLT.Mazur.WeierstrassDividedSecantSmoothPoint
 public import FLT.Mazur.WeierstrassDividedSecantSource
 public import FLT.Mazur.WeierstrassDividedSecondAtlasNodeRestriction
