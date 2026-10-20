@@ -8265,6 +8265,7 @@ public import FLT.Mazur.NonspecialDivisorTestCover
 public import FLT.Mazur.NonspecialDivisorTranslationCover
 public import FLT.Mazur.NonzeroLineSectionExact
 public import FLT.Mazur.NonzeroSectionPointCondition
+public import FLT.Mazur.NormalizedChartCoreInvariantCoefficients
 public import FLT.Mazur.NormalizedModuliDescentUniversal
 public import FLT.Mazur.NormalizedModuliInvariantDescent
 public import FLT.Mazur.NormalizedModuliParameterOverlap
