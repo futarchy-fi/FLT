@@ -15944,6 +15944,7 @@ public import FLT.Mazur.WeierstrassDividedTripleAdditionGluing
 public import FLT.Mazur.WeierstrassDividedTripleAdditionOverlap
 public import FLT.Mazur.WeierstrassDividedTripleAdditionSource
 public import FLT.Mazur.WeierstrassDividedTripleAdditionSourceCoverage
+public import FLT.Mazur.WeierstrassDividedTripleAmbientAddition
 public import FLT.Mazur.WeierstrassDividedTripleBranchCommonOutput
 public import FLT.Mazur.WeierstrassDividedTripleBranchOutput
 public import FLT.Mazur.WeierstrassDividedTripleBranchSecantContraction
