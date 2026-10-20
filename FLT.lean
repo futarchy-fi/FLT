@@ -11466,6 +11466,7 @@ public import FLT.Mazur.RelativeAbelFiberOriginalSquare
 public import FLT.Mazur.RelativeAcyclicClassDivisor
 public import FLT.Mazur.RelativeAcyclicClassDivisorNaturality
 public import FLT.Mazur.RelativeAcyclicPicardOpen
+public import FLT.Mazur.RelativeAdicAbsorption
 public import FLT.Mazur.RelativeAmpleAffineBaseChange
 public import FLT.Mazur.RelativeAmpleBaseChange
 public import FLT.Mazur.RelativeAmpleFpqcDescent
