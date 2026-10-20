@@ -2865,6 +2865,7 @@ public import FLT.Mazur.AffineCartesianNorm
 public import FLT.Mazur.AffineCartesianPreimageSections
 public import FLT.Mazur.AffineCartesianSectionPushout
 public import FLT.Mazur.AffineCartesianSectionScalars
+public import FLT.Mazur.AffineCartesianTrace
 public import FLT.Mazur.AffineCharpolyCharts
 public import FLT.Mazur.AffineCharpolyCoefficientGluing
 public import FLT.Mazur.AffineCharpolyPolynomial
@@ -3274,11 +3275,13 @@ public import FLT.Mazur.AffineLineCoefficients
 public import FLT.Mazur.AffineLineTwistLocalization
 public import FLT.Mazur.AffineLocalFiberRegularQuotient
 public import FLT.Mazur.AffineLocalHilbertTranslationCover
+public import FLT.Mazur.AffineLocallyFreeBoundaryTrace
 public import FLT.Mazur.AffineLocallyFreeCharpolyEquation
 public import FLT.Mazur.AffineLocallyFreeIntegralCoordinates
 public import FLT.Mazur.AffineLocallyFreeInvariantPolynomial
 public import FLT.Mazur.AffineLocallyFreeRelationCharpoly
 public import FLT.Mazur.AffineLocallyFreeRelationNorm
+public import FLT.Mazur.AffineLocallyFreeRelationTrace
 public import FLT.Mazur.AffineMinimalPrimeFiniteOpen
 public import FLT.Mazur.AffineModuleCoalgebraDescent
 public import FLT.Mazur.AffineModuleEpimorphisms
@@ -3446,6 +3449,10 @@ public import FLT.Mazur.AffineTildePullbackSectionMap
 public import FLT.Mazur.AffineTildeSemilinearCoherence
 public import FLT.Mazur.AffineTildeSemilinearMap
 public import FLT.Mazur.AffineTildeSemilinearNaturality
+public import FLT.Mazur.AffineTraceCharts
+public import FLT.Mazur.AffineTraceDegree
+public import FLT.Mazur.AffineTraceGluing
+public import FLT.Mazur.AffineTraceLinearity
 public import FLT.Mazur.AffineTripleCoefficientExtensionality
 public import FLT.Mazur.AffineTripleCoefficientMaps
 public import FLT.Mazur.AffineTripleOverlapCoefficients
@@ -4236,11 +4243,17 @@ public import FLT.Mazur.CurveUniformFieldDegreeBound
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
 public import FLT.Mazur.CyclicAuxiliaryPrescribedNormalizedNeighborhood
+public import FLT.Mazur.CyclicBoundaryAmpleModuli
+public import FLT.Mazur.CyclicBoundaryFaithfulLift
+public import FLT.Mazur.CyclicBoundaryFaithfulOpen
 public import FLT.Mazur.CyclicBoundaryGroupSections
+public import FLT.Mazur.CyclicBoundaryOriginalAmpleModuli
 public import FLT.Mazur.CyclicBoundaryOriginalMarkings
 public import FLT.Mazur.CyclicBoundaryParameterAction
 public import FLT.Mazur.CyclicBoundaryParameterSections
 public import FLT.Mazur.CyclicBoundarySectionMarking
+public import FLT.Mazur.CyclicBoundaryTestSubgroup
+public import FLT.Mazur.CyclicBoundaryUniversalSubgroup
 public import FLT.Mazur.CyclicCharacteristicAffineArrowGeometry
 public import FLT.Mazur.CyclicCharacteristicAffineCartierClassification
 public import FLT.Mazur.CyclicCharacteristicAffineCoefficientCoherence
@@ -6006,6 +6019,8 @@ public import FLT.Mazur.FiniteSectionProjectivePresentation
 public import FLT.Mazur.FiniteSeparablePointFactor
 public import FLT.Mazur.FiniteSeparatedLineSheafDescent
 public import FLT.Mazur.FiniteSubframeSelections
+public import FLT.Mazur.FiniteSubgroupAmpleComponents
+public import FLT.Mazur.FiniteSubgroupAmpleOpen
 public import FLT.Mazur.FiniteSubgroupClassPresheaf
 public import FLT.Mazur.FiniteSubgroupComparisonBaseChangeCriterion
 public import FLT.Mazur.FiniteSubgroupComparisonLocus
@@ -6727,8 +6742,10 @@ public import FLT.Mazur.HilbertFamilyTruncatedRelations
 public import FLT.Mazur.HilbertFiniteAffineNeighborhood
 public import FLT.Mazur.HilbertFiniteAmbientPresentation
 public import FLT.Mazur.HilbertFiniteBoundaryDomain
+public import FLT.Mazur.HilbertFiniteDomainBoundaryTrace
 public import FLT.Mazur.HilbertFiniteDomainErrorVanishing
 public import FLT.Mazur.HilbertFiniteDomainPrincipalCoverage
+public import FLT.Mazur.HilbertFiniteDomainTraceAnnihilator
 public import FLT.Mazur.HilbertFiniteFreeBoundaryIntegral
 public import FLT.Mazur.HilbertFiniteFreeBoundaryResidue
 public import FLT.Mazur.HilbertFiniteFreeQuotientRefinement
@@ -7439,6 +7456,7 @@ public import FLT.Mazur.IntersectionSectionLimitCoordinates
 public import FLT.Mazur.IntersectionUnitCocycle
 public import FLT.Mazur.IntersectionUnitCocycleRecovery
 public import FLT.Mazur.InvariantBoundaryPullback
+public import FLT.Mazur.InvariantFiniteDomainTrace
 public import FLT.Mazur.InvariantFiniteRelationPrincipal
 public import FLT.Mazur.InvariantFlatTensorAction
 public import FLT.Mazur.InvariantFlatTensorComparison
@@ -7449,6 +7467,7 @@ public import FLT.Mazur.InvariantLocalizationComparison
 public import FLT.Mazur.InvariantLocalizationCoordinates
 public import FLT.Mazur.InvariantLocalizationNumerator
 public import FLT.Mazur.InvariantObstructionNaturality
+public import FLT.Mazur.InvariantOpenBoundaryTrace
 public import FLT.Mazur.InvariantOpenFiniteRelation
 public import FLT.Mazur.InvariantOpenProjectiveIntegralCoordinates
 public import FLT.Mazur.InvariantOpenRelationDiagram
@@ -8978,6 +8997,7 @@ public import FLT.Mazur.PolygonArithmeticZeroTower
 public import FLT.Mazur.PolygonAtlas
 public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonAtlasSmoothLocus
+public import FLT.Mazur.PolygonBoundaryAmpleParameter
 public import FLT.Mazur.PolygonBoundaryClosedLayer
 public import FLT.Mazur.PolygonBoundaryClosedLifting
 public import FLT.Mazur.PolygonBoundaryCoefficientNaturality
@@ -11019,6 +11039,7 @@ public import FLT.Mazur.ProperAmpleFiberEnvelope
 public import FLT.Mazur.ProperAmpleFiberModel
 public import FLT.Mazur.ProperAmpleFiberNeighborhood
 public import FLT.Mazur.ProperAmpleFiberNoetherian
+public import FLT.Mazur.ProperAmpleFiberOpen
 public import FLT.Mazur.ProperAmpleRetainedChartCover
 public import FLT.Mazur.ProperAmpleRetainedProjIso
 public import FLT.Mazur.ProperAmpleSectionAffine
@@ -11611,6 +11632,7 @@ public import FLT.Mazur.RelativeRelationMonicSeedQuotient
 public import FLT.Mazur.RelativeRelationNilpotentGerms
 public import FLT.Mazur.RelativeRelationNilpotentSections
 public import FLT.Mazur.RelativeRelationNormPrincipal
+public import FLT.Mazur.RelativeRelationOpenCartesian
 public import FLT.Mazur.RelativeRelationOpenFunctionMap
 public import FLT.Mazur.RelativeRelationOpenSaturation
 public import FLT.Mazur.RelativeRelationOpenSourceFunctions
