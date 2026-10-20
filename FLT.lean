@@ -6111,7 +6111,9 @@ public import FLT.Mazur.FiniteRelationLocallyClosedAffineBasis
 public import FLT.Mazur.FiniteRelationNamedDomainTransitions
 public import FLT.Mazur.FiniteRelationPrescribedLiftCoefficients
 public import FLT.Mazur.FiniteRelationPrescribedLifting
+public import FLT.Mazur.FiniteRelationPrincipalBoundaryCover
 public import FLT.Mazur.FiniteRelationPrincipalCoverModels
+public import FLT.Mazur.FiniteRelationPrincipalHomogeneousCorrections
 public import FLT.Mazur.FiniteRelationPrincipalPathQuotients
 public import FLT.Mazur.FiniteRelationPrincipalProjection
 public import FLT.Mazur.FiniteRelationSpectrum
@@ -7608,6 +7610,7 @@ public import FLT.Mazur.InvariantOpenBoundaryTrace
 public import FLT.Mazur.InvariantOpenCoefficientGluing
 public import FLT.Mazur.InvariantOpenCoefficientRestriction
 public import FLT.Mazur.InvariantOpenFiniteRelation
+public import FLT.Mazur.InvariantOpenGlobalRestriction
 public import FLT.Mazur.InvariantOpenProjectiveIntegralCoordinates
 public import FLT.Mazur.InvariantOpenRelationDiagram
 public import FLT.Mazur.InvariantOpenRelationEquivalence
@@ -11519,6 +11522,7 @@ public import FLT.Mazur.RankStageInitialBoundaryLifting
 public import FLT.Mazur.RankStageInvariantOverlapCocycle
 public import FLT.Mazur.RankStageInvariantOverlapErrors
 public import FLT.Mazur.RankStageInvariantTransitions
+public import FLT.Mazur.RankStageNestedCoreHomogeneousCorrections
 public import FLT.Mazur.RankStageOriginalAffineBoundaryTower
 public import FLT.Mazur.RankStageOriginalAffineCompatibility
 public import FLT.Mazur.RankStageOriginalAffineEquationErrors
@@ -11541,6 +11545,7 @@ public import FLT.Mazur.RankStageOriginalScalarSupport
 public import FLT.Mazur.RankStagePrescribedBoundaryLifting
 public import FLT.Mazur.RankStagePrescribedBoundaryTower
 public import FLT.Mazur.RankStagePrescribedLiftingProperty
+public import FLT.Mazur.RankStagePrincipalCoreCorrections
 public import FLT.Mazur.RankStageRelationTransitions
 public import FLT.Mazur.RankStageStructureMaps
 public import FLT.Mazur.RankStageTransitionTopology
@@ -12514,6 +12519,7 @@ public import FLT.Mazur.SchemeRelationEtaleBranchPropagation
 public import FLT.Mazur.SchemeRelationEtaleCoverDescent
 public import FLT.Mazur.SchemeRelationEtaleImageModel
 public import FLT.Mazur.SchemeRelationEtaleKernelDescent
+public import FLT.Mazur.SchemeRelationFiniteBoundaryNumerators
 public import FLT.Mazur.SchemeRelationFunctionDescent
 public import FLT.Mazur.SchemeRelationFunctionDiagram
 public import FLT.Mazur.SchemeRelationGeometricCertificate
@@ -12569,6 +12575,8 @@ public import FLT.Mazur.SchemeRelationOrbitAtlasDescent
 public import FLT.Mazur.SchemeRelationOrbitAtlasKernel
 public import FLT.Mazur.SchemeRelationOrbitOpenModel
 public import FLT.Mazur.SchemeRelationOverRestriction
+public import FLT.Mazur.SchemeRelationPrincipalBoundaryNumerator
+public import FLT.Mazur.SchemeRelationPrincipalBoundaryPatching
 public import FLT.Mazur.SchemeRelationPrincipalFullInvariants
 public import FLT.Mazur.SchemeRelationPrincipalKernelTests
 public import FLT.Mazur.SchemeRelationPrincipalLocalization
