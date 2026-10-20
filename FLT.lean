@@ -7476,6 +7476,7 @@ public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IdealQuotientSectionLift
 public import FLT.Mazur.IdealSheafAdicStalkSeparation
 public import FLT.Mazur.IdealSheafAffineTestErrors
+public import FLT.Mazur.IdealSheafClopenStabilization
 public import FLT.Mazur.IdealSheafClosedCoreTests
 public import FLT.Mazur.IdealSheafClosedTransitions
 public import FLT.Mazur.IdealSheafFactorizationSupport
