@@ -4491,6 +4491,7 @@ public import FLT.Mazur.CyclicCharacteristicRingedCoequalizer
 public import FLT.Mazur.CyclicCharacteristicRingedCofork
 public import FLT.Mazur.CyclicCharacteristicRingedDescent
 public import FLT.Mazur.CyclicCharacteristicSheafChartMorphism
+public import FLT.Mazur.CyclicCharacteristicSmoothParameterScope
 public import FLT.Mazur.CyclicCharacteristicSmoothUnmarkedClass
 public import FLT.Mazur.CyclicCharacteristicSmoothUnmarkedMorphism
 public import FLT.Mazur.CyclicCharacteristicTransitionCover
