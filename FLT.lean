@@ -14481,6 +14481,7 @@ public import FLT.Mazur.WeierstrassDividedKernelClosure
 public import FLT.Mazur.WeierstrassDividedKernelClosureNegation
 public import FLT.Mazur.WeierstrassDividedKernelContraction
 public import FLT.Mazur.WeierstrassDividedKernelFinite
+public import FLT.Mazur.WeierstrassDividedKernelNegationComparison
 public import FLT.Mazur.WeierstrassDividedKernelSmoothEmbedding
 public import FLT.Mazur.WeierstrassDividedKernelSmoothRecovery
 public import FLT.Mazur.WeierstrassDividedKernelSmoothStep
