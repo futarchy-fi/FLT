@@ -11577,6 +11577,7 @@ public import FLT.Mazur.RankStageFiniteCoreGluing
 public import FLT.Mazur.RankStageFiniteCoverBoundaryTowers
 public import FLT.Mazur.RankStageFiniteGlobalOverlapNumerators
 public import FLT.Mazur.RankStageFiniteInvariantDetection
+public import FLT.Mazur.RankStageFiniteOriginalNorm
 public import FLT.Mazur.RankStageFiniteOriginalObstruction
 public import FLT.Mazur.RankStageFullBoundaryGluing
 public import FLT.Mazur.RankStageGlobalBoundaryNumerators
