@@ -5748,6 +5748,8 @@ public import FLT.Mazur.FiniteCartierQuotientComparison
 public import FLT.Mazur.FiniteCartierQuotientIso
 public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
+public import FLT.Mazur.FiniteCharacterAdicElements
+public import FLT.Mazur.FiniteCharacterAdicHom
 public import FLT.Mazur.FiniteClosedIdealSection
 public import FLT.Mazur.FiniteClosedImmersionIntegerDescent
 public import FLT.Mazur.FiniteCoefficientDifferenceIdeal
@@ -8489,6 +8491,13 @@ public import FLT.Mazur.OddWeierstrassThreeTorsionEtale
 public import FLT.Mazur.OddWeierstrassThreeTorsionFinite
 public import FLT.Mazur.OddWeierstrassThreeTorsionUnramified
 public import FLT.Mazur.OneGonActionRotations
+public import FLT.Mazur.OneGonAdicCharacterAffineEffectivity
+public import FLT.Mazur.OneGonAdicCharacterChartTower
+public import FLT.Mazur.OneGonAdicCharacterStages
+public import FLT.Mazur.OneGonAdicCharacterStep
+public import FLT.Mazur.OneGonAdicCharacterTower
+public import FLT.Mazur.OneGonAdicChartProjection
+public import FLT.Mazur.OneGonAdicChartRestriction
 public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
@@ -8541,6 +8550,8 @@ public import FLT.Mazur.OneGonNilpotentCharacterHom
 public import FLT.Mazur.OneGonNilpotentDiagonalizableLift
 public import FLT.Mazur.OneGonNilpotentIntrinsicHomLift
 public import FLT.Mazur.OneGonNilpotentSmoothAffine
+public import FLT.Mazur.OneGonNilpotentSurjectiveCharacterLift
+public import FLT.Mazur.OneGonNilpotentSurjectiveHomLift
 public import FLT.Mazur.OneGonNodalCoefficientGroupMap
 public import FLT.Mazur.OneGonNodalCoefficientGroupProjection
 public import FLT.Mazur.OneGonNodeNormalizationIdeal
@@ -13438,6 +13449,7 @@ public import FLT.Mazur.WeierstrassChangeGeneralizedNaturality
 public import FLT.Mazur.WeierstrassChangeParameter
 public import FLT.Mazur.WeierstrassChangePointedGeneralizedIso
 public import FLT.Mazur.WeierstrassChangeSubgroupScheme
+public import FLT.Mazur.WeierstrassCharacterCoefficientNaturality
 public import FLT.Mazur.WeierstrassChartArithmeticRestriction
 public import FLT.Mazur.WeierstrassChartBaseChange
 public import FLT.Mazur.WeierstrassChartBaseChangeSquare
@@ -13462,6 +13474,7 @@ public import FLT.Mazur.WeierstrassClosureSmoothGroupOperations
 public import FLT.Mazur.WeierstrassCoefficientAddition
 public import FLT.Mazur.WeierstrassCoefficientAffineProduct
 public import FLT.Mazur.WeierstrassCoefficientChartPreimage
+public import FLT.Mazur.WeierstrassCoefficientChartTransport
 public import FLT.Mazur.WeierstrassCoefficientFieldCover
 public import FLT.Mazur.WeierstrassCoefficientGeneralizedIso
 public import FLT.Mazur.WeierstrassCoefficientGroup
