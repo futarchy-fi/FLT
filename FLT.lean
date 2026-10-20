@@ -15514,6 +15514,7 @@ public import FLT.Mazur.WeierstrassDividedTripleDepthCoefficients
 public import FLT.Mazur.WeierstrassDividedTripleNegativeBranchContraction
 public import FLT.Mazur.WeierstrassDividedTripleNegativeBranchOutput
 public import FLT.Mazur.WeierstrassDividedTripleNormalizedBranchLift
+public import FLT.Mazur.WeierstrassDividedTripleTangentBranchCoverage
 public import FLT.Mazur.WeierstrassDividedTwistedAtlas
 public import FLT.Mazur.WeierstrassDividedTwistedAtlasGluing
 public import FLT.Mazur.WeierstrassDividedTwistedAtlasRestriction
