@@ -12935,6 +12935,7 @@ public import FLT.Mazur.UnpointedAcyclicOpenPointedCompatibility
 public import FLT.Mazur.UnpointedLocalAcyclicDivisorCover
 public import FLT.Mazur.UnpointedLocalAcyclicEffectiveDescent
 public import FLT.Mazur.UnpointedLocalAcyclicFppfSheaf
+public import FLT.Mazur.UnramifiedFiniteSectionMatching
 public import FLT.Mazur.UnramifiedSectionCoincidence
 public import FLT.Mazur.UnramifiedSectionImmersion
 public import FLT.Mazur.UnrestrictedSmoothFamilyCartier
