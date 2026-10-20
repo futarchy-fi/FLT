@@ -3891,6 +3891,7 @@ public import FLT.Mazur.CartierGeneratorMarkedSubgroup
 public import FLT.Mazur.CartierGeneratorOrbitCover
 public import FLT.Mazur.CartierGeneratorOrbitRecovery
 public import FLT.Mazur.CartierGeneratorSplitPresentation
+public import FLT.Mazur.CartierGeneratorTorsionLocalRelabel
 public import FLT.Mazur.CartierGeneratorUnitPowers
 public import FLT.Mazur.CartierIdealCoproduct
 public import FLT.Mazur.CartierIdealDescentDatum
@@ -4152,6 +4153,7 @@ public import FLT.Mazur.CompatibleSubgroupOrbitMarking
 public import FLT.Mazur.CompatibleSubgroupParameterRefinement
 public import FLT.Mazur.CompatibleSubgroupPointClassification
 public import FLT.Mazur.CompatibleSubgroupSectionComposition
+public import FLT.Mazur.CompatibleTorsionCurveMarkingRelabel
 public import FLT.Mazur.CompleteBoundaryAmpleCyclicLevels
 public import FLT.Mazur.ConnectedClosedFiberThickening
 public import FLT.Mazur.ConnectedFiberGeneralization
@@ -4492,6 +4494,8 @@ public import FLT.Mazur.CyclicHomDivisorPullback
 public import FLT.Mazur.CyclicHomGeometricMarkedComparison
 public import FLT.Mazur.CyclicHomGeometricNormalizationOrbit
 public import FLT.Mazur.CyclicHomGlobalMarkedRelation
+public import FLT.Mazur.CyclicHomLocalMarkedComparison
+public import FLT.Mazur.CyclicHomLocalNormalizationOrbit
 public import FLT.Mazur.CyclicHomLocusEquationUniversal
 public import FLT.Mazur.CyclicHomLocusFppfCoverage
 public import FLT.Mazur.CyclicHomLocusModuli
@@ -4528,6 +4532,7 @@ public import FLT.Mazur.CyclicHomNormalizedFppfCoverage
 public import FLT.Mazur.CyclicHomNormalizedFppfCoverageUnrestricted
 public import FLT.Mazur.CyclicHomNormalizedGeometricOrbit
 public import FLT.Mazur.CyclicHomNormalizedImageSieve
+public import FLT.Mazur.CyclicHomNormalizedLocalOrbit
 public import FLT.Mazur.CyclicHomNormalizedLocus
 public import FLT.Mazur.CyclicHomNormalizedModuli
 public import FLT.Mazur.CyclicHomNormalizedRelabelAction
@@ -4545,6 +4550,7 @@ public import FLT.Mazur.CyclicHomRelabelSubgroupMarking
 public import FLT.Mazur.CyclicHomRelabeledNormalizationIso
 public import FLT.Mazur.CyclicHomRelationIsoCoherence
 public import FLT.Mazur.CyclicHomRelationIsoNaturality
+public import FLT.Mazur.CyclicHomRestrictedMarkedComparison
 public import FLT.Mazur.CyclicHomSourceDivisor
 public import FLT.Mazur.CyclicHomSourceGroupComparison
 public import FLT.Mazur.CyclicHomSourceIdealPullback
@@ -6486,11 +6492,15 @@ public import FLT.Mazur.GroupSchemeBaseChangeSections
 public import FLT.Mazur.GroupSchemeBaseIsoTransport
 public import FLT.Mazur.GroupSchemePointAdjunction
 public import FLT.Mazur.GroupSectionBaseChange
+public import FLT.Mazur.GroupSectionRestrictionEquality
 public import FLT.Mazur.GroupTorsionBaseChange
 public import FLT.Mazur.GroupTorsionCommutativeStructure
+public import FLT.Mazur.GroupTorsionLocalMatching
 public import FLT.Mazur.GroupTorsionProper
 public import FLT.Mazur.GroupTorsionScheme
 public import FLT.Mazur.GroupTorsionTransport
+public import FLT.Mazur.GroupTorsionUnramifiedBaseChange
+public import FLT.Mazur.GroupTorsionUnramifiedTransport
 public import FLT.Mazur.HenselianRingEquivalence
 public import FLT.Mazur.HenselianSmallCubic
 public import FLT.Mazur.HigherDirectImageOpenSheafification
@@ -6934,11 +6944,16 @@ public import FLT.Mazur.HilbertRelatedFixedScalarCharts
 public import FLT.Mazur.HilbertRelatedIrreducibleCharacters
 public import FLT.Mazur.HilbertRelatedPrincipalCharacters
 public import FLT.Mazur.HilbertRepeatedMonomialChart
+public import FLT.Mazur.HilbertRequiredScalarBoundaryLifts
 public import FLT.Mazur.HilbertRequiredScalarFiniteCover
 public import FLT.Mazur.HilbertRequiredScalarImage
 public import FLT.Mazur.HilbertRequiredScalarInfinitesimals
 public import FLT.Mazur.HilbertResidualRankCeiling
 public import FLT.Mazur.HilbertSameAmbientChartIso
+public import FLT.Mazur.HilbertScalarChartAtlasCorrections
+public import FLT.Mazur.HilbertScalarChartBoundaryData
+public import FLT.Mazur.HilbertScalarChartBoundaryPullback
+public import FLT.Mazur.HilbertScalarChartBoundaryTests
 public import FLT.Mazur.HilbertSourceActionRelationGraph
 public import FLT.Mazur.HilbertSourceActualMultiplierIdeal
 public import FLT.Mazur.HilbertSourceBadAffineChartEquations
@@ -8097,6 +8112,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryFullBasis
 public import FLT.Mazur.OddWeierstrassAuxiliaryGeometricFull
 public import FLT.Mazur.OddWeierstrassAuxiliaryGeometricRelabel
 public import FLT.Mazur.OddWeierstrassAuxiliaryGroupSourceNaturality
+public import FLT.Mazur.OddWeierstrassAuxiliaryInvertibleTorsion
 public import FLT.Mazur.OddWeierstrassAuxiliaryLevel
 public import FLT.Mazur.OddWeierstrassAuxiliaryLocalRelabel
 public import FLT.Mazur.OddWeierstrassAuxiliaryLocalTorsion
@@ -8153,6 +8169,8 @@ public import FLT.Mazur.OddWeierstrassCyclicHomGeneratorRelation
 public import FLT.Mazur.OddWeierstrassCyclicHomGeometricMarkedComparison
 public import FLT.Mazur.OddWeierstrassCyclicHomGeometricNormalizationOrbit
 public import FLT.Mazur.OddWeierstrassCyclicHomGlobalMarkedRelation
+public import FLT.Mazur.OddWeierstrassCyclicHomLocalMarkedComparison
+public import FLT.Mazur.OddWeierstrassCyclicHomLocalNormalizationOrbit
 public import FLT.Mazur.OddWeierstrassCyclicHomLocusEquationUniversal
 public import FLT.Mazur.OddWeierstrassCyclicHomLocusFppfCoverage
 public import FLT.Mazur.OddWeierstrassCyclicHomLocusNormalizationRelation
@@ -8189,6 +8207,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedCoverage
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedCoverageUnrestricted
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedCubicValue
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedGeometricOrbit
+public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedLocalOrbit
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedLocus
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedLocusSlice
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedLocusSliceAction
@@ -8210,6 +8229,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomRelabelSubgroupMarking
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabeledNormalizationIso
 public import FLT.Mazur.OddWeierstrassCyclicHomRelationIsoCoherence
 public import FLT.Mazur.OddWeierstrassCyclicHomRelationIsoNaturality
+public import FLT.Mazur.OddWeierstrassCyclicHomRestrictedMarkedComparison
 public import FLT.Mazur.OddWeierstrassCyclicHomRetainedPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomSliceFunctor
 public import FLT.Mazur.OddWeierstrassCyclicHomSliceRelabelAction
@@ -11648,6 +11668,7 @@ public import FLT.Mazur.ScalarMinimalCharacterNeighborhood
 public import FLT.Mazur.ScalarMinimalCharacterPropagation
 public import FLT.Mazur.ScalarNilpotenceFlatBaseChange
 public import FLT.Mazur.ScalarNilpotenceMinimalFiber
+public import FLT.Mazur.ScalarPrimeThickeningTransitions
 public import FLT.Mazur.ScalarPrimeThickenings
 public import FLT.Mazur.ScalarQuotientImagePresentation
 public import FLT.Mazur.ScalarQuotientImageReduction
@@ -12241,6 +12262,8 @@ public import FLT.Mazur.SchemeScalarIntegralCover
 public import FLT.Mazur.SchemeScalarMinimalEndpoint
 public import FLT.Mazur.SchemeScalarPrincipalNeighborhood
 public import FLT.Mazur.SchemeScalarPrincipalNeighborhoodFamily
+public import FLT.Mazur.SchemeScalarRelationPullback
+public import FLT.Mazur.SchemeScalarRelationTransition
 public import FLT.Mazur.SchemeScalarResidueImage
 public import FLT.Mazur.SchemeSectionFamilyProduct
 public import FLT.Mazur.SchemeSectionFrameCompatibility
@@ -12819,6 +12842,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryFullNormalizedMarking
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryGeometricFull
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryGeometricRelabel
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryGroupSourceNaturality
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryInvertibleTorsion
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryIsomorphismUnique
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryLevel
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryLocalRelabel
@@ -14222,6 +14246,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteOverlap
 public import FLT.Mazur.WeierstrassDividedFiniteProper
 public import FLT.Mazur.WeierstrassDividedFiniteResidueNodes
 public import FLT.Mazur.WeierstrassDividedFiniteResidueOverlap
+public import FLT.Mazur.WeierstrassDividedFiniteSecantInput
 public import FLT.Mazur.WeierstrassDividedFiniteSmoothOpen
 public import FLT.Mazur.WeierstrassDividedFiniteStageRetention
 public import FLT.Mazur.WeierstrassDividedFiniteTensorAtlas
@@ -14661,6 +14686,9 @@ public import FLT.Mazur.WeierstrassDividedOrderedRetainedSections
 public import FLT.Mazur.WeierstrassDividedOriginalNodeBase
 public import FLT.Mazur.WeierstrassDividedOriginalScaleOpen
 public import FLT.Mazur.WeierstrassDividedOriginalXOpen
+public import FLT.Mazur.WeierstrassDividedPairSecant
+public import FLT.Mazur.WeierstrassDividedPairSecantEvaluation
+public import FLT.Mazur.WeierstrassDividedPairSecantGeometry
 public import FLT.Mazur.WeierstrassDividedPolygonAdjacencyClassification
 public import FLT.Mazur.WeierstrassDividedPolygonClosingCriterion
 public import FLT.Mazur.WeierstrassDividedPolygonComparisonCharts
@@ -14896,6 +14924,7 @@ public import FLT.Mazur.WeierstrassDividedResolvedOriginalOpen
 public import FLT.Mazur.WeierstrassDividedResolvedPartialAddition
 public import FLT.Mazur.WeierstrassDividedResolvedProductOpens
 public import FLT.Mazur.WeierstrassDividedResolvedProductOverlap
+public import FLT.Mazur.WeierstrassDividedResolvedSecant
 public import FLT.Mazur.WeierstrassDividedResolvedSmoothAction
 public import FLT.Mazur.WeierstrassDividedResolvedSmoothActionLaws
 public import FLT.Mazur.WeierstrassDividedResolvedSmoothActionSquare
@@ -14961,6 +14990,10 @@ public import FLT.Mazur.WeierstrassDividedRevisedTensorMaps
 public import FLT.Mazur.WeierstrassDividedRevisedTerminalBase
 public import FLT.Mazur.WeierstrassDividedRevisedTerminalReflection
 public import FLT.Mazur.WeierstrassDividedRevisedTwistedIso
+public import FLT.Mazur.WeierstrassDividedSecantComparison
+public import FLT.Mazur.WeierstrassDividedSecantFormula
+public import FLT.Mazur.WeierstrassDividedSecantResidue
+public import FLT.Mazur.WeierstrassDividedSecantSource
 public import FLT.Mazur.WeierstrassDividedSecondAtlasNodeRestriction
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlas
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlasClosing
@@ -15613,6 +15646,7 @@ public import FLT.Mazur.WeierstrassFrameNormalization
 public import FLT.Mazur.WeierstrassGeneralizedEllipticModel
 public import FLT.Mazur.WeierstrassGeneralizedPointedComparison
 public import FLT.Mazur.WeierstrassGeneralizedSmoothComparison
+public import FLT.Mazur.WeierstrassGeneratorLocalRelabel
 public import FLT.Mazur.WeierstrassGenericClosureNegation
 public import FLT.Mazur.WeierstrassGenericClosurePairComparison
 public import FLT.Mazur.WeierstrassGenericClosureSmoothDensity
