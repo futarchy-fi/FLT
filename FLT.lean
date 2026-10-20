@@ -15582,6 +15582,7 @@ public import FLT.Mazur.WeierstrassDividedQuadrupleReciprocalTangent
 public import FLT.Mazur.WeierstrassDividedQuadrupleRelativeSmoothCoverage
 public import FLT.Mazur.WeierstrassDividedQuadrupleRightOverlap
 public import FLT.Mazur.WeierstrassDividedQuadrupleSecantOverlap
+public import FLT.Mazur.WeierstrassDividedQuadrupleShallowOverlap
 public import FLT.Mazur.WeierstrassDividedQuadrupleSuppliedAmbient
 public import FLT.Mazur.WeierstrassDividedQuadrupleTangentExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedQuadrupleTangentOverlap
