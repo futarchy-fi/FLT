@@ -3596,6 +3596,7 @@ public import FLT.Mazur.ArbitraryGeometricOriginalOpenImage
 public import FLT.Mazur.ArbitraryGeometricProperCore
 public import FLT.Mazur.ArbitraryPicardAffineEtaleChart
 public import FLT.Mazur.ArbitraryPicardEtaleTranslation
+public import FLT.Mazur.ArithmeticOneGonArbitrarySubgroupPullback
 public import FLT.Mazur.ArithmeticOneGonBoundaryFiber
 public import FLT.Mazur.ArithmeticOneGonFamily
 public import FLT.Mazur.ArithmeticOneGonFiberTorus
@@ -7635,6 +7636,9 @@ public import FLT.Mazur.LaurentFirstParameterSubstitution
 public import FLT.Mazur.LaurentFirstStageParameter
 public import FLT.Mazur.LaurentFirstStageParameterEquiv
 public import FLT.Mazur.LaurentFirstStageParameterTorus
+public import FLT.Mazur.LaurentHopfCyclicCharacters
+public import FLT.Mazur.LaurentHopfRootsClassification
+public import FLT.Mazur.LaurentHopfRootsScheme
 public import FLT.Mazur.LaurentIdentityIdeal
 public import FLT.Mazur.LaurentLineActionDensity
 public import FLT.Mazur.LaurentLineActionEvaluation
@@ -12968,6 +12972,12 @@ public import FLT.Mazur.TildeFiniteFreeLocalization
 public import FLT.Mazur.TildeInvertibleLocal
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TildeSourceSectionComparison
+public import FLT.Mazur.ToricFiniteSubgroupHopfPresentation
+public import FLT.Mazur.ToricFiniteSubgroupHopfRank
+public import FLT.Mazur.ToricFiniteSubgroupRootsClassification
+public import FLT.Mazur.ToricFiniteSubgroupRootsCompatibility
+public import FLT.Mazur.ToricHopfCharacterKernel
+public import FLT.Mazur.ToricHopfQuotientCoordinates
 public import FLT.Mazur.TorusArithmeticCyclicity
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TorusCyclotomicGenerator
