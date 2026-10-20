@@ -11516,6 +11516,7 @@ public import FLT.Mazur.RankStageFiniteGlobalOverlapNumerators
 public import FLT.Mazur.RankStageFiniteInvariantDetection
 public import FLT.Mazur.RankStageFullBoundaryGluing
 public import FLT.Mazur.RankStageGlobalBoundaryNumerators
+public import FLT.Mazur.RankStageGlobalKernelLocalization
 public import FLT.Mazur.RankStageInitialBoundaryLifting
 public import FLT.Mazur.RankStageInvariantNormParameters
 public import FLT.Mazur.RankStageInvariantOverlapCocycle
