@@ -8532,6 +8532,7 @@ public import FLT.Mazur.OneGonAdicChartRestriction
 public import FLT.Mazur.OneGonAdicFiniteSubgroup
 public import FLT.Mazur.OneGonAdicInitialParameter
 public import FLT.Mazur.OneGonAdicInitialRoots
+public import FLT.Mazur.OneGonAdicModuliChart
 public import FLT.Mazur.OneGonAdicPrescribedBoundary
 public import FLT.Mazur.OneGonAdicReductionCartesian
 public import FLT.Mazur.OneGonAdicSmoothProjection
