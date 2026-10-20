@@ -16461,6 +16461,7 @@ public import FLT.Mazur.WeierstrassResidueOneGonIso
 public import FLT.Mazur.WeierstrassResidueTangentCoefficientTower
 public import FLT.Mazur.WeierstrassResidueTangentComponentData
 public import FLT.Mazur.WeierstrassResidueTangentEquationData
+public import FLT.Mazur.WeierstrassResolvedKernelNegation
 public import FLT.Mazur.WeierstrassResolvedKernelSections
 public import FLT.Mazur.WeierstrassResolvedKernelSmoothCoverage
 public import FLT.Mazur.WeierstrassResolvedKernelSmoothEmbedding
