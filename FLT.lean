@@ -3452,6 +3452,7 @@ public import FLT.Mazur.AffineTildeSemilinearMap
 public import FLT.Mazur.AffineTildeSemilinearNaturality
 public import FLT.Mazur.AffineTraceCharts
 public import FLT.Mazur.AffineTraceDegree
+public import FLT.Mazur.AffineTraceGlobalBasis
 public import FLT.Mazur.AffineTraceGluing
 public import FLT.Mazur.AffineTraceLinearity
 public import FLT.Mazur.AffineTripleCoefficientExtensionality
