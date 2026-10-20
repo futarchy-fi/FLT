@@ -3591,6 +3591,11 @@ public import FLT.Mazur.ArbitraryGeometricOriginalOpenImage
 public import FLT.Mazur.ArbitraryGeometricProperCore
 public import FLT.Mazur.ArbitraryPicardAffineEtaleChart
 public import FLT.Mazur.ArbitraryPicardEtaleTranslation
+public import FLT.Mazur.ArithmeticOneGonFamily
+public import FLT.Mazur.ArithmeticOneGonFieldFibers
+public import FLT.Mazur.ArithmeticOneGonGeneralizedCurve
+public import FLT.Mazur.ArithmeticOneGonRotations
+public import FLT.Mazur.ArithmeticOneGonSubgroupAmple
 public import FLT.Mazur.ArithmeticRootsOfUnitySections
 public import FLT.Mazur.ArithmeticTorusPoints
 public import FLT.Mazur.ArtinianClosedFiberFunctions
@@ -3976,6 +3981,8 @@ public import FLT.Mazur.CechSortingMaps
 public import FLT.Mazur.CechSortingRecursiveHomotopy
 public import FLT.Mazur.CechSortingTupleChains
 public import FLT.Mazur.CharacterAlgebraScalarExtension
+public import FLT.Mazur.CharacterGroupBaseChange
+public import FLT.Mazur.CharacterScalarBialgebra
 public import FLT.Mazur.CharacterSchemeBaseChange
 public import FLT.Mazur.CharacteristicTwoThreeOpens
 public import FLT.Mazur.ChowAffineBaseAcyclicPower
@@ -7497,6 +7504,7 @@ public import FLT.Mazur.IntegralCyclotomicCover
 public import FLT.Mazur.IntegralCyclotomicOrbit
 public import FLT.Mazur.IntegralDimension
 public import FLT.Mazur.IntegralImageIdealStalk
+public import FLT.Mazur.IntegralOneGonSpecializations
 public import FLT.Mazur.IntegralPointExtension
 public import FLT.Mazur.IntegralShortHomologyNaturality
 public import FLT.Mazur.IntegralWeierstrassAuxiliaryLevel
@@ -8434,6 +8442,7 @@ public import FLT.Mazur.OneGonActionRotations
 public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
+public import FLT.Mazur.OneGonAllOrderAmple
 public import FLT.Mazur.OneGonClosedCyclicParameter
 public import FLT.Mazur.OneGonClosedGroupInclusion
 public import FLT.Mazur.OneGonCocone
@@ -11810,6 +11819,7 @@ public import FLT.Mazur.RootsOfUnityAlgebra
 public import FLT.Mazur.RootsOfUnityAlgebraPoints
 public import FLT.Mazur.RootsOfUnityArithmeticPullback
 public import FLT.Mazur.RootsOfUnityCartier
+public import FLT.Mazur.RootsOfUnityGroupBaseChange
 public import FLT.Mazur.RootsOfUnityInclusionBaseChange
 public import FLT.Mazur.RootsOfUnityLaurentKernel
 public import FLT.Mazur.RootsOfUnityNonEtale
@@ -12925,12 +12935,14 @@ public import FLT.Mazur.TildeFiniteFreeLocalization
 public import FLT.Mazur.TildeInvertibleLocal
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TildeSourceSectionComparison
+public import FLT.Mazur.TorusArithmeticCyclicity
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TorusCyclotomicGenerator
 public import FLT.Mazur.TorusPointUnitEquiv
 public import FLT.Mazur.TorusRootsOfUnityCartier
 public import FLT.Mazur.TorusRootsOfUnityPrimePowerCyclic
 public import FLT.Mazur.TorusRootsOfUnitySubgroup
+public import FLT.Mazur.TorusSubgroupArithmeticComparison
 public import FLT.Mazur.TranscendentalAcyclicTranslation
 public import FLT.Mazur.TranscendentalAffineOpenOrbit
 public import FLT.Mazur.TranscendentalCoefficientOrbitAvoidance
