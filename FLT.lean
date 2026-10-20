@@ -4715,6 +4715,7 @@ public import FLT.Mazur.DiagonalizableCoefficientReduction
 public import FLT.Mazur.DiagonalizableCofaceIdentities
 public import FLT.Mazur.DiagonalizableInfinitesimalIdeal
 public import FLT.Mazur.DiagonalizableInfinitesimalNaturality
+public import FLT.Mazur.DiagonalizableProductAlgebra
 public import FLT.Mazur.DiagonalizableSquareZeroCocycle
 public import FLT.Mazur.DiagonalizableSquareZeroCoefficients
 public import FLT.Mazur.DifferenceNodeAlgebra
