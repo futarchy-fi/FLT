@@ -2963,6 +2963,7 @@ public import FLT.Mazur.AffineFiberProductRefinementCocycle
 public import FLT.Mazur.AffineFiberwiseSectionCartier
 public import FLT.Mazur.AffineFiniteFreeAtlas
 public import FLT.Mazur.AffineFiniteFreeDirectedCover
+public import FLT.Mazur.AffineFiniteFreeRelationTraceUnit
 public import FLT.Mazur.AffineFiniteTypeModelSystem
 public import FLT.Mazur.AffineFpqcRefinement
 public import FLT.Mazur.AffineFramedLineHomExt
