@@ -15923,6 +15923,7 @@ public import FLT.Mazur.WeierstrassDividedTripleSecantGluing
 public import FLT.Mazur.WeierstrassDividedTripleSecantNeighborhood
 public import FLT.Mazur.WeierstrassDividedTripleSecantNeighborhoodCover
 public import FLT.Mazur.WeierstrassDividedTripleTangentBranchCoverage
+public import FLT.Mazur.WeierstrassDividedTripleTangentNeighborhood
 public import FLT.Mazur.WeierstrassDividedTwistedAtlas
 public import FLT.Mazur.WeierstrassDividedTwistedAtlasGluing
 public import FLT.Mazur.WeierstrassDividedTwistedAtlasRestriction
