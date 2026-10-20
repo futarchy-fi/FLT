@@ -4294,6 +4294,7 @@ public import FLT.Mazur.CurveSurjectiveOpenComplement
 public import FLT.Mazur.CurveUniformFieldDegreeBound
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
+public import FLT.Mazur.CyclicAdicParameterQuotient
 public import FLT.Mazur.CyclicAdicParameterRelation
 public import FLT.Mazur.CyclicAdicParameters
 public import FLT.Mazur.CyclicAuxiliaryPrescribedNormalizedNeighborhood
