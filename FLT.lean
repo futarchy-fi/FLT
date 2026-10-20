@@ -5674,6 +5674,7 @@ public import FLT.Mazur.FiniteExtensionDVRModel
 public import FLT.Mazur.FiniteExtensionPerfectDVRModel
 public import FLT.Mazur.FiniteExtensionPerfectValuationSubring
 public import FLT.Mazur.FiniteExtensionValuationSubring
+public import FLT.Mazur.FiniteFaithfulMarkingRelabel
 public import FLT.Mazur.FiniteFamilySupportBaseChange
 public import FLT.Mazur.FiniteFamilySupportOpen
 public import FLT.Mazur.FiniteFiberClosedImmersion
