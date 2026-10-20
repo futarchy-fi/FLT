@@ -8161,6 +8161,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomGeneratorRelation
 public import FLT.Mazur.OddWeierstrassCyclicHomGeometricMarkedComparison
 public import FLT.Mazur.OddWeierstrassCyclicHomGeometricNormalizationOrbit
 public import FLT.Mazur.OddWeierstrassCyclicHomGlobalMarkedRelation
+public import FLT.Mazur.OddWeierstrassCyclicHomLocalMarkedComparison
 public import FLT.Mazur.OddWeierstrassCyclicHomLocusEquationUniversal
 public import FLT.Mazur.OddWeierstrassCyclicHomLocusFppfCoverage
 public import FLT.Mazur.OddWeierstrassCyclicHomLocusNormalizationRelation
