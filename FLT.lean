@@ -2865,6 +2865,9 @@ public import FLT.Mazur.AffineCartesianNorm
 public import FLT.Mazur.AffineCartesianPreimageSections
 public import FLT.Mazur.AffineCartesianSectionPushout
 public import FLT.Mazur.AffineCartesianSectionScalars
+public import FLT.Mazur.AffineCharpolyCharts
+public import FLT.Mazur.AffineCharpolyCoefficientGluing
+public import FLT.Mazur.AffineCharpolyPolynomial
 public import FLT.Mazur.AffineChartOpenSectionTransport
 public import FLT.Mazur.AffineChartResidueEquation
 public import FLT.Mazur.AffineChartResidueRetraction
@@ -2872,6 +2875,7 @@ public import FLT.Mazur.AffineChartSectionLineRecovery
 public import FLT.Mazur.AffineChartSectionLocalization
 public import FLT.Mazur.AffineChartSourceScalars
 public import FLT.Mazur.AffineChartStalkScalars
+public import FLT.Mazur.AffineChosenBasisCharpoly
 public import FLT.Mazur.AffineClosedBoundaryKernelLifting
 public import FLT.Mazur.AffineClosedLimitDescent
 public import FLT.Mazur.AffineClosedModuleDescent
@@ -3270,6 +3274,10 @@ public import FLT.Mazur.AffineLineCoefficients
 public import FLT.Mazur.AffineLineTwistLocalization
 public import FLT.Mazur.AffineLocalFiberRegularQuotient
 public import FLT.Mazur.AffineLocalHilbertTranslationCover
+public import FLT.Mazur.AffineLocallyFreeCharpolyEquation
+public import FLT.Mazur.AffineLocallyFreeIntegralCoordinates
+public import FLT.Mazur.AffineLocallyFreeInvariantPolynomial
+public import FLT.Mazur.AffineLocallyFreeRelationCharpoly
 public import FLT.Mazur.AffineLocallyFreeRelationNorm
 public import FLT.Mazur.AffineMinimalPrimeFiniteOpen
 public import FLT.Mazur.AffineModuleCoalgebraDescent
@@ -5943,6 +5951,7 @@ public import FLT.Mazur.FiniteProjectiveAffineNormCharts
 public import FLT.Mazur.FiniteProjectivePrincipalDescent
 public import FLT.Mazur.FiniteProjectiveRankFrames
 public import FLT.Mazur.FiniteProjectiveRankOneTrivialization
+public import FLT.Mazur.FiniteProjectiveRelationIntegralCoordinates
 public import FLT.Mazur.FiniteProjectiveSectionAmple
 public import FLT.Mazur.FiniteProjectiveTildeLocal
 public import FLT.Mazur.FinitePushforwardAmpleVanishing
@@ -6737,6 +6746,10 @@ public import FLT.Mazur.HilbertFiniteFreeScalarCoordinates
 public import FLT.Mazur.HilbertFiniteInvariantAffineBasis
 public import FLT.Mazur.HilbertFiniteLabelBoundaryLifts
 public import FLT.Mazur.HilbertFiniteLabelRefinement
+public import FLT.Mazur.HilbertFiniteLocusBoundaryIntegral
+public import FLT.Mazur.HilbertFiniteLocusBoundaryResidue
+public import FLT.Mazur.HilbertFiniteLocusScalarCoordinates
+public import FLT.Mazur.HilbertFiniteLocusScalarNoetherian
 public import FLT.Mazur.HilbertFiniteNeighborhoodError
 public import FLT.Mazur.HilbertFiniteRelationErrorVanishing
 public import FLT.Mazur.HilbertFiniteRelationPrincipalCoverage
@@ -7445,6 +7458,7 @@ public import FLT.Mazur.InvariantLocalizationCoordinates
 public import FLT.Mazur.InvariantLocalizationNumerator
 public import FLT.Mazur.InvariantObstructionNaturality
 public import FLT.Mazur.InvariantOpenFiniteRelation
+public import FLT.Mazur.InvariantOpenProjectiveIntegralCoordinates
 public import FLT.Mazur.InvariantOpenRelationDiagram
 public import FLT.Mazur.InvariantOpenRelationEquivalence
 public import FLT.Mazur.InvariantOpenRelationFunctions
@@ -7705,6 +7719,7 @@ public import FLT.Mazur.LocallyFramedSplitLineProjective
 public import FLT.Mazur.LocallyFramedSplitLineRestriction
 public import FLT.Mazur.LocallyFreeDualProjectiveAtlas
 public import FLT.Mazur.LocallyFreeProjectiveQuotient
+public import FLT.Mazur.LocallyMonicPolynomialEnvelope
 public import FLT.Mazur.LocallyNoetherianUniversalStructureSheaf
 public import FLT.Mazur.LocallyRingedIdealGenerators
 public import FLT.Mazur.LocallyRingedOpenBasic
@@ -14755,6 +14770,8 @@ public import FLT.Mazur.WeierstrassDividedOrderedRetainedSections
 public import FLT.Mazur.WeierstrassDividedOriginalNodeBase
 public import FLT.Mazur.WeierstrassDividedOriginalScaleOpen
 public import FLT.Mazur.WeierstrassDividedOriginalSmoothPresentation
+public import FLT.Mazur.WeierstrassDividedOriginalSmoothReciprocalDenominator
+public import FLT.Mazur.WeierstrassDividedOriginalSmoothReciprocalPresentation
 public import FLT.Mazur.WeierstrassDividedOriginalSmoothScale
 public import FLT.Mazur.WeierstrassDividedOriginalSmoothTangentPresentation
 public import FLT.Mazur.WeierstrassDividedOriginalXOpen
@@ -14969,15 +14986,22 @@ public import FLT.Mazur.WeierstrassDividedProjectiveLift
 public import FLT.Mazur.WeierstrassDividedReciprocalFormula
 public import FLT.Mazur.WeierstrassDividedReciprocalInfinityCoverage
 public import FLT.Mazur.WeierstrassDividedReciprocalInfinityInput
+public import FLT.Mazur.WeierstrassDividedReciprocalLeftOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalOppositeCoverage
+public import FLT.Mazur.WeierstrassDividedReciprocalOriginalAction
+public import FLT.Mazur.WeierstrassDividedReciprocalOriginalCoordinates
 public import FLT.Mazur.WeierstrassDividedReciprocalOutput
+public import FLT.Mazur.WeierstrassDividedReciprocalOverlapProjections
+public import FLT.Mazur.WeierstrassDividedReciprocalSchemeAction
 public import FLT.Mazur.WeierstrassDividedReciprocalSecantComparison
 public import FLT.Mazur.WeierstrassDividedReciprocalSecantFormula
+public import FLT.Mazur.WeierstrassDividedReciprocalSecantOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalSecantScheme
 public import FLT.Mazur.WeierstrassDividedReciprocalSource
 public import FLT.Mazur.WeierstrassDividedReciprocalSpecialization
 public import FLT.Mazur.WeierstrassDividedReciprocalTangentComparison
 public import FLT.Mazur.WeierstrassDividedReciprocalTangentFormula
+public import FLT.Mazur.WeierstrassDividedReciprocalTangentOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalTangentScheme
 public import FLT.Mazur.WeierstrassDividedResidualIntegralLift
 public import FLT.Mazur.WeierstrassDividedResidualLiftAlgebra
@@ -16625,6 +16649,8 @@ public import FLT.Mazur.WeierstrassReciprocalGlobalDomains
 public import FLT.Mazur.WeierstrassReciprocalOrdinaryComparison
 public import FLT.Mazur.WeierstrassReciprocalOutputRegular
 public import FLT.Mazur.WeierstrassReciprocalPointComparison
+public import FLT.Mazur.WeierstrassReciprocalPresentationAction
+public import FLT.Mazur.WeierstrassReciprocalSecantDomainLift
 public import FLT.Mazur.WeierstrassReciprocalSecantTriple
 public import FLT.Mazur.WeierstrassReciprocalSecantTripleAlgebra
 public import FLT.Mazur.WeierstrassReciprocalSecantTripleDomain
