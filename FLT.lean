@@ -14775,6 +14775,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticAtlasCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticAtlasIndex
 public import FLT.Mazur.WeierstrassDividedArithmeticAtlasPairPresentation
 public import FLT.Mazur.WeierstrassDividedArithmeticAtlasPairTransition
+public import FLT.Mazur.WeierstrassDividedArithmeticAtlasRelativeSmooth
 public import FLT.Mazur.WeierstrassDividedArithmeticAtlasTestPair
 public import FLT.Mazur.WeierstrassDividedArithmeticAtlasTestTransition
 public import FLT.Mazur.WeierstrassDividedArithmeticBoundaryAtlasIndex
