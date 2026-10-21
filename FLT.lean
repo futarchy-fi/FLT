@@ -3606,6 +3606,7 @@ public import FLT.Mazur.ArithmeticOneGonBoundaryFiber
 public import FLT.Mazur.ArithmeticOneGonChangedSubgroupAmple
 public import FLT.Mazur.ArithmeticOneGonCoefficientIso
 public import FLT.Mazur.ArithmeticOneGonCoefficientTower
+public import FLT.Mazur.ArithmeticOneGonCommonCoefficientCoherence
 public import FLT.Mazur.ArithmeticOneGonCommonCoefficientIso
 public import FLT.Mazur.ArithmeticOneGonCommonCoefficientTower
 public import FLT.Mazur.ArithmeticOneGonFamily
@@ -7310,6 +7311,7 @@ public import FLT.Mazur.HilbertUniversalFrameRebase
 public import FLT.Mazur.HilbertWholeScalarFiniteCover
 public import FLT.Mazur.HilbertWholeScalarImageCover
 public import FLT.Mazur.HomIntegerModel
+public import FLT.Mazur.HomogeneousCochainAnnihilation
 public import FLT.Mazur.HomogeneousCochainCorrection
 public import FLT.Mazur.HomogeneousCochainFinitePatching
 public import FLT.Mazur.HomogeneousCochainScalarObstruction
@@ -7628,6 +7630,7 @@ public import FLT.Mazur.IntersectionSectionLimitCoordinates
 public import FLT.Mazur.IntersectionUnitCocycle
 public import FLT.Mazur.IntersectionUnitCocycleRecovery
 public import FLT.Mazur.InvariantAffineCoverNorm
+public import FLT.Mazur.InvariantAffineFiniteBoundaryLift
 public import FLT.Mazur.InvariantAffineOpenNormBaseChange
 public import FLT.Mazur.InvariantAffineOpenNormCoefficient
 public import FLT.Mazur.InvariantBoundaryPullback
@@ -8606,8 +8609,15 @@ public import FLT.Mazur.OneGonAdicIndependentCommonFactors
 public import FLT.Mazur.OneGonAdicIndependentCommonIdeal
 public import FLT.Mazur.OneGonAdicIndependentCommonRecovery
 public import FLT.Mazur.OneGonAdicIndependentCommonStage
+public import FLT.Mazur.OneGonAdicIndependentCommonSubgroup
+public import FLT.Mazur.OneGonAdicIndependentCommonSubgroupIdeal
+public import FLT.Mazur.OneGonAdicIndependentCommonSubgroupRecovery
 public import FLT.Mazur.OneGonAdicIndependentCurveTower
 public import FLT.Mazur.OneGonAdicIndependentEmbedding
+public import FLT.Mazur.OneGonAdicIndependentFactorClosed
+public import FLT.Mazur.OneGonAdicIndependentFactorHom
+public import FLT.Mazur.OneGonAdicIndependentFactorRecovery
+public import FLT.Mazur.OneGonAdicIndependentFiniteSubgroup
 public import FLT.Mazur.OneGonAdicIndependentFullRecovery
 public import FLT.Mazur.OneGonAdicIndependentSmoothRecovery
 public import FLT.Mazur.OneGonAdicIndependentSmoothStage
@@ -8616,6 +8626,8 @@ public import FLT.Mazur.OneGonAdicIndependentStageModel
 public import FLT.Mazur.OneGonAdicIndependentStageNormalForm
 public import FLT.Mazur.OneGonAdicIndependentStageRecovery
 public import FLT.Mazur.OneGonAdicIndependentStageRefinement
+public import FLT.Mazur.OneGonAdicIndependentSubgroupRecovery
+public import FLT.Mazur.OneGonAdicIndependentSubgroupRefinement
 public import FLT.Mazur.OneGonAdicInitialCoefficientNaturality
 public import FLT.Mazur.OneGonAdicInitialCoefficientTransport
 public import FLT.Mazur.OneGonAdicInitialParameter
@@ -11621,6 +11633,9 @@ public import FLT.Mazur.RankStageAffineNeighborhoods
 public import FLT.Mazur.RankStageBoundaryCorrectionClass
 public import FLT.Mazur.RankStageBoundaryCorrectionVanishing
 public import FLT.Mazur.RankStageBoundaryIdeal
+public import FLT.Mazur.RankStageBoundaryScalarAnnihilation
+public import FLT.Mazur.RankStageBoundaryScalarGeometry
+public import FLT.Mazur.RankStageBoundaryScalarPower
 public import FLT.Mazur.RankStageBoundarySeedTower
 public import FLT.Mazur.RankStageBoundedCoreCover
 public import FLT.Mazur.RankStageClopenBoundaryOverlap
@@ -11664,6 +11679,7 @@ public import FLT.Mazur.RankStageFiniteCoverBoundaryTowers
 public import FLT.Mazur.RankStageFiniteGlobalOverlapNumerators
 public import FLT.Mazur.RankStageFiniteInvariantAtlas
 public import FLT.Mazur.RankStageFiniteInvariantDetection
+public import FLT.Mazur.RankStageFiniteLocusCorrection
 public import FLT.Mazur.RankStageFiniteOriginalNorm
 public import FLT.Mazur.RankStageFiniteOriginalObstruction
 public import FLT.Mazur.RankStageFullBoundaryGluing
@@ -11687,6 +11703,7 @@ public import FLT.Mazur.RankStageOriginalAtlasErrors
 public import FLT.Mazur.RankStageOriginalAtlasTower
 public import FLT.Mazur.RankStageOriginalBoundaryCoefficients
 public import FLT.Mazur.RankStageOriginalBoundaryCoherentNumerators
+public import FLT.Mazur.RankStageOriginalBoundaryLiftIdeal
 public import FLT.Mazur.RankStageOriginalBoundaryNormProduct
 public import FLT.Mazur.RankStageOriginalBoundaryProduct
 public import FLT.Mazur.RankStageOriginalBoundaryRestriction
@@ -11712,6 +11729,7 @@ public import FLT.Mazur.RankStageOverlapScalarObstruction
 public import FLT.Mazur.RankStagePrescribedBoundaryLifting
 public import FLT.Mazur.RankStagePrescribedBoundaryTower
 public import FLT.Mazur.RankStagePrescribedLiftingProperty
+public import FLT.Mazur.RankStagePrincipalBoundaryCorrection
 public import FLT.Mazur.RankStagePrincipalCoreCorrections
 public import FLT.Mazur.RankStageRelationTransitions
 public import FLT.Mazur.RankStageRelativeClosedBoundaryProduct
