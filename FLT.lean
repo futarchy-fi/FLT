@@ -3631,6 +3631,7 @@ public import FLT.Mazur.ArithmeticOneGonFieldFibers
 public import FLT.Mazur.ArithmeticOneGonGeneralizedCurve
 public import FLT.Mazur.ArithmeticOneGonGlobalParameter
 public import FLT.Mazur.ArithmeticOneGonInfinitesimalDiscriminant
+public import FLT.Mazur.ArithmeticOneGonNilpotentDiscriminant
 public import FLT.Mazur.ArithmeticOneGonNodalCoefficient
 public import FLT.Mazur.ArithmeticOneGonOriginalBaseChange
 public import FLT.Mazur.ArithmeticOneGonOriginalFiber
