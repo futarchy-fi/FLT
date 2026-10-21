@@ -22,7 +22,29 @@ namespace FLT.Mazur.ScalarPrimeLocalizationCover
 variable {R : Type} [CommRing R] (x : PrimeSpectrum R)
 
 /-- The canonical flat branch retains the original scalar ring as its base. -/
-abbrev Branch := Localization.AtPrime x.asIdeal
+def Branch := Localization.AtPrime x.asIdeal
+
+/-- Cache the actual localization ring operations before specializing the original scalars. -/
+instance branchCommRing : CommRing (Branch x) :=
+  inferInstanceAs (CommRing (Localization.AtPrime x.asIdeal))
+
+/-- The scalar map is the original localization map. -/
+instance branchAlgebra : Algebra R (Branch x) :=
+  inferInstanceAs (Algebra R (Localization.AtPrime x.asIdeal))
+
+/-- The full localization universal property survives sealing the carrier. -/
+instance branchLocalization : IsLocalization.AtPrime (Branch x) x.asIdeal :=
+  inferInstanceAs (IsLocalization.AtPrime (Localization.AtPrime x.asIdeal) x.asIdeal)
+
+/-- The distinguished branch retains its local ring structure. -/
+instance branchLocalRing : IsLocalRing (Branch x) :=
+  inferInstanceAs (IsLocalRing (Localization.AtPrime x.asIdeal))
+
+/-- Flatness is cached before specializing to the original invariant ring. -/
+instance branchFlat : Module.Flat R (Branch x) :=
+  inferInstanceAs (Module.Flat R (Localization.AtPrime x.asIdeal))
+
+attribute [irreducible] Branch
 
 /-- Its distinguished prime is the maximal ideal, not a residue-field replacement. -/
 def point : PrimeSpectrum (Branch x) :=
@@ -31,7 +53,7 @@ def point : PrimeSpectrum (Branch x) :=
 /-- Every original prime is covered by its constructed flat localization. -/
 theorem point_comap :
     (point x).asIdeal.comap (algebraMap R (Branch x)) = x.asIdeal :=
-  Localization.AtPrime.under_maximalIdeal
+  IsLocalization.AtPrime.under_maximalIdeal _ _
 
 /-- The distinguished branch point lies over the literal original point. -/
 theorem comap_point : PrimeSpectrum.comap (algebraMap R (Branch x)) (point x) = x :=
