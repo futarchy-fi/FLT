@@ -12068,6 +12068,7 @@ public import FLT.Mazur.RelativeFrameRankBound
 public import FLT.Mazur.RelativeFrameRankImage
 public import FLT.Mazur.RelativeFrameRankJumpValuations
 public import FLT.Mazur.RelativeFrameRankOpen
+public import FLT.Mazur.RelativeFrameRankPullback
 public import FLT.Mazur.RelativeFrameRelabelCompleteness
 public import FLT.Mazur.RelativeFrameScalarCompleteness
 public import FLT.Mazur.RelativeFrameScalarExtension
