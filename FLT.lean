@@ -12049,6 +12049,7 @@ public import FLT.Mazur.RelativeFiberMorphism
 public import FLT.Mazur.RelativeFiberNakayama
 public import FLT.Mazur.RelativeFiniteDomainPrincipal
 public import FLT.Mazur.RelativeFiniteFrameRankClosed
+public import FLT.Mazur.RelativeFiniteRankSpecialization
 public import FLT.Mazur.RelativeFiniteTupleAffine
 public import FLT.Mazur.RelativeFppfComparisonCover
 public import FLT.Mazur.RelativeFppfLocalSubfunctor
@@ -12313,6 +12314,7 @@ public import FLT.Mazur.RelativeRelationScalarMorphismInvariant
 public import FLT.Mazur.RelativeRelationSimultaneousLiftCover
 public import FLT.Mazur.RelativeRelationSplitQuotient
 public import FLT.Mazur.RelativeRelationTopCoefficientCoordinates
+public import FLT.Mazur.RelativeScalarLocalRankFiniteness
 public import FLT.Mazur.RelativeSectionAmpleBaseChange
 public import FLT.Mazur.RelativeSectionAmpleLocality
 public import FLT.Mazur.RelativeSerreAffineAcyclic
@@ -19062,4 +19064,3 @@ public import FLT.TateCurve.SymmetricInverse
 public import FLT.TateCurve.TateCurve
 public import FLT.TateCurve.Uniformization
 public import FLT.TateCurve.ValuativeContinuity
-import FLT.Mazur.RelativeFiniteRankSpecialization
