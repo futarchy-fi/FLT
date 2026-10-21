@@ -4107,6 +4107,7 @@ public import FLT.Mazur.ClosedDirectImageComposition
 public import FLT.Mazur.ClosedFiberAffineNeighborhood
 public import FLT.Mazur.ClosedFiberTensorExactness
 public import FLT.Mazur.ClosedGroupIdealCarrierBaseChange
+public import FLT.Mazur.ClosedGroupIdealEquationBaseChange
 public import FLT.Mazur.ClosedGroupIdealGroup
 public import FLT.Mazur.ClosedGroupIdealOperations
 public import FLT.Mazur.ClosedGroupIdealProductBaseChange
