@@ -17134,6 +17134,7 @@ public import FLT.Mazur.WeierstrassDividedZeroResidueAtlas
 public import FLT.Mazur.WeierstrassDividedZeroRetainedEdgeAlgebra
 public import FLT.Mazur.WeierstrassDividedZeroRetainedEdgeRestriction
 public import FLT.Mazur.WeierstrassDividedZeroRetentionIntersection
+public import FLT.Mazur.WeierstrassDividedZeroSecantCoverage
 public import FLT.Mazur.WeierstrassDividedZeroSecondAnnihilation
 public import FLT.Mazur.WeierstrassDividedZeroSecondAtlas
 public import FLT.Mazur.WeierstrassDividedZeroSecondAtlasClosing
