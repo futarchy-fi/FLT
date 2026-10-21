@@ -15674,6 +15674,7 @@ public import FLT.Mazur.WeierstrassDividedNormalizedBranchContraction
 public import FLT.Mazur.WeierstrassDividedOddCompleteClosedComparison
 public import FLT.Mazur.WeierstrassDividedOlderAtlasFormulaCoordinates
 public import FLT.Mazur.WeierstrassDividedOlderAtlasIndex
+public import FLT.Mazur.WeierstrassDividedOlderCommonSumAddition
 public import FLT.Mazur.WeierstrassDividedOlderConicExteriorDisjoint
 public import FLT.Mazur.WeierstrassDividedOlderConicPunctures
 public import FLT.Mazur.WeierstrassDividedOlderCubicAction
