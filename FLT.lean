@@ -14853,6 +14853,7 @@ public import FLT.Mazur.WeierstrassDividedCoefficientSymmetry
 public import FLT.Mazur.WeierstrassDividedCommonBranchData
 public import FLT.Mazur.WeierstrassDividedCommonBranchOrdinate
 public import FLT.Mazur.WeierstrassDividedCommonBranchResidue
+public import FLT.Mazur.WeierstrassDividedCommonNegativeContraction
 public import FLT.Mazur.WeierstrassDividedCommonNegativeCoverage
 public import FLT.Mazur.WeierstrassDividedCommonNegativeOutput
 public import FLT.Mazur.WeierstrassDividedCommonResolvedContraction
