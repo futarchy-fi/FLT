@@ -9039,6 +9039,7 @@ public import FLT.Mazur.OriginalBoundaryPrincipalCover
 public import FLT.Mazur.OriginalBoundaryPrincipalLiftCriterion
 public import FLT.Mazur.OriginalBoundaryRelationOpenLift
 public import FLT.Mazur.OriginalBoundaryRelationSupport
+public import FLT.Mazur.OriginalBoundaryResidualComparisonNeighborhood
 public import FLT.Mazur.OriginalBoundaryResidualEtaleImageCover
 public import FLT.Mazur.OriginalBoundaryResidualFiniteFamily
 public import FLT.Mazur.OriginalBoundaryResidualFlatCover
