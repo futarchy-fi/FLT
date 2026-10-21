@@ -8649,6 +8649,7 @@ public import FLT.Mazur.OneGonAdicSharedCommonSubgroup
 public import FLT.Mazur.OneGonAdicSharedCurve
 public import FLT.Mazur.OneGonAdicSharedCurveTower
 public import FLT.Mazur.OneGonAdicSharedEmbedding
+public import FLT.Mazur.OneGonAdicSharedEmbeddingTower
 public import FLT.Mazur.OneGonAdicSharedRecovery
 public import FLT.Mazur.OneGonAdicSharedStage
 public import FLT.Mazur.OneGonAdicSharedSubgroup
