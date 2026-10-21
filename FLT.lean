@@ -8963,6 +8963,7 @@ public import FLT.Mazur.OriginalBoundaryRelationSupport
 public import FLT.Mazur.OriginalBoundaryResidualFiniteFamily
 public import FLT.Mazur.OriginalBoundaryResidualIdeal
 public import FLT.Mazur.OriginalBoundaryResidualPrincipalCover
+public import FLT.Mazur.OriginalBoundaryUniformRelationIdeal
 public import FLT.Mazur.OriginalBoundaryUniformRelationLift
 public import FLT.Mazur.OriginalEnvelopeAcyclicCriterion
 public import FLT.Mazur.OriginalFamilyIdentityComparison
