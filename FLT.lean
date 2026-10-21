@@ -16254,6 +16254,7 @@ public import FLT.Mazur.WeierstrassDividedResidueTangentNormalization
 public import FLT.Mazur.WeierstrassDividedResidueTerminalAnyDepthCoverage
 public import FLT.Mazur.WeierstrassDividedResidueTerminalIndexedCoverage
 public import FLT.Mazur.WeierstrassDividedResidueTerminalPairCoverage
+public import FLT.Mazur.WeierstrassDividedResidueTerminalSelfBoundary
 public import FLT.Mazur.WeierstrassDividedResolvedAtlasCover
 public import FLT.Mazur.WeierstrassDividedResolvedAtlasPairIso
 public import FLT.Mazur.WeierstrassDividedResolvedNegation
