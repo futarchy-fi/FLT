@@ -7313,6 +7313,7 @@ public import FLT.Mazur.HomIntegerModel
 public import FLT.Mazur.HomogeneousCochainCorrection
 public import FLT.Mazur.HomogeneousCochainFinitePatching
 public import FLT.Mazur.HomogeneousCochainScalarObstruction
+public import FLT.Mazur.HomogeneousCochainScaledClass
 public import FLT.Mazur.HomogeneousFractionProjection
 public import FLT.Mazur.HomogeneousIdealWitness
 public import FLT.Mazur.HomogeneousLocalizationArbitraryBaseChange
@@ -11617,6 +11618,8 @@ public import FLT.Mazur.RankStageAffineBoundaryLifts
 public import FLT.Mazur.RankStageAffineCorrectedObstruction
 public import FLT.Mazur.RankStageAffineFullBoundaryTower
 public import FLT.Mazur.RankStageAffineNeighborhoods
+public import FLT.Mazur.RankStageBoundaryCorrectionClass
+public import FLT.Mazur.RankStageBoundaryCorrectionVanishing
 public import FLT.Mazur.RankStageBoundaryIdeal
 public import FLT.Mazur.RankStageBoundarySeedTower
 public import FLT.Mazur.RankStageBoundedCoreCover
@@ -11639,7 +11642,10 @@ public import FLT.Mazur.RankStageCoreCochainMaps
 public import FLT.Mazur.RankStageCoreCoefficientTransitions
 public import FLT.Mazur.RankStageCoreCorrectionCokernel
 public import FLT.Mazur.RankStageCoreCorrectionCriterion
+public import FLT.Mazur.RankStageCoreCorrectionGluing
+public import FLT.Mazur.RankStageCoreCorrectionScalarGluing
 public import FLT.Mazur.RankStageCoreCorrectionSpace
+public import FLT.Mazur.RankStageCoreCorrectionSupport
 public import FLT.Mazur.RankStageCoreIntersections
 public import FLT.Mazur.RankStageCoreInvariantDetection
 public import FLT.Mazur.RankStageCoreMixedCoefficientDetection
