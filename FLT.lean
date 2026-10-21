@@ -14842,6 +14842,7 @@ public import FLT.Mazur.WeierstrassDividedCoefficientSmoothRecovery
 public import FLT.Mazur.WeierstrassDividedCoefficientSymmetry
 public import FLT.Mazur.WeierstrassDividedCommonBranchData
 public import FLT.Mazur.WeierstrassDividedCommonBranchOrdinate
+public import FLT.Mazur.WeierstrassDividedCommonSumCoordinates
 public import FLT.Mazur.WeierstrassDividedCommonSumFormula
 public import FLT.Mazur.WeierstrassDividedCompleteClosedCubicCompatibility
 public import FLT.Mazur.WeierstrassDividedCompleteResidueNormalization
