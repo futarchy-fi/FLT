@@ -6473,6 +6473,7 @@ public import FLT.Mazur.GeneralizedCurveGraph
 public import FLT.Mazur.GeneralizedCurveGraphBaseChange
 public import FLT.Mazur.GeneralizedCurveGraphCartesian
 public import FLT.Mazur.GeneralizedCurveGraphTransport
+public import FLT.Mazur.GeneralizedCurveGroupRelativeDimension
 public import FLT.Mazur.GeneralizedCurveGroupSectionComposition
 public import FLT.Mazur.GeneralizedCurveIdentityBaseChange
 public import FLT.Mazur.GeneralizedCurveIteratedProjection
