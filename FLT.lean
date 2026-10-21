@@ -5928,6 +5928,7 @@ public import FLT.Mazur.FiniteEtaleInvariantOpenTransition
 public import FLT.Mazur.FiniteEtaleNamedBoundaryCoefficients
 public import FLT.Mazur.FiniteEtaleNamedDomainBoundaryLifting
 public import FLT.Mazur.FiniteEtalePerfectDVRSplitting
+public import FLT.Mazur.FiniteEtalePullbackNilpotentLift
 public import FLT.Mazur.FiniteEtaleRationalCover
 public import FLT.Mazur.FiniteEtaleSectionCoverNeighborhood
 public import FLT.Mazur.FiniteEtaleSectionEqualityNeighborhood
