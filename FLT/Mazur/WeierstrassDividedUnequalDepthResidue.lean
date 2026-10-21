@@ -27,7 +27,7 @@ universe u
 variable {R S K : Type u} [CommRing R] [CommRing S] [Field K]
   [Algebra R S] [Algebra R K] [IsDomain R] [Module.Flat R S]
   {W : WeierstrassCurve R} {π : R} (hπ : π ≠ 0) {k l : ℕ}
-  (d : Data W π k) (e : Data W π l) (hkl : k ≤ l) (z : Data W π (l - k))
+  (d : Data W π k) (e : Data W π l) (hkl : k ≤ l) {r : ℕ} (z : Data W π r) (hr : r = l - k)
   (a : Coordinate W (π ^ k) d.b3 d.b4 d.b6 →ₐ[R] S)
   (c : Coordinate W (π ^ l) e.b3 e.b4 e.b6 →ₐ[R] S)
 local notation "T" => UnequalDepthSecantRing hπ d e hkl a c
@@ -74,8 +74,8 @@ theorem unequalDepthSecantOutput_residue_vertical
     (h2 : algebraMap R K W.a₂ = 0) (ha : α ≠ 0) (hz : algebraMap R K z.b3 = 0)
     (hu : x₂ ≠ 0)
     (hbranch : (y₁ = 0 ∧ y₂ = -α * x₂) ∨ (y₁ = -α * x₁ ∧ y₂ = 0)) :
-    ρ (unequalDepthSecantOutput hπ d e hkl z a c
-      (verticalDerivative W (π ^ (l - k)) z.b3 z.b4 z.b6)) ≠ 0 := by
+    ρ (unequalDepthSecantOutput hπ d e hkl z hr a c
+      (verticalDerivative W (π ^ r) z.b3 z.b4 z.b6)) ≠ 0 := by
   have hi := congrArg ρ (unequalDepthSecant_inverse hπ d e hkl a c)
   have hl := congrArg ρ (unequalDepthSecant_chord hπ d e hkl a c)
   simp only [map_mul, map_sub, map_one, AlgHom.commutes, ht, zero_mul, sub_zero] at hi hl
