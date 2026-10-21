@@ -12562,6 +12562,7 @@ public import FLT.Mazur.SchemeClopenSectionExtension
 public import FLT.Mazur.SchemeClosedBaseChange
 public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
+public import FLT.Mazur.SchemeComparisonCoverageLocus
 public import FLT.Mazur.SchemeConeGluing
 public import FLT.Mazur.SchemeConnectedFiberSections
 public import FLT.Mazur.SchemeConstructibleNoetherianPullback
