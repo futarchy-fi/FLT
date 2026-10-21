@@ -3601,6 +3601,7 @@ public import FLT.Mazur.ArbitraryGeometricOriginalOpenImage
 public import FLT.Mazur.ArbitraryGeometricProperCore
 public import FLT.Mazur.ArbitraryPicardAffineEtaleChart
 public import FLT.Mazur.ArbitraryPicardEtaleTranslation
+public import FLT.Mazur.ArithmeticOneGonAlgebraicFamily
 public import FLT.Mazur.ArithmeticOneGonAmpleBaseChange
 public import FLT.Mazur.ArithmeticOneGonAmpleParameter
 public import FLT.Mazur.ArithmeticOneGonArbitrarySubgroupPullback
