@@ -4784,6 +4784,7 @@ public import FLT.Mazur.CyclicMarkingSingularLocusSubgroup
 public import FLT.Mazur.CyclicMarkingSingularProduct
 public import FLT.Mazur.CyclicMarkingSingularProductBaseChange
 public import FLT.Mazur.CyclicMarkingSingularSubgroup
+public import FLT.Mazur.CyclicMarkingSingularTransport
 public import FLT.Mazur.CyclicMarkingSmoothCarrier
 public import FLT.Mazur.CyclicMarkingSmoothRestriction
 public import FLT.Mazur.CyclicMarkingSmoothSymmetry
