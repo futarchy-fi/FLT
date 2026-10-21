@@ -4334,6 +4334,7 @@ public import FLT.Mazur.CyclicAdicParameters
 public import FLT.Mazur.CyclicAdicSheafQuotient
 public import FLT.Mazur.CyclicAuxiliaryPrescribedNormalizedNeighborhood
 public import FLT.Mazur.CyclicBoundaryAmpleAction
+public import FLT.Mazur.CyclicBoundaryAmpleBaseChange
 public import FLT.Mazur.CyclicBoundaryAmpleInvariantModuli
 public import FLT.Mazur.CyclicBoundaryAmpleModuli
 public import FLT.Mazur.CyclicBoundaryBaseChange
