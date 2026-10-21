@@ -16135,6 +16135,7 @@ public import FLT.Mazur.WeierstrassDividedReflectedBranchResidue
 public import FLT.Mazur.WeierstrassDividedReflectedContraction
 public import FLT.Mazur.WeierstrassDividedReflectedCoverage
 public import FLT.Mazur.WeierstrassDividedReflectedIndexed
+public import FLT.Mazur.WeierstrassDividedReflectedNegativeOutput
 public import FLT.Mazur.WeierstrassDividedReflectedOutputResidue
 public import FLT.Mazur.WeierstrassDividedReflectedResolvedContraction
 public import FLT.Mazur.WeierstrassDividedReflectedSmooth
