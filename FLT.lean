@@ -5773,6 +5773,7 @@ public import FLT.Mazur.FiniteCharacterAdicHom
 public import FLT.Mazur.FiniteCharacterAdicJacobson
 public import FLT.Mazur.FiniteCharacterAdicMapExt
 public import FLT.Mazur.FiniteCharacterAdicSurjectivity
+public import FLT.Mazur.FiniteClopenPriorityCover
 public import FLT.Mazur.FiniteClosedIdealSection
 public import FLT.Mazur.FiniteClosedImmersionIntegerDescent
 public import FLT.Mazur.FiniteCoefficientDifferenceIdeal
