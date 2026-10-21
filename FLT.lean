@@ -4304,6 +4304,7 @@ public import FLT.Mazur.ConstructedDisjointAllLiftTranslation
 public import FLT.Mazur.ConstructedDisjointGeometricTranslation
 public import FLT.Mazur.ConstructibleDenseInterior
 public import FLT.Mazur.ConstructibleGenericClosure
+public import FLT.Mazur.ConstructibleImageGenerizations
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CoprimeFieldGroupTransport
 public import FLT.Mazur.CoprimeGroupMarkings
