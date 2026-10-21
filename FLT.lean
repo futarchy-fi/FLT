@@ -14553,6 +14553,7 @@ public import FLT.Mazur.WeierstrassDividedAtlasPairReciprocalAddition
 public import FLT.Mazur.WeierstrassDividedAtlasPairReciprocalCoverage
 public import FLT.Mazur.WeierstrassDividedAtlasPairSumDepthAddition
 public import FLT.Mazur.WeierstrassDividedAtlasPairTransfer
+public import FLT.Mazur.WeierstrassDividedAtlasPairTransferLift
 public import FLT.Mazur.WeierstrassDividedAtlasPairUnequalAddition
 public import FLT.Mazur.WeierstrassDividedAtlasRegularCenter
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
