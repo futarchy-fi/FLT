@@ -16350,6 +16350,7 @@ public import FLT.Mazur.WeierstrassDividedSecantComparison
 public import FLT.Mazur.WeierstrassDividedSecantFlatSourceExt
 public import FLT.Mazur.WeierstrassDividedSecantFormula
 public import FLT.Mazur.WeierstrassDividedSecantLeftOverlap
+public import FLT.Mazur.WeierstrassDividedSecantNonsingularInputs
 public import FLT.Mazur.WeierstrassDividedSecantOpenGluing
 public import FLT.Mazur.WeierstrassDividedSecantOriginalAction
 public import FLT.Mazur.WeierstrassDividedSecantOriginalRelations
