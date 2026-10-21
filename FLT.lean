@@ -2973,6 +2973,7 @@ public import FLT.Mazur.AffineFiberProductRefinementCocycle
 public import FLT.Mazur.AffineFiberwiseSectionCartier
 public import FLT.Mazur.AffineFiniteEtaleBoundaryKernelTransition
 public import FLT.Mazur.AffineFiniteEtaleBoundarySurjectivity
+public import FLT.Mazur.AffineFiniteEtaleFullBoundaryCoefficients
 public import FLT.Mazur.AffineFiniteEtalePrescribedCoefficients
 public import FLT.Mazur.AffineFiniteEtaleSimultaneousLifting
 public import FLT.Mazur.AffineFiniteFreeAtlas
@@ -3603,6 +3604,8 @@ public import FLT.Mazur.ArbitraryPicardEtaleTranslation
 public import FLT.Mazur.ArithmeticOneGonArbitrarySubgroupPullback
 public import FLT.Mazur.ArithmeticOneGonBoundaryFiber
 public import FLT.Mazur.ArithmeticOneGonChangedSubgroupAmple
+public import FLT.Mazur.ArithmeticOneGonCoefficientIso
+public import FLT.Mazur.ArithmeticOneGonCoefficientTower
 public import FLT.Mazur.ArithmeticOneGonFamily
 public import FLT.Mazur.ArithmeticOneGonFiberTorus
 public import FLT.Mazur.ArithmeticOneGonFieldFibers
@@ -3611,6 +3614,7 @@ public import FLT.Mazur.ArithmeticOneGonNodalCoefficient
 public import FLT.Mazur.ArithmeticOneGonOriginalBaseChange
 public import FLT.Mazur.ArithmeticOneGonOriginalFiber
 public import FLT.Mazur.ArithmeticOneGonOriginalRoots
+public import FLT.Mazur.ArithmeticOneGonParameterIso
 public import FLT.Mazur.ArithmeticOneGonRoots
 public import FLT.Mazur.ArithmeticOneGonRootsBaseChange
 public import FLT.Mazur.ArithmeticOneGonRootsCoefficientNaturality
@@ -8582,9 +8586,12 @@ public import FLT.Mazur.OneGonAdicCharacterTower
 public import FLT.Mazur.OneGonAdicChartProjection
 public import FLT.Mazur.OneGonAdicChartRestriction
 public import FLT.Mazur.OneGonAdicCoefficientStages
+public import FLT.Mazur.OneGonAdicCompatibleRecovery
 public import FLT.Mazur.OneGonAdicFiniteCoefficientBase
 public import FLT.Mazur.OneGonAdicFiniteSmoothStage
 public import FLT.Mazur.OneGonAdicFiniteSubgroup
+public import FLT.Mazur.OneGonAdicFullSubgroupRecovery
+public import FLT.Mazur.OneGonAdicGeneralizedRecovery
 public import FLT.Mazur.OneGonAdicInitialCoefficientNaturality
 public import FLT.Mazur.OneGonAdicInitialCoefficientTransport
 public import FLT.Mazur.OneGonAdicInitialParameter
@@ -8621,6 +8628,7 @@ public import FLT.Mazur.OneGonCoefficientCommonModel
 public import FLT.Mazur.OneGonCoefficientEmbeddingRefinement
 public import FLT.Mazur.OneGonCoefficientModelRefinement
 public import FLT.Mazur.OneGonCoefficientRefinementComposition
+public import FLT.Mazur.OneGonCoefficientTowerProjection
 public import FLT.Mazur.OneGonCoefficientTransport
 public import FLT.Mazur.OneGonCommonCoefficientCoherence
 public import FLT.Mazur.OneGonCommonCoefficientCurve
@@ -8710,6 +8718,7 @@ public import FLT.Mazur.OneGonSmoothCoefficientGroup
 public import FLT.Mazur.OneGonSmoothCoefficientProjection
 public import FLT.Mazur.OneGonSmoothCoefficientTower
 public import FLT.Mazur.OneGonSmoothEquationProjection
+public import FLT.Mazur.OneGonSmoothWholeCoefficientAction
 public import FLT.Mazur.OneGonSmoothingAffinePresentation
 public import FLT.Mazur.OneGonSmoothingAuxiliaryOverlap
 public import FLT.Mazur.OneGonSmoothingChartIntersection
@@ -11572,6 +11581,7 @@ public import FLT.Mazur.QuotientImageReduction
 public import FLT.Mazur.QuotientRefinementCoherence
 public import FLT.Mazur.QuotientRelativeDerivation
 public import FLT.Mazur.QuotientSpectrumBaseChange
+public import FLT.Mazur.RankImageAffineBoundaryTower
 public import FLT.Mazur.RankOneAmbientLineClassification
 public import FLT.Mazur.RankOneDirectImageSection
 public import FLT.Mazur.RankOneSectionDivisorUniqueness
@@ -11579,7 +11589,10 @@ public import FLT.Mazur.RankOpenCompatibleAlgebraization
 public import FLT.Mazur.RankOpenHomogeneousAlgebraization
 public import FLT.Mazur.RankOpenHomogeneousFamilies
 public import FLT.Mazur.RankOpenTopBoundaryOverlap
+public import FLT.Mazur.RankStageAffineBoundaryCoreSelection
 public import FLT.Mazur.RankStageAffineBoundaryLifts
+public import FLT.Mazur.RankStageAffineCorrectedObstruction
+public import FLT.Mazur.RankStageAffineFullBoundaryTower
 public import FLT.Mazur.RankStageAffineNeighborhoods
 public import FLT.Mazur.RankStageBoundaryIdeal
 public import FLT.Mazur.RankStageBoundarySeedTower
@@ -11620,6 +11633,9 @@ public import FLT.Mazur.RankStageFiniteInvariantDetection
 public import FLT.Mazur.RankStageFiniteOriginalNorm
 public import FLT.Mazur.RankStageFiniteOriginalObstruction
 public import FLT.Mazur.RankStageFullBoundaryGluing
+public import FLT.Mazur.RankStageFullBoundaryLifting
+public import FLT.Mazur.RankStageFullBoundaryRestriction
+public import FLT.Mazur.RankStageGlobalBoundaryCoreCorrection
 public import FLT.Mazur.RankStageGlobalBoundaryNumerators
 public import FLT.Mazur.RankStageGlobalKernelLocalization
 public import FLT.Mazur.RankStageInitialBoundaryLifting
@@ -17808,6 +17824,7 @@ public import FLT.Mazur.WeierstrassSmoothTripleProduct
 public import FLT.Mazur.WeierstrassSmoothTripleProjections
 public import FLT.Mazur.WeierstrassSmoothWholeAction
 public import FLT.Mazur.WeierstrassSmoothWholeCoefficientAction
+public import FLT.Mazur.WeierstrassSmoothWholeEquationTransport
 public import FLT.Mazur.WeierstrassSmoothYAddition
 public import FLT.Mazur.WeierstrassSmoothYAffineResidue
 public import FLT.Mazur.WeierstrassSmoothYAffineSource
