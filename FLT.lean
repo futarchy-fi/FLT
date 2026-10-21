@@ -12222,6 +12222,7 @@ public import FLT.Mazur.RelativePoleComplementLinear
 public import FLT.Mazur.RelativeRankCollisionConstructible
 public import FLT.Mazur.RelativeRankCollisionDenominators
 public import FLT.Mazur.RelativeRankCollisionFinite
+public import FLT.Mazur.RelativeRankCollisionGenerizations
 public import FLT.Mazur.RelativeRankCollisionIdeal
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRankPullbackThickenings
