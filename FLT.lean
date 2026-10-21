@@ -4338,6 +4338,7 @@ public import FLT.Mazur.CyclicBoundaryAmpleInvariantModuli
 public import FLT.Mazur.CyclicBoundaryAmpleModuli
 public import FLT.Mazur.CyclicBoundaryBaseChange
 public import FLT.Mazur.CyclicBoundaryFaithfulAction
+public import FLT.Mazur.CyclicBoundaryFaithfulBaseChange
 public import FLT.Mazur.CyclicBoundaryFaithfulLift
 public import FLT.Mazur.CyclicBoundaryFaithfulOpen
 public import FLT.Mazur.CyclicBoundaryGroupSections
