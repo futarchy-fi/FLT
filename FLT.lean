@@ -4425,6 +4425,7 @@ public import FLT.Mazur.CyclicBoundaryUnrestrictedAmpleMarking
 public import FLT.Mazur.CyclicBoundaryUnrestrictedAmpleModuli
 public import FLT.Mazur.CyclicBoundaryUnrestrictedOrbit
 public import FLT.Mazur.CyclicBoundaryUnrestrictedRelabelCriterion
+public import FLT.Mazur.CyclicBoundaryUnrestrictedRelabelCurve
 public import FLT.Mazur.CyclicBoundaryUnrestrictedTestLocus
 public import FLT.Mazur.CyclicBoundaryUnrestrictedTestMarking
 public import FLT.Mazur.CyclicCharacteristicAffineArrowGeometry
