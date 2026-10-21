@@ -13124,6 +13124,7 @@ public import FLT.Mazur.StableAffineQuotientNeighborhood
 public import FLT.Mazur.StableAffineQuotientOverlap
 public import FLT.Mazur.StableAffineQuotientPullbackCharts
 public import FLT.Mazur.StableCompatibleRingTower
+public import FLT.Mazur.StableIdealPowerSupport
 public import FLT.Mazur.StableNumeratorObstruction
 public import FLT.Mazur.StalkBaseClosedFiber
 public import FLT.Mazur.StalkBaseLocalization
