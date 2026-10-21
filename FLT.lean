@@ -4424,6 +4424,7 @@ public import FLT.Mazur.CyclicBoundaryUnrestrictedAmpleCoverage
 public import FLT.Mazur.CyclicBoundaryUnrestrictedAmpleLift
 public import FLT.Mazur.CyclicBoundaryUnrestrictedAmpleMarking
 public import FLT.Mazur.CyclicBoundaryUnrestrictedAmpleModuli
+public import FLT.Mazur.CyclicBoundaryUnrestrictedInvariantModuli
 public import FLT.Mazur.CyclicBoundaryUnrestrictedOrbit
 public import FLT.Mazur.CyclicBoundaryUnrestrictedRelabelCriterion
 public import FLT.Mazur.CyclicBoundaryUnrestrictedRelabelCurve
