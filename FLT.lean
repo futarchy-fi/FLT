@@ -17104,6 +17104,7 @@ public import FLT.Mazur.WeierstrassDividedZeroFourthSplit
 public import FLT.Mazur.WeierstrassDividedZeroFourthTransitions
 public import FLT.Mazur.WeierstrassDividedZeroIncidenceInfinity
 public import FLT.Mazur.WeierstrassDividedZeroIndexedSecantCoverage
+public import FLT.Mazur.WeierstrassDividedZeroIndexedTangentCoverage
 public import FLT.Mazur.WeierstrassDividedZeroInfinityNodeNormalization
 public import FLT.Mazur.WeierstrassDividedZeroInfinityNormalizedBase
 public import FLT.Mazur.WeierstrassDividedZeroInfinityNormalizedChartRestriction
