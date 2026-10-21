@@ -15503,6 +15503,7 @@ public import FLT.Mazur.WeierstrassDividedOwnBranchOrdinate
 public import FLT.Mazur.WeierstrassDividedOwnBranchResidue
 public import FLT.Mazur.WeierstrassDividedOwnSumDepthCoordinates
 public import FLT.Mazur.WeierstrassDividedOwnSumDepthOutput
+public import FLT.Mazur.WeierstrassDividedOwnSumDepthResidue
 public import FLT.Mazur.WeierstrassDividedPairReciprocalEvaluation
 public import FLT.Mazur.WeierstrassDividedPairReciprocalGeometry
 public import FLT.Mazur.WeierstrassDividedPairSecant
