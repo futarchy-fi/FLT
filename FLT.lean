@@ -15415,6 +15415,7 @@ public import FLT.Mazur.WeierstrassDividedOlderSplitNodeCover
 public import FLT.Mazur.WeierstrassDividedOlderSuccessiveCharts
 public import FLT.Mazur.WeierstrassDividedOlderTensorPointAction
 public import FLT.Mazur.WeierstrassDividedOlderTerminalIntermediateAddition
+public import FLT.Mazur.WeierstrassDividedOlderUnequalAddition
 public import FLT.Mazur.WeierstrassDividedOlderZeroConicParameters
 public import FLT.Mazur.WeierstrassDividedOlderZeroConstantNodeDescent
 public import FLT.Mazur.WeierstrassDividedOlderZeroEqualizerCover
@@ -15498,6 +15499,9 @@ public import FLT.Mazur.WeierstrassDividedOriginalSmoothReciprocalPresentation
 public import FLT.Mazur.WeierstrassDividedOriginalSmoothScale
 public import FLT.Mazur.WeierstrassDividedOriginalSmoothTangentPresentation
 public import FLT.Mazur.WeierstrassDividedOriginalXOpen
+public import FLT.Mazur.WeierstrassDividedOwnBranchOrdinate
+public import FLT.Mazur.WeierstrassDividedOwnSumDepthCoordinates
+public import FLT.Mazur.WeierstrassDividedOwnSumDepthOutput
 public import FLT.Mazur.WeierstrassDividedPairReciprocalEvaluation
 public import FLT.Mazur.WeierstrassDividedPairReciprocalGeometry
 public import FLT.Mazur.WeierstrassDividedPairSecant
@@ -15883,6 +15887,7 @@ public import FLT.Mazur.WeierstrassDividedSecantOverlapProjections
 public import FLT.Mazur.WeierstrassDividedSecantPartialOverlap
 public import FLT.Mazur.WeierstrassDividedSecantPointGeometry
 public import FLT.Mazur.WeierstrassDividedSecantPrimeSmooth
+public import FLT.Mazur.WeierstrassDividedSecantProduct
 public import FLT.Mazur.WeierstrassDividedSecantRefinementComparison
 public import FLT.Mazur.WeierstrassDividedSecantResidue
 public import FLT.Mazur.WeierstrassDividedSecantReverse
@@ -15985,6 +15990,10 @@ public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCenter
 public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCoordinates
 public import FLT.Mazur.WeierstrassDividedSuccessorRetainedGluing
 public import FLT.Mazur.WeierstrassDividedSuccessorUnitAction
+public import FLT.Mazur.WeierstrassDividedSumDepthFormula
+public import FLT.Mazur.WeierstrassDividedSumDepthResidue
+public import FLT.Mazur.WeierstrassDividedSumDepthSource
+public import FLT.Mazur.WeierstrassDividedSumDepthSourceOutput
 public import FLT.Mazur.WeierstrassDividedSuppliedSmoothChart
 public import FLT.Mazur.WeierstrassDividedSuppliedSmoothPair
 public import FLT.Mazur.WeierstrassDividedTangentBranchContraction
