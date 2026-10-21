@@ -12976,6 +12976,7 @@ public import FLT.Mazur.SchemeScalarGeometricOpenLift
 public import FLT.Mazur.SchemeScalarImageDescent
 public import FLT.Mazur.SchemeScalarImageFaithfulGeometry
 public import FLT.Mazur.SchemeScalarImageGeometry
+public import FLT.Mazur.SchemeScalarImageKernelGeometry
 public import FLT.Mazur.SchemeScalarImageQuotient
 public import FLT.Mazur.SchemeScalarIntegralBadCover
 public import FLT.Mazur.SchemeScalarIntegralCover
