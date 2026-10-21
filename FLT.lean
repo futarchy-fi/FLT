@@ -11717,6 +11717,7 @@ public import FLT.Mazur.RankStageOverlapScalarObstruction
 public import FLT.Mazur.RankStagePrescribedBoundaryLifting
 public import FLT.Mazur.RankStagePrescribedBoundaryTower
 public import FLT.Mazur.RankStagePrescribedLiftingProperty
+public import FLT.Mazur.RankStagePrincipalBoundaryCorrection
 public import FLT.Mazur.RankStagePrincipalCoreCorrections
 public import FLT.Mazur.RankStageRelationTransitions
 public import FLT.Mazur.RankStageRelativeClosedBoundaryProduct
