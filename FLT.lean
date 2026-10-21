@@ -14553,6 +14553,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticFirstRetainedBoundary
 public import FLT.Mazur.WeierstrassDividedArithmeticFirstRetainedFactorRatio
 public import FLT.Mazur.WeierstrassDividedArithmeticFirstRetainedRestriction
 public import FLT.Mazur.WeierstrassDividedArithmeticFixedAdjacentBoundary
+public import FLT.Mazur.WeierstrassDividedArithmeticFixedAdjacentBranches
 public import FLT.Mazur.WeierstrassDividedArithmeticFixedAdjacentPuncture
 public import FLT.Mazur.WeierstrassDividedArithmeticFixedRetained
 public import FLT.Mazur.WeierstrassDividedArithmeticFixedRetainedRestriction
@@ -14605,6 +14606,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticPositiveRetainedCompatibilit
 public import FLT.Mazur.WeierstrassDividedArithmeticPositiveUniversal
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedCorrectionFamily
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedDouble
+public import FLT.Mazur.WeierstrassDividedArithmeticRetainedDoubleBranches
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedDoublePuncture
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedPolygon
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedPolygonSystem
@@ -15860,6 +15862,7 @@ public import FLT.Mazur.WeierstrassDividedPreMiddleBranchDichotomy
 public import FLT.Mazur.WeierstrassDividedPrecedingAtlasRange
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedProjectiveLift
+public import FLT.Mazur.WeierstrassDividedPuncturedUnequalDomainCoverage
 public import FLT.Mazur.WeierstrassDividedQuadrupleAmbientAddition
 public import FLT.Mazur.WeierstrassDividedQuadrupleAmbientCoverage
 public import FLT.Mazur.WeierstrassDividedQuadrupleCommonFormula
@@ -16123,7 +16126,12 @@ public import FLT.Mazur.WeierstrassDividedSplitGeometricContraction
 public import FLT.Mazur.WeierstrassDividedSplitNormalizationComparison
 public import FLT.Mazur.WeierstrassDividedStartOneAtlas
 public import FLT.Mazur.WeierstrassDividedStartOneData
+public import FLT.Mazur.WeierstrassDividedSuccessiveArithmeticPairCoverage
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
+public import FLT.Mazur.WeierstrassDividedSuccessiveTensorCoordinates
+public import FLT.Mazur.WeierstrassDividedSuccessiveTensorPair
+public import FLT.Mazur.WeierstrassDividedSuccessiveTensorPairAddition
+public import FLT.Mazur.WeierstrassDividedSuccessiveTensorPrimeCoordinates
 public import FLT.Mazur.WeierstrassDividedSuccessorActionAtlas
 public import FLT.Mazur.WeierstrassDividedSuccessorActionInput
 public import FLT.Mazur.WeierstrassDividedSuccessorAtlasCoordinates
@@ -18169,6 +18177,7 @@ public import FLT.Mazur.WeierstrassSuccessiveTensorSlopeBoundary
 public import FLT.Mazur.WeierstrassSuccessiveTensorSlopeCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveTerminalLaurentCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXAlgebra
+public import FLT.Mazur.WeierstrassSuccessiveXArithmeticPuncturedBranches
 public import FLT.Mazur.WeierstrassSuccessiveXBaseChange
 public import FLT.Mazur.WeierstrassSuccessiveXBaseChangeCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXCoefficients
@@ -18288,6 +18297,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXTensorBoundarySeparation
 public import FLT.Mazur.WeierstrassSuccessiveXTensorContraction
 public import FLT.Mazur.WeierstrassSuccessiveXTensorOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXTensorOverlapGeometry
+public import FLT.Mazur.WeierstrassSuccessiveXTensorPuncturedBranches
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalAffineCover
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalAffineIntersection
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalAffineStructure
