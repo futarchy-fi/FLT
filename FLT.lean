@@ -12924,6 +12924,7 @@ public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
 public import FLT.Mazur.SchemeRelationScalarBaseChange
 public import FLT.Mazur.SchemeRelationScalarCartesian
+public import FLT.Mazur.SchemeRelationScalarComparisonCover
 public import FLT.Mazur.SchemeRelationScalarEtale
 public import FLT.Mazur.SchemeRelationScalarKernelPair
 public import FLT.Mazur.SchemeRelationScalarMonomorphism
