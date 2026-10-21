@@ -3609,6 +3609,7 @@ public import FLT.Mazur.ArithmeticOneGonChangedSubgroupAmple
 public import FLT.Mazur.ArithmeticOneGonCoefficientAmple
 public import FLT.Mazur.ArithmeticOneGonCoefficientAmpleTower
 public import FLT.Mazur.ArithmeticOneGonCoefficientFaithful
+public import FLT.Mazur.ArithmeticOneGonCoefficientFaithfulSubgroupTower
 public import FLT.Mazur.ArithmeticOneGonCoefficientFaithfulTower
 public import FLT.Mazur.ArithmeticOneGonCoefficientIso
 public import FLT.Mazur.ArithmeticOneGonCoefficientSubgroupProjection
