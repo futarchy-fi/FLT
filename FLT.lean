@@ -4400,6 +4400,7 @@ public import FLT.Mazur.CyclicBoundaryGeneratorParameter
 public import FLT.Mazur.CyclicBoundaryGroupSections
 public import FLT.Mazur.CyclicBoundaryLiftSubgroup
 public import FLT.Mazur.CyclicBoundaryLocusTestCurve
+public import FLT.Mazur.CyclicBoundaryLocusTestSubgroup
 public import FLT.Mazur.CyclicBoundaryMarkingEquivalence
 public import FLT.Mazur.CyclicBoundaryMarkingLift
 public import FLT.Mazur.CyclicBoundaryOriginalAmpleLift
