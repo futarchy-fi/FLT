@@ -6298,6 +6298,7 @@ public import FLT.Mazur.FlatScalarFunctionPushout
 public import FLT.Mazur.FlatScalarHomology
 public import FLT.Mazur.FlatScalarImageBaseChange
 public import FLT.Mazur.FlatScalarImageEquations
+public import FLT.Mazur.FlatScalarImageNeighborhoodFaithful
 public import FLT.Mazur.FlatScalarImageNeighborhoodGeometry
 public import FLT.Mazur.FlatScalarImagePrincipalFactor
 public import FLT.Mazur.FlatScalarImageProjection
