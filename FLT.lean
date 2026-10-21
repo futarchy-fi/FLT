@@ -4026,6 +4026,9 @@ public import FLT.Mazur.CharacterScalarBialgebra
 public import FLT.Mazur.CharacterSchemeBaseChange
 public import FLT.Mazur.CharacterSchemeBaseChangeMap
 public import FLT.Mazur.CharacterSchemeBaseChangeTower
+public import FLT.Mazur.CharacterSchemeIntrinsicMapComparison
+public import FLT.Mazur.CharacterSchemeMapComparison
+public import FLT.Mazur.CharacterSchemeSealedBaseChange
 public import FLT.Mazur.CharacteristicTwoThreeOpens
 public import FLT.Mazur.ChowAffineBaseAcyclicPower
 public import FLT.Mazur.ChowAffineBaseChartData
@@ -6323,6 +6326,7 @@ public import FLT.Mazur.GeneralizedCurveBaseChangeCompEq
 public import FLT.Mazur.GeneralizedCurveBaseChangeIso
 public import FLT.Mazur.GeneralizedCurveBaseChangeSquare
 public import FLT.Mazur.GeneralizedCurveBaseChangeTowerMap
+public import FLT.Mazur.GeneralizedCurveBaseChangeTowerProjection
 public import FLT.Mazur.GeneralizedCurveBaseIsoEquivalence
 public import FLT.Mazur.GeneralizedCurveCartierDescent
 public import FLT.Mazur.GeneralizedCurveCartierGenerator
@@ -8601,7 +8605,9 @@ public import FLT.Mazur.OneGonAdicCharacterTower
 public import FLT.Mazur.OneGonAdicChartProjection
 public import FLT.Mazur.OneGonAdicChartRestriction
 public import FLT.Mazur.OneGonAdicCoefficientStages
+public import FLT.Mazur.OneGonAdicCommonSubgroupChangeRing
 public import FLT.Mazur.OneGonAdicCompatibleRecovery
+public import FLT.Mazur.OneGonAdicExtendedCommonSubgroup
 public import FLT.Mazur.OneGonAdicFiniteCoefficientBase
 public import FLT.Mazur.OneGonAdicFiniteSmoothStage
 public import FLT.Mazur.OneGonAdicFiniteSubgroup
@@ -8647,11 +8653,14 @@ public import FLT.Mazur.OneGonAdicSharedCommonSubgroup
 public import FLT.Mazur.OneGonAdicSharedCurve
 public import FLT.Mazur.OneGonAdicSharedCurveTower
 public import FLT.Mazur.OneGonAdicSharedEmbedding
+public import FLT.Mazur.OneGonAdicSharedEmbeddingTower
 public import FLT.Mazur.OneGonAdicSharedRecovery
 public import FLT.Mazur.OneGonAdicSharedStage
 public import FLT.Mazur.OneGonAdicSharedSubgroup
+public import FLT.Mazur.OneGonAdicSharedSubgroupChangeRing
 public import FLT.Mazur.OneGonAdicSharedSubgroupCoherence
 public import FLT.Mazur.OneGonAdicSharedSubgroupIso
+public import FLT.Mazur.OneGonAdicSharedSubgroupTower
 public import FLT.Mazur.OneGonAdicSmoothCoefficientSquares
 public import FLT.Mazur.OneGonAdicSmoothFactorCommonRefinement
 public import FLT.Mazur.OneGonAdicSmoothFactorRecovery
@@ -8667,6 +8676,7 @@ public import FLT.Mazur.OneGonAdicSmoothModelSubgroup
 public import FLT.Mazur.OneGonAdicSmoothProjection
 public import FLT.Mazur.OneGonAdicSubgroupCartier
 public import FLT.Mazur.OneGonAdicSubgroupReductionIdeal
+public import FLT.Mazur.OneGonAdicTriplePairwiseCoherence
 public import FLT.Mazur.OneGonAdicTripleStage
 public import FLT.Mazur.OneGonAdicTripleSubgroupCoherence
 public import FLT.Mazur.OneGonAffineCover
