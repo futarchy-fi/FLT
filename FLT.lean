@@ -6513,6 +6513,7 @@ public import FLT.Mazur.GeneralizedCurveSquareProjection
 public import FLT.Mazur.GeneralizedCurveSquareTestTransport
 public import FLT.Mazur.GeneralizedCurveSubgroupComparison
 public import FLT.Mazur.GeneralizedCurveSubgroupIdeal
+public import FLT.Mazur.GeneralizedCurveUnrestrictedChartCoverage
 public import FLT.Mazur.GeneralizedCurveUnrestrictedChartFiniteness
 public import FLT.Mazur.GeneralizedCurveUnrestrictedChartPresentation
 public import FLT.Mazur.GeneralizedCurveUnrestrictedCubicCoverage
