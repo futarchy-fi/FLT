@@ -16151,6 +16151,7 @@ public import FLT.Mazur.WeierstrassDividedReflectedSmooth
 public import FLT.Mazur.WeierstrassDividedReflectedSource
 public import FLT.Mazur.WeierstrassDividedReflectedTerminalCoverage
 public import FLT.Mazur.WeierstrassDividedReflectedTerminalIndexed
+public import FLT.Mazur.WeierstrassDividedReflectedTerminalNegativeCoverage
 public import FLT.Mazur.WeierstrassDividedReflectedTerminalOutput
 public import FLT.Mazur.WeierstrassDividedReflectedTerminalResidue
 public import FLT.Mazur.WeierstrassDividedReindexedSecantFlatSourceExt
