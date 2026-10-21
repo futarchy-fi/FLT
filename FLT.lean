@@ -8608,6 +8608,7 @@ public import FLT.Mazur.OneGonClosedCyclicParameter
 public import FLT.Mazur.OneGonClosedGroupInclusion
 public import FLT.Mazur.OneGonCocone
 public import FLT.Mazur.OneGonCoefficientTransport
+public import FLT.Mazur.OneGonCommonCoefficientCurve
 public import FLT.Mazur.OneGonCompleteAmpleCyclicSubgroup
 public import FLT.Mazur.OneGonCompleteAmpleParameterLift
 public import FLT.Mazur.OneGonCompleteBoundaryCartesian
