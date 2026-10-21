@@ -4010,6 +4010,8 @@ public import FLT.Mazur.CharacterCoefficientCartesian
 public import FLT.Mazur.CharacterCoefficientCommonRefinement
 public import FLT.Mazur.CharacterCoefficientHomDetection
 public import FLT.Mazur.CharacterCoefficientSeparatedExt
+public import FLT.Mazur.CharacterCommonCoefficientGroup
+public import FLT.Mazur.CharacterCommonCoefficientRecovery
 public import FLT.Mazur.CharacterFiniteCoefficientModel
 public import FLT.Mazur.CharacterGroupBaseChange
 public import FLT.Mazur.CharacterScalarBialgebra
@@ -8620,9 +8622,13 @@ public import FLT.Mazur.OneGonCoefficientEmbeddingRefinement
 public import FLT.Mazur.OneGonCoefficientModelRefinement
 public import FLT.Mazur.OneGonCoefficientRefinementComposition
 public import FLT.Mazur.OneGonCoefficientTransport
+public import FLT.Mazur.OneGonCommonCoefficientCoherence
 public import FLT.Mazur.OneGonCommonCoefficientCurve
 public import FLT.Mazur.OneGonCommonCoefficientGroup
 public import FLT.Mazur.OneGonCommonCoefficientInclusion
+public import FLT.Mazur.OneGonCommonCoefficientSubgroup
+public import FLT.Mazur.OneGonCommonSubgroupIdeal
+public import FLT.Mazur.OneGonCommonSubgroupRecovery
 public import FLT.Mazur.OneGonCompleteAmpleCyclicSubgroup
 public import FLT.Mazur.OneGonCompleteAmpleParameterLift
 public import FLT.Mazur.OneGonCompleteBoundaryCartesian
@@ -16981,6 +16987,8 @@ public import FLT.Mazur.WeierstrassLeftSmoothAssociativity
 public import FLT.Mazur.WeierstrassLeftSmoothCenterAction
 public import FLT.Mazur.WeierstrassLeftSmoothCenterInvariant
 public import FLT.Mazur.WeierstrassLeftSmoothChartCenterEquality
+public import FLT.Mazur.WeierstrassLeftSmoothCoefficientAddition
+public import FLT.Mazur.WeierstrassLeftSmoothCoefficientProduct
 public import FLT.Mazur.WeierstrassLeftSmoothCrossInput
 public import FLT.Mazur.WeierstrassLeftSmoothFactorAddition
 public import FLT.Mazur.WeierstrassLeftSmoothFactorProduct
@@ -17791,6 +17799,7 @@ public import FLT.Mazur.WeierstrassSmoothTripleInputRegular
 public import FLT.Mazur.WeierstrassSmoothTripleProduct
 public import FLT.Mazur.WeierstrassSmoothTripleProjections
 public import FLT.Mazur.WeierstrassSmoothWholeAction
+public import FLT.Mazur.WeierstrassSmoothWholeCoefficientAction
 public import FLT.Mazur.WeierstrassSmoothYAddition
 public import FLT.Mazur.WeierstrassSmoothYAffineResidue
 public import FLT.Mazur.WeierstrassSmoothYAffineSource
