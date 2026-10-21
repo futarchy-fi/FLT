@@ -3606,6 +3606,7 @@ public import FLT.Mazur.ArithmeticOneGonAmpleParameter
 public import FLT.Mazur.ArithmeticOneGonArbitrarySubgroupPullback
 public import FLT.Mazur.ArithmeticOneGonBoundaryFiber
 public import FLT.Mazur.ArithmeticOneGonChangedSubgroupAmple
+public import FLT.Mazur.ArithmeticOneGonCoefficientAmple
 public import FLT.Mazur.ArithmeticOneGonCoefficientIso
 public import FLT.Mazur.ArithmeticOneGonCoefficientTower
 public import FLT.Mazur.ArithmeticOneGonCommonCoefficientChangeRing
