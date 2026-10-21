@@ -4407,6 +4407,7 @@ public import FLT.Mazur.CyclicBoundaryRelabelSubgroup
 public import FLT.Mazur.CyclicBoundarySectionMarking
 public import FLT.Mazur.CyclicBoundaryTestSubgroup
 public import FLT.Mazur.CyclicBoundaryUniversalSubgroup
+public import FLT.Mazur.CyclicBoundaryUnrestrictedOrbit
 public import FLT.Mazur.CyclicCharacteristicAffineArrowGeometry
 public import FLT.Mazur.CyclicCharacteristicAffineCartierClassification
 public import FLT.Mazur.CyclicCharacteristicAffineCoefficientCoherence
