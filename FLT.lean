@@ -16516,6 +16516,7 @@ public import FLT.Mazur.WeierstrassDividedTwoOpenRestriction
 public import FLT.Mazur.WeierstrassDividedTwoSeedOrientation
 public import FLT.Mazur.WeierstrassDividedTwoSeedState
 public import FLT.Mazur.WeierstrassDividedUnequalDepthCoverage
+public import FLT.Mazur.WeierstrassDividedUnequalDepthMiddleCoverage
 public import FLT.Mazur.WeierstrassDividedUnequalDepthMiddleResidue
 public import FLT.Mazur.WeierstrassDividedUnequalDepthOutput
 public import FLT.Mazur.WeierstrassDividedUnequalDepthResidue
