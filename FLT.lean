@@ -18933,6 +18933,7 @@ public import FLT.Mazur.WeierstrassVariableChangeIdentity
 public import FLT.Mazur.WeierstrassVariableChangeIntegralEquation
 public import FLT.Mazur.WeierstrassVariableChangeIntegralIso
 public import FLT.Mazur.WeierstrassVariableChangeIntegralMorphism
+public import FLT.Mazur.WeierstrassVariableChangeIntrinsicGroup
 public import FLT.Mazur.WeierstrassVariableChangeLinear
 public import FLT.Mazur.WeierstrassVariableChangeLocalCoordinates
 public import FLT.Mazur.WeierstrassVariableChangeLocalMorphism
