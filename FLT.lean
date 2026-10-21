@@ -3651,6 +3651,8 @@ public import FLT.Mazur.ArtinianProperStructureSheaf
 public import FLT.Mazur.ArtinianRelativeSectionCriterion
 public import FLT.Mazur.ArtinianResidualNonaccumulation
 public import FLT.Mazur.ArtinianSectionKernel
+public import FLT.Mazur.AssociatedPrimePowerDetection
+public import FLT.Mazur.AssociatedPrincipalClosedImmersion
 public import FLT.Mazur.AuxiliaryBaseProjectionParameter
 public import FLT.Mazur.AuxiliaryCartesianGroupParameter
 public import FLT.Mazur.AuxiliaryCartesianOriginalParameter
@@ -7605,6 +7607,7 @@ public import FLT.Mazur.IdealComplementFunctionExtension
 public import FLT.Mazur.IdealConditionAcyclic
 public import FLT.Mazur.IdealFamilyIsomorphism
 public import FLT.Mazur.IdealIsomorphismExtension
+public import FLT.Mazur.IdealMapPowerAnnihilator
 public import FLT.Mazur.IdealModuleAffineTensor
 public import FLT.Mazur.IdealModuleEquationSquare
 public import FLT.Mazur.IdealModulePrincipalPullback
@@ -9112,10 +9115,14 @@ public import FLT.Mazur.OriginalAlgebraicDetectingSchemeOpen
 public import FLT.Mazur.OriginalAlgebraicPointDescent
 public import FLT.Mazur.OriginalBoundaryAdicFlatRelation
 public import FLT.Mazur.OriginalBoundaryAdicRelationLift
+public import FLT.Mazur.OriginalBoundaryAffineAssociatedDetection
+public import FLT.Mazur.OriginalBoundaryAssociatedComparisonLift
+public import FLT.Mazur.OriginalBoundaryAssociatedDifferentialDetection
 public import FLT.Mazur.OriginalBoundaryBranchScalars
 public import FLT.Mazur.OriginalBoundaryComparisonClosedImage
 public import FLT.Mazur.OriginalBoundaryComparisonLocalClosedImage
 public import FLT.Mazur.OriginalBoundaryComparisonNeighborhood
+public import FLT.Mazur.OriginalBoundaryDifferentialIdealPower
 public import FLT.Mazur.OriginalBoundaryDifferentialKernelSupport
 public import FLT.Mazur.OriginalBoundaryDiscrepancyLocus
 public import FLT.Mazur.OriginalBoundaryDomainComparisonLift
@@ -12463,6 +12470,7 @@ public import FLT.Mazur.ScalarCompatibleIntegerModel
 public import FLT.Mazur.ScalarComponentRankCeiling
 public import FLT.Mazur.ScalarConstructibleFiniteCover
 public import FLT.Mazur.ScalarConstructibleStrata
+public import FLT.Mazur.ScalarDifferentialAssociatedDenominator
 public import FLT.Mazur.ScalarDifferentialPrincipalRigidity
 public import FLT.Mazur.ScalarEndomorphismPullback
 public import FLT.Mazur.ScalarExtensionDirectSum
