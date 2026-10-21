@@ -11758,6 +11758,7 @@ public import FLT.Mazur.RankStageAffineBoundaryLifts
 public import FLT.Mazur.RankStageAffineCorrectedObstruction
 public import FLT.Mazur.RankStageAffineFullBoundaryTower
 public import FLT.Mazur.RankStageAffineNeighborhoods
+public import FLT.Mazur.RankStageBoundaryArrowCompatibility
 public import FLT.Mazur.RankStageBoundaryCorrectionClass
 public import FLT.Mazur.RankStageBoundaryCorrectionVanishing
 public import FLT.Mazur.RankStageBoundaryEndpointQuotient
