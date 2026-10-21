@@ -16104,6 +16104,7 @@ public import FLT.Mazur.WeierstrassDividedReciprocalTangentOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalTangentScheme
 public import FLT.Mazur.WeierstrassDividedReflectedBranchData
 public import FLT.Mazur.WeierstrassDividedReflectedBranchFormula
+public import FLT.Mazur.WeierstrassDividedReflectedBranchResidue
 public import FLT.Mazur.WeierstrassDividedReindexedSecantFlatSourceExt
 public import FLT.Mazur.WeierstrassDividedReindexedSecantOpenGluing
 public import FLT.Mazur.WeierstrassDividedReindexedTangentSecantExt
