@@ -16505,6 +16505,7 @@ public import FLT.Mazur.WeierstrassDividedSumDepthResolvedContraction
 public import FLT.Mazur.WeierstrassDividedSumDepthSmoothOutput
 public import FLT.Mazur.WeierstrassDividedSumDepthSource
 public import FLT.Mazur.WeierstrassDividedSumDepthSourceOutput
+public import FLT.Mazur.WeierstrassDividedSuppliedOriginalSmoothAddition
 public import FLT.Mazur.WeierstrassDividedSuppliedSmoothChart
 public import FLT.Mazur.WeierstrassDividedSuppliedSmoothPair
 public import FLT.Mazur.WeierstrassDividedSuppliedSmoothSecantDomain
