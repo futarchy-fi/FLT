@@ -16119,6 +16119,7 @@ public import FLT.Mazur.WeierstrassDividedTangentTransportAction
 public import FLT.Mazur.WeierstrassDividedTangentTriple
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorInfinityPreimage
+public import FLT.Mazur.WeierstrassDividedTensorIntegralAtlas
 public import FLT.Mazur.WeierstrassDividedTensorPointAction
 public import FLT.Mazur.WeierstrassDividedTensorResidueInfinity
 public import FLT.Mazur.WeierstrassDividedTensorSymmetry
