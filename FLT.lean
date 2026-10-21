@@ -3607,6 +3607,7 @@ public import FLT.Mazur.ArithmeticOneGonChangedSubgroupAmple
 public import FLT.Mazur.ArithmeticOneGonCoefficientIso
 public import FLT.Mazur.ArithmeticOneGonCoefficientTower
 public import FLT.Mazur.ArithmeticOneGonCommonCoefficientIso
+public import FLT.Mazur.ArithmeticOneGonCommonCoefficientTower
 public import FLT.Mazur.ArithmeticOneGonFamily
 public import FLT.Mazur.ArithmeticOneGonFiberTorus
 public import FLT.Mazur.ArithmeticOneGonFieldFibers
@@ -4021,6 +4022,7 @@ public import FLT.Mazur.CharacterFiniteCoefficientModel
 public import FLT.Mazur.CharacterGroupBaseChange
 public import FLT.Mazur.CharacterScalarBialgebra
 public import FLT.Mazur.CharacterSchemeBaseChange
+public import FLT.Mazur.CharacterSchemeBaseChangeTower
 public import FLT.Mazur.CharacteristicTwoThreeOpens
 public import FLT.Mazur.ChowAffineBaseAcyclicPower
 public import FLT.Mazur.ChowAffineBaseChartData
@@ -8597,12 +8599,20 @@ public import FLT.Mazur.OneGonAdicFiniteSubgroup
 public import FLT.Mazur.OneGonAdicFullSubgroupRecovery
 public import FLT.Mazur.OneGonAdicGeneralizedRecovery
 public import FLT.Mazur.OneGonAdicIndependentBase
+public import FLT.Mazur.OneGonAdicIndependentCommonCurve
+public import FLT.Mazur.OneGonAdicIndependentCommonEmbedding
+public import FLT.Mazur.OneGonAdicIndependentCommonFactors
+public import FLT.Mazur.OneGonAdicIndependentCommonIdeal
+public import FLT.Mazur.OneGonAdicIndependentCommonRecovery
 public import FLT.Mazur.OneGonAdicIndependentCommonStage
+public import FLT.Mazur.OneGonAdicIndependentCurveTower
 public import FLT.Mazur.OneGonAdicIndependentEmbedding
 public import FLT.Mazur.OneGonAdicIndependentFullRecovery
 public import FLT.Mazur.OneGonAdicIndependentSmoothRecovery
 public import FLT.Mazur.OneGonAdicIndependentSmoothStage
+public import FLT.Mazur.OneGonAdicIndependentSourceTower
 public import FLT.Mazur.OneGonAdicIndependentStageModel
+public import FLT.Mazur.OneGonAdicIndependentStageNormalForm
 public import FLT.Mazur.OneGonAdicIndependentStageRecovery
 public import FLT.Mazur.OneGonAdicIndependentStageRefinement
 public import FLT.Mazur.OneGonAdicInitialCoefficientNaturality
