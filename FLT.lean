@@ -10459,6 +10459,7 @@ public import FLT.Mazur.PolygonCompleteStageMarkings
 public import FLT.Mazur.PolygonCompleteStageRotation
 public import FLT.Mazur.PolygonCompleteStructureCohomology
 public import FLT.Mazur.PolygonCompleteUniversalFunctions
+public import FLT.Mazur.PolygonCompleteUnrestrictedCyclicChart
 public import FLT.Mazur.PolygonCompleteWholeAction
 public import FLT.Mazur.PolygonCompleteWholeActionCartesian
 public import FLT.Mazur.PolygonCompleteWholeActionChartCompatibility
