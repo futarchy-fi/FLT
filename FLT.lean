@@ -3650,6 +3650,7 @@ public import FLT.Mazur.ArtinianProperStructureSheaf
 public import FLT.Mazur.ArtinianRelativeSectionCriterion
 public import FLT.Mazur.ArtinianResidualNonaccumulation
 public import FLT.Mazur.ArtinianSectionKernel
+public import FLT.Mazur.AssociatedPrimePowerDetection
 public import FLT.Mazur.AuxiliaryBaseProjectionParameter
 public import FLT.Mazur.AuxiliaryCartesianGroupParameter
 public import FLT.Mazur.AuxiliaryCartesianOriginalParameter
