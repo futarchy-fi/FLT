@@ -8375,6 +8375,7 @@ public import FLT.Mazur.NilpotentQuadraticRootNaturality
 public import FLT.Mazur.NilpotentSectionRestriction
 public import FLT.Mazur.NilpotentTorsionPowerEquality
 public import FLT.Mazur.NilpotentUnramifiedOpenRigidity
+public import FLT.Mazur.NilpotentVariableChangeLifting
 public import FLT.Mazur.NodalFamilyGeometricConnected
 public import FLT.Mazur.NodalFamilySmoothOpenDimension
 public import FLT.Mazur.NodalFiberAlgebra
