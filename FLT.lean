@@ -8639,6 +8639,7 @@ public import FLT.Mazur.OneGonAdicPuncturedCoarse
 public import FLT.Mazur.OneGonAdicPuncturedModuli
 public import FLT.Mazur.OneGonAdicRecoveredSmoothFactor
 public import FLT.Mazur.OneGonAdicReductionCartesian
+public import FLT.Mazur.OneGonAdicSharedCommonSubgroup
 public import FLT.Mazur.OneGonAdicSharedCurve
 public import FLT.Mazur.OneGonAdicSharedEmbedding
 public import FLT.Mazur.OneGonAdicSharedRecovery
