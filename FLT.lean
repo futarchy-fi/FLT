@@ -11634,6 +11634,7 @@ public import FLT.Mazur.RankStageRelationTransitions
 public import FLT.Mazur.RankStageRelativeClosedBoundaryProduct
 public import FLT.Mazur.RankStageRelativeClosedCoreObstruction
 public import FLT.Mazur.RankStageRelativeClosedCoreProduct
+public import FLT.Mazur.RankStageRelativeClosedInvariantBoundary
 public import FLT.Mazur.RankStageRescaledGlobalKernelTowers
 public import FLT.Mazur.RankStageStableKernelObstruction
 public import FLT.Mazur.RankStageStableTransitions
