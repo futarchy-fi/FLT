@@ -9105,6 +9105,7 @@ public import FLT.Mazur.OriginalBoundaryLocalRelationDescent
 public import FLT.Mazur.OriginalBoundaryNilpotentEndpointLift
 public import FLT.Mazur.OriginalBoundaryPrincipalCover
 public import FLT.Mazur.OriginalBoundaryPrincipalLiftCriterion
+public import FLT.Mazur.OriginalBoundaryRankChartEndpointLift
 public import FLT.Mazur.OriginalBoundaryRankCollision
 public import FLT.Mazur.OriginalBoundaryRankStageComparison
 public import FLT.Mazur.OriginalBoundaryRankStageDenseCoverage
