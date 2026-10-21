@@ -11623,6 +11623,7 @@ public import FLT.Mazur.RankStageBoundaryCorrectionClass
 public import FLT.Mazur.RankStageBoundaryCorrectionVanishing
 public import FLT.Mazur.RankStageBoundaryIdeal
 public import FLT.Mazur.RankStageBoundaryScalarAnnihilation
+public import FLT.Mazur.RankStageBoundaryScalarGeometry
 public import FLT.Mazur.RankStageBoundarySeedTower
 public import FLT.Mazur.RankStageBoundedCoreCover
 public import FLT.Mazur.RankStageClopenBoundaryOverlap
