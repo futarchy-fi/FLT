@@ -4011,6 +4011,7 @@ public import FLT.Mazur.CharacterCoefficientCommonRefinement
 public import FLT.Mazur.CharacterCoefficientHomDetection
 public import FLT.Mazur.CharacterCoefficientSeparatedExt
 public import FLT.Mazur.CharacterCommonCoefficientGroup
+public import FLT.Mazur.CharacterCommonCoefficientRecovery
 public import FLT.Mazur.CharacterFiniteCoefficientModel
 public import FLT.Mazur.CharacterGroupBaseChange
 public import FLT.Mazur.CharacterScalarBialgebra
