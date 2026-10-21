@@ -12551,6 +12551,7 @@ public import FLT.Mazur.ScalarRestrictionFiniteness
 public import FLT.Mazur.ScalarRestrictionImage
 public import FLT.Mazur.ScalarStalkDifferentialJacobianRigidity
 public import FLT.Mazur.ScalarStalkDifferentialPolynomialRigidity
+public import FLT.Mazur.ScalarStalkJacobianTests
 public import FLT.Mazur.ScalarStrataBoundaryRefinement
 public import FLT.Mazur.ScalarStratumThickenings
 public import FLT.Mazur.ScalarTensorExactFibers
