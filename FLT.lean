@@ -8600,6 +8600,7 @@ public import FLT.Mazur.OneGonAdicIndependentSmoothRecovery
 public import FLT.Mazur.OneGonAdicIndependentSmoothStage
 public import FLT.Mazur.OneGonAdicIndependentStageModel
 public import FLT.Mazur.OneGonAdicIndependentStageRecovery
+public import FLT.Mazur.OneGonAdicIndependentStageRefinement
 public import FLT.Mazur.OneGonAdicInitialCoefficientNaturality
 public import FLT.Mazur.OneGonAdicInitialCoefficientTransport
 public import FLT.Mazur.OneGonAdicInitialParameter
