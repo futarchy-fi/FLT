@@ -8955,6 +8955,12 @@ public import FLT.Mazur.OriginalAffineSchemeDetectingOpen
 public import FLT.Mazur.OriginalAffineSchemeOrbit
 public import FLT.Mazur.OriginalAlgebraicDetectingSchemeOpen
 public import FLT.Mazur.OriginalAlgebraicPointDescent
+public import FLT.Mazur.OriginalBoundaryLiftFiniteSupport
+public import FLT.Mazur.OriginalBoundaryPrincipalCover
+public import FLT.Mazur.OriginalBoundaryPrincipalLiftCriterion
+public import FLT.Mazur.OriginalBoundaryResidualFiniteFamily
+public import FLT.Mazur.OriginalBoundaryResidualIdeal
+public import FLT.Mazur.OriginalBoundaryResidualPrincipalCover
 public import FLT.Mazur.OriginalEnvelopeAcyclicCriterion
 public import FLT.Mazur.OriginalFamilyIdentityComparison
 public import FLT.Mazur.OriginalFamilySectionComposition
@@ -11737,6 +11743,7 @@ public import FLT.Mazur.RankStageRelativeClosedCoreObstruction
 public import FLT.Mazur.RankStageRelativeClosedCoreProduct
 public import FLT.Mazur.RankStageRelativeClosedInvariantBoundary
 public import FLT.Mazur.RankStageRescaledGlobalKernelTowers
+public import FLT.Mazur.RankStageResidualGeometricPower
 public import FLT.Mazur.RankStageStableKernelObstruction
 public import FLT.Mazur.RankStageStableTransitions
 public import FLT.Mazur.RankStageStagewiseKernelObstruction
