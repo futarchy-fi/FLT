@@ -15792,6 +15792,7 @@ public import FLT.Mazur.WeierstrassDividedOlderTerminalIntermediateAddition
 public import FLT.Mazur.WeierstrassDividedOlderTripleNegativeAddition
 public import FLT.Mazur.WeierstrassDividedOlderTripleSumAddition
 public import FLT.Mazur.WeierstrassDividedOlderUnequalAddition
+public import FLT.Mazur.WeierstrassDividedOlderWiderReflectedAddition
 public import FLT.Mazur.WeierstrassDividedOlderZeroConicParameters
 public import FLT.Mazur.WeierstrassDividedOlderZeroConstantNodeDescent
 public import FLT.Mazur.WeierstrassDividedOlderZeroEqualizerCover
