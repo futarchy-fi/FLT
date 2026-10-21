@@ -8827,6 +8827,7 @@ public import FLT.Mazur.OneGonCompleteCyclicParameterComparison
 public import FLT.Mazur.OneGonCompleteFiniteSubgroup
 public import FLT.Mazur.OneGonCompleteGeneralizedCurve
 public import FLT.Mazur.OneGonCompleteGeometricRotations
+public import FLT.Mazur.OneGonCompleteGroupRelativeDimension
 public import FLT.Mazur.OneGonCompleteKernelPowers
 public import FLT.Mazur.OneGonCompleteLabelLifts
 public import FLT.Mazur.OneGonCompleteParameterSubgroup
