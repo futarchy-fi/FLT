@@ -4397,6 +4397,7 @@ public import FLT.Mazur.CyclicBoundaryFaithfulBaseChangeAction
 public import FLT.Mazur.CyclicBoundaryFaithfulLift
 public import FLT.Mazur.CyclicBoundaryFaithfulOpen
 public import FLT.Mazur.CyclicBoundaryGeneratorComparison
+public import FLT.Mazur.CyclicBoundaryGeneratorCoverage
 public import FLT.Mazur.CyclicBoundaryGeneratorParameter
 public import FLT.Mazur.CyclicBoundaryGroupSections
 public import FLT.Mazur.CyclicBoundaryLiftSubgroup
