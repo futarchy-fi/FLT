@@ -3611,6 +3611,7 @@ public import FLT.Mazur.ArithmeticOneGonCoefficientAmpleTower
 public import FLT.Mazur.ArithmeticOneGonCoefficientFaithful
 public import FLT.Mazur.ArithmeticOneGonCoefficientFaithfulTower
 public import FLT.Mazur.ArithmeticOneGonCoefficientIso
+public import FLT.Mazur.ArithmeticOneGonCoefficientSubgroupProjection
 public import FLT.Mazur.ArithmeticOneGonCoefficientTower
 public import FLT.Mazur.ArithmeticOneGonCommonCoefficientChangeRing
 public import FLT.Mazur.ArithmeticOneGonCommonCoefficientCoherence
