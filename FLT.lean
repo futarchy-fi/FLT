@@ -9006,6 +9006,7 @@ public import FLT.Mazur.OriginalBoundaryResidualPrincipalCover
 public import FLT.Mazur.OriginalBoundaryResidualRelationCover
 public import FLT.Mazur.OriginalBoundaryResidualScalarCover
 public import FLT.Mazur.OriginalBoundaryResidualTensorCover
+public import FLT.Mazur.OriginalBoundaryScalarImageLift
 public import FLT.Mazur.OriginalBoundaryScalarRelation
 public import FLT.Mazur.OriginalBoundaryTensorLift
 public import FLT.Mazur.OriginalBoundaryUniformFlatPoint
