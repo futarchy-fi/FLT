@@ -4777,6 +4777,7 @@ public import FLT.Mazur.CyclicMarkingSingularCoverage
 public import FLT.Mazur.CyclicMarkingSingularCriterion
 public import FLT.Mazur.CyclicMarkingSingularDivisor
 public import FLT.Mazur.CyclicMarkingSingularGenerator
+public import FLT.Mazur.CyclicMarkingSingularProduct
 public import FLT.Mazur.CyclicMarkingSingularSubgroup
 public import FLT.Mazur.CyclicMarkingSmoothCarrier
 public import FLT.Mazur.CyclicMarkingSmoothRestriction
