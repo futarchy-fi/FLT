@@ -9081,6 +9081,7 @@ public import FLT.Mazur.OriginalBoundaryResidualRelationCover
 public import FLT.Mazur.OriginalBoundaryResidualScalarCover
 public import FLT.Mazur.OriginalBoundaryResidualTensorCover
 public import FLT.Mazur.OriginalBoundaryResidueArrows
+public import FLT.Mazur.OriginalBoundaryResidueStageEquations
 public import FLT.Mazur.OriginalBoundaryScalarCartesian
 public import FLT.Mazur.OriginalBoundaryScalarImageLift
 public import FLT.Mazur.OriginalBoundaryScalarMonomorphism
