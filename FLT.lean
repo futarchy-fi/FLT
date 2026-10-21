@@ -8907,6 +8907,7 @@ public import FLT.Mazur.OneGonLocalizedEqualizer
 public import FLT.Mazur.OneGonMobiusConductors
 public import FLT.Mazur.OneGonNilpotentCharacterHom
 public import FLT.Mazur.OneGonNilpotentDiagonalizableLift
+public import FLT.Mazur.OneGonNilpotentGeneralizedPresentation
 public import FLT.Mazur.OneGonNilpotentIntrinsicHomLift
 public import FLT.Mazur.OneGonNilpotentNormalForm
 public import FLT.Mazur.OneGonNilpotentPointedPresentation
