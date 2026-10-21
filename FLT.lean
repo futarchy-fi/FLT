@@ -16548,6 +16548,7 @@ public import FLT.Mazur.WeierstrassDividedUnequalDepthResidue
 public import FLT.Mazur.WeierstrassDividedUnequalDepthSecant
 public import FLT.Mazur.WeierstrassDividedUnequalDepthSmoothOutput
 public import FLT.Mazur.WeierstrassDividedUnequalDepthZeroMiddleCoverage
+public import FLT.Mazur.WeierstrassDividedUnequalDepthZeroResidue
 public import FLT.Mazur.WeierstrassDividedUnequalNegativeInput
 public import FLT.Mazur.WeierstrassDividedUnequalPair
 public import FLT.Mazur.WeierstrassDividedUnequalSecantFormula
