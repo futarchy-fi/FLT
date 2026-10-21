@@ -16031,6 +16031,7 @@ public import FLT.Mazur.WeierstrassDividedRetainedPolygonNaturality
 public import FLT.Mazur.WeierstrassDividedRetainedPuncturePreimage
 public import FLT.Mazur.WeierstrassDividedRetainedTensorIndex
 public import FLT.Mazur.WeierstrassDividedRetainedTensorProjection
+public import FLT.Mazur.WeierstrassDividedRetainedTerminalUnequalAddition
 public import FLT.Mazur.WeierstrassDividedRetainedTransport
 public import FLT.Mazur.WeierstrassDividedRetainedZeroAbscissaTransfer
 public import FLT.Mazur.WeierstrassDividedRetainedZeroExteriorLine
