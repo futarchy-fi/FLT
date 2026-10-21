@@ -12600,6 +12600,7 @@ public import FLT.Mazur.SchemeFunctionGroundChange
 public import FLT.Mazur.SchemeGenericFiniteTargetOpen
 public import FLT.Mazur.SchemeGenericFlatTargetOpen
 public import FLT.Mazur.SchemeGenericFppfTargetOpen
+public import FLT.Mazur.SchemeGenerizingVanishingNeighborhood
 public import FLT.Mazur.SchemeGeometricDescentCocycleTest
 public import FLT.Mazur.SchemeGeometricDescentData
 public import FLT.Mazur.SchemeGeometricFiberH0Comparison
