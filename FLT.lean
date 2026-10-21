@@ -12541,6 +12541,7 @@ public import FLT.Mazur.SchemeFiniteTargetRestriction
 public import FLT.Mazur.SchemeFlatFamilyReflection
 public import FLT.Mazur.SchemeFlatFppfTargetDensity
 public import FLT.Mazur.SchemeFlatProductDensity
+public import FLT.Mazur.SchemeFlatScalarSolutionOpen
 public import FLT.Mazur.SchemeFlatScalarVanishingNeighborhood
 public import FLT.Mazur.SchemeFlatSourceImage
 public import FLT.Mazur.SchemeFlatTargetFamilyReflection
