@@ -15405,6 +15405,7 @@ public import FLT.Mazur.WeierstrassDividedInitialTensorPointAction
 public import FLT.Mazur.WeierstrassDividedInitialTensorSlopeGeometry
 public import FLT.Mazur.WeierstrassDividedInitialTensorSlopeLaurent
 public import FLT.Mazur.WeierstrassDividedInitialTerminalAddition
+public import FLT.Mazur.WeierstrassDividedInitialTerminalUnequalAddition
 public import FLT.Mazur.WeierstrassDividedInitialZeroInfinity
 public import FLT.Mazur.WeierstrassDividedInitialZeroLaurent
 public import FLT.Mazur.WeierstrassDividedInitialZeroSlopeChart
