@@ -9037,6 +9037,7 @@ public import FLT.Mazur.OverPullbackSection
 public import FLT.Mazur.OverPullbackSectionComposition
 public import FLT.Mazur.OverPullbackSectionMonoidal
 public import FLT.Mazur.OverPullbackTowerComparison
+public import FLT.Mazur.OverPullbackTowerExt
 public import FLT.Mazur.OverPullbackTowerGroups
 public import FLT.Mazur.OverPullbackTowerMap
 public import FLT.Mazur.PadicValuationArithmetic
