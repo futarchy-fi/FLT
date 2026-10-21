@@ -12870,6 +12870,7 @@ public import FLT.Mazur.SchemeRelationWholeFiberScalars
 public import FLT.Mazur.SchemeRelationWholeFiberSections
 public import FLT.Mazur.SchemeRelativeNilpotentKernel
 public import FLT.Mazur.SchemeRelativeNilpotentSections
+public import FLT.Mazur.SchemeRestrictedOutputComparison
 public import FLT.Mazur.SchemeScalarAvoidanceCover
 public import FLT.Mazur.SchemeScalarAvoidanceIdeal
 public import FLT.Mazur.SchemeScalarBadPrimeDenominators
