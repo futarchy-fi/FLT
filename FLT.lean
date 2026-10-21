@@ -5941,6 +5941,7 @@ public import FLT.Mazur.FiniteEtaleInvariantOpenTransition
 public import FLT.Mazur.FiniteEtaleNamedBoundaryCoefficients
 public import FLT.Mazur.FiniteEtaleNamedDomainBoundaryLifting
 public import FLT.Mazur.FiniteEtalePerfectDVRSplitting
+public import FLT.Mazur.FiniteEtalePullbackNilpotentLift
 public import FLT.Mazur.FiniteEtaleRationalCover
 public import FLT.Mazur.FiniteEtaleSectionCoverNeighborhood
 public import FLT.Mazur.FiniteEtaleSectionEqualityNeighborhood
@@ -9116,9 +9117,13 @@ public import FLT.Mazur.OriginalBoundaryImageNeighborhood
 public import FLT.Mazur.OriginalBoundaryKernelPairLift
 public import FLT.Mazur.OriginalBoundaryLiftFiniteSupport
 public import FLT.Mazur.OriginalBoundaryLocalRelationDescent
+public import FLT.Mazur.OriginalBoundaryNilpotentEndpointLift
 public import FLT.Mazur.OriginalBoundaryPrincipalCover
 public import FLT.Mazur.OriginalBoundaryPrincipalLiftCriterion
+public import FLT.Mazur.OriginalBoundaryRankChartEndpointLift
 public import FLT.Mazur.OriginalBoundaryRankCollision
+public import FLT.Mazur.OriginalBoundaryRankStageComparison
+public import FLT.Mazur.OriginalBoundaryRankStageDenseCoverage
 public import FLT.Mazur.OriginalBoundaryRelationOpenLift
 public import FLT.Mazur.OriginalBoundaryRelationSupport
 public import FLT.Mazur.OriginalBoundaryResidualComparisonNeighborhood
@@ -9149,6 +9154,8 @@ public import FLT.Mazur.OriginalBoundaryUniformFlatPoint
 public import FLT.Mazur.OriginalBoundaryUniformFlatRelation
 public import FLT.Mazur.OriginalBoundaryUniformRelationIdeal
 public import FLT.Mazur.OriginalBoundaryUniformRelationLift
+public import FLT.Mazur.OriginalBoundaryUnramifiedEndpointEquations
+public import FLT.Mazur.OriginalBoundaryUnramifiedKernelDetection
 public import FLT.Mazur.OriginalBoundaryValuationArrowExtension
 public import FLT.Mazur.OriginalEnvelopeAcyclicCriterion
 public import FLT.Mazur.OriginalFamilyIdentityComparison
@@ -12690,6 +12697,7 @@ public import FLT.Mazur.SchemeCoproductPullbackDecomposition
 public import FLT.Mazur.SchemeCoproductSections
 public import FLT.Mazur.SchemeCrossCoverCocycle
 public import FLT.Mazur.SchemeCrossCoverOverlap
+public import FLT.Mazur.SchemeDenseComparisonNilpotentThickening
 public import FLT.Mazur.SchemeDenseOpenComparison
 public import FLT.Mazur.SchemeDescentAffineCharts
 public import FLT.Mazur.SchemeDescentCrossCoverCompatibility
@@ -12706,6 +12714,7 @@ public import FLT.Mazur.SchemeEtaleImageDenseModel
 public import FLT.Mazur.SchemeEtaleImageModelBaseChange
 public import FLT.Mazur.SchemeEtaleImageQuotient
 public import FLT.Mazur.SchemeFamilyTripleOverlap
+public import FLT.Mazur.SchemeFiniteComparisonDenseTests
 public import FLT.Mazur.SchemeFiniteEndpointComparison
 public import FLT.Mazur.SchemeFiniteFiberInterior
 public import FLT.Mazur.SchemeFiniteGeometricOpenSpread
