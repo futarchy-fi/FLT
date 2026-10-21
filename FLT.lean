@@ -18990,6 +18990,7 @@ public import FLT.TateCurve.SymmetricInverse
 public import FLT.TateCurve.TateCurve
 public import FLT.TateCurve.Uniformization
 public import FLT.TateCurve.ValuativeContinuity
+import FLT.Mazur.RankStageFieldBoundaryFamily
 import FLT.Mazur.RankStageFinitePointCore
 import FLT.Mazur.RankStageReducedBoundaryFactors
 import FLT.Mazur.ReducedImmersionFactor
