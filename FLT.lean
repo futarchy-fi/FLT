@@ -11567,6 +11567,7 @@ public import FLT.Mazur.QuotientImageReduction
 public import FLT.Mazur.QuotientRefinementCoherence
 public import FLT.Mazur.QuotientRelativeDerivation
 public import FLT.Mazur.QuotientSpectrumBaseChange
+public import FLT.Mazur.RankImageAffineBoundaryTower
 public import FLT.Mazur.RankOneAmbientLineClassification
 public import FLT.Mazur.RankOneDirectImageSection
 public import FLT.Mazur.RankOneSectionDivisorUniqueness
