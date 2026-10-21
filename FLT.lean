@@ -8978,6 +8978,7 @@ public import FLT.Mazur.OriginalBoundaryResidualFiniteFamily
 public import FLT.Mazur.OriginalBoundaryResidualIdeal
 public import FLT.Mazur.OriginalBoundaryResidualPrincipalCover
 public import FLT.Mazur.OriginalBoundaryResidualRelationCover
+public import FLT.Mazur.OriginalBoundaryUniformFlatRelation
 public import FLT.Mazur.OriginalBoundaryUniformRelationIdeal
 public import FLT.Mazur.OriginalBoundaryUniformRelationLift
 public import FLT.Mazur.OriginalEnvelopeAcyclicCriterion
