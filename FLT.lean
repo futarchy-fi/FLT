@@ -12895,6 +12895,7 @@ public import FLT.Mazur.SchemeRelationWholeFiberScalars
 public import FLT.Mazur.SchemeRelationWholeFiberSections
 public import FLT.Mazur.SchemeRelativeNilpotentKernel
 public import FLT.Mazur.SchemeRelativeNilpotentSections
+public import FLT.Mazur.SchemeRestrictedOutputComparison
 public import FLT.Mazur.SchemeScalarAvoidanceCover
 public import FLT.Mazur.SchemeScalarAvoidanceIdeal
 public import FLT.Mazur.SchemeScalarBadPrimeDenominators
@@ -14649,11 +14650,15 @@ public import FLT.Mazur.WeierstrassDividedArithmeticRetainedCorrectionFamily
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedDouble
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedDoubleBranches
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedDoublePuncture
+public import FLT.Mazur.WeierstrassDividedArithmeticRetainedInputComparison
+public import FLT.Mazur.WeierstrassDividedArithmeticRetainedOutputComparison
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedPolygon
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedPolygonSystem
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedSmoothAddition
 public import FLT.Mazur.WeierstrassDividedArithmeticStartOneRetained
 public import FLT.Mazur.WeierstrassDividedArithmeticSystemCartesian
+public import FLT.Mazur.WeierstrassDividedArithmeticTargetInputComparison
+public import FLT.Mazur.WeierstrassDividedArithmeticTargetOutputComparison
 public import FLT.Mazur.WeierstrassDividedArithmeticTargetPairAddition
 public import FLT.Mazur.WeierstrassDividedArithmeticTargetPairCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticTargetPairPuncture
@@ -16034,6 +16039,7 @@ public import FLT.Mazur.WeierstrassDividedRetainedPolygonMaps
 public import FLT.Mazur.WeierstrassDividedRetainedPolygonNaturality
 public import FLT.Mazur.WeierstrassDividedRetainedPuncturePreimage
 public import FLT.Mazur.WeierstrassDividedRetainedTensorIndex
+public import FLT.Mazur.WeierstrassDividedRetainedTensorProjection
 public import FLT.Mazur.WeierstrassDividedRetainedTransport
 public import FLT.Mazur.WeierstrassDividedRetainedZeroAbscissaTransfer
 public import FLT.Mazur.WeierstrassDividedRetainedZeroExteriorLine
@@ -16175,6 +16181,7 @@ public import FLT.Mazur.WeierstrassDividedStartOneAtlas
 public import FLT.Mazur.WeierstrassDividedStartOneData
 public import FLT.Mazur.WeierstrassDividedSuccessiveArithmeticPairCoverage
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
+public import FLT.Mazur.WeierstrassDividedSuccessivePairInputComparison
 public import FLT.Mazur.WeierstrassDividedSuccessiveTensorCoordinates
 public import FLT.Mazur.WeierstrassDividedSuccessiveTensorPair
 public import FLT.Mazur.WeierstrassDividedSuccessiveTensorPairAddition
