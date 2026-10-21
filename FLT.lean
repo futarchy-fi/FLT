@@ -8602,6 +8602,7 @@ public import FLT.Mazur.OneGonAdicIndependentBase
 public import FLT.Mazur.OneGonAdicIndependentCommonCurve
 public import FLT.Mazur.OneGonAdicIndependentCommonEmbedding
 public import FLT.Mazur.OneGonAdicIndependentCommonFactors
+public import FLT.Mazur.OneGonAdicIndependentCommonIdeal
 public import FLT.Mazur.OneGonAdicIndependentCommonRecovery
 public import FLT.Mazur.OneGonAdicIndependentCommonStage
 public import FLT.Mazur.OneGonAdicIndependentCurveTower
