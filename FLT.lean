@@ -9156,17 +9156,20 @@ public import FLT.Mazur.OriginalBoundaryGenerizingRanks
 public import FLT.Mazur.OriginalBoundaryGeometricTensor
 public import FLT.Mazur.OriginalBoundaryGlobalDifferentialLift
 public import FLT.Mazur.OriginalBoundaryImageNeighborhood
+public import FLT.Mazur.OriginalBoundaryJacobianLift
 public import FLT.Mazur.OriginalBoundaryKernelPairLift
 public import FLT.Mazur.OriginalBoundaryLiftFiniteSupport
 public import FLT.Mazur.OriginalBoundaryLocalImageKernelDetection
 public import FLT.Mazur.OriginalBoundaryLocalRelationDescent
 public import FLT.Mazur.OriginalBoundaryNilpotentEndpointLift
+public import FLT.Mazur.OriginalBoundaryPolynomialLift
 public import FLT.Mazur.OriginalBoundaryPrincipalCover
 public import FLT.Mazur.OriginalBoundaryPrincipalLiftCriterion
 public import FLT.Mazur.OriginalBoundaryRankAssociatedLift
 public import FLT.Mazur.OriginalBoundaryRankChartEndpointLift
 public import FLT.Mazur.OriginalBoundaryRankCollision
 public import FLT.Mazur.OriginalBoundaryRankDifferentialTower
+public import FLT.Mazur.OriginalBoundaryRankPolynomialLift
 public import FLT.Mazur.OriginalBoundaryRankStageComparison
 public import FLT.Mazur.OriginalBoundaryRankStageDenseCoverage
 public import FLT.Mazur.OriginalBoundaryRelationOpenLift
@@ -12492,6 +12495,8 @@ public import FLT.Mazur.ScalarComponentRankCeiling
 public import FLT.Mazur.ScalarConstructibleFiniteCover
 public import FLT.Mazur.ScalarConstructibleStrata
 public import FLT.Mazur.ScalarDifferentialAssociatedDenominator
+public import FLT.Mazur.ScalarDifferentialJacobianAnnihilator
+public import FLT.Mazur.ScalarDifferentialPolynomialAnnihilator
 public import FLT.Mazur.ScalarDifferentialPrincipalRigidity
 public import FLT.Mazur.ScalarEndomorphismPullback
 public import FLT.Mazur.ScalarExtensionDirectSum
@@ -12512,6 +12517,7 @@ public import FLT.Mazur.ScalarMinimalCharacterNeighborhood
 public import FLT.Mazur.ScalarMinimalCharacterPropagation
 public import FLT.Mazur.ScalarNilpotenceFlatBaseChange
 public import FLT.Mazur.ScalarNilpotenceMinimalFiber
+public import FLT.Mazur.ScalarPolynomialResidueRigidity
 public import FLT.Mazur.ScalarPrimeLocalizationCover
 public import FLT.Mazur.ScalarPrimeThickeningTransitions
 public import FLT.Mazur.ScalarPrimeThickenings
