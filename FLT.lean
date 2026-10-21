@@ -3628,6 +3628,7 @@ public import FLT.Mazur.ArithmeticOneGonNodalCoefficient
 public import FLT.Mazur.ArithmeticOneGonOriginalBaseChange
 public import FLT.Mazur.ArithmeticOneGonOriginalFiber
 public import FLT.Mazur.ArithmeticOneGonOriginalRoots
+public import FLT.Mazur.ArithmeticOneGonParameter
 public import FLT.Mazur.ArithmeticOneGonParameterIso
 public import FLT.Mazur.ArithmeticOneGonPolygonAmple
 public import FLT.Mazur.ArithmeticOneGonRoots
