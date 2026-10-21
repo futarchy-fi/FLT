@@ -15481,6 +15481,7 @@ public import FLT.Mazur.WeierstrassDividedOriginalSmoothScale
 public import FLT.Mazur.WeierstrassDividedOriginalSmoothTangentPresentation
 public import FLT.Mazur.WeierstrassDividedOriginalXOpen
 public import FLT.Mazur.WeierstrassDividedOwnBranchOrdinate
+public import FLT.Mazur.WeierstrassDividedOwnSumDepthCoordinates
 public import FLT.Mazur.WeierstrassDividedPairReciprocalEvaluation
 public import FLT.Mazur.WeierstrassDividedPairReciprocalGeometry
 public import FLT.Mazur.WeierstrassDividedPairSecant
