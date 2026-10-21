@@ -4418,6 +4418,7 @@ public import FLT.Mazur.CyclicBoundarySectionMarking
 public import FLT.Mazur.CyclicBoundarySectionParameter
 public import FLT.Mazur.CyclicBoundaryTestSubgroup
 public import FLT.Mazur.CyclicBoundaryUniversalSubgroup
+public import FLT.Mazur.CyclicBoundaryUnrestrictedAmpleLift
 public import FLT.Mazur.CyclicBoundaryUnrestrictedAmpleModuli
 public import FLT.Mazur.CyclicBoundaryUnrestrictedOrbit
 public import FLT.Mazur.CyclicBoundaryUnrestrictedTestLocus
