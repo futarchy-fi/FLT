@@ -9077,6 +9077,7 @@ public import FLT.Mazur.OriginalBoundaryFieldStageEquations
 public import FLT.Mazur.OriginalBoundaryFiniteStageTests
 public import FLT.Mazur.OriginalBoundaryFlatImageGeometry
 public import FLT.Mazur.OriginalBoundaryFlatRelationLift
+public import FLT.Mazur.OriginalBoundaryGenerizingRanks
 public import FLT.Mazur.OriginalBoundaryGeometricTensor
 public import FLT.Mazur.OriginalBoundaryImageNeighborhood
 public import FLT.Mazur.OriginalBoundaryKernelPairLift
