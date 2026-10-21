@@ -12549,6 +12549,7 @@ public import FLT.Mazur.ScalarQuotientResiduePresentation
 public import FLT.Mazur.ScalarResidueClosureGeometry
 public import FLT.Mazur.ScalarRestrictionFiniteness
 public import FLT.Mazur.ScalarRestrictionImage
+public import FLT.Mazur.ScalarStalkDifferentialJacobianRigidity
 public import FLT.Mazur.ScalarStalkDifferentialPolynomialRigidity
 public import FLT.Mazur.ScalarStrataBoundaryRefinement
 public import FLT.Mazur.ScalarStratumThickenings
