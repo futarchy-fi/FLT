@@ -8907,6 +8907,7 @@ public import FLT.Mazur.OneGonMobiusConductors
 public import FLT.Mazur.OneGonNilpotentCharacterHom
 public import FLT.Mazur.OneGonNilpotentDiagonalizableLift
 public import FLT.Mazur.OneGonNilpotentIntrinsicHomLift
+public import FLT.Mazur.OneGonNilpotentNormalForm
 public import FLT.Mazur.OneGonNilpotentSmoothAffine
 public import FLT.Mazur.OneGonNilpotentSurjectiveCharacterLift
 public import FLT.Mazur.OneGonNilpotentSurjectiveHomLift
