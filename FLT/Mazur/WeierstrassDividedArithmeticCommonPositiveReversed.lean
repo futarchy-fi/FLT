@@ -58,50 +58,50 @@ local notation "add" => arithmeticOlderCommonPositiveAddition node data m j hj k
 local notation "swap" => (pullbackSymmetry fb fa).hom
 
 /-- The output domain in the full reversed arithmetic pair. -/
-def arithmeticTriplePositiveReversedOpen : (pullback fb fa).Opens := swap ⁻¹ᵁ D
+def arithmeticCommonPositiveReversedOpen : (pullback fb fa).Opens := swap ⁻¹ᵁ D
 
-local notation "E" => arithmeticTriplePositiveReversedOpen node data m j hj k l hk hl
+local notation "E" => arithmeticCommonPositiveReversedOpen node data m j hj k l hk hl
   hkl hdepth hsum h2
 
 /-- The same constructed output on the original inputs in reverse order. -/
-def arithmeticTriplePositiveReversedAddition : (E).toScheme ⟶ (U).toScheme :=
+def arithmeticCommonPositiveReversedAddition : (E).toScheme ⟶ (U).toScheme :=
   (swap ∣_ D) ≫ add
 
 /-- The reversed output retains its first original arithmetic coefficient point. -/
-@[reassoc] theorem arithmeticTriplePositiveReversedAddition_structure :
-    arithmeticTriplePositiveReversedAddition node data m j hj k l hk hl hkl hdepth hsum h2 ≫ t =
+@[reassoc] theorem arithmeticCommonPositiveReversedAddition_structure :
+    arithmeticCommonPositiveReversedAddition node data m j hj k l hk hl hkl hdepth hsum h2 ≫ t =
       (E).ι ≫ pullback.fst fb fa ≫ fb ≫ q := by
-  rw [arithmeticTriplePositiveReversedAddition, Category.assoc,
+  rw [arithmeticCommonPositiveReversedAddition, Category.assoc,
     arithmeticOlderCommonPositiveAddition_structure_snd, morphismRestrict_ι_assoc,
     pullbackSymmetry_hom_comp_snd_assoc]
   rfl
 
 /-- The same output retains its second original arithmetic coefficient point. -/
-@[reassoc] theorem arithmeticTriplePositiveReversedAddition_structure_snd :
-    arithmeticTriplePositiveReversedAddition node data m j hj k l hk hl hkl hdepth hsum h2 ≫ t =
+@[reassoc] theorem arithmeticCommonPositiveReversedAddition_structure_snd :
+    arithmeticCommonPositiveReversedAddition node data m j hj k l hk hl hkl hdepth hsum h2 ≫ t =
       (E).ι ≫ pullback.snd fb fa ≫ fa ≫ q := by
-  rw [arithmeticTriplePositiveReversedAddition_structure, pullback.condition_assoc]
+  rw [arithmeticCommonPositiveReversedAddition_structure, pullback.condition_assoc]
 
 /-- The reversed output is an actual morphism to the arithmetic smooth base change. -/
-def arithmeticTriplePositiveReversedQuotient : (E).toScheme ⟶ pullback q t :=
+def arithmeticCommonPositiveReversedQuotient : (E).toScheme ⟶ pullback q t :=
   (swap ∣_ D) ≫
     arithmeticOlderCommonPositiveQuotientOutput node data m j hj k l hk hl hkl hdepth hsum h2
 
 /-- The quotient projection has exactly the reversed first coefficient point. -/
-@[reassoc] theorem arithmeticTriplePositiveReversedQuotient_base :
-    arithmeticTriplePositiveReversedQuotient node data m j hj k l hk hl
+@[reassoc] theorem arithmeticCommonPositiveReversedQuotient_base :
+    arithmeticCommonPositiveReversedQuotient node data m j hj k l hk hl
         hkl hdepth hsum h2 ≫ pullback.fst q t = (E).ι ≫ pullback.fst fb fa ≫ fb := by
-  rw [arithmeticTriplePositiveReversedQuotient, Category.assoc,
+  rw [arithmeticCommonPositiveReversedQuotient, Category.assoc,
     arithmeticOlderCommonPositiveQuotientOutput_base, morphismRestrict_ι_assoc,
     pullback.condition, pullbackSymmetry_hom_comp_snd_assoc]
   rfl
 
 /-- Forgetting the quotient recovers the complete reversed integral output. -/
-@[reassoc] theorem arithmeticTriplePositiveReversedQuotient_integral :
-    arithmeticTriplePositiveReversedQuotient node data m j hj k l hk hl
+@[reassoc] theorem arithmeticCommonPositiveReversedQuotient_integral :
+    arithmeticCommonPositiveReversedQuotient node data m j hj k l hk hl
         hkl hdepth hsum h2 ≫ pullback.snd q t =
-      arithmeticTriplePositiveReversedAddition node data m j hj k l hk hl hkl hdepth hsum h2 := by
-  rw [arithmeticTriplePositiveReversedQuotient, Category.assoc,
+      arithmeticCommonPositiveReversedAddition node data m j hj k l hk hl hkl hdepth hsum h2 := by
+  rw [arithmeticCommonPositiveReversedQuotient, Category.assoc,
     arithmeticOlderCommonPositiveQuotientOutput_integral]
   rfl
 
@@ -113,7 +113,7 @@ local notation "x₂" => ar (x W (π ^ (0 + l)) (e).b3 (e).b4 (e).b6)
 local notation "y₂" => ar (y W (π ^ (0 + l)) (e).b3 (e).b4 (e).b6)
 
 /-- Reversed punctured positive pairs are covered at every arithmetic order. -/
-theorem arithmeticTriplePositiveReversedOpen_mem (hk0 : 0 < k) (hlt : k < l)
+theorem arithmeticCommonPositiveReversedOpen_mem (hk0 : 0 < k) (hlt : k < l)
     (hm : 2 * (k + l) ≤ depth) (p : (pullback fb fa : Scheme))
     (hx : x₁ ∉ (input (swap p)).asIdeal) (hu : x₂ ∉ (input (swap p)).asIdeal)
     (hy : y₁ ∈ (input (swap p)).asIdeal) (hv : y₂ ∈ (input (swap p)).asIdeal) : p ∈ E :=
