@@ -8583,6 +8583,7 @@ public import FLT.Mazur.OneGonAdicCharacterTower
 public import FLT.Mazur.OneGonAdicChartProjection
 public import FLT.Mazur.OneGonAdicChartRestriction
 public import FLT.Mazur.OneGonAdicCoefficientStages
+public import FLT.Mazur.OneGonAdicCompatibleRecovery
 public import FLT.Mazur.OneGonAdicFiniteCoefficientBase
 public import FLT.Mazur.OneGonAdicFiniteSmoothStage
 public import FLT.Mazur.OneGonAdicFiniteSubgroup
