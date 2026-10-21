@@ -14883,6 +14883,7 @@ public import FLT.Mazur.WeierstrassDividedAtlasPairPresentation
 public import FLT.Mazur.WeierstrassDividedAtlasPairQuotientSumAddition
 public import FLT.Mazur.WeierstrassDividedAtlasPairReciprocalAddition
 public import FLT.Mazur.WeierstrassDividedAtlasPairReciprocalCoverage
+public import FLT.Mazur.WeierstrassDividedAtlasPairSmoothSecantAddition
 public import FLT.Mazur.WeierstrassDividedAtlasPairSumDepthAddition
 public import FLT.Mazur.WeierstrassDividedAtlasPairTransfer
 public import FLT.Mazur.WeierstrassDividedAtlasPairTransferLift
