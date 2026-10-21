@@ -6172,6 +6172,7 @@ public import FLT.Mazur.FiniteProjectiveRankOneTrivialization
 public import FLT.Mazur.FiniteProjectiveRelationIntegralCoordinates
 public import FLT.Mazur.FiniteProjectiveSectionAmple
 public import FLT.Mazur.FiniteProjectiveTildeLocal
+public import FLT.Mazur.FinitePullbackValuationExtension
 public import FLT.Mazur.FinitePushforwardAmpleVanishing
 public import FLT.Mazur.FinitePushforwardCoherent
 public import FLT.Mazur.FinitePushforwardIdealImage
