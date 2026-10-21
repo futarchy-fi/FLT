@@ -8623,6 +8623,7 @@ public import FLT.Mazur.OneGonAdicIndependentStageNormalForm
 public import FLT.Mazur.OneGonAdicIndependentStageRecovery
 public import FLT.Mazur.OneGonAdicIndependentStageRefinement
 public import FLT.Mazur.OneGonAdicIndependentSubgroupRecovery
+public import FLT.Mazur.OneGonAdicIndependentSubgroupRefinement
 public import FLT.Mazur.OneGonAdicInitialCoefficientNaturality
 public import FLT.Mazur.OneGonAdicInitialCoefficientTransport
 public import FLT.Mazur.OneGonAdicInitialParameter
