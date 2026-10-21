@@ -15746,6 +15746,7 @@ public import FLT.Mazur.WeierstrassDividedOlderNegativeSumDepthAddition
 public import FLT.Mazur.WeierstrassDividedOlderParameterNodeBranches
 public import FLT.Mazur.WeierstrassDividedOlderPointActionPropagation
 public import FLT.Mazur.WeierstrassDividedOlderPuncturedUnequalCoverage
+public import FLT.Mazur.WeierstrassDividedOlderReflectedAddition
 public import FLT.Mazur.WeierstrassDividedOlderResidueInfinity
 public import FLT.Mazur.WeierstrassDividedOlderResidueNodes
 public import FLT.Mazur.WeierstrassDividedOlderSplitNodeBranches
