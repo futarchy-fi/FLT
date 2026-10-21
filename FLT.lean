@@ -11810,6 +11810,8 @@ public import FLT.Mazur.RankStageCoreOverlapBoundary
 public import FLT.Mazur.RankStageCorePointTests
 public import FLT.Mazur.RankStageCoreRefinementCoefficients
 public import FLT.Mazur.RankStageCoreRelationPullback
+public import FLT.Mazur.RankStageFieldBoundaryFamily
+public import FLT.Mazur.RankStageFieldBoundaryPairs
 public import FLT.Mazur.RankStageFiniteAtlasBoundaryTower
 public import FLT.Mazur.RankStageFiniteAtlasCoverage
 public import FLT.Mazur.RankStageFiniteCoreCover
@@ -11823,6 +11825,7 @@ public import FLT.Mazur.RankStageFiniteInvariantDetection
 public import FLT.Mazur.RankStageFiniteLocusCorrection
 public import FLT.Mazur.RankStageFiniteOriginalNorm
 public import FLT.Mazur.RankStageFiniteOriginalObstruction
+public import FLT.Mazur.RankStageFinitePointCore
 public import FLT.Mazur.RankStageFullBoundaryGluing
 public import FLT.Mazur.RankStageFullBoundaryLifting
 public import FLT.Mazur.RankStageFullBoundaryRestriction
@@ -11873,6 +11876,7 @@ public import FLT.Mazur.RankStagePrescribedBoundaryTower
 public import FLT.Mazur.RankStagePrescribedLiftingProperty
 public import FLT.Mazur.RankStagePrincipalBoundaryCorrection
 public import FLT.Mazur.RankStagePrincipalCoreCorrections
+public import FLT.Mazur.RankStageReducedBoundaryFactors
 public import FLT.Mazur.RankStageRelationTransitions
 public import FLT.Mazur.RankStageRelativeClosedBoundaryProduct
 public import FLT.Mazur.RankStageRelativeClosedCoreObstruction
@@ -11919,6 +11923,7 @@ public import FLT.Mazur.ReducedCurvePicardDegree
 public import FLT.Mazur.ReducedDenseRestriction
 public import FLT.Mazur.ReducedFiberBasis
 public import FLT.Mazur.ReducedGeometricFiberFlat
+public import FLT.Mazur.ReducedImmersionFactor
 public import FLT.Mazur.ReducedLocalConstantFiberRank
 public import FLT.Mazur.ReducedSurjectiveIsoCancellation
 public import FLT.Mazur.ReesAffineModel
@@ -18990,8 +18995,3 @@ public import FLT.TateCurve.SymmetricInverse
 public import FLT.TateCurve.TateCurve
 public import FLT.TateCurve.Uniformization
 public import FLT.TateCurve.ValuativeContinuity
-import FLT.Mazur.RankStageFieldBoundaryFamily
-import FLT.Mazur.RankStageFieldBoundaryPairs
-import FLT.Mazur.RankStageFinitePointCore
-import FLT.Mazur.RankStageReducedBoundaryFactors
-import FLT.Mazur.ReducedImmersionFactor
