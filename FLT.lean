@@ -14452,6 +14452,8 @@ public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentSlope
 public import FLT.Mazur.WeierstrassDividedArithmeticAffinePolygonEmbedding
 public import FLT.Mazur.WeierstrassDividedArithmeticAtlasCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticAtlasIndex
+public import FLT.Mazur.WeierstrassDividedArithmeticAtlasPairPresentation
+public import FLT.Mazur.WeierstrassDividedArithmeticAtlasPairTransition
 public import FLT.Mazur.WeierstrassDividedArithmeticBoundaryCharts
 public import FLT.Mazur.WeierstrassDividedArithmeticBranchRestriction
 public import FLT.Mazur.WeierstrassDividedArithmeticCoefficientInfinity
@@ -14511,6 +14513,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticNewestIndex
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeOpen
 public import FLT.Mazur.WeierstrassDividedArithmeticNonadjacentIntersection
+public import FLT.Mazur.WeierstrassDividedArithmeticOlderAtlasCoordinates
 public import FLT.Mazur.WeierstrassDividedArithmeticOppositeNodeOpen
 public import FLT.Mazur.WeierstrassDividedArithmeticPositiveBoundaryCompatibility
 public import FLT.Mazur.WeierstrassDividedArithmeticPositiveEdgeCompatibility
@@ -14557,9 +14560,13 @@ public import FLT.Mazur.WeierstrassDividedAtlasPairFormulaInput
 public import FLT.Mazur.WeierstrassDividedAtlasPairIntermediateAddition
 public import FLT.Mazur.WeierstrassDividedAtlasPairIntermediateFormulas
 public import FLT.Mazur.WeierstrassDividedAtlasPairNegativeSumDepthAddition
+public import FLT.Mazur.WeierstrassDividedAtlasPairPresentation
 public import FLT.Mazur.WeierstrassDividedAtlasPairReciprocalAddition
 public import FLT.Mazur.WeierstrassDividedAtlasPairReciprocalCoverage
 public import FLT.Mazur.WeierstrassDividedAtlasPairSumDepthAddition
+public import FLT.Mazur.WeierstrassDividedAtlasPairTransfer
+public import FLT.Mazur.WeierstrassDividedAtlasPairTransferLift
+public import FLT.Mazur.WeierstrassDividedAtlasPairTransferredUnequalAddition
 public import FLT.Mazur.WeierstrassDividedAtlasPairUnequalAddition
 public import FLT.Mazur.WeierstrassDividedAtlasRegularCenter
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
@@ -16126,6 +16133,7 @@ public import FLT.Mazur.WeierstrassDividedTangentTransportAction
 public import FLT.Mazur.WeierstrassDividedTangentTriple
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorInfinityPreimage
+public import FLT.Mazur.WeierstrassDividedTensorIntegralAtlas
 public import FLT.Mazur.WeierstrassDividedTensorPointAction
 public import FLT.Mazur.WeierstrassDividedTensorResidueInfinity
 public import FLT.Mazur.WeierstrassDividedTensorSymmetry
