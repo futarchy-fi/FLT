@@ -11595,6 +11595,7 @@ public import FLT.Mazur.ProjectiveUniversalLineRefinementWitness
 public import FLT.Mazur.ProjectiveUniversalLineTripleComparison
 public import FLT.Mazur.ProjectiveUniversalLineTriplePaths
 public import FLT.Mazur.ProjectiveUniversalLineTripleRefinement
+public import FLT.Mazur.ProjectiveVanishingFinitePresentation
 public import FLT.Mazur.ProperAcyclicDirectImageRepresentation
 public import FLT.Mazur.ProperAcyclicRankOneLocus
 public import FLT.Mazur.ProperAcyclicRankOneUniversalDivisor
