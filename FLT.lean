@@ -3607,6 +3607,7 @@ public import FLT.Mazur.ArithmeticOneGonChangedSubgroupAmple
 public import FLT.Mazur.ArithmeticOneGonCoefficientIso
 public import FLT.Mazur.ArithmeticOneGonCoefficientTower
 public import FLT.Mazur.ArithmeticOneGonCommonCoefficientIso
+public import FLT.Mazur.ArithmeticOneGonCommonCoefficientTower
 public import FLT.Mazur.ArithmeticOneGonFamily
 public import FLT.Mazur.ArithmeticOneGonFiberTorus
 public import FLT.Mazur.ArithmeticOneGonFieldFibers
@@ -4021,6 +4022,7 @@ public import FLT.Mazur.CharacterFiniteCoefficientModel
 public import FLT.Mazur.CharacterGroupBaseChange
 public import FLT.Mazur.CharacterScalarBialgebra
 public import FLT.Mazur.CharacterSchemeBaseChange
+public import FLT.Mazur.CharacterSchemeBaseChangeTower
 public import FLT.Mazur.CharacteristicTwoThreeOpens
 public import FLT.Mazur.ChowAffineBaseAcyclicPower
 public import FLT.Mazur.ChowAffineBaseChartData
@@ -7311,6 +7313,7 @@ public import FLT.Mazur.HomIntegerModel
 public import FLT.Mazur.HomogeneousCochainCorrection
 public import FLT.Mazur.HomogeneousCochainFinitePatching
 public import FLT.Mazur.HomogeneousCochainScalarObstruction
+public import FLT.Mazur.HomogeneousCochainScaledClass
 public import FLT.Mazur.HomogeneousFractionProjection
 public import FLT.Mazur.HomogeneousIdealWitness
 public import FLT.Mazur.HomogeneousLocalizationArbitraryBaseChange
@@ -8597,12 +8600,20 @@ public import FLT.Mazur.OneGonAdicFiniteSubgroup
 public import FLT.Mazur.OneGonAdicFullSubgroupRecovery
 public import FLT.Mazur.OneGonAdicGeneralizedRecovery
 public import FLT.Mazur.OneGonAdicIndependentBase
+public import FLT.Mazur.OneGonAdicIndependentCommonCurve
+public import FLT.Mazur.OneGonAdicIndependentCommonEmbedding
+public import FLT.Mazur.OneGonAdicIndependentCommonFactors
+public import FLT.Mazur.OneGonAdicIndependentCommonIdeal
+public import FLT.Mazur.OneGonAdicIndependentCommonRecovery
 public import FLT.Mazur.OneGonAdicIndependentCommonStage
+public import FLT.Mazur.OneGonAdicIndependentCurveTower
 public import FLT.Mazur.OneGonAdicIndependentEmbedding
 public import FLT.Mazur.OneGonAdicIndependentFullRecovery
 public import FLT.Mazur.OneGonAdicIndependentSmoothRecovery
 public import FLT.Mazur.OneGonAdicIndependentSmoothStage
+public import FLT.Mazur.OneGonAdicIndependentSourceTower
 public import FLT.Mazur.OneGonAdicIndependentStageModel
+public import FLT.Mazur.OneGonAdicIndependentStageNormalForm
 public import FLT.Mazur.OneGonAdicIndependentStageRecovery
 public import FLT.Mazur.OneGonAdicIndependentStageRefinement
 public import FLT.Mazur.OneGonAdicInitialCoefficientNaturality
@@ -11607,6 +11618,8 @@ public import FLT.Mazur.RankStageAffineBoundaryLifts
 public import FLT.Mazur.RankStageAffineCorrectedObstruction
 public import FLT.Mazur.RankStageAffineFullBoundaryTower
 public import FLT.Mazur.RankStageAffineNeighborhoods
+public import FLT.Mazur.RankStageBoundaryCorrectionClass
+public import FLT.Mazur.RankStageBoundaryCorrectionVanishing
 public import FLT.Mazur.RankStageBoundaryIdeal
 public import FLT.Mazur.RankStageBoundarySeedTower
 public import FLT.Mazur.RankStageBoundedCoreCover
@@ -11629,7 +11642,10 @@ public import FLT.Mazur.RankStageCoreCochainMaps
 public import FLT.Mazur.RankStageCoreCoefficientTransitions
 public import FLT.Mazur.RankStageCoreCorrectionCokernel
 public import FLT.Mazur.RankStageCoreCorrectionCriterion
+public import FLT.Mazur.RankStageCoreCorrectionGluing
+public import FLT.Mazur.RankStageCoreCorrectionScalarGluing
 public import FLT.Mazur.RankStageCoreCorrectionSpace
+public import FLT.Mazur.RankStageCoreCorrectionSupport
 public import FLT.Mazur.RankStageCoreIntersections
 public import FLT.Mazur.RankStageCoreInvariantDetection
 public import FLT.Mazur.RankStageCoreMixedCoefficientDetection
