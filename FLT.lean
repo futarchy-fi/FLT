@@ -16759,6 +16759,7 @@ public import FLT.Mazur.WeierstrassDividedWiderReflectedCoverage
 public import FLT.Mazur.WeierstrassDividedWiderReflectedFactors
 public import FLT.Mazur.WeierstrassDividedWiderReflectedFormula
 public import FLT.Mazur.WeierstrassDividedWiderReflectedIndexed
+public import FLT.Mazur.WeierstrassDividedWiderReflectedNegativeAtlasPair
 public import FLT.Mazur.WeierstrassDividedWiderReflectedNegativeContraction
 public import FLT.Mazur.WeierstrassDividedWiderReflectedNegativeCoverage
 public import FLT.Mazur.WeierstrassDividedWiderReflectedNegativeOutput
