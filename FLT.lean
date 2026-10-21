@@ -3601,6 +3601,8 @@ public import FLT.Mazur.ArbitraryGeometricOriginalOpenImage
 public import FLT.Mazur.ArbitraryGeometricProperCore
 public import FLT.Mazur.ArbitraryPicardAffineEtaleChart
 public import FLT.Mazur.ArbitraryPicardEtaleTranslation
+public import FLT.Mazur.ArithmeticOneGonAmpleBaseChange
+public import FLT.Mazur.ArithmeticOneGonAmpleParameter
 public import FLT.Mazur.ArithmeticOneGonArbitrarySubgroupPullback
 public import FLT.Mazur.ArithmeticOneGonBoundaryFiber
 public import FLT.Mazur.ArithmeticOneGonChangedSubgroupAmple
@@ -3610,6 +3612,7 @@ public import FLT.Mazur.ArithmeticOneGonCommonCoefficientChangeRing
 public import FLT.Mazur.ArithmeticOneGonCommonCoefficientCoherence
 public import FLT.Mazur.ArithmeticOneGonCommonCoefficientIso
 public import FLT.Mazur.ArithmeticOneGonCommonCoefficientTower
+public import FLT.Mazur.ArithmeticOneGonFaithfulModuli
 public import FLT.Mazur.ArithmeticOneGonFamily
 public import FLT.Mazur.ArithmeticOneGonFiberTorus
 public import FLT.Mazur.ArithmeticOneGonFieldFibers
@@ -4253,6 +4256,10 @@ public import FLT.Mazur.CompatibleSubgroupMarkedConjugation
 public import FLT.Mazur.CompatibleSubgroupOrbitMarking
 public import FLT.Mazur.CompatibleSubgroupParameterRefinement
 public import FLT.Mazur.CompatibleSubgroupPointClassification
+public import FLT.Mazur.CompatibleSubgroupRefinementCast
+public import FLT.Mazur.CompatibleSubgroupRefinementComposition
+public import FLT.Mazur.CompatibleSubgroupRefinementTransport
+public import FLT.Mazur.CompatibleSubgroupRefinementUnits
 public import FLT.Mazur.CompatibleSubgroupSectionComposition
 public import FLT.Mazur.CompatibleSubgroupSmooth
 public import FLT.Mazur.CompatibleTorsionCurveMarkingRelabel
@@ -4341,7 +4348,9 @@ public import FLT.Mazur.CyclicBoundaryAmpleBaseChangeRefinement
 public import FLT.Mazur.CyclicBoundaryAmpleBaseChangeTower
 public import FLT.Mazur.CyclicBoundaryAmpleInvariantModuli
 public import FLT.Mazur.CyclicBoundaryAmpleModuli
+public import FLT.Mazur.CyclicBoundaryAmpleRefinementCoherence
 public import FLT.Mazur.CyclicBoundaryAmpleRefinementModuli
+public import FLT.Mazur.CyclicBoundaryAmpleTowerCoherence
 public import FLT.Mazur.CyclicBoundaryAmpleTowerModuli
 public import FLT.Mazur.CyclicBoundaryBaseChange
 public import FLT.Mazur.CyclicBoundaryBaseChangeAmpleCriterion
