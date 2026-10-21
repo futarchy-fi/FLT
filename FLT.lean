@@ -17121,6 +17121,7 @@ public import FLT.Mazur.WeierstrassDividedZeroInitialPunctureTransport
 public import FLT.Mazur.WeierstrassDividedZeroInitialTotalBase
 public import FLT.Mazur.WeierstrassDividedZeroInitialTotalRestriction
 public import FLT.Mazur.WeierstrassDividedZeroInitialTransport
+public import FLT.Mazur.WeierstrassDividedZeroInputNonsingular
 public import FLT.Mazur.WeierstrassDividedZeroMobiusInitialIntersection
 public import FLT.Mazur.WeierstrassDividedZeroMobiusInitialOverlap
 public import FLT.Mazur.WeierstrassDividedZeroMobiusPolygonBoundary
