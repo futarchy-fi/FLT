@@ -14548,6 +14548,7 @@ public import FLT.Mazur.WeierstrassDividedAtlasPairFormulaInput
 public import FLT.Mazur.WeierstrassDividedAtlasPairIntermediateAddition
 public import FLT.Mazur.WeierstrassDividedAtlasPairIntermediateFormulas
 public import FLT.Mazur.WeierstrassDividedAtlasPairNegativeSumDepthAddition
+public import FLT.Mazur.WeierstrassDividedAtlasPairPresentation
 public import FLT.Mazur.WeierstrassDividedAtlasPairReciprocalAddition
 public import FLT.Mazur.WeierstrassDividedAtlasPairReciprocalCoverage
 public import FLT.Mazur.WeierstrassDividedAtlasPairSumDepthAddition
