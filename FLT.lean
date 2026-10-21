@@ -4351,6 +4351,7 @@ public import FLT.Mazur.CyclicBoundaryAmpleBaseChangeModuli
 public import FLT.Mazur.CyclicBoundaryAmpleBaseChangeRefinement
 public import FLT.Mazur.CyclicBoundaryAmpleBaseChangeTower
 public import FLT.Mazur.CyclicBoundaryAmpleCurveModuli
+public import FLT.Mazur.CyclicBoundaryAmpleCurveProjection
 public import FLT.Mazur.CyclicBoundaryAmpleCurveTransport
 public import FLT.Mazur.CyclicBoundaryAmpleInvariantModuli
 public import FLT.Mazur.CyclicBoundaryAmpleModuli
