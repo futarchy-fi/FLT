@@ -4334,9 +4334,17 @@ public import FLT.Mazur.CyclicAdicParameters
 public import FLT.Mazur.CyclicAdicSheafQuotient
 public import FLT.Mazur.CyclicAuxiliaryPrescribedNormalizedNeighborhood
 public import FLT.Mazur.CyclicBoundaryAmpleAction
+public import FLT.Mazur.CyclicBoundaryAmpleBaseChange
+public import FLT.Mazur.CyclicBoundaryAmpleBaseChangeAction
+public import FLT.Mazur.CyclicBoundaryAmpleBaseChangeModuli
+public import FLT.Mazur.CyclicBoundaryAmpleBaseChangeRefinement
+public import FLT.Mazur.CyclicBoundaryAmpleBaseChangeTower
 public import FLT.Mazur.CyclicBoundaryAmpleInvariantModuli
 public import FLT.Mazur.CyclicBoundaryAmpleModuli
+public import FLT.Mazur.CyclicBoundaryAmpleRefinementModuli
+public import FLT.Mazur.CyclicBoundaryAmpleTowerModuli
 public import FLT.Mazur.CyclicBoundaryBaseChange
+public import FLT.Mazur.CyclicBoundaryBaseChangeAmpleCriterion
 public import FLT.Mazur.CyclicBoundaryBaseChangeCurve
 public import FLT.Mazur.CyclicBoundaryBaseChangeProjection
 public import FLT.Mazur.CyclicBoundaryBaseChangeSubgroup
@@ -9397,6 +9405,7 @@ public import FLT.Mazur.PolygonArithmeticZeroTower
 public import FLT.Mazur.PolygonAtlas
 public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonAtlasSmoothLocus
+public import FLT.Mazur.PolygonBoundaryAmpleBaseChange
 public import FLT.Mazur.PolygonBoundaryAmpleParameter
 public import FLT.Mazur.PolygonBoundaryClosedLayer
 public import FLT.Mazur.PolygonBoundaryClosedLifting
