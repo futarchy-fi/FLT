@@ -3604,6 +3604,8 @@ public import FLT.Mazur.ArbitraryPicardEtaleTranslation
 public import FLT.Mazur.ArithmeticOneGonArbitrarySubgroupPullback
 public import FLT.Mazur.ArithmeticOneGonBoundaryFiber
 public import FLT.Mazur.ArithmeticOneGonChangedSubgroupAmple
+public import FLT.Mazur.ArithmeticOneGonCoefficientIso
+public import FLT.Mazur.ArithmeticOneGonCoefficientTower
 public import FLT.Mazur.ArithmeticOneGonFamily
 public import FLT.Mazur.ArithmeticOneGonFiberTorus
 public import FLT.Mazur.ArithmeticOneGonFieldFibers
@@ -3612,6 +3614,7 @@ public import FLT.Mazur.ArithmeticOneGonNodalCoefficient
 public import FLT.Mazur.ArithmeticOneGonOriginalBaseChange
 public import FLT.Mazur.ArithmeticOneGonOriginalFiber
 public import FLT.Mazur.ArithmeticOneGonOriginalRoots
+public import FLT.Mazur.ArithmeticOneGonParameterIso
 public import FLT.Mazur.ArithmeticOneGonRoots
 public import FLT.Mazur.ArithmeticOneGonRootsBaseChange
 public import FLT.Mazur.ArithmeticOneGonRootsCoefficientNaturality
@@ -8583,9 +8586,12 @@ public import FLT.Mazur.OneGonAdicCharacterTower
 public import FLT.Mazur.OneGonAdicChartProjection
 public import FLT.Mazur.OneGonAdicChartRestriction
 public import FLT.Mazur.OneGonAdicCoefficientStages
+public import FLT.Mazur.OneGonAdicCompatibleRecovery
 public import FLT.Mazur.OneGonAdicFiniteCoefficientBase
 public import FLT.Mazur.OneGonAdicFiniteSmoothStage
 public import FLT.Mazur.OneGonAdicFiniteSubgroup
+public import FLT.Mazur.OneGonAdicFullSubgroupRecovery
+public import FLT.Mazur.OneGonAdicGeneralizedRecovery
 public import FLT.Mazur.OneGonAdicInitialCoefficientNaturality
 public import FLT.Mazur.OneGonAdicInitialCoefficientTransport
 public import FLT.Mazur.OneGonAdicInitialParameter
@@ -8622,6 +8628,7 @@ public import FLT.Mazur.OneGonCoefficientCommonModel
 public import FLT.Mazur.OneGonCoefficientEmbeddingRefinement
 public import FLT.Mazur.OneGonCoefficientModelRefinement
 public import FLT.Mazur.OneGonCoefficientRefinementComposition
+public import FLT.Mazur.OneGonCoefficientTowerProjection
 public import FLT.Mazur.OneGonCoefficientTransport
 public import FLT.Mazur.OneGonCommonCoefficientCoherence
 public import FLT.Mazur.OneGonCommonCoefficientCurve
@@ -8711,6 +8718,7 @@ public import FLT.Mazur.OneGonSmoothCoefficientGroup
 public import FLT.Mazur.OneGonSmoothCoefficientProjection
 public import FLT.Mazur.OneGonSmoothCoefficientTower
 public import FLT.Mazur.OneGonSmoothEquationProjection
+public import FLT.Mazur.OneGonSmoothWholeCoefficientAction
 public import FLT.Mazur.OneGonSmoothingAffinePresentation
 public import FLT.Mazur.OneGonSmoothingAuxiliaryOverlap
 public import FLT.Mazur.OneGonSmoothingChartIntersection
@@ -17808,6 +17816,7 @@ public import FLT.Mazur.WeierstrassSmoothTripleProduct
 public import FLT.Mazur.WeierstrassSmoothTripleProjections
 public import FLT.Mazur.WeierstrassSmoothWholeAction
 public import FLT.Mazur.WeierstrassSmoothWholeCoefficientAction
+public import FLT.Mazur.WeierstrassSmoothWholeEquationTransport
 public import FLT.Mazur.WeierstrassSmoothYAddition
 public import FLT.Mazur.WeierstrassSmoothYAffineResidue
 public import FLT.Mazur.WeierstrassSmoothYAffineSource
