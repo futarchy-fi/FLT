@@ -18697,6 +18697,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXShearGluing
 public import FLT.Mazur.WeierstrassSuccessiveXShearHorizontal
 public import FLT.Mazur.WeierstrassSuccessiveXShearLocalization
 public import FLT.Mazur.WeierstrassSuccessiveXSplitFiber
+public import FLT.Mazur.WeierstrassSuccessiveXTensorBoundaryRange
 public import FLT.Mazur.WeierstrassSuccessiveXTensorBoundarySeparation
 public import FLT.Mazur.WeierstrassSuccessiveXTensorContraction
 public import FLT.Mazur.WeierstrassSuccessiveXTensorOverlap
