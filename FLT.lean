@@ -11567,6 +11567,7 @@ public import FLT.Mazur.RankStageBoundedCoreCover
 public import FLT.Mazur.RankStageClopenBoundaryOverlap
 public import FLT.Mazur.RankStageClopenCoreExtension
 public import FLT.Mazur.RankStageClopenCoreObstruction
+public import FLT.Mazur.RankStageClopenCoverBoundaryTower
 public import FLT.Mazur.RankStageClopenKernelObstruction
 public import FLT.Mazur.RankStageClopenOriginalBoundary
 public import FLT.Mazur.RankStageCoherentAffineCores
