@@ -16240,6 +16240,7 @@ public import FLT.Mazur.WeierstrassDividedResidueAdjacentAnyDepthCoverage
 public import FLT.Mazur.WeierstrassDividedResidueAdjacentCanonicalCoverage
 public import FLT.Mazur.WeierstrassDividedResidueAdjacentIndexedCoverage
 public import FLT.Mazur.WeierstrassDividedResidueAdjacentPairCoverage
+public import FLT.Mazur.WeierstrassDividedResidueAdjacentSelfBoundary
 public import FLT.Mazur.WeierstrassDividedResidueAtlasExtension
 public import FLT.Mazur.WeierstrassDividedResidueAtlasFinite
 public import FLT.Mazur.WeierstrassDividedResidueAtlasRefinement
