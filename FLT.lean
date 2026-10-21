@@ -3612,6 +3612,7 @@ public import FLT.Mazur.ArithmeticOneGonCommonCoefficientChangeRing
 public import FLT.Mazur.ArithmeticOneGonCommonCoefficientCoherence
 public import FLT.Mazur.ArithmeticOneGonCommonCoefficientIso
 public import FLT.Mazur.ArithmeticOneGonCommonCoefficientTower
+public import FLT.Mazur.ArithmeticOneGonFaithfulModuli
 public import FLT.Mazur.ArithmeticOneGonFamily
 public import FLT.Mazur.ArithmeticOneGonFiberTorus
 public import FLT.Mazur.ArithmeticOneGonFieldFibers
