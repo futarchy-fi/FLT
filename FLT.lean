@@ -11625,7 +11625,11 @@ public import FLT.Mazur.RankStageCompatibleCoreTowerGluing
 public import FLT.Mazur.RankStageCompatibleKernelObstruction
 public import FLT.Mazur.RankStageCoreBoundaryCoefficients
 public import FLT.Mazur.RankStageCoreBoundaryTransitions
+public import FLT.Mazur.RankStageCoreCochainMaps
 public import FLT.Mazur.RankStageCoreCoefficientTransitions
+public import FLT.Mazur.RankStageCoreCorrectionCokernel
+public import FLT.Mazur.RankStageCoreCorrectionCriterion
+public import FLT.Mazur.RankStageCoreCorrectionSpace
 public import FLT.Mazur.RankStageCoreIntersections
 public import FLT.Mazur.RankStageCoreInvariantDetection
 public import FLT.Mazur.RankStageCoreMixedCoefficientDetection
