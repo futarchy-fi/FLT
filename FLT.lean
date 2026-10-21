@@ -11763,6 +11763,7 @@ public import FLT.Mazur.RankStageBoundaryCorrectionClass
 public import FLT.Mazur.RankStageBoundaryCorrectionVanishing
 public import FLT.Mazur.RankStageBoundaryEndpointQuotient
 public import FLT.Mazur.RankStageBoundaryIdeal
+public import FLT.Mazur.RankStageBoundaryRelationPullback
 public import FLT.Mazur.RankStageBoundaryScalarAnnihilation
 public import FLT.Mazur.RankStageBoundaryScalarGeometry
 public import FLT.Mazur.RankStageBoundaryScalarPower
