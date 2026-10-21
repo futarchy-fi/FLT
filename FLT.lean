@@ -3638,6 +3638,7 @@ public import FLT.Mazur.ArithmeticOneGonSubgroupAmple
 public import FLT.Mazur.ArithmeticOneGonTorus
 public import FLT.Mazur.ArithmeticOneGonTorusBaseChange
 public import FLT.Mazur.ArithmeticRootsOfUnitySections
+public import FLT.Mazur.ArithmeticTensorResidueCover
 public import FLT.Mazur.ArithmeticTorusPoints
 public import FLT.Mazur.ArtinianClosedFiberFunctions
 public import FLT.Mazur.ArtinianCoefficientFiberCartier
