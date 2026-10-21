@@ -4106,8 +4106,11 @@ public import FLT.Mazur.ClosedDirectImageAcyclic
 public import FLT.Mazur.ClosedDirectImageComposition
 public import FLT.Mazur.ClosedFiberAffineNeighborhood
 public import FLT.Mazur.ClosedFiberTensorExactness
+public import FLT.Mazur.ClosedGroupIdealCarrierBaseChange
+public import FLT.Mazur.ClosedGroupIdealEquationBaseChange
 public import FLT.Mazur.ClosedGroupIdealGroup
 public import FLT.Mazur.ClosedGroupIdealOperations
+public import FLT.Mazur.ClosedGroupIdealProductBaseChange
 public import FLT.Mazur.ClosedIdealAffineCoverDescent
 public import FLT.Mazur.ClosedIdealCartesianDegree
 public import FLT.Mazur.ClosedIdealCoverGluing
@@ -4304,6 +4307,7 @@ public import FLT.Mazur.ConstructedDisjointAllLiftTranslation
 public import FLT.Mazur.ConstructedDisjointGeometricTranslation
 public import FLT.Mazur.ConstructibleDenseInterior
 public import FLT.Mazur.ConstructibleGenericClosure
+public import FLT.Mazur.ConstructibleImageGenerizations
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CoprimeFieldGroupTransport
 public import FLT.Mazur.CoprimeGroupMarkings
@@ -4404,6 +4408,9 @@ public import FLT.Mazur.CyclicBoundaryRelabelSubgroup
 public import FLT.Mazur.CyclicBoundarySectionMarking
 public import FLT.Mazur.CyclicBoundaryTestSubgroup
 public import FLT.Mazur.CyclicBoundaryUniversalSubgroup
+public import FLT.Mazur.CyclicBoundaryUnrestrictedOrbit
+public import FLT.Mazur.CyclicBoundaryUnrestrictedTestLocus
+public import FLT.Mazur.CyclicBoundaryUnrestrictedTestMarking
 public import FLT.Mazur.CyclicCharacteristicAffineArrowGeometry
 public import FLT.Mazur.CyclicCharacteristicAffineCartierClassification
 public import FLT.Mazur.CyclicCharacteristicAffineCoefficientCoherence
@@ -4766,6 +4773,7 @@ public import FLT.Mazur.CyclicHomUniversalSubgroupComparison
 public import FLT.Mazur.CyclicLocalOriginalAuxiliary
 public import FLT.Mazur.CyclicLocalRelabeledSections
 public import FLT.Mazur.CyclicMarkingDivisorTransport
+public import FLT.Mazur.CyclicMarkingGroupIdealBaseChange
 public import FLT.Mazur.CyclicMarkingOrbitDivisor
 public import FLT.Mazur.CyclicMarkingRelabelIdeal
 public import FLT.Mazur.CyclicMarkingSingularBaseChange
@@ -4773,7 +4781,12 @@ public import FLT.Mazur.CyclicMarkingSingularCoverage
 public import FLT.Mazur.CyclicMarkingSingularCriterion
 public import FLT.Mazur.CyclicMarkingSingularDivisor
 public import FLT.Mazur.CyclicMarkingSingularGenerator
+public import FLT.Mazur.CyclicMarkingSingularLocus
+public import FLT.Mazur.CyclicMarkingSingularLocusSubgroup
+public import FLT.Mazur.CyclicMarkingSingularProduct
+public import FLT.Mazur.CyclicMarkingSingularProductBaseChange
 public import FLT.Mazur.CyclicMarkingSingularSubgroup
+public import FLT.Mazur.CyclicMarkingSingularTransport
 public import FLT.Mazur.CyclicMarkingSmoothCarrier
 public import FLT.Mazur.CyclicMarkingSmoothRestriction
 public import FLT.Mazur.CyclicMarkingSmoothSymmetry
@@ -7563,6 +7576,7 @@ public import FLT.Mazur.IdealConditionAcyclic
 public import FLT.Mazur.IdealFamilyIsomorphism
 public import FLT.Mazur.IdealIsomorphismExtension
 public import FLT.Mazur.IdealModuleAffineTensor
+public import FLT.Mazur.IdealModuleEquationSquare
 public import FLT.Mazur.IdealModulePrincipalPullback
 public import FLT.Mazur.IdealModulePullback
 public import FLT.Mazur.IdealModulePullbackCoherence
@@ -9076,6 +9090,7 @@ public import FLT.Mazur.OriginalBoundaryFieldStageEquations
 public import FLT.Mazur.OriginalBoundaryFiniteStageTests
 public import FLT.Mazur.OriginalBoundaryFlatImageGeometry
 public import FLT.Mazur.OriginalBoundaryFlatRelationLift
+public import FLT.Mazur.OriginalBoundaryGenerizingRanks
 public import FLT.Mazur.OriginalBoundaryGeometricTensor
 public import FLT.Mazur.OriginalBoundaryImageNeighborhood
 public import FLT.Mazur.OriginalBoundaryKernelPairLift
@@ -12218,9 +12233,13 @@ public import FLT.Mazur.RelativePinchingNeighborhoods
 public import FLT.Mazur.RelativePointLineAmple
 public import FLT.Mazur.RelativePoleComplementFunctions
 public import FLT.Mazur.RelativePoleComplementLinear
+public import FLT.Mazur.RelativeRankCollisionConstructible
 public import FLT.Mazur.RelativeRankCollisionDenominators
 public import FLT.Mazur.RelativeRankCollisionFinite
+public import FLT.Mazur.RelativeRankCollisionGenerizations
 public import FLT.Mazur.RelativeRankCollisionIdeal
+public import FLT.Mazur.RelativeRankCollisionLocalization
+public import FLT.Mazur.RelativeRankCollisionValuations
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRankPullbackThickenings
 public import FLT.Mazur.RelativeRankResidualSectionDetection
