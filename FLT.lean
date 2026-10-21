@@ -11574,6 +11574,7 @@ public import FLT.Mazur.RankOpenCompatibleAlgebraization
 public import FLT.Mazur.RankOpenHomogeneousAlgebraization
 public import FLT.Mazur.RankOpenHomogeneousFamilies
 public import FLT.Mazur.RankOpenTopBoundaryOverlap
+public import FLT.Mazur.RankStageAffineBoundaryCoreSelection
 public import FLT.Mazur.RankStageAffineBoundaryLifts
 public import FLT.Mazur.RankStageAffineFullBoundaryTower
 public import FLT.Mazur.RankStageAffineNeighborhoods
