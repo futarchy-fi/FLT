@@ -8604,6 +8604,7 @@ public import FLT.Mazur.OneGonAdicIndependentEmbedding
 public import FLT.Mazur.OneGonAdicIndependentFullRecovery
 public import FLT.Mazur.OneGonAdicIndependentSmoothRecovery
 public import FLT.Mazur.OneGonAdicIndependentSmoothStage
+public import FLT.Mazur.OneGonAdicIndependentSourceTower
 public import FLT.Mazur.OneGonAdicIndependentStageModel
 public import FLT.Mazur.OneGonAdicIndependentStageNormalForm
 public import FLT.Mazur.OneGonAdicIndependentStageRecovery
