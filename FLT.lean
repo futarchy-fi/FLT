@@ -5776,6 +5776,7 @@ public import FLT.Mazur.FiniteCharacterAdicHom
 public import FLT.Mazur.FiniteCharacterAdicJacobson
 public import FLT.Mazur.FiniteCharacterAdicMapExt
 public import FLT.Mazur.FiniteCharacterAdicSurjectivity
+public import FLT.Mazur.FiniteClopenPriorityCover
 public import FLT.Mazur.FiniteClosedIdealSection
 public import FLT.Mazur.FiniteClosedImmersionIntegerDescent
 public import FLT.Mazur.FiniteCoefficientDifferenceIdeal
@@ -6084,6 +6085,7 @@ public import FLT.Mazur.FiniteQuotientLocalSupport
 public import FLT.Mazur.FiniteReductionKernelPairs
 public import FLT.Mazur.FiniteRelationAffineCoreBaseChange
 public import FLT.Mazur.FiniteRelationAffinePrincipalCore
+public import FLT.Mazur.FiniteRelationClopenPrincipalCore
 public import FLT.Mazur.FiniteRelationColimit
 public import FLT.Mazur.FiniteRelationCompatibleHomDescent
 public import FLT.Mazur.FiniteRelationCoverDescent
@@ -7616,6 +7618,9 @@ public import FLT.Mazur.InvariantAffineCoverNorm
 public import FLT.Mazur.InvariantAffineOpenNormBaseChange
 public import FLT.Mazur.InvariantAffineOpenNormCoefficient
 public import FLT.Mazur.InvariantBoundaryPullback
+public import FLT.Mazur.InvariantClopenCoverSelection
+public import FLT.Mazur.InvariantClopenSectionExtension
+public import FLT.Mazur.InvariantClopenSelectionPullback
 public import FLT.Mazur.InvariantFiniteDomainTrace
 public import FLT.Mazur.InvariantFiniteFreeTraceUnit
 public import FLT.Mazur.InvariantFiniteRelationPrincipal
@@ -11573,7 +11578,12 @@ public import FLT.Mazur.RankStageAffineNeighborhoods
 public import FLT.Mazur.RankStageBoundaryIdeal
 public import FLT.Mazur.RankStageBoundarySeedTower
 public import FLT.Mazur.RankStageBoundedCoreCover
+public import FLT.Mazur.RankStageClopenBoundaryOverlap
+public import FLT.Mazur.RankStageClopenCoreExtension
+public import FLT.Mazur.RankStageClopenCoreObstruction
+public import FLT.Mazur.RankStageClopenCoverBoundaryTower
 public import FLT.Mazur.RankStageClopenKernelObstruction
+public import FLT.Mazur.RankStageClopenOriginalBoundary
 public import FLT.Mazur.RankStageCoherentAffineCores
 public import FLT.Mazur.RankStageCoherentCoreCoverage
 public import FLT.Mazur.RankStageCoherentOverlapNumerators
@@ -12355,6 +12365,8 @@ public import FLT.Mazur.SchemeCanonicalOverlapRefinement
 public import FLT.Mazur.SchemeCanonicalRecoveryCompatibility
 public import FLT.Mazur.SchemeChartBaseScalars
 public import FLT.Mazur.SchemeChartOverlapComparison
+public import FLT.Mazur.SchemeClopenExtensionPullback
+public import FLT.Mazur.SchemeClopenSectionExtension
 public import FLT.Mazur.SchemeClosedBaseChange
 public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
