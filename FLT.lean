@@ -6301,6 +6301,7 @@ public import FLT.Mazur.FlatQuotientCartierFiber
 public import FLT.Mazur.FlatQuotientIdealBaseChange
 public import FLT.Mazur.FlatQuotientIdealFiber
 public import FLT.Mazur.FlatQuotientLocalCartier
+public import FLT.Mazur.FlatScalarComparisonImageNeighborhood
 public import FLT.Mazur.FlatScalarExactness
 public import FLT.Mazur.FlatScalarFunctionNaturality
 public import FLT.Mazur.FlatScalarFunctionPushout
