@@ -16137,6 +16137,7 @@ public import FLT.Mazur.WeierstrassDividedReflectedBranchData
 public import FLT.Mazur.WeierstrassDividedReflectedBranchFormula
 public import FLT.Mazur.WeierstrassDividedReflectedBranchOutput
 public import FLT.Mazur.WeierstrassDividedReflectedBranchResidue
+public import FLT.Mazur.WeierstrassDividedReflectedConstantCompare
 public import FLT.Mazur.WeierstrassDividedReflectedContraction
 public import FLT.Mazur.WeierstrassDividedReflectedCoverage
 public import FLT.Mazur.WeierstrassDividedReflectedIndexed
