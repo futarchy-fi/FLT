@@ -11647,6 +11647,7 @@ public import FLT.Mazur.RankStageTransitionTopology
 public import FLT.Mazur.RankStageUniformKernelNumerators
 public import FLT.Mazur.RankStratumClopenStabilization
 public import FLT.Mazur.RankStratumRelativeClosedStabilization
+public import FLT.Mazur.RankStratumStableCriterion
 public import FLT.Mazur.RankStratumTopNilpotence
 public import FLT.Mazur.RationalCyclicCartierGenerator
 public import FLT.Mazur.RationalCyclicGeneratorChange
