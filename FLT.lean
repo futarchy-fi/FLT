@@ -16755,6 +16755,7 @@ public import FLT.Mazur.WeierstrassDividedVerticalSmooth
 public import FLT.Mazur.WeierstrassDividedWiderReflectedCoordinates
 public import FLT.Mazur.WeierstrassDividedWiderReflectedFactors
 public import FLT.Mazur.WeierstrassDividedWiderReflectedFormula
+public import FLT.Mazur.WeierstrassDividedWiderReflectedIndexed
 public import FLT.Mazur.WeierstrassDividedWiderReflectedOutput
 public import FLT.Mazur.WeierstrassDividedWiderReflectedOutputResidue
 public import FLT.Mazur.WeierstrassDividedWiderReflectedSource
