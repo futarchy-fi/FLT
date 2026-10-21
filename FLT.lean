@@ -15995,6 +15995,7 @@ public import FLT.Mazur.WeierstrassDividedSuccessorUnitAction
 public import FLT.Mazur.WeierstrassDividedSumDepthFormula
 public import FLT.Mazur.WeierstrassDividedSumDepthIndexedOutput
 public import FLT.Mazur.WeierstrassDividedSumDepthResidue
+public import FLT.Mazur.WeierstrassDividedSumDepthSmoothOutput
 public import FLT.Mazur.WeierstrassDividedSumDepthSource
 public import FLT.Mazur.WeierstrassDividedSumDepthSourceOutput
 public import FLT.Mazur.WeierstrassDividedSuppliedSmoothChart
