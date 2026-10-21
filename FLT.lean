@@ -11061,6 +11061,7 @@ public import FLT.Mazur.PolygonUniversalEdgeAlgebra
 public import FLT.Mazur.PolygonUniversalEdgeGroupLaw
 public import FLT.Mazur.PolygonUniversalNodeRestriction
 public import FLT.Mazur.PolygonUniversalScaling
+public import FLT.Mazur.PolygonUnrestrictedBoundaryLocus
 public import FLT.Mazur.PolygonVariableSmoothingAtlas
 public import FLT.Mazur.PolygonVariableSmoothingChartIdentification
 public import FLT.Mazur.PolygonVariableSmoothingDiagram
