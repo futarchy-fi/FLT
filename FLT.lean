@@ -7594,6 +7594,7 @@ public import FLT.Mazur.IdealComplementFunctionExtension
 public import FLT.Mazur.IdealConditionAcyclic
 public import FLT.Mazur.IdealFamilyIsomorphism
 public import FLT.Mazur.IdealIsomorphismExtension
+public import FLT.Mazur.IdealMapPowerAnnihilator
 public import FLT.Mazur.IdealModuleAffineTensor
 public import FLT.Mazur.IdealModuleEquationSquare
 public import FLT.Mazur.IdealModulePrincipalPullback
