@@ -2973,6 +2973,7 @@ public import FLT.Mazur.AffineFiberProductRefinementCocycle
 public import FLT.Mazur.AffineFiberwiseSectionCartier
 public import FLT.Mazur.AffineFiniteEtaleBoundaryKernelTransition
 public import FLT.Mazur.AffineFiniteEtaleBoundarySurjectivity
+public import FLT.Mazur.AffineFiniteEtaleFullBoundaryCoefficients
 public import FLT.Mazur.AffineFiniteEtalePrescribedCoefficients
 public import FLT.Mazur.AffineFiniteEtaleSimultaneousLifting
 public import FLT.Mazur.AffineFiniteFreeAtlas
@@ -11572,6 +11573,7 @@ public import FLT.Mazur.QuotientImageReduction
 public import FLT.Mazur.QuotientRefinementCoherence
 public import FLT.Mazur.QuotientRelativeDerivation
 public import FLT.Mazur.QuotientSpectrumBaseChange
+public import FLT.Mazur.RankImageAffineBoundaryTower
 public import FLT.Mazur.RankOneAmbientLineClassification
 public import FLT.Mazur.RankOneDirectImageSection
 public import FLT.Mazur.RankOneSectionDivisorUniqueness
@@ -11579,7 +11581,10 @@ public import FLT.Mazur.RankOpenCompatibleAlgebraization
 public import FLT.Mazur.RankOpenHomogeneousAlgebraization
 public import FLT.Mazur.RankOpenHomogeneousFamilies
 public import FLT.Mazur.RankOpenTopBoundaryOverlap
+public import FLT.Mazur.RankStageAffineBoundaryCoreSelection
 public import FLT.Mazur.RankStageAffineBoundaryLifts
+public import FLT.Mazur.RankStageAffineCorrectedObstruction
+public import FLT.Mazur.RankStageAffineFullBoundaryTower
 public import FLT.Mazur.RankStageAffineNeighborhoods
 public import FLT.Mazur.RankStageBoundaryIdeal
 public import FLT.Mazur.RankStageBoundarySeedTower
@@ -11620,6 +11625,9 @@ public import FLT.Mazur.RankStageFiniteInvariantDetection
 public import FLT.Mazur.RankStageFiniteOriginalNorm
 public import FLT.Mazur.RankStageFiniteOriginalObstruction
 public import FLT.Mazur.RankStageFullBoundaryGluing
+public import FLT.Mazur.RankStageFullBoundaryLifting
+public import FLT.Mazur.RankStageFullBoundaryRestriction
+public import FLT.Mazur.RankStageGlobalBoundaryCoreCorrection
 public import FLT.Mazur.RankStageGlobalBoundaryNumerators
 public import FLT.Mazur.RankStageGlobalKernelLocalization
 public import FLT.Mazur.RankStageInitialBoundaryLifting
