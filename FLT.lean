@@ -7488,6 +7488,7 @@ public import FLT.Mazur.IdealSheafFlatDetection
 public import FLT.Mazur.IdealSheafOpenCoverDetection
 public import FLT.Mazur.IdealSheafPowerPullback
 public import FLT.Mazur.IdealSheafRadicalOpen
+public import FLT.Mazur.IdealSheafStableOpen
 public import FLT.Mazur.IdealSheafStableSupportCriterion
 public import FLT.Mazur.IdealSheafSupportPower
 public import FLT.Mazur.IdealTwistCohomologyStabilization
