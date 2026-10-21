@@ -8674,6 +8674,7 @@ public import FLT.Mazur.OneGonAdicSmoothModelSubgroup
 public import FLT.Mazur.OneGonAdicSmoothProjection
 public import FLT.Mazur.OneGonAdicSubgroupCartier
 public import FLT.Mazur.OneGonAdicSubgroupReductionIdeal
+public import FLT.Mazur.OneGonAdicTriplePairwiseCoherence
 public import FLT.Mazur.OneGonAdicTripleStage
 public import FLT.Mazur.OneGonAdicTripleSubgroupCoherence
 public import FLT.Mazur.OneGonAffineCover
