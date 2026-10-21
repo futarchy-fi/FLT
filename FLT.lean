@@ -12485,6 +12485,7 @@ public import FLT.Mazur.RootsOfUnityScheme
 public import FLT.Mazur.RootsOfUnitySubgroupCyclicity
 public import FLT.Mazur.RootsOfUnitySubgroupGenerator
 public import FLT.Mazur.ScalarAlgebraicClosureTests
+public import FLT.Mazur.ScalarClearedPolynomialAnnihilator
 public import FLT.Mazur.ScalarClosedGeometricLifts
 public import FLT.Mazur.ScalarClosedImageCoverage
 public import FLT.Mazur.ScalarClosedImageStrata
