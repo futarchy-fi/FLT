@@ -6161,6 +6161,7 @@ public import FLT.Mazur.FiniteRelationCompatibleHomDescent
 public import FLT.Mazur.FiniteRelationCoverDescent
 public import FLT.Mazur.FiniteRelationDetection
 public import FLT.Mazur.FiniteRelationEndpointImmersion
+public import FLT.Mazur.FiniteRelationEndpointQuotientTests
 public import FLT.Mazur.FiniteRelationEndpointSpan
 public import FLT.Mazur.FiniteRelationFiniteHomDescent
 public import FLT.Mazur.FiniteRelationHomDescent
@@ -9058,6 +9059,7 @@ public import FLT.Mazur.OriginalBoundaryComparisonNeighborhood
 public import FLT.Mazur.OriginalBoundaryDiscrepancyLocus
 public import FLT.Mazur.OriginalBoundaryEtaleImageLift
 public import FLT.Mazur.OriginalBoundaryFaithfulTensorLift
+public import FLT.Mazur.OriginalBoundaryFiniteStageTests
 public import FLT.Mazur.OriginalBoundaryFlatImageGeometry
 public import FLT.Mazur.OriginalBoundaryFlatRelationLift
 public import FLT.Mazur.OriginalBoundaryGeometricTensor
@@ -9085,6 +9087,7 @@ public import FLT.Mazur.OriginalBoundaryResidualPrincipalCover
 public import FLT.Mazur.OriginalBoundaryResidualRelationCover
 public import FLT.Mazur.OriginalBoundaryResidualScalarCover
 public import FLT.Mazur.OriginalBoundaryResidualTensorCover
+public import FLT.Mazur.OriginalBoundaryResidueArrows
 public import FLT.Mazur.OriginalBoundaryScalarCartesian
 public import FLT.Mazur.OriginalBoundaryScalarImageLift
 public import FLT.Mazur.OriginalBoundaryScalarMonomorphism
@@ -11773,9 +11776,13 @@ public import FLT.Mazur.RankStageAffineBoundaryLifts
 public import FLT.Mazur.RankStageAffineCorrectedObstruction
 public import FLT.Mazur.RankStageAffineFullBoundaryTower
 public import FLT.Mazur.RankStageAffineNeighborhoods
+public import FLT.Mazur.RankStageBoundaryArrowCompatibility
 public import FLT.Mazur.RankStageBoundaryCorrectionClass
 public import FLT.Mazur.RankStageBoundaryCorrectionVanishing
+public import FLT.Mazur.RankStageBoundaryEndpointQuotient
 public import FLT.Mazur.RankStageBoundaryIdeal
+public import FLT.Mazur.RankStageBoundaryQuotientTransitions
+public import FLT.Mazur.RankStageBoundaryRelationPullback
 public import FLT.Mazur.RankStageBoundaryScalarAnnihilation
 public import FLT.Mazur.RankStageBoundaryScalarGeometry
 public import FLT.Mazur.RankStageBoundaryScalarPower
@@ -11844,6 +11851,7 @@ public import FLT.Mazur.RankStageOriginalAffineRepresentatives
 public import FLT.Mazur.RankStageOriginalAffineTestValues
 public import FLT.Mazur.RankStageOriginalAtlasErrors
 public import FLT.Mazur.RankStageOriginalAtlasTower
+public import FLT.Mazur.RankStageOriginalBoundaryArrows
 public import FLT.Mazur.RankStageOriginalBoundaryCoefficients
 public import FLT.Mazur.RankStageOriginalBoundaryCoherentNumerators
 public import FLT.Mazur.RankStageOriginalBoundaryLiftIdeal
