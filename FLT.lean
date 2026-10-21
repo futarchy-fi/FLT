@@ -6264,6 +6264,8 @@ public import FLT.Mazur.FlatGradedProjBaseChange
 public import FLT.Mazur.FlatGradedProjChartBaseChange
 public import FLT.Mazur.FlatHomogeneousLocalizationBaseChange
 public import FLT.Mazur.FlatIdealTensor
+public import FLT.Mazur.FlatInvariantBoundaryCoordinates
+public import FLT.Mazur.FlatInvariantBoundaryMultiplier
 public import FLT.Mazur.FlatLineSectionTerms
 public import FLT.Mazur.FlatMonoSchematicClosure
 public import FLT.Mazur.FlatQuotientCartierFiber
@@ -8982,6 +8984,7 @@ public import FLT.Mazur.OriginalAlgebraicPointDescent
 public import FLT.Mazur.OriginalBoundaryAdicFlatRelation
 public import FLT.Mazur.OriginalBoundaryAdicRelationLift
 public import FLT.Mazur.OriginalBoundaryDiscrepancyLocus
+public import FLT.Mazur.OriginalBoundaryFaithfulTensorLift
 public import FLT.Mazur.OriginalBoundaryFlatRelationLift
 public import FLT.Mazur.OriginalBoundaryLiftFiniteSupport
 public import FLT.Mazur.OriginalBoundaryPrincipalCover
@@ -8993,6 +8996,8 @@ public import FLT.Mazur.OriginalBoundaryResidualFlatCover
 public import FLT.Mazur.OriginalBoundaryResidualIdeal
 public import FLT.Mazur.OriginalBoundaryResidualPrincipalCover
 public import FLT.Mazur.OriginalBoundaryResidualRelationCover
+public import FLT.Mazur.OriginalBoundaryResidualTensorCover
+public import FLT.Mazur.OriginalBoundaryTensorLift
 public import FLT.Mazur.OriginalBoundaryUniformFlatPoint
 public import FLT.Mazur.OriginalBoundaryUniformFlatRelation
 public import FLT.Mazur.OriginalBoundaryUniformRelationIdeal
@@ -11787,6 +11792,7 @@ public import FLT.Mazur.RankStageStableKernelObstruction
 public import FLT.Mazur.RankStageStableTransitions
 public import FLT.Mazur.RankStageStagewiseKernelObstruction
 public import FLT.Mazur.RankStageStructureMaps
+public import FLT.Mazur.RankStageTensorBoundaryCorrections
 public import FLT.Mazur.RankStageTopBoundaryOverlap
 public import FLT.Mazur.RankStageTopKernelObstruction
 public import FLT.Mazur.RankStageTransitionTopology
