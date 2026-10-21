@@ -4024,6 +4024,7 @@ public import FLT.Mazur.CharacterFiniteCoefficientModel
 public import FLT.Mazur.CharacterGroupBaseChange
 public import FLT.Mazur.CharacterScalarBialgebra
 public import FLT.Mazur.CharacterSchemeBaseChange
+public import FLT.Mazur.CharacterSchemeBaseChangeMap
 public import FLT.Mazur.CharacterSchemeBaseChangeTower
 public import FLT.Mazur.CharacteristicTwoThreeOpens
 public import FLT.Mazur.ChowAffineBaseAcyclicPower
