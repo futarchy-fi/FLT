@@ -16758,6 +16758,7 @@ public import FLT.Mazur.WeierstrassDividedWiderReflectedFormula
 public import FLT.Mazur.WeierstrassDividedWiderReflectedIndexed
 public import FLT.Mazur.WeierstrassDividedWiderReflectedOutput
 public import FLT.Mazur.WeierstrassDividedWiderReflectedOutputResidue
+public import FLT.Mazur.WeierstrassDividedWiderReflectedSmooth
 public import FLT.Mazur.WeierstrassDividedWiderReflectedSource
 public import FLT.Mazur.WeierstrassDividedZeroBoundaryFunctions
 public import FLT.Mazur.WeierstrassDividedZeroClosingAtlasBase
