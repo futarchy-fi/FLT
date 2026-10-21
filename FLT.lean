@@ -11614,6 +11614,7 @@ public import FLT.Mazur.RankStageFiniteInvariantDetection
 public import FLT.Mazur.RankStageFiniteOriginalNorm
 public import FLT.Mazur.RankStageFiniteOriginalObstruction
 public import FLT.Mazur.RankStageFullBoundaryGluing
+public import FLT.Mazur.RankStageFullBoundaryRestriction
 public import FLT.Mazur.RankStageGlobalBoundaryNumerators
 public import FLT.Mazur.RankStageGlobalKernelLocalization
 public import FLT.Mazur.RankStageInitialBoundaryLifting
