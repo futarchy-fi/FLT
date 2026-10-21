@@ -16552,6 +16552,7 @@ public import FLT.Mazur.WeierstrassDividedTripleIntermediateAmbientOverlap
 public import FLT.Mazur.WeierstrassDividedTripleLeftOverlap
 public import FLT.Mazur.WeierstrassDividedTripleNegativeBranchContraction
 public import FLT.Mazur.WeierstrassDividedTripleNegativeBranchOutput
+public import FLT.Mazur.WeierstrassDividedTripleNegativeCoverage
 public import FLT.Mazur.WeierstrassDividedTripleNormalizedBranchLift
 public import FLT.Mazur.WeierstrassDividedTriplePartialOverlap
 public import FLT.Mazur.WeierstrassDividedTriplePromotedAddition
