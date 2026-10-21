@@ -11576,6 +11576,7 @@ public import FLT.Mazur.RankOpenHomogeneousFamilies
 public import FLT.Mazur.RankOpenTopBoundaryOverlap
 public import FLT.Mazur.RankStageAffineBoundaryCoreSelection
 public import FLT.Mazur.RankStageAffineBoundaryLifts
+public import FLT.Mazur.RankStageAffineCorrectedObstruction
 public import FLT.Mazur.RankStageAffineFullBoundaryTower
 public import FLT.Mazur.RankStageAffineNeighborhoods
 public import FLT.Mazur.RankStageBoundaryIdeal
