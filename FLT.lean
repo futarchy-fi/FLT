@@ -14857,6 +14857,7 @@ public import FLT.Mazur.WeierstrassDividedCommonSumContraction
 public import FLT.Mazur.WeierstrassDividedCommonSumCoordinates
 public import FLT.Mazur.WeierstrassDividedCommonSumFormula
 public import FLT.Mazur.WeierstrassDividedCommonSumOutput
+public import FLT.Mazur.WeierstrassDividedCommonSumResidue
 public import FLT.Mazur.WeierstrassDividedCommonSumSource
 public import FLT.Mazur.WeierstrassDividedCompleteClosedCubicCompatibility
 public import FLT.Mazur.WeierstrassDividedCompleteResidueNormalization
