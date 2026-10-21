@@ -11781,6 +11781,7 @@ public import FLT.Mazur.RankStageStableKernelObstruction
 public import FLT.Mazur.RankStageStableTransitions
 public import FLT.Mazur.RankStageStagewiseKernelObstruction
 public import FLT.Mazur.RankStageStructureMaps
+public import FLT.Mazur.RankStageTensorBoundaryCorrections
 public import FLT.Mazur.RankStageTopBoundaryOverlap
 public import FLT.Mazur.RankStageTopKernelObstruction
 public import FLT.Mazur.RankStageTransitionTopology
