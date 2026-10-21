@@ -4248,6 +4248,7 @@ public import FLT.Mazur.CompatibleSubgroupAuxiliaryTransport
 public import FLT.Mazur.CompatibleSubgroupBaseChangeCoherence
 public import FLT.Mazur.CompatibleSubgroupBaseChangeCompEq
 public import FLT.Mazur.CompatibleSubgroupCartierGeneratorEquiv
+public import FLT.Mazur.CompatibleSubgroupComparisonSquare
 public import FLT.Mazur.CompatibleSubgroupCurveProjectionExt
 public import FLT.Mazur.CompatibleSubgroupCyclic
 public import FLT.Mazur.CompatibleSubgroupGeneratorBaseChange
@@ -4267,6 +4268,7 @@ public import FLT.Mazur.CompatibleSubgroupParameterRefinement
 public import FLT.Mazur.CompatibleSubgroupPointClassification
 public import FLT.Mazur.CompatibleSubgroupPresentationAssociativity
 public import FLT.Mazur.CompatibleSubgroupPresentationExtension
+public import FLT.Mazur.CompatibleSubgroupPresentationRecovery
 public import FLT.Mazur.CompatibleSubgroupPullbackCast
 public import FLT.Mazur.CompatibleSubgroupRefinementCast
 public import FLT.Mazur.CompatibleSubgroupRefinementComposition
@@ -4369,6 +4371,7 @@ public import FLT.Mazur.CyclicBoundaryAmpleRefinementCoherence
 public import FLT.Mazur.CyclicBoundaryAmpleRefinementModuli
 public import FLT.Mazur.CyclicBoundaryAmpleTowerCoherence
 public import FLT.Mazur.CyclicBoundaryAmpleTowerModuli
+public import FLT.Mazur.CyclicBoundaryAmpleTripleFirstPresentation
 public import FLT.Mazur.CyclicBoundaryAmpleTripleLastPresentation
 public import FLT.Mazur.CyclicBoundaryAmpleTripleLastRoute
 public import FLT.Mazur.CyclicBoundaryAmpleTripleSubgroup
@@ -4765,6 +4768,15 @@ public import FLT.Mazur.CyclicLocalRelabeledSections
 public import FLT.Mazur.CyclicMarkingDivisorTransport
 public import FLT.Mazur.CyclicMarkingOrbitDivisor
 public import FLT.Mazur.CyclicMarkingRelabelIdeal
+public import FLT.Mazur.CyclicMarkingSingularBaseChange
+public import FLT.Mazur.CyclicMarkingSingularCoverage
+public import FLT.Mazur.CyclicMarkingSingularCriterion
+public import FLT.Mazur.CyclicMarkingSingularDivisor
+public import FLT.Mazur.CyclicMarkingSingularGenerator
+public import FLT.Mazur.CyclicMarkingSingularSubgroup
+public import FLT.Mazur.CyclicMarkingSmoothCarrier
+public import FLT.Mazur.CyclicMarkingSmoothRestriction
+public import FLT.Mazur.CyclicMarkingSmoothSymmetry
 public import FLT.Mazur.CyclicNodeChart
 public import FLT.Mazur.CyclicNormalizationExact
 public import FLT.Mazur.CyclicOmittedEdgeConstancy
@@ -9059,6 +9071,8 @@ public import FLT.Mazur.OriginalBoundaryComparisonNeighborhood
 public import FLT.Mazur.OriginalBoundaryDiscrepancyLocus
 public import FLT.Mazur.OriginalBoundaryEtaleImageLift
 public import FLT.Mazur.OriginalBoundaryFaithfulTensorLift
+public import FLT.Mazur.OriginalBoundaryFieldArrowRank
+public import FLT.Mazur.OriginalBoundaryFieldStageEquations
 public import FLT.Mazur.OriginalBoundaryFiniteStageTests
 public import FLT.Mazur.OriginalBoundaryFlatImageGeometry
 public import FLT.Mazur.OriginalBoundaryFlatRelationLift
@@ -9088,6 +9102,7 @@ public import FLT.Mazur.OriginalBoundaryResidualRelationCover
 public import FLT.Mazur.OriginalBoundaryResidualScalarCover
 public import FLT.Mazur.OriginalBoundaryResidualTensorCover
 public import FLT.Mazur.OriginalBoundaryResidueArrows
+public import FLT.Mazur.OriginalBoundaryResidueStageEquations
 public import FLT.Mazur.OriginalBoundaryScalarCartesian
 public import FLT.Mazur.OriginalBoundaryScalarImageLift
 public import FLT.Mazur.OriginalBoundaryScalarMonomorphism
@@ -11819,6 +11834,8 @@ public import FLT.Mazur.RankStageCoreOverlapBoundary
 public import FLT.Mazur.RankStageCorePointTests
 public import FLT.Mazur.RankStageCoreRefinementCoefficients
 public import FLT.Mazur.RankStageCoreRelationPullback
+public import FLT.Mazur.RankStageFieldBoundaryFamily
+public import FLT.Mazur.RankStageFieldBoundaryPairs
 public import FLT.Mazur.RankStageFiniteAtlasBoundaryTower
 public import FLT.Mazur.RankStageFiniteAtlasCoverage
 public import FLT.Mazur.RankStageFiniteCoreCover
@@ -11832,6 +11849,7 @@ public import FLT.Mazur.RankStageFiniteInvariantDetection
 public import FLT.Mazur.RankStageFiniteLocusCorrection
 public import FLT.Mazur.RankStageFiniteOriginalNorm
 public import FLT.Mazur.RankStageFiniteOriginalObstruction
+public import FLT.Mazur.RankStageFinitePointCore
 public import FLT.Mazur.RankStageFullBoundaryGluing
 public import FLT.Mazur.RankStageFullBoundaryLifting
 public import FLT.Mazur.RankStageFullBoundaryRestriction
@@ -11876,12 +11894,14 @@ public import FLT.Mazur.RankStageOriginalScalarAnnihilation
 public import FLT.Mazur.RankStageOriginalScalarAtlasApproximation
 public import FLT.Mazur.RankStageOriginalScalarCauchy
 public import FLT.Mazur.RankStageOriginalScalarSupport
+public import FLT.Mazur.RankStageOriginalTestEquations
 public import FLT.Mazur.RankStageOverlapScalarObstruction
 public import FLT.Mazur.RankStagePrescribedBoundaryLifting
 public import FLT.Mazur.RankStagePrescribedBoundaryTower
 public import FLT.Mazur.RankStagePrescribedLiftingProperty
 public import FLT.Mazur.RankStagePrincipalBoundaryCorrection
 public import FLT.Mazur.RankStagePrincipalCoreCorrections
+public import FLT.Mazur.RankStageReducedBoundaryFactors
 public import FLT.Mazur.RankStageRelationTransitions
 public import FLT.Mazur.RankStageRelativeClosedBoundaryProduct
 public import FLT.Mazur.RankStageRelativeClosedCoreObstruction
@@ -11928,6 +11948,7 @@ public import FLT.Mazur.ReducedCurvePicardDegree
 public import FLT.Mazur.ReducedDenseRestriction
 public import FLT.Mazur.ReducedFiberBasis
 public import FLT.Mazur.ReducedGeometricFiberFlat
+public import FLT.Mazur.ReducedImmersionFactor
 public import FLT.Mazur.ReducedLocalConstantFiberRank
 public import FLT.Mazur.ReducedSurjectiveIsoCancellation
 public import FLT.Mazur.ReesAffineModel
