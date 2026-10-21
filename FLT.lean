@@ -16130,6 +16130,7 @@ public import FLT.Mazur.WeierstrassDividedReflectedBranchData
 public import FLT.Mazur.WeierstrassDividedReflectedBranchFormula
 public import FLT.Mazur.WeierstrassDividedReflectedBranchOutput
 public import FLT.Mazur.WeierstrassDividedReflectedBranchResidue
+public import FLT.Mazur.WeierstrassDividedReflectedContraction
 public import FLT.Mazur.WeierstrassDividedReflectedSource
 public import FLT.Mazur.WeierstrassDividedReindexedSecantFlatSourceExt
 public import FLT.Mazur.WeierstrassDividedReindexedSecantOpenGluing
