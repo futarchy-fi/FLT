@@ -4347,6 +4347,7 @@ public import FLT.Mazur.CyclicBoundaryAmpleInvariantModuli
 public import FLT.Mazur.CyclicBoundaryAmpleModuli
 public import FLT.Mazur.CyclicBoundaryAmpleRefinementCoherence
 public import FLT.Mazur.CyclicBoundaryAmpleRefinementModuli
+public import FLT.Mazur.CyclicBoundaryAmpleTowerCoherence
 public import FLT.Mazur.CyclicBoundaryAmpleTowerModuli
 public import FLT.Mazur.CyclicBoundaryBaseChange
 public import FLT.Mazur.CyclicBoundaryBaseChangeAmpleCriterion
