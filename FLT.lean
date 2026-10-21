@@ -4248,6 +4248,7 @@ public import FLT.Mazur.CompatibleSubgroupAuxiliaryTransport
 public import FLT.Mazur.CompatibleSubgroupBaseChangeCoherence
 public import FLT.Mazur.CompatibleSubgroupBaseChangeCompEq
 public import FLT.Mazur.CompatibleSubgroupCartierGeneratorEquiv
+public import FLT.Mazur.CompatibleSubgroupComparisonSquare
 public import FLT.Mazur.CompatibleSubgroupCurveProjectionExt
 public import FLT.Mazur.CompatibleSubgroupCyclic
 public import FLT.Mazur.CompatibleSubgroupGeneratorBaseChange
@@ -4267,6 +4268,7 @@ public import FLT.Mazur.CompatibleSubgroupParameterRefinement
 public import FLT.Mazur.CompatibleSubgroupPointClassification
 public import FLT.Mazur.CompatibleSubgroupPresentationAssociativity
 public import FLT.Mazur.CompatibleSubgroupPresentationExtension
+public import FLT.Mazur.CompatibleSubgroupPresentationRecovery
 public import FLT.Mazur.CompatibleSubgroupPullbackCast
 public import FLT.Mazur.CompatibleSubgroupRefinementCast
 public import FLT.Mazur.CompatibleSubgroupRefinementComposition
@@ -4369,6 +4371,7 @@ public import FLT.Mazur.CyclicBoundaryAmpleRefinementCoherence
 public import FLT.Mazur.CyclicBoundaryAmpleRefinementModuli
 public import FLT.Mazur.CyclicBoundaryAmpleTowerCoherence
 public import FLT.Mazur.CyclicBoundaryAmpleTowerModuli
+public import FLT.Mazur.CyclicBoundaryAmpleTripleFirstPresentation
 public import FLT.Mazur.CyclicBoundaryAmpleTripleLastPresentation
 public import FLT.Mazur.CyclicBoundaryAmpleTripleLastRoute
 public import FLT.Mazur.CyclicBoundaryAmpleTripleSubgroup
@@ -4765,6 +4768,15 @@ public import FLT.Mazur.CyclicLocalRelabeledSections
 public import FLT.Mazur.CyclicMarkingDivisorTransport
 public import FLT.Mazur.CyclicMarkingOrbitDivisor
 public import FLT.Mazur.CyclicMarkingRelabelIdeal
+public import FLT.Mazur.CyclicMarkingSingularBaseChange
+public import FLT.Mazur.CyclicMarkingSingularCoverage
+public import FLT.Mazur.CyclicMarkingSingularCriterion
+public import FLT.Mazur.CyclicMarkingSingularDivisor
+public import FLT.Mazur.CyclicMarkingSingularGenerator
+public import FLT.Mazur.CyclicMarkingSingularSubgroup
+public import FLT.Mazur.CyclicMarkingSmoothCarrier
+public import FLT.Mazur.CyclicMarkingSmoothRestriction
+public import FLT.Mazur.CyclicMarkingSmoothSymmetry
 public import FLT.Mazur.CyclicNodeChart
 public import FLT.Mazur.CyclicNormalizationExact
 public import FLT.Mazur.CyclicOmittedEdgeConstancy
