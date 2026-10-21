@@ -16553,6 +16553,7 @@ public import FLT.Mazur.WeierstrassDividedUnequalPair
 public import FLT.Mazur.WeierstrassDividedUnequalSecantFormula
 public import FLT.Mazur.WeierstrassDividedUnequalSecantMiddleResidue
 public import FLT.Mazur.WeierstrassDividedUnequalSecantResidue
+public import FLT.Mazur.WeierstrassDividedUnequalSecantZeroResidue
 public import FLT.Mazur.WeierstrassDividedUniversalSmoothPair
 public import FLT.Mazur.WeierstrassDividedUniversalSmoothPairIso
 public import FLT.Mazur.WeierstrassDividedUniversalSmoothPairPromotion
