@@ -16236,6 +16236,7 @@ public import FLT.Mazur.WeierstrassDividedResidualNodeRestriction
 public import FLT.Mazur.WeierstrassDividedResidualRetainedLift
 public import FLT.Mazur.WeierstrassDividedResidualTerminalIdentification
 public import FLT.Mazur.WeierstrassDividedResidualTerminalLift
+public import FLT.Mazur.WeierstrassDividedResidueAdjacentAnyDepthCoverage
 public import FLT.Mazur.WeierstrassDividedResidueAdjacentCanonicalCoverage
 public import FLT.Mazur.WeierstrassDividedResidueAdjacentIndexedCoverage
 public import FLT.Mazur.WeierstrassDividedResidueAdjacentPairCoverage
