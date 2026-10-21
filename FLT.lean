@@ -8710,6 +8710,7 @@ public import FLT.Mazur.OneGonSmoothCoefficientGroup
 public import FLT.Mazur.OneGonSmoothCoefficientProjection
 public import FLT.Mazur.OneGonSmoothCoefficientTower
 public import FLT.Mazur.OneGonSmoothEquationProjection
+public import FLT.Mazur.OneGonSmoothWholeCoefficientAction
 public import FLT.Mazur.OneGonSmoothingAffinePresentation
 public import FLT.Mazur.OneGonSmoothingAuxiliaryOverlap
 public import FLT.Mazur.OneGonSmoothingChartIntersection
