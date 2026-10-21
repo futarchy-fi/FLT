@@ -16107,6 +16107,7 @@ public import FLT.Mazur.WeierstrassDividedSplitNormalizationComparison
 public import FLT.Mazur.WeierstrassDividedStartOneAtlas
 public import FLT.Mazur.WeierstrassDividedStartOneData
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
+public import FLT.Mazur.WeierstrassDividedSuccessiveTensorCoordinates
 public import FLT.Mazur.WeierstrassDividedSuccessorActionAtlas
 public import FLT.Mazur.WeierstrassDividedSuccessorActionInput
 public import FLT.Mazur.WeierstrassDividedSuccessorAtlasCoordinates
