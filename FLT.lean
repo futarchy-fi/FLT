@@ -15667,6 +15667,7 @@ public import FLT.Mazur.WeierstrassDividedOlderSuccessiveCharts
 public import FLT.Mazur.WeierstrassDividedOlderSumDepthAddition
 public import FLT.Mazur.WeierstrassDividedOlderTensorPointAction
 public import FLT.Mazur.WeierstrassDividedOlderTerminalIntermediateAddition
+public import FLT.Mazur.WeierstrassDividedOlderTripleSumAddition
 public import FLT.Mazur.WeierstrassDividedOlderUnequalAddition
 public import FLT.Mazur.WeierstrassDividedOlderZeroConicParameters
 public import FLT.Mazur.WeierstrassDividedOlderZeroConstantNodeDescent
