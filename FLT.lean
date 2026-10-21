@@ -3606,6 +3606,7 @@ public import FLT.Mazur.ArithmeticOneGonBoundaryFiber
 public import FLT.Mazur.ArithmeticOneGonChangedSubgroupAmple
 public import FLT.Mazur.ArithmeticOneGonCoefficientIso
 public import FLT.Mazur.ArithmeticOneGonCoefficientTower
+public import FLT.Mazur.ArithmeticOneGonCommonCoefficientIso
 public import FLT.Mazur.ArithmeticOneGonFamily
 public import FLT.Mazur.ArithmeticOneGonFiberTorus
 public import FLT.Mazur.ArithmeticOneGonFieldFibers
@@ -8595,6 +8596,15 @@ public import FLT.Mazur.OneGonAdicFiniteSmoothStage
 public import FLT.Mazur.OneGonAdicFiniteSubgroup
 public import FLT.Mazur.OneGonAdicFullSubgroupRecovery
 public import FLT.Mazur.OneGonAdicGeneralizedRecovery
+public import FLT.Mazur.OneGonAdicIndependentBase
+public import FLT.Mazur.OneGonAdicIndependentCommonStage
+public import FLT.Mazur.OneGonAdicIndependentEmbedding
+public import FLT.Mazur.OneGonAdicIndependentFullRecovery
+public import FLT.Mazur.OneGonAdicIndependentSmoothRecovery
+public import FLT.Mazur.OneGonAdicIndependentSmoothStage
+public import FLT.Mazur.OneGonAdicIndependentStageModel
+public import FLT.Mazur.OneGonAdicIndependentStageRecovery
+public import FLT.Mazur.OneGonAdicIndependentStageRefinement
 public import FLT.Mazur.OneGonAdicInitialCoefficientNaturality
 public import FLT.Mazur.OneGonAdicInitialCoefficientTransport
 public import FLT.Mazur.OneGonAdicInitialParameter
@@ -12635,6 +12645,8 @@ public import FLT.Mazur.SchemeOverlapRefinementDiagonal
 public import FLT.Mazur.SchemeOverlapRefinementDiagonalDetection
 public import FLT.Mazur.SchemeOverlapRefinementTripleCocycle
 public import FLT.Mazur.SchemeOverlapTransportComposition
+public import FLT.Mazur.SchemePairBoundaryTransfer
+public import FLT.Mazur.SchemePairBoundaryTransferIso
 public import FLT.Mazur.SchemeParameterEquivalence
 public import FLT.Mazur.SchemePicardClasses
 public import FLT.Mazur.SchemePicardGroup
@@ -14417,6 +14429,7 @@ public import FLT.Mazur.WeierstrassDividedAdjacentTensorBoundary
 public import FLT.Mazur.WeierstrassDividedAdjacentTensorSlope
 public import FLT.Mazur.WeierstrassDividedAdjacentTensorSlopeGeometry
 public import FLT.Mazur.WeierstrassDividedAdjacentTerminalIntersection
+public import FLT.Mazur.WeierstrassDividedAdjacentZeroAbscissa
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroBranchCompatibility
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroComponents
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroConicComparison
@@ -14437,6 +14450,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentCorrection
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentFactorization
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentIndex
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentIntersection
+public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentPairTransfer
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentSlope
 public import FLT.Mazur.WeierstrassDividedArithmeticAffinePolygonEmbedding
@@ -14523,6 +14537,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticTerminalNodeBoundary
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalNodeGeometry
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalNodeOpen
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalNodeReduction
+public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPairTransfer
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPolygonSystem
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureImages
@@ -15828,6 +15843,7 @@ public import FLT.Mazur.WeierstrassDividedResidualNodeRestriction
 public import FLT.Mazur.WeierstrassDividedResidualRetainedLift
 public import FLT.Mazur.WeierstrassDividedResidualTerminalIdentification
 public import FLT.Mazur.WeierstrassDividedResidualTerminalLift
+public import FLT.Mazur.WeierstrassDividedResidueAdjacentPairCoverage
 public import FLT.Mazur.WeierstrassDividedResidueAtlasExtension
 public import FLT.Mazur.WeierstrassDividedResidueAtlasFinite
 public import FLT.Mazur.WeierstrassDividedResidueAtlasRefinement
@@ -15838,6 +15854,7 @@ public import FLT.Mazur.WeierstrassDividedResidueNormalizationCompatibility
 public import FLT.Mazur.WeierstrassDividedResidueOrderedNormalization
 public import FLT.Mazur.WeierstrassDividedResidueSplitCubic
 public import FLT.Mazur.WeierstrassDividedResidueTangentNormalization
+public import FLT.Mazur.WeierstrassDividedResidueTerminalPairCoverage
 public import FLT.Mazur.WeierstrassDividedResolvedAtlasCover
 public import FLT.Mazur.WeierstrassDividedResolvedAtlasPairIso
 public import FLT.Mazur.WeierstrassDividedResolvedNegation
@@ -16177,6 +16194,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalTangentRestriction
 public import FLT.Mazur.WeierstrassDividedTerminalTensorActionGeometry
 public import FLT.Mazur.WeierstrassDividedTerminalTensorPointGeometry
 public import FLT.Mazur.WeierstrassDividedTerminalWeightedReduction
+public import FLT.Mazur.WeierstrassDividedTerminalZeroAbscissa
 public import FLT.Mazur.WeierstrassDividedTerminalZeroBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalZeroBranchIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalZeroComponents
