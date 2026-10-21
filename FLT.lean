@@ -4769,6 +4769,7 @@ public import FLT.Mazur.CyclicHomUniversalSubgroupComparison
 public import FLT.Mazur.CyclicLocalOriginalAuxiliary
 public import FLT.Mazur.CyclicLocalRelabeledSections
 public import FLT.Mazur.CyclicMarkingDivisorTransport
+public import FLT.Mazur.CyclicMarkingGroupIdealBaseChange
 public import FLT.Mazur.CyclicMarkingOrbitDivisor
 public import FLT.Mazur.CyclicMarkingRelabelIdeal
 public import FLT.Mazur.CyclicMarkingSingularBaseChange
