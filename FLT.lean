@@ -3607,7 +3607,9 @@ public import FLT.Mazur.ArithmeticOneGonArbitrarySubgroupPullback
 public import FLT.Mazur.ArithmeticOneGonBoundaryFiber
 public import FLT.Mazur.ArithmeticOneGonChangedSubgroupAmple
 public import FLT.Mazur.ArithmeticOneGonCoefficientAmple
+public import FLT.Mazur.ArithmeticOneGonCoefficientAmpleTower
 public import FLT.Mazur.ArithmeticOneGonCoefficientFaithful
+public import FLT.Mazur.ArithmeticOneGonCoefficientFaithfulTower
 public import FLT.Mazur.ArithmeticOneGonCoefficientIso
 public import FLT.Mazur.ArithmeticOneGonCoefficientTower
 public import FLT.Mazur.ArithmeticOneGonCommonCoefficientChangeRing
@@ -4259,6 +4261,7 @@ public import FLT.Mazur.CompatibleSubgroupMarkedConjugation
 public import FLT.Mazur.CompatibleSubgroupOrbitMarking
 public import FLT.Mazur.CompatibleSubgroupParameterRefinement
 public import FLT.Mazur.CompatibleSubgroupPointClassification
+public import FLT.Mazur.CompatibleSubgroupPullbackCast
 public import FLT.Mazur.CompatibleSubgroupRefinementCast
 public import FLT.Mazur.CompatibleSubgroupRefinementComposition
 public import FLT.Mazur.CompatibleSubgroupRefinementTransport
@@ -4349,7 +4352,9 @@ public import FLT.Mazur.CyclicBoundaryAmpleBaseChangeAction
 public import FLT.Mazur.CyclicBoundaryAmpleBaseChangeModuli
 public import FLT.Mazur.CyclicBoundaryAmpleBaseChangeRefinement
 public import FLT.Mazur.CyclicBoundaryAmpleBaseChangeTower
+public import FLT.Mazur.CyclicBoundaryAmpleCurveComposition
 public import FLT.Mazur.CyclicBoundaryAmpleCurveModuli
+public import FLT.Mazur.CyclicBoundaryAmpleCurveProjection
 public import FLT.Mazur.CyclicBoundaryAmpleCurveTransport
 public import FLT.Mazur.CyclicBoundaryAmpleInvariantModuli
 public import FLT.Mazur.CyclicBoundaryAmpleModuli
@@ -4357,13 +4362,16 @@ public import FLT.Mazur.CyclicBoundaryAmpleRefinementCoherence
 public import FLT.Mazur.CyclicBoundaryAmpleRefinementModuli
 public import FLT.Mazur.CyclicBoundaryAmpleTowerCoherence
 public import FLT.Mazur.CyclicBoundaryAmpleTowerModuli
+public import FLT.Mazur.CyclicBoundaryAmpleTripleSubgroup
 public import FLT.Mazur.CyclicBoundaryAmpleTripleTower
 public import FLT.Mazur.CyclicBoundaryBaseChange
 public import FLT.Mazur.CyclicBoundaryBaseChangeAmpleCriterion
 public import FLT.Mazur.CyclicBoundaryBaseChangeCurve
 public import FLT.Mazur.CyclicBoundaryBaseChangeProjection
 public import FLT.Mazur.CyclicBoundaryBaseChangeSubgroup
+public import FLT.Mazur.CyclicBoundaryCurveTowerParameter
 public import FLT.Mazur.CyclicBoundaryCurveTransport
+public import FLT.Mazur.CyclicBoundaryCurveTransportBaseChange
 public import FLT.Mazur.CyclicBoundaryCurveTransportCoherence
 public import FLT.Mazur.CyclicBoundaryCurveTransportComposition
 public import FLT.Mazur.CyclicBoundaryCurveTransportSubgroup
