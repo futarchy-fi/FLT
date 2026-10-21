@@ -9086,6 +9086,7 @@ public import FLT.Mazur.OriginalBoundaryBranchScalars
 public import FLT.Mazur.OriginalBoundaryComparisonClosedImage
 public import FLT.Mazur.OriginalBoundaryComparisonLocalClosedImage
 public import FLT.Mazur.OriginalBoundaryComparisonNeighborhood
+public import FLT.Mazur.OriginalBoundaryDifferentialKernelSupport
 public import FLT.Mazur.OriginalBoundaryDiscrepancyLocus
 public import FLT.Mazur.OriginalBoundaryDomainComparisonLift
 public import FLT.Mazur.OriginalBoundaryEtaleImageLift
