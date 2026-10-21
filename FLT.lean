@@ -8626,6 +8626,7 @@ public import FLT.Mazur.OneGonCoefficientCommonModel
 public import FLT.Mazur.OneGonCoefficientEmbeddingRefinement
 public import FLT.Mazur.OneGonCoefficientModelRefinement
 public import FLT.Mazur.OneGonCoefficientRefinementComposition
+public import FLT.Mazur.OneGonCoefficientTowerProjection
 public import FLT.Mazur.OneGonCoefficientTransport
 public import FLT.Mazur.OneGonCommonCoefficientCoherence
 public import FLT.Mazur.OneGonCommonCoefficientCurve
