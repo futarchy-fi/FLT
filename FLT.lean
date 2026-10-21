@@ -8643,6 +8643,7 @@ public import FLT.Mazur.OneGonAdicSharedEmbedding
 public import FLT.Mazur.OneGonAdicSharedRecovery
 public import FLT.Mazur.OneGonAdicSharedStage
 public import FLT.Mazur.OneGonAdicSharedSubgroup
+public import FLT.Mazur.OneGonAdicSharedSubgroupIso
 public import FLT.Mazur.OneGonAdicSmoothCoefficientSquares
 public import FLT.Mazur.OneGonAdicSmoothFactorCommonRefinement
 public import FLT.Mazur.OneGonAdicSmoothFactorRecovery
