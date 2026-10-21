@@ -4371,6 +4371,7 @@ public import FLT.Mazur.CyclicBoundaryAmpleRefinementCoherence
 public import FLT.Mazur.CyclicBoundaryAmpleRefinementModuli
 public import FLT.Mazur.CyclicBoundaryAmpleTowerCoherence
 public import FLT.Mazur.CyclicBoundaryAmpleTowerModuli
+public import FLT.Mazur.CyclicBoundaryAmpleTripleFirstPresentation
 public import FLT.Mazur.CyclicBoundaryAmpleTripleLastPresentation
 public import FLT.Mazur.CyclicBoundaryAmpleTripleLastRoute
 public import FLT.Mazur.CyclicBoundaryAmpleTripleSubgroup
