@@ -15993,6 +15993,7 @@ public import FLT.Mazur.WeierstrassDividedQuadrupleTangentOverlap
 public import FLT.Mazur.WeierstrassDividedQuadrupleTripleOverlap
 public import FLT.Mazur.WeierstrassDividedQuotientBranchOrdinate
 public import FLT.Mazur.WeierstrassDividedQuotientSumDepthCoordinates
+public import FLT.Mazur.WeierstrassDividedQuotientSumDepthOutput
 public import FLT.Mazur.WeierstrassDividedReciprocalExtendedAddition
 public import FLT.Mazur.WeierstrassDividedReciprocalExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalFormula
