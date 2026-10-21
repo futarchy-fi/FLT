@@ -1,5 +1,5 @@
-
 module  -- shake: keep-all --deprecated_module: ignore
+
 public import FLT.AINTLIB.CebotarevDensity.NumberFieldEulerProduct
 public import FLT.AINTLIB.DedekindResidue.AuxiliaryFunction
 public import FLT.AINTLIB.DedekindResidue.CompletedZeta.AnalyticControl
@@ -6144,6 +6144,7 @@ public import FLT.Mazur.FiniteRelationCompatibleHomDescent
 public import FLT.Mazur.FiniteRelationCoverDescent
 public import FLT.Mazur.FiniteRelationDetection
 public import FLT.Mazur.FiniteRelationEndpointImmersion
+public import FLT.Mazur.FiniteRelationEndpointQuotientTests
 public import FLT.Mazur.FiniteRelationEndpointSpan
 public import FLT.Mazur.FiniteRelationFiniteHomDescent
 public import FLT.Mazur.FiniteRelationHomDescent
