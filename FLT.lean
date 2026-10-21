@@ -4781,6 +4781,7 @@ public import FLT.Mazur.CyclicMarkingGroupIdealBaseChange
 public import FLT.Mazur.CyclicMarkingOrbitDivisor
 public import FLT.Mazur.CyclicMarkingRelabelIdeal
 public import FLT.Mazur.CyclicMarkingSingularBaseChange
+public import FLT.Mazur.CyclicMarkingSingularCompatibleTransport
 public import FLT.Mazur.CyclicMarkingSingularCoverage
 public import FLT.Mazur.CyclicMarkingSingularCriterion
 public import FLT.Mazur.CyclicMarkingSingularDivisor
