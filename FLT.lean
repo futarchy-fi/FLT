@@ -9036,6 +9036,7 @@ public import FLT.Mazur.OriginalBoundaryAdicFlatRelation
 public import FLT.Mazur.OriginalBoundaryAdicRelationLift
 public import FLT.Mazur.OriginalBoundaryBranchScalars
 public import FLT.Mazur.OriginalBoundaryComparisonClosedImage
+public import FLT.Mazur.OriginalBoundaryComparisonLocalClosedImage
 public import FLT.Mazur.OriginalBoundaryComparisonNeighborhood
 public import FLT.Mazur.OriginalBoundaryDiscrepancyLocus
 public import FLT.Mazur.OriginalBoundaryEtaleImageLift
@@ -9046,6 +9047,7 @@ public import FLT.Mazur.OriginalBoundaryGeometricTensor
 public import FLT.Mazur.OriginalBoundaryImageNeighborhood
 public import FLT.Mazur.OriginalBoundaryKernelPairLift
 public import FLT.Mazur.OriginalBoundaryLiftFiniteSupport
+public import FLT.Mazur.OriginalBoundaryLocalRelationDescent
 public import FLT.Mazur.OriginalBoundaryPrincipalCover
 public import FLT.Mazur.OriginalBoundaryPrincipalLiftCriterion
 public import FLT.Mazur.OriginalBoundaryRelationOpenLift
@@ -9057,6 +9059,7 @@ public import FLT.Mazur.OriginalBoundaryResidualFlatCover
 public import FLT.Mazur.OriginalBoundaryResidualGeometricCover
 public import FLT.Mazur.OriginalBoundaryResidualIdeal
 public import FLT.Mazur.OriginalBoundaryResidualImageCover
+public import FLT.Mazur.OriginalBoundaryResidualLocalComparisonFibers
 public import FLT.Mazur.OriginalBoundaryResidualLocalEtaleImage
 public import FLT.Mazur.OriginalBoundaryResidualLocalImage
 public import FLT.Mazur.OriginalBoundaryResidualNeighborhood
@@ -12577,6 +12580,7 @@ public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
 public import FLT.Mazur.SchemeComparisonClosedObstruction
 public import FLT.Mazur.SchemeComparisonCoverageLocus
+public import FLT.Mazur.SchemeComparisonLocalClosedObstruction
 public import FLT.Mazur.SchemeConeGluing
 public import FLT.Mazur.SchemeConnectedFiberSections
 public import FLT.Mazur.SchemeConstructibleNoetherianPullback
@@ -12980,6 +12984,9 @@ public import FLT.Mazur.SchemeScalarAvoidanceIdeal
 public import FLT.Mazur.SchemeScalarBadPrimeDenominators
 public import FLT.Mazur.SchemeScalarBoundaryUnitCover
 public import FLT.Mazur.SchemeScalarChartDescent
+public import FLT.Mazur.SchemeScalarComparisonLocalGeometry
+public import FLT.Mazur.SchemeScalarComparisonNeighborhoodDescent
+public import FLT.Mazur.SchemeScalarComparisonResidueTests
 public import FLT.Mazur.SchemeScalarConstructibleImage
 public import FLT.Mazur.SchemeScalarFiniteBadPrimes
 public import FLT.Mazur.SchemeScalarFullAtlas
@@ -12988,6 +12995,8 @@ public import FLT.Mazur.SchemeScalarImageDescent
 public import FLT.Mazur.SchemeScalarImageFaithfulGeometry
 public import FLT.Mazur.SchemeScalarImageGeometry
 public import FLT.Mazur.SchemeScalarImageKernelGeometry
+public import FLT.Mazur.SchemeScalarImageKernelNeighborhood
+public import FLT.Mazur.SchemeScalarImageNeighborhoodCoverage
 public import FLT.Mazur.SchemeScalarImageQuotient
 public import FLT.Mazur.SchemeScalarIntegralBadCover
 public import FLT.Mazur.SchemeScalarIntegralCover
