@@ -8946,6 +8946,7 @@ public import FLT.Mazur.OriginalAffineSchemeOrbit
 public import FLT.Mazur.OriginalAlgebraicDetectingSchemeOpen
 public import FLT.Mazur.OriginalAlgebraicPointDescent
 public import FLT.Mazur.OriginalBoundaryLiftFiniteSupport
+public import FLT.Mazur.OriginalBoundaryPrincipalLiftCriterion
 public import FLT.Mazur.OriginalBoundaryResidualIdeal
 public import FLT.Mazur.OriginalEnvelopeAcyclicCriterion
 public import FLT.Mazur.OriginalFamilyIdentityComparison
