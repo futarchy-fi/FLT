@@ -9127,6 +9127,7 @@ public import FLT.Mazur.OriginalBoundaryFlatRelationLift
 public import FLT.Mazur.OriginalBoundaryGenericRankCoverage
 public import FLT.Mazur.OriginalBoundaryGenerizingRanks
 public import FLT.Mazur.OriginalBoundaryGeometricTensor
+public import FLT.Mazur.OriginalBoundaryGlobalDifferentialLift
 public import FLT.Mazur.OriginalBoundaryImageNeighborhood
 public import FLT.Mazur.OriginalBoundaryKernelPairLift
 public import FLT.Mazur.OriginalBoundaryLiftFiniteSupport
