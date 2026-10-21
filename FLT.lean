@@ -8969,12 +8969,19 @@ public import FLT.Mazur.OriginalAffineSchemeDetectingOpen
 public import FLT.Mazur.OriginalAffineSchemeOrbit
 public import FLT.Mazur.OriginalAlgebraicDetectingSchemeOpen
 public import FLT.Mazur.OriginalAlgebraicPointDescent
+public import FLT.Mazur.OriginalBoundaryAdicRelationLift
+public import FLT.Mazur.OriginalBoundaryDiscrepancyLocus
 public import FLT.Mazur.OriginalBoundaryLiftFiniteSupport
 public import FLT.Mazur.OriginalBoundaryPrincipalCover
 public import FLT.Mazur.OriginalBoundaryPrincipalLiftCriterion
+public import FLT.Mazur.OriginalBoundaryRelationOpenLift
+public import FLT.Mazur.OriginalBoundaryRelationSupport
 public import FLT.Mazur.OriginalBoundaryResidualFiniteFamily
 public import FLT.Mazur.OriginalBoundaryResidualIdeal
 public import FLT.Mazur.OriginalBoundaryResidualPrincipalCover
+public import FLT.Mazur.OriginalBoundaryResidualRelationCover
+public import FLT.Mazur.OriginalBoundaryUniformRelationIdeal
+public import FLT.Mazur.OriginalBoundaryUniformRelationLift
 public import FLT.Mazur.OriginalEnvelopeAcyclicCriterion
 public import FLT.Mazur.OriginalFamilyIdentityComparison
 public import FLT.Mazur.OriginalFamilySectionComposition
@@ -11769,6 +11776,7 @@ public import FLT.Mazur.RankStageTopBoundaryOverlap
 public import FLT.Mazur.RankStageTopKernelObstruction
 public import FLT.Mazur.RankStageTransitionTopology
 public import FLT.Mazur.RankStageUniformKernelNumerators
+public import FLT.Mazur.RankStageUniformRelationCorrections
 public import FLT.Mazur.RankStratumClopenStabilization
 public import FLT.Mazur.RankStratumJumpStableOpen
 public import FLT.Mazur.RankStratumRelativeClosedStabilization
