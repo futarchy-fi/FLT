@@ -7617,6 +7617,7 @@ public import FLT.Mazur.InvariantAffineOpenNormCoefficient
 public import FLT.Mazur.InvariantBoundaryPullback
 public import FLT.Mazur.InvariantClopenCoverSelection
 public import FLT.Mazur.InvariantClopenSectionExtension
+public import FLT.Mazur.InvariantClopenSelectionPullback
 public import FLT.Mazur.InvariantFiniteDomainTrace
 public import FLT.Mazur.InvariantFiniteFreeTraceUnit
 public import FLT.Mazur.InvariantFiniteRelationPrincipal
