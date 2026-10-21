@@ -16338,6 +16338,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalFullConicIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalHorizontalCyclicAction
 public import FLT.Mazur.WeierstrassDividedTerminalHorizontalCyclicPair
 public import FLT.Mazur.WeierstrassDividedTerminalLineDisjoint
+public import FLT.Mazur.WeierstrassDividedTerminalLowerClosedFiber
 public import FLT.Mazur.WeierstrassDividedTerminalLowerCoordinates
 public import FLT.Mazur.WeierstrassDividedTerminalNodeChartExclusion
 public import FLT.Mazur.WeierstrassDividedTerminalNodeIncidence
