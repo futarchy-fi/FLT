@@ -16046,6 +16046,7 @@ public import FLT.Mazur.WeierstrassDividedRetainedPolygonLabels
 public import FLT.Mazur.WeierstrassDividedRetainedPolygonMaps
 public import FLT.Mazur.WeierstrassDividedRetainedPolygonNaturality
 public import FLT.Mazur.WeierstrassDividedRetainedPuncturePreimage
+public import FLT.Mazur.WeierstrassDividedRetainedSelfDeepAddition
 public import FLT.Mazur.WeierstrassDividedRetainedSelfIntermediateAddition
 public import FLT.Mazur.WeierstrassDividedRetainedSelfReciprocalAddition
 public import FLT.Mazur.WeierstrassDividedRetainedSelfShallowAddition
