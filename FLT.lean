@@ -8655,6 +8655,7 @@ public import FLT.Mazur.OneGonAdicSharedStage
 public import FLT.Mazur.OneGonAdicSharedSubgroup
 public import FLT.Mazur.OneGonAdicSharedSubgroupCoherence
 public import FLT.Mazur.OneGonAdicSharedSubgroupIso
+public import FLT.Mazur.OneGonAdicSharedSubgroupTower
 public import FLT.Mazur.OneGonAdicSmoothCoefficientSquares
 public import FLT.Mazur.OneGonAdicSmoothFactorCommonRefinement
 public import FLT.Mazur.OneGonAdicSmoothFactorRecovery
