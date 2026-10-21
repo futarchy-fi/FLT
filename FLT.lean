@@ -9089,6 +9089,7 @@ public import FLT.Mazur.OriginalBoundaryEtaleImageLift
 public import FLT.Mazur.OriginalBoundaryFaithfulTensorLift
 public import FLT.Mazur.OriginalBoundaryFieldArrowRank
 public import FLT.Mazur.OriginalBoundaryFieldStageEquations
+public import FLT.Mazur.OriginalBoundaryFiniteComparisonTests
 public import FLT.Mazur.OriginalBoundaryFiniteStageTests
 public import FLT.Mazur.OriginalBoundaryFiniteValuationRanks
 public import FLT.Mazur.OriginalBoundaryFlatImageGeometry
