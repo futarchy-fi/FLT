@@ -8598,6 +8598,7 @@ public import FLT.Mazur.OneGonAdicFiniteSubgroup
 public import FLT.Mazur.OneGonAdicFullSubgroupRecovery
 public import FLT.Mazur.OneGonAdicGeneralizedRecovery
 public import FLT.Mazur.OneGonAdicIndependentBase
+public import FLT.Mazur.OneGonAdicIndependentCommonCurve
 public import FLT.Mazur.OneGonAdicIndependentCommonStage
 public import FLT.Mazur.OneGonAdicIndependentEmbedding
 public import FLT.Mazur.OneGonAdicIndependentFullRecovery
