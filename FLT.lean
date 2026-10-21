@@ -14650,6 +14650,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticBoundaryAtlasIndex
 public import FLT.Mazur.WeierstrassDividedArithmeticBoundaryCharts
 public import FLT.Mazur.WeierstrassDividedArithmeticBranchRestriction
 public import FLT.Mazur.WeierstrassDividedArithmeticCoefficientInfinity
+public import FLT.Mazur.WeierstrassDividedArithmeticCommonPositive
 public import FLT.Mazur.WeierstrassDividedArithmeticCoordinateTransition
 public import FLT.Mazur.WeierstrassDividedArithmeticCoordinates
 public import FLT.Mazur.WeierstrassDividedArithmeticDoubleBoundary
