@@ -8607,6 +8607,7 @@ public import FLT.Mazur.OneGonAllOrderAmple
 public import FLT.Mazur.OneGonClosedCyclicParameter
 public import FLT.Mazur.OneGonClosedGroupInclusion
 public import FLT.Mazur.OneGonCocone
+public import FLT.Mazur.OneGonCoefficientCommonModel
 public import FLT.Mazur.OneGonCoefficientEmbeddingRefinement
 public import FLT.Mazur.OneGonCoefficientModelRefinement
 public import FLT.Mazur.OneGonCoefficientTransport
