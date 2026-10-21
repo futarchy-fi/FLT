@@ -8610,6 +8610,7 @@ public import FLT.Mazur.OneGonAdicIndependentEmbedding
 public import FLT.Mazur.OneGonAdicIndependentFactorClosed
 public import FLT.Mazur.OneGonAdicIndependentFactorHom
 public import FLT.Mazur.OneGonAdicIndependentFactorRecovery
+public import FLT.Mazur.OneGonAdicIndependentFiniteSubgroup
 public import FLT.Mazur.OneGonAdicIndependentFullRecovery
 public import FLT.Mazur.OneGonAdicIndependentSmoothRecovery
 public import FLT.Mazur.OneGonAdicIndependentSmoothStage
