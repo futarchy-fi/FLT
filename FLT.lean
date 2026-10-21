@@ -4409,6 +4409,7 @@ public import FLT.Mazur.CyclicBoundaryMarkingLift
 public import FLT.Mazur.CyclicBoundaryOriginalAmpleLift
 public import FLT.Mazur.CyclicBoundaryOriginalAmpleModuli
 public import FLT.Mazur.CyclicBoundaryOriginalMarkings
+public import FLT.Mazur.CyclicBoundaryOriginalTestCoverage
 public import FLT.Mazur.CyclicBoundaryParameterAction
 public import FLT.Mazur.CyclicBoundaryParameterSections
 public import FLT.Mazur.CyclicBoundaryProjectionFaithfulness
