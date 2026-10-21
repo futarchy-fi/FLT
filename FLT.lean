@@ -7311,6 +7311,7 @@ public import FLT.Mazur.HomIntegerModel
 public import FLT.Mazur.HomogeneousCochainCorrection
 public import FLT.Mazur.HomogeneousCochainFinitePatching
 public import FLT.Mazur.HomogeneousCochainScalarObstruction
+public import FLT.Mazur.HomogeneousCochainScaledClass
 public import FLT.Mazur.HomogeneousFractionProjection
 public import FLT.Mazur.HomogeneousIdealWitness
 public import FLT.Mazur.HomogeneousLocalizationArbitraryBaseChange
