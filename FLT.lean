@@ -9034,6 +9034,7 @@ public import FLT.Mazur.OverPoints
 public import FLT.Mazur.OverPullbackCoherence
 public import FLT.Mazur.OverPullbackCoproduct
 public import FLT.Mazur.OverPullbackLocalPushout
+public import FLT.Mazur.OverPullbackSealedTower
 public import FLT.Mazur.OverPullbackSection
 public import FLT.Mazur.OverPullbackSectionComposition
 public import FLT.Mazur.OverPullbackSectionMonoidal
