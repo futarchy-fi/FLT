@@ -5,7 +5,7 @@ Authors: krandder
 -/
 module
 
-public import FLT.Mazur.WeierstrassDividedArithmeticAtlasIndex
+public import FLT.Mazur.WeierstrassDividedArithmeticNewestIndex
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentIntersection
 
 /-!
@@ -62,13 +62,6 @@ theorem arithmeticRetainedTensorChart_adjacent (r : ℕ) (hr : j + 2 + r ≤ n) 
     (j + 2 + r) (j + 1 + (r + 1)) hr (by omega) (by omega) (by omega)
     (by omega)).trans ((heq_of_eq hi).trans he))
 
-/-- The original newest successive chart is the retained chart with no later retention. -/
-theorem arithmeticRetainedTensorChart_newest :
-    arithmeticRetainedTensorChart hπ data m (j + 1) hj j (by omega) =
-      finiteArithmeticNewestTensorChart hπ data m j hj := by
-  rw [arithmeticRetainedTensorChart_eq hπ data m (j + 1) hj j (by omega) 0 hj]
-  rfl
-
 /-- The adjacent old chart uses precisely the full original indexed tensor source. -/
 @[reassoc] theorem arithmeticBoundaryAtlas_adjacent (r : ℕ) (hr : j + 2 + r ≤ n) :
     (arithmeticRetainedTensorIso hπ data m (j + 2 + r) hr j (by omega)).hom ≫
@@ -83,6 +76,6 @@ theorem arithmeticRetainedTensorChart_newest :
       arithmeticTensorAtlasMap hπ data m (j + 1) hj
         (Fin.succ ⟨j + 1 - j, by omega⟩) =
       finiteArithmeticNewestTensorChart hπ data m j hj :=
-  arithmeticRetainedTensorChart_newest hπ data m j hj
+  arithmeticRetainedTensorChart_newest hπ data j hj m
 
 end FLT.Mazur.WeierstrassDividedDepth
