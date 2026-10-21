@@ -9000,6 +9000,7 @@ public import FLT.Mazur.OriginalBoundaryAdicFlatRelation
 public import FLT.Mazur.OriginalBoundaryAdicRelationLift
 public import FLT.Mazur.OriginalBoundaryBranchScalars
 public import FLT.Mazur.OriginalBoundaryDiscrepancyLocus
+public import FLT.Mazur.OriginalBoundaryEtaleImageLift
 public import FLT.Mazur.OriginalBoundaryFaithfulTensorLift
 public import FLT.Mazur.OriginalBoundaryFlatRelationLift
 public import FLT.Mazur.OriginalBoundaryGeometricTensor
@@ -9009,14 +9010,18 @@ public import FLT.Mazur.OriginalBoundaryPrincipalCover
 public import FLT.Mazur.OriginalBoundaryPrincipalLiftCriterion
 public import FLT.Mazur.OriginalBoundaryRelationOpenLift
 public import FLT.Mazur.OriginalBoundaryRelationSupport
+public import FLT.Mazur.OriginalBoundaryResidualEtaleImageCover
 public import FLT.Mazur.OriginalBoundaryResidualFiniteFamily
 public import FLT.Mazur.OriginalBoundaryResidualFlatCover
 public import FLT.Mazur.OriginalBoundaryResidualGeometricCover
 public import FLT.Mazur.OriginalBoundaryResidualIdeal
+public import FLT.Mazur.OriginalBoundaryResidualImageCover
 public import FLT.Mazur.OriginalBoundaryResidualPrincipalCover
 public import FLT.Mazur.OriginalBoundaryResidualRelationCover
 public import FLT.Mazur.OriginalBoundaryResidualScalarCover
 public import FLT.Mazur.OriginalBoundaryResidualTensorCover
+public import FLT.Mazur.OriginalBoundaryScalarImageLift
+public import FLT.Mazur.OriginalBoundaryScalarRelation
 public import FLT.Mazur.OriginalBoundaryTensorLift
 public import FLT.Mazur.OriginalBoundaryUniformFlatPoint
 public import FLT.Mazur.OriginalBoundaryUniformFlatRelation
@@ -12879,6 +12884,8 @@ public import FLT.Mazur.SchemeRelationQcqsIdealBoundaryNumerator
 public import FLT.Mazur.SchemeRelationReanchoring
 public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
+public import FLT.Mazur.SchemeRelationScalarBaseChange
+public import FLT.Mazur.SchemeRelationScalarEtale
 public import FLT.Mazur.SchemeRelationSectionScalars
 public import FLT.Mazur.SchemeRelationSeedComparisonSquare
 public import FLT.Mazur.SchemeRelationSeedGenericCriterion
@@ -12917,6 +12924,8 @@ public import FLT.Mazur.SchemeScalarConstructibleImage
 public import FLT.Mazur.SchemeScalarFiniteBadPrimes
 public import FLT.Mazur.SchemeScalarFullAtlas
 public import FLT.Mazur.SchemeScalarGeometricOpenLift
+public import FLT.Mazur.SchemeScalarImageDescent
+public import FLT.Mazur.SchemeScalarImageQuotient
 public import FLT.Mazur.SchemeScalarIntegralBadCover
 public import FLT.Mazur.SchemeScalarIntegralCover
 public import FLT.Mazur.SchemeScalarMinimalEndpoint
