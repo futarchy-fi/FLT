@@ -4334,9 +4334,17 @@ public import FLT.Mazur.CyclicAdicParameters
 public import FLT.Mazur.CyclicAdicSheafQuotient
 public import FLT.Mazur.CyclicAuxiliaryPrescribedNormalizedNeighborhood
 public import FLT.Mazur.CyclicBoundaryAmpleAction
+public import FLT.Mazur.CyclicBoundaryAmpleBaseChange
+public import FLT.Mazur.CyclicBoundaryAmpleBaseChangeAction
+public import FLT.Mazur.CyclicBoundaryAmpleBaseChangeModuli
+public import FLT.Mazur.CyclicBoundaryAmpleBaseChangeRefinement
+public import FLT.Mazur.CyclicBoundaryAmpleBaseChangeTower
 public import FLT.Mazur.CyclicBoundaryAmpleInvariantModuli
 public import FLT.Mazur.CyclicBoundaryAmpleModuli
+public import FLT.Mazur.CyclicBoundaryAmpleRefinementModuli
+public import FLT.Mazur.CyclicBoundaryAmpleTowerModuli
 public import FLT.Mazur.CyclicBoundaryBaseChange
+public import FLT.Mazur.CyclicBoundaryBaseChangeAmpleCriterion
 public import FLT.Mazur.CyclicBoundaryBaseChangeCurve
 public import FLT.Mazur.CyclicBoundaryBaseChangeProjection
 public import FLT.Mazur.CyclicBoundaryBaseChangeSubgroup
@@ -7671,6 +7679,7 @@ public import FLT.Mazur.InvariantIdealEquivalence
 public import FLT.Mazur.InvariantIdealRelation
 public import FLT.Mazur.InvariantIdealRelationCoefficientMembership
 public import FLT.Mazur.InvariantIdealRelationCoefficients
+public import FLT.Mazur.InvariantIdealRelationMonomorphism
 public import FLT.Mazur.InvariantIsomorphismRestriction
 public import FLT.Mazur.InvariantLocalizationAction
 public import FLT.Mazur.InvariantLocalizationComparison
@@ -9016,11 +9025,14 @@ public import FLT.Mazur.OriginalBoundaryResidualFlatCover
 public import FLT.Mazur.OriginalBoundaryResidualGeometricCover
 public import FLT.Mazur.OriginalBoundaryResidualIdeal
 public import FLT.Mazur.OriginalBoundaryResidualImageCover
+public import FLT.Mazur.OriginalBoundaryResidualLocalEtaleImage
+public import FLT.Mazur.OriginalBoundaryResidualLocalImage
 public import FLT.Mazur.OriginalBoundaryResidualPrincipalCover
 public import FLT.Mazur.OriginalBoundaryResidualRelationCover
 public import FLT.Mazur.OriginalBoundaryResidualScalarCover
 public import FLT.Mazur.OriginalBoundaryResidualTensorCover
 public import FLT.Mazur.OriginalBoundaryScalarImageLift
+public import FLT.Mazur.OriginalBoundaryScalarMonomorphism
 public import FLT.Mazur.OriginalBoundaryScalarRelation
 public import FLT.Mazur.OriginalBoundaryTensorLift
 public import FLT.Mazur.OriginalBoundaryUniformFlatPoint
@@ -9397,6 +9409,7 @@ public import FLT.Mazur.PolygonArithmeticZeroTower
 public import FLT.Mazur.PolygonAtlas
 public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonAtlasSmoothLocus
+public import FLT.Mazur.PolygonBoundaryAmpleBaseChange
 public import FLT.Mazur.PolygonBoundaryAmpleParameter
 public import FLT.Mazur.PolygonBoundaryClosedLayer
 public import FLT.Mazur.PolygonBoundaryClosedLifting
@@ -12304,6 +12317,7 @@ public import FLT.Mazur.ScalarMinimalCharacterNeighborhood
 public import FLT.Mazur.ScalarMinimalCharacterPropagation
 public import FLT.Mazur.ScalarNilpotenceFlatBaseChange
 public import FLT.Mazur.ScalarNilpotenceMinimalFiber
+public import FLT.Mazur.ScalarPrimeLocalizationCover
 public import FLT.Mazur.ScalarPrimeThickeningTransitions
 public import FLT.Mazur.ScalarPrimeThickenings
 public import FLT.Mazur.ScalarQuotientImagePresentation
@@ -12886,6 +12900,8 @@ public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
 public import FLT.Mazur.SchemeRelationScalarBaseChange
 public import FLT.Mazur.SchemeRelationScalarEtale
+public import FLT.Mazur.SchemeRelationScalarKernelPair
+public import FLT.Mazur.SchemeRelationScalarMonomorphism
 public import FLT.Mazur.SchemeRelationSectionScalars
 public import FLT.Mazur.SchemeRelationSeedComparisonSquare
 public import FLT.Mazur.SchemeRelationSeedGenericCriterion
@@ -12925,6 +12941,7 @@ public import FLT.Mazur.SchemeScalarFiniteBadPrimes
 public import FLT.Mazur.SchemeScalarFullAtlas
 public import FLT.Mazur.SchemeScalarGeometricOpenLift
 public import FLT.Mazur.SchemeScalarImageDescent
+public import FLT.Mazur.SchemeScalarImageGeometry
 public import FLT.Mazur.SchemeScalarImageQuotient
 public import FLT.Mazur.SchemeScalarIntegralBadCover
 public import FLT.Mazur.SchemeScalarIntegralCover
