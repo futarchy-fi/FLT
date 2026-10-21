@@ -15974,6 +15974,7 @@ public import FLT.Mazur.WeierstrassDividedSuccessorUnitAction
 public import FLT.Mazur.WeierstrassDividedSumDepthFormula
 public import FLT.Mazur.WeierstrassDividedSumDepthResidue
 public import FLT.Mazur.WeierstrassDividedSumDepthSource
+public import FLT.Mazur.WeierstrassDividedSumDepthSourceOutput
 public import FLT.Mazur.WeierstrassDividedSuppliedSmoothChart
 public import FLT.Mazur.WeierstrassDividedSuppliedSmoothPair
 public import FLT.Mazur.WeierstrassDividedTangentBranchContraction
