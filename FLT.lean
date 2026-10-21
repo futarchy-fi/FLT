@@ -3624,6 +3624,7 @@ public import FLT.Mazur.ArithmeticOneGonOriginalBaseChange
 public import FLT.Mazur.ArithmeticOneGonOriginalFiber
 public import FLT.Mazur.ArithmeticOneGonOriginalRoots
 public import FLT.Mazur.ArithmeticOneGonParameterIso
+public import FLT.Mazur.ArithmeticOneGonPolygonAmple
 public import FLT.Mazur.ArithmeticOneGonRoots
 public import FLT.Mazur.ArithmeticOneGonRootsBaseChange
 public import FLT.Mazur.ArithmeticOneGonRootsCoefficientNaturality
