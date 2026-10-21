@@ -3602,6 +3602,7 @@ public import FLT.Mazur.ArbitraryGeometricProperCore
 public import FLT.Mazur.ArbitraryPicardAffineEtaleChart
 public import FLT.Mazur.ArbitraryPicardEtaleTranslation
 public import FLT.Mazur.ArithmeticOneGonAlgebraicCyclicCharts
+public import FLT.Mazur.ArithmeticOneGonAlgebraicCyclicCoverage
 public import FLT.Mazur.ArithmeticOneGonAlgebraicFamily
 public import FLT.Mazur.ArithmeticOneGonAmpleBaseChange
 public import FLT.Mazur.ArithmeticOneGonAmpleParameter
