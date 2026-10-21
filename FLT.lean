@@ -16228,6 +16228,7 @@ public import FLT.Mazur.WeierstrassDividedTwoNodeRestriction
 public import FLT.Mazur.WeierstrassDividedTwoOpenRestriction
 public import FLT.Mazur.WeierstrassDividedTwoSeedOrientation
 public import FLT.Mazur.WeierstrassDividedTwoSeedState
+public import FLT.Mazur.WeierstrassDividedUnequalSecantFormula
 public import FLT.Mazur.WeierstrassDividedUniversalSmoothPair
 public import FLT.Mazur.WeierstrassDividedUniversalSmoothPairIso
 public import FLT.Mazur.WeierstrassDividedUniversalSmoothPairPromotion
