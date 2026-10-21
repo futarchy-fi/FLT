@@ -8310,6 +8310,7 @@ public import FLT.Mazur.ModuleUnitCocyclePullback
 public import FLT.Mazur.MonicIdealNormalForms
 public import FLT.Mazur.MonoBaseChangeRelation
 public import FLT.Mazur.MonoBaseProductComparison
+public import FLT.Mazur.MonoComparisonOpenGluing
 public import FLT.Mazur.MonoFamilySchemeGluing
 public import FLT.Mazur.MonoidalActionSpecialization
 public import FLT.Mazur.MonomorphismCoefficientEffectiveOpen
@@ -9128,6 +9129,7 @@ public import FLT.Mazur.OriginalAlgebraicPointDescent
 public import FLT.Mazur.OriginalBoundaryAdicFlatRelation
 public import FLT.Mazur.OriginalBoundaryAdicRelationLift
 public import FLT.Mazur.OriginalBoundaryAffineAssociatedDetection
+public import FLT.Mazur.OriginalBoundaryAffineAssociatedLift
 public import FLT.Mazur.OriginalBoundaryAssociatedComparisonLift
 public import FLT.Mazur.OriginalBoundaryAssociatedDifferentialDetection
 public import FLT.Mazur.OriginalBoundaryBranchScalars
@@ -9136,6 +9138,8 @@ public import FLT.Mazur.OriginalBoundaryComparisonLocalClosedImage
 public import FLT.Mazur.OriginalBoundaryComparisonNeighborhood
 public import FLT.Mazur.OriginalBoundaryDifferentialIdealPower
 public import FLT.Mazur.OriginalBoundaryDifferentialKernelSupport
+public import FLT.Mazur.OriginalBoundaryDifferentialOpenLift
+public import FLT.Mazur.OriginalBoundaryDifferentialOpenNaturality
 public import FLT.Mazur.OriginalBoundaryDiscrepancyLocus
 public import FLT.Mazur.OriginalBoundaryDomainComparisonLift
 public import FLT.Mazur.OriginalBoundaryEtaleImageLift
@@ -9150,6 +9154,7 @@ public import FLT.Mazur.OriginalBoundaryFlatRelationLift
 public import FLT.Mazur.OriginalBoundaryGenericRankCoverage
 public import FLT.Mazur.OriginalBoundaryGenerizingRanks
 public import FLT.Mazur.OriginalBoundaryGeometricTensor
+public import FLT.Mazur.OriginalBoundaryGlobalDifferentialLift
 public import FLT.Mazur.OriginalBoundaryImageNeighborhood
 public import FLT.Mazur.OriginalBoundaryKernelPairLift
 public import FLT.Mazur.OriginalBoundaryLiftFiniteSupport
@@ -9158,8 +9163,10 @@ public import FLT.Mazur.OriginalBoundaryLocalRelationDescent
 public import FLT.Mazur.OriginalBoundaryNilpotentEndpointLift
 public import FLT.Mazur.OriginalBoundaryPrincipalCover
 public import FLT.Mazur.OriginalBoundaryPrincipalLiftCriterion
+public import FLT.Mazur.OriginalBoundaryRankAssociatedLift
 public import FLT.Mazur.OriginalBoundaryRankChartEndpointLift
 public import FLT.Mazur.OriginalBoundaryRankCollision
+public import FLT.Mazur.OriginalBoundaryRankDifferentialTower
 public import FLT.Mazur.OriginalBoundaryRankStageComparison
 public import FLT.Mazur.OriginalBoundaryRankStageDenseCoverage
 public import FLT.Mazur.OriginalBoundaryRelationOpenLift
@@ -11265,6 +11272,7 @@ public import FLT.Mazur.PrincipalFanRestrictionUniqueness
 public import FLT.Mazur.PrincipalFanStages
 public import FLT.Mazur.PrincipalFiniteRestrictionPaths
 public import FLT.Mazur.PrincipalGeneratorExtension
+public import FLT.Mazur.PrincipalIdealComparisonLift
 public import FLT.Mazur.PrincipalIdealScalarImage
 public import FLT.Mazur.PrincipalImageCriterion
 public import FLT.Mazur.PrincipalIntegerModelIsomorphism
@@ -14877,6 +14885,8 @@ public import FLT.Mazur.WeierstrassDividedArithmeticInitialPolygonImage
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialSlope
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialTerminalAddition
+public import FLT.Mazur.WeierstrassDividedArithmeticInitialTerminalFullCoverage
+public import FLT.Mazur.WeierstrassDividedArithmeticInitialTerminalMiddleOutput
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialTriangleCompatibility
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialUnitPairCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledAdjacent
@@ -14898,7 +14908,12 @@ public import FLT.Mazur.WeierstrassDividedArithmeticLabeledSystemDescent
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledTerminalEdge
 public import FLT.Mazur.WeierstrassDividedArithmeticMixedAllMiddleCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticMixedCoverage
+public import FLT.Mazur.WeierstrassDividedArithmeticMixedHorizontalCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticMixedMiddleCoverage
+public import FLT.Mazur.WeierstrassDividedArithmeticMixedNonpuncturedCoverage
+public import FLT.Mazur.WeierstrassDividedArithmeticMixedRetainedCoverage
+public import FLT.Mazur.WeierstrassDividedArithmeticMixedReversedCoverage
+public import FLT.Mazur.WeierstrassDividedArithmeticMixedTensorPuncture
 public import FLT.Mazur.WeierstrassDividedArithmeticNewestIndex
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeOpen
@@ -15657,6 +15672,7 @@ public import FLT.Mazur.WeierstrassDividedInitialExteriorNegation
 public import FLT.Mazur.WeierstrassDividedInitialExteriorOriented
 public import FLT.Mazur.WeierstrassDividedInitialExteriorProjective
 public import FLT.Mazur.WeierstrassDividedInitialFormulaCoordinates
+public import FLT.Mazur.WeierstrassDividedInitialFormulaPuncture
 public import FLT.Mazur.WeierstrassDividedInitialGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedInitialGlobalSections
 public import FLT.Mazur.WeierstrassDividedInitialGlobalStep
