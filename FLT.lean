@@ -6091,6 +6091,7 @@ public import FLT.Mazur.FiniteRelationFiniteHomDescent
 public import FLT.Mazur.FiniteRelationHomDescent
 public import FLT.Mazur.FiniteRelationHomEquality
 public import FLT.Mazur.FiniteRelationIdealRealization
+public import FLT.Mazur.FiniteRelationInvariantNeighborhoods
 public import FLT.Mazur.FiniteRelationIteratedDetection
 public import FLT.Mazur.FiniteRelationIteratedEquationPersistence
 public import FLT.Mazur.FiniteRelationIteratedFiniteMaps
@@ -6120,6 +6121,7 @@ public import FLT.Mazur.FiniteRelationLocalizedInclusionDescent
 public import FLT.Mazur.FiniteRelationLocalizedUnionDescent
 public import FLT.Mazur.FiniteRelationLocallyClosedAffineBasis
 public import FLT.Mazur.FiniteRelationNamedDomainTransitions
+public import FLT.Mazur.FiniteRelationOriginalNormCore
 public import FLT.Mazur.FiniteRelationPrescribedLiftCoefficients
 public import FLT.Mazur.FiniteRelationPrescribedLifting
 public import FLT.Mazur.FiniteRelationPrincipalBoundaryCover
@@ -11580,7 +11582,9 @@ public import FLT.Mazur.RankStageFiniteCoreDetection
 public import FLT.Mazur.RankStageFiniteCoreGluing
 public import FLT.Mazur.RankStageFiniteCoverBoundaryTowers
 public import FLT.Mazur.RankStageFiniteGlobalOverlapNumerators
+public import FLT.Mazur.RankStageFiniteInvariantAtlas
 public import FLT.Mazur.RankStageFiniteInvariantDetection
+public import FLT.Mazur.RankStageFiniteOriginalNorm
 public import FLT.Mazur.RankStageFiniteOriginalObstruction
 public import FLT.Mazur.RankStageFullBoundaryGluing
 public import FLT.Mazur.RankStageGlobalBoundaryNumerators
@@ -11600,6 +11604,7 @@ public import FLT.Mazur.RankStageOriginalAtlasErrors
 public import FLT.Mazur.RankStageOriginalAtlasTower
 public import FLT.Mazur.RankStageOriginalBoundaryCoefficients
 public import FLT.Mazur.RankStageOriginalBoundaryCoherentNumerators
+public import FLT.Mazur.RankStageOriginalBoundaryNormProduct
 public import FLT.Mazur.RankStageOriginalBoundaryProduct
 public import FLT.Mazur.RankStageOriginalBoundaryRestriction
 public import FLT.Mazur.RankStageOriginalBoundaryScalarObstruction
@@ -11607,10 +11612,13 @@ public import FLT.Mazur.RankStageOriginalBoundaryTests
 public import FLT.Mazur.RankStageOriginalBoundaryTower
 public import FLT.Mazur.RankStageOriginalCompatibleScalars
 public import FLT.Mazur.RankStageOriginalCoordinateErrors
+public import FLT.Mazur.RankStageOriginalCoreAnnihilation
+public import FLT.Mazur.RankStageOriginalCoreNumerators
 public import FLT.Mazur.RankStageOriginalGeometricAtlasApproximation
 public import FLT.Mazur.RankStageOriginalMixedCoreTests
 public import FLT.Mazur.RankStageOriginalMixedIdeals
 public import FLT.Mazur.RankStageOriginalMixedTests
+public import FLT.Mazur.RankStageOriginalNormProduct
 public import FLT.Mazur.RankStageOriginalPrincipalNumerators
 public import FLT.Mazur.RankStageOriginalProductAnnihilation
 public import FLT.Mazur.RankStageOriginalScalarAnnihilation
@@ -11623,6 +11631,7 @@ public import FLT.Mazur.RankStagePrescribedBoundaryTower
 public import FLT.Mazur.RankStagePrescribedLiftingProperty
 public import FLT.Mazur.RankStagePrincipalCoreCorrections
 public import FLT.Mazur.RankStageRelationTransitions
+public import FLT.Mazur.RankStageRelativeClosedCoreObstruction
 public import FLT.Mazur.RankStageRescaledGlobalKernelTowers
 public import FLT.Mazur.RankStageStableKernelObstruction
 public import FLT.Mazur.RankStageStableTransitions
@@ -11633,6 +11642,7 @@ public import FLT.Mazur.RankStageTopKernelObstruction
 public import FLT.Mazur.RankStageTransitionTopology
 public import FLT.Mazur.RankStageUniformKernelNumerators
 public import FLT.Mazur.RankStratumClopenStabilization
+public import FLT.Mazur.RankStratumRelativeClosedStabilization
 public import FLT.Mazur.RankStratumTopNilpotence
 public import FLT.Mazur.RationalCyclicCartierGenerator
 public import FLT.Mazur.RationalCyclicGeneratorChange
@@ -11752,6 +11762,7 @@ public import FLT.Mazur.RelativeExactRankFrameCover
 public import FLT.Mazur.RelativeFiberMorphism
 public import FLT.Mazur.RelativeFiberNakayama
 public import FLT.Mazur.RelativeFiniteDomainPrincipal
+public import FLT.Mazur.RelativeFiniteFrameRankClosed
 public import FLT.Mazur.RelativeFiniteTupleAffine
 public import FLT.Mazur.RelativeFppfComparisonCover
 public import FLT.Mazur.RelativeFppfLocalSubfunctor
