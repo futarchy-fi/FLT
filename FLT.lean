@@ -3606,6 +3606,7 @@ public import FLT.Mazur.ArithmeticOneGonBoundaryFiber
 public import FLT.Mazur.ArithmeticOneGonChangedSubgroupAmple
 public import FLT.Mazur.ArithmeticOneGonCoefficientIso
 public import FLT.Mazur.ArithmeticOneGonCoefficientTower
+public import FLT.Mazur.ArithmeticOneGonCommonCoefficientChangeRing
 public import FLT.Mazur.ArithmeticOneGonCommonCoefficientCoherence
 public import FLT.Mazur.ArithmeticOneGonCommonCoefficientIso
 public import FLT.Mazur.ArithmeticOneGonCommonCoefficientTower
@@ -8638,6 +8639,14 @@ public import FLT.Mazur.OneGonAdicPuncturedCoarse
 public import FLT.Mazur.OneGonAdicPuncturedModuli
 public import FLT.Mazur.OneGonAdicRecoveredSmoothFactor
 public import FLT.Mazur.OneGonAdicReductionCartesian
+public import FLT.Mazur.OneGonAdicSharedCommonSubgroup
+public import FLT.Mazur.OneGonAdicSharedCurve
+public import FLT.Mazur.OneGonAdicSharedEmbedding
+public import FLT.Mazur.OneGonAdicSharedRecovery
+public import FLT.Mazur.OneGonAdicSharedStage
+public import FLT.Mazur.OneGonAdicSharedSubgroup
+public import FLT.Mazur.OneGonAdicSharedSubgroupCoherence
+public import FLT.Mazur.OneGonAdicSharedSubgroupIso
 public import FLT.Mazur.OneGonAdicSmoothCoefficientSquares
 public import FLT.Mazur.OneGonAdicSmoothFactorCommonRefinement
 public import FLT.Mazur.OneGonAdicSmoothFactorRecovery
@@ -8653,6 +8662,8 @@ public import FLT.Mazur.OneGonAdicSmoothModelSubgroup
 public import FLT.Mazur.OneGonAdicSmoothProjection
 public import FLT.Mazur.OneGonAdicSubgroupCartier
 public import FLT.Mazur.OneGonAdicSubgroupReductionIdeal
+public import FLT.Mazur.OneGonAdicTripleStage
+public import FLT.Mazur.OneGonAdicTripleSubgroupCoherence
 public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
