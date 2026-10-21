@@ -12206,6 +12206,7 @@ public import FLT.Mazur.RelativePinchingNeighborhoods
 public import FLT.Mazur.RelativePointLineAmple
 public import FLT.Mazur.RelativePoleComplementFunctions
 public import FLT.Mazur.RelativePoleComplementLinear
+public import FLT.Mazur.RelativeRankCollisionDenominators
 public import FLT.Mazur.RelativeRankCollisionFinite
 public import FLT.Mazur.RelativeRankCollisionIdeal
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
