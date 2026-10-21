@@ -3606,6 +3606,7 @@ public import FLT.Mazur.ArithmeticOneGonBoundaryFiber
 public import FLT.Mazur.ArithmeticOneGonChangedSubgroupAmple
 public import FLT.Mazur.ArithmeticOneGonCoefficientIso
 public import FLT.Mazur.ArithmeticOneGonCoefficientTower
+public import FLT.Mazur.ArithmeticOneGonCommonCoefficientCoherence
 public import FLT.Mazur.ArithmeticOneGonCommonCoefficientIso
 public import FLT.Mazur.ArithmeticOneGonCommonCoefficientTower
 public import FLT.Mazur.ArithmeticOneGonFamily
@@ -8608,8 +8609,15 @@ public import FLT.Mazur.OneGonAdicIndependentCommonFactors
 public import FLT.Mazur.OneGonAdicIndependentCommonIdeal
 public import FLT.Mazur.OneGonAdicIndependentCommonRecovery
 public import FLT.Mazur.OneGonAdicIndependentCommonStage
+public import FLT.Mazur.OneGonAdicIndependentCommonSubgroup
+public import FLT.Mazur.OneGonAdicIndependentCommonSubgroupIdeal
+public import FLT.Mazur.OneGonAdicIndependentCommonSubgroupRecovery
 public import FLT.Mazur.OneGonAdicIndependentCurveTower
 public import FLT.Mazur.OneGonAdicIndependentEmbedding
+public import FLT.Mazur.OneGonAdicIndependentFactorClosed
+public import FLT.Mazur.OneGonAdicIndependentFactorHom
+public import FLT.Mazur.OneGonAdicIndependentFactorRecovery
+public import FLT.Mazur.OneGonAdicIndependentFiniteSubgroup
 public import FLT.Mazur.OneGonAdicIndependentFullRecovery
 public import FLT.Mazur.OneGonAdicIndependentSmoothRecovery
 public import FLT.Mazur.OneGonAdicIndependentSmoothStage
@@ -8618,6 +8626,8 @@ public import FLT.Mazur.OneGonAdicIndependentStageModel
 public import FLT.Mazur.OneGonAdicIndependentStageNormalForm
 public import FLT.Mazur.OneGonAdicIndependentStageRecovery
 public import FLT.Mazur.OneGonAdicIndependentStageRefinement
+public import FLT.Mazur.OneGonAdicIndependentSubgroupRecovery
+public import FLT.Mazur.OneGonAdicIndependentSubgroupRefinement
 public import FLT.Mazur.OneGonAdicInitialCoefficientNaturality
 public import FLT.Mazur.OneGonAdicInitialCoefficientTransport
 public import FLT.Mazur.OneGonAdicInitialParameter
