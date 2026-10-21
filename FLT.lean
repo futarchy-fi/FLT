@@ -9172,6 +9172,8 @@ public import FLT.Mazur.OriginalBoundaryJacobianLift
 public import FLT.Mazur.OriginalBoundaryKernelPairLift
 public import FLT.Mazur.OriginalBoundaryLiftFiniteSupport
 public import FLT.Mazur.OriginalBoundaryLocalImageKernelDetection
+public import FLT.Mazur.OriginalBoundaryLocalJacobianLift
+public import FLT.Mazur.OriginalBoundaryLocalPolynomialLift
 public import FLT.Mazur.OriginalBoundaryLocalRelationDescent
 public import FLT.Mazur.OriginalBoundaryNilpotentEndpointLift
 public import FLT.Mazur.OriginalBoundaryPolynomialLift
@@ -9181,6 +9183,7 @@ public import FLT.Mazur.OriginalBoundaryRankAssociatedLift
 public import FLT.Mazur.OriginalBoundaryRankChartEndpointLift
 public import FLT.Mazur.OriginalBoundaryRankCollision
 public import FLT.Mazur.OriginalBoundaryRankDifferentialTower
+public import FLT.Mazur.OriginalBoundaryRankLocalEquationLift
 public import FLT.Mazur.OriginalBoundaryRankPolynomialLift
 public import FLT.Mazur.OriginalBoundaryRankStageComparison
 public import FLT.Mazur.OriginalBoundaryRankStageDenseCoverage
@@ -9209,6 +9212,7 @@ public import FLT.Mazur.OriginalBoundaryScalarCartesian
 public import FLT.Mazur.OriginalBoundaryScalarImageLift
 public import FLT.Mazur.OriginalBoundaryScalarMonomorphism
 public import FLT.Mazur.OriginalBoundaryScalarRelation
+public import FLT.Mazur.OriginalBoundaryStalkPolynomialLift
 public import FLT.Mazur.OriginalBoundaryTensorLift
 public import FLT.Mazur.OriginalBoundaryUniformFlatPoint
 public import FLT.Mazur.OriginalBoundaryUniformFlatRelation
@@ -12497,6 +12501,7 @@ public import FLT.Mazur.RootsOfUnityScheme
 public import FLT.Mazur.RootsOfUnitySubgroupCyclicity
 public import FLT.Mazur.RootsOfUnitySubgroupGenerator
 public import FLT.Mazur.ScalarAlgebraicClosureTests
+public import FLT.Mazur.ScalarClearedPolynomialAnnihilator
 public import FLT.Mazur.ScalarClosedGeometricLifts
 public import FLT.Mazur.ScalarClosedImageCoverage
 public import FLT.Mazur.ScalarClosedImageStrata
@@ -12515,6 +12520,7 @@ public import FLT.Mazur.ScalarExtensionDirectSum
 public import FLT.Mazur.ScalarExtensionImageReduction
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
+public import FLT.Mazur.ScalarFiniteDifferentialGenerators
 public import FLT.Mazur.ScalarGeometricFiberTests
 public import FLT.Mazur.ScalarGeometricPointTests
 public import FLT.Mazur.ScalarIdealNilpotenceOpen
@@ -12524,6 +12530,9 @@ public import FLT.Mazur.ScalarImageNeighborhoodBasis
 public import FLT.Mazur.ScalarImageOriginalGenerators
 public import FLT.Mazur.ScalarImageResidueGenerators
 public import FLT.Mazur.ScalarImageSourceGenerators
+public import FLT.Mazur.ScalarLocalJacobianAnnihilator
+public import FLT.Mazur.ScalarLocalPolynomialResidueRigidity
+public import FLT.Mazur.ScalarLocalPolynomialTests
 public import FLT.Mazur.ScalarLocalizedIdealNilpotence
 public import FLT.Mazur.ScalarMinimalCharacterNeighborhood
 public import FLT.Mazur.ScalarMinimalCharacterPropagation
@@ -12540,6 +12549,7 @@ public import FLT.Mazur.ScalarQuotientResiduePresentation
 public import FLT.Mazur.ScalarResidueClosureGeometry
 public import FLT.Mazur.ScalarRestrictionFiniteness
 public import FLT.Mazur.ScalarRestrictionImage
+public import FLT.Mazur.ScalarStalkDifferentialPolynomialRigidity
 public import FLT.Mazur.ScalarStrataBoundaryRefinement
 public import FLT.Mazur.ScalarStratumThickenings
 public import FLT.Mazur.ScalarTensorExactFibers
