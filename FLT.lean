@@ -18518,6 +18518,7 @@ public import FLT.Mazur.WeierstrassSuccessiveTensorSlopeBoundary
 public import FLT.Mazur.WeierstrassSuccessiveTensorSlopeCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveTerminalLaurentCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXAlgebra
+public import FLT.Mazur.WeierstrassSuccessiveXAnyDepthSmoothCover
 public import FLT.Mazur.WeierstrassSuccessiveXArithmeticPuncturedBranches
 public import FLT.Mazur.WeierstrassSuccessiveXBaseChange
 public import FLT.Mazur.WeierstrassSuccessiveXBaseChangeCoordinates
