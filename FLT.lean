@@ -18579,6 +18579,7 @@ public import FLT.Mazur.WeierstrassSuccessiveTerminalLaurentCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXAlgebra
 public import FLT.Mazur.WeierstrassSuccessiveXAnyDepthSmoothCover
 public import FLT.Mazur.WeierstrassSuccessiveXArithmeticPuncturedBranches
+public import FLT.Mazur.WeierstrassSuccessiveXArithmeticSmoothCover
 public import FLT.Mazur.WeierstrassSuccessiveXBaseChange
 public import FLT.Mazur.WeierstrassSuccessiveXBaseChangeCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXCoefficients
