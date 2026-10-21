@@ -6290,6 +6290,7 @@ public import FLT.Mazur.FlatScalarFunctionPushout
 public import FLT.Mazur.FlatScalarHomology
 public import FLT.Mazur.FlatScalarImageBaseChange
 public import FLT.Mazur.FlatScalarImageEquations
+public import FLT.Mazur.FlatScalarImageProjection
 public import FLT.Mazur.FlatScalarIntegralTests
 public import FLT.Mazur.FlatScalarKernelExtension
 public import FLT.Mazur.FlatScalarPowerKernel
