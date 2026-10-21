@@ -4109,6 +4109,7 @@ public import FLT.Mazur.ClosedFiberTensorExactness
 public import FLT.Mazur.ClosedGroupIdealCarrierBaseChange
 public import FLT.Mazur.ClosedGroupIdealGroup
 public import FLT.Mazur.ClosedGroupIdealOperations
+public import FLT.Mazur.ClosedGroupIdealProductBaseChange
 public import FLT.Mazur.ClosedIdealAffineCoverDescent
 public import FLT.Mazur.ClosedIdealCartesianDegree
 public import FLT.Mazur.ClosedIdealCoverGluing
