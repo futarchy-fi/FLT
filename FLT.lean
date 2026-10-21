@@ -4357,6 +4357,7 @@ public import FLT.Mazur.CyclicBoundaryBaseChangeAmpleCriterion
 public import FLT.Mazur.CyclicBoundaryBaseChangeCurve
 public import FLT.Mazur.CyclicBoundaryBaseChangeProjection
 public import FLT.Mazur.CyclicBoundaryBaseChangeSubgroup
+public import FLT.Mazur.CyclicBoundaryCurveTransport
 public import FLT.Mazur.CyclicBoundaryFaithfulAction
 public import FLT.Mazur.CyclicBoundaryFaithfulBaseChange
 public import FLT.Mazur.CyclicBoundaryFaithfulBaseChangeAction
