@@ -16756,6 +16756,7 @@ public import FLT.Mazur.WeierstrassDividedWiderReflectedCoordinates
 public import FLT.Mazur.WeierstrassDividedWiderReflectedFactors
 public import FLT.Mazur.WeierstrassDividedWiderReflectedFormula
 public import FLT.Mazur.WeierstrassDividedWiderReflectedOutput
+public import FLT.Mazur.WeierstrassDividedWiderReflectedSource
 public import FLT.Mazur.WeierstrassDividedZeroBoundaryFunctions
 public import FLT.Mazur.WeierstrassDividedZeroClosingAtlasBase
 public import FLT.Mazur.WeierstrassDividedZeroClosingFactorBase
