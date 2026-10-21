@@ -15725,6 +15725,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveSplitTerminalMap
 public import FLT.Mazur.WeierstrassDividedPositiveSplitTerminalRetainedTensorCompatibility
 public import FLT.Mazur.WeierstrassDividedPositiveSplitWholeFiberAction
 public import FLT.Mazur.WeierstrassDividedPositiveSplitZero
+public import FLT.Mazur.WeierstrassDividedPreMiddleBranchDichotomy
 public import FLT.Mazur.WeierstrassDividedPrecedingAtlasRange
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedProjectiveLift
