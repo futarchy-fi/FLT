@@ -1,4 +1,4 @@
-module  -- shake: keep-all --deprecated_module: ignore
+module
 
 public import FLT.AINTLIB.CebotarevDensity.NumberFieldEulerProduct
 public import FLT.AINTLIB.DedekindResidue.AuxiliaryFunction
@@ -4261,6 +4261,7 @@ public import FLT.Mazur.CompatibleSubgroupMarkedConjugation
 public import FLT.Mazur.CompatibleSubgroupOrbitMarking
 public import FLT.Mazur.CompatibleSubgroupParameterRefinement
 public import FLT.Mazur.CompatibleSubgroupPointClassification
+public import FLT.Mazur.CompatibleSubgroupPresentationExtension
 public import FLT.Mazur.CompatibleSubgroupPullbackCast
 public import FLT.Mazur.CompatibleSubgroupRefinementCast
 public import FLT.Mazur.CompatibleSubgroupRefinementComposition
