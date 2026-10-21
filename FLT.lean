@@ -12318,6 +12318,7 @@ public import FLT.Mazur.ScalarGeometricPointTests
 public import FLT.Mazur.ScalarIdealNilpotenceOpen
 public import FLT.Mazur.ScalarIdealNilpotenceResidual
 public import FLT.Mazur.ScalarImageFiniteVanishing
+public import FLT.Mazur.ScalarImageNeighborhoodBasis
 public import FLT.Mazur.ScalarImageOriginalGenerators
 public import FLT.Mazur.ScalarImageResidueGenerators
 public import FLT.Mazur.ScalarImageSourceGenerators
