@@ -12486,6 +12486,7 @@ public import FLT.Mazur.SchemeAffineTestProjectionRefinement
 public import FLT.Mazur.SchemeAffineTripleComparisonCocycle
 public import FLT.Mazur.SchemeAffineTripleRefinementFamily
 public import FLT.Mazur.SchemeAffinizationUniversal
+public import FLT.Mazur.SchemeArithmeticCoefficientSupport
 public import FLT.Mazur.SchemeBadAffineCover
 public import FLT.Mazur.SchemeBadAffineCoverBoundaryBaseChange
 public import FLT.Mazur.SchemeBadAffineCoverBoundaryObstruction
@@ -14645,6 +14646,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticLabeledSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledSystem
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledSystemDescent
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledTerminalEdge
+public import FLT.Mazur.WeierstrassDividedArithmeticMixedCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticNewestIndex
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeOpen
@@ -14666,6 +14668,8 @@ public import FLT.Mazur.WeierstrassDividedArithmeticRetainedOutputComparison
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedPolygon
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedPolygonSystem
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedSmoothAddition
+public import FLT.Mazur.WeierstrassDividedArithmeticRetainedTerminalAddition
+public import FLT.Mazur.WeierstrassDividedArithmeticSelfReciprocalAddition
 public import FLT.Mazur.WeierstrassDividedArithmeticStartOneRetained
 public import FLT.Mazur.WeierstrassDividedArithmeticSystemCartesian
 public import FLT.Mazur.WeierstrassDividedArithmeticTargetInputComparison
@@ -14851,6 +14855,7 @@ public import FLT.Mazur.WeierstrassDividedDepthStructure
 public import FLT.Mazur.WeierstrassDividedDepthYBoundary
 public import FLT.Mazur.WeierstrassDividedDistinctOlderAddition
 public import FLT.Mazur.WeierstrassDividedEarlierTerminalSeparation
+public import FLT.Mazur.WeierstrassDividedEqualBranchReciprocalCoverage
 public import FLT.Mazur.WeierstrassDividedEqualityComponentContraction
 public import FLT.Mazur.WeierstrassDividedEqualityComponentEndpoints
 public import FLT.Mazur.WeierstrassDividedEqualityCycleCommonNode
@@ -16049,8 +16054,10 @@ public import FLT.Mazur.WeierstrassDividedRetainedPolygonLabels
 public import FLT.Mazur.WeierstrassDividedRetainedPolygonMaps
 public import FLT.Mazur.WeierstrassDividedRetainedPolygonNaturality
 public import FLT.Mazur.WeierstrassDividedRetainedPuncturePreimage
+public import FLT.Mazur.WeierstrassDividedRetainedSelfReciprocalAddition
 public import FLT.Mazur.WeierstrassDividedRetainedTensorIndex
 public import FLT.Mazur.WeierstrassDividedRetainedTensorProjection
+public import FLT.Mazur.WeierstrassDividedRetainedTerminalUnequalAddition
 public import FLT.Mazur.WeierstrassDividedRetainedTransport
 public import FLT.Mazur.WeierstrassDividedRetainedZeroAbscissaTransfer
 public import FLT.Mazur.WeierstrassDividedRetainedZeroExteriorLine
@@ -16342,6 +16349,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalFullConicIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalHorizontalCyclicAction
 public import FLT.Mazur.WeierstrassDividedTerminalHorizontalCyclicPair
 public import FLT.Mazur.WeierstrassDividedTerminalLineDisjoint
+public import FLT.Mazur.WeierstrassDividedTerminalLowerCoordinates
 public import FLT.Mazur.WeierstrassDividedTerminalNodeChartExclusion
 public import FLT.Mazur.WeierstrassDividedTerminalNodeIncidence
 public import FLT.Mazur.WeierstrassDividedTerminalObstructionExample
