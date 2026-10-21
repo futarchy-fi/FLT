@@ -12427,6 +12427,7 @@ public import FLT.Mazur.ScalarCompatibleIntegerModel
 public import FLT.Mazur.ScalarComponentRankCeiling
 public import FLT.Mazur.ScalarConstructibleFiniteCover
 public import FLT.Mazur.ScalarConstructibleStrata
+public import FLT.Mazur.ScalarDifferentialPrincipalRigidity
 public import FLT.Mazur.ScalarEndomorphismPullback
 public import FLT.Mazur.ScalarExtensionDirectSum
 public import FLT.Mazur.ScalarExtensionImageReduction
