@@ -7314,6 +7314,7 @@ public import FLT.Mazur.HomIntegerModel
 public import FLT.Mazur.HomogeneousCochainCorrection
 public import FLT.Mazur.HomogeneousCochainFinitePatching
 public import FLT.Mazur.HomogeneousCochainScalarObstruction
+public import FLT.Mazur.HomogeneousCochainScaledClass
 public import FLT.Mazur.HomogeneousFractionProjection
 public import FLT.Mazur.HomogeneousIdealWitness
 public import FLT.Mazur.HomogeneousLocalizationArbitraryBaseChange
@@ -11627,6 +11628,8 @@ public import FLT.Mazur.RankStageAffineBoundaryLifts
 public import FLT.Mazur.RankStageAffineCorrectedObstruction
 public import FLT.Mazur.RankStageAffineFullBoundaryTower
 public import FLT.Mazur.RankStageAffineNeighborhoods
+public import FLT.Mazur.RankStageBoundaryCorrectionClass
+public import FLT.Mazur.RankStageBoundaryCorrectionVanishing
 public import FLT.Mazur.RankStageBoundaryIdeal
 public import FLT.Mazur.RankStageBoundarySeedTower
 public import FLT.Mazur.RankStageBoundedCoreCover
@@ -11649,7 +11652,10 @@ public import FLT.Mazur.RankStageCoreCochainMaps
 public import FLT.Mazur.RankStageCoreCoefficientTransitions
 public import FLT.Mazur.RankStageCoreCorrectionCokernel
 public import FLT.Mazur.RankStageCoreCorrectionCriterion
+public import FLT.Mazur.RankStageCoreCorrectionGluing
+public import FLT.Mazur.RankStageCoreCorrectionScalarGluing
 public import FLT.Mazur.RankStageCoreCorrectionSpace
+public import FLT.Mazur.RankStageCoreCorrectionSupport
 public import FLT.Mazur.RankStageCoreIntersections
 public import FLT.Mazur.RankStageCoreInvariantDetection
 public import FLT.Mazur.RankStageCoreMixedCoefficientDetection
@@ -12667,6 +12673,9 @@ public import FLT.Mazur.SchemeOverlapRefinementTripleCocycle
 public import FLT.Mazur.SchemeOverlapTransportComposition
 public import FLT.Mazur.SchemePairBoundaryTransfer
 public import FLT.Mazur.SchemePairBoundaryTransferIso
+public import FLT.Mazur.SchemePairDoubleBoundaryDomain
+public import FLT.Mazur.SchemePairDoubleBoundarySymmetry
+public import FLT.Mazur.SchemePairDoubleBoundaryTransfer
 public import FLT.Mazur.SchemeParameterEquivalence
 public import FLT.Mazur.SchemePicardClasses
 public import FLT.Mazur.SchemePicardGroup
@@ -14471,10 +14480,12 @@ public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentBranch
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentCorrection
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentFactorization
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentIndex
+public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentIndexedBoundary
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentIntersection
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentPairTransfer
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentSlope
+public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentTerminalDouble
 public import FLT.Mazur.WeierstrassDividedArithmeticAffinePolygonEmbedding
 public import FLT.Mazur.WeierstrassDividedArithmeticAtlasCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticAtlasIndex
@@ -14488,6 +14499,9 @@ public import FLT.Mazur.WeierstrassDividedArithmeticBranchRestriction
 public import FLT.Mazur.WeierstrassDividedArithmeticCoefficientInfinity
 public import FLT.Mazur.WeierstrassDividedArithmeticCoordinateTransition
 public import FLT.Mazur.WeierstrassDividedArithmeticCoordinates
+public import FLT.Mazur.WeierstrassDividedArithmeticDoubleBoundary
+public import FLT.Mazur.WeierstrassDividedArithmeticDoubleBoundarySmooth
+public import FLT.Mazur.WeierstrassDividedArithmeticDoubleBoundarySymmetry
 public import FLT.Mazur.WeierstrassDividedArithmeticEarlierTerminal
 public import FLT.Mazur.WeierstrassDividedArithmeticFactorRatioAffine
 public import FLT.Mazur.WeierstrassDividedArithmeticFactorRatioAtlasOverlap
@@ -14562,6 +14576,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticTerminalAtlasTransition
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalBranch
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalEvaluationRestriction
+public import FLT.Mazur.WeierstrassDividedArithmeticTerminalIndexedBoundary
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalIntersection
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalNodeBoundary
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalNodeGeometry
@@ -15877,6 +15892,7 @@ public import FLT.Mazur.WeierstrassDividedResidualNodeRestriction
 public import FLT.Mazur.WeierstrassDividedResidualRetainedLift
 public import FLT.Mazur.WeierstrassDividedResidualTerminalIdentification
 public import FLT.Mazur.WeierstrassDividedResidualTerminalLift
+public import FLT.Mazur.WeierstrassDividedResidueAdjacentIndexedCoverage
 public import FLT.Mazur.WeierstrassDividedResidueAdjacentPairCoverage
 public import FLT.Mazur.WeierstrassDividedResidueAtlasExtension
 public import FLT.Mazur.WeierstrassDividedResidueAtlasFinite
@@ -15888,6 +15904,7 @@ public import FLT.Mazur.WeierstrassDividedResidueNormalizationCompatibility
 public import FLT.Mazur.WeierstrassDividedResidueOrderedNormalization
 public import FLT.Mazur.WeierstrassDividedResidueSplitCubic
 public import FLT.Mazur.WeierstrassDividedResidueTangentNormalization
+public import FLT.Mazur.WeierstrassDividedResidueTerminalIndexedCoverage
 public import FLT.Mazur.WeierstrassDividedResidueTerminalPairCoverage
 public import FLT.Mazur.WeierstrassDividedResolvedAtlasCover
 public import FLT.Mazur.WeierstrassDividedResolvedAtlasPairIso
@@ -16165,6 +16182,7 @@ public import FLT.Mazur.WeierstrassDividedTangentTriple
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorInfinityPreimage
 public import FLT.Mazur.WeierstrassDividedTensorIntegralAtlas
+public import FLT.Mazur.WeierstrassDividedTensorIntegralRelativeSmooth
 public import FLT.Mazur.WeierstrassDividedTensorPointAction
 public import FLT.Mazur.WeierstrassDividedTensorResidueInfinity
 public import FLT.Mazur.WeierstrassDividedTensorSymmetry
