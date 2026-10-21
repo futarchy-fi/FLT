@@ -1,4 +1,4 @@
-module  -- shake: keep-all --deprecated_module: ignore
+module
 
 public import FLT.AINTLIB.CebotarevDensity.NumberFieldEulerProduct
 public import FLT.AINTLIB.DedekindResidue.AuxiliaryFunction
@@ -4357,6 +4357,7 @@ public import FLT.Mazur.CyclicBoundaryAmpleRefinementCoherence
 public import FLT.Mazur.CyclicBoundaryAmpleRefinementModuli
 public import FLT.Mazur.CyclicBoundaryAmpleTowerCoherence
 public import FLT.Mazur.CyclicBoundaryAmpleTowerModuli
+public import FLT.Mazur.CyclicBoundaryAmpleTripleSubgroup
 public import FLT.Mazur.CyclicBoundaryAmpleTripleTower
 public import FLT.Mazur.CyclicBoundaryBaseChange
 public import FLT.Mazur.CyclicBoundaryBaseChangeAmpleCriterion
