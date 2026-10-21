@@ -9113,6 +9113,7 @@ public import FLT.Mazur.OriginalBoundaryComparisonNeighborhood
 public import FLT.Mazur.OriginalBoundaryDifferentialIdealPower
 public import FLT.Mazur.OriginalBoundaryDifferentialKernelSupport
 public import FLT.Mazur.OriginalBoundaryDifferentialOpenLift
+public import FLT.Mazur.OriginalBoundaryDifferentialOpenNaturality
 public import FLT.Mazur.OriginalBoundaryDiscrepancyLocus
 public import FLT.Mazur.OriginalBoundaryDomainComparisonLift
 public import FLT.Mazur.OriginalBoundaryEtaleImageLift
