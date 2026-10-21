@@ -8545,6 +8545,7 @@ public import FLT.Mazur.OneGonAdicAlgebraicEmbedding
 public import FLT.Mazur.OneGonAdicAlgebraicReduction
 public import FLT.Mazur.OneGonAdicAlgebraicSmoothModel
 public import FLT.Mazur.OneGonAdicBoundaryLevel
+public import FLT.Mazur.OneGonAdicCanonicalCoefficientNaturality
 public import FLT.Mazur.OneGonAdicCanonicalCyclicity
 public import FLT.Mazur.OneGonAdicCanonicalOrbit
 public import FLT.Mazur.OneGonAdicCanonicalSubgroup
