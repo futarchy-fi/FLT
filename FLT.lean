@@ -9156,17 +9156,20 @@ public import FLT.Mazur.OriginalBoundaryGenerizingRanks
 public import FLT.Mazur.OriginalBoundaryGeometricTensor
 public import FLT.Mazur.OriginalBoundaryGlobalDifferentialLift
 public import FLT.Mazur.OriginalBoundaryImageNeighborhood
+public import FLT.Mazur.OriginalBoundaryJacobianLift
 public import FLT.Mazur.OriginalBoundaryKernelPairLift
 public import FLT.Mazur.OriginalBoundaryLiftFiniteSupport
 public import FLT.Mazur.OriginalBoundaryLocalImageKernelDetection
 public import FLT.Mazur.OriginalBoundaryLocalRelationDescent
 public import FLT.Mazur.OriginalBoundaryNilpotentEndpointLift
+public import FLT.Mazur.OriginalBoundaryPolynomialLift
 public import FLT.Mazur.OriginalBoundaryPrincipalCover
 public import FLT.Mazur.OriginalBoundaryPrincipalLiftCriterion
 public import FLT.Mazur.OriginalBoundaryRankAssociatedLift
 public import FLT.Mazur.OriginalBoundaryRankChartEndpointLift
 public import FLT.Mazur.OriginalBoundaryRankCollision
 public import FLT.Mazur.OriginalBoundaryRankDifferentialTower
+public import FLT.Mazur.OriginalBoundaryRankPolynomialLift
 public import FLT.Mazur.OriginalBoundaryRankStageComparison
 public import FLT.Mazur.OriginalBoundaryRankStageDenseCoverage
 public import FLT.Mazur.OriginalBoundaryRelationOpenLift
@@ -12492,6 +12495,8 @@ public import FLT.Mazur.ScalarComponentRankCeiling
 public import FLT.Mazur.ScalarConstructibleFiniteCover
 public import FLT.Mazur.ScalarConstructibleStrata
 public import FLT.Mazur.ScalarDifferentialAssociatedDenominator
+public import FLT.Mazur.ScalarDifferentialJacobianAnnihilator
+public import FLT.Mazur.ScalarDifferentialPolynomialAnnihilator
 public import FLT.Mazur.ScalarDifferentialPrincipalRigidity
 public import FLT.Mazur.ScalarEndomorphismPullback
 public import FLT.Mazur.ScalarExtensionDirectSum
@@ -12512,6 +12517,7 @@ public import FLT.Mazur.ScalarMinimalCharacterNeighborhood
 public import FLT.Mazur.ScalarMinimalCharacterPropagation
 public import FLT.Mazur.ScalarNilpotenceFlatBaseChange
 public import FLT.Mazur.ScalarNilpotenceMinimalFiber
+public import FLT.Mazur.ScalarPolynomialResidueRigidity
 public import FLT.Mazur.ScalarPrimeLocalizationCover
 public import FLT.Mazur.ScalarPrimeThickeningTransitions
 public import FLT.Mazur.ScalarPrimeThickenings
@@ -14887,6 +14893,8 @@ public import FLT.Mazur.WeierstrassDividedArithmeticInitialSlope
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialTerminalAddition
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialTerminalFullCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialTerminalMiddleOutput
+public import FLT.Mazur.WeierstrassDividedArithmeticInitialTerminalNodalCoverage
+public import FLT.Mazur.WeierstrassDividedArithmeticInitialTerminalNodalRangeOutput
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialTriangleCompatibility
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialUnitPairCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledAdjacent
@@ -14910,10 +14918,13 @@ public import FLT.Mazur.WeierstrassDividedArithmeticMixedAllMiddleCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticMixedCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticMixedHorizontalCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticMixedMiddleCoverage
+public import FLT.Mazur.WeierstrassDividedArithmeticMixedNearTerminalCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticMixedNonpuncturedCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticMixedRetainedCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticMixedReversedCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticMixedTensorPuncture
+public import FLT.Mazur.WeierstrassDividedArithmeticMixedTerminalPuncture
+public import FLT.Mazur.WeierstrassDividedArithmeticMixedZeroNodalCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticNewestIndex
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeOpen
@@ -14993,6 +15004,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticTerminalReflectedNegative
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalReflectedNegativeReversed
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalReflectedPositive
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalReflectedPositiveReversed
+public import FLT.Mazur.WeierstrassDividedArithmeticTerminalSmoothPuncture
 public import FLT.Mazur.WeierstrassDividedArithmeticTripleNegative
 public import FLT.Mazur.WeierstrassDividedArithmeticTripleNegativeReversed
 public import FLT.Mazur.WeierstrassDividedArithmeticTriplePositive
@@ -15896,6 +15908,7 @@ public import FLT.Mazur.WeierstrassDividedNodalShallowTangentGluing
 public import FLT.Mazur.WeierstrassDividedNodalShallowTangentNeighborhood
 public import FLT.Mazur.WeierstrassDividedNodalShallowTangentNeighborhoodCover
 public import FLT.Mazur.WeierstrassDividedNodalShallowTangentOverlap
+public import FLT.Mazur.WeierstrassDividedNodalSmoothHorizontal
 public import FLT.Mazur.WeierstrassDividedNodalSmoothVertical
 public import FLT.Mazur.WeierstrassDividedNodalTangentBranchCoverage
 public import FLT.Mazur.WeierstrassDividedNodalTangentGluing
@@ -16766,6 +16779,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalSplitNodeBranches
 public import FLT.Mazur.WeierstrassDividedTerminalTangentRestriction
 public import FLT.Mazur.WeierstrassDividedTerminalTensorActionGeometry
 public import FLT.Mazur.WeierstrassDividedTerminalTensorPointGeometry
+public import FLT.Mazur.WeierstrassDividedTerminalTensorProjection
 public import FLT.Mazur.WeierstrassDividedTerminalWeightedReduction
 public import FLT.Mazur.WeierstrassDividedTerminalZeroAbscissa
 public import FLT.Mazur.WeierstrassDividedTerminalZeroBoundary
