@@ -6507,6 +6507,7 @@ public import FLT.Mazur.GeneralizedCurveSquareProjection
 public import FLT.Mazur.GeneralizedCurveSquareTestTransport
 public import FLT.Mazur.GeneralizedCurveSubgroupComparison
 public import FLT.Mazur.GeneralizedCurveSubgroupIdeal
+public import FLT.Mazur.GeneralizedCurveUnrestrictedChartFiniteness
 public import FLT.Mazur.GeneralizedCurveUnrestrictedCubicCoverage
 public import FLT.Mazur.GeneralizedCurveUnrestrictedCubicPresentation
 public import FLT.Mazur.GeneralizedCurveUnrestrictedLocalFamily
