@@ -4248,6 +4248,7 @@ public import FLT.Mazur.CompatibleSubgroupAuxiliaryTransport
 public import FLT.Mazur.CompatibleSubgroupBaseChangeCoherence
 public import FLT.Mazur.CompatibleSubgroupBaseChangeCompEq
 public import FLT.Mazur.CompatibleSubgroupCartierGeneratorEquiv
+public import FLT.Mazur.CompatibleSubgroupComparisonSquare
 public import FLT.Mazur.CompatibleSubgroupCurveProjectionExt
 public import FLT.Mazur.CompatibleSubgroupCyclic
 public import FLT.Mazur.CompatibleSubgroupGeneratorBaseChange
