@@ -8622,6 +8622,7 @@ public import FLT.Mazur.OneGonCommonCoefficientCurve
 public import FLT.Mazur.OneGonCommonCoefficientGroup
 public import FLT.Mazur.OneGonCommonCoefficientInclusion
 public import FLT.Mazur.OneGonCommonCoefficientSubgroup
+public import FLT.Mazur.OneGonCommonSubgroupRecovery
 public import FLT.Mazur.OneGonCompleteAmpleCyclicSubgroup
 public import FLT.Mazur.OneGonCompleteAmpleParameterLift
 public import FLT.Mazur.OneGonCompleteBoundaryCartesian
