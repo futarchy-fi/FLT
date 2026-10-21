@@ -38,6 +38,11 @@ def scalarIdeal (v : ∀ i, A i) : Ideal R :=
 theorem mem_scalarIdeal (v : ∀ i, A i) (s : R) :
     s ∈ scalarIdeal p q I v ↔ s • obstruction p q I v = 0 := Iff.rfl
 
+/-- The unit scalar kills the class exactly when the class itself vanishes. -/
+theorem one_mem_scalarIdeal (v : ∀ i, A i) :
+    1 ∈ scalarIdeal p q I v ↔ obstruction p q I v = 0 := by
+  rw [mem_scalarIdeal, one_smul]
+
 /-- A scalar kills the class exactly when full homogeneous chart corrections exist. -/
 theorem mem_scalarIdeal_iff_corrections (v : ∀ i, A i) (s : R) :
     s ∈ scalarIdeal p q I v ↔
