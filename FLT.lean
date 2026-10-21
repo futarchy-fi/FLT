@@ -4421,9 +4421,17 @@ public import FLT.Mazur.CyclicBoundarySectionMarking
 public import FLT.Mazur.CyclicBoundarySectionParameter
 public import FLT.Mazur.CyclicBoundaryTestSubgroup
 public import FLT.Mazur.CyclicBoundaryUniversalSubgroup
+public import FLT.Mazur.CyclicBoundaryUnrestrictedAction
+public import FLT.Mazur.CyclicBoundaryUnrestrictedAmpleAction
+public import FLT.Mazur.CyclicBoundaryUnrestrictedAmpleCoverage
 public import FLT.Mazur.CyclicBoundaryUnrestrictedAmpleLift
+public import FLT.Mazur.CyclicBoundaryUnrestrictedAmpleMarking
 public import FLT.Mazur.CyclicBoundaryUnrestrictedAmpleModuli
+public import FLT.Mazur.CyclicBoundaryUnrestrictedInvariantModuli
 public import FLT.Mazur.CyclicBoundaryUnrestrictedOrbit
+public import FLT.Mazur.CyclicBoundaryUnrestrictedRelabelCriterion
+public import FLT.Mazur.CyclicBoundaryUnrestrictedRelabelCurve
+public import FLT.Mazur.CyclicBoundaryUnrestrictedRelabelSubgroup
 public import FLT.Mazur.CyclicBoundaryUnrestrictedTestLocus
 public import FLT.Mazur.CyclicBoundaryUnrestrictedTestMarking
 public import FLT.Mazur.CyclicCharacteristicAffineArrowGeometry
@@ -4792,6 +4800,8 @@ public import FLT.Mazur.CyclicMarkingGroupIdealBaseChange
 public import FLT.Mazur.CyclicMarkingOrbitDivisor
 public import FLT.Mazur.CyclicMarkingRelabelIdeal
 public import FLT.Mazur.CyclicMarkingSingularBaseChange
+public import FLT.Mazur.CyclicMarkingSingularComparisonBaseChange
+public import FLT.Mazur.CyclicMarkingSingularComparisonCoherence
 public import FLT.Mazur.CyclicMarkingSingularCompatibleTransport
 public import FLT.Mazur.CyclicMarkingSingularCoverage
 public import FLT.Mazur.CyclicMarkingSingularCriterion
@@ -6467,6 +6477,7 @@ public import FLT.Mazur.GeneralizedCurveGraph
 public import FLT.Mazur.GeneralizedCurveGraphBaseChange
 public import FLT.Mazur.GeneralizedCurveGraphCartesian
 public import FLT.Mazur.GeneralizedCurveGraphTransport
+public import FLT.Mazur.GeneralizedCurveGroupRelativeDimension
 public import FLT.Mazur.GeneralizedCurveGroupSectionComposition
 public import FLT.Mazur.GeneralizedCurveIdentityBaseChange
 public import FLT.Mazur.GeneralizedCurveIteratedProjection
@@ -8340,6 +8351,7 @@ public import FLT.Mazur.NilpotentSectionRestriction
 public import FLT.Mazur.NilpotentTorsionPowerEquality
 public import FLT.Mazur.NilpotentUnramifiedOpenRigidity
 public import FLT.Mazur.NodalFamilyGeometricConnected
+public import FLT.Mazur.NodalFamilySmoothOpenDimension
 public import FLT.Mazur.NodalFiberAlgebra
 public import FLT.Mazur.NodalFiberBoundedParameterTransport
 public import FLT.Mazur.NodalFiberCoefficientMap
@@ -8833,6 +8845,7 @@ public import FLT.Mazur.OneGonCompleteCyclicParameterComparison
 public import FLT.Mazur.OneGonCompleteFiniteSubgroup
 public import FLT.Mazur.OneGonCompleteGeneralizedCurve
 public import FLT.Mazur.OneGonCompleteGeometricRotations
+public import FLT.Mazur.OneGonCompleteGroupRelativeDimension
 public import FLT.Mazur.OneGonCompleteKernelPowers
 public import FLT.Mazur.OneGonCompleteLabelLifts
 public import FLT.Mazur.OneGonCompleteParameterSubgroup
@@ -8840,6 +8853,7 @@ public import FLT.Mazur.OneGonCompletePinchedMarking
 public import FLT.Mazur.OneGonCompletePinchedSubgroup
 public import FLT.Mazur.OneGonCompleteSubgroupBaseChange
 public import FLT.Mazur.OneGonCompleteUniversalCyclicFamily
+public import FLT.Mazur.OneGonCompleteUnrestrictedCyclicChart
 public import FLT.Mazur.OneGonCubicElimination
 public import FLT.Mazur.OneGonCyclicParameterSections
 public import FLT.Mazur.OneGonDenominatorEqualizer
@@ -9786,6 +9800,7 @@ public import FLT.Mazur.PolygonCompleteGeometricGenericFiber
 public import FLT.Mazur.PolygonCompleteGeometricRotations
 public import FLT.Mazur.PolygonCompleteGeometricallyConnected
 public import FLT.Mazur.PolygonCompleteGeometricallyReduced
+public import FLT.Mazur.PolygonCompleteGroupRelativeDimension
 public import FLT.Mazur.PolygonCompleteH1Rank
 public import FLT.Mazur.PolygonCompleteH1Reduction
 public import FLT.Mazur.PolygonCompleteIdentityActionCartesian
@@ -10475,6 +10490,7 @@ public import FLT.Mazur.PolygonCompleteStageMarkings
 public import FLT.Mazur.PolygonCompleteStageRotation
 public import FLT.Mazur.PolygonCompleteStructureCohomology
 public import FLT.Mazur.PolygonCompleteUniversalFunctions
+public import FLT.Mazur.PolygonCompleteUnrestrictedCyclicChart
 public import FLT.Mazur.PolygonCompleteWholeAction
 public import FLT.Mazur.PolygonCompleteWholeActionCartesian
 public import FLT.Mazur.PolygonCompleteWholeActionChartCompatibility
@@ -13430,6 +13446,7 @@ public import FLT.Mazur.SmoothNodalFamilyDimension
 public import FLT.Mazur.SmoothNonspecialDivisorCover
 public import FLT.Mazur.SmoothNonspecialDivisorLift
 public import FLT.Mazur.SmoothNonspecialLineLift
+public import FLT.Mazur.SmoothOpenFieldCurveDimension
 public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothOrderedHilbertCharts
 public import FLT.Mazur.SmoothOrderedLineParameters
