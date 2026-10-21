@@ -4770,6 +4770,7 @@ public import FLT.Mazur.CyclicMarkingOrbitDivisor
 public import FLT.Mazur.CyclicMarkingRelabelIdeal
 public import FLT.Mazur.CyclicMarkingSingularCriterion
 public import FLT.Mazur.CyclicMarkingSingularDivisor
+public import FLT.Mazur.CyclicMarkingSingularGenerator
 public import FLT.Mazur.CyclicMarkingSingularSubgroup
 public import FLT.Mazur.CyclicMarkingSmoothCarrier
 public import FLT.Mazur.CyclicMarkingSmoothRestriction
