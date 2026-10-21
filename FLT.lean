@@ -16229,6 +16229,7 @@ public import FLT.Mazur.WeierstrassDividedTwoOpenRestriction
 public import FLT.Mazur.WeierstrassDividedTwoSeedOrientation
 public import FLT.Mazur.WeierstrassDividedTwoSeedState
 public import FLT.Mazur.WeierstrassDividedUnequalDepthOutput
+public import FLT.Mazur.WeierstrassDividedUnequalDepthResidue
 public import FLT.Mazur.WeierstrassDividedUnequalDepthSecant
 public import FLT.Mazur.WeierstrassDividedUnequalSecantFormula
 public import FLT.Mazur.WeierstrassDividedUnequalSecantResidue
