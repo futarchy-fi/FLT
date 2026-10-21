@@ -8600,6 +8600,7 @@ public import FLT.Mazur.OneGonAdicFullSubgroupRecovery
 public import FLT.Mazur.OneGonAdicGeneralizedRecovery
 public import FLT.Mazur.OneGonAdicIndependentBase
 public import FLT.Mazur.OneGonAdicIndependentCommonCurve
+public import FLT.Mazur.OneGonAdicIndependentCommonEmbedding
 public import FLT.Mazur.OneGonAdicIndependentCommonRecovery
 public import FLT.Mazur.OneGonAdicIndependentCommonStage
 public import FLT.Mazur.OneGonAdicIndependentCurveTower
