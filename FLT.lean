@@ -11238,6 +11238,7 @@ public import FLT.Mazur.PrincipalFanRestrictionUniqueness
 public import FLT.Mazur.PrincipalFanStages
 public import FLT.Mazur.PrincipalFiniteRestrictionPaths
 public import FLT.Mazur.PrincipalGeneratorExtension
+public import FLT.Mazur.PrincipalIdealComparisonLift
 public import FLT.Mazur.PrincipalIdealScalarImage
 public import FLT.Mazur.PrincipalImageCriterion
 public import FLT.Mazur.PrincipalIntegerModelIsomorphism
