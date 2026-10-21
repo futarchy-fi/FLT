@@ -4024,6 +4024,7 @@ public import FLT.Mazur.CharacterFiniteCoefficientModel
 public import FLT.Mazur.CharacterGroupBaseChange
 public import FLT.Mazur.CharacterScalarBialgebra
 public import FLT.Mazur.CharacterSchemeBaseChange
+public import FLT.Mazur.CharacterSchemeBaseChangeMap
 public import FLT.Mazur.CharacterSchemeBaseChangeTower
 public import FLT.Mazur.CharacteristicTwoThreeOpens
 public import FLT.Mazur.ChowAffineBaseAcyclicPower
@@ -6319,6 +6320,7 @@ public import FLT.Mazur.GeneralizedCurveBaseChangeCoherence
 public import FLT.Mazur.GeneralizedCurveBaseChangeCompEq
 public import FLT.Mazur.GeneralizedCurveBaseChangeIso
 public import FLT.Mazur.GeneralizedCurveBaseChangeSquare
+public import FLT.Mazur.GeneralizedCurveBaseChangeTowerMap
 public import FLT.Mazur.GeneralizedCurveBaseIsoEquivalence
 public import FLT.Mazur.GeneralizedCurveCartierDescent
 public import FLT.Mazur.GeneralizedCurveCartierGenerator
@@ -8641,6 +8643,7 @@ public import FLT.Mazur.OneGonAdicRecoveredSmoothFactor
 public import FLT.Mazur.OneGonAdicReductionCartesian
 public import FLT.Mazur.OneGonAdicSharedCommonSubgroup
 public import FLT.Mazur.OneGonAdicSharedCurve
+public import FLT.Mazur.OneGonAdicSharedCurveTower
 public import FLT.Mazur.OneGonAdicSharedEmbedding
 public import FLT.Mazur.OneGonAdicSharedRecovery
 public import FLT.Mazur.OneGonAdicSharedStage
@@ -9040,11 +9043,14 @@ public import FLT.Mazur.OverPoints
 public import FLT.Mazur.OverPullbackCoherence
 public import FLT.Mazur.OverPullbackCoproduct
 public import FLT.Mazur.OverPullbackLocalPushout
+public import FLT.Mazur.OverPullbackSealedTower
 public import FLT.Mazur.OverPullbackSection
 public import FLT.Mazur.OverPullbackSectionComposition
 public import FLT.Mazur.OverPullbackSectionMonoidal
 public import FLT.Mazur.OverPullbackTowerComparison
+public import FLT.Mazur.OverPullbackTowerExt
 public import FLT.Mazur.OverPullbackTowerGroups
+public import FLT.Mazur.OverPullbackTowerMap
 public import FLT.Mazur.PadicValuationArithmetic
 public import FLT.Mazur.PadicValuationRing
 public import FLT.Mazur.PairedAwayLocalization
