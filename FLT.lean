@@ -12628,6 +12628,7 @@ public import FLT.Mazur.SchemeOverlapRefinementDiagonalDetection
 public import FLT.Mazur.SchemeOverlapRefinementTripleCocycle
 public import FLT.Mazur.SchemeOverlapTransportComposition
 public import FLT.Mazur.SchemePairBoundaryTransfer
+public import FLT.Mazur.SchemePairBoundaryTransferIso
 public import FLT.Mazur.SchemeParameterEquivalence
 public import FLT.Mazur.SchemePicardClasses
 public import FLT.Mazur.SchemePicardGroup
