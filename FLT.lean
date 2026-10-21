@@ -6422,6 +6422,7 @@ public import FLT.Mazur.FreeModuleResidueRetraction
 public import FLT.Mazur.FreeSheafPullbackRestriction
 public import FLT.Mazur.FreeSheafRestrictionCoherence
 public import FLT.Mazur.FreeSheafSectionCoordinates
+public import FLT.Mazur.FreeTargetVanishingFiniteGeneration
 public import FLT.Mazur.FreeTargetVanishingIdeal
 public import FLT.Mazur.FreeTargetVanishingScheme
 public import FLT.Mazur.FullDivisorFlatFppfDescent
