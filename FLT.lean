@@ -6307,6 +6307,10 @@ public import FLT.Mazur.FlatScalarFunctionPushout
 public import FLT.Mazur.FlatScalarHomology
 public import FLT.Mazur.FlatScalarImageBaseChange
 public import FLT.Mazur.FlatScalarImageEquations
+public import FLT.Mazur.FlatScalarImageLocalGeometry
+public import FLT.Mazur.FlatScalarImageNeighborhoodFaithful
+public import FLT.Mazur.FlatScalarImageNeighborhoodGeometry
+public import FLT.Mazur.FlatScalarImagePrincipalFactor
 public import FLT.Mazur.FlatScalarImageProjection
 public import FLT.Mazur.FlatScalarIntegralTests
 public import FLT.Mazur.FlatScalarKernelExtension
@@ -9026,6 +9030,7 @@ public import FLT.Mazur.OriginalBoundaryFaithfulTensorLift
 public import FLT.Mazur.OriginalBoundaryFlatImageGeometry
 public import FLT.Mazur.OriginalBoundaryFlatRelationLift
 public import FLT.Mazur.OriginalBoundaryGeometricTensor
+public import FLT.Mazur.OriginalBoundaryImageNeighborhood
 public import FLT.Mazur.OriginalBoundaryKernelPairLift
 public import FLT.Mazur.OriginalBoundaryLiftFiniteSupport
 public import FLT.Mazur.OriginalBoundaryPrincipalCover
@@ -9040,6 +9045,7 @@ public import FLT.Mazur.OriginalBoundaryResidualIdeal
 public import FLT.Mazur.OriginalBoundaryResidualImageCover
 public import FLT.Mazur.OriginalBoundaryResidualLocalEtaleImage
 public import FLT.Mazur.OriginalBoundaryResidualLocalImage
+public import FLT.Mazur.OriginalBoundaryResidualNeighborhood
 public import FLT.Mazur.OriginalBoundaryResidualOriginalImage
 public import FLT.Mazur.OriginalBoundaryResidualPrincipalCover
 public import FLT.Mazur.OriginalBoundaryResidualRelationCover
@@ -12324,6 +12330,7 @@ public import FLT.Mazur.ScalarGeometricPointTests
 public import FLT.Mazur.ScalarIdealNilpotenceOpen
 public import FLT.Mazur.ScalarIdealNilpotenceResidual
 public import FLT.Mazur.ScalarImageFiniteVanishing
+public import FLT.Mazur.ScalarImageNeighborhoodBasis
 public import FLT.Mazur.ScalarImageOriginalGenerators
 public import FLT.Mazur.ScalarImageResidueGenerators
 public import FLT.Mazur.ScalarImageSourceGenerators
@@ -12818,6 +12825,7 @@ public import FLT.Mazur.SchemePullbackSquareComposition
 public import FLT.Mazur.SchemePullbackSquareIdentity
 public import FLT.Mazur.SchemePullbackSquareInversePasting
 public import FLT.Mazur.SchemePullbackSquarePasting
+public import FLT.Mazur.SchemePullbackThroughOpen
 public import FLT.Mazur.SchemeQuasiCompactOpenKernelPower
 public import FLT.Mazur.SchemeQuotientAffineBaseCoordinates
 public import FLT.Mazur.SchemeQuotientAffineFlatComparison
@@ -12916,6 +12924,7 @@ public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
 public import FLT.Mazur.SchemeRelationScalarBaseChange
 public import FLT.Mazur.SchemeRelationScalarCartesian
+public import FLT.Mazur.SchemeRelationScalarComparisonCover
 public import FLT.Mazur.SchemeRelationScalarEtale
 public import FLT.Mazur.SchemeRelationScalarKernelPair
 public import FLT.Mazur.SchemeRelationScalarMonomorphism
