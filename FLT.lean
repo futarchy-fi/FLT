@@ -7307,6 +7307,9 @@ public import FLT.Mazur.HilbertUniversalFrameRebase
 public import FLT.Mazur.HilbertWholeScalarFiniteCover
 public import FLT.Mazur.HilbertWholeScalarImageCover
 public import FLT.Mazur.HomIntegerModel
+public import FLT.Mazur.HomogeneousCochainCorrection
+public import FLT.Mazur.HomogeneousCochainFinitePatching
+public import FLT.Mazur.HomogeneousCochainScalarObstruction
 public import FLT.Mazur.HomogeneousFractionProjection
 public import FLT.Mazur.HomogeneousIdealWitness
 public import FLT.Mazur.HomogeneousLocalizationArbitraryBaseChange
@@ -11606,6 +11609,7 @@ public import FLT.Mazur.RankStageClopenOriginalBoundary
 public import FLT.Mazur.RankStageCoherentAffineCores
 public import FLT.Mazur.RankStageCoherentCoreCoverage
 public import FLT.Mazur.RankStageCoherentOverlapNumerators
+public import FLT.Mazur.RankStageCompatibleCoreAlgebra
 public import FLT.Mazur.RankStageCompatibleCoreCoefficients
 public import FLT.Mazur.RankStageCompatibleCoreTowerGluing
 public import FLT.Mazur.RankStageCompatibleKernelObstruction
