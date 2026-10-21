@@ -8837,6 +8837,7 @@ public import FLT.Mazur.OneGonCompletePinchedMarking
 public import FLT.Mazur.OneGonCompletePinchedSubgroup
 public import FLT.Mazur.OneGonCompleteSubgroupBaseChange
 public import FLT.Mazur.OneGonCompleteUniversalCyclicFamily
+public import FLT.Mazur.OneGonCompleteUnrestrictedCyclicChart
 public import FLT.Mazur.OneGonCubicElimination
 public import FLT.Mazur.OneGonCyclicParameterSections
 public import FLT.Mazur.OneGonDenominatorEqualizer
