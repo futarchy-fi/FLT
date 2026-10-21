@@ -3651,6 +3651,8 @@ public import FLT.Mazur.ArtinianProperStructureSheaf
 public import FLT.Mazur.ArtinianRelativeSectionCriterion
 public import FLT.Mazur.ArtinianResidualNonaccumulation
 public import FLT.Mazur.ArtinianSectionKernel
+public import FLT.Mazur.AssociatedPrimePowerDetection
+public import FLT.Mazur.AssociatedPrincipalClosedImmersion
 public import FLT.Mazur.AuxiliaryBaseProjectionParameter
 public import FLT.Mazur.AuxiliaryCartesianGroupParameter
 public import FLT.Mazur.AuxiliaryCartesianOriginalParameter
@@ -4419,9 +4421,17 @@ public import FLT.Mazur.CyclicBoundarySectionMarking
 public import FLT.Mazur.CyclicBoundarySectionParameter
 public import FLT.Mazur.CyclicBoundaryTestSubgroup
 public import FLT.Mazur.CyclicBoundaryUniversalSubgroup
+public import FLT.Mazur.CyclicBoundaryUnrestrictedAction
+public import FLT.Mazur.CyclicBoundaryUnrestrictedAmpleAction
+public import FLT.Mazur.CyclicBoundaryUnrestrictedAmpleCoverage
 public import FLT.Mazur.CyclicBoundaryUnrestrictedAmpleLift
+public import FLT.Mazur.CyclicBoundaryUnrestrictedAmpleMarking
 public import FLT.Mazur.CyclicBoundaryUnrestrictedAmpleModuli
+public import FLT.Mazur.CyclicBoundaryUnrestrictedInvariantModuli
 public import FLT.Mazur.CyclicBoundaryUnrestrictedOrbit
+public import FLT.Mazur.CyclicBoundaryUnrestrictedRelabelCriterion
+public import FLT.Mazur.CyclicBoundaryUnrestrictedRelabelCurve
+public import FLT.Mazur.CyclicBoundaryUnrestrictedRelabelSubgroup
 public import FLT.Mazur.CyclicBoundaryUnrestrictedTestLocus
 public import FLT.Mazur.CyclicBoundaryUnrestrictedTestMarking
 public import FLT.Mazur.CyclicCharacteristicAffineArrowGeometry
@@ -4790,6 +4800,8 @@ public import FLT.Mazur.CyclicMarkingGroupIdealBaseChange
 public import FLT.Mazur.CyclicMarkingOrbitDivisor
 public import FLT.Mazur.CyclicMarkingRelabelIdeal
 public import FLT.Mazur.CyclicMarkingSingularBaseChange
+public import FLT.Mazur.CyclicMarkingSingularComparisonBaseChange
+public import FLT.Mazur.CyclicMarkingSingularComparisonCoherence
 public import FLT.Mazur.CyclicMarkingSingularCompatibleTransport
 public import FLT.Mazur.CyclicMarkingSingularCoverage
 public import FLT.Mazur.CyclicMarkingSingularCriterion
@@ -6465,6 +6477,7 @@ public import FLT.Mazur.GeneralizedCurveGraph
 public import FLT.Mazur.GeneralizedCurveGraphBaseChange
 public import FLT.Mazur.GeneralizedCurveGraphCartesian
 public import FLT.Mazur.GeneralizedCurveGraphTransport
+public import FLT.Mazur.GeneralizedCurveGroupRelativeDimension
 public import FLT.Mazur.GeneralizedCurveGroupSectionComposition
 public import FLT.Mazur.GeneralizedCurveIdentityBaseChange
 public import FLT.Mazur.GeneralizedCurveIteratedProjection
@@ -7594,6 +7607,7 @@ public import FLT.Mazur.IdealComplementFunctionExtension
 public import FLT.Mazur.IdealConditionAcyclic
 public import FLT.Mazur.IdealFamilyIsomorphism
 public import FLT.Mazur.IdealIsomorphismExtension
+public import FLT.Mazur.IdealMapPowerAnnihilator
 public import FLT.Mazur.IdealModuleAffineTensor
 public import FLT.Mazur.IdealModuleEquationSquare
 public import FLT.Mazur.IdealModulePrincipalPullback
@@ -8337,6 +8351,7 @@ public import FLT.Mazur.NilpotentSectionRestriction
 public import FLT.Mazur.NilpotentTorsionPowerEquality
 public import FLT.Mazur.NilpotentUnramifiedOpenRigidity
 public import FLT.Mazur.NodalFamilyGeometricConnected
+public import FLT.Mazur.NodalFamilySmoothOpenDimension
 public import FLT.Mazur.NodalFiberAlgebra
 public import FLT.Mazur.NodalFiberBoundedParameterTransport
 public import FLT.Mazur.NodalFiberCoefficientMap
@@ -8830,6 +8845,7 @@ public import FLT.Mazur.OneGonCompleteCyclicParameterComparison
 public import FLT.Mazur.OneGonCompleteFiniteSubgroup
 public import FLT.Mazur.OneGonCompleteGeneralizedCurve
 public import FLT.Mazur.OneGonCompleteGeometricRotations
+public import FLT.Mazur.OneGonCompleteGroupRelativeDimension
 public import FLT.Mazur.OneGonCompleteKernelPowers
 public import FLT.Mazur.OneGonCompleteLabelLifts
 public import FLT.Mazur.OneGonCompleteParameterSubgroup
@@ -8837,6 +8853,7 @@ public import FLT.Mazur.OneGonCompletePinchedMarking
 public import FLT.Mazur.OneGonCompletePinchedSubgroup
 public import FLT.Mazur.OneGonCompleteSubgroupBaseChange
 public import FLT.Mazur.OneGonCompleteUniversalCyclicFamily
+public import FLT.Mazur.OneGonCompleteUnrestrictedCyclicChart
 public import FLT.Mazur.OneGonCubicElimination
 public import FLT.Mazur.OneGonCyclicParameterSections
 public import FLT.Mazur.OneGonDenominatorEqualizer
@@ -9098,10 +9115,14 @@ public import FLT.Mazur.OriginalAlgebraicDetectingSchemeOpen
 public import FLT.Mazur.OriginalAlgebraicPointDescent
 public import FLT.Mazur.OriginalBoundaryAdicFlatRelation
 public import FLT.Mazur.OriginalBoundaryAdicRelationLift
+public import FLT.Mazur.OriginalBoundaryAffineAssociatedDetection
+public import FLT.Mazur.OriginalBoundaryAssociatedComparisonLift
+public import FLT.Mazur.OriginalBoundaryAssociatedDifferentialDetection
 public import FLT.Mazur.OriginalBoundaryBranchScalars
 public import FLT.Mazur.OriginalBoundaryComparisonClosedImage
 public import FLT.Mazur.OriginalBoundaryComparisonLocalClosedImage
 public import FLT.Mazur.OriginalBoundaryComparisonNeighborhood
+public import FLT.Mazur.OriginalBoundaryDifferentialIdealPower
 public import FLT.Mazur.OriginalBoundaryDifferentialKernelSupport
 public import FLT.Mazur.OriginalBoundaryDiscrepancyLocus
 public import FLT.Mazur.OriginalBoundaryDomainComparisonLift
@@ -9779,6 +9800,7 @@ public import FLT.Mazur.PolygonCompleteGeometricGenericFiber
 public import FLT.Mazur.PolygonCompleteGeometricRotations
 public import FLT.Mazur.PolygonCompleteGeometricallyConnected
 public import FLT.Mazur.PolygonCompleteGeometricallyReduced
+public import FLT.Mazur.PolygonCompleteGroupRelativeDimension
 public import FLT.Mazur.PolygonCompleteH1Rank
 public import FLT.Mazur.PolygonCompleteH1Reduction
 public import FLT.Mazur.PolygonCompleteIdentityActionCartesian
@@ -10468,6 +10490,7 @@ public import FLT.Mazur.PolygonCompleteStageMarkings
 public import FLT.Mazur.PolygonCompleteStageRotation
 public import FLT.Mazur.PolygonCompleteStructureCohomology
 public import FLT.Mazur.PolygonCompleteUniversalFunctions
+public import FLT.Mazur.PolygonCompleteUnrestrictedCyclicChart
 public import FLT.Mazur.PolygonCompleteWholeAction
 public import FLT.Mazur.PolygonCompleteWholeActionCartesian
 public import FLT.Mazur.PolygonCompleteWholeActionChartCompatibility
@@ -12447,6 +12470,7 @@ public import FLT.Mazur.ScalarCompatibleIntegerModel
 public import FLT.Mazur.ScalarComponentRankCeiling
 public import FLT.Mazur.ScalarConstructibleFiniteCover
 public import FLT.Mazur.ScalarConstructibleStrata
+public import FLT.Mazur.ScalarDifferentialAssociatedDenominator
 public import FLT.Mazur.ScalarDifferentialPrincipalRigidity
 public import FLT.Mazur.ScalarEndomorphismPullback
 public import FLT.Mazur.ScalarExtensionDirectSum
@@ -12940,6 +12964,7 @@ public import FLT.Mazur.SchemePairDoubleBoundaryDomain
 public import FLT.Mazur.SchemePairDoubleBoundaryRange
 public import FLT.Mazur.SchemePairDoubleBoundarySymmetry
 public import FLT.Mazur.SchemePairDoubleBoundaryTransfer
+public import FLT.Mazur.SchemePairSymmetryPoints
 public import FLT.Mazur.SchemeParameterEquivalence
 public import FLT.Mazur.SchemePicardClasses
 public import FLT.Mazur.SchemePicardGroup
@@ -13421,6 +13446,7 @@ public import FLT.Mazur.SmoothNodalFamilyDimension
 public import FLT.Mazur.SmoothNonspecialDivisorCover
 public import FLT.Mazur.SmoothNonspecialDivisorLift
 public import FLT.Mazur.SmoothNonspecialLineLift
+public import FLT.Mazur.SmoothOpenFieldCurveDimension
 public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothOrderedHilbertCharts
 public import FLT.Mazur.SmoothOrderedLineParameters
@@ -14765,6 +14791,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentAtlas
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentAtlasInputs
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentAtlasTransition
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentBranch
+public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentCoordinateShift
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentCorrection
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentFactorization
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentIndex
@@ -14779,6 +14806,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticAtlasCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticAtlasIndex
 public import FLT.Mazur.WeierstrassDividedArithmeticAtlasPairPresentation
 public import FLT.Mazur.WeierstrassDividedArithmeticAtlasPairTransition
+public import FLT.Mazur.WeierstrassDividedArithmeticAtlasRelativeSmooth
 public import FLT.Mazur.WeierstrassDividedArithmeticAtlasTestPair
 public import FLT.Mazur.WeierstrassDividedArithmeticAtlasTestTransition
 public import FLT.Mazur.WeierstrassDividedArithmeticBoundaryAtlasIndex
@@ -14809,6 +14837,8 @@ public import FLT.Mazur.WeierstrassDividedArithmeticFirstRetainedFactorRatio
 public import FLT.Mazur.WeierstrassDividedArithmeticFirstRetainedRestriction
 public import FLT.Mazur.WeierstrassDividedArithmeticFixedAdjacentBoundary
 public import FLT.Mazur.WeierstrassDividedArithmeticFixedAdjacentBranches
+public import FLT.Mazur.WeierstrassDividedArithmeticFixedAdjacentPairCoverage
+public import FLT.Mazur.WeierstrassDividedArithmeticFixedAdjacentPairTransfer
 public import FLT.Mazur.WeierstrassDividedArithmeticFixedAdjacentPuncture
 public import FLT.Mazur.WeierstrassDividedArithmeticFixedAdjacentRange
 public import FLT.Mazur.WeierstrassDividedArithmeticFixedAdjacentSource
@@ -14834,6 +14864,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticInitialSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialSlope
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialTerminalAddition
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialTriangleCompatibility
+public import FLT.Mazur.WeierstrassDividedArithmeticInitialUnitPairCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledAdjacent
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledAtlas
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledAtlasRestriction
@@ -14873,6 +14904,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticReflectedPositive
 public import FLT.Mazur.WeierstrassDividedArithmeticReflectedPositiveReversed
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedCorrectionFamily
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedDouble
+public import FLT.Mazur.WeierstrassDividedArithmeticRetainedDoubleAdditionCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedDoubleBranches
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedDoubleCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedDoubleIncidence
@@ -14881,6 +14913,10 @@ public import FLT.Mazur.WeierstrassDividedArithmeticRetainedInputComparison
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedOutputComparison
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedPolygon
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedPolygonSystem
+public import FLT.Mazur.WeierstrassDividedArithmeticRetainedSecondAdditionCoverage
+public import FLT.Mazur.WeierstrassDividedArithmeticRetainedSeparatedCoverage
+public import FLT.Mazur.WeierstrassDividedArithmeticRetainedSingleAddition
+public import FLT.Mazur.WeierstrassDividedArithmeticRetainedSingleAdditionCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedSmoothAddition
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedTerminalAddition
 public import FLT.Mazur.WeierstrassDividedArithmeticSelfIntermediateAddition
@@ -17961,6 +17997,7 @@ public import FLT.Mazur.WeierstrassModificationXTensorSmoothInput
 public import FLT.Mazur.WeierstrassModificationXTensorTerminalCoordinates
 public import FLT.Mazur.WeierstrassModificationXTensorTerminalLaurent
 public import FLT.Mazur.WeierstrassModificationXTotalTransform
+public import FLT.Mazur.WeierstrassModificationXUnitIncidence
 public import FLT.Mazur.WeierstrassModificationXZeroIdealBoundary
 public import FLT.Mazur.WeierstrassModificationXZeroInfinityPullback
 public import FLT.Mazur.WeierstrassModificationXZeroInfinityTangent
