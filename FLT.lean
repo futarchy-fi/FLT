@@ -11560,6 +11560,7 @@ public import FLT.Mazur.RankStageAffineNeighborhoods
 public import FLT.Mazur.RankStageBoundaryIdeal
 public import FLT.Mazur.RankStageBoundarySeedTower
 public import FLT.Mazur.RankStageBoundedCoreCover
+public import FLT.Mazur.RankStageClopenBoundaryOverlap
 public import FLT.Mazur.RankStageClopenCoreExtension
 public import FLT.Mazur.RankStageClopenCoreObstruction
 public import FLT.Mazur.RankStageClopenKernelObstruction
