@@ -8653,6 +8653,7 @@ public import FLT.Mazur.OneGonAdicSharedEmbeddingTower
 public import FLT.Mazur.OneGonAdicSharedRecovery
 public import FLT.Mazur.OneGonAdicSharedStage
 public import FLT.Mazur.OneGonAdicSharedSubgroup
+public import FLT.Mazur.OneGonAdicSharedSubgroupChangeRing
 public import FLT.Mazur.OneGonAdicSharedSubgroupCoherence
 public import FLT.Mazur.OneGonAdicSharedSubgroupIso
 public import FLT.Mazur.OneGonAdicSharedSubgroupTower
