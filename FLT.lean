@@ -9096,6 +9096,7 @@ public import FLT.Mazur.OriginalBoundaryLiftFiniteSupport
 public import FLT.Mazur.OriginalBoundaryLocalRelationDescent
 public import FLT.Mazur.OriginalBoundaryPrincipalCover
 public import FLT.Mazur.OriginalBoundaryPrincipalLiftCriterion
+public import FLT.Mazur.OriginalBoundaryRankCollision
 public import FLT.Mazur.OriginalBoundaryRelationOpenLift
 public import FLT.Mazur.OriginalBoundaryRelationSupport
 public import FLT.Mazur.OriginalBoundaryResidualComparisonNeighborhood
@@ -9111,6 +9112,7 @@ public import FLT.Mazur.OriginalBoundaryResidualLocalImage
 public import FLT.Mazur.OriginalBoundaryResidualNeighborhood
 public import FLT.Mazur.OriginalBoundaryResidualOriginalImage
 public import FLT.Mazur.OriginalBoundaryResidualPrincipalCover
+public import FLT.Mazur.OriginalBoundaryResidualRankObstruction
 public import FLT.Mazur.OriginalBoundaryResidualRelationCover
 public import FLT.Mazur.OriginalBoundaryResidualScalarCover
 public import FLT.Mazur.OriginalBoundaryResidualTensorCover
@@ -12229,6 +12231,9 @@ public import FLT.Mazur.RelativePinchingNeighborhoods
 public import FLT.Mazur.RelativePointLineAmple
 public import FLT.Mazur.RelativePoleComplementFunctions
 public import FLT.Mazur.RelativePoleComplementLinear
+public import FLT.Mazur.RelativeRankCollisionDenominators
+public import FLT.Mazur.RelativeRankCollisionFinite
+public import FLT.Mazur.RelativeRankCollisionIdeal
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRankPullbackThickenings
 public import FLT.Mazur.RelativeRankResidualSectionDetection
