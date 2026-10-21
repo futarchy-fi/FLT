@@ -8639,6 +8639,7 @@ public import FLT.Mazur.OneGonAdicPuncturedModuli
 public import FLT.Mazur.OneGonAdicRecoveredSmoothFactor
 public import FLT.Mazur.OneGonAdicReductionCartesian
 public import FLT.Mazur.OneGonAdicSharedCurve
+public import FLT.Mazur.OneGonAdicSharedEmbedding
 public import FLT.Mazur.OneGonAdicSharedRecovery
 public import FLT.Mazur.OneGonAdicSharedStage
 public import FLT.Mazur.OneGonAdicSmoothCoefficientSquares
