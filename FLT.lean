@@ -16550,6 +16550,7 @@ public import FLT.Mazur.WeierstrassDividedTangentLowerOutputResidue
 public import FLT.Mazur.WeierstrassDividedTangentLowerResidue
 public import FLT.Mazur.WeierstrassDividedTangentLowerResidueInput
 public import FLT.Mazur.WeierstrassDividedTangentLowerScheme
+public import FLT.Mazur.WeierstrassDividedTangentNonsingularInputs
 public import FLT.Mazur.WeierstrassDividedTangentOpenGluing
 public import FLT.Mazur.WeierstrassDividedTangentOriginalAction
 public import FLT.Mazur.WeierstrassDividedTangentOriginalRelations
