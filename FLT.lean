@@ -7644,6 +7644,7 @@ public import FLT.Mazur.IdealSheafClopenStabilization
 public import FLT.Mazur.IdealSheafClosedCoreTests
 public import FLT.Mazur.IdealSheafClosedTransitions
 public import FLT.Mazur.IdealSheafFactorizationSupport
+public import FLT.Mazur.IdealSheafFiniteEquations
 public import FLT.Mazur.IdealSheafFlatDetection
 public import FLT.Mazur.IdealSheafOpenCoverDetection
 public import FLT.Mazur.IdealSheafPowerPullback
