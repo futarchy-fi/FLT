@@ -4793,6 +4793,7 @@ public import FLT.Mazur.CyclicMarkingGroupIdealBaseChange
 public import FLT.Mazur.CyclicMarkingOrbitDivisor
 public import FLT.Mazur.CyclicMarkingRelabelIdeal
 public import FLT.Mazur.CyclicMarkingSingularBaseChange
+public import FLT.Mazur.CyclicMarkingSingularComparisonBaseChange
 public import FLT.Mazur.CyclicMarkingSingularComparisonCoherence
 public import FLT.Mazur.CyclicMarkingSingularCompatibleTransport
 public import FLT.Mazur.CyclicMarkingSingularCoverage
