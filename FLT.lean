@@ -14489,6 +14489,8 @@ public import FLT.Mazur.WeierstrassDividedAtlasPairFormulaCoverage
 public import FLT.Mazur.WeierstrassDividedAtlasPairFormulaInput
 public import FLT.Mazur.WeierstrassDividedAtlasPairIntermediateAddition
 public import FLT.Mazur.WeierstrassDividedAtlasPairIntermediateFormulas
+public import FLT.Mazur.WeierstrassDividedAtlasPairReciprocalAddition
+public import FLT.Mazur.WeierstrassDividedAtlasPairReciprocalCoverage
 public import FLT.Mazur.WeierstrassDividedAtlasRegularCenter
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
 public import FLT.Mazur.WeierstrassDividedBranchChainIntersections
@@ -15186,6 +15188,7 @@ public import FLT.Mazur.WeierstrassDividedLinearResidueBounds
 public import FLT.Mazur.WeierstrassDividedLocalComponentContraction
 public import FLT.Mazur.WeierstrassDividedLocalizedIntersection
 public import FLT.Mazur.WeierstrassDividedLowerData
+public import FLT.Mazur.WeierstrassDividedLowerDepthClosedFiber
 public import FLT.Mazur.WeierstrassDividedMixedKernelAction
 public import FLT.Mazur.WeierstrassDividedMixedKernelActionLaws
 public import FLT.Mazur.WeierstrassDividedMixedKernelPair
@@ -15239,6 +15242,7 @@ public import FLT.Mazur.WeierstrassDividedNodalIntermediateNegativeBranchContrac
 public import FLT.Mazur.WeierstrassDividedNodalIntermediateNegativeBranchOutput
 public import FLT.Mazur.WeierstrassDividedNodalIntermediatePartialOverlap
 public import FLT.Mazur.WeierstrassDividedNodalIntermediatePromotedAddition
+public import FLT.Mazur.WeierstrassDividedNodalIntermediateReciprocalCoverage
 public import FLT.Mazur.WeierstrassDividedNodalIntermediateReciprocalExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedNodalIntermediateReciprocalExtendedPullback
 public import FLT.Mazur.WeierstrassDividedNodalIntermediateReciprocalOverlap
@@ -15712,6 +15716,7 @@ public import FLT.Mazur.WeierstrassDividedReciprocalOriginalRelations
 public import FLT.Mazur.WeierstrassDividedReciprocalOutput
 public import FLT.Mazur.WeierstrassDividedReciprocalOverlapProjections
 public import FLT.Mazur.WeierstrassDividedReciprocalPartialOverlap
+public import FLT.Mazur.WeierstrassDividedReciprocalPrimeCoverage
 public import FLT.Mazur.WeierstrassDividedReciprocalReversedPair
 public import FLT.Mazur.WeierstrassDividedReciprocalRightOriginalAction
 public import FLT.Mazur.WeierstrassDividedReciprocalRightOverlap
@@ -15721,6 +15726,7 @@ public import FLT.Mazur.WeierstrassDividedReciprocalSecantComparison
 public import FLT.Mazur.WeierstrassDividedReciprocalSecantFormula
 public import FLT.Mazur.WeierstrassDividedReciprocalSecantOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalSecantScheme
+public import FLT.Mazur.WeierstrassDividedReciprocalSmoothDomain
 public import FLT.Mazur.WeierstrassDividedReciprocalSource
 public import FLT.Mazur.WeierstrassDividedReciprocalSpecialization
 public import FLT.Mazur.WeierstrassDividedReciprocalTangentComparison
