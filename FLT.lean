@@ -5594,6 +5594,7 @@ public import FLT.Mazur.EquivalenceRelationFiniteChartMultipliers
 public import FLT.Mazur.EquivalenceRelationFiniteCompleteInterior
 public import FLT.Mazur.EquivalenceRelationFiniteFiberLocus
 public import FLT.Mazur.EquivalenceRelationFiniteTargetSaturation
+public import FLT.Mazur.EquivalenceRelationFiniteValuationArrows
 public import FLT.Mazur.EquivalenceRelationFixedFrameInterior
 public import FLT.Mazur.EquivalenceRelationFrameNormalization
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
@@ -6172,6 +6173,7 @@ public import FLT.Mazur.FiniteProjectiveRankOneTrivialization
 public import FLT.Mazur.FiniteProjectiveRelationIntegralCoordinates
 public import FLT.Mazur.FiniteProjectiveSectionAmple
 public import FLT.Mazur.FiniteProjectiveTildeLocal
+public import FLT.Mazur.FinitePullbackValuationExtension
 public import FLT.Mazur.FinitePushforwardAmpleVanishing
 public import FLT.Mazur.FinitePushforwardCoherent
 public import FLT.Mazur.FinitePushforwardIdealImage
@@ -9083,10 +9085,12 @@ public import FLT.Mazur.OriginalBoundaryComparisonClosedImage
 public import FLT.Mazur.OriginalBoundaryComparisonLocalClosedImage
 public import FLT.Mazur.OriginalBoundaryComparisonNeighborhood
 public import FLT.Mazur.OriginalBoundaryDiscrepancyLocus
+public import FLT.Mazur.OriginalBoundaryDomainComparisonLift
 public import FLT.Mazur.OriginalBoundaryEtaleImageLift
 public import FLT.Mazur.OriginalBoundaryFaithfulTensorLift
 public import FLT.Mazur.OriginalBoundaryFieldArrowRank
 public import FLT.Mazur.OriginalBoundaryFieldStageEquations
+public import FLT.Mazur.OriginalBoundaryFiniteComparisonTests
 public import FLT.Mazur.OriginalBoundaryFiniteStageTests
 public import FLT.Mazur.OriginalBoundaryFiniteValuationRanks
 public import FLT.Mazur.OriginalBoundaryFlatImageGeometry
@@ -9130,6 +9134,7 @@ public import FLT.Mazur.OriginalBoundaryUniformFlatPoint
 public import FLT.Mazur.OriginalBoundaryUniformFlatRelation
 public import FLT.Mazur.OriginalBoundaryUniformRelationIdeal
 public import FLT.Mazur.OriginalBoundaryUniformRelationLift
+public import FLT.Mazur.OriginalBoundaryValuationArrowExtension
 public import FLT.Mazur.OriginalEnvelopeAcyclicCriterion
 public import FLT.Mazur.OriginalFamilyIdentityComparison
 public import FLT.Mazur.OriginalFamilySectionComposition
@@ -12685,6 +12690,7 @@ public import FLT.Mazur.SchemeEtaleImageDenseModel
 public import FLT.Mazur.SchemeEtaleImageModelBaseChange
 public import FLT.Mazur.SchemeEtaleImageQuotient
 public import FLT.Mazur.SchemeFamilyTripleOverlap
+public import FLT.Mazur.SchemeFiniteEndpointComparison
 public import FLT.Mazur.SchemeFiniteFiberInterior
 public import FLT.Mazur.SchemeFiniteGeometricOpenSpread
 public import FLT.Mazur.SchemeFiniteGroupAffineDescent
