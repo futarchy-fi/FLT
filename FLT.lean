@@ -14927,6 +14927,7 @@ public import FLT.Mazur.WeierstrassDividedAtlasPairTransferredUnequalAddition
 public import FLT.Mazur.WeierstrassDividedAtlasPairUnequalAddition
 public import FLT.Mazur.WeierstrassDividedAtlasRegularCenter
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
+public import FLT.Mazur.WeierstrassDividedBoundaryRangeTransport
 public import FLT.Mazur.WeierstrassDividedBranchChainIntersections
 public import FLT.Mazur.WeierstrassDividedBranchPairSeparation
 public import FLT.Mazur.WeierstrassDividedCanonicalFactorRatioAffine
