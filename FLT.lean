@@ -4127,6 +4127,7 @@ public import FLT.Mazur.CoefficientIndependentLineDescent
 public import FLT.Mazur.CoefficientInverseEquations
 public import FLT.Mazur.CoefficientIsomorphismDescent
 public import FLT.Mazur.CoefficientModelActualRecovery
+public import FLT.Mazur.CoefficientModelCommonRefinement
 public import FLT.Mazur.CoefficientModelFiniteness
 public import FLT.Mazur.CoefficientModelHomDescent
 public import FLT.Mazur.CoefficientModelLimit
