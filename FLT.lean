@@ -8980,6 +8980,7 @@ public import FLT.Mazur.OriginalBoundaryAdicRelationLift
 public import FLT.Mazur.OriginalBoundaryDiscrepancyLocus
 public import FLT.Mazur.OriginalBoundaryFaithfulTensorLift
 public import FLT.Mazur.OriginalBoundaryFlatRelationLift
+public import FLT.Mazur.OriginalBoundaryGeometricTensor
 public import FLT.Mazur.OriginalBoundaryLiftFiniteSupport
 public import FLT.Mazur.OriginalBoundaryPrincipalCover
 public import FLT.Mazur.OriginalBoundaryPrincipalLiftCriterion
