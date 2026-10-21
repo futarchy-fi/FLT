@@ -12648,6 +12648,7 @@ public import FLT.Mazur.SchemeOverlapTransportComposition
 public import FLT.Mazur.SchemePairBoundaryTransfer
 public import FLT.Mazur.SchemePairBoundaryTransferIso
 public import FLT.Mazur.SchemePairDoubleBoundaryDomain
+public import FLT.Mazur.SchemePairDoubleBoundarySymmetry
 public import FLT.Mazur.SchemePairDoubleBoundaryTransfer
 public import FLT.Mazur.SchemeParameterEquivalence
 public import FLT.Mazur.SchemePicardClasses
