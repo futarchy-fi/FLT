@@ -6257,6 +6257,7 @@ public import FLT.Mazur.FixedTargetIntegerModel
 public import FLT.Mazur.FlasqueDirectImageAcyclic
 public import FLT.Mazur.FlatAlgebraEqualizer
 public import FLT.Mazur.FlatAlgebraEqualizerNaturality
+public import FLT.Mazur.FlatBoundaryCoordinateEquations
 public import FLT.Mazur.FlatCartesianSectionGluing
 public import FLT.Mazur.FlatCartierIdealPullback
 public import FLT.Mazur.FlatCoefficientAllCohomology
@@ -6284,10 +6285,13 @@ public import FLT.Mazur.FlatQuotientIdealBaseChange
 public import FLT.Mazur.FlatQuotientIdealFiber
 public import FLT.Mazur.FlatQuotientLocalCartier
 public import FLT.Mazur.FlatScalarExactness
+public import FLT.Mazur.FlatScalarFunctionNaturality
+public import FLT.Mazur.FlatScalarFunctionPushout
 public import FLT.Mazur.FlatScalarHomology
 public import FLT.Mazur.FlatScalarIntegralTests
 public import FLT.Mazur.FlatScalarKernelExtension
 public import FLT.Mazur.FlatScalarPowerKernel
+public import FLT.Mazur.FlatScalarSchemeBaseChange
 public import FLT.Mazur.FlatScalarTestDenominators
 public import FLT.Mazur.FlatSectionEqualizer
 public import FLT.Mazur.FlatSectionLiftCertificate
@@ -8994,9 +8998,12 @@ public import FLT.Mazur.OriginalAlgebraicDetectingSchemeOpen
 public import FLT.Mazur.OriginalAlgebraicPointDescent
 public import FLT.Mazur.OriginalBoundaryAdicFlatRelation
 public import FLT.Mazur.OriginalBoundaryAdicRelationLift
+public import FLT.Mazur.OriginalBoundaryBranchScalars
 public import FLT.Mazur.OriginalBoundaryDiscrepancyLocus
 public import FLT.Mazur.OriginalBoundaryFaithfulTensorLift
 public import FLT.Mazur.OriginalBoundaryFlatRelationLift
+public import FLT.Mazur.OriginalBoundaryGeometricTensor
+public import FLT.Mazur.OriginalBoundaryKernelPairLift
 public import FLT.Mazur.OriginalBoundaryLiftFiniteSupport
 public import FLT.Mazur.OriginalBoundaryPrincipalCover
 public import FLT.Mazur.OriginalBoundaryPrincipalLiftCriterion
@@ -9004,9 +9011,11 @@ public import FLT.Mazur.OriginalBoundaryRelationOpenLift
 public import FLT.Mazur.OriginalBoundaryRelationSupport
 public import FLT.Mazur.OriginalBoundaryResidualFiniteFamily
 public import FLT.Mazur.OriginalBoundaryResidualFlatCover
+public import FLT.Mazur.OriginalBoundaryResidualGeometricCover
 public import FLT.Mazur.OriginalBoundaryResidualIdeal
 public import FLT.Mazur.OriginalBoundaryResidualPrincipalCover
 public import FLT.Mazur.OriginalBoundaryResidualRelationCover
+public import FLT.Mazur.OriginalBoundaryResidualScalarCover
 public import FLT.Mazur.OriginalBoundaryResidualTensorCover
 public import FLT.Mazur.OriginalBoundaryTensorLift
 public import FLT.Mazur.OriginalBoundaryUniformFlatPoint
@@ -12897,6 +12906,7 @@ public import FLT.Mazur.SchemeRelationWholeFiberScalars
 public import FLT.Mazur.SchemeRelationWholeFiberSections
 public import FLT.Mazur.SchemeRelativeNilpotentKernel
 public import FLT.Mazur.SchemeRelativeNilpotentSections
+public import FLT.Mazur.SchemeRestrictedOutputComparison
 public import FLT.Mazur.SchemeScalarAvoidanceCover
 public import FLT.Mazur.SchemeScalarAvoidanceIdeal
 public import FLT.Mazur.SchemeScalarBadPrimeDenominators
@@ -14651,11 +14661,15 @@ public import FLT.Mazur.WeierstrassDividedArithmeticRetainedCorrectionFamily
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedDouble
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedDoubleBranches
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedDoublePuncture
+public import FLT.Mazur.WeierstrassDividedArithmeticRetainedInputComparison
+public import FLT.Mazur.WeierstrassDividedArithmeticRetainedOutputComparison
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedPolygon
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedPolygonSystem
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedSmoothAddition
 public import FLT.Mazur.WeierstrassDividedArithmeticStartOneRetained
 public import FLT.Mazur.WeierstrassDividedArithmeticSystemCartesian
+public import FLT.Mazur.WeierstrassDividedArithmeticTargetInputComparison
+public import FLT.Mazur.WeierstrassDividedArithmeticTargetOutputComparison
 public import FLT.Mazur.WeierstrassDividedArithmeticTargetPairAddition
 public import FLT.Mazur.WeierstrassDividedArithmeticTargetPairCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticTargetPairPuncture
@@ -16036,6 +16050,7 @@ public import FLT.Mazur.WeierstrassDividedRetainedPolygonMaps
 public import FLT.Mazur.WeierstrassDividedRetainedPolygonNaturality
 public import FLT.Mazur.WeierstrassDividedRetainedPuncturePreimage
 public import FLT.Mazur.WeierstrassDividedRetainedTensorIndex
+public import FLT.Mazur.WeierstrassDividedRetainedTensorProjection
 public import FLT.Mazur.WeierstrassDividedRetainedTransport
 public import FLT.Mazur.WeierstrassDividedRetainedZeroAbscissaTransfer
 public import FLT.Mazur.WeierstrassDividedRetainedZeroExteriorLine
@@ -16177,6 +16192,7 @@ public import FLT.Mazur.WeierstrassDividedStartOneAtlas
 public import FLT.Mazur.WeierstrassDividedStartOneData
 public import FLT.Mazur.WeierstrassDividedSuccessiveArithmeticPairCoverage
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
+public import FLT.Mazur.WeierstrassDividedSuccessivePairInputComparison
 public import FLT.Mazur.WeierstrassDividedSuccessiveTensorCoordinates
 public import FLT.Mazur.WeierstrassDividedSuccessiveTensorPair
 public import FLT.Mazur.WeierstrassDividedSuccessiveTensorPairAddition
