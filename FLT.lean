@@ -4807,6 +4807,7 @@ public import FLT.Mazur.CyclicMarkingSingularCompatibleTransport
 public import FLT.Mazur.CyclicMarkingSingularCoverage
 public import FLT.Mazur.CyclicMarkingSingularCriterion
 public import FLT.Mazur.CyclicMarkingSingularDivisor
+public import FLT.Mazur.CyclicMarkingSingularFinitePresentation
 public import FLT.Mazur.CyclicMarkingSingularGenerator
 public import FLT.Mazur.CyclicMarkingSingularLocus
 public import FLT.Mazur.CyclicMarkingSingularLocusSubgroup
