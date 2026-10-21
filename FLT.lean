@@ -13419,6 +13419,7 @@ public import FLT.Mazur.SmoothNodalFamilyDimension
 public import FLT.Mazur.SmoothNonspecialDivisorCover
 public import FLT.Mazur.SmoothNonspecialDivisorLift
 public import FLT.Mazur.SmoothNonspecialLineLift
+public import FLT.Mazur.SmoothOpenFieldCurveDimension
 public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothOrderedHilbertCharts
 public import FLT.Mazur.SmoothOrderedLineParameters
