@@ -12194,6 +12194,7 @@ public import FLT.Mazur.RelativeIdealSupportedRestriction
 public import FLT.Mazur.RelativeJetSmoothObstruction
 public import FLT.Mazur.RelativeJointGeometricFrame
 public import FLT.Mazur.RelativeKernelPairPropertyDescent
+public import FLT.Mazur.RelativeLocalDomainRankCriterion
 public import FLT.Mazur.RelativeMarkingSections
 public import FLT.Mazur.RelativeOpenUnion
 public import FLT.Mazur.RelativeOpenUnionGluing
