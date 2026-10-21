@@ -17965,6 +17965,7 @@ public import FLT.Mazur.WeierstrassModificationXTensorSmoothInput
 public import FLT.Mazur.WeierstrassModificationXTensorTerminalCoordinates
 public import FLT.Mazur.WeierstrassModificationXTensorTerminalLaurent
 public import FLT.Mazur.WeierstrassModificationXTotalTransform
+public import FLT.Mazur.WeierstrassModificationXUnitIncidence
 public import FLT.Mazur.WeierstrassModificationXZeroIdealBoundary
 public import FLT.Mazur.WeierstrassModificationXZeroInfinityPullback
 public import FLT.Mazur.WeierstrassModificationXZeroInfinityTangent
