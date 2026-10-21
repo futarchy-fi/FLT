@@ -16753,6 +16753,7 @@ public import FLT.Mazur.WeierstrassDividedVariableRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedVerticalRefinement
 public import FLT.Mazur.WeierstrassDividedVerticalSmooth
 public import FLT.Mazur.WeierstrassDividedWiderReflectedAtlasPair
+public import FLT.Mazur.WeierstrassDividedWiderReflectedComparison
 public import FLT.Mazur.WeierstrassDividedWiderReflectedContraction
 public import FLT.Mazur.WeierstrassDividedWiderReflectedCoordinates
 public import FLT.Mazur.WeierstrassDividedWiderReflectedCoverage
