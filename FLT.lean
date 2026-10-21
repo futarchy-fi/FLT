@@ -3649,6 +3649,10 @@ public import FLT.Mazur.AuxiliaryCoprimeFieldNaturality
 public import FLT.Mazur.AuxiliaryCoprimeMarking
 public import FLT.Mazur.AuxiliaryCyclicProductParameter
 public import FLT.Mazur.AuxiliaryDistinctSectionParameter
+public import FLT.Mazur.AuxiliaryLevelBaseChange
+public import FLT.Mazur.AuxiliaryLevelBaseChangeFaithfulness
+public import FLT.Mazur.AuxiliaryLevelBaseChangeRelabel
+public import FLT.Mazur.AuxiliaryLevelFaithfulBaseChange
 public import FLT.Mazur.AuxiliaryLevelFaithfulOpen
 public import FLT.Mazur.AuxiliaryLevelFaithfulRepresentation
 public import FLT.Mazur.AuxiliaryLevelFieldMarking
@@ -4332,7 +4336,13 @@ public import FLT.Mazur.CyclicAuxiliaryPrescribedNormalizedNeighborhood
 public import FLT.Mazur.CyclicBoundaryAmpleAction
 public import FLT.Mazur.CyclicBoundaryAmpleInvariantModuli
 public import FLT.Mazur.CyclicBoundaryAmpleModuli
+public import FLT.Mazur.CyclicBoundaryBaseChange
+public import FLT.Mazur.CyclicBoundaryBaseChangeCurve
+public import FLT.Mazur.CyclicBoundaryBaseChangeProjection
+public import FLT.Mazur.CyclicBoundaryBaseChangeSubgroup
 public import FLT.Mazur.CyclicBoundaryFaithfulAction
+public import FLT.Mazur.CyclicBoundaryFaithfulBaseChange
+public import FLT.Mazur.CyclicBoundaryFaithfulBaseChangeAction
 public import FLT.Mazur.CyclicBoundaryFaithfulLift
 public import FLT.Mazur.CyclicBoundaryFaithfulOpen
 public import FLT.Mazur.CyclicBoundaryGroupSections
@@ -4342,6 +4352,7 @@ public import FLT.Mazur.CyclicBoundaryOriginalAmpleModuli
 public import FLT.Mazur.CyclicBoundaryOriginalMarkings
 public import FLT.Mazur.CyclicBoundaryParameterAction
 public import FLT.Mazur.CyclicBoundaryParameterSections
+public import FLT.Mazur.CyclicBoundaryProjectionFaithfulness
 public import FLT.Mazur.CyclicBoundaryRelabelSubgroup
 public import FLT.Mazur.CyclicBoundarySectionMarking
 public import FLT.Mazur.CyclicBoundaryTestSubgroup
