@@ -8899,6 +8899,7 @@ public import FLT.Mazur.OneGonFormalCoordinates
 public import FLT.Mazur.OneGonGlobalPushout
 public import FLT.Mazur.OneGonGluing
 public import FLT.Mazur.OneGonIdentityDivisorAmple
+public import FLT.Mazur.OneGonInfinitesimalReduction
 public import FLT.Mazur.OneGonIntegral
 public import FLT.Mazur.OneGonLocalDescent
 public import FLT.Mazur.OneGonLocalizedEqualizer
