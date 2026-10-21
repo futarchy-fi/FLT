@@ -4367,6 +4367,7 @@ public import FLT.Mazur.CyclicBoundaryBaseChangeAmpleCriterion
 public import FLT.Mazur.CyclicBoundaryBaseChangeCurve
 public import FLT.Mazur.CyclicBoundaryBaseChangeProjection
 public import FLT.Mazur.CyclicBoundaryBaseChangeSubgroup
+public import FLT.Mazur.CyclicBoundaryCurveTowerParameter
 public import FLT.Mazur.CyclicBoundaryCurveTransport
 public import FLT.Mazur.CyclicBoundaryCurveTransportBaseChange
 public import FLT.Mazur.CyclicBoundaryCurveTransportCoherence
