@@ -3607,6 +3607,7 @@ public import FLT.Mazur.ArithmeticOneGonChangedSubgroupAmple
 public import FLT.Mazur.ArithmeticOneGonCoefficientIso
 public import FLT.Mazur.ArithmeticOneGonCoefficientTower
 public import FLT.Mazur.ArithmeticOneGonCommonCoefficientIso
+public import FLT.Mazur.ArithmeticOneGonCommonCoefficientTower
 public import FLT.Mazur.ArithmeticOneGonFamily
 public import FLT.Mazur.ArithmeticOneGonFiberTorus
 public import FLT.Mazur.ArithmeticOneGonFieldFibers
