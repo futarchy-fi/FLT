@@ -16752,6 +16752,7 @@ public import FLT.Mazur.WeierstrassDividedVariableLabelIntersections
 public import FLT.Mazur.WeierstrassDividedVariableRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedVerticalRefinement
 public import FLT.Mazur.WeierstrassDividedVerticalSmooth
+public import FLT.Mazur.WeierstrassDividedWiderReflectedFormula
 public import FLT.Mazur.WeierstrassDividedZeroBoundaryFunctions
 public import FLT.Mazur.WeierstrassDividedZeroClosingAtlasBase
 public import FLT.Mazur.WeierstrassDividedZeroClosingFactorBase
