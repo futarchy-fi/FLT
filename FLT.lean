@@ -14409,6 +14409,7 @@ public import FLT.Mazur.WeierstrassDividedAdjacentTensorBoundary
 public import FLT.Mazur.WeierstrassDividedAdjacentTensorSlope
 public import FLT.Mazur.WeierstrassDividedAdjacentTensorSlopeGeometry
 public import FLT.Mazur.WeierstrassDividedAdjacentTerminalIntersection
+public import FLT.Mazur.WeierstrassDividedAdjacentZeroAbscissa
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroBranchCompatibility
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroComponents
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroConicComparison
