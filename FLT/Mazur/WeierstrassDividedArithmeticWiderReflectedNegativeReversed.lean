@@ -59,54 +59,54 @@ local notation "add" => arithmeticOlderWiderReflectedNegativeAddition node data 
 local notation "swap" => (pullbackSymmetry fb fa).hom
 
 /-- The output domain in the full reversed arithmetic pair. -/
-def arithmeticReflectedNegativeReversedOpen : (pullback fb fa).Opens := swap ⁻¹ᵁ D
+def arithmeticWiderReflectedNegativeReversedOpen : (pullback fb fa).Opens := swap ⁻¹ᵁ D
 
-local notation "E" => arithmeticReflectedNegativeReversedOpen node data m j hj k l hk hl
+local notation "E" => arithmeticWiderReflectedNegativeReversedOpen node data m j hj k l hk hl
   hkl hdepth hnear hsum h2
 
 /-- The same constructed output on the original inputs in reverse order. -/
-def arithmeticReflectedNegativeReversedAddition : (E).toScheme ⟶ (U).toScheme :=
+def arithmeticWiderReflectedNegativeReversedAddition : (E).toScheme ⟶ (U).toScheme :=
   (swap ∣_ D) ≫ add
 
 /-- The reversed output retains its first original arithmetic coefficient point. -/
-@[reassoc] theorem arithmeticReflectedNegativeReversedAddition_structure :
-    arithmeticReflectedNegativeReversedAddition node data m j hj k l hk hl
+@[reassoc] theorem arithmeticWiderReflectedNegativeReversedAddition_structure :
+    arithmeticWiderReflectedNegativeReversedAddition node data m j hj k l hk hl
         hkl hdepth hnear hsum h2 ≫ t =
       (E).ι ≫ pullback.fst fb fa ≫ fb ≫ q := by
-  rw [arithmeticReflectedNegativeReversedAddition, Category.assoc,
+  rw [arithmeticWiderReflectedNegativeReversedAddition, Category.assoc,
     arithmeticOlderWiderReflectedNegativeAddition_structure_snd, morphismRestrict_ι_assoc,
     pullbackSymmetry_hom_comp_snd_assoc]
   rfl
 
 /-- The same output retains its second original arithmetic coefficient point. -/
-@[reassoc] theorem arithmeticReflectedNegativeReversedAddition_structure_snd :
-    arithmeticReflectedNegativeReversedAddition node data m j hj k l hk hl
+@[reassoc] theorem arithmeticWiderReflectedNegativeReversedAddition_structure_snd :
+    arithmeticWiderReflectedNegativeReversedAddition node data m j hj k l hk hl
         hkl hdepth hnear hsum h2 ≫ t =
       (E).ι ≫ pullback.snd fb fa ≫ fa ≫ q := by
-  rw [arithmeticReflectedNegativeReversedAddition_structure, pullback.condition_assoc]
+  rw [arithmeticWiderReflectedNegativeReversedAddition_structure, pullback.condition_assoc]
 
 /-- The reversed output is an actual morphism to the arithmetic smooth base change. -/
-def arithmeticReflectedNegativeReversedQuotient : (E).toScheme ⟶ pullback q t :=
+def arithmeticWiderReflectedNegativeReversedQuotient : (E).toScheme ⟶ pullback q t :=
   (swap ∣_ D) ≫
     arithmeticOlderWiderReflectedNegativeQuotientOutput node data m j hj k l hk hl
       hkl hdepth hnear hsum h2
 
 /-- The quotient projection has exactly the reversed first coefficient point. -/
-@[reassoc] theorem arithmeticReflectedNegativeReversedQuotient_base :
-    arithmeticReflectedNegativeReversedQuotient node data m j hj k l hk hl
+@[reassoc] theorem arithmeticWiderReflectedNegativeReversedQuotient_base :
+    arithmeticWiderReflectedNegativeReversedQuotient node data m j hj k l hk hl
         hkl hdepth hnear hsum h2 ≫ pullback.fst q t = (E).ι ≫ pullback.fst fb fa ≫ fb := by
-  rw [arithmeticReflectedNegativeReversedQuotient, Category.assoc,
+  rw [arithmeticWiderReflectedNegativeReversedQuotient, Category.assoc,
     arithmeticOlderWiderReflectedNegativeQuotientOutput_base, morphismRestrict_ι_assoc,
     pullback.condition, pullbackSymmetry_hom_comp_snd_assoc]
   rfl
 
 /-- Forgetting the quotient recovers the complete reversed integral output. -/
-@[reassoc] theorem arithmeticReflectedNegativeReversedQuotient_integral :
-    arithmeticReflectedNegativeReversedQuotient node data m j hj k l hk hl
+@[reassoc] theorem arithmeticWiderReflectedNegativeReversedQuotient_integral :
+    arithmeticWiderReflectedNegativeReversedQuotient node data m j hj k l hk hl
         hkl hdepth hnear hsum h2 ≫ pullback.snd q t =
-      arithmeticReflectedNegativeReversedAddition node data m j hj k l hk hl
+      arithmeticWiderReflectedNegativeReversedAddition node data m j hj k l hk hl
       hkl hdepth hnear hsum h2 := by
-  rw [arithmeticReflectedNegativeReversedQuotient, Category.assoc,
+  rw [arithmeticWiderReflectedNegativeReversedQuotient, Category.assoc,
     arithmeticOlderWiderReflectedNegativeQuotientOutput_integral]
   rfl
 
@@ -118,7 +118,7 @@ local notation "x₂" => ar (x W (π ^ (0 + l)) (e).b3 (e).b4 (e).b6)
 local notation "y₂" => ar (y W (π ^ (0 + l)) (e).b3 (e).b4 (e).b6)
 
 /-- Reversed punctured negative pairs are covered at every arithmetic order. -/
-theorem arithmeticReflectedNegativeReversedOpen_mem (hk0 : 0 < k) (hlt : k < l)
+theorem arithmeticWiderReflectedNegativeReversedOpen_mem (hk0 : 0 < k) (hlt : k < l)
     (hm : depth < 2 * (k + l)) (p : (pullback fb fa : Scheme))
     (hx : x₁ ∉ (input (swap p)).asIdeal) (hu : x₂ ∉ (input (swap p)).asIdeal)
     (hy : dividedTangentBranchFactor W (π ^ (0 + k)) (d).b3 (d).b4 (d).b6 al ∈
