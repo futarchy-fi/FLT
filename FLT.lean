@@ -12514,6 +12514,7 @@ public import FLT.Mazur.ScalarImageNeighborhoodBasis
 public import FLT.Mazur.ScalarImageOriginalGenerators
 public import FLT.Mazur.ScalarImageResidueGenerators
 public import FLT.Mazur.ScalarImageSourceGenerators
+public import FLT.Mazur.ScalarLocalPolynomialResidueRigidity
 public import FLT.Mazur.ScalarLocalizedIdealNilpotence
 public import FLT.Mazur.ScalarMinimalCharacterNeighborhood
 public import FLT.Mazur.ScalarMinimalCharacterPropagation
