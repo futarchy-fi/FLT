@@ -6243,6 +6243,7 @@ public import FLT.Mazur.FixedTargetIntegerModel
 public import FLT.Mazur.FlasqueDirectImageAcyclic
 public import FLT.Mazur.FlatAlgebraEqualizer
 public import FLT.Mazur.FlatAlgebraEqualizerNaturality
+public import FLT.Mazur.FlatBoundaryCoordinateEquations
 public import FLT.Mazur.FlatCartesianSectionGluing
 public import FLT.Mazur.FlatCartierIdealPullback
 public import FLT.Mazur.FlatCoefficientAllCohomology
