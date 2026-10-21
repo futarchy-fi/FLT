@@ -16508,6 +16508,7 @@ public import FLT.Mazur.WeierstrassDividedSumDepthSourceOutput
 public import FLT.Mazur.WeierstrassDividedSuppliedSmoothChart
 public import FLT.Mazur.WeierstrassDividedSuppliedSmoothPair
 public import FLT.Mazur.WeierstrassDividedSuppliedSmoothSecantDomain
+public import FLT.Mazur.WeierstrassDividedSuppliedSmoothTangentDomain
 public import FLT.Mazur.WeierstrassDividedTangentBranchContraction
 public import FLT.Mazur.WeierstrassDividedTangentBranchDeeperCoordinates
 public import FLT.Mazur.WeierstrassDividedTangentBranchDeeperEquation
