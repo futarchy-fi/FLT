@@ -16955,6 +16955,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothAssociativity
 public import FLT.Mazur.WeierstrassLeftSmoothCenterAction
 public import FLT.Mazur.WeierstrassLeftSmoothCenterInvariant
 public import FLT.Mazur.WeierstrassLeftSmoothChartCenterEquality
+public import FLT.Mazur.WeierstrassLeftSmoothCoefficientProduct
 public import FLT.Mazur.WeierstrassLeftSmoothCrossInput
 public import FLT.Mazur.WeierstrassLeftSmoothFactorAddition
 public import FLT.Mazur.WeierstrassLeftSmoothFactorProduct
