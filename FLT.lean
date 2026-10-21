@@ -9087,6 +9087,7 @@ public import FLT.Mazur.OriginalBoundaryResidualLocalImage
 public import FLT.Mazur.OriginalBoundaryResidualNeighborhood
 public import FLT.Mazur.OriginalBoundaryResidualOriginalImage
 public import FLT.Mazur.OriginalBoundaryResidualPrincipalCover
+public import FLT.Mazur.OriginalBoundaryResidualRankObstruction
 public import FLT.Mazur.OriginalBoundaryResidualRelationCover
 public import FLT.Mazur.OriginalBoundaryResidualScalarCover
 public import FLT.Mazur.OriginalBoundaryResidualTensorCover
