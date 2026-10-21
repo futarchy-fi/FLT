@@ -14505,6 +14505,7 @@ public import FLT.Mazur.WeierstrassDividedAtlasPairIntermediateAddition
 public import FLT.Mazur.WeierstrassDividedAtlasPairIntermediateFormulas
 public import FLT.Mazur.WeierstrassDividedAtlasPairReciprocalAddition
 public import FLT.Mazur.WeierstrassDividedAtlasPairReciprocalCoverage
+public import FLT.Mazur.WeierstrassDividedAtlasPairUnequalAddition
 public import FLT.Mazur.WeierstrassDividedAtlasRegularCenter
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
 public import FLT.Mazur.WeierstrassDividedBranchChainIntersections
@@ -16251,6 +16252,14 @@ public import FLT.Mazur.WeierstrassDividedTwoNodeRestriction
 public import FLT.Mazur.WeierstrassDividedTwoOpenRestriction
 public import FLT.Mazur.WeierstrassDividedTwoSeedOrientation
 public import FLT.Mazur.WeierstrassDividedTwoSeedState
+public import FLT.Mazur.WeierstrassDividedUnequalDepthCoverage
+public import FLT.Mazur.WeierstrassDividedUnequalDepthOutput
+public import FLT.Mazur.WeierstrassDividedUnequalDepthResidue
+public import FLT.Mazur.WeierstrassDividedUnequalDepthSecant
+public import FLT.Mazur.WeierstrassDividedUnequalDepthSmoothOutput
+public import FLT.Mazur.WeierstrassDividedUnequalPair
+public import FLT.Mazur.WeierstrassDividedUnequalSecantFormula
+public import FLT.Mazur.WeierstrassDividedUnequalSecantResidue
 public import FLT.Mazur.WeierstrassDividedUniversalSmoothPair
 public import FLT.Mazur.WeierstrassDividedUniversalSmoothPairIso
 public import FLT.Mazur.WeierstrassDividedUniversalSmoothPairPromotion
