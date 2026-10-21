@@ -3677,6 +3677,7 @@ public import FLT.Mazur.AuxiliaryLevelHomScheme
 public import FLT.Mazur.AuxiliaryLevelKernelLocus
 public import FLT.Mazur.AuxiliaryLevelMappedFaithfulness
 public import FLT.Mazur.AuxiliaryLevelRelabeling
+public import FLT.Mazur.AuxiliaryMarkingFinitePresentation
 public import FLT.Mazur.AuxiliaryMarkingPowerProper
 public import FLT.Mazur.AuxiliarySeparatedMarkingFiniteType
 public import FLT.Mazur.AuxiliaryTorsionMarkingComparison
