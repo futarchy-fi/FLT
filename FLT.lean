@@ -6320,6 +6320,7 @@ public import FLT.Mazur.GeneralizedCurveBaseChangeCoherence
 public import FLT.Mazur.GeneralizedCurveBaseChangeCompEq
 public import FLT.Mazur.GeneralizedCurveBaseChangeIso
 public import FLT.Mazur.GeneralizedCurveBaseChangeSquare
+public import FLT.Mazur.GeneralizedCurveBaseChangeTowerMap
 public import FLT.Mazur.GeneralizedCurveBaseIsoEquivalence
 public import FLT.Mazur.GeneralizedCurveCartierDescent
 public import FLT.Mazur.GeneralizedCurveCartierGenerator
