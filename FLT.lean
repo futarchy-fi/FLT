@@ -3677,7 +3677,9 @@ public import FLT.Mazur.AuxiliaryLevelHomScheme
 public import FLT.Mazur.AuxiliaryLevelKernelLocus
 public import FLT.Mazur.AuxiliaryLevelMappedFaithfulness
 public import FLT.Mazur.AuxiliaryLevelRelabeling
+public import FLT.Mazur.AuxiliaryMarkingFinitePresentation
 public import FLT.Mazur.AuxiliaryMarkingPowerProper
+public import FLT.Mazur.AuxiliarySeparatedMarkingFiniteType
 public import FLT.Mazur.AuxiliaryTorsionMarkingComparison
 public import FLT.Mazur.BaseAdicClosedAmpleSections
 public import FLT.Mazur.BaseAdicCohomologyFiltration
@@ -4427,6 +4429,7 @@ public import FLT.Mazur.CyclicBoundaryUnrestrictedAmpleCoverage
 public import FLT.Mazur.CyclicBoundaryUnrestrictedAmpleLift
 public import FLT.Mazur.CyclicBoundaryUnrestrictedAmpleMarking
 public import FLT.Mazur.CyclicBoundaryUnrestrictedAmpleModuli
+public import FLT.Mazur.CyclicBoundaryUnrestrictedFiniteEquations
 public import FLT.Mazur.CyclicBoundaryUnrestrictedInvariantModuli
 public import FLT.Mazur.CyclicBoundaryUnrestrictedOrbit
 public import FLT.Mazur.CyclicBoundaryUnrestrictedRelabelCriterion
@@ -4806,6 +4809,7 @@ public import FLT.Mazur.CyclicMarkingSingularCompatibleTransport
 public import FLT.Mazur.CyclicMarkingSingularCoverage
 public import FLT.Mazur.CyclicMarkingSingularCriterion
 public import FLT.Mazur.CyclicMarkingSingularDivisor
+public import FLT.Mazur.CyclicMarkingSingularFinitePresentation
 public import FLT.Mazur.CyclicMarkingSingularGenerator
 public import FLT.Mazur.CyclicMarkingSingularLocus
 public import FLT.Mazur.CyclicMarkingSingularLocusSubgroup
@@ -5994,6 +5998,7 @@ public import FLT.Mazur.FiniteFlatQuotientTrivialization
 public import FLT.Mazur.FiniteFlatRelationNormCoefficient
 public import FLT.Mazur.FiniteFlatSubschemeQuotient
 public import FLT.Mazur.FiniteFlatTranslationNormCharts
+public import FLT.Mazur.FiniteFlatVanishingFinitePresentation
 public import FLT.Mazur.FiniteFreeAlgebraCharpoly
 public import FLT.Mazur.FiniteFreeAmbientChartRefinement
 public import FLT.Mazur.FiniteFreeChartGeneratorRestriction
@@ -6144,6 +6149,7 @@ public import FLT.Mazur.FinitePolynomialEquationSeeds
 public import FLT.Mazur.FinitePolynomialStableRelations
 public import FLT.Mazur.FinitePolynomialStableStages
 public import FLT.Mazur.FinitePowerEqualizer
+public import FLT.Mazur.FinitePresentationCancellation
 public import FLT.Mazur.FinitePresentationHilbertTranslationCover
 public import FLT.Mazur.FinitePresentationIntegerModel
 public import FLT.Mazur.FinitePresentationSurjectiveScalars
@@ -6421,6 +6427,7 @@ public import FLT.Mazur.FreeModuleResidueRetraction
 public import FLT.Mazur.FreeSheafPullbackRestriction
 public import FLT.Mazur.FreeSheafRestrictionCoherence
 public import FLT.Mazur.FreeSheafSectionCoordinates
+public import FLT.Mazur.FreeTargetVanishingFiniteGeneration
 public import FLT.Mazur.FreeTargetVanishingIdeal
 public import FLT.Mazur.FreeTargetVanishingScheme
 public import FLT.Mazur.FullDivisorFlatFppfDescent
@@ -6477,6 +6484,7 @@ public import FLT.Mazur.GeneralizedCurveGraph
 public import FLT.Mazur.GeneralizedCurveGraphBaseChange
 public import FLT.Mazur.GeneralizedCurveGraphCartesian
 public import FLT.Mazur.GeneralizedCurveGraphTransport
+public import FLT.Mazur.GeneralizedCurveGroupFiniteness
 public import FLT.Mazur.GeneralizedCurveGroupRelativeDimension
 public import FLT.Mazur.GeneralizedCurveGroupSectionComposition
 public import FLT.Mazur.GeneralizedCurveIdentityBaseChange
@@ -6505,6 +6513,9 @@ public import FLT.Mazur.GeneralizedCurveSquareProjection
 public import FLT.Mazur.GeneralizedCurveSquareTestTransport
 public import FLT.Mazur.GeneralizedCurveSubgroupComparison
 public import FLT.Mazur.GeneralizedCurveSubgroupIdeal
+public import FLT.Mazur.GeneralizedCurveUnrestrictedChartCoverage
+public import FLT.Mazur.GeneralizedCurveUnrestrictedChartFiniteness
+public import FLT.Mazur.GeneralizedCurveUnrestrictedChartPresentation
 public import FLT.Mazur.GeneralizedCurveUnrestrictedCubicCoverage
 public import FLT.Mazur.GeneralizedCurveUnrestrictedCubicPresentation
 public import FLT.Mazur.GeneralizedCurveUnrestrictedLocalFamily
@@ -7640,6 +7651,7 @@ public import FLT.Mazur.IdealSheafClopenStabilization
 public import FLT.Mazur.IdealSheafClosedCoreTests
 public import FLT.Mazur.IdealSheafClosedTransitions
 public import FLT.Mazur.IdealSheafFactorizationSupport
+public import FLT.Mazur.IdealSheafFiniteEquations
 public import FLT.Mazur.IdealSheafFlatDetection
 public import FLT.Mazur.IdealSheafOpenCoverDetection
 public import FLT.Mazur.IdealSheafPowerPullback
@@ -11599,6 +11611,7 @@ public import FLT.Mazur.ProjectiveUniversalLineRefinementWitness
 public import FLT.Mazur.ProjectiveUniversalLineTripleComparison
 public import FLT.Mazur.ProjectiveUniversalLineTriplePaths
 public import FLT.Mazur.ProjectiveUniversalLineTripleRefinement
+public import FLT.Mazur.ProjectiveVanishingFinitePresentation
 public import FLT.Mazur.ProperAcyclicDirectImageRepresentation
 public import FLT.Mazur.ProperAcyclicRankOneLocus
 public import FLT.Mazur.ProperAcyclicRankOneUniversalDivisor
@@ -12787,6 +12800,7 @@ public import FLT.Mazur.SchemeFiniteGroupScalarFiberEquations
 public import FLT.Mazur.SchemeFiniteGroupSimultaneousInvariants
 public import FLT.Mazur.SchemeFiniteGroupTestAdicComparison
 public import FLT.Mazur.SchemeFiniteOrbitOpenCore
+public import FLT.Mazur.SchemeFinitePowerProperties
 public import FLT.Mazur.SchemeFiniteSectionAnnihilator
 public import FLT.Mazur.SchemeFiniteTargetAffineNeighborhood
 public import FLT.Mazur.SchemeFiniteTargetBaseChange
