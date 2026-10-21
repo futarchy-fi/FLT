@@ -3613,6 +3613,7 @@ public import FLT.Mazur.ArithmeticOneGonOriginalFiber
 public import FLT.Mazur.ArithmeticOneGonOriginalRoots
 public import FLT.Mazur.ArithmeticOneGonRoots
 public import FLT.Mazur.ArithmeticOneGonRootsBaseChange
+public import FLT.Mazur.ArithmeticOneGonRootsCoefficientNaturality
 public import FLT.Mazur.ArithmeticOneGonRotations
 public import FLT.Mazur.ArithmeticOneGonSubgroupAmple
 public import FLT.Mazur.ArithmeticOneGonTorus
@@ -4006,6 +4007,7 @@ public import FLT.Mazur.CechSortingRecursiveHomotopy
 public import FLT.Mazur.CechSortingTupleChains
 public import FLT.Mazur.CharacterAlgebraScalarExtension
 public import FLT.Mazur.CharacterCoefficientCartesian
+public import FLT.Mazur.CharacterCoefficientCommonRefinement
 public import FLT.Mazur.CharacterCoefficientHomDetection
 public import FLT.Mazur.CharacterCoefficientSeparatedExt
 public import FLT.Mazur.CharacterFiniteCoefficientModel
@@ -4126,6 +4128,7 @@ public import FLT.Mazur.CoefficientIndependentLineDescent
 public import FLT.Mazur.CoefficientInverseEquations
 public import FLT.Mazur.CoefficientIsomorphismDescent
 public import FLT.Mazur.CoefficientModelActualRecovery
+public import FLT.Mazur.CoefficientModelCommonRefinement
 public import FLT.Mazur.CoefficientModelFiniteness
 public import FLT.Mazur.CoefficientModelHomDescent
 public import FLT.Mazur.CoefficientModelLimit
@@ -7488,6 +7491,9 @@ public import FLT.Mazur.IdealSheafFlatDetection
 public import FLT.Mazur.IdealSheafOpenCoverDetection
 public import FLT.Mazur.IdealSheafPowerPullback
 public import FLT.Mazur.IdealSheafRadicalOpen
+public import FLT.Mazur.IdealSheafStableOpen
+public import FLT.Mazur.IdealSheafStableOpenMaximal
+public import FLT.Mazur.IdealSheafStableSupportCriterion
 public import FLT.Mazur.IdealSheafSupportPower
 public import FLT.Mazur.IdealTwistCohomologyStabilization
 public import FLT.Mazur.IdealTwistCohomologySystem
@@ -8546,6 +8552,7 @@ public import FLT.Mazur.OneGonAdicAlgebraicEmbedding
 public import FLT.Mazur.OneGonAdicAlgebraicReduction
 public import FLT.Mazur.OneGonAdicAlgebraicSmoothModel
 public import FLT.Mazur.OneGonAdicBoundaryLevel
+public import FLT.Mazur.OneGonAdicCanonicalCoefficientNaturality
 public import FLT.Mazur.OneGonAdicCanonicalCyclicity
 public import FLT.Mazur.OneGonAdicCanonicalOrbit
 public import FLT.Mazur.OneGonAdicCanonicalSubgroup
@@ -8571,6 +8578,8 @@ public import FLT.Mazur.OneGonAdicCoefficientStages
 public import FLT.Mazur.OneGonAdicFiniteCoefficientBase
 public import FLT.Mazur.OneGonAdicFiniteSmoothStage
 public import FLT.Mazur.OneGonAdicFiniteSubgroup
+public import FLT.Mazur.OneGonAdicInitialCoefficientNaturality
+public import FLT.Mazur.OneGonAdicInitialCoefficientTransport
 public import FLT.Mazur.OneGonAdicInitialParameter
 public import FLT.Mazur.OneGonAdicInitialRoots
 public import FLT.Mazur.OneGonAdicModuliChart
@@ -8580,6 +8589,7 @@ public import FLT.Mazur.OneGonAdicPuncturedModuli
 public import FLT.Mazur.OneGonAdicRecoveredSmoothFactor
 public import FLT.Mazur.OneGonAdicReductionCartesian
 public import FLT.Mazur.OneGonAdicSmoothCoefficientSquares
+public import FLT.Mazur.OneGonAdicSmoothFactorCommonRefinement
 public import FLT.Mazur.OneGonAdicSmoothFactorRecovery
 public import FLT.Mazur.OneGonAdicSmoothGroupRecovery
 public import FLT.Mazur.OneGonAdicSmoothModelAmple
@@ -11631,7 +11641,10 @@ public import FLT.Mazur.RankStagePrescribedBoundaryTower
 public import FLT.Mazur.RankStagePrescribedLiftingProperty
 public import FLT.Mazur.RankStagePrincipalCoreCorrections
 public import FLT.Mazur.RankStageRelationTransitions
+public import FLT.Mazur.RankStageRelativeClosedBoundaryProduct
 public import FLT.Mazur.RankStageRelativeClosedCoreObstruction
+public import FLT.Mazur.RankStageRelativeClosedCoreProduct
+public import FLT.Mazur.RankStageRelativeClosedInvariantBoundary
 public import FLT.Mazur.RankStageRescaledGlobalKernelTowers
 public import FLT.Mazur.RankStageStableKernelObstruction
 public import FLT.Mazur.RankStageStableTransitions
@@ -11642,7 +11655,9 @@ public import FLT.Mazur.RankStageTopKernelObstruction
 public import FLT.Mazur.RankStageTransitionTopology
 public import FLT.Mazur.RankStageUniformKernelNumerators
 public import FLT.Mazur.RankStratumClopenStabilization
+public import FLT.Mazur.RankStratumJumpStableOpen
 public import FLT.Mazur.RankStratumRelativeClosedStabilization
+public import FLT.Mazur.RankStratumStableCriterion
 public import FLT.Mazur.RankStratumTopNilpotence
 public import FLT.Mazur.RationalCyclicCartierGenerator
 public import FLT.Mazur.RationalCyclicGeneratorChange
@@ -13121,6 +13136,7 @@ public import FLT.Mazur.StableAffineQuotientNeighborhood
 public import FLT.Mazur.StableAffineQuotientOverlap
 public import FLT.Mazur.StableAffineQuotientPullbackCharts
 public import FLT.Mazur.StableCompatibleRingTower
+public import FLT.Mazur.StableIdealPowerSupport
 public import FLT.Mazur.StableNumeratorObstruction
 public import FLT.Mazur.StalkBaseClosedFiber
 public import FLT.Mazur.StalkBaseLocalization
