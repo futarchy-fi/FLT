@@ -4259,6 +4259,7 @@ public import FLT.Mazur.CompatibleSubgroupMarkedConjugation
 public import FLT.Mazur.CompatibleSubgroupOrbitMarking
 public import FLT.Mazur.CompatibleSubgroupParameterRefinement
 public import FLT.Mazur.CompatibleSubgroupPointClassification
+public import FLT.Mazur.CompatibleSubgroupPullbackCast
 public import FLT.Mazur.CompatibleSubgroupRefinementCast
 public import FLT.Mazur.CompatibleSubgroupRefinementComposition
 public import FLT.Mazur.CompatibleSubgroupRefinementTransport
