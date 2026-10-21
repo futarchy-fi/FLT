@@ -14845,6 +14845,7 @@ public import FLT.Mazur.WeierstrassDividedCommonBranchOrdinate
 public import FLT.Mazur.WeierstrassDividedCommonSumCoordinates
 public import FLT.Mazur.WeierstrassDividedCommonSumFormula
 public import FLT.Mazur.WeierstrassDividedCommonSumOutput
+public import FLT.Mazur.WeierstrassDividedCommonSumSource
 public import FLT.Mazur.WeierstrassDividedCompleteClosedCubicCompatibility
 public import FLT.Mazur.WeierstrassDividedCompleteResidueNormalization
 public import FLT.Mazur.WeierstrassDividedComponentPairCoverage
