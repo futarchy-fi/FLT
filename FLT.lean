@@ -3678,6 +3678,7 @@ public import FLT.Mazur.AuxiliaryLevelKernelLocus
 public import FLT.Mazur.AuxiliaryLevelMappedFaithfulness
 public import FLT.Mazur.AuxiliaryLevelRelabeling
 public import FLT.Mazur.AuxiliaryMarkingPowerProper
+public import FLT.Mazur.AuxiliarySeparatedMarkingFiniteType
 public import FLT.Mazur.AuxiliaryTorsionMarkingComparison
 public import FLT.Mazur.BaseAdicClosedAmpleSections
 public import FLT.Mazur.BaseAdicCohomologyFiltration
