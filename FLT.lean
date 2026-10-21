@@ -3605,6 +3605,7 @@ public import FLT.Mazur.ArithmeticOneGonAlgebraicBoundary
 public import FLT.Mazur.ArithmeticOneGonAlgebraicCyclicCharts
 public import FLT.Mazur.ArithmeticOneGonAlgebraicCyclicCoverage
 public import FLT.Mazur.ArithmeticOneGonAlgebraicFamily
+public import FLT.Mazur.ArithmeticOneGonAlgebraicInfinitesimalLift
 public import FLT.Mazur.ArithmeticOneGonAmpleBaseChange
 public import FLT.Mazur.ArithmeticOneGonAmpleParameter
 public import FLT.Mazur.ArithmeticOneGonArbitrarySubgroupPullback
