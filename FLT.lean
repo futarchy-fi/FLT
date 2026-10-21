@@ -16151,6 +16151,7 @@ public import FLT.Mazur.WeierstrassDividedStartOneAtlas
 public import FLT.Mazur.WeierstrassDividedStartOneData
 public import FLT.Mazur.WeierstrassDividedSuccessiveArithmeticPairCoverage
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
+public import FLT.Mazur.WeierstrassDividedSuccessivePairInputComparison
 public import FLT.Mazur.WeierstrassDividedSuccessiveTensorCoordinates
 public import FLT.Mazur.WeierstrassDividedSuccessiveTensorPair
 public import FLT.Mazur.WeierstrassDividedSuccessiveTensorPairAddition
