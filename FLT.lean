@@ -18269,6 +18269,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXTensorBoundarySeparation
 public import FLT.Mazur.WeierstrassSuccessiveXTensorContraction
 public import FLT.Mazur.WeierstrassSuccessiveXTensorOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXTensorOverlapGeometry
+public import FLT.Mazur.WeierstrassSuccessiveXTensorPuncturedBranches
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalAffineCover
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalAffineIntersection
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalAffineStructure
