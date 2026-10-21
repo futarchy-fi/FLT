@@ -15992,6 +15992,7 @@ public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCenter
 public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCoordinates
 public import FLT.Mazur.WeierstrassDividedSuccessorRetainedGluing
 public import FLT.Mazur.WeierstrassDividedSuccessorUnitAction
+public import FLT.Mazur.WeierstrassDividedSumDepthContraction
 public import FLT.Mazur.WeierstrassDividedSumDepthCoverage
 public import FLT.Mazur.WeierstrassDividedSumDepthFormula
 public import FLT.Mazur.WeierstrassDividedSumDepthIndexedOutput
