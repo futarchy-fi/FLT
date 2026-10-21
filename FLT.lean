@@ -8977,6 +8977,7 @@ public import FLT.Mazur.OriginalAlgebraicDetectingSchemeOpen
 public import FLT.Mazur.OriginalAlgebraicPointDescent
 public import FLT.Mazur.OriginalBoundaryAdicFlatRelation
 public import FLT.Mazur.OriginalBoundaryAdicRelationLift
+public import FLT.Mazur.OriginalBoundaryBranchScalars
 public import FLT.Mazur.OriginalBoundaryDiscrepancyLocus
 public import FLT.Mazur.OriginalBoundaryFaithfulTensorLift
 public import FLT.Mazur.OriginalBoundaryFlatRelationLift
