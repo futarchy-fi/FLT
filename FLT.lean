@@ -1,4 +1,4 @@
-module  -- shake: keep-all --deprecated_module: ignore
+module
 
 public import FLT.AINTLIB.CebotarevDensity.NumberFieldEulerProduct
 public import FLT.AINTLIB.DedekindResidue.AuxiliaryFunction
@@ -7563,6 +7563,7 @@ public import FLT.Mazur.IdealConditionAcyclic
 public import FLT.Mazur.IdealFamilyIsomorphism
 public import FLT.Mazur.IdealIsomorphismExtension
 public import FLT.Mazur.IdealModuleAffineTensor
+public import FLT.Mazur.IdealModuleEquationSquare
 public import FLT.Mazur.IdealModulePrincipalPullback
 public import FLT.Mazur.IdealModulePullback
 public import FLT.Mazur.IdealModulePullbackCoherence
