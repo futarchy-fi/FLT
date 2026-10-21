@@ -9766,6 +9766,7 @@ public import FLT.Mazur.PolygonCompleteGeometricGenericFiber
 public import FLT.Mazur.PolygonCompleteGeometricRotations
 public import FLT.Mazur.PolygonCompleteGeometricallyConnected
 public import FLT.Mazur.PolygonCompleteGeometricallyReduced
+public import FLT.Mazur.PolygonCompleteGroupRelativeDimension
 public import FLT.Mazur.PolygonCompleteH1Rank
 public import FLT.Mazur.PolygonCompleteH1Reduction
 public import FLT.Mazur.PolygonCompleteIdentityActionCartesian
