@@ -4360,6 +4360,7 @@ public import FLT.Mazur.CyclicBoundaryBaseChangeCurve
 public import FLT.Mazur.CyclicBoundaryBaseChangeProjection
 public import FLT.Mazur.CyclicBoundaryBaseChangeSubgroup
 public import FLT.Mazur.CyclicBoundaryCurveTransport
+public import FLT.Mazur.CyclicBoundaryCurveTransportCoherence
 public import FLT.Mazur.CyclicBoundaryCurveTransportSubgroup
 public import FLT.Mazur.CyclicBoundaryFaithfulAction
 public import FLT.Mazur.CyclicBoundaryFaithfulBaseChange
