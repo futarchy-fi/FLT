@@ -9142,6 +9142,7 @@ public import FLT.Mazur.OriginalBoundaryUniformRelationIdeal
 public import FLT.Mazur.OriginalBoundaryUniformRelationLift
 public import FLT.Mazur.OriginalBoundaryUnramifiedEndpointEquations
 public import FLT.Mazur.OriginalBoundaryUnramifiedKernelDetection
+public import FLT.Mazur.OriginalBoundaryUnramifiedOpenLift
 public import FLT.Mazur.OriginalBoundaryValuationArrowExtension
 public import FLT.Mazur.OriginalEnvelopeAcyclicCriterion
 public import FLT.Mazur.OriginalFamilyIdentityComparison
