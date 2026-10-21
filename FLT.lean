@@ -6301,6 +6301,7 @@ public import FLT.Mazur.FlatQuotientCartierFiber
 public import FLT.Mazur.FlatQuotientIdealBaseChange
 public import FLT.Mazur.FlatQuotientIdealFiber
 public import FLT.Mazur.FlatQuotientLocalCartier
+public import FLT.Mazur.FlatScalarComparisonImageNeighborhood
 public import FLT.Mazur.FlatScalarExactness
 public import FLT.Mazur.FlatScalarFunctionNaturality
 public import FLT.Mazur.FlatScalarFunctionPushout
@@ -9024,6 +9025,8 @@ public import FLT.Mazur.OriginalAlgebraicPointDescent
 public import FLT.Mazur.OriginalBoundaryAdicFlatRelation
 public import FLT.Mazur.OriginalBoundaryAdicRelationLift
 public import FLT.Mazur.OriginalBoundaryBranchScalars
+public import FLT.Mazur.OriginalBoundaryComparisonClosedImage
+public import FLT.Mazur.OriginalBoundaryComparisonNeighborhood
 public import FLT.Mazur.OriginalBoundaryDiscrepancyLocus
 public import FLT.Mazur.OriginalBoundaryEtaleImageLift
 public import FLT.Mazur.OriginalBoundaryFaithfulTensorLift
@@ -9037,6 +9040,7 @@ public import FLT.Mazur.OriginalBoundaryPrincipalCover
 public import FLT.Mazur.OriginalBoundaryPrincipalLiftCriterion
 public import FLT.Mazur.OriginalBoundaryRelationOpenLift
 public import FLT.Mazur.OriginalBoundaryRelationSupport
+public import FLT.Mazur.OriginalBoundaryResidualComparisonNeighborhood
 public import FLT.Mazur.OriginalBoundaryResidualEtaleImageCover
 public import FLT.Mazur.OriginalBoundaryResidualFiniteFamily
 public import FLT.Mazur.OriginalBoundaryResidualFlatCover
@@ -12561,6 +12565,8 @@ public import FLT.Mazur.SchemeClopenSectionExtension
 public import FLT.Mazur.SchemeClosedBaseChange
 public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
+public import FLT.Mazur.SchemeComparisonClosedObstruction
+public import FLT.Mazur.SchemeComparisonCoverageLocus
 public import FLT.Mazur.SchemeConeGluing
 public import FLT.Mazur.SchemeConnectedFiberSections
 public import FLT.Mazur.SchemeConstructibleNoetherianPullback
@@ -12925,6 +12931,8 @@ public import FLT.Mazur.SchemeRelationRestrictionRechart
 public import FLT.Mazur.SchemeRelationScalarBaseChange
 public import FLT.Mazur.SchemeRelationScalarCartesian
 public import FLT.Mazur.SchemeRelationScalarComparisonCover
+public import FLT.Mazur.SchemeRelationScalarComparisonNeighborhood
+public import FLT.Mazur.SchemeRelationScalarComparisonPullback
 public import FLT.Mazur.SchemeRelationScalarEtale
 public import FLT.Mazur.SchemeRelationScalarKernelPair
 public import FLT.Mazur.SchemeRelationScalarMonomorphism
@@ -12969,6 +12977,7 @@ public import FLT.Mazur.SchemeScalarGeometricOpenLift
 public import FLT.Mazur.SchemeScalarImageDescent
 public import FLT.Mazur.SchemeScalarImageFaithfulGeometry
 public import FLT.Mazur.SchemeScalarImageGeometry
+public import FLT.Mazur.SchemeScalarImageKernelGeometry
 public import FLT.Mazur.SchemeScalarImageQuotient
 public import FLT.Mazur.SchemeScalarIntegralBadCover
 public import FLT.Mazur.SchemeScalarIntegralCover
