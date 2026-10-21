@@ -15997,6 +15997,7 @@ public import FLT.Mazur.WeierstrassDividedQuotientSumDepthCoordinates
 public import FLT.Mazur.WeierstrassDividedQuotientSumDepthIndexed
 public import FLT.Mazur.WeierstrassDividedQuotientSumDepthOutput
 public import FLT.Mazur.WeierstrassDividedQuotientSumDepthResidue
+public import FLT.Mazur.WeierstrassDividedQuotientSumDepthSmooth
 public import FLT.Mazur.WeierstrassDividedQuotientSumDepthSource
 public import FLT.Mazur.WeierstrassDividedReciprocalExtendedAddition
 public import FLT.Mazur.WeierstrassDividedReciprocalExtendedOverlap
