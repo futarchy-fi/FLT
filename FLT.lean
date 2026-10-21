@@ -3649,6 +3649,7 @@ public import FLT.Mazur.AuxiliaryCoprimeFieldNaturality
 public import FLT.Mazur.AuxiliaryCoprimeMarking
 public import FLT.Mazur.AuxiliaryCyclicProductParameter
 public import FLT.Mazur.AuxiliaryDistinctSectionParameter
+public import FLT.Mazur.AuxiliaryLevelBaseChange
 public import FLT.Mazur.AuxiliaryLevelFaithfulOpen
 public import FLT.Mazur.AuxiliaryLevelFaithfulRepresentation
 public import FLT.Mazur.AuxiliaryLevelFieldMarking
