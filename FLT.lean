@@ -16744,6 +16744,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalSplitNodeBranches
 public import FLT.Mazur.WeierstrassDividedTerminalTangentRestriction
 public import FLT.Mazur.WeierstrassDividedTerminalTensorActionGeometry
 public import FLT.Mazur.WeierstrassDividedTerminalTensorPointGeometry
+public import FLT.Mazur.WeierstrassDividedTerminalTensorProjection
 public import FLT.Mazur.WeierstrassDividedTerminalWeightedReduction
 public import FLT.Mazur.WeierstrassDividedTerminalZeroAbscissa
 public import FLT.Mazur.WeierstrassDividedTerminalZeroBoundary
