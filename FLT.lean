@@ -12564,6 +12564,7 @@ public import FLT.Mazur.ScalarImageNeighborhoodBasis
 public import FLT.Mazur.ScalarImageOriginalGenerators
 public import FLT.Mazur.ScalarImageResidueGenerators
 public import FLT.Mazur.ScalarImageSourceGenerators
+public import FLT.Mazur.ScalarJacobianRowSelection
 public import FLT.Mazur.ScalarLocalJacobianAnnihilator
 public import FLT.Mazur.ScalarLocalPolynomialResidueRigidity
 public import FLT.Mazur.ScalarLocalPolynomialTests
