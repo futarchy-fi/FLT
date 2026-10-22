@@ -5716,6 +5716,7 @@ public import FLT.Mazur.EquivalenceRelationOriginalOrbitComparison
 public import FLT.Mazur.EquivalenceRelationOriginalScalarFiber
 public import FLT.Mazur.EquivalenceRelationPairedAffineCover
 public import FLT.Mazur.EquivalenceRelationPairedNormalizedCover
+public import FLT.Mazur.EquivalenceRelationPairedRankStages
 public import FLT.Mazur.EquivalenceRelationPrescribedQuotientCorrection
 public import FLT.Mazur.EquivalenceRelationPrincipalCompleteCharacters
 public import FLT.Mazur.EquivalenceRelationPrincipalPrimeCoverage
