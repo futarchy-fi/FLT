@@ -4204,6 +4204,7 @@ public import FLT.Mazur.CoefficientSectionNeighborhood
 public import FLT.Mazur.CoefficientSectionRecovery
 public import FLT.Mazur.CoefficientSmoothConnectedDescent
 public import FLT.Mazur.CoefficientSmoothDescent
+public import FLT.Mazur.CoefficientSmoothMarkingRefinement
 public import FLT.Mazur.CoefficientSmoothOpenRefinement
 public import FLT.Mazur.CoefficientSpectrumLimit
 public import FLT.Mazur.CoefficientStageColimit
