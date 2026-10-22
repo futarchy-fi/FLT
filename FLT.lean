@@ -9275,6 +9275,10 @@ public import FLT.Mazur.OriginalBoundaryDifferentialOpenLift
 public import FLT.Mazur.OriginalBoundaryDifferentialOpenNaturality
 public import FLT.Mazur.OriginalBoundaryDiscrepancyLocus
 public import FLT.Mazur.OriginalBoundaryDomainComparisonLift
+public import FLT.Mazur.OriginalBoundaryDoubleRankArrowCriterion
+public import FLT.Mazur.OriginalBoundaryDoubleRankCoefficientDetection
+public import FLT.Mazur.OriginalBoundaryDoubleRankComparison
+public import FLT.Mazur.OriginalBoundaryDoubleRankGlobalLifts
 public import FLT.Mazur.OriginalBoundaryDoubleRankTests
 public import FLT.Mazur.OriginalBoundaryEtaleImageLift
 public import FLT.Mazur.OriginalBoundaryFaithfulTensorLift
@@ -12275,6 +12279,7 @@ public import FLT.Mazur.RelativeCyclicSubgroupComparison
 public import FLT.Mazur.RelativeCyclicSubgroupPullbackComparison
 public import FLT.Mazur.RelativeCyclicSubgroupRelabel
 public import FLT.Mazur.RelativeCyclicSubgroupSmoothOpen
+public import FLT.Mazur.RelativeDiagonalRankDetection
 public import FLT.Mazur.RelativeDimensionBaseChangeOpen
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
@@ -12285,7 +12290,9 @@ public import FLT.Mazur.RelativeDistinctFreeAction
 public import FLT.Mazur.RelativeDistinctSubframe
 public import FLT.Mazur.RelativeDistinctTupleLift
 public import FLT.Mazur.RelativeDistinctTuples
+public import FLT.Mazur.RelativeDoubleRankClosedLifts
 public import FLT.Mazur.RelativeDoubleRankDetection
+public import FLT.Mazur.RelativeDoubleRankGlobalLifts
 public import FLT.Mazur.RelativeDoubleRankRecovery
 public import FLT.Mazur.RelativeDoubleRankTestDetection
 public import FLT.Mazur.RelativeDoubleRankThickenings
