@@ -6572,6 +6572,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeEquation
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeEvaluation
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeMorphism
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeUnique
+public import FLT.Mazur.GeneralizedCurveMarkingCanonicalIntegerModel
 public import FLT.Mazur.GeneralizedCurveMarkingCanonicalLine
 public import FLT.Mazur.GeneralizedCurveMarkingChartEquation
 public import FLT.Mazur.GeneralizedCurveMarkingComplementCoordinates
