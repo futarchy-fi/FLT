@@ -6509,6 +6509,7 @@ public import FLT.Mazur.GeneralizedCurveLocalPointFrames
 public import FLT.Mazur.GeneralizedCurveNaturalIsoGluing
 public import FLT.Mazur.GeneralizedCurvePicardClasses
 public import FLT.Mazur.GeneralizedCurvePicardPresheaf
+public import FLT.Mazur.GeneralizedCurvePointTranslation
 public import FLT.Mazur.GeneralizedCurvePointedCubicFamily
 public import FLT.Mazur.GeneralizedCurvePointedCubicGroup
 public import FLT.Mazur.GeneralizedCurvePointedCubicPresentation
@@ -7905,10 +7906,12 @@ public import FLT.Mazur.LaurentLineActionEvaluation
 public import FLT.Mazur.LaurentNearIdentityAutomorphism
 public import FLT.Mazur.LaurentNilpotentReparametrization
 public import FLT.Mazur.LaurentNodePrincipalParts
+public import FLT.Mazur.LaurentNormalizedMorphism
 public import FLT.Mazur.LaurentNormalizedReduction
 public import FLT.Mazur.LaurentPairCoefficientNaturality
 public import FLT.Mazur.LaurentPairEvaluation
 public import FLT.Mazur.LaurentPairNaturality
+public import FLT.Mazur.LaurentPairProduct
 public import FLT.Mazur.LaurentPairReciprocalUnits
 public import FLT.Mazur.LaurentPairStageLift
 public import FLT.Mazur.LaurentPairSwap
@@ -8925,6 +8928,9 @@ public import FLT.Mazur.OneGonNormalizationFinite
 public import FLT.Mazur.OneGonNormalizationPullback
 public import FLT.Mazur.OneGonNormalizationTorus
 public import FLT.Mazur.OneGonNormalizedGeneralizedCurve
+public import FLT.Mazur.OneGonOriginalAction
+public import FLT.Mazur.OneGonOriginalCubic
+public import FLT.Mazur.OneGonOriginalGroup
 public import FLT.Mazur.OneGonOriginalGroupComparison
 public import FLT.Mazur.OneGonOverlap
 public import FLT.Mazur.OneGonOverlapGraph
@@ -9186,6 +9192,7 @@ public import FLT.Mazur.OriginalBoundaryFiniteStageTests
 public import FLT.Mazur.OriginalBoundaryFiniteValuationRanks
 public import FLT.Mazur.OriginalBoundaryFlatImageGeometry
 public import FLT.Mazur.OriginalBoundaryFlatRelationLift
+public import FLT.Mazur.OriginalBoundaryFullStalkJacobianLift
 public import FLT.Mazur.OriginalBoundaryGenericRankCoverage
 public import FLT.Mazur.OriginalBoundaryGenerizingRanks
 public import FLT.Mazur.OriginalBoundaryGeometricTensor
@@ -10683,6 +10690,7 @@ public import FLT.Mazur.PolygonFirstPairReduction
 public import FLT.Mazur.PolygonFirstUniversalNodeReduction
 public import FLT.Mazur.PolygonGeneralizedCurve
 public import FLT.Mazur.PolygonGeneralizedCurveActionExt
+public import FLT.Mazur.PolygonGeneralizedPinchingIso
 public import FLT.Mazur.PolygonGenusOne
 public import FLT.Mazur.PolygonGeometricGenus
 public import FLT.Mazur.PolygonGeometricGraph
@@ -12549,6 +12557,11 @@ public import FLT.Mazur.ScalarExtensionImageReduction
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
 public import FLT.Mazur.ScalarFiniteDifferentialGenerators
+public import FLT.Mazur.ScalarFullStalkJacobianClearing
+public import FLT.Mazur.ScalarFullStalkJacobianTests
+public import FLT.Mazur.ScalarFullStalkPresentation
+public import FLT.Mazur.ScalarFullStalkPresentationRows
+public import FLT.Mazur.ScalarFullStalkResidue
 public import FLT.Mazur.ScalarGenericSourceEquations
 public import FLT.Mazur.ScalarGeometricFiberTests
 public import FLT.Mazur.ScalarGeometricPointTests
@@ -12559,6 +12572,7 @@ public import FLT.Mazur.ScalarImageNeighborhoodBasis
 public import FLT.Mazur.ScalarImageOriginalGenerators
 public import FLT.Mazur.ScalarImageResidueGenerators
 public import FLT.Mazur.ScalarImageSourceGenerators
+public import FLT.Mazur.ScalarJacobianRowSelection
 public import FLT.Mazur.ScalarLocalJacobianAnnihilator
 public import FLT.Mazur.ScalarLocalPolynomialResidueRigidity
 public import FLT.Mazur.ScalarLocalPolynomialTests
@@ -12592,6 +12606,7 @@ public import FLT.Mazur.ScalarRestrictionImage
 public import FLT.Mazur.ScalarSourceOpenBaseFiniteness
 public import FLT.Mazur.ScalarSourceOpenElementEquations
 public import FLT.Mazur.ScalarSourceOpenEquationNeighborhoods
+public import FLT.Mazur.ScalarSourceOpenFullStalkJacobians
 public import FLT.Mazur.ScalarSourceOpenJacobianTests
 public import FLT.Mazur.ScalarSourceOpenLocalizedJacobians
 public import FLT.Mazur.ScalarSourceOpenRigidity
@@ -12608,6 +12623,7 @@ public import FLT.Mazur.ScalarTestKernelProducts
 public import FLT.Mazur.ScalarTestLocalizationKernels
 public import FLT.Mazur.ScalarTestResidualSeparation
 public import FLT.Mazur.ScalarTowerDivision
+public import FLT.Mazur.ScalarUnitJacobianRigidity
 public import FLT.Mazur.ScalarUnramifiedBaseDifferentials
 public import FLT.Mazur.ScalarWholeFiberStrata
 public import FLT.Mazur.SchematicClosureFiniteSections
@@ -13472,6 +13488,7 @@ public import FLT.Mazur.SimultaneousEtaleAcyclicNeighborhood
 public import FLT.Mazur.SimultaneousSmoothAcyclicNeighborhood
 public import FLT.Mazur.SimultaneousSmoothHilbertParameters
 public import FLT.Mazur.SingleProperTranslationChart
+public import FLT.Mazur.SingularIntegralGeneralizedCubic
 public import FLT.Mazur.SmallAffineParameterBases
 public import FLT.Mazur.SmallHilbertPresentation
 public import FLT.Mazur.SmallHilbertPresentationPullback
@@ -13739,6 +13756,7 @@ public import FLT.Mazur.ToricHopfQuotientCoordinates
 public import FLT.Mazur.TorusArithmeticCyclicity
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TorusCyclotomicGenerator
+public import FLT.Mazur.TorusGroupLawRigidity
 public import FLT.Mazur.TorusPointUnitEquiv
 public import FLT.Mazur.TorusRootsOfUnityBaseChange
 public import FLT.Mazur.TorusRootsOfUnityCartier
