@@ -8238,6 +8238,7 @@ public import FLT.Mazur.LocalIdealTensorCriterion
 public import FLT.Mazur.LocalLineTwistLocalization
 public import FLT.Mazur.LocalLocalizationCartier
 public import FLT.Mazur.LocalParameterFlatness
+public import FLT.Mazur.LocalProperIdealTensorCriterion
 public import FLT.Mazur.LocalizationCech
 public import FLT.Mazur.LocalizationCechCompare
 public import FLT.Mazur.LocalizationCechExact
