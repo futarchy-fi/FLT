@@ -9163,8 +9163,10 @@ public import FLT.Mazur.OriginalBoundaryAdicFlatRelation
 public import FLT.Mazur.OriginalBoundaryAdicRelationLift
 public import FLT.Mazur.OriginalBoundaryAffineAssociatedDetection
 public import FLT.Mazur.OriginalBoundaryAffineAssociatedLift
+public import FLT.Mazur.OriginalBoundaryAffinePrincipalLift
 public import FLT.Mazur.OriginalBoundaryAssociatedComparisonLift
 public import FLT.Mazur.OriginalBoundaryAssociatedDifferentialDetection
+public import FLT.Mazur.OriginalBoundaryAssociatedPrincipalLift
 public import FLT.Mazur.OriginalBoundaryBranchScalars
 public import FLT.Mazur.OriginalBoundaryComparisonClosedImage
 public import FLT.Mazur.OriginalBoundaryComparisonLocalClosedImage
@@ -9233,6 +9235,8 @@ public import FLT.Mazur.OriginalBoundaryScalarCartesian
 public import FLT.Mazur.OriginalBoundaryScalarImageLift
 public import FLT.Mazur.OriginalBoundaryScalarMonomorphism
 public import FLT.Mazur.OriginalBoundaryScalarRelation
+public import FLT.Mazur.OriginalBoundarySourceOpenEquationLift
+public import FLT.Mazur.OriginalBoundaryStalkJacobianLift
 public import FLT.Mazur.OriginalBoundaryStalkPolynomialLift
 public import FLT.Mazur.OriginalBoundaryTensorLift
 public import FLT.Mazur.OriginalBoundaryUniformFlatPoint
@@ -12570,7 +12574,13 @@ public import FLT.Mazur.ScalarQuotientResiduePresentation
 public import FLT.Mazur.ScalarResidueClosureGeometry
 public import FLT.Mazur.ScalarRestrictionFiniteness
 public import FLT.Mazur.ScalarRestrictionImage
+public import FLT.Mazur.ScalarSourceOpenElementEquations
+public import FLT.Mazur.ScalarSourceOpenEquationNeighborhoods
+public import FLT.Mazur.ScalarSourceOpenJacobianTests
+public import FLT.Mazur.ScalarSourceOpenRigidity
+public import FLT.Mazur.ScalarStalkDifferentialJacobianRigidity
 public import FLT.Mazur.ScalarStalkDifferentialPolynomialRigidity
+public import FLT.Mazur.ScalarStalkJacobianTests
 public import FLT.Mazur.ScalarStrataBoundaryRefinement
 public import FLT.Mazur.ScalarStratumThickenings
 public import FLT.Mazur.ScalarTensorExactFibers
@@ -14957,7 +14967,9 @@ public import FLT.Mazur.WeierstrassDividedArithmeticLabeledSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledSystem
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledSystemDescent
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledTerminalEdge
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedIndexed
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedShallow
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedTriple
 public import FLT.Mazur.WeierstrassDividedArithmeticMixedAllMiddleCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticMixedCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticMixedHorizontalCoverage
@@ -15051,8 +15063,10 @@ public import FLT.Mazur.WeierstrassDividedArithmeticTerminalReflectedNegative
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalReflectedNegativeReversed
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalReflectedPositive
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalReflectedPositiveReversed
+public import FLT.Mazur.WeierstrassDividedArithmeticTerminalSelfMiddleTangent
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalSelfReciprocal
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalSelfShallow
+public import FLT.Mazur.WeierstrassDividedArithmeticTerminalSelfTriple
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalSmoothPuncture
 public import FLT.Mazur.WeierstrassDividedArithmeticTripleNegative
 public import FLT.Mazur.WeierstrassDividedArithmeticTripleNegativeReversed
@@ -15813,6 +15827,8 @@ public import FLT.Mazur.WeierstrassDividedLocalizedIntersection
 public import FLT.Mazur.WeierstrassDividedLowerData
 public import FLT.Mazur.WeierstrassDividedLowerDepthClosedFiber
 public import FLT.Mazur.WeierstrassDividedMiddleFieldSmooth
+public import FLT.Mazur.WeierstrassDividedMiddleTangentCoverage
+public import FLT.Mazur.WeierstrassDividedMiddleTangentResidue
 public import FLT.Mazur.WeierstrassDividedMixedKernelAction
 public import FLT.Mazur.WeierstrassDividedMixedKernelActionLaws
 public import FLT.Mazur.WeierstrassDividedMixedKernelPair
@@ -16739,6 +16755,7 @@ public import FLT.Mazur.WeierstrassDividedTangentOriginalAction
 public import FLT.Mazur.WeierstrassDividedTangentOriginalRelations
 public import FLT.Mazur.WeierstrassDividedTangentOverlapProjections
 public import FLT.Mazur.WeierstrassDividedTangentPartialOverlap
+public import FLT.Mazur.WeierstrassDividedTangentPrimeSmooth
 public import FLT.Mazur.WeierstrassDividedTangentRefinementComparison
 public import FLT.Mazur.WeierstrassDividedTangentRelations
 public import FLT.Mazur.WeierstrassDividedTangentReverseComparison
@@ -16826,6 +16843,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalRetainedBranchCompatibility
 public import FLT.Mazur.WeierstrassDividedTerminalRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalSelfReciprocalAddition
 public import FLT.Mazur.WeierstrassDividedTerminalSelfShallowAddition
+public import FLT.Mazur.WeierstrassDividedTerminalSelfTripleAddition
 public import FLT.Mazur.WeierstrassDividedTerminalSplitNodeBranches
 public import FLT.Mazur.WeierstrassDividedTerminalTangentRestriction
 public import FLT.Mazur.WeierstrassDividedTerminalTensorActionGeometry
