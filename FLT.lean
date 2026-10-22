@@ -6541,6 +6541,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingCubicRelation
 public import FLT.Mazur.GeneralizedCurveMarkingCubicResidueFields
 public import FLT.Mazur.GeneralizedCurveMarkingCubicTopology
 public import FLT.Mazur.GeneralizedCurveMarkingFrameAffineChange
+public import FLT.Mazur.GeneralizedCurveMarkingFrameCubicChange
 public import FLT.Mazur.GeneralizedCurveMarkingFrameEquation
 public import FLT.Mazur.GeneralizedCurveMarkingFrameScaling
 public import FLT.Mazur.GeneralizedCurveMarkingFramedProducts
