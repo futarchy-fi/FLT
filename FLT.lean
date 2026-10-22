@@ -13161,6 +13161,7 @@ public import FLT.Mazur.SchemePairDoubleBoundaryRange
 public import FLT.Mazur.SchemePairDoubleBoundarySymmetry
 public import FLT.Mazur.SchemePairDoubleBoundaryTransfer
 public import FLT.Mazur.SchemePairSymmetryPoints
+public import FLT.Mazur.SchemePairedStableAffineLifts
 public import FLT.Mazur.SchemeParameterEquivalence
 public import FLT.Mazur.SchemePicardClasses
 public import FLT.Mazur.SchemePicardGroup
