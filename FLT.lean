@@ -5915,9 +5915,14 @@ public import FLT.Mazur.FieldCoefficientCohomologyDimension
 public import FLT.Mazur.FieldNonspecialGeometricCriterion
 public import FLT.Mazur.FilteredDiagramSectionDescent
 public import FLT.Mazur.FilteredDiagramUnitDescent
+public import FLT.Mazur.FilteredFiniteAlgebraFlatDescent
+public import FLT.Mazur.FilteredFiniteModuleFlatDescent
+public import FLT.Mazur.FilteredFiniteModuleFlatFamily
 public import FLT.Mazur.FilteredFlatChartRelations
 public import FLT.Mazur.FilteredFlatRelationDescent
 public import FLT.Mazur.FilteredFlatRelationFamily
+public import FLT.Mazur.FilteredMatrixFlatDescent
+public import FLT.Mazur.FilteredMatrixInnerInverse
 public import FLT.Mazur.FilteredPoleBasis
 public import FLT.Mazur.FilteredPoleInfiniteIndependence
 public import FLT.Mazur.FilteredPoleLeadingCoefficient
@@ -6193,6 +6198,7 @@ public import FLT.Mazur.FiniteModuleAdicComplete
 public import FLT.Mazur.FiniteModuleAdicCompleteLarge
 public import FLT.Mazur.FiniteModuleFiberSurjective
 public import FLT.Mazur.FiniteModuleFiberVanishing
+public import FLT.Mazur.FiniteModuleMatrixPresentation
 public import FLT.Mazur.FiniteNeighborhoodAffineOpens
 public import FLT.Mazur.FiniteNeighborhoodQuotientCover
 public import FLT.Mazur.FiniteNeighborhoodQuotientOverlap
@@ -8195,6 +8201,7 @@ public import FLT.Mazur.LineTensorSourceNaturality
 public import FLT.Mazur.LineTrivializationCocycle
 public import FLT.Mazur.LineTrivializationCocycleRecovery
 public import FLT.Mazur.LineTrivializationCoordinates
+public import FLT.Mazur.LinearCokernelSplitCertificate
 public import FLT.Mazur.LinearCoordinateRatio
 public import FLT.Mazur.LinearMapKernelTransport
 public import FLT.Mazur.LinearRankOneFrameUnit
@@ -8302,6 +8309,8 @@ public import FLT.Mazur.LocallySplitSheafMonomorphism
 public import FLT.Mazur.LocallySplitSheafPullback
 public import FLT.Mazur.LocallySplitSheafTransport
 public import FLT.Mazur.MarkedIntegerModel
+public import FLT.Mazur.MatrixCokernelFlatCertificate
+public import FLT.Mazur.MatrixCokernelScalarExtension
 public import FLT.Mazur.MaximalAdicDetection
 public import FLT.Mazur.MinimalPrimeLocalizedIdeal
 public import FLT.Mazur.ModuleBinarySectionGluing
