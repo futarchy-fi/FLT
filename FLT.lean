@@ -9177,6 +9177,7 @@ public import FLT.Mazur.OriginalBoundaryLocalImageKernelDetection
 public import FLT.Mazur.OriginalBoundaryLocalJacobianLift
 public import FLT.Mazur.OriginalBoundaryLocalPolynomialLift
 public import FLT.Mazur.OriginalBoundaryLocalRelationDescent
+public import FLT.Mazur.OriginalBoundaryLocalizedScalarLift
 public import FLT.Mazur.OriginalBoundaryNilpotentEndpointLift
 public import FLT.Mazur.OriginalBoundaryPolynomialLift
 public import FLT.Mazur.OriginalBoundaryPrincipalCover
