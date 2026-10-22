@@ -16271,6 +16271,7 @@ public import FLT.Mazur.WeierstrassDividedNodalWiderReflectedCoverage
 public import FLT.Mazur.WeierstrassDividedNodalWiderReflectedIndexed
 public import FLT.Mazur.WeierstrassDividedNodalWiderReflectedNegative
 public import FLT.Mazur.WeierstrassDividedNodalWiderReflectedResidue
+public import FLT.Mazur.WeierstrassDividedNodalWiderReflectedSecant
 public import FLT.Mazur.WeierstrassDividedNodalWiderReflectedSmooth
 public import FLT.Mazur.WeierstrassDividedNodalWiderReflectedSource
 public import FLT.Mazur.WeierstrassDividedNodeCommonSumOutput
