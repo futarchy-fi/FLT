@@ -6490,6 +6490,7 @@ public import FLT.Mazur.GeneralizedCurveFiniteSubgroup
 public import FLT.Mazur.GeneralizedCurveGeneratorTransport
 public import FLT.Mazur.GeneralizedCurveGeometricAffineChart
 public import FLT.Mazur.GeneralizedCurveGeometricGroupIso
+public import FLT.Mazur.GeneralizedCurveGeometricPointPowers
 public import FLT.Mazur.GeneralizedCurveGeometricProjectiveIso
 public import FLT.Mazur.GeneralizedCurveGeometricRotationsIso
 public import FLT.Mazur.GeneralizedCurveGeometricWeierstrass
