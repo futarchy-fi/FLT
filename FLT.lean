@@ -12579,6 +12579,7 @@ public import FLT.Mazur.ScalarSourceOpenBaseFiniteness
 public import FLT.Mazur.ScalarSourceOpenElementEquations
 public import FLT.Mazur.ScalarSourceOpenEquationNeighborhoods
 public import FLT.Mazur.ScalarSourceOpenJacobianTests
+public import FLT.Mazur.ScalarSourceOpenLocalizedJacobians
 public import FLT.Mazur.ScalarSourceOpenRigidity
 public import FLT.Mazur.ScalarStalkDifferentialJacobianRigidity
 public import FLT.Mazur.ScalarStalkDifferentialPolynomialRigidity
