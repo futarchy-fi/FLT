@@ -4926,6 +4926,7 @@ public import FLT.Mazur.DivisorComplementExactPowers
 public import FLT.Mazur.DivisorComplementExhaustion
 public import FLT.Mazur.DivisorComplementFaithful
 public import FLT.Mazur.DivisorComplementFiltration
+public import FLT.Mazur.DivisorComplementFunctionPullback
 public import FLT.Mazur.DivisorComplementFunctions
 public import FLT.Mazur.DivisorComplementLeadingProduct
 public import FLT.Mazur.DivisorComplementLinear
