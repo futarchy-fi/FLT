@@ -5922,6 +5922,7 @@ public import FLT.Mazur.FilteredFiniteModuleFlatFamily
 public import FLT.Mazur.FilteredFlatChartRelations
 public import FLT.Mazur.FilteredFlatRelationDescent
 public import FLT.Mazur.FilteredFlatRelationFamily
+public import FLT.Mazur.FilteredIdealTensorKernel
 public import FLT.Mazur.FilteredMatrixFlatDescent
 public import FLT.Mazur.FilteredMatrixInnerInverse
 public import FLT.Mazur.FilteredPoleBasis
@@ -7865,6 +7866,13 @@ public import FLT.Mazur.IdealSheafStableOpen
 public import FLT.Mazur.IdealSheafStableOpenMaximal
 public import FLT.Mazur.IdealSheafStableSupportCriterion
 public import FLT.Mazur.IdealSheafSupportPower
+public import FLT.Mazur.IdealTensorAdicCriterion
+public import FLT.Mazur.IdealTensorAdicImage
+public import FLT.Mazur.IdealTensorIntersection
+public import FLT.Mazur.IdealTensorKernelFinite
+public import FLT.Mazur.IdealTensorPresentationCriterion
+public import FLT.Mazur.IdealTensorTransition
+public import FLT.Mazur.IdealTensorTrivialRelation
 public import FLT.Mazur.IdealTwistCohomologyStabilization
 public import FLT.Mazur.IdealTwistCohomologySystem
 public import FLT.Mazur.IdealTwistCohomologyVanishing
@@ -8232,6 +8240,7 @@ public import FLT.Mazur.LocalCompletionSmoothCriterion
 public import FLT.Mazur.LocalFiberRegularQuotient
 public import FLT.Mazur.LocalFiberTensorInjectivity
 public import FLT.Mazur.LocalHilbertTranslationCover
+public import FLT.Mazur.LocalIdealTensorCriterion
 public import FLT.Mazur.LocalLineTwistLocalization
 public import FLT.Mazur.LocalLocalizationCartier
 public import FLT.Mazur.LocalParameterFlatness
@@ -8352,6 +8361,7 @@ public import FLT.Mazur.ModuleGlobalUnitGenerator
 public import FLT.Mazur.ModuleHomIsomorphismOpen
 public import FLT.Mazur.ModuleHomOpenTransport
 public import FLT.Mazur.ModuleHomTrivialOpen
+public import FLT.Mazur.ModuleIdealTensorFinite
 public import FLT.Mazur.ModuleImageSection
 public import FLT.Mazur.ModuleInjectiveFlasque
 public import FLT.Mazur.ModuleLineBundleOpenCover
@@ -15338,6 +15348,16 @@ public import FLT.Mazur.WeierstrassDividedArithmeticLabeledSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledSystem
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledSystemDescent
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledTerminalEdge
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedAdjacentMiddleLocal
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedAdjacentMiddleLocalCover
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedAdjacentMiddleReversed
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedAdjacentMiddleSmoothCover
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedAdjacentMiddleTransfer
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedAdjacentOddLocal
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedAdjacentOddLocalCover
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedAdjacentOddReversed
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedAdjacentOddSmoothCover
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedAdjacentOddTransfer
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedDouble
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedDoubleMiddleOutput
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedIndexed
@@ -15363,6 +15383,11 @@ public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedSelfOddPunctured
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedSelfOddSmoothCover
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedSelfPunctured
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedSelfSmoothCover
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedSeparatedBoundaryDepth
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedSeparatedBoundaryLocal
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedSeparatedBoundaryLocalCover
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedSeparatedBoundaryReversed
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedSeparatedBoundarySmoothCover
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedShallow
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedTransfer
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedTriple
@@ -15370,6 +15395,10 @@ public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedZeroOddLocal
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedZeroOddLocalCover
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedZeroOddReversed
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedZeroOddSmoothCover
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedZeroSeparatedBoundaryLocal
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedZeroSeparatedBoundaryLocalCover
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedZeroSeparatedBoundaryReversed
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedZeroSeparatedBoundarySmoothCover
 public import FLT.Mazur.WeierstrassDividedArithmeticMixedAllMiddleCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticMixedBoundaryMaximalCover
 public import FLT.Mazur.WeierstrassDividedArithmeticMixedBoundaryNodalLocal
