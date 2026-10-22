@@ -9186,6 +9186,7 @@ public import FLT.Mazur.OriginalBoundaryFiniteStageTests
 public import FLT.Mazur.OriginalBoundaryFiniteValuationRanks
 public import FLT.Mazur.OriginalBoundaryFlatImageGeometry
 public import FLT.Mazur.OriginalBoundaryFlatRelationLift
+public import FLT.Mazur.OriginalBoundaryFullStalkJacobianLift
 public import FLT.Mazur.OriginalBoundaryGenericRankCoverage
 public import FLT.Mazur.OriginalBoundaryGenerizingRanks
 public import FLT.Mazur.OriginalBoundaryGeometricTensor
