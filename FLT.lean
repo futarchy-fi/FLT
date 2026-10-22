@@ -9235,6 +9235,7 @@ public import FLT.Mazur.OriginalBoundaryGenerizingRanks
 public import FLT.Mazur.OriginalBoundaryGeometricTensor
 public import FLT.Mazur.OriginalBoundaryGlobalDifferentialLift
 public import FLT.Mazur.OriginalBoundaryImageNeighborhood
+public import FLT.Mazur.OriginalBoundaryInvariantOrbitTests
 public import FLT.Mazur.OriginalBoundaryJacobianLift
 public import FLT.Mazur.OriginalBoundaryKernelPairLift
 public import FLT.Mazur.OriginalBoundaryLiftFiniteSupport
