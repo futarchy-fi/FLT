@@ -3324,6 +3324,7 @@ public import FLT.Mazur.AffineNormCartesianGluing
 public import FLT.Mazur.AffineNormChartIndependence
 public import FLT.Mazur.AffineNormGluing
 public import FLT.Mazur.AffineNormGluingFiber
+public import FLT.Mazur.AffineObstructionAnnihilator
 public import FLT.Mazur.AffineObstructionBaseChange
 public import FLT.Mazur.AffineObstructionEquiv
 public import FLT.Mazur.AffineOpenCartesianSections
