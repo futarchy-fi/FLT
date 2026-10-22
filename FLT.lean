@@ -7865,6 +7865,7 @@ public import FLT.Mazur.IdealTensorAdicImage
 public import FLT.Mazur.IdealTensorCoefficientTransition
 public import FLT.Mazur.IdealTensorConnectingEquiv
 public import FLT.Mazur.IdealTensorConnectingMap
+public import FLT.Mazur.IdealTensorConnectingNaturality
 public import FLT.Mazur.IdealTensorIntersection
 public import FLT.Mazur.IdealTensorKernelFinite
 public import FLT.Mazur.IdealTensorPresentationCriterion
