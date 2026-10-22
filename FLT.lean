@@ -8941,6 +8941,7 @@ public import FLT.Mazur.OneGonRootsOfUnityPrimePowerCyclic
 public import FLT.Mazur.OneGonRootsOfUnitySubgroup
 public import FLT.Mazur.OneGonScalarExtension
 public import FLT.Mazur.OneGonSeparated
+public import FLT.Mazur.OneGonSingularTranslation
 public import FLT.Mazur.OneGonSmoothCoefficientGroup
 public import FLT.Mazur.OneGonSmoothCoefficientProjection
 public import FLT.Mazur.OneGonSmoothCoefficientTower
