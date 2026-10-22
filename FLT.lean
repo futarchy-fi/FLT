@@ -5616,6 +5616,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteSubframeCompatibility
 public import FLT.Mazur.EquivalenceRelationCompleteSupportedTests
 public import FLT.Mazur.EquivalenceRelationCompleteTestCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteTestFinite
+public import FLT.Mazur.EquivalenceRelationCompleteTestInvariants
 public import FLT.Mazur.EquivalenceRelationCompleteTestPartition
 public import FLT.Mazur.EquivalenceRelationCompleteThickeningAction
 public import FLT.Mazur.EquivalenceRelationCompleteThickeningFinite
@@ -5716,7 +5717,9 @@ public import FLT.Mazur.EquivalenceRelationOriginalChartScalars
 public import FLT.Mazur.EquivalenceRelationOriginalOrbitComparison
 public import FLT.Mazur.EquivalenceRelationOriginalScalarFiber
 public import FLT.Mazur.EquivalenceRelationPairedAffineCover
+public import FLT.Mazur.EquivalenceRelationPairedAffineDomain
 public import FLT.Mazur.EquivalenceRelationPairedNormalizedCover
+public import FLT.Mazur.EquivalenceRelationPairedRankStages
 public import FLT.Mazur.EquivalenceRelationPrescribedQuotientCorrection
 public import FLT.Mazur.EquivalenceRelationPrincipalCompleteCharacters
 public import FLT.Mazur.EquivalenceRelationPrincipalPrimeCoverage
@@ -6570,6 +6573,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingPoleReduction
 public import FLT.Mazur.GeneralizedCurveMarkingPoleTwoExpansion
 public import FLT.Mazur.GeneralizedCurveMarkingProjectiveIso
 public import FLT.Mazur.GeneralizedCurveMarkingProjectiveSections
+public import FLT.Mazur.GeneralizedCurveMarkingTransportedLift
 public import FLT.Mazur.GeneralizedCurveNaturalIsoGluing
 public import FLT.Mazur.GeneralizedCurvePicardClasses
 public import FLT.Mazur.GeneralizedCurvePicardPresheaf
@@ -7312,6 +7316,9 @@ public import FLT.Mazur.HilbertOriginalCoreInvariantCoefficients
 public import FLT.Mazur.HilbertOriginalRankCoreCover
 public import FLT.Mazur.HilbertOriginalRankStageBoundaryLifts
 public import FLT.Mazur.HilbertOriginalRankStageCoverage
+public import FLT.Mazur.HilbertOriginalRelationPairedAffineLifts
+public import FLT.Mazur.HilbertOriginalRelationPairedInvariantLifts
+public import FLT.Mazur.HilbertOriginalRelationPairedScalarLifts
 public import FLT.Mazur.HilbertOriginalScalarFrameCharts
 public import FLT.Mazur.HilbertOriginalScalarMaximalCover
 public import FLT.Mazur.HilbertOriginalScalarStrata
@@ -8289,6 +8296,7 @@ public import FLT.Mazur.ModuleSectionRatioPullback
 public import FLT.Mazur.ModuleSectionRatios
 public import FLT.Mazur.ModuleSectionRegularity
 public import FLT.Mazur.ModuleSectionScalarExactness
+public import FLT.Mazur.ModuleSectionSquareTransport
 public import FLT.Mazur.ModuleSectionTransport
 public import FLT.Mazur.ModuleSectionTransportRestriction
 public import FLT.Mazur.ModuleSectionUnit
@@ -8385,6 +8393,7 @@ public import FLT.Mazur.ModuleSourceSectionBaseChange
 public import FLT.Mazur.ModuleStalkExact
 public import FLT.Mazur.ModuleSubobjectCoverEquality
 public import FLT.Mazur.ModuleTensorCokernelDescent
+public import FLT.Mazur.ModuleTensorFramePullback
 public import FLT.Mazur.ModuleTensorPowerSection
 public import FLT.Mazur.ModuleTensorPowerSectionInduction
 public import FLT.Mazur.ModuleTensorPullbackRestriction
@@ -13176,6 +13185,7 @@ public import FLT.Mazur.SchemePairDoubleBoundarySymmetry
 public import FLT.Mazur.SchemePairDoubleBoundaryTransfer
 public import FLT.Mazur.SchemePairSymmetryPoints
 public import FLT.Mazur.SchemePairedStableAffineLifts
+public import FLT.Mazur.SchemePairedStableAffineRefinement
 public import FLT.Mazur.SchemeParameterEquivalence
 public import FLT.Mazur.SchemePicardClasses
 public import FLT.Mazur.SchemePicardGroup
@@ -13503,7 +13513,10 @@ public import FLT.Mazur.SectionLinePullbackFraction
 public import FLT.Mazur.SectionPointFrameBaseChange
 public import FLT.Mazur.SectionPointPowerBaseChange
 public import FLT.Mazur.SectionPoleAdaptedBasis
+public import FLT.Mazur.SectionPoleBaseChangeDifference
 public import FLT.Mazur.SectionPoleBaseChangeFrames
+public import FLT.Mazur.SectionPoleBaseChangeNormalization
+public import FLT.Mazur.SectionPoleBaseChangeSections
 public import FLT.Mazur.SectionPoleCanonicalCoefficient
 public import FLT.Mazur.SectionPoleFrameChange
 public import FLT.Mazur.SectionPoleGeneratorCover
@@ -13543,6 +13556,7 @@ public import FLT.Mazur.SectionRetainedProjOpens
 public import FLT.Mazur.SectionRetainedProjStructuralMap
 public import FLT.Mazur.SectionRetainedSheafEvaluation
 public import FLT.Mazur.SectionRetainedSourceLineEvaluation
+public import FLT.Mazur.SectionSquareTransportFrame
 public import FLT.Mazur.SectionSumFiberDegree
 public import FLT.Mazur.SectionSumFieldLength
 public import FLT.Mazur.SectionSumFinite
@@ -13836,6 +13850,8 @@ public import FLT.Mazur.TensorPowerComparedSectionCons
 public import FLT.Mazur.TensorPowerComparedSections
 public import FLT.Mazur.TensorPowerDistribution
 public import FLT.Mazur.TensorPowerFrameComparison
+public import FLT.Mazur.TensorPowerFramePullback
+public import FLT.Mazur.TensorPowerFramedComposition
 public import FLT.Mazur.TensorPowerGeneratorOpen
 public import FLT.Mazur.TensorPowerNestedSection
 public import FLT.Mazur.TensorPowerPullbackComparison
