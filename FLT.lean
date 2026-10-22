@@ -8934,6 +8934,7 @@ public import FLT.Mazur.OneGonProductEndpoints
 public import FLT.Mazur.OneGonProductNormalization
 public import FLT.Mazur.OneGonProductTorus
 public import FLT.Mazur.OneGonQuotient
+public import FLT.Mazur.OneGonResidualNodePresentation
 public import FLT.Mazur.OneGonResidualNormalFormLifting
 public import FLT.Mazur.OneGonResidualSingularCover
 public import FLT.Mazur.OneGonRetainedFiberReduced
