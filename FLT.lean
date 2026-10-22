@@ -3492,6 +3492,7 @@ public import FLT.Mazur.AffineUniformIdealPowers
 public import FLT.Mazur.AffineValuationCoordinateSquare
 public import FLT.Mazur.AffineValuationGeneratorLift
 public import FLT.Mazur.AffineValuationIntegralLift
+public import FLT.Mazur.AffineWeierstrassBaseChange
 public import FLT.Mazur.AlgClosedOpenCover
 public import FLT.Mazur.AlgClosedSectionHomExt
 public import FLT.Mazur.AlgebraEqualizerCoordinates
