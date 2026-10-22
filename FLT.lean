@@ -6598,6 +6598,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingFramePullback
 public import FLT.Mazur.GeneralizedCurveMarkingFrameScaling
 public import FLT.Mazur.GeneralizedCurveMarkingFramedProducts
 public import FLT.Mazur.GeneralizedCurveMarkingGluedMorphism
+public import FLT.Mazur.GeneralizedCurveMarkingGluedProper
 public import FLT.Mazur.GeneralizedCurveMarkingGluedRecovery
 public import FLT.Mazur.GeneralizedCurveMarkingHigherMonomials
 public import FLT.Mazur.GeneralizedCurveMarkingHomogeneousEquation
