@@ -5983,6 +5983,7 @@ public import FLT.Mazur.FiniteDiagramCoverModel
 public import FLT.Mazur.FiniteDiagramIntegerModel
 public import FLT.Mazur.FiniteDiagramUnitDescent
 public import FLT.Mazur.FiniteDifferencePolynomial
+public import FLT.Mazur.FiniteDifferenceProductPolynomial
 public import FLT.Mazur.FiniteDifferenceProducts
 public import FLT.Mazur.FiniteDivisorCohomology
 public import FLT.Mazur.FiniteDivisorComponentAvoidance
