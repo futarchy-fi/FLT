@@ -9307,6 +9307,7 @@ public import FLT.Mazur.OriginalBoundaryCoefficientOrbitTests
 public import FLT.Mazur.OriginalBoundaryComparisonClosedImage
 public import FLT.Mazur.OriginalBoundaryComparisonLocalClosedImage
 public import FLT.Mazur.OriginalBoundaryComparisonNeighborhood
+public import FLT.Mazur.OriginalBoundaryComparisonOrderIdeals
 public import FLT.Mazur.OriginalBoundaryCompleteChartLifts
 public import FLT.Mazur.OriginalBoundaryCompleteRankDetection
 public import FLT.Mazur.OriginalBoundaryCompleteRankKernel
