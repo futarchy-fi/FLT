@@ -6580,6 +6580,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingFramedProducts
 public import FLT.Mazur.GeneralizedCurveMarkingHigherMonomials
 public import FLT.Mazur.GeneralizedCurveMarkingHomogeneousEquation
 public import FLT.Mazur.GeneralizedCurveMarkingLineBaseChange
+public import FLT.Mazur.GeneralizedCurveMarkingLineCoherence
 public import FLT.Mazur.GeneralizedCurveMarkingLocalCubic
 public import FLT.Mazur.GeneralizedCurveMarkingLowPoles
 public import FLT.Mazur.GeneralizedCurveMarkingMarkedCoordinates
