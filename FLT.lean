@@ -3451,6 +3451,8 @@ public import FLT.Mazur.AffineSplitLineSourceTransport
 public import FLT.Mazur.AffineSquareEquivalences
 public import FLT.Mazur.AffineSquareScalarExtension
 public import FLT.Mazur.AffineSquareTensorComparison
+public import FLT.Mazur.AffineStageLocalizedCriterion
+public import FLT.Mazur.AffineStageLocalizedTarget
 public import FLT.Mazur.AffineStageObstructionSquare
 public import FLT.Mazur.AffineStagePointReconstruction
 public import FLT.Mazur.AffineStageResidualCriterion
@@ -4185,6 +4187,9 @@ public import FLT.Mazur.CoefficientAcyclicClassDivisor
 public import FLT.Mazur.CoefficientAcyclicLineDivisor
 public import FLT.Mazur.CoefficientAffineFlatCharts
 public import FLT.Mazur.CoefficientAffineFlatRelation
+public import FLT.Mazur.CoefficientAffineLocalObstruction
+public import FLT.Mazur.CoefficientAffineRingSystem
+public import FLT.Mazur.CoefficientAffineStructureMap
 public import FLT.Mazur.CoefficientCartesianHomDescent
 public import FLT.Mazur.CoefficientCartesianProperty
 public import FLT.Mazur.CoefficientCartierCommonModel
@@ -4208,6 +4213,7 @@ public import FLT.Mazur.CoefficientOpenClosedDescent
 public import FLT.Mazur.CoefficientOpenNeighborhood
 public import FLT.Mazur.CoefficientOriginalHomDescent
 public import FLT.Mazur.CoefficientOriginalOpenDescent
+public import FLT.Mazur.CoefficientPointLocalSystem
 public import FLT.Mazur.CoefficientPointedCommonModel
 public import FLT.Mazur.CoefficientProperDescent
 public import FLT.Mazur.CoefficientPropertyComparison
@@ -9629,6 +9635,10 @@ public import FLT.Mazur.PinchingChartBaseChange
 public import FLT.Mazur.PinchingNeighborhoods
 public import FLT.Mazur.PinchingPullbackTransport
 public import FLT.Mazur.PointDivisorIsoCohomology
+public import FLT.Mazur.PointLocalizedObstructionVanishing
+public import FLT.Mazur.PointLocalizedRingColimit
+public import FLT.Mazur.PointLocalizedRingDiagram
+public import FLT.Mazur.PointLocalizedRingMap
 public import FLT.Mazur.PointNormalizedAcyclicTests
 public import FLT.Mazur.PointNormalizedDirectImage
 public import FLT.Mazur.PointNormalizedDivisorBaseChange
