@@ -16267,6 +16267,7 @@ public import FLT.Mazur.WeierstrassDividedNodalTangentNeighborhoodCover
 public import FLT.Mazur.WeierstrassDividedNodalTripleNegativePairCover
 public import FLT.Mazur.WeierstrassDividedNodalTriplePairPromotion
 public import FLT.Mazur.WeierstrassDividedNodalTriplePositivePairCover
+public import FLT.Mazur.WeierstrassDividedNodalWiderReflectedCoverage
 public import FLT.Mazur.WeierstrassDividedNodalWiderReflectedIndexed
 public import FLT.Mazur.WeierstrassDividedNodalWiderReflectedResidue
 public import FLT.Mazur.WeierstrassDividedNodalWiderReflectedSmooth
