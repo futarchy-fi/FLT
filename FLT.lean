@@ -7871,9 +7871,14 @@ public import FLT.Mazur.IdealSheafStableSupportCriterion
 public import FLT.Mazur.IdealSheafSupportPower
 public import FLT.Mazur.IdealTensorAdicCriterion
 public import FLT.Mazur.IdealTensorAdicImage
+public import FLT.Mazur.IdealTensorCoefficientTransition
+public import FLT.Mazur.IdealTensorConnectingEquiv
+public import FLT.Mazur.IdealTensorConnectingMap
+public import FLT.Mazur.IdealTensorConnectingNaturality
 public import FLT.Mazur.IdealTensorIntersection
 public import FLT.Mazur.IdealTensorKernelFinite
 public import FLT.Mazur.IdealTensorPresentationCriterion
+public import FLT.Mazur.IdealTensorPresentationLift
 public import FLT.Mazur.IdealTensorTransition
 public import FLT.Mazur.IdealTensorTrivialRelation
 public import FLT.Mazur.IdealTwistCohomologyStabilization
@@ -8247,6 +8252,7 @@ public import FLT.Mazur.LocalIdealTensorCriterion
 public import FLT.Mazur.LocalLineTwistLocalization
 public import FLT.Mazur.LocalLocalizationCartier
 public import FLT.Mazur.LocalParameterFlatness
+public import FLT.Mazur.LocalProperIdealTensorCriterion
 public import FLT.Mazur.LocalizationCech
 public import FLT.Mazur.LocalizationCechCompare
 public import FLT.Mazur.LocalizationCechExact
@@ -12772,6 +12778,9 @@ public import FLT.Mazur.RelativeTupleSections
 public import FLT.Mazur.RelativeUniversalDistinctLift
 public import FLT.Mazur.RelativeVeryAmpleLineBundle
 public import FLT.Mazur.RepeatedCubicRoots
+public import FLT.Mazur.ResidualPresentationInjectivity
+public import FLT.Mazur.ResidualPresentationKernel
+public import FLT.Mazur.ResidualPresentationKernelMap
 public import FLT.Mazur.ResidualProductExtension
 public import FLT.Mazur.ResidualProductLinearExtension
 public import FLT.Mazur.ResidualStrictCoefficientGenerizations
