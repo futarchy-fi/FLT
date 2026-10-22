@@ -5939,6 +5939,7 @@ public import FLT.Mazur.FilteredRingFiniteEqualities
 public import FLT.Mazur.FilteredRingFiniteUnits
 public import FLT.Mazur.FilteredRingPairWitnesses
 public import FLT.Mazur.FilteredRingSurjectiveDescent
+public import FLT.Mazur.FilteredStageObstructionCriterion
 public import FLT.Mazur.FiniteAffineAtlasDiagramDescent
 public import FLT.Mazur.FiniteAffineBaseNeighborhood
 public import FLT.Mazur.FiniteAffineCoverDimension
