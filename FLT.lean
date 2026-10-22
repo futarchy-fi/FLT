@@ -6673,6 +6673,7 @@ public import FLT.Mazur.GeneralizedCurveSmoothBaseCubic
 public import FLT.Mazur.GeneralizedCurveSmoothBaseDimension
 public import FLT.Mazur.GeneralizedCurveSmoothIntegral
 public import FLT.Mazur.GeneralizedCurveSmoothMarking
+public import FLT.Mazur.GeneralizedCurveSmoothOpenDimension
 public import FLT.Mazur.GeneralizedCurveSmoothPullback
 public import FLT.Mazur.GeneralizedCurveSquareProjection
 public import FLT.Mazur.GeneralizedCurveSquareTestTransport
