@@ -7827,6 +7827,7 @@ public import FLT.Mazur.IdealModulePullbackCoherence
 public import FLT.Mazur.IdealModulePullbackRestrict
 public import FLT.Mazur.IdealModuleSheaf
 public import FLT.Mazur.IdealObstructionScalarExtension
+public import FLT.Mazur.IdealObstructionUnitCriterion
 public import FLT.Mazur.IdealPowerChartDescent
 public import FLT.Mazur.IdealPowerCompatibility
 public import FLT.Mazur.IdealPowerExtensionCharts
