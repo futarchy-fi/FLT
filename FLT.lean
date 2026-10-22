@@ -13311,6 +13311,7 @@ public import FLT.Mazur.SchemeScalarIntegralBadCover
 public import FLT.Mazur.SchemeScalarIntegralCover
 public import FLT.Mazur.SchemeScalarMinimalEndpoint
 public import FLT.Mazur.SchemeScalarOrbitComparison
+public import FLT.Mazur.SchemeScalarOrbitEndpoints
 public import FLT.Mazur.SchemeScalarPrincipalNeighborhood
 public import FLT.Mazur.SchemeScalarPrincipalNeighborhoodFamily
 public import FLT.Mazur.SchemeScalarRelationPullback
