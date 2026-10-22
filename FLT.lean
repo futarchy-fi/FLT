@@ -9290,6 +9290,11 @@ public import FLT.Mazur.OriginalBoundaryCoefficientOrbitTests
 public import FLT.Mazur.OriginalBoundaryComparisonClosedImage
 public import FLT.Mazur.OriginalBoundaryComparisonLocalClosedImage
 public import FLT.Mazur.OriginalBoundaryComparisonNeighborhood
+public import FLT.Mazur.OriginalBoundaryCompleteChartLifts
+public import FLT.Mazur.OriginalBoundaryCompleteRankDetection
+public import FLT.Mazur.OriginalBoundaryCompleteRankKernel
+public import FLT.Mazur.OriginalBoundaryCompleteRankLift
+public import FLT.Mazur.OriginalBoundaryCompleteResidualIdeal
 public import FLT.Mazur.OriginalBoundaryDifferentialFiberLift
 public import FLT.Mazur.OriginalBoundaryDifferentialIdealPower
 public import FLT.Mazur.OriginalBoundaryDifferentialKernelSupport
@@ -12318,8 +12323,10 @@ public import FLT.Mazur.RelativeDistinctFreeAction
 public import FLT.Mazur.RelativeDistinctSubframe
 public import FLT.Mazur.RelativeDistinctTupleLift
 public import FLT.Mazur.RelativeDistinctTuples
+public import FLT.Mazur.RelativeDoubleRankBoundedDetection
 public import FLT.Mazur.RelativeDoubleRankClosedLifts
 public import FLT.Mazur.RelativeDoubleRankCompact
+public import FLT.Mazur.RelativeDoubleRankCompleteKernel
 public import FLT.Mazur.RelativeDoubleRankDetection
 public import FLT.Mazur.RelativeDoubleRankExactDenominators
 public import FLT.Mazur.RelativeDoubleRankGlobalLifts
@@ -13018,6 +13025,7 @@ public import FLT.Mazur.SchemeEtaleImageModelBaseChange
 public import FLT.Mazur.SchemeEtaleImageQuotient
 public import FLT.Mazur.SchemeFamilyTripleOverlap
 public import FLT.Mazur.SchemeFiniteComparisonDenseTests
+public import FLT.Mazur.SchemeFiniteCoverScalarKernel
 public import FLT.Mazur.SchemeFiniteEndpointComparison
 public import FLT.Mazur.SchemeFiniteFiberInterior
 public import FLT.Mazur.SchemeFiniteGeometricOpenSpread
