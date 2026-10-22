@@ -6511,6 +6511,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingBaseChange
 public import FLT.Mazur.GeneralizedCurveNaturalIsoGluing
 public import FLT.Mazur.GeneralizedCurvePicardClasses
 public import FLT.Mazur.GeneralizedCurvePicardPresheaf
+public import FLT.Mazur.GeneralizedCurvePointFiberCohomology
 public import FLT.Mazur.GeneralizedCurvePointTranslation
 public import FLT.Mazur.GeneralizedCurvePointedCubicFamily
 public import FLT.Mazur.GeneralizedCurvePointedCubicGroup
