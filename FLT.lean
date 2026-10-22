@@ -7302,6 +7302,7 @@ public import FLT.Mazur.HilbertOriginalCoreInvariantCoefficients
 public import FLT.Mazur.HilbertOriginalRankCoreCover
 public import FLT.Mazur.HilbertOriginalRankStageBoundaryLifts
 public import FLT.Mazur.HilbertOriginalRankStageCoverage
+public import FLT.Mazur.HilbertOriginalRelationPairedAffineLifts
 public import FLT.Mazur.HilbertOriginalScalarFrameCharts
 public import FLT.Mazur.HilbertOriginalScalarMaximalCover
 public import FLT.Mazur.HilbertOriginalScalarStrata
