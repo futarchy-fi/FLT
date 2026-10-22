@@ -4210,6 +4210,7 @@ public import FLT.Mazur.CoefficientSectionDescent
 public import FLT.Mazur.CoefficientSectionEquality
 public import FLT.Mazur.CoefficientSectionNeighborhood
 public import FLT.Mazur.CoefficientSectionRecovery
+public import FLT.Mazur.CoefficientSeparationTransport
 public import FLT.Mazur.CoefficientSmoothConnectedDescent
 public import FLT.Mazur.CoefficientSmoothDescent
 public import FLT.Mazur.CoefficientSmoothMarkingRefinement
