@@ -6491,6 +6491,7 @@ public import FLT.Mazur.GeneralizedCurveGeneratorTransport
 public import FLT.Mazur.GeneralizedCurveGeometricAffineChart
 public import FLT.Mazur.GeneralizedCurveGeometricGroupIso
 public import FLT.Mazur.GeneralizedCurveGeometricProjectiveIso
+public import FLT.Mazur.GeneralizedCurveGeometricRotationsIso
 public import FLT.Mazur.GeneralizedCurveGeometricWeierstrass
 public import FLT.Mazur.GeneralizedCurveGraph
 public import FLT.Mazur.GeneralizedCurveGraphBaseChange
@@ -8375,6 +8376,7 @@ public import FLT.Mazur.NilpotentQuadraticRootNaturality
 public import FLT.Mazur.NilpotentSectionRestriction
 public import FLT.Mazur.NilpotentTorsionPowerEquality
 public import FLT.Mazur.NilpotentUnramifiedOpenRigidity
+public import FLT.Mazur.NilpotentVariableChangeLifting
 public import FLT.Mazur.NodalFamilyGeometricConnected
 public import FLT.Mazur.NodalFamilySmoothOpenDimension
 public import FLT.Mazur.NodalFiberAlgebra
@@ -8898,13 +8900,17 @@ public import FLT.Mazur.OneGonFormalCoordinates
 public import FLT.Mazur.OneGonGlobalPushout
 public import FLT.Mazur.OneGonGluing
 public import FLT.Mazur.OneGonIdentityDivisorAmple
+public import FLT.Mazur.OneGonInfinitesimalReduction
 public import FLT.Mazur.OneGonIntegral
 public import FLT.Mazur.OneGonLocalDescent
 public import FLT.Mazur.OneGonLocalizedEqualizer
 public import FLT.Mazur.OneGonMobiusConductors
 public import FLT.Mazur.OneGonNilpotentCharacterHom
 public import FLT.Mazur.OneGonNilpotentDiagonalizableLift
+public import FLT.Mazur.OneGonNilpotentGeneralizedPresentation
 public import FLT.Mazur.OneGonNilpotentIntrinsicHomLift
+public import FLT.Mazur.OneGonNilpotentNormalForm
+public import FLT.Mazur.OneGonNilpotentPointedPresentation
 public import FLT.Mazur.OneGonNilpotentSmoothAffine
 public import FLT.Mazur.OneGonNilpotentSurjectiveCharacterLift
 public import FLT.Mazur.OneGonNilpotentSurjectiveHomLift
@@ -8917,6 +8923,7 @@ public import FLT.Mazur.OneGonNormalizationCoordinates
 public import FLT.Mazur.OneGonNormalizationFinite
 public import FLT.Mazur.OneGonNormalizationPullback
 public import FLT.Mazur.OneGonNormalizationTorus
+public import FLT.Mazur.OneGonNormalizedGeneralizedCurve
 public import FLT.Mazur.OneGonOriginalGroupComparison
 public import FLT.Mazur.OneGonOverlap
 public import FLT.Mazur.OneGonOverlapGraph
@@ -8927,6 +8934,7 @@ public import FLT.Mazur.OneGonProductEndpoints
 public import FLT.Mazur.OneGonProductNormalization
 public import FLT.Mazur.OneGonProductTorus
 public import FLT.Mazur.OneGonQuotient
+public import FLT.Mazur.OneGonResidualNormalFormLifting
 public import FLT.Mazur.OneGonRetainedFiberReduced
 public import FLT.Mazur.OneGonRootsOfUnityPrimePowerAmple
 public import FLT.Mazur.OneGonRootsOfUnityPrimePowerCyclic
@@ -8984,6 +8992,9 @@ public import FLT.Mazur.OneGonSmoothingUniversalComparison
 public import FLT.Mazur.OneGonSmoothingZeroCocone
 public import FLT.Mazur.OneGonSmoothingZeroFiber
 public import FLT.Mazur.OneGonSmoothingZeroGenus
+public import FLT.Mazur.OneGonSplitTangentNormalForm
+public import FLT.Mazur.OneGonSquareZeroCoordinates
+public import FLT.Mazur.OneGonSquareZeroNormalForm
 public import FLT.Mazur.OneGonTransition
 public import FLT.Mazur.OneGonZeroTorusComparison
 public import FLT.Mazur.OpenAtlasTripleGluing
@@ -9142,8 +9153,10 @@ public import FLT.Mazur.OriginalBoundaryAdicFlatRelation
 public import FLT.Mazur.OriginalBoundaryAdicRelationLift
 public import FLT.Mazur.OriginalBoundaryAffineAssociatedDetection
 public import FLT.Mazur.OriginalBoundaryAffineAssociatedLift
+public import FLT.Mazur.OriginalBoundaryAffinePrincipalLift
 public import FLT.Mazur.OriginalBoundaryAssociatedComparisonLift
 public import FLT.Mazur.OriginalBoundaryAssociatedDifferentialDetection
+public import FLT.Mazur.OriginalBoundaryAssociatedPrincipalLift
 public import FLT.Mazur.OriginalBoundaryBranchScalars
 public import FLT.Mazur.OriginalBoundaryComparisonClosedImage
 public import FLT.Mazur.OriginalBoundaryComparisonLocalClosedImage
@@ -9212,6 +9225,8 @@ public import FLT.Mazur.OriginalBoundaryScalarCartesian
 public import FLT.Mazur.OriginalBoundaryScalarImageLift
 public import FLT.Mazur.OriginalBoundaryScalarMonomorphism
 public import FLT.Mazur.OriginalBoundaryScalarRelation
+public import FLT.Mazur.OriginalBoundarySourceOpenEquationLift
+public import FLT.Mazur.OriginalBoundaryStalkJacobianLift
 public import FLT.Mazur.OriginalBoundaryStalkPolynomialLift
 public import FLT.Mazur.OriginalBoundaryTensorLift
 public import FLT.Mazur.OriginalBoundaryUniformFlatPoint
@@ -12549,7 +12564,13 @@ public import FLT.Mazur.ScalarQuotientResiduePresentation
 public import FLT.Mazur.ScalarResidueClosureGeometry
 public import FLT.Mazur.ScalarRestrictionFiniteness
 public import FLT.Mazur.ScalarRestrictionImage
+public import FLT.Mazur.ScalarSourceOpenElementEquations
+public import FLT.Mazur.ScalarSourceOpenEquationNeighborhoods
+public import FLT.Mazur.ScalarSourceOpenJacobianTests
+public import FLT.Mazur.ScalarSourceOpenRigidity
+public import FLT.Mazur.ScalarStalkDifferentialJacobianRigidity
 public import FLT.Mazur.ScalarStalkDifferentialPolynomialRigidity
+public import FLT.Mazur.ScalarStalkJacobianTests
 public import FLT.Mazur.ScalarStrataBoundaryRefinement
 public import FLT.Mazur.ScalarStratumThickenings
 public import FLT.Mazur.ScalarTensorExactFibers
@@ -18967,6 +18988,8 @@ public import FLT.Mazur.WeierstrassVariableChangeIdentity
 public import FLT.Mazur.WeierstrassVariableChangeIntegralEquation
 public import FLT.Mazur.WeierstrassVariableChangeIntegralIso
 public import FLT.Mazur.WeierstrassVariableChangeIntegralMorphism
+public import FLT.Mazur.WeierstrassVariableChangeIntrinsicGroup
+public import FLT.Mazur.WeierstrassVariableChangeLeftSmoothProduct
 public import FLT.Mazur.WeierstrassVariableChangeLinear
 public import FLT.Mazur.WeierstrassVariableChangeLocalCoordinates
 public import FLT.Mazur.WeierstrassVariableChangeLocalMorphism
@@ -18983,6 +19006,7 @@ public import FLT.Mazur.WeierstrassVariableChangeSmoothIso
 public import FLT.Mazur.WeierstrassVariableChangeSmoothPointAddition
 public import FLT.Mazur.WeierstrassVariableChangeSmoothProduct
 public import FLT.Mazur.WeierstrassVariableChangeUnitChart
+public import FLT.Mazur.WeierstrassVariableChangeWholeAction
 public import FLT.Mazur.WeierstrassVariableChangeZero
 public import FLT.Mazur.WeierstrassVerticalAdditionCharts
 public import FLT.Mazur.WeierstrassVerticalChartCompatibility
