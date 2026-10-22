@@ -16363,6 +16363,7 @@ public import FLT.Mazur.WeierstrassDividedReciprocalChordPrimeCoverage
 public import FLT.Mazur.WeierstrassDividedReciprocalChordSmoothDomain
 public import FLT.Mazur.WeierstrassDividedReciprocalChordSource
 public import FLT.Mazur.WeierstrassDividedReciprocalChordSpecialization
+public import FLT.Mazur.WeierstrassDividedReciprocalChordTangentFormula
 public import FLT.Mazur.WeierstrassDividedReciprocalExtendedAddition
 public import FLT.Mazur.WeierstrassDividedReciprocalExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalFormula
