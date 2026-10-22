@@ -6101,6 +6101,7 @@ public import FLT.Mazur.FiniteFreeQuotientIdealPresentation
 public import FLT.Mazur.FiniteFreeRefinementPullback
 public import FLT.Mazur.FiniteFreeRingQuotientComparison
 public import FLT.Mazur.FiniteFreeSectionLineTransport
+public import FLT.Mazur.FiniteFreeSeparatedScalarFrame
 public import FLT.Mazur.FiniteFreeSplitCharpoly
 public import FLT.Mazur.FiniteFreeSplitComparisonEquation
 public import FLT.Mazur.FiniteFreeTensorSections
