@@ -12540,6 +12540,7 @@ public import FLT.Mazur.ScalarLocalPolynomialTests
 public import FLT.Mazur.ScalarLocalizedIdealNilpotence
 public import FLT.Mazur.ScalarLocalizedPolynomialDescent
 public import FLT.Mazur.ScalarLocalizedSeparableEquations
+public import FLT.Mazur.ScalarLocalizedSeparableTests
 public import FLT.Mazur.ScalarMinimalCharacterNeighborhood
 public import FLT.Mazur.ScalarMinimalCharacterPropagation
 public import FLT.Mazur.ScalarNilpotenceFlatBaseChange
