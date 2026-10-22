@@ -6607,6 +6607,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingOpenCubic
 public import FLT.Mazur.GeneralizedCurveMarkingOverlap
 public import FLT.Mazur.GeneralizedCurveMarkingOverlapCocycle
 public import FLT.Mazur.GeneralizedCurveMarkingOverlapCubic
+public import FLT.Mazur.GeneralizedCurveMarkingOverlapCubicRefinement
 public import FLT.Mazur.GeneralizedCurveMarkingOverlapRefinement
 public import FLT.Mazur.GeneralizedCurveMarkingPointedCubic
 public import FLT.Mazur.GeneralizedCurveMarkingPoleReduction
