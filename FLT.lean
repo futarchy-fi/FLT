@@ -12583,6 +12583,7 @@ public import FLT.Mazur.ScalarFirstOrderLocalRigidity
 public import FLT.Mazur.ScalarFirstOrderStalkRigidity
 public import FLT.Mazur.ScalarFreeActionRigidity
 public import FLT.Mazur.ScalarFreeInvariantFiniteness
+public import FLT.Mazur.ScalarFreeResidualFullness
 public import FLT.Mazur.ScalarFullStalkJacobianClearing
 public import FLT.Mazur.ScalarFullStalkJacobianTests
 public import FLT.Mazur.ScalarFullStalkPresentation
