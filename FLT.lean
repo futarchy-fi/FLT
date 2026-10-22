@@ -6490,6 +6490,7 @@ public import FLT.Mazur.GeneralizedCurveFiniteSubgroup
 public import FLT.Mazur.GeneralizedCurveGeneratorTransport
 public import FLT.Mazur.GeneralizedCurveGeometricAffineChart
 public import FLT.Mazur.GeneralizedCurveGeometricGroupIso
+public import FLT.Mazur.GeneralizedCurveGeometricPointPowers
 public import FLT.Mazur.GeneralizedCurveGeometricProjectiveIso
 public import FLT.Mazur.GeneralizedCurveGeometricRotationsIso
 public import FLT.Mazur.GeneralizedCurveGeometricWeierstrass
@@ -6505,10 +6506,15 @@ public import FLT.Mazur.GeneralizedCurveIteratedProjection
 public import FLT.Mazur.GeneralizedCurveLocalCubicPresentation
 public import FLT.Mazur.GeneralizedCurveLocalCyclicCubic
 public import FLT.Mazur.GeneralizedCurveLocalCyclicCubicUnrestricted
+public import FLT.Mazur.GeneralizedCurveLocalMarkingFrames
 public import FLT.Mazur.GeneralizedCurveLocalPointFrames
+public import FLT.Mazur.GeneralizedCurveMarkingBaseChange
+public import FLT.Mazur.GeneralizedCurveMarkingCanonicalLine
+public import FLT.Mazur.GeneralizedCurveMarkingLowPoles
 public import FLT.Mazur.GeneralizedCurveNaturalIsoGluing
 public import FLT.Mazur.GeneralizedCurvePicardClasses
 public import FLT.Mazur.GeneralizedCurvePicardPresheaf
+public import FLT.Mazur.GeneralizedCurvePointFiberCohomology
 public import FLT.Mazur.GeneralizedCurvePointTranslation
 public import FLT.Mazur.GeneralizedCurvePointedCubicFamily
 public import FLT.Mazur.GeneralizedCurvePointedCubicGroup
@@ -6516,12 +6522,15 @@ public import FLT.Mazur.GeneralizedCurvePointedCubicPresentation
 public import FLT.Mazur.GeneralizedCurvePointedCubicUnrestrictedFamily
 public import FLT.Mazur.GeneralizedCurvePullback
 public import FLT.Mazur.GeneralizedCurvePullbackCoherence
+public import FLT.Mazur.GeneralizedCurveRelativeMarkingFrames
+public import FLT.Mazur.GeneralizedCurveRelativeMarkingSections
 public import FLT.Mazur.GeneralizedCurveRelativePointFrames
 public import FLT.Mazur.GeneralizedCurveSectionComposition
 public import FLT.Mazur.GeneralizedCurveSmoothBaseChange
 public import FLT.Mazur.GeneralizedCurveSmoothBaseCubic
 public import FLT.Mazur.GeneralizedCurveSmoothBaseDimension
 public import FLT.Mazur.GeneralizedCurveSmoothIntegral
+public import FLT.Mazur.GeneralizedCurveSmoothMarking
 public import FLT.Mazur.GeneralizedCurveSmoothPullback
 public import FLT.Mazur.GeneralizedCurveSquareProjection
 public import FLT.Mazur.GeneralizedCurveSquareTestTransport
@@ -9177,6 +9186,7 @@ public import FLT.Mazur.OriginalBoundaryBranchScalars
 public import FLT.Mazur.OriginalBoundaryComparisonClosedImage
 public import FLT.Mazur.OriginalBoundaryComparisonLocalClosedImage
 public import FLT.Mazur.OriginalBoundaryComparisonNeighborhood
+public import FLT.Mazur.OriginalBoundaryDifferentialFiberLift
 public import FLT.Mazur.OriginalBoundaryDifferentialIdealPower
 public import FLT.Mazur.OriginalBoundaryDifferentialKernelSupport
 public import FLT.Mazur.OriginalBoundaryDifferentialOpenLift
@@ -10874,6 +10884,9 @@ public import FLT.Mazur.PolygonOriginalNodeBasicOpen
 public import FLT.Mazur.PolygonOriginalNodeClosed
 public import FLT.Mazur.PolygonOriginalNodeMarkingComplement
 public import FLT.Mazur.PolygonOriginalNodePoint
+public import FLT.Mazur.PolygonOriginalPointAcyclic
+public import FLT.Mazur.PolygonOriginalPointPowers
+public import FLT.Mazur.PolygonOriginalSmoothMarking
 public import FLT.Mazur.PolygonOriginalStageAdicSquare
 public import FLT.Mazur.PolygonParameterMarkingBaseChange
 public import FLT.Mazur.PolygonParameterMarkingLine
@@ -12548,6 +12561,7 @@ public import FLT.Mazur.ScalarComponentRankCeiling
 public import FLT.Mazur.ScalarConstructibleFiniteCover
 public import FLT.Mazur.ScalarConstructibleStrata
 public import FLT.Mazur.ScalarDifferentialAssociatedDenominator
+public import FLT.Mazur.ScalarDifferentialFiberDual
 public import FLT.Mazur.ScalarDifferentialJacobianAnnihilator
 public import FLT.Mazur.ScalarDifferentialPolynomialAnnihilator
 public import FLT.Mazur.ScalarDifferentialPrincipalRigidity
@@ -12557,6 +12571,10 @@ public import FLT.Mazur.ScalarExtensionImageReduction
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
 public import FLT.Mazur.ScalarFiniteDifferentialGenerators
+public import FLT.Mazur.ScalarFiniteTypeFiberTests
+public import FLT.Mazur.ScalarFiniteTypeJacobianEquations
+public import FLT.Mazur.ScalarFirstOrderLocalRigidity
+public import FLT.Mazur.ScalarFirstOrderStalkRigidity
 public import FLT.Mazur.ScalarFullStalkJacobianClearing
 public import FLT.Mazur.ScalarFullStalkJacobianTests
 public import FLT.Mazur.ScalarFullStalkPresentation
@@ -12591,6 +12609,7 @@ public import FLT.Mazur.ScalarMinimalCharacterPropagation
 public import FLT.Mazur.ScalarNilpotenceFlatBaseChange
 public import FLT.Mazur.ScalarNilpotenceMinimalFiber
 public import FLT.Mazur.ScalarPolynomialResidueRigidity
+public import FLT.Mazur.ScalarPresentationResidueGradients
 public import FLT.Mazur.ScalarPresentedLocalizedJacobians
 public import FLT.Mazur.ScalarPrimeLocalizationCover
 public import FLT.Mazur.ScalarPrimeThickeningTransitions
@@ -12606,6 +12625,7 @@ public import FLT.Mazur.ScalarRestrictionImage
 public import FLT.Mazur.ScalarSourceOpenBaseFiniteness
 public import FLT.Mazur.ScalarSourceOpenElementEquations
 public import FLT.Mazur.ScalarSourceOpenEquationNeighborhoods
+public import FLT.Mazur.ScalarSourceOpenFiberTests
 public import FLT.Mazur.ScalarSourceOpenFullStalkJacobians
 public import FLT.Mazur.ScalarSourceOpenJacobianTests
 public import FLT.Mazur.ScalarSourceOpenLocalizedJacobians
