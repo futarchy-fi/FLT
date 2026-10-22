@@ -9286,6 +9286,7 @@ public import FLT.Mazur.OriginalBoundaryDoubleRankArrowCriterion
 public import FLT.Mazur.OriginalBoundaryDoubleRankCoefficientDetection
 public import FLT.Mazur.OriginalBoundaryDoubleRankComparison
 public import FLT.Mazur.OriginalBoundaryDoubleRankGlobalLifts
+public import FLT.Mazur.OriginalBoundaryDoubleRankResidualCorrections
 public import FLT.Mazur.OriginalBoundaryDoubleRankScalarKernel
 public import FLT.Mazur.OriginalBoundaryDoubleRankTests
 public import FLT.Mazur.OriginalBoundaryEtaleImageLift
