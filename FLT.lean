@@ -9210,6 +9210,7 @@ public import FLT.Mazur.OriginalBoundaryAssociatedComparisonLift
 public import FLT.Mazur.OriginalBoundaryAssociatedDifferentialDetection
 public import FLT.Mazur.OriginalBoundaryAssociatedPrincipalLift
 public import FLT.Mazur.OriginalBoundaryBranchScalars
+public import FLT.Mazur.OriginalBoundaryCoefficientOrbitTests
 public import FLT.Mazur.OriginalBoundaryComparisonClosedImage
 public import FLT.Mazur.OriginalBoundaryComparisonLocalClosedImage
 public import FLT.Mazur.OriginalBoundaryComparisonNeighborhood
