@@ -12165,6 +12165,7 @@ public import FLT.Mazur.PulledSectionDistinctness
 public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.PushoutModuleScalars
+public import FLT.Mazur.PushoutObstructionCriterion
 public import FLT.Mazur.QuadraticComponentBound
 public import FLT.Mazur.QuadraticIncidenceInvolution
 public import FLT.Mazur.QuadraticIncidenceTranslation
