@@ -9283,6 +9283,7 @@ public import FLT.Mazur.OriginalBoundaryAffineAssociatedLift
 public import FLT.Mazur.OriginalBoundaryAffineChartOrbitTests
 public import FLT.Mazur.OriginalBoundaryAffinePrincipalLift
 public import FLT.Mazur.OriginalBoundaryAscendingRankKernel
+public import FLT.Mazur.OriginalBoundaryAscendingResidualSupport
 public import FLT.Mazur.OriginalBoundaryAssociatedComparisonLift
 public import FLT.Mazur.OriginalBoundaryAssociatedDifferentialDetection
 public import FLT.Mazur.OriginalBoundaryAssociatedPrincipalLift
