@@ -3339,6 +3339,7 @@ public import FLT.Mazur.AffineOpenKernelPower
 public import FLT.Mazur.AffineOpenNorm
 public import FLT.Mazur.AffineOpenQuotientPresentation
 public import FLT.Mazur.AffineOpenSpectrumFunctions
+public import FLT.Mazur.AffineOpenSpectrumImage
 public import FLT.Mazur.AffineOverlapDiagonal
 public import FLT.Mazur.AffineOverlapMapSections
 public import FLT.Mazur.AffineOverlapPullback
