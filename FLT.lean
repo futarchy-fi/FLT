@@ -5733,6 +5733,7 @@ public import FLT.Mazur.EquivalenceRelationQuotientInvariantExtensions
 public import FLT.Mazur.EquivalenceRelationQuotientRankOpens
 public import FLT.Mazur.EquivalenceRelationRankIdeal
 public import FLT.Mazur.EquivalenceRelationRankInterior
+public import FLT.Mazur.EquivalenceRelationRankOneTests
 public import FLT.Mazur.EquivalenceRelationRankSaturation
 public import FLT.Mazur.EquivalenceRelationRankStratumCover
 public import FLT.Mazur.EquivalenceRelationRankThickening
