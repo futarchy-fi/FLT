@@ -6573,6 +6573,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingPoleReduction
 public import FLT.Mazur.GeneralizedCurveMarkingPoleTwoExpansion
 public import FLT.Mazur.GeneralizedCurveMarkingProjectiveIso
 public import FLT.Mazur.GeneralizedCurveMarkingProjectiveSections
+public import FLT.Mazur.GeneralizedCurveMarkingTransportedFrame
 public import FLT.Mazur.GeneralizedCurveMarkingTransportedLift
 public import FLT.Mazur.GeneralizedCurveNaturalIsoGluing
 public import FLT.Mazur.GeneralizedCurvePicardClasses
