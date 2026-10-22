@@ -8386,6 +8386,7 @@ public import FLT.Mazur.ModuleSourceSectionBaseChange
 public import FLT.Mazur.ModuleStalkExact
 public import FLT.Mazur.ModuleSubobjectCoverEquality
 public import FLT.Mazur.ModuleTensorCokernelDescent
+public import FLT.Mazur.ModuleTensorFramePullback
 public import FLT.Mazur.ModuleTensorPowerSection
 public import FLT.Mazur.ModuleTensorPowerSectionInduction
 public import FLT.Mazur.ModuleTensorPullbackRestriction
