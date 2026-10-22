@@ -3324,6 +3324,9 @@ public import FLT.Mazur.AffineNormCartesianGluing
 public import FLT.Mazur.AffineNormChartIndependence
 public import FLT.Mazur.AffineNormGluing
 public import FLT.Mazur.AffineNormGluingFiber
+public import FLT.Mazur.AffineObstructionAnnihilator
+public import FLT.Mazur.AffineObstructionBaseChange
+public import FLT.Mazur.AffineObstructionEquiv
 public import FLT.Mazur.AffineOpenCartesianSections
 public import FLT.Mazur.AffineOpenCechBoundary
 public import FLT.Mazur.AffineOpenClosedLimitDescent
@@ -3448,7 +3451,9 @@ public import FLT.Mazur.AffineSplitLineSourceTransport
 public import FLT.Mazur.AffineSquareEquivalences
 public import FLT.Mazur.AffineSquareScalarExtension
 public import FLT.Mazur.AffineSquareTensorComparison
+public import FLT.Mazur.AffineStageObstructionSquare
 public import FLT.Mazur.AffineStagePointReconstruction
+public import FLT.Mazur.AffineStageResidualCriterion
 public import FLT.Mazur.AffineStalkEssentialFiniteType
 public import FLT.Mazur.AffineStalkExtension
 public import FLT.Mazur.AffineStalkFirstCotangent
@@ -3456,6 +3461,7 @@ public import FLT.Mazur.AffineStalkMorphism
 public import FLT.Mazur.AffineStructuralRelativeDimension
 public import FLT.Mazur.AffineStructuralSmoothLocus
 public import FLT.Mazur.AffineStructuralStandardSmoothChart
+public import FLT.Mazur.AffineTargetObstructionTransition
 public import FLT.Mazur.AffineTensorCoactionRecognition
 public import FLT.Mazur.AffineTensorCoalgebraComparison
 public import FLT.Mazur.AffineTensorCocycle
@@ -5924,6 +5930,7 @@ public import FLT.Mazur.FilteredFlatChartRelations
 public import FLT.Mazur.FilteredFlatRelationDescent
 public import FLT.Mazur.FilteredFlatRelationFamily
 public import FLT.Mazur.FilteredIdealTensorKernel
+public import FLT.Mazur.FilteredLocalStageFlatness
 public import FLT.Mazur.FilteredMatrixFlatDescent
 public import FLT.Mazur.FilteredMatrixInnerInverse
 public import FLT.Mazur.FilteredPoleBasis
@@ -5935,6 +5942,7 @@ public import FLT.Mazur.FilteredRingFiniteEqualities
 public import FLT.Mazur.FilteredRingFiniteUnits
 public import FLT.Mazur.FilteredRingPairWitnesses
 public import FLT.Mazur.FilteredRingSurjectiveDescent
+public import FLT.Mazur.FilteredStageObstructionCriterion
 public import FLT.Mazur.FiniteAffineAtlasDiagramDescent
 public import FLT.Mazur.FiniteAffineBaseNeighborhood
 public import FLT.Mazur.FiniteAffineCoverDimension
@@ -6453,6 +6461,7 @@ public import FLT.Mazur.FlatCoefficientSections
 public import FLT.Mazur.FlatCokernelResidueIdeals
 public import FLT.Mazur.FlatCokernelStep
 public import FLT.Mazur.FlatDominantPrincipalNeighborhood
+public import FLT.Mazur.FlatExtensionKernelAnnihilation
 public import FLT.Mazur.FlatFiniteEqualizer
 public import FLT.Mazur.FlatGlobalFunctionBaseChange
 public import FLT.Mazur.FlatGlobalFunctionsPushout
@@ -6496,6 +6505,7 @@ public import FLT.Mazur.FlatSpectrumStructureRank
 public import FLT.Mazur.FlatStructureCohomology
 public import FLT.Mazur.FlatStructureScalarMonicity
 public import FLT.Mazur.FlatStructureSectionComplex
+public import FLT.Mazur.FlatTargetObstructionMap
 public import FLT.Mazur.FlatTensorEqualizer
 public import FLT.Mazur.FlatTensorFixedSubmodule
 public import FLT.Mazur.FormallyUnramifiedQuotientCriterion
@@ -7827,6 +7837,7 @@ public import FLT.Mazur.IdealCohomologyAmpleCriterion
 public import FLT.Mazur.IdealComplementFunctionExtension
 public import FLT.Mazur.IdealConditionAcyclic
 public import FLT.Mazur.IdealFamilyIsomorphism
+public import FLT.Mazur.IdealInclusionFlatExtension
 public import FLT.Mazur.IdealIsomorphismExtension
 public import FLT.Mazur.IdealMapPowerAnnihilator
 public import FLT.Mazur.IdealModuleAffineTensor
@@ -7836,6 +7847,10 @@ public import FLT.Mazur.IdealModulePullback
 public import FLT.Mazur.IdealModulePullbackCoherence
 public import FLT.Mazur.IdealModulePullbackRestrict
 public import FLT.Mazur.IdealModuleSheaf
+public import FLT.Mazur.IdealObstructionAnnihilator
+public import FLT.Mazur.IdealObstructionOrientation
+public import FLT.Mazur.IdealObstructionScalarExtension
+public import FLT.Mazur.IdealObstructionUnitCriterion
 public import FLT.Mazur.IdealPowerChartDescent
 public import FLT.Mazur.IdealPowerCompatibility
 public import FLT.Mazur.IdealPowerExtensionCharts
@@ -7855,6 +7870,8 @@ public import FLT.Mazur.IdealPresentationQuotient
 public import FLT.Mazur.IdealPullbackVanishingCriterion
 public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IdealQuotientSectionLift
+public import FLT.Mazur.IdealResidualFlatBaseChange
+public import FLT.Mazur.IdealResidualKernelSpan
 public import FLT.Mazur.IdealSheafAdicStalkSeparation
 public import FLT.Mazur.IdealSheafAffineTestErrors
 public import FLT.Mazur.IdealSheafClopenStabilization
@@ -8252,8 +8269,10 @@ public import FLT.Mazur.LocalHilbertTranslationCover
 public import FLT.Mazur.LocalIdealTensorCriterion
 public import FLT.Mazur.LocalLineTwistLocalization
 public import FLT.Mazur.LocalLocalizationCartier
+public import FLT.Mazur.LocalMaximalStageCriterion
 public import FLT.Mazur.LocalParameterFlatness
 public import FLT.Mazur.LocalProperIdealTensorCriterion
+public import FLT.Mazur.LocalScalarObstructionCriterion
 public import FLT.Mazur.LocalizationCech
 public import FLT.Mazur.LocalizationCechCompare
 public import FLT.Mazur.LocalizationCechExact
@@ -8269,6 +8288,7 @@ public import FLT.Mazur.LocalizationFixedInvolution
 public import FLT.Mazur.LocalizationJointRestriction
 public import FLT.Mazur.LocalizationRelationClosure
 public import FLT.Mazur.LocalizedAdicCompletion
+public import FLT.Mazur.LocalizedAffineObstructionCriterion
 public import FLT.Mazur.LocalizedBaseSectionNumerator
 public import FLT.Mazur.LocalizedCoefficientFiberCartier
 public import FLT.Mazur.LocalizedComparisonTransport
@@ -8284,6 +8304,7 @@ public import FLT.Mazur.LocalizedIntegerModelIsomorphism
 public import FLT.Mazur.LocalizedKernelComparison
 public import FLT.Mazur.LocalizedKernelPathCompatibility
 public import FLT.Mazur.LocalizedLeadingIdealFamily
+public import FLT.Mazur.LocalizedObstructionVanishingCriterion
 public import FLT.Mazur.LocalizedOriginalSmoothCriterion
 public import FLT.Mazur.LocalizedPointAlgebraKernel
 public import FLT.Mazur.LocalizedPolynomialDiagramCoefficients
@@ -12163,6 +12184,7 @@ public import FLT.Mazur.PulledSectionDistinctness
 public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.PushoutModuleScalars
+public import FLT.Mazur.PushoutObstructionCriterion
 public import FLT.Mazur.QuadraticComponentBound
 public import FLT.Mazur.QuadraticIncidenceInvolution
 public import FLT.Mazur.QuadraticIncidenceTranslation
@@ -12784,6 +12806,8 @@ public import FLT.Mazur.RelativeTupleSections
 public import FLT.Mazur.RelativeUniversalDistinctLift
 public import FLT.Mazur.RelativeVeryAmpleLineBundle
 public import FLT.Mazur.RepeatedCubicRoots
+public import FLT.Mazur.ResidualFlatTargetExtension
+public import FLT.Mazur.ResidualKernelSpan
 public import FLT.Mazur.ResidualPresentationInjectivity
 public import FLT.Mazur.ResidualPresentationKernel
 public import FLT.Mazur.ResidualPresentationKernelMap
@@ -12865,6 +12889,7 @@ public import FLT.Mazur.ScalarExtensionDirectSum
 public import FLT.Mazur.ScalarExtensionImageReduction
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
+public import FLT.Mazur.ScalarExtensionUnit
 public import FLT.Mazur.ScalarFiniteDifferentialGenerators
 public import FLT.Mazur.ScalarFiniteTypeFiberTests
 public import FLT.Mazur.ScalarFiniteTypeJacobianEquations
@@ -12913,6 +12938,7 @@ public import FLT.Mazur.ScalarOrbitTensorComparison
 public import FLT.Mazur.ScalarOrbitTestLifts
 public import FLT.Mazur.ScalarPolynomialNormEquation
 public import FLT.Mazur.ScalarPolynomialResidueRigidity
+public import FLT.Mazur.ScalarPresentationKernel
 public import FLT.Mazur.ScalarPresentationResidueGradients
 public import FLT.Mazur.ScalarPresentedLocalizedJacobians
 public import FLT.Mazur.ScalarPrimeLocalizationCover
