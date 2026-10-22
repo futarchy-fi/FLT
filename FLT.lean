@@ -5721,6 +5721,7 @@ public import FLT.Mazur.EquivalenceRelationPairedAffineCover
 public import FLT.Mazur.EquivalenceRelationPairedAffineDomain
 public import FLT.Mazur.EquivalenceRelationPairedNormalizedCover
 public import FLT.Mazur.EquivalenceRelationPairedRankStages
+public import FLT.Mazur.EquivalenceRelationPositiveExactRank
 public import FLT.Mazur.EquivalenceRelationPrescribedQuotientCorrection
 public import FLT.Mazur.EquivalenceRelationPrincipalCompleteCharacters
 public import FLT.Mazur.EquivalenceRelationPrincipalPrimeCoverage
