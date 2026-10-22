@@ -12619,6 +12619,7 @@ public import FLT.Mazur.ScalarOrbitBalancingIdeal
 public import FLT.Mazur.ScalarOrbitFiniteEquations
 public import FLT.Mazur.ScalarOrbitQuotientComparison
 public import FLT.Mazur.ScalarOrbitTensorComparison
+public import FLT.Mazur.ScalarOrbitTestLifts
 public import FLT.Mazur.ScalarPolynomialResidueRigidity
 public import FLT.Mazur.ScalarPresentationResidueGradients
 public import FLT.Mazur.ScalarPresentedLocalizedJacobians
