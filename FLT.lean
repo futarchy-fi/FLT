@@ -9372,6 +9372,7 @@ public import FLT.Mazur.OriginalBoundaryLocalizedScalarLift
 public import FLT.Mazur.OriginalBoundaryNilpotentEndpointLift
 public import FLT.Mazur.OriginalBoundaryOrbitTestComparison
 public import FLT.Mazur.OriginalBoundaryPolynomialLift
+public import FLT.Mazur.OriginalBoundaryPositiveResidualRanks
 public import FLT.Mazur.OriginalBoundaryPrincipalCover
 public import FLT.Mazur.OriginalBoundaryPrincipalLiftCriterion
 public import FLT.Mazur.OriginalBoundaryRankAssociatedLift
