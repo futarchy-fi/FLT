@@ -9399,6 +9399,7 @@ public import FLT.Mazur.OriginalBoundaryFiniteValuationRanks
 public import FLT.Mazur.OriginalBoundaryFlatImageGeometry
 public import FLT.Mazur.OriginalBoundaryFlatRelationLift
 public import FLT.Mazur.OriginalBoundaryFramePolynomial
+public import FLT.Mazur.OriginalBoundaryFrameScalarNorm
 public import FLT.Mazur.OriginalBoundaryFramedEquationIdeal
 public import FLT.Mazur.OriginalBoundaryFramedEquations
 public import FLT.Mazur.OriginalBoundaryFramedScalarProducts
