@@ -12273,6 +12273,7 @@ public import FLT.Mazur.RelativeDistinctSubframe
 public import FLT.Mazur.RelativeDistinctTupleLift
 public import FLT.Mazur.RelativeDistinctTuples
 public import FLT.Mazur.RelativeDoubleRankDetection
+public import FLT.Mazur.RelativeDoubleRankRecovery
 public import FLT.Mazur.RelativeDoubleRankTestDetection
 public import FLT.Mazur.RelativeDoubleRankThickenings
 public import FLT.Mazur.RelativeEtaleFiniteBranchCover
