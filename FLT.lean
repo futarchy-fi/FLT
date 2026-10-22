@@ -8929,6 +8929,7 @@ public import FLT.Mazur.OneGonNormalizationPullback
 public import FLT.Mazur.OneGonNormalizationTorus
 public import FLT.Mazur.OneGonNormalizedGeneralizedCurve
 public import FLT.Mazur.OneGonOriginalAction
+public import FLT.Mazur.OneGonOriginalCubic
 public import FLT.Mazur.OneGonOriginalGroup
 public import FLT.Mazur.OneGonOriginalGroupComparison
 public import FLT.Mazur.OneGonOverlap
