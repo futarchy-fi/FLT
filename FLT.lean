@@ -5709,6 +5709,7 @@ public import FLT.Mazur.EquivalenceRelationNormalizedScalarComplete
 public import FLT.Mazur.EquivalenceRelationNormalizedStrictExtension
 public import FLT.Mazur.EquivalenceRelationNormalizedSubframe
 public import FLT.Mazur.EquivalenceRelationOpenChartScalars
+public import FLT.Mazur.EquivalenceRelationOriginalOrbitComparison
 public import FLT.Mazur.EquivalenceRelationOriginalScalarFiber
 public import FLT.Mazur.EquivalenceRelationPrescribedQuotientCorrection
 public import FLT.Mazur.EquivalenceRelationPrincipalCompleteCharacters
@@ -12619,6 +12620,8 @@ public import FLT.Mazur.ScalarFiniteTypeJacobianEquations
 public import FLT.Mazur.ScalarFirstOrderLocalRigidity
 public import FLT.Mazur.ScalarFirstOrderStalkRigidity
 public import FLT.Mazur.ScalarFreeActionRigidity
+public import FLT.Mazur.ScalarFreeInvariantFiniteness
+public import FLT.Mazur.ScalarFreeResidualFullness
 public import FLT.Mazur.ScalarFullStalkJacobianClearing
 public import FLT.Mazur.ScalarFullStalkJacobianTests
 public import FLT.Mazur.ScalarFullStalkPresentation
@@ -12652,6 +12655,11 @@ public import FLT.Mazur.ScalarMinimalCharacterNeighborhood
 public import FLT.Mazur.ScalarMinimalCharacterPropagation
 public import FLT.Mazur.ScalarNilpotenceFlatBaseChange
 public import FLT.Mazur.ScalarNilpotenceMinimalFiber
+public import FLT.Mazur.ScalarOrbitBalancingIdeal
+public import FLT.Mazur.ScalarOrbitFiniteEquations
+public import FLT.Mazur.ScalarOrbitQuotientComparison
+public import FLT.Mazur.ScalarOrbitTensorComparison
+public import FLT.Mazur.ScalarOrbitTestLifts
 public import FLT.Mazur.ScalarPolynomialResidueRigidity
 public import FLT.Mazur.ScalarPresentationResidueGradients
 public import FLT.Mazur.ScalarPresentedLocalizedJacobians
@@ -13321,6 +13329,7 @@ public import FLT.Mazur.SchemeScalarImageQuotient
 public import FLT.Mazur.SchemeScalarIntegralBadCover
 public import FLT.Mazur.SchemeScalarIntegralCover
 public import FLT.Mazur.SchemeScalarMinimalEndpoint
+public import FLT.Mazur.SchemeScalarOrbitComparison
 public import FLT.Mazur.SchemeScalarPrincipalNeighborhood
 public import FLT.Mazur.SchemeScalarPrincipalNeighborhoodFamily
 public import FLT.Mazur.SchemeScalarRelationPullback
@@ -15105,6 +15114,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticReflectedNegativeReversed
 public import FLT.Mazur.WeierstrassDividedArithmeticReflectedPositive
 public import FLT.Mazur.WeierstrassDividedArithmeticReflectedPositiveReversed
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedAdjacentDeepCoverage
+public import FLT.Mazur.WeierstrassDividedArithmeticRetainedAdjacentFourfoldCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedCorrectionFamily
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedDouble
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedDoubleAdditionCoverage
@@ -15115,6 +15125,8 @@ public import FLT.Mazur.WeierstrassDividedArithmeticRetainedDoublePuncture
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedEqualDeepCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedEqualDeepLocal
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedEqualDeepLocalCover
+public import FLT.Mazur.WeierstrassDividedArithmeticRetainedEqualFourfoldLocal
+public import FLT.Mazur.WeierstrassDividedArithmeticRetainedEqualFourfoldLocalCover
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedInputComparison
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedOutputComparison
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedPolygon
@@ -15122,6 +15134,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticRetainedPolygonSystem
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedSecondAdditionCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedSelfDeepTransfer
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedSelfMixedOutput
+public import FLT.Mazur.WeierstrassDividedArithmeticRetainedSelfPreMiddleTransfer
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedSeparatedCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedSingleAddition
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedSingleAdditionCoverage
@@ -15137,6 +15150,8 @@ public import FLT.Mazur.WeierstrassDividedArithmeticSelfQuadrupleAddition
 public import FLT.Mazur.WeierstrassDividedArithmeticSelfReciprocalAddition
 public import FLT.Mazur.WeierstrassDividedArithmeticSelfSmoothSecantAddition
 public import FLT.Mazur.WeierstrassDividedArithmeticSelfSmoothTangentAddition
+public import FLT.Mazur.WeierstrassDividedArithmeticSourcePairSpectrum
+public import FLT.Mazur.WeierstrassDividedArithmeticSourceSelfOriginalSmoothAddition
 public import FLT.Mazur.WeierstrassDividedArithmeticStartOneRetained
 public import FLT.Mazur.WeierstrassDividedArithmeticSystemCartesian
 public import FLT.Mazur.WeierstrassDividedArithmeticTargetInputComparison
@@ -15147,6 +15162,10 @@ public import FLT.Mazur.WeierstrassDividedArithmeticTargetPairPuncture
 public import FLT.Mazur.WeierstrassDividedArithmeticTargetPairQuotientOutput
 public import FLT.Mazur.WeierstrassDividedArithmeticTargetPairSpectrum
 public import FLT.Mazur.WeierstrassDividedArithmeticTargetSelfDeepAddition
+public import FLT.Mazur.WeierstrassDividedArithmeticTargetSelfIntermediateAddition
+public import FLT.Mazur.WeierstrassDividedArithmeticTargetSelfPreMiddleAddition
+public import FLT.Mazur.WeierstrassDividedArithmeticTargetSelfQuadrupleAddition
+public import FLT.Mazur.WeierstrassDividedArithmeticTargetSelfShallowAddition
 public import FLT.Mazur.WeierstrassDividedArithmeticTargetStructure
 public import FLT.Mazur.WeierstrassDividedArithmeticTensorProjection
 public import FLT.Mazur.WeierstrassDividedArithmeticTensorRestriction
@@ -16803,6 +16822,10 @@ public import FLT.Mazur.WeierstrassDividedSuccessiveArithmeticPairCoverage
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedSuccessivePairInputComparison
 public import FLT.Mazur.WeierstrassDividedSuccessiveSelfDeepAddition
+public import FLT.Mazur.WeierstrassDividedSuccessiveSelfIntermediateAddition
+public import FLT.Mazur.WeierstrassDividedSuccessiveSelfOriginalSmoothAddition
+public import FLT.Mazur.WeierstrassDividedSuccessiveSelfQuadrupleAddition
+public import FLT.Mazur.WeierstrassDividedSuccessiveSelfShallowAddition
 public import FLT.Mazur.WeierstrassDividedSuccessiveTensorCoordinates
 public import FLT.Mazur.WeierstrassDividedSuccessiveTensorPair
 public import FLT.Mazur.WeierstrassDividedSuccessiveTensorPairAddition
