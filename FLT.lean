@@ -6544,6 +6544,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingAffineCocycle
 public import FLT.Mazur.GeneralizedCurveMarkingAffineCubicMorphism
 public import FLT.Mazur.GeneralizedCurveMarkingAffineDiagram
 public import FLT.Mazur.GeneralizedCurveMarkingAffineOverlap
+public import FLT.Mazur.GeneralizedCurveMarkingAffineRange
 public import FLT.Mazur.GeneralizedCurveMarkingAffineRestriction
 public import FLT.Mazur.GeneralizedCurveMarkingAllPoleBasis
 public import FLT.Mazur.GeneralizedCurveMarkingAssociator
