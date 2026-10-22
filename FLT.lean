@@ -6620,6 +6620,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingTransportedCoordinates
 public import FLT.Mazur.GeneralizedCurveMarkingTransportedFrame
 public import FLT.Mazur.GeneralizedCurveMarkingTransportedLift
 public import FLT.Mazur.GeneralizedCurveNaturalIsoGluing
+public import FLT.Mazur.GeneralizedCurveOpenRestrictionMap
 public import FLT.Mazur.GeneralizedCurvePicardClasses
 public import FLT.Mazur.GeneralizedCurvePicardPresheaf
 public import FLT.Mazur.GeneralizedCurvePointFiberCohomology
