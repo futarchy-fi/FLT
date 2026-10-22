@@ -3984,6 +3984,7 @@ public import FLT.Mazur.CartierBoundarySectionRingIdentity
 public import FLT.Mazur.CartierBoundarySectionRingNaturality
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
+public import FLT.Mazur.CartierComplementMorphismExt
 public import FLT.Mazur.CartierComplementRestriction
 public import FLT.Mazur.CartierDivisorComponentRestriction
 public import FLT.Mazur.CartierDivisorMultiplicity
@@ -6544,6 +6545,13 @@ public import FLT.Mazur.GeneralizedCurveMarkingCubicPreimages
 public import FLT.Mazur.GeneralizedCurveMarkingCubicRelation
 public import FLT.Mazur.GeneralizedCurveMarkingCubicResidueFields
 public import FLT.Mazur.GeneralizedCurveMarkingCubicTopology
+public import FLT.Mazur.GeneralizedCurveMarkingFrameAffineChange
+public import FLT.Mazur.GeneralizedCurveMarkingFrameCocycle
+public import FLT.Mazur.GeneralizedCurveMarkingFrameCubicChange
+public import FLT.Mazur.GeneralizedCurveMarkingFrameEquation
+public import FLT.Mazur.GeneralizedCurveMarkingFramePresentation
+public import FLT.Mazur.GeneralizedCurveMarkingFramePullback
+public import FLT.Mazur.GeneralizedCurveMarkingFrameScaling
 public import FLT.Mazur.GeneralizedCurveMarkingFramedProducts
 public import FLT.Mazur.GeneralizedCurveMarkingHigherMonomials
 public import FLT.Mazur.GeneralizedCurveMarkingHomogeneousEquation
@@ -6555,8 +6563,11 @@ public import FLT.Mazur.GeneralizedCurveMarkingMarkingRatios
 public import FLT.Mazur.GeneralizedCurveMarkingMonomialBasis
 public import FLT.Mazur.GeneralizedCurveMarkingMonomialIndependence
 public import FLT.Mazur.GeneralizedCurveMarkingNormalMonomials
+public import FLT.Mazur.GeneralizedCurveMarkingNormalizedChange
+public import FLT.Mazur.GeneralizedCurveMarkingNormalizedCoordinates
 public import FLT.Mazur.GeneralizedCurveMarkingPointedCubic
 public import FLT.Mazur.GeneralizedCurveMarkingPoleReduction
+public import FLT.Mazur.GeneralizedCurveMarkingPoleTwoExpansion
 public import FLT.Mazur.GeneralizedCurveMarkingProjectiveIso
 public import FLT.Mazur.GeneralizedCurveMarkingProjectiveSections
 public import FLT.Mazur.GeneralizedCurveNaturalIsoGluing
@@ -13494,11 +13505,13 @@ public import FLT.Mazur.SectionPointPowerBaseChange
 public import FLT.Mazur.SectionPoleAdaptedBasis
 public import FLT.Mazur.SectionPoleBaseChangeFrames
 public import FLT.Mazur.SectionPoleCanonicalCoefficient
+public import FLT.Mazur.SectionPoleFrameChange
 public import FLT.Mazur.SectionPoleGeneratorCover
 public import FLT.Mazur.SectionPoleHZeroMultiplication
 public import FLT.Mazur.SectionPoleLeadingRestriction
 public import FLT.Mazur.SectionPoleLineFrames
 public import FLT.Mazur.SectionPoleMultiplicativeCoordinates
+public import FLT.Mazur.SectionPoleNormalizedDifference
 public import FLT.Mazur.SectionPoleSpecifiedBasis
 public import FLT.Mazur.SectionPoleSplit
 public import FLT.Mazur.SectionPowerGluing
@@ -13822,6 +13835,7 @@ public import FLT.Mazur.TensorOpenExteriorIntersection
 public import FLT.Mazur.TensorPowerComparedSectionCons
 public import FLT.Mazur.TensorPowerComparedSections
 public import FLT.Mazur.TensorPowerDistribution
+public import FLT.Mazur.TensorPowerFrameComparison
 public import FLT.Mazur.TensorPowerGeneratorOpen
 public import FLT.Mazur.TensorPowerNestedSection
 public import FLT.Mazur.TensorPowerPullbackComparison
@@ -14902,6 +14916,7 @@ public import FLT.Mazur.WeierstrassDilatationShear
 public import FLT.Mazur.WeierstrassDilatationShearHorizontal
 public import FLT.Mazur.WeierstrassDilatationShearLaurentNormalForm
 public import FLT.Mazur.WeierstrassDilatationShearNodeNormalForm
+public import FLT.Mazur.WeierstrassDilatationShearVertical
 public import FLT.Mazur.WeierstrassDilatationSmoothingCongruence
 public import FLT.Mazur.WeierstrassDilatationSmoothingDeepCongruence
 public import FLT.Mazur.WeierstrassDilatationSmoothingDepth
@@ -15472,6 +15487,8 @@ public import FLT.Mazur.WeierstrassDividedFactoredDepthBranchLift
 public import FLT.Mazur.WeierstrassDividedFactoredDepthBranchOutput
 public import FLT.Mazur.WeierstrassDividedFactoredReflectedCoordinates
 public import FLT.Mazur.WeierstrassDividedFactoredReflectedOutput
+public import FLT.Mazur.WeierstrassDividedFactoredReflectedResidue
+public import FLT.Mazur.WeierstrassDividedFactoredReflectedSecantResidue
 public import FLT.Mazur.WeierstrassDividedFaithfulActionDescent
 public import FLT.Mazur.WeierstrassDividedFifthDeepAtlas
 public import FLT.Mazur.WeierstrassDividedFifthDeepAtlasClosing
@@ -16105,6 +16122,16 @@ public import FLT.Mazur.WeierstrassDividedNodalRefinedBranchOutput
 public import FLT.Mazur.WeierstrassDividedNodalRefinedBranchReindex
 public import FLT.Mazur.WeierstrassDividedNodalRefinedBranchTerminal
 public import FLT.Mazur.WeierstrassDividedNodalRefinedBranchTerminalReindex
+public import FLT.Mazur.WeierstrassDividedNodalReflectedContraction
+public import FLT.Mazur.WeierstrassDividedNodalReflectedCoverage
+public import FLT.Mazur.WeierstrassDividedNodalReflectedIndexed
+public import FLT.Mazur.WeierstrassDividedNodalReflectedNegative
+public import FLT.Mazur.WeierstrassDividedNodalReflectedResidue
+public import FLT.Mazur.WeierstrassDividedNodalReflectedResolvedContraction
+public import FLT.Mazur.WeierstrassDividedNodalReflectedSecant
+public import FLT.Mazur.WeierstrassDividedNodalReflectedSecantCoverage
+public import FLT.Mazur.WeierstrassDividedNodalReflectedSecantResidue
+public import FLT.Mazur.WeierstrassDividedNodalReflectedSmooth
 public import FLT.Mazur.WeierstrassDividedNodalReflectedSource
 public import FLT.Mazur.WeierstrassDividedNodalSecantCases
 public import FLT.Mazur.WeierstrassDividedNodalSecondNormalization
@@ -16128,7 +16155,9 @@ public import FLT.Mazur.WeierstrassDividedNodalShallowIntermediateAmbientOverlap
 public import FLT.Mazur.WeierstrassDividedNodalShallowLeftOverlap
 public import FLT.Mazur.WeierstrassDividedNodalShallowNegativeBranchContraction
 public import FLT.Mazur.WeierstrassDividedNodalShallowNegativeBranchOutput
+public import FLT.Mazur.WeierstrassDividedNodalShallowNegativePairCover
 public import FLT.Mazur.WeierstrassDividedNodalShallowPartialOverlap
+public import FLT.Mazur.WeierstrassDividedNodalShallowPositivePairCover
 public import FLT.Mazur.WeierstrassDividedNodalShallowPromotedAddition
 public import FLT.Mazur.WeierstrassDividedNodalShallowReciprocalExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedNodalShallowReciprocalExtendedPullback
@@ -17621,6 +17650,7 @@ public import FLT.Mazur.WeierstrassEquationCoefficientChart
 public import FLT.Mazur.WeierstrassEquationCoefficientCongruence
 public import FLT.Mazur.WeierstrassEquationCoefficientProjection
 public import FLT.Mazur.WeierstrassEquationTransport
+public import FLT.Mazur.WeierstrassEvaluatedEquationRigidity
 public import FLT.Mazur.WeierstrassFactorRatioAffineTarget
 public import FLT.Mazur.WeierstrassFactorRatioNodeTarget
 public import FLT.Mazur.WeierstrassFieldChartPresentation
