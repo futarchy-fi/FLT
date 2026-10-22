@@ -6538,6 +6538,8 @@ public import FLT.Mazur.GeneralizedCurveMarkingAffineCartesian
 public import FLT.Mazur.GeneralizedCurveMarkingAffineCubicMorphism
 public import FLT.Mazur.GeneralizedCurveMarkingAffineRestriction
 public import FLT.Mazur.GeneralizedCurveMarkingAllPoleBasis
+public import FLT.Mazur.GeneralizedCurveMarkingAssociator
+public import FLT.Mazur.GeneralizedCurveMarkingAssociatorCubic
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChange
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeAffine
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeCubic
@@ -6562,6 +6564,13 @@ public import FLT.Mazur.GeneralizedCurveMarkingCubicPullbackMorphism
 public import FLT.Mazur.GeneralizedCurveMarkingCubicRelation
 public import FLT.Mazur.GeneralizedCurveMarkingCubicResidueFields
 public import FLT.Mazur.GeneralizedCurveMarkingCubicTopology
+public import FLT.Mazur.GeneralizedCurveMarkingFamilyAffine
+public import FLT.Mazur.GeneralizedCurveMarkingFamilyComplement
+public import FLT.Mazur.GeneralizedCurveMarkingFamilyCubic
+public import FLT.Mazur.GeneralizedCurveMarkingFamilyEquation
+public import FLT.Mazur.GeneralizedCurveMarkingFamilyIso
+public import FLT.Mazur.GeneralizedCurveMarkingFamilyMorphism
+public import FLT.Mazur.GeneralizedCurveMarkingFamilyPoles
 public import FLT.Mazur.GeneralizedCurveMarkingFrameAffineChange
 public import FLT.Mazur.GeneralizedCurveMarkingFrameCocycle
 public import FLT.Mazur.GeneralizedCurveMarkingFrameCubicChange
@@ -14335,6 +14344,7 @@ public import FLT.Mazur.WeierstrassChangeParameter
 public import FLT.Mazur.WeierstrassChangePointedGeneralizedIso
 public import FLT.Mazur.WeierstrassChangeSubgroupScheme
 public import FLT.Mazur.WeierstrassChangedCoefficientEvaluation
+public import FLT.Mazur.WeierstrassChangedEvaluationSquare
 public import FLT.Mazur.WeierstrassCharacterCoefficientHom
 public import FLT.Mazur.WeierstrassCharacterCoefficientNaturality
 public import FLT.Mazur.WeierstrassChartArithmeticRestriction
@@ -15180,6 +15190,11 @@ public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedMiddleLocal
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedMiddleOutput
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedMiddleSmoothCover
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedMiddleZeroCoverage
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedSelfLocal
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedSelfLocalCover
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedSelfMixed
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedSelfPunctured
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedSelfSmoothCover
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedShallow
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedTransfer
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedTriple
@@ -15329,6 +15344,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticTerminalSelfMiddleReciprocal
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalSelfMiddleSecant
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalSelfMiddleSecantGluing
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalSelfMiddleTangent
+public import FLT.Mazur.WeierstrassDividedArithmeticTerminalSelfOddCover
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalSelfReciprocal
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalSelfShallow
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalSelfTriple
@@ -15571,6 +15587,8 @@ public import FLT.Mazur.WeierstrassDividedFactoredReflectedCoordinates
 public import FLT.Mazur.WeierstrassDividedFactoredReflectedOutput
 public import FLT.Mazur.WeierstrassDividedFactoredReflectedResidue
 public import FLT.Mazur.WeierstrassDividedFactoredReflectedSecantResidue
+public import FLT.Mazur.WeierstrassDividedFactoredWiderReflectedCoordinates
+public import FLT.Mazur.WeierstrassDividedFactoredWiderReflectedOutput
 public import FLT.Mazur.WeierstrassDividedFaithfulActionDescent
 public import FLT.Mazur.WeierstrassDividedFifthDeepAtlas
 public import FLT.Mazur.WeierstrassDividedFifthDeepAtlasClosing
@@ -15706,6 +15724,7 @@ public import FLT.Mazur.WeierstrassDividedFinalRetainedConic
 public import FLT.Mazur.WeierstrassDividedFinalRetainedNodesDistinct
 public import FLT.Mazur.WeierstrassDividedFinalSplitBranchCharts
 public import FLT.Mazur.WeierstrassDividedFinalSplitLineCharts
+public import FLT.Mazur.WeierstrassDividedFinalStageFeasibility
 public import FLT.Mazur.WeierstrassDividedFinalTerminalComponents
 public import FLT.Mazur.WeierstrassDividedFinalTerminalOverComponents
 public import FLT.Mazur.WeierstrassDividedFinalZeroBranchCharts
@@ -16271,6 +16290,7 @@ public import FLT.Mazur.WeierstrassDividedNodalTangentNeighborhoodCover
 public import FLT.Mazur.WeierstrassDividedNodalTripleNegativePairCover
 public import FLT.Mazur.WeierstrassDividedNodalTriplePairPromotion
 public import FLT.Mazur.WeierstrassDividedNodalTriplePositivePairCover
+public import FLT.Mazur.WeierstrassDividedNodalWiderReflectedSource
 public import FLT.Mazur.WeierstrassDividedNodeCommonSumOutput
 public import FLT.Mazur.WeierstrassDividedNonadjacentGlobalIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentTensorIntersection
