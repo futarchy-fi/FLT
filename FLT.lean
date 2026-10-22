@@ -12305,6 +12305,7 @@ public import FLT.Mazur.RelativeDoubleRankDetection
 public import FLT.Mazur.RelativeDoubleRankExactDenominators
 public import FLT.Mazur.RelativeDoubleRankGlobalLifts
 public import FLT.Mazur.RelativeDoubleRankRecovery
+public import FLT.Mazur.RelativeDoubleRankResidualCorrections
 public import FLT.Mazur.RelativeDoubleRankScalarKernels
 public import FLT.Mazur.RelativeDoubleRankTestDetection
 public import FLT.Mazur.RelativeDoubleRankThickenings
