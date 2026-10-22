@@ -13494,6 +13494,7 @@ public import FLT.Mazur.SectionPoleHZeroMultiplication
 public import FLT.Mazur.SectionPoleLeadingRestriction
 public import FLT.Mazur.SectionPoleLineFrames
 public import FLT.Mazur.SectionPoleMultiplicativeCoordinates
+public import FLT.Mazur.SectionPoleNormalizedDifference
 public import FLT.Mazur.SectionPoleSpecifiedBasis
 public import FLT.Mazur.SectionPoleSplit
 public import FLT.Mazur.SectionPowerGluing
