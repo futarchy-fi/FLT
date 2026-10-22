@@ -6633,6 +6633,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingProjectiveIso
 public import FLT.Mazur.GeneralizedCurveMarkingProjectiveSections
 public import FLT.Mazur.GeneralizedCurveMarkingPulledCartesian
 public import FLT.Mazur.GeneralizedCurveMarkingTestCover
+public import FLT.Mazur.GeneralizedCurveMarkingTestCubicChart
 public import FLT.Mazur.GeneralizedCurveMarkingTestEquation
 public import FLT.Mazur.GeneralizedCurveMarkingTransportedCoordinates
 public import FLT.Mazur.GeneralizedCurveMarkingTransportedFrame
