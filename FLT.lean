@@ -9329,6 +9329,7 @@ public import FLT.Mazur.OriginalBoundaryRankStageComparison
 public import FLT.Mazur.OriginalBoundaryRankStageDenseCoverage
 public import FLT.Mazur.OriginalBoundaryRelationOpenLift
 public import FLT.Mazur.OriginalBoundaryRelationSupport
+public import FLT.Mazur.OriginalBoundaryResidualCoefficientLift
 public import FLT.Mazur.OriginalBoundaryResidualComparisonNeighborhood
 public import FLT.Mazur.OriginalBoundaryResidualDoubleRankEquations
 public import FLT.Mazur.OriginalBoundaryResidualEtaleImageCover
