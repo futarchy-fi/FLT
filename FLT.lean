@@ -6590,6 +6590,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingFamilyMorphism
 public import FLT.Mazur.GeneralizedCurveMarkingFamilyPoles
 public import FLT.Mazur.GeneralizedCurveMarkingFrameAffineChange
 public import FLT.Mazur.GeneralizedCurveMarkingFrameCocycle
+public import FLT.Mazur.GeneralizedCurveMarkingFrameCover
 public import FLT.Mazur.GeneralizedCurveMarkingFrameCubicChange
 public import FLT.Mazur.GeneralizedCurveMarkingFrameEquation
 public import FLT.Mazur.GeneralizedCurveMarkingFramePresentation
