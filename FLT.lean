@@ -9371,6 +9371,7 @@ public import FLT.Mazur.OriginalBoundaryDoubleRankArrowCriterion
 public import FLT.Mazur.OriginalBoundaryDoubleRankCoefficientDetection
 public import FLT.Mazur.OriginalBoundaryDoubleRankComparison
 public import FLT.Mazur.OriginalBoundaryDoubleRankCorrectedLift
+public import FLT.Mazur.OriginalBoundaryDoubleRankFramedComparison
 public import FLT.Mazur.OriginalBoundaryDoubleRankGlobalLifts
 public import FLT.Mazur.OriginalBoundaryDoubleRankResidualCorrections
 public import FLT.Mazur.OriginalBoundaryDoubleRankScalarKernel
@@ -9385,6 +9386,8 @@ public import FLT.Mazur.OriginalBoundaryFiniteStageTests
 public import FLT.Mazur.OriginalBoundaryFiniteValuationRanks
 public import FLT.Mazur.OriginalBoundaryFlatImageGeometry
 public import FLT.Mazur.OriginalBoundaryFlatRelationLift
+public import FLT.Mazur.OriginalBoundaryFramedEquationIdeal
+public import FLT.Mazur.OriginalBoundaryFramedEquations
 public import FLT.Mazur.OriginalBoundaryFullStalkJacobianLift
 public import FLT.Mazur.OriginalBoundaryGenericRankCoverage
 public import FLT.Mazur.OriginalBoundaryGenerizingRanks
@@ -9412,6 +9415,7 @@ public import FLT.Mazur.OriginalBoundaryRankChartEndpointLift
 public import FLT.Mazur.OriginalBoundaryRankCollision
 public import FLT.Mazur.OriginalBoundaryRankDifferentialTower
 public import FLT.Mazur.OriginalBoundaryRankEndpointTransposition
+public import FLT.Mazur.OriginalBoundaryRankFrameCover
 public import FLT.Mazur.OriginalBoundaryRankLocalEquationLift
 public import FLT.Mazur.OriginalBoundaryRankOneComparison
 public import FLT.Mazur.OriginalBoundaryRankOneEqualizer
@@ -12339,6 +12343,7 @@ public import FLT.Mazur.RegularParameterDomain
 public import FLT.Mazur.RegularParameterIdeals
 public import FLT.Mazur.RegularPrincipalOpenLiftExt
 public import FLT.Mazur.RegularPrincipalStructureQuotient
+public import FLT.Mazur.RelationComparisonEquation
 public import FLT.Mazur.RelativeAbelFiberOriginalSquare
 public import FLT.Mazur.RelativeAcyclicClassDivisor
 public import FLT.Mazur.RelativeAcyclicClassDivisorNaturality
@@ -12441,6 +12446,8 @@ public import FLT.Mazur.RelativeFrameClosedRankCompleteness
 public import FLT.Mazur.RelativeFrameCompleteFinite
 public import FLT.Mazur.RelativeFrameCompletenessTransfer
 public import FLT.Mazur.RelativeFrameDenseRankStrata
+public import FLT.Mazur.RelativeFrameEquationGeometry
+public import FLT.Mazur.RelativeFrameEquationSplitting
 public import FLT.Mazur.RelativeFrameExactRank
 public import FLT.Mazur.RelativeFrameMissingSection
 public import FLT.Mazur.RelativeFramePositiveRank
@@ -13104,6 +13111,7 @@ public import FLT.Mazur.SchemeDescentTransportTest
 public import FLT.Mazur.SchemeDisjointBaseChange
 public import FLT.Mazur.SchemeDisjointOpenPair
 public import FLT.Mazur.SchemeEffectiveEpiSections
+public import FLT.Mazur.SchemeEquationPullback
 public import FLT.Mazur.SchemeEtaleBoundaryTests
 public import FLT.Mazur.SchemeEtaleImageDenseModel
 public import FLT.Mazur.SchemeEtaleImageModelBaseChange
