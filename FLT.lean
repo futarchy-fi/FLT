@@ -15361,6 +15361,7 @@ public import FLT.Mazur.WeierstrassDividedDepthBranchOutput
 public import FLT.Mazur.WeierstrassDividedDepthCenterNormalization
 public import FLT.Mazur.WeierstrassDividedDepthCenterSmooth
 public import FLT.Mazur.WeierstrassDividedDepthData
+public import FLT.Mazur.WeierstrassDividedDepthFeasibility
 public import FLT.Mazur.WeierstrassDividedDepthLocalAction
 public import FLT.Mazur.WeierstrassDividedDepthMaps
 public import FLT.Mazur.WeierstrassDividedDepthNegation
