@@ -9381,6 +9381,7 @@ public import FLT.Mazur.OriginalBoundaryRankDifferentialTower
 public import FLT.Mazur.OriginalBoundaryRankEndpointTransposition
 public import FLT.Mazur.OriginalBoundaryRankLocalEquationLift
 public import FLT.Mazur.OriginalBoundaryRankOneComparison
+public import FLT.Mazur.OriginalBoundaryRankOneEqualizer
 public import FLT.Mazur.OriginalBoundaryRankOnePairs
 public import FLT.Mazur.OriginalBoundaryRankPolynomialLift
 public import FLT.Mazur.OriginalBoundaryRankStageComparison
