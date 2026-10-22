@@ -5652,6 +5652,7 @@ public import FLT.Mazur.EquivalenceRelationGeometricTestExtensions
 public import FLT.Mazur.EquivalenceRelationHigherScalarValuations
 public import FLT.Mazur.EquivalenceRelationHigherTestAtlas
 public import FLT.Mazur.EquivalenceRelationIncompleteFrameGrowth
+public import FLT.Mazur.EquivalenceRelationIndependentAffineLifts
 public import FLT.Mazur.EquivalenceRelationInvariantBoundaryAction
 public import FLT.Mazur.EquivalenceRelationInvariantCharacterArrows
 public import FLT.Mazur.EquivalenceRelationInvariantCharacterFibers
@@ -5721,6 +5722,7 @@ public import FLT.Mazur.EquivalenceRelationPairedAffineCover
 public import FLT.Mazur.EquivalenceRelationPairedAffineDomain
 public import FLT.Mazur.EquivalenceRelationPairedNormalizedCover
 public import FLT.Mazur.EquivalenceRelationPairedRankStages
+public import FLT.Mazur.EquivalenceRelationPositiveExactRank
 public import FLT.Mazur.EquivalenceRelationPrescribedQuotientCorrection
 public import FLT.Mazur.EquivalenceRelationPrincipalCompleteCharacters
 public import FLT.Mazur.EquivalenceRelationPrincipalPrimeCoverage
@@ -7170,6 +7172,7 @@ public import FLT.Mazur.HilbertIdentityGroundOriginalSection
 public import FLT.Mazur.HilbertIdentityGroundQuotientChart
 public import FLT.Mazur.HilbertIdentityGroundSourceIso
 public import FLT.Mazur.HilbertIdentityQuotientCoordinates
+public import FLT.Mazur.HilbertIndependentRankScalarCharts
 public import FLT.Mazur.HilbertInjectiveMonomialImageCover
 public import FLT.Mazur.HilbertInteriorEquationTestLift
 public import FLT.Mazur.HilbertInteriorFiniteEquations
@@ -7418,6 +7421,7 @@ public import FLT.Mazur.HilbertScalarChartBoundaryTests
 public import FLT.Mazur.HilbertScalarChartFullDescent
 public import FLT.Mazur.HilbertScalarChartSourceComparison
 public import FLT.Mazur.HilbertScalarFullAtlasLifts
+public import FLT.Mazur.HilbertScalarKernelFullRankCoverage
 public import FLT.Mazur.HilbertSourceActionRelationGraph
 public import FLT.Mazur.HilbertSourceActualMultiplierIdeal
 public import FLT.Mazur.HilbertSourceBadAffineChartEquations
@@ -9271,6 +9275,7 @@ public import FLT.Mazur.OriginalBoundaryDifferentialOpenLift
 public import FLT.Mazur.OriginalBoundaryDifferentialOpenNaturality
 public import FLT.Mazur.OriginalBoundaryDiscrepancyLocus
 public import FLT.Mazur.OriginalBoundaryDomainComparisonLift
+public import FLT.Mazur.OriginalBoundaryDoubleRankTests
 public import FLT.Mazur.OriginalBoundaryEtaleImageLift
 public import FLT.Mazur.OriginalBoundaryFaithfulTensorLift
 public import FLT.Mazur.OriginalBoundaryFieldArrowRank
@@ -12280,6 +12285,10 @@ public import FLT.Mazur.RelativeDistinctFreeAction
 public import FLT.Mazur.RelativeDistinctSubframe
 public import FLT.Mazur.RelativeDistinctTupleLift
 public import FLT.Mazur.RelativeDistinctTuples
+public import FLT.Mazur.RelativeDoubleRankDetection
+public import FLT.Mazur.RelativeDoubleRankRecovery
+public import FLT.Mazur.RelativeDoubleRankTestDetection
+public import FLT.Mazur.RelativeDoubleRankThickenings
 public import FLT.Mazur.RelativeEtaleFiniteBranchCover
 public import FLT.Mazur.RelativeExactRankFactorization
 public import FLT.Mazur.RelativeExactRankFaithful
@@ -13105,6 +13114,7 @@ public import FLT.Mazur.SchemeIndependentNormalizationRetraction
 public import FLT.Mazur.SchemeIndependentNormalizationSquare
 public import FLT.Mazur.SchemeIndependentPairNormalization
 public import FLT.Mazur.SchemeIndependentRecoveryNormalization
+public import FLT.Mazur.SchemeIndependentStableAffineLifts
 public import FLT.Mazur.SchemeIndependentTripleCocycle
 public import FLT.Mazur.SchemeInfinitesimalPointDetection
 public import FLT.Mazur.SchemeInvariantClosedScalarImage
