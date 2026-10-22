@@ -3287,6 +3287,8 @@ public import FLT.Mazur.AffineIteratedPullbackLaws
 public import FLT.Mazur.AffineIteratedPullbackSections
 public import FLT.Mazur.AffineKernelLocalization
 public import FLT.Mazur.AffineLiftedOverlapCoefficients
+public import FLT.Mazur.AffineLimitFlatCharts
+public import FLT.Mazur.AffineLimitFlatRelation
 public import FLT.Mazur.AffineLineCoalgebraDescent
 public import FLT.Mazur.AffineLineCoefficients
 public import FLT.Mazur.AffineLineTwistLocalization
@@ -4175,6 +4177,8 @@ public import FLT.Mazur.CocycleSectionOpenRecovery
 public import FLT.Mazur.CocycleSheafLimitDescent
 public import FLT.Mazur.CoefficientAcyclicClassDivisor
 public import FLT.Mazur.CoefficientAcyclicLineDivisor
+public import FLT.Mazur.CoefficientAffineFlatCharts
+public import FLT.Mazur.CoefficientAffineFlatRelation
 public import FLT.Mazur.CoefficientCartesianHomDescent
 public import FLT.Mazur.CoefficientCartesianProperty
 public import FLT.Mazur.CoefficientCartierCommonModel
@@ -5911,6 +5915,9 @@ public import FLT.Mazur.FieldCoefficientCohomologyDimension
 public import FLT.Mazur.FieldNonspecialGeometricCriterion
 public import FLT.Mazur.FilteredDiagramSectionDescent
 public import FLT.Mazur.FilteredDiagramUnitDescent
+public import FLT.Mazur.FilteredFlatChartRelations
+public import FLT.Mazur.FilteredFlatRelationDescent
+public import FLT.Mazur.FilteredFlatRelationFamily
 public import FLT.Mazur.FilteredPoleBasis
 public import FLT.Mazur.FilteredPoleInfiniteIndependence
 public import FLT.Mazur.FilteredPoleLeadingCoefficient
@@ -5918,6 +5925,7 @@ public import FLT.Mazur.FilteredRingFamilyDescent
 public import FLT.Mazur.FilteredRingFamilyElements
 public import FLT.Mazur.FilteredRingFiniteEqualities
 public import FLT.Mazur.FilteredRingFiniteUnits
+public import FLT.Mazur.FilteredRingPairWitnesses
 public import FLT.Mazur.FilteredRingSurjectiveDescent
 public import FLT.Mazur.FiniteAffineAtlasDiagramDescent
 public import FLT.Mazur.FiniteAffineBaseNeighborhood
@@ -12759,6 +12767,7 @@ public import FLT.Mazur.RingEqualizerDescent
 public import FLT.Mazur.RingEqualizerLocalDescent
 public import FLT.Mazur.RingEqualizerLocalization
 public import FLT.Mazur.RingEquivGrading
+public import FLT.Mazur.RingFlatRelation
 public import FLT.Mazur.RingPairInvariantFlatScalars
 public import FLT.Mazur.RingPairInvariantLocalization
 public import FLT.Mazur.RingedSpaceIdealLocus
