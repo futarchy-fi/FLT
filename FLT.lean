@@ -6536,6 +6536,8 @@ public import FLT.Mazur.GeneralizedCurveMarkingAffineCartesian
 public import FLT.Mazur.GeneralizedCurveMarkingAffineCubicMorphism
 public import FLT.Mazur.GeneralizedCurveMarkingAffineRestriction
 public import FLT.Mazur.GeneralizedCurveMarkingAllPoleBasis
+public import FLT.Mazur.GeneralizedCurveMarkingAssociator
+public import FLT.Mazur.GeneralizedCurveMarkingAssociatorCubic
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChange
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeAffine
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeCubic
@@ -6560,6 +6562,13 @@ public import FLT.Mazur.GeneralizedCurveMarkingCubicPullbackMorphism
 public import FLT.Mazur.GeneralizedCurveMarkingCubicRelation
 public import FLT.Mazur.GeneralizedCurveMarkingCubicResidueFields
 public import FLT.Mazur.GeneralizedCurveMarkingCubicTopology
+public import FLT.Mazur.GeneralizedCurveMarkingFamilyAffine
+public import FLT.Mazur.GeneralizedCurveMarkingFamilyComplement
+public import FLT.Mazur.GeneralizedCurveMarkingFamilyCubic
+public import FLT.Mazur.GeneralizedCurveMarkingFamilyEquation
+public import FLT.Mazur.GeneralizedCurveMarkingFamilyIso
+public import FLT.Mazur.GeneralizedCurveMarkingFamilyMorphism
+public import FLT.Mazur.GeneralizedCurveMarkingFamilyPoles
 public import FLT.Mazur.GeneralizedCurveMarkingFrameAffineChange
 public import FLT.Mazur.GeneralizedCurveMarkingFrameCocycle
 public import FLT.Mazur.GeneralizedCurveMarkingFrameCubicChange
@@ -14328,6 +14337,7 @@ public import FLT.Mazur.WeierstrassChangeParameter
 public import FLT.Mazur.WeierstrassChangePointedGeneralizedIso
 public import FLT.Mazur.WeierstrassChangeSubgroupScheme
 public import FLT.Mazur.WeierstrassChangedCoefficientEvaluation
+public import FLT.Mazur.WeierstrassChangedEvaluationSquare
 public import FLT.Mazur.WeierstrassCharacterCoefficientHom
 public import FLT.Mazur.WeierstrassCharacterCoefficientNaturality
 public import FLT.Mazur.WeierstrassChartArithmeticRestriction
