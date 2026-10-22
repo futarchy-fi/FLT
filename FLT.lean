@@ -6644,6 +6644,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingPoleTwoExpansion
 public import FLT.Mazur.GeneralizedCurveMarkingProjectiveIso
 public import FLT.Mazur.GeneralizedCurveMarkingProjectiveSections
 public import FLT.Mazur.GeneralizedCurveMarkingPulledCartesian
+public import FLT.Mazur.GeneralizedCurveMarkingSmoothIntegerModel
 public import FLT.Mazur.GeneralizedCurveMarkingTestCover
 public import FLT.Mazur.GeneralizedCurveMarkingTestCubicChart
 public import FLT.Mazur.GeneralizedCurveMarkingTestEquation
