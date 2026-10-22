@@ -4350,6 +4350,7 @@ public import FLT.Mazur.ConstructibleImageGenerizations
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CoprimeFieldGroupTransport
 public import FLT.Mazur.CoprimeGroupMarkings
+public import FLT.Mazur.CoprimePolynomialContent
 public import FLT.Mazur.CoproductConstantSections
 public import FLT.Mazur.CorrectionCokernelBaseChange
 public import FLT.Mazur.CubicComponentBound
@@ -5987,6 +5988,8 @@ public import FLT.Mazur.FiniteDVRComplete
 public import FLT.Mazur.FiniteDiagramCoverModel
 public import FLT.Mazur.FiniteDiagramIntegerModel
 public import FLT.Mazur.FiniteDiagramUnitDescent
+public import FLT.Mazur.FiniteDifferencePolynomial
+public import FLT.Mazur.FiniteDifferenceProductPolynomial
 public import FLT.Mazur.FiniteDifferenceProducts
 public import FLT.Mazur.FiniteDivisorCohomology
 public import FLT.Mazur.FiniteDivisorComponentAvoidance
@@ -9414,6 +9417,8 @@ public import FLT.Mazur.OriginalBoundaryFiniteStageTests
 public import FLT.Mazur.OriginalBoundaryFiniteValuationRanks
 public import FLT.Mazur.OriginalBoundaryFlatImageGeometry
 public import FLT.Mazur.OriginalBoundaryFlatRelationLift
+public import FLT.Mazur.OriginalBoundaryFramePolynomial
+public import FLT.Mazur.OriginalBoundaryFrameScalarNorm
 public import FLT.Mazur.OriginalBoundaryFramedEquationIdeal
 public import FLT.Mazur.OriginalBoundaryFramedEquations
 public import FLT.Mazur.OriginalBoundaryFramedScalarProducts
@@ -12877,6 +12882,7 @@ public import FLT.Mazur.ScalarOrbitFiniteEquations
 public import FLT.Mazur.ScalarOrbitQuotientComparison
 public import FLT.Mazur.ScalarOrbitTensorComparison
 public import FLT.Mazur.ScalarOrbitTestLifts
+public import FLT.Mazur.ScalarPolynomialNormEquation
 public import FLT.Mazur.ScalarPolynomialResidueRigidity
 public import FLT.Mazur.ScalarPresentationResidueGradients
 public import FLT.Mazur.ScalarPresentedLocalizedJacobians
