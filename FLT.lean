@@ -13932,6 +13932,7 @@ public import FLT.Mazur.SpectrumTranslationNormBasis
 public import FLT.Mazur.SplitEtaleTraceUnit
 public import FLT.Mazur.SplitEvaluationBaseChange
 public import FLT.Mazur.SplitEvaluationTensorKernel
+public import FLT.Mazur.SplitFrameDifferenceCoprime
 public import FLT.Mazur.SplitLineAffineNeighborhood
 public import FLT.Mazur.SplitLineAffinePresentation
 public import FLT.Mazur.SplitLineCoordinateCover
