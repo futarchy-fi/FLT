@@ -7862,6 +7862,7 @@ public import FLT.Mazur.IdealSheafStableSupportCriterion
 public import FLT.Mazur.IdealSheafSupportPower
 public import FLT.Mazur.IdealTensorAdicCriterion
 public import FLT.Mazur.IdealTensorAdicImage
+public import FLT.Mazur.IdealTensorCoefficientTransition
 public import FLT.Mazur.IdealTensorConnectingEquiv
 public import FLT.Mazur.IdealTensorConnectingMap
 public import FLT.Mazur.IdealTensorIntersection
