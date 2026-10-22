@@ -6303,6 +6303,7 @@ public import FLT.Mazur.FiniteRelationStages
 public import FLT.Mazur.FiniteRelationSurjectiveDescent
 public import FLT.Mazur.FiniteRelativeFiberNeighborhood
 public import FLT.Mazur.FiniteScalarObstruction
+public import FLT.Mazur.FiniteScalarResidualCorrections
 public import FLT.Mazur.FiniteSchemeInvertibleSections
 public import FLT.Mazur.FiniteSchemeLength
 public import FLT.Mazur.FiniteSchemeLineCohomology
