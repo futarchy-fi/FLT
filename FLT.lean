@@ -9142,6 +9142,7 @@ public import FLT.Mazur.OriginalBoundaryAdicFlatRelation
 public import FLT.Mazur.OriginalBoundaryAdicRelationLift
 public import FLT.Mazur.OriginalBoundaryAffineAssociatedDetection
 public import FLT.Mazur.OriginalBoundaryAffineAssociatedLift
+public import FLT.Mazur.OriginalBoundaryAffinePrincipalLift
 public import FLT.Mazur.OriginalBoundaryAssociatedComparisonLift
 public import FLT.Mazur.OriginalBoundaryAssociatedDifferentialDetection
 public import FLT.Mazur.OriginalBoundaryAssociatedPrincipalLift
