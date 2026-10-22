@@ -7858,6 +7858,7 @@ public import FLT.Mazur.IdealSheafStableSupportCriterion
 public import FLT.Mazur.IdealSheafSupportPower
 public import FLT.Mazur.IdealTensorKernelFinite
 public import FLT.Mazur.IdealTensorTransition
+public import FLT.Mazur.IdealTensorTrivialRelation
 public import FLT.Mazur.IdealTwistCohomologyStabilization
 public import FLT.Mazur.IdealTwistCohomologySystem
 public import FLT.Mazur.IdealTwistCohomologyVanishing
