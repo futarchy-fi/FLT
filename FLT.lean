@@ -15549,6 +15549,7 @@ public import FLT.Mazur.WeierstrassDividedFactoredReflectedCoordinates
 public import FLT.Mazur.WeierstrassDividedFactoredReflectedOutput
 public import FLT.Mazur.WeierstrassDividedFactoredReflectedResidue
 public import FLT.Mazur.WeierstrassDividedFactoredReflectedSecantResidue
+public import FLT.Mazur.WeierstrassDividedFactoredWiderReflectedCoordinates
 public import FLT.Mazur.WeierstrassDividedFaithfulActionDescent
 public import FLT.Mazur.WeierstrassDividedFifthDeepAtlas
 public import FLT.Mazur.WeierstrassDividedFifthDeepAtlasClosing
