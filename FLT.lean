@@ -6576,6 +6576,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingCubicPullbackMorphism
 public import FLT.Mazur.GeneralizedCurveMarkingCubicRelation
 public import FLT.Mazur.GeneralizedCurveMarkingCubicResidueFields
 public import FLT.Mazur.GeneralizedCurveMarkingCubicTopology
+public import FLT.Mazur.GeneralizedCurveMarkingDirectRestriction
 public import FLT.Mazur.GeneralizedCurveMarkingFamilyAffine
 public import FLT.Mazur.GeneralizedCurveMarkingFamilyComplement
 public import FLT.Mazur.GeneralizedCurveMarkingFamilyCubic
