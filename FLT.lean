@@ -4216,6 +4216,7 @@ public import FLT.Mazur.CoefficientSectionDescent
 public import FLT.Mazur.CoefficientSectionEquality
 public import FLT.Mazur.CoefficientSectionNeighborhood
 public import FLT.Mazur.CoefficientSectionRecovery
+public import FLT.Mazur.CoefficientSeparationTransport
 public import FLT.Mazur.CoefficientSmoothConnectedDescent
 public import FLT.Mazur.CoefficientSmoothDescent
 public import FLT.Mazur.CoefficientSmoothMarkingRefinement
@@ -9429,6 +9430,7 @@ public import FLT.Mazur.OriginalBoundaryCompleteRankDetection
 public import FLT.Mazur.OriginalBoundaryCompleteRankKernel
 public import FLT.Mazur.OriginalBoundaryCompleteRankLift
 public import FLT.Mazur.OriginalBoundaryCompleteResidualIdeal
+public import FLT.Mazur.OriginalBoundaryConstructedScalarFrame
 public import FLT.Mazur.OriginalBoundaryDifferentialFiberLift
 public import FLT.Mazur.OriginalBoundaryDifferentialIdealPower
 public import FLT.Mazur.OriginalBoundaryDifferentialKernelSupport
@@ -9525,6 +9527,7 @@ public import FLT.Mazur.OriginalBoundaryScalarCartesian
 public import FLT.Mazur.OriginalBoundaryScalarImageLift
 public import FLT.Mazur.OriginalBoundaryScalarMonomorphism
 public import FLT.Mazur.OriginalBoundaryScalarRelation
+public import FLT.Mazur.OriginalBoundarySeparatedSourceCoordinates
 public import FLT.Mazur.OriginalBoundarySourceOpenEquationLift
 public import FLT.Mazur.OriginalBoundaryStalkJacobianLift
 public import FLT.Mazur.OriginalBoundaryStalkPolynomialLift
@@ -12420,6 +12423,8 @@ public import FLT.Mazur.RegularParameterIdeals
 public import FLT.Mazur.RegularPrincipalOpenLiftExt
 public import FLT.Mazur.RegularPrincipalStructureQuotient
 public import FLT.Mazur.RelationComparisonEquation
+public import FLT.Mazur.RelationOriginalEndpointCoordinate
+public import FLT.Mazur.RelationOriginalScalarCoordinate
 public import FLT.Mazur.RelativeAbelFiberOriginalSquare
 public import FLT.Mazur.RelativeAcyclicClassDivisor
 public import FLT.Mazur.RelativeAcyclicClassDivisorNaturality
@@ -12521,6 +12526,7 @@ public import FLT.Mazur.RelativeFppfTargetOpen
 public import FLT.Mazur.RelativeFrameClosedRankCompleteness
 public import FLT.Mazur.RelativeFrameCompleteFinite
 public import FLT.Mazur.RelativeFrameCompletenessTransfer
+public import FLT.Mazur.RelativeFrameCoordinateSeparation
 public import FLT.Mazur.RelativeFrameDenseRankStrata
 public import FLT.Mazur.RelativeFrameEquationGeometry
 public import FLT.Mazur.RelativeFrameEquationProducts
