@@ -6600,6 +6600,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingMonomialIndependence
 public import FLT.Mazur.GeneralizedCurveMarkingNormalMonomials
 public import FLT.Mazur.GeneralizedCurveMarkingNormalizedChange
 public import FLT.Mazur.GeneralizedCurveMarkingNormalizedCoordinates
+public import FLT.Mazur.GeneralizedCurveMarkingOpenCubic
 public import FLT.Mazur.GeneralizedCurveMarkingOverlap
 public import FLT.Mazur.GeneralizedCurveMarkingOverlapCocycle
 public import FLT.Mazur.GeneralizedCurveMarkingOverlapCubic
