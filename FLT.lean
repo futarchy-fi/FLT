@@ -5915,6 +5915,7 @@ public import FLT.Mazur.FieldCoefficientCohomologyDimension
 public import FLT.Mazur.FieldNonspecialGeometricCriterion
 public import FLT.Mazur.FilteredDiagramSectionDescent
 public import FLT.Mazur.FilteredDiagramUnitDescent
+public import FLT.Mazur.FilteredFiniteAlgebraFlatDescent
 public import FLT.Mazur.FilteredFiniteModuleFlatDescent
 public import FLT.Mazur.FilteredFiniteModuleFlatFamily
 public import FLT.Mazur.FilteredFlatChartRelations
