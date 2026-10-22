@@ -16188,6 +16188,7 @@ public import FLT.Mazur.WeierstrassDividedNodalDoubledBranchSmooth
 public import FLT.Mazur.WeierstrassDividedNodalFactoredSumCoverage
 public import FLT.Mazur.WeierstrassDividedNodalFactoredSumIndexed
 public import FLT.Mazur.WeierstrassDividedNodalFactoredSumNegative
+public import FLT.Mazur.WeierstrassDividedNodalFactoredSumPuncturedCover
 public import FLT.Mazur.WeierstrassDividedNodalFactoredSumResidue
 public import FLT.Mazur.WeierstrassDividedNodalFactoredSumSmooth
 public import FLT.Mazur.WeierstrassDividedNodalFactoredSumSource
