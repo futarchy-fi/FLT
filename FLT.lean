@@ -16358,6 +16358,7 @@ public import FLT.Mazur.WeierstrassDividedQuotientSumDepthSource
 public import FLT.Mazur.WeierstrassDividedReciprocalChordOutput
 public import FLT.Mazur.WeierstrassDividedReciprocalChordSmoothDomain
 public import FLT.Mazur.WeierstrassDividedReciprocalChordSource
+public import FLT.Mazur.WeierstrassDividedReciprocalChordSpecialization
 public import FLT.Mazur.WeierstrassDividedReciprocalExtendedAddition
 public import FLT.Mazur.WeierstrassDividedReciprocalExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalFormula
