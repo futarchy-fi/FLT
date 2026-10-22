@@ -12314,6 +12314,7 @@ public import FLT.Mazur.RelativeDistinctTupleLift
 public import FLT.Mazur.RelativeDistinctTuples
 public import FLT.Mazur.RelativeDoubleRankClosedLifts
 public import FLT.Mazur.RelativeDoubleRankCompact
+public import FLT.Mazur.RelativeDoubleRankCompleteKernel
 public import FLT.Mazur.RelativeDoubleRankDetection
 public import FLT.Mazur.RelativeDoubleRankExactDenominators
 public import FLT.Mazur.RelativeDoubleRankGlobalLifts
