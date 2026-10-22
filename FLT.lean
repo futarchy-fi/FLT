@@ -6539,7 +6539,10 @@ public import FLT.Mazur.GeneralizedCurveMarkingAffineCubicMorphism
 public import FLT.Mazur.GeneralizedCurveMarkingAffineRestriction
 public import FLT.Mazur.GeneralizedCurveMarkingAllPoleBasis
 public import FLT.Mazur.GeneralizedCurveMarkingAssociator
+public import FLT.Mazur.GeneralizedCurveMarkingAssociatorCocycle
 public import FLT.Mazur.GeneralizedCurveMarkingAssociatorCubic
+public import FLT.Mazur.GeneralizedCurveMarkingAssociatorLine
+public import FLT.Mazur.GeneralizedCurveMarkingAssociatorSquare
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChange
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeAffine
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeCubic
@@ -6555,10 +6558,12 @@ public import FLT.Mazur.GeneralizedCurveMarkingComplementMonomials
 public import FLT.Mazur.GeneralizedCurveMarkingComplementPullback
 public import FLT.Mazur.GeneralizedCurveMarkingCoordinateRing
 public import FLT.Mazur.GeneralizedCurveMarkingCoordinateSurjective
+public import FLT.Mazur.GeneralizedCurveMarkingCubicExt
 public import FLT.Mazur.GeneralizedCurveMarkingCubicFactorization
 public import FLT.Mazur.GeneralizedCurveMarkingCubicFinite
 public import FLT.Mazur.GeneralizedCurveMarkingCubicGeometricIso
 public import FLT.Mazur.GeneralizedCurveMarkingCubicPreimages
+public import FLT.Mazur.GeneralizedCurveMarkingCubicProjection
 public import FLT.Mazur.GeneralizedCurveMarkingCubicPullback
 public import FLT.Mazur.GeneralizedCurveMarkingCubicPullbackMorphism
 public import FLT.Mazur.GeneralizedCurveMarkingCubicRelation
@@ -6582,6 +6587,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingFramedProducts
 public import FLT.Mazur.GeneralizedCurveMarkingHigherMonomials
 public import FLT.Mazur.GeneralizedCurveMarkingHomogeneousEquation
 public import FLT.Mazur.GeneralizedCurveMarkingLineBaseChange
+public import FLT.Mazur.GeneralizedCurveMarkingLineCoherence
 public import FLT.Mazur.GeneralizedCurveMarkingLocalCubic
 public import FLT.Mazur.GeneralizedCurveMarkingLowPoles
 public import FLT.Mazur.GeneralizedCurveMarkingMarkedCoordinates
@@ -13571,7 +13577,9 @@ public import FLT.Mazur.SectionLinePointBaseChange
 public import FLT.Mazur.SectionLinePointOverlapEquality
 public import FLT.Mazur.SectionLinePullbackFraction
 public import FLT.Mazur.SectionPointFrameBaseChange
+public import FLT.Mazur.SectionPointLineCoherence
 public import FLT.Mazur.SectionPointPowerBaseChange
+public import FLT.Mazur.SectionPointPowerTransport
 public import FLT.Mazur.SectionPoleAdaptedBasis
 public import FLT.Mazur.SectionPoleBaseChangeDifference
 public import FLT.Mazur.SectionPoleBaseChangeFrames
