@@ -5929,6 +5929,7 @@ public import FLT.Mazur.FilteredFlatChartRelations
 public import FLT.Mazur.FilteredFlatRelationDescent
 public import FLT.Mazur.FilteredFlatRelationFamily
 public import FLT.Mazur.FilteredIdealTensorKernel
+public import FLT.Mazur.FilteredLocalStageFlatness
 public import FLT.Mazur.FilteredMatrixFlatDescent
 public import FLT.Mazur.FilteredMatrixInnerInverse
 public import FLT.Mazur.FilteredPoleBasis
