@@ -6555,6 +6555,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingComplementMonomials
 public import FLT.Mazur.GeneralizedCurveMarkingComplementPullback
 public import FLT.Mazur.GeneralizedCurveMarkingCoordinateRing
 public import FLT.Mazur.GeneralizedCurveMarkingCoordinateSurjective
+public import FLT.Mazur.GeneralizedCurveMarkingCubicExt
 public import FLT.Mazur.GeneralizedCurveMarkingCubicFactorization
 public import FLT.Mazur.GeneralizedCurveMarkingCubicFinite
 public import FLT.Mazur.GeneralizedCurveMarkingCubicGeometricIso
