@@ -9245,6 +9245,7 @@ public import FLT.Mazur.OriginalBoundaryLocalRelationDescent
 public import FLT.Mazur.OriginalBoundaryLocalizedJacobianLift
 public import FLT.Mazur.OriginalBoundaryLocalizedScalarLift
 public import FLT.Mazur.OriginalBoundaryNilpotentEndpointLift
+public import FLT.Mazur.OriginalBoundaryOrbitTestComparison
 public import FLT.Mazur.OriginalBoundaryPolynomialLift
 public import FLT.Mazur.OriginalBoundaryPrincipalCover
 public import FLT.Mazur.OriginalBoundaryPrincipalLiftCriterion
