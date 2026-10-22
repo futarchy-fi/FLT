@@ -9214,6 +9214,7 @@ public import FLT.Mazur.OriginalBoundaryScalarCartesian
 public import FLT.Mazur.OriginalBoundaryScalarImageLift
 public import FLT.Mazur.OriginalBoundaryScalarMonomorphism
 public import FLT.Mazur.OriginalBoundaryScalarRelation
+public import FLT.Mazur.OriginalBoundarySourceOpenEquationLift
 public import FLT.Mazur.OriginalBoundaryStalkJacobianLift
 public import FLT.Mazur.OriginalBoundaryStalkPolynomialLift
 public import FLT.Mazur.OriginalBoundaryTensorLift
