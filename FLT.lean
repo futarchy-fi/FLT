@@ -16252,6 +16252,7 @@ public import FLT.Mazur.WeierstrassDividedNodalTangentNeighborhoodCover
 public import FLT.Mazur.WeierstrassDividedNodalTripleNegativePairCover
 public import FLT.Mazur.WeierstrassDividedNodalTriplePairPromotion
 public import FLT.Mazur.WeierstrassDividedNodalTriplePositivePairCover
+public import FLT.Mazur.WeierstrassDividedNodalWiderReflectedSource
 public import FLT.Mazur.WeierstrassDividedNodeCommonSumOutput
 public import FLT.Mazur.WeierstrassDividedNonadjacentGlobalIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentTensorIntersection
