@@ -3949,6 +3949,7 @@ public import FLT.Mazur.CartesianIdentityFiniteNeighborhood
 public import FLT.Mazur.CartesianIdentityQuasiFinite
 public import FLT.Mazur.CartesianImageChartImmersion
 public import FLT.Mazur.CartesianLineFieldCohomology
+public import FLT.Mazur.CartesianModelSection
 public import FLT.Mazur.CartesianMonoGroup
 public import FLT.Mazur.CartesianMonoMonoid
 public import FLT.Mazur.CartesianMorphismRecovery
