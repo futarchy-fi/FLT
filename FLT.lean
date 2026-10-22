@@ -6115,6 +6115,7 @@ public import FLT.Mazur.FiniteIdealConditionDimension
 public import FLT.Mazur.FiniteIdealLocalizationDenominators
 public import FLT.Mazur.FiniteIdealNilpotenceInterior
 public import FLT.Mazur.FiniteIdealNilpotenceOpen
+public import FLT.Mazur.FiniteIdealResidualPowers
 public import FLT.Mazur.FiniteIntegerModelElementRelations
 public import FLT.Mazur.FiniteIntegerModelPullbacks
 public import FLT.Mazur.FiniteIntegerModelRelations
@@ -6302,6 +6303,7 @@ public import FLT.Mazur.FiniteRelationStages
 public import FLT.Mazur.FiniteRelationSurjectiveDescent
 public import FLT.Mazur.FiniteRelativeFiberNeighborhood
 public import FLT.Mazur.FiniteScalarObstruction
+public import FLT.Mazur.FiniteScalarResidualCorrections
 public import FLT.Mazur.FiniteSchemeInvertibleSections
 public import FLT.Mazur.FiniteSchemeLength
 public import FLT.Mazur.FiniteSchemeLineCohomology
@@ -9298,7 +9300,9 @@ public import FLT.Mazur.OriginalBoundaryDomainComparisonLift
 public import FLT.Mazur.OriginalBoundaryDoubleRankArrowCriterion
 public import FLT.Mazur.OriginalBoundaryDoubleRankCoefficientDetection
 public import FLT.Mazur.OriginalBoundaryDoubleRankComparison
+public import FLT.Mazur.OriginalBoundaryDoubleRankCorrectedLift
 public import FLT.Mazur.OriginalBoundaryDoubleRankGlobalLifts
+public import FLT.Mazur.OriginalBoundaryDoubleRankResidualCorrections
 public import FLT.Mazur.OriginalBoundaryDoubleRankScalarKernel
 public import FLT.Mazur.OriginalBoundaryDoubleRankTests
 public import FLT.Mazur.OriginalBoundaryEtaleImageLift
@@ -9341,6 +9345,7 @@ public import FLT.Mazur.OriginalBoundaryRankStageComparison
 public import FLT.Mazur.OriginalBoundaryRankStageDenseCoverage
 public import FLT.Mazur.OriginalBoundaryRelationOpenLift
 public import FLT.Mazur.OriginalBoundaryRelationSupport
+public import FLT.Mazur.OriginalBoundaryResidualCoefficientLift
 public import FLT.Mazur.OriginalBoundaryResidualComparisonNeighborhood
 public import FLT.Mazur.OriginalBoundaryResidualDoubleRankEquations
 public import FLT.Mazur.OriginalBoundaryResidualEtaleImageCover
@@ -9373,6 +9378,7 @@ public import FLT.Mazur.OriginalBoundaryUniformFlatPoint
 public import FLT.Mazur.OriginalBoundaryUniformFlatRelation
 public import FLT.Mazur.OriginalBoundaryUniformRelationIdeal
 public import FLT.Mazur.OriginalBoundaryUniformRelationLift
+public import FLT.Mazur.OriginalBoundaryUniformResidualRankEquations
 public import FLT.Mazur.OriginalBoundaryUnramifiedEndpointEquations
 public import FLT.Mazur.OriginalBoundaryUnramifiedKernelDetection
 public import FLT.Mazur.OriginalBoundaryUnramifiedOpenLift
@@ -12318,6 +12324,7 @@ public import FLT.Mazur.RelativeDoubleRankDetection
 public import FLT.Mazur.RelativeDoubleRankExactDenominators
 public import FLT.Mazur.RelativeDoubleRankGlobalLifts
 public import FLT.Mazur.RelativeDoubleRankRecovery
+public import FLT.Mazur.RelativeDoubleRankResidualCorrections
 public import FLT.Mazur.RelativeDoubleRankScalarKernels
 public import FLT.Mazur.RelativeDoubleRankTestDetection
 public import FLT.Mazur.RelativeDoubleRankThickenings
