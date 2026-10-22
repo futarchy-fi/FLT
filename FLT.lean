@@ -6532,6 +6532,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingHomogeneousEquation
 public import FLT.Mazur.GeneralizedCurveMarkingLineBaseChange
 public import FLT.Mazur.GeneralizedCurveMarkingLocalCubic
 public import FLT.Mazur.GeneralizedCurveMarkingLowPoles
+public import FLT.Mazur.GeneralizedCurveMarkingMarkedCoordinates
 public import FLT.Mazur.GeneralizedCurveMarkingMonomialBasis
 public import FLT.Mazur.GeneralizedCurveMarkingMonomialIndependence
 public import FLT.Mazur.GeneralizedCurveMarkingNormalMonomials
