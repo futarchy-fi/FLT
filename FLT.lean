@@ -13731,6 +13731,7 @@ public import FLT.Mazur.ToricHopfQuotientCoordinates
 public import FLT.Mazur.TorusArithmeticCyclicity
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TorusCyclotomicGenerator
+public import FLT.Mazur.TorusGroupLawRigidity
 public import FLT.Mazur.TorusPointUnitEquiv
 public import FLT.Mazur.TorusRootsOfUnityBaseChange
 public import FLT.Mazur.TorusRootsOfUnityCartier
