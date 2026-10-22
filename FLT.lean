@@ -3453,6 +3453,7 @@ public import FLT.Mazur.AffineSquareScalarExtension
 public import FLT.Mazur.AffineSquareTensorComparison
 public import FLT.Mazur.AffineStageObstructionSquare
 public import FLT.Mazur.AffineStagePointReconstruction
+public import FLT.Mazur.AffineStageResidualCriterion
 public import FLT.Mazur.AffineStalkEssentialFiniteType
 public import FLT.Mazur.AffineStalkExtension
 public import FLT.Mazur.AffineStalkFirstCotangent
