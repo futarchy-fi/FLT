@@ -13086,6 +13086,7 @@ public import FLT.Mazur.SchemeChartOverlapComparison
 public import FLT.Mazur.SchemeClopenExtensionPullback
 public import FLT.Mazur.SchemeClopenSectionExtension
 public import FLT.Mazur.SchemeClosedBaseChange
+public import FLT.Mazur.SchemeClosedScalarKernelLift
 public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
 public import FLT.Mazur.SchemeComparisonClosedObstruction
