@@ -9408,6 +9408,7 @@ public import FLT.Mazur.OriginalBoundaryCompleteRankDetection
 public import FLT.Mazur.OriginalBoundaryCompleteRankKernel
 public import FLT.Mazur.OriginalBoundaryCompleteRankLift
 public import FLT.Mazur.OriginalBoundaryCompleteResidualIdeal
+public import FLT.Mazur.OriginalBoundaryConstructedScalarFrame
 public import FLT.Mazur.OriginalBoundaryDifferentialFiberLift
 public import FLT.Mazur.OriginalBoundaryDifferentialIdealPower
 public import FLT.Mazur.OriginalBoundaryDifferentialKernelSupport
