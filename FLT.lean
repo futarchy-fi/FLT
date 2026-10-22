@@ -3287,6 +3287,8 @@ public import FLT.Mazur.AffineIteratedPullbackLaws
 public import FLT.Mazur.AffineIteratedPullbackSections
 public import FLT.Mazur.AffineKernelLocalization
 public import FLT.Mazur.AffineLiftedOverlapCoefficients
+public import FLT.Mazur.AffineLimitFlatCharts
+public import FLT.Mazur.AffineLimitFlatRelation
 public import FLT.Mazur.AffineLineCoalgebraDescent
 public import FLT.Mazur.AffineLineCoefficients
 public import FLT.Mazur.AffineLineTwistLocalization
@@ -4175,6 +4177,8 @@ public import FLT.Mazur.CocycleSectionOpenRecovery
 public import FLT.Mazur.CocycleSheafLimitDescent
 public import FLT.Mazur.CoefficientAcyclicClassDivisor
 public import FLT.Mazur.CoefficientAcyclicLineDivisor
+public import FLT.Mazur.CoefficientAffineFlatCharts
+public import FLT.Mazur.CoefficientAffineFlatRelation
 public import FLT.Mazur.CoefficientCartesianHomDescent
 public import FLT.Mazur.CoefficientCartesianProperty
 public import FLT.Mazur.CoefficientCartierCommonModel
@@ -5911,6 +5915,9 @@ public import FLT.Mazur.FieldCoefficientCohomologyDimension
 public import FLT.Mazur.FieldNonspecialGeometricCriterion
 public import FLT.Mazur.FilteredDiagramSectionDescent
 public import FLT.Mazur.FilteredDiagramUnitDescent
+public import FLT.Mazur.FilteredFlatChartRelations
+public import FLT.Mazur.FilteredFlatRelationDescent
+public import FLT.Mazur.FilteredFlatRelationFamily
 public import FLT.Mazur.FilteredPoleBasis
 public import FLT.Mazur.FilteredPoleInfiniteIndependence
 public import FLT.Mazur.FilteredPoleLeadingCoefficient
@@ -5918,6 +5925,7 @@ public import FLT.Mazur.FilteredRingFamilyDescent
 public import FLT.Mazur.FilteredRingFamilyElements
 public import FLT.Mazur.FilteredRingFiniteEqualities
 public import FLT.Mazur.FilteredRingFiniteUnits
+public import FLT.Mazur.FilteredRingPairWitnesses
 public import FLT.Mazur.FilteredRingSurjectiveDescent
 public import FLT.Mazur.FiniteAffineAtlasDiagramDescent
 public import FLT.Mazur.FiniteAffineBaseNeighborhood
@@ -5973,6 +5981,7 @@ public import FLT.Mazur.FiniteDVRComplete
 public import FLT.Mazur.FiniteDiagramCoverModel
 public import FLT.Mazur.FiniteDiagramIntegerModel
 public import FLT.Mazur.FiniteDiagramUnitDescent
+public import FLT.Mazur.FiniteDifferenceProducts
 public import FLT.Mazur.FiniteDivisorCohomology
 public import FLT.Mazur.FiniteDivisorComponentAvoidance
 public import FLT.Mazur.FiniteDivisorLengthAdditivity
@@ -9388,6 +9397,7 @@ public import FLT.Mazur.OriginalBoundaryFlatImageGeometry
 public import FLT.Mazur.OriginalBoundaryFlatRelationLift
 public import FLT.Mazur.OriginalBoundaryFramedEquationIdeal
 public import FLT.Mazur.OriginalBoundaryFramedEquations
+public import FLT.Mazur.OriginalBoundaryFramedScalarProducts
 public import FLT.Mazur.OriginalBoundaryFullStalkJacobianLift
 public import FLT.Mazur.OriginalBoundaryGenericRankCoverage
 public import FLT.Mazur.OriginalBoundaryGenerizingRanks
@@ -9404,6 +9414,7 @@ public import FLT.Mazur.OriginalBoundaryLocalPolynomialLift
 public import FLT.Mazur.OriginalBoundaryLocalRelationDescent
 public import FLT.Mazur.OriginalBoundaryLocalizedJacobianLift
 public import FLT.Mazur.OriginalBoundaryLocalizedScalarLift
+public import FLT.Mazur.OriginalBoundaryMixedCoefficientEquations
 public import FLT.Mazur.OriginalBoundaryNilpotentEndpointLift
 public import FLT.Mazur.OriginalBoundaryOrbitTestComparison
 public import FLT.Mazur.OriginalBoundaryPolynomialLift
@@ -12447,6 +12458,7 @@ public import FLT.Mazur.RelativeFrameCompleteFinite
 public import FLT.Mazur.RelativeFrameCompletenessTransfer
 public import FLT.Mazur.RelativeFrameDenseRankStrata
 public import FLT.Mazur.RelativeFrameEquationGeometry
+public import FLT.Mazur.RelativeFrameEquationProducts
 public import FLT.Mazur.RelativeFrameEquationSplitting
 public import FLT.Mazur.RelativeFrameExactRank
 public import FLT.Mazur.RelativeFrameMissingSection
@@ -12759,6 +12771,7 @@ public import FLT.Mazur.RingEqualizerDescent
 public import FLT.Mazur.RingEqualizerLocalDescent
 public import FLT.Mazur.RingEqualizerLocalization
 public import FLT.Mazur.RingEquivGrading
+public import FLT.Mazur.RingFlatRelation
 public import FLT.Mazur.RingPairInvariantFlatScalars
 public import FLT.Mazur.RingPairInvariantLocalization
 public import FLT.Mazur.RingedSpaceIdealLocus
@@ -12980,6 +12993,7 @@ public import FLT.Mazur.SchemeAffineCrossSectionMaps
 public import FLT.Mazur.SchemeAffineCrossSectionPostcomposition
 public import FLT.Mazur.SchemeAffineCrossSectionReconstruction
 public import FLT.Mazur.SchemeAffineDescentChart
+public import FLT.Mazur.SchemeAffineEquationIdeal
 public import FLT.Mazur.SchemeAffineExplicitCommonSectionMaps
 public import FLT.Mazur.SchemeAffineFlatLiftGluing
 public import FLT.Mazur.SchemeAffineFlatRefinement
@@ -13082,6 +13096,7 @@ public import FLT.Mazur.SchemeChartOverlapComparison
 public import FLT.Mazur.SchemeClopenExtensionPullback
 public import FLT.Mazur.SchemeClopenSectionExtension
 public import FLT.Mazur.SchemeClosedBaseChange
+public import FLT.Mazur.SchemeClosedScalarKernelLift
 public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
 public import FLT.Mazur.SchemeComparisonClosedObstruction
@@ -13109,6 +13124,7 @@ public import FLT.Mazur.SchemeDescentSheafIso
 public import FLT.Mazur.SchemeDescentTransportSquares
 public import FLT.Mazur.SchemeDescentTransportTest
 public import FLT.Mazur.SchemeDisjointBaseChange
+public import FLT.Mazur.SchemeDisjointClosedIdeals
 public import FLT.Mazur.SchemeDisjointOpenPair
 public import FLT.Mazur.SchemeEffectiveEpiSections
 public import FLT.Mazur.SchemeEquationPullback
