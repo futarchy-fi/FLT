@@ -8295,6 +8295,7 @@ public import FLT.Mazur.LocalizedIntegerModelIsomorphism
 public import FLT.Mazur.LocalizedKernelComparison
 public import FLT.Mazur.LocalizedKernelPathCompatibility
 public import FLT.Mazur.LocalizedLeadingIdealFamily
+public import FLT.Mazur.LocalizedObstructionVanishingCriterion
 public import FLT.Mazur.LocalizedOriginalSmoothCriterion
 public import FLT.Mazur.LocalizedPointAlgebraKernel
 public import FLT.Mazur.LocalizedPolynomialDiagramCoefficients
