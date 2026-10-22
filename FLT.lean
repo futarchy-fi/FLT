@@ -9361,6 +9361,7 @@ public import FLT.Mazur.OriginalBoundaryUniformFlatPoint
 public import FLT.Mazur.OriginalBoundaryUniformFlatRelation
 public import FLT.Mazur.OriginalBoundaryUniformRelationIdeal
 public import FLT.Mazur.OriginalBoundaryUniformRelationLift
+public import FLT.Mazur.OriginalBoundaryUniformResidualRankEquations
 public import FLT.Mazur.OriginalBoundaryUnramifiedEndpointEquations
 public import FLT.Mazur.OriginalBoundaryUnramifiedKernelDetection
 public import FLT.Mazur.OriginalBoundaryUnramifiedOpenLift
