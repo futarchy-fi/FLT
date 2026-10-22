@@ -16799,6 +16799,7 @@ public import FLT.Mazur.WeierstrassDividedSplitNormalizationComparison
 public import FLT.Mazur.WeierstrassDividedStartOneAtlas
 public import FLT.Mazur.WeierstrassDividedStartOneData
 public import FLT.Mazur.WeierstrassDividedSuccessiveArithmeticPairCoverage
+public import FLT.Mazur.WeierstrassDividedSuccessiveDifferenceAddition
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedSuccessivePairInputComparison
 public import FLT.Mazur.WeierstrassDividedSuccessiveSelfDeepAddition
