@@ -11466,6 +11466,7 @@ public import FLT.Mazur.PolynomialRelativeAffineNaturality
 public import FLT.Mazur.PolynomialRelativeAmbient
 public import FLT.Mazur.PolynomialRelativeCoverExtension
 public import FLT.Mazur.PolynomialSpectrumBaseChangeCover
+public import FLT.Mazur.PolynomialTensorSplitFrame
 public import FLT.Mazur.PositiveIntegerLocalization
 public import FLT.Mazur.PowerCohomologyHZeroSections
 public import FLT.Mazur.PowerCohomologyKernelGenerators
