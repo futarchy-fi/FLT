@@ -5912,6 +5912,7 @@ public import FLT.Mazur.FieldNonspecialGeometricCriterion
 public import FLT.Mazur.FilteredDiagramSectionDescent
 public import FLT.Mazur.FilteredDiagramUnitDescent
 public import FLT.Mazur.FilteredFlatRelationDescent
+public import FLT.Mazur.FilteredFlatRelationFamily
 public import FLT.Mazur.FilteredPoleBasis
 public import FLT.Mazur.FilteredPoleInfiniteIndependence
 public import FLT.Mazur.FilteredPoleLeadingCoefficient
