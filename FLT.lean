@@ -9002,6 +9002,7 @@ public import FLT.Mazur.OneGonSquareZeroNormalForm
 public import FLT.Mazur.OneGonTangentCoverNormalForm
 public import FLT.Mazur.OneGonTangentCoverPresentation
 public import FLT.Mazur.OneGonTangentEtaleCover
+public import FLT.Mazur.OneGonTangentLiftEquivalence
 public import FLT.Mazur.OneGonTangentReductionEquivalence
 public import FLT.Mazur.OneGonTangentRootLifting
 public import FLT.Mazur.OneGonTransition
