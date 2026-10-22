@@ -12516,6 +12516,7 @@ public import FLT.Mazur.RootsOfUnityPrimePowerOrbit
 public import FLT.Mazur.RootsOfUnityScheme
 public import FLT.Mazur.RootsOfUnitySubgroupCyclicity
 public import FLT.Mazur.RootsOfUnitySubgroupGenerator
+public import FLT.Mazur.ScalarAlgebraGeneratorDifferentials
 public import FLT.Mazur.ScalarAlgebraicClosureTests
 public import FLT.Mazur.ScalarClearedPolynomialAnnihilator
 public import FLT.Mazur.ScalarClosedGeometricLifts
