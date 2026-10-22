@@ -15645,6 +15645,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticZeroStandardRestriction
 public import FLT.Mazur.WeierstrassDividedArithmeticZeroTerminalCompatibility
 public import FLT.Mazur.WeierstrassDividedArithmeticZeroUniversal
 public import FLT.Mazur.WeierstrassDividedAtlasOriginalAction
+public import FLT.Mazur.WeierstrassDividedAtlasOriginalActionOverlap
 public import FLT.Mazur.WeierstrassDividedAtlasPairCommonSumAddition
 public import FLT.Mazur.WeierstrassDividedAtlasPairFormulaCoverage
 public import FLT.Mazur.WeierstrassDividedAtlasPairFormulaInput
