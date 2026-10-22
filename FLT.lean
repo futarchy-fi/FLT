@@ -6115,6 +6115,7 @@ public import FLT.Mazur.FiniteIdealConditionDimension
 public import FLT.Mazur.FiniteIdealLocalizationDenominators
 public import FLT.Mazur.FiniteIdealNilpotenceInterior
 public import FLT.Mazur.FiniteIdealNilpotenceOpen
+public import FLT.Mazur.FiniteIdealResidualPowers
 public import FLT.Mazur.FiniteIntegerModelElementRelations
 public import FLT.Mazur.FiniteIntegerModelPullbacks
 public import FLT.Mazur.FiniteIntegerModelRelations
