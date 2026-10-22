@@ -5616,6 +5616,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteSubframeCompatibility
 public import FLT.Mazur.EquivalenceRelationCompleteSupportedTests
 public import FLT.Mazur.EquivalenceRelationCompleteTestCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteTestFinite
+public import FLT.Mazur.EquivalenceRelationCompleteTestInvariants
 public import FLT.Mazur.EquivalenceRelationCompleteTestPartition
 public import FLT.Mazur.EquivalenceRelationCompleteThickeningAction
 public import FLT.Mazur.EquivalenceRelationCompleteThickeningFinite
@@ -5716,7 +5717,9 @@ public import FLT.Mazur.EquivalenceRelationOriginalChartScalars
 public import FLT.Mazur.EquivalenceRelationOriginalOrbitComparison
 public import FLT.Mazur.EquivalenceRelationOriginalScalarFiber
 public import FLT.Mazur.EquivalenceRelationPairedAffineCover
+public import FLT.Mazur.EquivalenceRelationPairedAffineDomain
 public import FLT.Mazur.EquivalenceRelationPairedNormalizedCover
+public import FLT.Mazur.EquivalenceRelationPairedRankStages
 public import FLT.Mazur.EquivalenceRelationPrescribedQuotientCorrection
 public import FLT.Mazur.EquivalenceRelationPrincipalCompleteCharacters
 public import FLT.Mazur.EquivalenceRelationPrincipalPrimeCoverage
@@ -7313,6 +7316,9 @@ public import FLT.Mazur.HilbertOriginalCoreInvariantCoefficients
 public import FLT.Mazur.HilbertOriginalRankCoreCover
 public import FLT.Mazur.HilbertOriginalRankStageBoundaryLifts
 public import FLT.Mazur.HilbertOriginalRankStageCoverage
+public import FLT.Mazur.HilbertOriginalRelationPairedAffineLifts
+public import FLT.Mazur.HilbertOriginalRelationPairedInvariantLifts
+public import FLT.Mazur.HilbertOriginalRelationPairedScalarLifts
 public import FLT.Mazur.HilbertOriginalScalarFrameCharts
 public import FLT.Mazur.HilbertOriginalScalarMaximalCover
 public import FLT.Mazur.HilbertOriginalScalarStrata
@@ -13179,6 +13185,7 @@ public import FLT.Mazur.SchemePairDoubleBoundarySymmetry
 public import FLT.Mazur.SchemePairDoubleBoundaryTransfer
 public import FLT.Mazur.SchemePairSymmetryPoints
 public import FLT.Mazur.SchemePairedStableAffineLifts
+public import FLT.Mazur.SchemePairedStableAffineRefinement
 public import FLT.Mazur.SchemeParameterEquivalence
 public import FLT.Mazur.SchemePicardClasses
 public import FLT.Mazur.SchemePicardGroup
