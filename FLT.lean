@@ -9270,6 +9270,7 @@ public import FLT.Mazur.OriginalBoundaryDiscrepancyLocus
 public import FLT.Mazur.OriginalBoundaryDomainComparisonLift
 public import FLT.Mazur.OriginalBoundaryDoubleRankArrowCriterion
 public import FLT.Mazur.OriginalBoundaryDoubleRankComparison
+public import FLT.Mazur.OriginalBoundaryDoubleRankGlobalLifts
 public import FLT.Mazur.OriginalBoundaryDoubleRankTests
 public import FLT.Mazur.OriginalBoundaryEtaleImageLift
 public import FLT.Mazur.OriginalBoundaryFaithfulTensorLift
