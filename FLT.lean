@@ -13469,6 +13469,7 @@ public import FLT.Mazur.SimultaneousEtaleAcyclicNeighborhood
 public import FLT.Mazur.SimultaneousSmoothAcyclicNeighborhood
 public import FLT.Mazur.SimultaneousSmoothHilbertParameters
 public import FLT.Mazur.SingleProperTranslationChart
+public import FLT.Mazur.SingularIntegralGeneralizedCubic
 public import FLT.Mazur.SmallAffineParameterBases
 public import FLT.Mazur.SmallHilbertPresentation
 public import FLT.Mazur.SmallHilbertPresentationPullback
