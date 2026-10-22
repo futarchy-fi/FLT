@@ -6540,6 +6540,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingMarkingRatios
 public import FLT.Mazur.GeneralizedCurveMarkingMonomialBasis
 public import FLT.Mazur.GeneralizedCurveMarkingMonomialIndependence
 public import FLT.Mazur.GeneralizedCurveMarkingNormalMonomials
+public import FLT.Mazur.GeneralizedCurveMarkingPointedCubic
 public import FLT.Mazur.GeneralizedCurveMarkingPoleReduction
 public import FLT.Mazur.GeneralizedCurveMarkingProjectiveSections
 public import FLT.Mazur.GeneralizedCurveNaturalIsoGluing
