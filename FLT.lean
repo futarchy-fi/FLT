@@ -8347,6 +8347,7 @@ public import FLT.Mazur.ModuleGlobalUnitGenerator
 public import FLT.Mazur.ModuleHomIsomorphismOpen
 public import FLT.Mazur.ModuleHomOpenTransport
 public import FLT.Mazur.ModuleHomTrivialOpen
+public import FLT.Mazur.ModuleIdealTensorFinite
 public import FLT.Mazur.ModuleImageSection
 public import FLT.Mazur.ModuleInjectiveFlasque
 public import FLT.Mazur.ModuleLineBundleOpenCover
