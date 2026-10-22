@@ -12773,6 +12773,7 @@ public import FLT.Mazur.RelativeTupleSections
 public import FLT.Mazur.RelativeUniversalDistinctLift
 public import FLT.Mazur.RelativeVeryAmpleLineBundle
 public import FLT.Mazur.RepeatedCubicRoots
+public import FLT.Mazur.ResidualFlatTargetExtension
 public import FLT.Mazur.ResidualKernelSpan
 public import FLT.Mazur.ResidualPresentationInjectivity
 public import FLT.Mazur.ResidualPresentationKernel
