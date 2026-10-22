@@ -4200,6 +4200,7 @@ public import FLT.Mazur.CoefficientPropertyComparison
 public import FLT.Mazur.CoefficientRecoveredProperty
 public import FLT.Mazur.CoefficientSectionDescent
 public import FLT.Mazur.CoefficientSectionEquality
+public import FLT.Mazur.CoefficientSectionNeighborhood
 public import FLT.Mazur.CoefficientSectionRecovery
 public import FLT.Mazur.CoefficientSmoothConnectedDescent
 public import FLT.Mazur.CoefficientSmoothDescent
