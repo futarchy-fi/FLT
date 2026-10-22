@@ -7861,6 +7861,7 @@ public import FLT.Mazur.IdealTensorAdicCriterion
 public import FLT.Mazur.IdealTensorAdicImage
 public import FLT.Mazur.IdealTensorIntersection
 public import FLT.Mazur.IdealTensorKernelFinite
+public import FLT.Mazur.IdealTensorPresentationCriterion
 public import FLT.Mazur.IdealTensorTransition
 public import FLT.Mazur.IdealTensorTrivialRelation
 public import FLT.Mazur.IdealTwistCohomologyStabilization
