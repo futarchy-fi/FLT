@@ -13097,6 +13097,7 @@ public import FLT.Mazur.SchemeIndependentNormalizationRetraction
 public import FLT.Mazur.SchemeIndependentNormalizationSquare
 public import FLT.Mazur.SchemeIndependentPairNormalization
 public import FLT.Mazur.SchemeIndependentRecoveryNormalization
+public import FLT.Mazur.SchemeIndependentStableAffineLifts
 public import FLT.Mazur.SchemeIndependentTripleCocycle
 public import FLT.Mazur.SchemeInfinitesimalPointDetection
 public import FLT.Mazur.SchemeInvariantClosedScalarImage
