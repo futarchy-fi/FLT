@@ -3459,6 +3459,7 @@ public import FLT.Mazur.AffineStalkMorphism
 public import FLT.Mazur.AffineStructuralRelativeDimension
 public import FLT.Mazur.AffineStructuralSmoothLocus
 public import FLT.Mazur.AffineStructuralStandardSmoothChart
+public import FLT.Mazur.AffineTargetObstructionTransition
 public import FLT.Mazur.AffineTensorCoactionRecognition
 public import FLT.Mazur.AffineTensorCoalgebraComparison
 public import FLT.Mazur.AffineTensorCocycle
