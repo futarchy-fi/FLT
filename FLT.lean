@@ -8360,6 +8360,7 @@ public import FLT.Mazur.NilpotentAlgebraEquivalence
 public import FLT.Mazur.NilpotentAlgebraErrorCommutation
 public import FLT.Mazur.NilpotentAlgebraHigherOrderError
 public import FLT.Mazur.NilpotentClosedRestriction
+public import FLT.Mazur.NilpotentEtaleEquivalence
 public import FLT.Mazur.NilpotentIdealContraction
 public import FLT.Mazur.NilpotentIdealSocle
 public import FLT.Mazur.NilpotentPolynomialEvaluation
@@ -8934,13 +8935,16 @@ public import FLT.Mazur.OneGonProductEndpoints
 public import FLT.Mazur.OneGonProductNormalization
 public import FLT.Mazur.OneGonProductTorus
 public import FLT.Mazur.OneGonQuotient
+public import FLT.Mazur.OneGonResidualNodePresentation
 public import FLT.Mazur.OneGonResidualNormalFormLifting
+public import FLT.Mazur.OneGonResidualSingularCover
 public import FLT.Mazur.OneGonRetainedFiberReduced
 public import FLT.Mazur.OneGonRootsOfUnityPrimePowerAmple
 public import FLT.Mazur.OneGonRootsOfUnityPrimePowerCyclic
 public import FLT.Mazur.OneGonRootsOfUnitySubgroup
 public import FLT.Mazur.OneGonScalarExtension
 public import FLT.Mazur.OneGonSeparated
+public import FLT.Mazur.OneGonSingularTranslation
 public import FLT.Mazur.OneGonSmoothCoefficientGroup
 public import FLT.Mazur.OneGonSmoothCoefficientProjection
 public import FLT.Mazur.OneGonSmoothCoefficientTower
@@ -8995,6 +8999,12 @@ public import FLT.Mazur.OneGonSmoothingZeroGenus
 public import FLT.Mazur.OneGonSplitTangentNormalForm
 public import FLT.Mazur.OneGonSquareZeroCoordinates
 public import FLT.Mazur.OneGonSquareZeroNormalForm
+public import FLT.Mazur.OneGonTangentCoverNormalForm
+public import FLT.Mazur.OneGonTangentCoverPresentation
+public import FLT.Mazur.OneGonTangentEtaleCover
+public import FLT.Mazur.OneGonTangentLiftEquivalence
+public import FLT.Mazur.OneGonTangentReductionEquivalence
+public import FLT.Mazur.OneGonTangentRootLifting
 public import FLT.Mazur.OneGonTransition
 public import FLT.Mazur.OneGonZeroTorusComparison
 public import FLT.Mazur.OpenAtlasTripleGluing
