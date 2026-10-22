@@ -3949,6 +3949,7 @@ public import FLT.Mazur.CartesianIdentityFiniteNeighborhood
 public import FLT.Mazur.CartesianIdentityQuasiFinite
 public import FLT.Mazur.CartesianImageChartImmersion
 public import FLT.Mazur.CartesianLineFieldCohomology
+public import FLT.Mazur.CartesianModelSection
 public import FLT.Mazur.CartesianMonoGroup
 public import FLT.Mazur.CartesianMonoMonoid
 public import FLT.Mazur.CartesianMorphismRecovery
@@ -4174,10 +4175,12 @@ public import FLT.Mazur.CoefficientAcyclicClassDivisor
 public import FLT.Mazur.CoefficientAcyclicLineDivisor
 public import FLT.Mazur.CoefficientCartesianHomDescent
 public import FLT.Mazur.CoefficientCartesianProperty
+public import FLT.Mazur.CoefficientCommonModel
 public import FLT.Mazur.CoefficientConnectedNeighborhood
 public import FLT.Mazur.CoefficientFactorizationDescent
 public import FLT.Mazur.CoefficientImmersionClosedDescent
 public import FLT.Mazur.CoefficientIndependentLineDescent
+public import FLT.Mazur.CoefficientIndependentModel
 public import FLT.Mazur.CoefficientInverseEquations
 public import FLT.Mazur.CoefficientIsomorphismDescent
 public import FLT.Mazur.CoefficientModelActualRecovery
@@ -4189,12 +4192,20 @@ public import FLT.Mazur.CoefficientModelMorphism
 public import FLT.Mazur.CoefficientModelRecovery
 public import FLT.Mazur.CoefficientOpenClosedDescent
 public import FLT.Mazur.CoefficientOpenNeighborhood
+public import FLT.Mazur.CoefficientOriginalHomDescent
+public import FLT.Mazur.CoefficientOriginalOpenDescent
+public import FLT.Mazur.CoefficientPointedCommonModel
 public import FLT.Mazur.CoefficientProperDescent
 public import FLT.Mazur.CoefficientPropertyComparison
 public import FLT.Mazur.CoefficientRecoveredProperty
 public import FLT.Mazur.CoefficientSectionDescent
+public import FLT.Mazur.CoefficientSectionEquality
+public import FLT.Mazur.CoefficientSectionNeighborhood
+public import FLT.Mazur.CoefficientSectionRecovery
 public import FLT.Mazur.CoefficientSmoothConnectedDescent
 public import FLT.Mazur.CoefficientSmoothDescent
+public import FLT.Mazur.CoefficientSmoothMarkingRefinement
+public import FLT.Mazur.CoefficientSmoothOpenRefinement
 public import FLT.Mazur.CoefficientSpectrumLimit
 public import FLT.Mazur.CoefficientStageColimit
 public import FLT.Mazur.CoefficientStageDiagram
@@ -6608,6 +6619,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingGluedRecovery
 public import FLT.Mazur.GeneralizedCurveMarkingGluedSection
 public import FLT.Mazur.GeneralizedCurveMarkingHigherMonomials
 public import FLT.Mazur.GeneralizedCurveMarkingHomogeneousEquation
+public import FLT.Mazur.GeneralizedCurveMarkingIntegerModel
 public import FLT.Mazur.GeneralizedCurveMarkingLineBaseChange
 public import FLT.Mazur.GeneralizedCurveMarkingLineCoherence
 public import FLT.Mazur.GeneralizedCurveMarkingLocalCubic
@@ -6634,6 +6646,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingPoleTwoExpansion
 public import FLT.Mazur.GeneralizedCurveMarkingProjectiveIso
 public import FLT.Mazur.GeneralizedCurveMarkingProjectiveSections
 public import FLT.Mazur.GeneralizedCurveMarkingPulledCartesian
+public import FLT.Mazur.GeneralizedCurveMarkingSmoothIntegerModel
 public import FLT.Mazur.GeneralizedCurveMarkingTestCover
 public import FLT.Mazur.GeneralizedCurveMarkingTestCubicChart
 public import FLT.Mazur.GeneralizedCurveMarkingTestEquation
@@ -13834,6 +13847,7 @@ public import FLT.Mazur.SmoothRadicalBaseChange
 public import FLT.Mazur.SmoothRadicalIdealSheaf
 public import FLT.Mazur.SmoothRelativeCotangentRank
 public import FLT.Mazur.SmoothSectionCartier
+public import FLT.Mazur.SmoothSectionCompactNeighborhood
 public import FLT.Mazur.SmoothTranslationChartOrbitFibers
 public import FLT.Mazur.SmoothTranslationChartOrbitHomeomorph
 public import FLT.Mazur.SmoothTranslationCommonSectionSquare
