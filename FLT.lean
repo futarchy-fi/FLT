@@ -6506,6 +6506,7 @@ public import FLT.Mazur.GeneralizedCurveIteratedProjection
 public import FLT.Mazur.GeneralizedCurveLocalCubicPresentation
 public import FLT.Mazur.GeneralizedCurveLocalCyclicCubic
 public import FLT.Mazur.GeneralizedCurveLocalCyclicCubicUnrestricted
+public import FLT.Mazur.GeneralizedCurveLocalMarkingFrames
 public import FLT.Mazur.GeneralizedCurveLocalPointFrames
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChange
 public import FLT.Mazur.GeneralizedCurveNaturalIsoGluing
