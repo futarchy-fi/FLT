@@ -5632,6 +5632,7 @@ public import FLT.Mazur.EquivalenceRelationEqualFrameOverlap
 public import FLT.Mazur.EquivalenceRelationEqualizedInvariants
 public import FLT.Mazur.EquivalenceRelationExactQuotientCorrectionExtension
 public import FLT.Mazur.EquivalenceRelationExactRankInterior
+public import FLT.Mazur.EquivalenceRelationExactRankNormalizedCover
 public import FLT.Mazur.EquivalenceRelationExcessFrames
 public import FLT.Mazur.EquivalenceRelationFiberPermutationSections
 public import FLT.Mazur.EquivalenceRelationFiberRebase
@@ -5714,6 +5715,8 @@ public import FLT.Mazur.EquivalenceRelationOrbitSchemeArrows
 public import FLT.Mazur.EquivalenceRelationOriginalChartScalars
 public import FLT.Mazur.EquivalenceRelationOriginalOrbitComparison
 public import FLT.Mazur.EquivalenceRelationOriginalScalarFiber
+public import FLT.Mazur.EquivalenceRelationPairedAffineCover
+public import FLT.Mazur.EquivalenceRelationPairedNormalizedCover
 public import FLT.Mazur.EquivalenceRelationPrescribedQuotientCorrection
 public import FLT.Mazur.EquivalenceRelationPrincipalCompleteCharacters
 public import FLT.Mazur.EquivalenceRelationPrincipalPrimeCoverage
@@ -7315,6 +7318,7 @@ public import FLT.Mazur.HilbertOriginalScalarStrata
 public import FLT.Mazur.HilbertOriginalScalarTestAtlas
 public import FLT.Mazur.HilbertOriginalScalarTestCorrections
 public import FLT.Mazur.HilbertOverlapRestriction
+public import FLT.Mazur.HilbertPairedNormalizedAffineLifts
 public import FLT.Mazur.HilbertParameterAbelClass
 public import FLT.Mazur.HilbertParameterChartFactorization
 public import FLT.Mazur.HilbertParameterFiniteType
@@ -9234,6 +9238,7 @@ public import FLT.Mazur.OriginalBoundaryAdicFlatRelation
 public import FLT.Mazur.OriginalBoundaryAdicRelationLift
 public import FLT.Mazur.OriginalBoundaryAffineAssociatedDetection
 public import FLT.Mazur.OriginalBoundaryAffineAssociatedLift
+public import FLT.Mazur.OriginalBoundaryAffineChartOrbitTests
 public import FLT.Mazur.OriginalBoundaryAffinePrincipalLift
 public import FLT.Mazur.OriginalBoundaryAssociatedComparisonLift
 public import FLT.Mazur.OriginalBoundaryAssociatedDifferentialDetection
@@ -13170,6 +13175,7 @@ public import FLT.Mazur.SchemePairDoubleBoundaryRange
 public import FLT.Mazur.SchemePairDoubleBoundarySymmetry
 public import FLT.Mazur.SchemePairDoubleBoundaryTransfer
 public import FLT.Mazur.SchemePairSymmetryPoints
+public import FLT.Mazur.SchemePairedStableAffineLifts
 public import FLT.Mazur.SchemeParameterEquivalence
 public import FLT.Mazur.SchemePicardClasses
 public import FLT.Mazur.SchemePicardGroup
