@@ -16365,6 +16365,7 @@ public import FLT.Mazur.WeierstrassDividedReciprocalChordSource
 public import FLT.Mazur.WeierstrassDividedReciprocalChordSpecialization
 public import FLT.Mazur.WeierstrassDividedReciprocalChordTangentComparison
 public import FLT.Mazur.WeierstrassDividedReciprocalChordTangentFormula
+public import FLT.Mazur.WeierstrassDividedReciprocalChordTangentScheme
 public import FLT.Mazur.WeierstrassDividedReciprocalExtendedAddition
 public import FLT.Mazur.WeierstrassDividedReciprocalExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalFormula
