@@ -13505,6 +13505,7 @@ public import FLT.Mazur.SectionPointFrameBaseChange
 public import FLT.Mazur.SectionPointPowerBaseChange
 public import FLT.Mazur.SectionPoleAdaptedBasis
 public import FLT.Mazur.SectionPoleBaseChangeFrames
+public import FLT.Mazur.SectionPoleBaseChangeNormalization
 public import FLT.Mazur.SectionPoleBaseChangeSections
 public import FLT.Mazur.SectionPoleCanonicalCoefficient
 public import FLT.Mazur.SectionPoleFrameChange
