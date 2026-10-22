@@ -12752,6 +12752,7 @@ public import FLT.Mazur.RingEqualizerDescent
 public import FLT.Mazur.RingEqualizerLocalDescent
 public import FLT.Mazur.RingEqualizerLocalization
 public import FLT.Mazur.RingEquivGrading
+public import FLT.Mazur.RingFlatRelation
 public import FLT.Mazur.RingPairInvariantFlatScalars
 public import FLT.Mazur.RingPairInvariantLocalization
 public import FLT.Mazur.RingedSpaceIdealLocus
