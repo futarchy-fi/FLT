@@ -16172,6 +16172,7 @@ public import FLT.Mazur.WeierstrassDividedNodalTangentGluing
 public import FLT.Mazur.WeierstrassDividedNodalTangentNeighborhood
 public import FLT.Mazur.WeierstrassDividedNodalTangentNeighborhoodCover
 public import FLT.Mazur.WeierstrassDividedNodalTripleNegativePairCover
+public import FLT.Mazur.WeierstrassDividedNodalTriplePairPromotion
 public import FLT.Mazur.WeierstrassDividedNodalTriplePositivePairCover
 public import FLT.Mazur.WeierstrassDividedNodeCommonSumOutput
 public import FLT.Mazur.WeierstrassDividedNonadjacentGlobalIntersection
