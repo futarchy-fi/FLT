@@ -12838,6 +12838,7 @@ public import FLT.Mazur.ScalarCompatibleIntegerModel
 public import FLT.Mazur.ScalarComponentRankCeiling
 public import FLT.Mazur.ScalarConstructibleFiniteCover
 public import FLT.Mazur.ScalarConstructibleStrata
+public import FLT.Mazur.ScalarCoordinateKernelSeparation
 public import FLT.Mazur.ScalarDifferentialAssociatedDenominator
 public import FLT.Mazur.ScalarDifferentialFiberDual
 public import FLT.Mazur.ScalarDifferentialJacobianAnnihilator
