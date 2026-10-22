@@ -13556,6 +13556,7 @@ public import FLT.Mazur.SectionRetainedProjOpens
 public import FLT.Mazur.SectionRetainedProjStructuralMap
 public import FLT.Mazur.SectionRetainedSheafEvaluation
 public import FLT.Mazur.SectionRetainedSourceLineEvaluation
+public import FLT.Mazur.SectionSquareTensorFrame
 public import FLT.Mazur.SectionSquareTransportFrame
 public import FLT.Mazur.SectionSumFiberDegree
 public import FLT.Mazur.SectionSumFieldLength
