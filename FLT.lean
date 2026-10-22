@@ -10874,6 +10874,7 @@ public import FLT.Mazur.PolygonOriginalNodeBasicOpen
 public import FLT.Mazur.PolygonOriginalNodeClosed
 public import FLT.Mazur.PolygonOriginalNodeMarkingComplement
 public import FLT.Mazur.PolygonOriginalNodePoint
+public import FLT.Mazur.PolygonOriginalPointPowers
 public import FLT.Mazur.PolygonOriginalSmoothMarking
 public import FLT.Mazur.PolygonOriginalStageAdicSquare
 public import FLT.Mazur.PolygonParameterMarkingBaseChange
