@@ -6089,6 +6089,7 @@ public import FLT.Mazur.FiniteFreeFramePasting
 public import FLT.Mazur.FiniteFreeFrameRestrictionSquare
 public import FLT.Mazur.FiniteFreeInheritedChartTransitions
 public import FLT.Mazur.FiniteFreePolynomialNorm
+public import FLT.Mazur.FiniteFreePolynomialNormSplitting
 public import FLT.Mazur.FiniteFreeProjectiveAtlasDiagram
 public import FLT.Mazur.FiniteFreeProjectiveChartRefinement
 public import FLT.Mazur.FiniteFreePullbackFrame
