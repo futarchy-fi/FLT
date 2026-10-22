@@ -6544,6 +6544,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingFrameAffineChange
 public import FLT.Mazur.GeneralizedCurveMarkingFrameCocycle
 public import FLT.Mazur.GeneralizedCurveMarkingFrameCubicChange
 public import FLT.Mazur.GeneralizedCurveMarkingFrameEquation
+public import FLT.Mazur.GeneralizedCurveMarkingFramePullback
 public import FLT.Mazur.GeneralizedCurveMarkingFrameScaling
 public import FLT.Mazur.GeneralizedCurveMarkingFramedProducts
 public import FLT.Mazur.GeneralizedCurveMarkingHigherMonomials
