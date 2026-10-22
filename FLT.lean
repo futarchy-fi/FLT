@@ -16112,6 +16112,7 @@ public import FLT.Mazur.WeierstrassDividedNodalReflectedContraction
 public import FLT.Mazur.WeierstrassDividedNodalReflectedCoverage
 public import FLT.Mazur.WeierstrassDividedNodalReflectedIndexed
 public import FLT.Mazur.WeierstrassDividedNodalReflectedNegative
+public import FLT.Mazur.WeierstrassDividedNodalReflectedPuncturedCover
 public import FLT.Mazur.WeierstrassDividedNodalReflectedResidue
 public import FLT.Mazur.WeierstrassDividedNodalReflectedResolvedContraction
 public import FLT.Mazur.WeierstrassDividedNodalReflectedSecant
