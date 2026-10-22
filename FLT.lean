@@ -12372,6 +12372,7 @@ public import FLT.Mazur.RelativeCyclicSubgroupRelabel
 public import FLT.Mazur.RelativeCyclicSubgroupSmoothOpen
 public import FLT.Mazur.RelativeDiagonalRankDetection
 public import FLT.Mazur.RelativeDimensionBaseChangeOpen
+public import FLT.Mazur.RelativeDimensionNeighborhood
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
 public import FLT.Mazur.RelativeDirectImageOpenResolution
