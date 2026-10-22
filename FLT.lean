@@ -5631,6 +5631,7 @@ public import FLT.Mazur.EquivalenceRelationEqualFrameOverlap
 public import FLT.Mazur.EquivalenceRelationEqualizedInvariants
 public import FLT.Mazur.EquivalenceRelationExactQuotientCorrectionExtension
 public import FLT.Mazur.EquivalenceRelationExactRankInterior
+public import FLT.Mazur.EquivalenceRelationExactRankNormalizedCover
 public import FLT.Mazur.EquivalenceRelationExcessFrames
 public import FLT.Mazur.EquivalenceRelationFiberPermutationSections
 public import FLT.Mazur.EquivalenceRelationFiberRebase
