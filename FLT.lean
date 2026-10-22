@@ -3984,6 +3984,7 @@ public import FLT.Mazur.CartierBoundarySectionRingIdentity
 public import FLT.Mazur.CartierBoundarySectionRingNaturality
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
+public import FLT.Mazur.CartierComplementMorphismExt
 public import FLT.Mazur.CartierComplementRestriction
 public import FLT.Mazur.CartierDivisorComponentRestriction
 public import FLT.Mazur.CartierDivisorMultiplicity
@@ -5615,6 +5616,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteSubframeCompatibility
 public import FLT.Mazur.EquivalenceRelationCompleteSupportedTests
 public import FLT.Mazur.EquivalenceRelationCompleteTestCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteTestFinite
+public import FLT.Mazur.EquivalenceRelationCompleteTestInvariants
 public import FLT.Mazur.EquivalenceRelationCompleteTestPartition
 public import FLT.Mazur.EquivalenceRelationCompleteThickeningAction
 public import FLT.Mazur.EquivalenceRelationCompleteThickeningFinite
@@ -5715,7 +5717,9 @@ public import FLT.Mazur.EquivalenceRelationOriginalChartScalars
 public import FLT.Mazur.EquivalenceRelationOriginalOrbitComparison
 public import FLT.Mazur.EquivalenceRelationOriginalScalarFiber
 public import FLT.Mazur.EquivalenceRelationPairedAffineCover
+public import FLT.Mazur.EquivalenceRelationPairedAffineDomain
 public import FLT.Mazur.EquivalenceRelationPairedNormalizedCover
+public import FLT.Mazur.EquivalenceRelationPairedRankStages
 public import FLT.Mazur.EquivalenceRelationPrescribedQuotientCorrection
 public import FLT.Mazur.EquivalenceRelationPrincipalCompleteCharacters
 public import FLT.Mazur.EquivalenceRelationPrincipalPrimeCoverage
@@ -6544,6 +6548,13 @@ public import FLT.Mazur.GeneralizedCurveMarkingCubicPreimages
 public import FLT.Mazur.GeneralizedCurveMarkingCubicRelation
 public import FLT.Mazur.GeneralizedCurveMarkingCubicResidueFields
 public import FLT.Mazur.GeneralizedCurveMarkingCubicTopology
+public import FLT.Mazur.GeneralizedCurveMarkingFrameAffineChange
+public import FLT.Mazur.GeneralizedCurveMarkingFrameCocycle
+public import FLT.Mazur.GeneralizedCurveMarkingFrameCubicChange
+public import FLT.Mazur.GeneralizedCurveMarkingFrameEquation
+public import FLT.Mazur.GeneralizedCurveMarkingFramePresentation
+public import FLT.Mazur.GeneralizedCurveMarkingFramePullback
+public import FLT.Mazur.GeneralizedCurveMarkingFrameScaling
 public import FLT.Mazur.GeneralizedCurveMarkingFramedProducts
 public import FLT.Mazur.GeneralizedCurveMarkingHigherMonomials
 public import FLT.Mazur.GeneralizedCurveMarkingHomogeneousEquation
@@ -6555,8 +6566,11 @@ public import FLT.Mazur.GeneralizedCurveMarkingMarkingRatios
 public import FLT.Mazur.GeneralizedCurveMarkingMonomialBasis
 public import FLT.Mazur.GeneralizedCurveMarkingMonomialIndependence
 public import FLT.Mazur.GeneralizedCurveMarkingNormalMonomials
+public import FLT.Mazur.GeneralizedCurveMarkingNormalizedChange
+public import FLT.Mazur.GeneralizedCurveMarkingNormalizedCoordinates
 public import FLT.Mazur.GeneralizedCurveMarkingPointedCubic
 public import FLT.Mazur.GeneralizedCurveMarkingPoleReduction
+public import FLT.Mazur.GeneralizedCurveMarkingPoleTwoExpansion
 public import FLT.Mazur.GeneralizedCurveMarkingProjectiveIso
 public import FLT.Mazur.GeneralizedCurveMarkingProjectiveSections
 public import FLT.Mazur.GeneralizedCurveNaturalIsoGluing
@@ -7301,6 +7315,9 @@ public import FLT.Mazur.HilbertOriginalCoreInvariantCoefficients
 public import FLT.Mazur.HilbertOriginalRankCoreCover
 public import FLT.Mazur.HilbertOriginalRankStageBoundaryLifts
 public import FLT.Mazur.HilbertOriginalRankStageCoverage
+public import FLT.Mazur.HilbertOriginalRelationPairedAffineLifts
+public import FLT.Mazur.HilbertOriginalRelationPairedInvariantLifts
+public import FLT.Mazur.HilbertOriginalRelationPairedScalarLifts
 public import FLT.Mazur.HilbertOriginalScalarFrameCharts
 public import FLT.Mazur.HilbertOriginalScalarMaximalCover
 public import FLT.Mazur.HilbertOriginalScalarStrata
@@ -13165,6 +13182,7 @@ public import FLT.Mazur.SchemePairDoubleBoundarySymmetry
 public import FLT.Mazur.SchemePairDoubleBoundaryTransfer
 public import FLT.Mazur.SchemePairSymmetryPoints
 public import FLT.Mazur.SchemePairedStableAffineLifts
+public import FLT.Mazur.SchemePairedStableAffineRefinement
 public import FLT.Mazur.SchemeParameterEquivalence
 public import FLT.Mazur.SchemePicardClasses
 public import FLT.Mazur.SchemePicardGroup
@@ -13494,11 +13512,13 @@ public import FLT.Mazur.SectionPointPowerBaseChange
 public import FLT.Mazur.SectionPoleAdaptedBasis
 public import FLT.Mazur.SectionPoleBaseChangeFrames
 public import FLT.Mazur.SectionPoleCanonicalCoefficient
+public import FLT.Mazur.SectionPoleFrameChange
 public import FLT.Mazur.SectionPoleGeneratorCover
 public import FLT.Mazur.SectionPoleHZeroMultiplication
 public import FLT.Mazur.SectionPoleLeadingRestriction
 public import FLT.Mazur.SectionPoleLineFrames
 public import FLT.Mazur.SectionPoleMultiplicativeCoordinates
+public import FLT.Mazur.SectionPoleNormalizedDifference
 public import FLT.Mazur.SectionPoleSpecifiedBasis
 public import FLT.Mazur.SectionPoleSplit
 public import FLT.Mazur.SectionPowerGluing
@@ -13822,6 +13842,7 @@ public import FLT.Mazur.TensorOpenExteriorIntersection
 public import FLT.Mazur.TensorPowerComparedSectionCons
 public import FLT.Mazur.TensorPowerComparedSections
 public import FLT.Mazur.TensorPowerDistribution
+public import FLT.Mazur.TensorPowerFrameComparison
 public import FLT.Mazur.TensorPowerGeneratorOpen
 public import FLT.Mazur.TensorPowerNestedSection
 public import FLT.Mazur.TensorPowerPullbackComparison
@@ -17652,6 +17673,7 @@ public import FLT.Mazur.WeierstrassEquationCoefficientChart
 public import FLT.Mazur.WeierstrassEquationCoefficientCongruence
 public import FLT.Mazur.WeierstrassEquationCoefficientProjection
 public import FLT.Mazur.WeierstrassEquationTransport
+public import FLT.Mazur.WeierstrassEvaluatedEquationRigidity
 public import FLT.Mazur.WeierstrassFactorRatioAffineTarget
 public import FLT.Mazur.WeierstrassFactorRatioNodeTarget
 public import FLT.Mazur.WeierstrassFieldChartPresentation
