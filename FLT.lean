@@ -9294,6 +9294,10 @@ public import FLT.Mazur.OriginalBoundaryAffineAssociatedDetection
 public import FLT.Mazur.OriginalBoundaryAffineAssociatedLift
 public import FLT.Mazur.OriginalBoundaryAffineChartOrbitTests
 public import FLT.Mazur.OriginalBoundaryAffinePrincipalLift
+public import FLT.Mazur.OriginalBoundaryAscendingComparisonTests
+public import FLT.Mazur.OriginalBoundaryAscendingRankKernel
+public import FLT.Mazur.OriginalBoundaryAscendingResidualPowers
+public import FLT.Mazur.OriginalBoundaryAscendingResidualSupport
 public import FLT.Mazur.OriginalBoundaryAssociatedComparisonLift
 public import FLT.Mazur.OriginalBoundaryAssociatedDifferentialDetection
 public import FLT.Mazur.OriginalBoundaryAssociatedPrincipalLift
@@ -9356,10 +9360,12 @@ public import FLT.Mazur.OriginalBoundaryRankAssociatedLift
 public import FLT.Mazur.OriginalBoundaryRankChartEndpointLift
 public import FLT.Mazur.OriginalBoundaryRankCollision
 public import FLT.Mazur.OriginalBoundaryRankDifferentialTower
+public import FLT.Mazur.OriginalBoundaryRankEndpointTransposition
 public import FLT.Mazur.OriginalBoundaryRankLocalEquationLift
 public import FLT.Mazur.OriginalBoundaryRankPolynomialLift
 public import FLT.Mazur.OriginalBoundaryRankStageComparison
 public import FLT.Mazur.OriginalBoundaryRankStageDenseCoverage
+public import FLT.Mazur.OriginalBoundaryRankTransposition
 public import FLT.Mazur.OriginalBoundaryRelationOpenLift
 public import FLT.Mazur.OriginalBoundaryRelationSupport
 public import FLT.Mazur.OriginalBoundaryResidualCoefficientLift
@@ -12347,7 +12353,10 @@ public import FLT.Mazur.RelativeDoubleRankResidualCorrections
 public import FLT.Mazur.RelativeDoubleRankScalarKernels
 public import FLT.Mazur.RelativeDoubleRankTestDetection
 public import FLT.Mazur.RelativeDoubleRankThickenings
+public import FLT.Mazur.RelativeDoubleRankTransposeScalars
+public import FLT.Mazur.RelativeDoubleRankTransposition
 public import FLT.Mazur.RelativeDoubleRankUniformRectangle
+public import FLT.Mazur.RelativeDoubleRankUniversal
 public import FLT.Mazur.RelativeEtaleFiniteBranchCover
 public import FLT.Mazur.RelativeExactRankFactorization
 public import FLT.Mazur.RelativeExactRankFaithful
@@ -13438,6 +13447,7 @@ public import FLT.Mazur.SchemeScalarImageNilpotence
 public import FLT.Mazur.SchemeScalarImageQuotient
 public import FLT.Mazur.SchemeScalarIntegralBadCover
 public import FLT.Mazur.SchemeScalarIntegralCover
+public import FLT.Mazur.SchemeScalarKernelPairSymmetry
 public import FLT.Mazur.SchemeScalarMinimalEndpoint
 public import FLT.Mazur.SchemeScalarOrbitComparison
 public import FLT.Mazur.SchemeScalarOrbitEndpointTests
