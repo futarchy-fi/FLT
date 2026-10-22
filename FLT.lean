@@ -6539,6 +6539,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingAllPoleBasis
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChange
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeCubic
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeEquation
+public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeEvaluation
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeUnique
 public import FLT.Mazur.GeneralizedCurveMarkingCanonicalLine
 public import FLT.Mazur.GeneralizedCurveMarkingChartEquation
