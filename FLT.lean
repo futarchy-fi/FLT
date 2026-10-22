@@ -3451,6 +3451,7 @@ public import FLT.Mazur.AffineSplitLineSourceTransport
 public import FLT.Mazur.AffineSquareEquivalences
 public import FLT.Mazur.AffineSquareScalarExtension
 public import FLT.Mazur.AffineSquareTensorComparison
+public import FLT.Mazur.AffineStageLocalizedCriterion
 public import FLT.Mazur.AffineStageLocalizedTarget
 public import FLT.Mazur.AffineStageObstructionSquare
 public import FLT.Mazur.AffineStagePointReconstruction
