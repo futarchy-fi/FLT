@@ -6538,6 +6538,7 @@ public import FLT.Mazur.GeneralizedCurveMarkedCubicCocycle
 public import FLT.Mazur.GeneralizedCurveMarkedCubicComparison
 public import FLT.Mazur.GeneralizedCurveMarkingAffineCartesian
 public import FLT.Mazur.GeneralizedCurveMarkingAffineCubicMorphism
+public import FLT.Mazur.GeneralizedCurveMarkingAffineOverlap
 public import FLT.Mazur.GeneralizedCurveMarkingAffineRestriction
 public import FLT.Mazur.GeneralizedCurveMarkingAllPoleBasis
 public import FLT.Mazur.GeneralizedCurveMarkingAssociator
