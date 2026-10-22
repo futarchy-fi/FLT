@@ -9192,6 +9192,7 @@ public import FLT.Mazur.OriginalBoundaryFiniteStageTests
 public import FLT.Mazur.OriginalBoundaryFiniteValuationRanks
 public import FLT.Mazur.OriginalBoundaryFlatImageGeometry
 public import FLT.Mazur.OriginalBoundaryFlatRelationLift
+public import FLT.Mazur.OriginalBoundaryFullStalkJacobianLift
 public import FLT.Mazur.OriginalBoundaryGenericRankCoverage
 public import FLT.Mazur.OriginalBoundaryGenerizingRanks
 public import FLT.Mazur.OriginalBoundaryGeometricTensor
@@ -12556,6 +12557,11 @@ public import FLT.Mazur.ScalarExtensionImageReduction
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
 public import FLT.Mazur.ScalarFiniteDifferentialGenerators
+public import FLT.Mazur.ScalarFullStalkJacobianClearing
+public import FLT.Mazur.ScalarFullStalkJacobianTests
+public import FLT.Mazur.ScalarFullStalkPresentation
+public import FLT.Mazur.ScalarFullStalkPresentationRows
+public import FLT.Mazur.ScalarFullStalkResidue
 public import FLT.Mazur.ScalarGenericSourceEquations
 public import FLT.Mazur.ScalarGeometricFiberTests
 public import FLT.Mazur.ScalarGeometricPointTests
@@ -12566,6 +12572,7 @@ public import FLT.Mazur.ScalarImageNeighborhoodBasis
 public import FLT.Mazur.ScalarImageOriginalGenerators
 public import FLT.Mazur.ScalarImageResidueGenerators
 public import FLT.Mazur.ScalarImageSourceGenerators
+public import FLT.Mazur.ScalarJacobianRowSelection
 public import FLT.Mazur.ScalarLocalJacobianAnnihilator
 public import FLT.Mazur.ScalarLocalPolynomialResidueRigidity
 public import FLT.Mazur.ScalarLocalPolynomialTests
@@ -12599,6 +12606,7 @@ public import FLT.Mazur.ScalarRestrictionImage
 public import FLT.Mazur.ScalarSourceOpenBaseFiniteness
 public import FLT.Mazur.ScalarSourceOpenElementEquations
 public import FLT.Mazur.ScalarSourceOpenEquationNeighborhoods
+public import FLT.Mazur.ScalarSourceOpenFullStalkJacobians
 public import FLT.Mazur.ScalarSourceOpenJacobianTests
 public import FLT.Mazur.ScalarSourceOpenLocalizedJacobians
 public import FLT.Mazur.ScalarSourceOpenRigidity
@@ -12615,6 +12623,7 @@ public import FLT.Mazur.ScalarTestKernelProducts
 public import FLT.Mazur.ScalarTestLocalizationKernels
 public import FLT.Mazur.ScalarTestResidualSeparation
 public import FLT.Mazur.ScalarTowerDivision
+public import FLT.Mazur.ScalarUnitJacobianRigidity
 public import FLT.Mazur.ScalarUnramifiedBaseDifferentials
 public import FLT.Mazur.ScalarWholeFiberStrata
 public import FLT.Mazur.SchematicClosureFiniteSections
