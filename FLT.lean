@@ -6536,6 +6536,7 @@ public import FLT.Mazur.GeneralizedCurveLocalPointFrames
 public import FLT.Mazur.GeneralizedCurveLocalProjectiveCubic
 public import FLT.Mazur.GeneralizedCurveMarkedCubicCocycle
 public import FLT.Mazur.GeneralizedCurveMarkedCubicComparison
+public import FLT.Mazur.GeneralizedCurveMarkedCubicNaturality
 public import FLT.Mazur.GeneralizedCurveMarkingAffineCartesian
 public import FLT.Mazur.GeneralizedCurveMarkingAffineCocycle
 public import FLT.Mazur.GeneralizedCurveMarkingAffineCubicMorphism
