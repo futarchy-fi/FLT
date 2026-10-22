@@ -6088,6 +6088,7 @@ public import FLT.Mazur.FiniteFreeChartUnitRefinement
 public import FLT.Mazur.FiniteFreeContragredient
 public import FLT.Mazur.FiniteFreeContragredientCoefficients
 public import FLT.Mazur.FiniteFreeContragredientEvaluation
+public import FLT.Mazur.FiniteFreeCoordinateFrame
 public import FLT.Mazur.FiniteFreeDualPointBaseChange
 public import FLT.Mazur.FiniteFreeDualProjectivePoints
 public import FLT.Mazur.FiniteFreeDualProjectiveRefinement
@@ -6106,7 +6107,9 @@ public import FLT.Mazur.FiniteFreePullbackFrame
 public import FLT.Mazur.FiniteFreeQuotientComparisonEquation
 public import FLT.Mazur.FiniteFreeQuotientIdealPresentation
 public import FLT.Mazur.FiniteFreeRefinementPullback
+public import FLT.Mazur.FiniteFreeRingQuotientComparison
 public import FLT.Mazur.FiniteFreeSectionLineTransport
+public import FLT.Mazur.FiniteFreeSeparatedScalarFrame
 public import FLT.Mazur.FiniteFreeSplitCharpoly
 public import FLT.Mazur.FiniteFreeSplitComparisonEquation
 public import FLT.Mazur.FiniteFreeTensorSections
@@ -9404,6 +9407,8 @@ public import FLT.Mazur.OriginalBoundaryAffineAssociatedDetection
 public import FLT.Mazur.OriginalBoundaryAffineAssociatedLift
 public import FLT.Mazur.OriginalBoundaryAffineChartOrbitTests
 public import FLT.Mazur.OriginalBoundaryAffinePrincipalLift
+public import FLT.Mazur.OriginalBoundaryAmbientFiniteFreeLift
+public import FLT.Mazur.OriginalBoundaryAmbientScalarEquations
 public import FLT.Mazur.OriginalBoundaryAscendingComparisonTests
 public import FLT.Mazur.OriginalBoundaryAscendingRankKernel
 public import FLT.Mazur.OriginalBoundaryAscendingResidualPowers
@@ -12867,6 +12872,7 @@ public import FLT.Mazur.ScalarCompatibleIntegerModel
 public import FLT.Mazur.ScalarComponentRankCeiling
 public import FLT.Mazur.ScalarConstructibleFiniteCover
 public import FLT.Mazur.ScalarConstructibleStrata
+public import FLT.Mazur.ScalarCoordinateKernelSeparation
 public import FLT.Mazur.ScalarDifferentialAssociatedDenominator
 public import FLT.Mazur.ScalarDifferentialFiberDual
 public import FLT.Mazur.ScalarDifferentialJacobianAnnihilator
