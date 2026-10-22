@@ -6520,6 +6520,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingCoordinateSurjective
 public import FLT.Mazur.GeneralizedCurveMarkingCubicRelation
 public import FLT.Mazur.GeneralizedCurveMarkingFramedProducts
 public import FLT.Mazur.GeneralizedCurveMarkingHigherMonomials
+public import FLT.Mazur.GeneralizedCurveMarkingLocalCubic
 public import FLT.Mazur.GeneralizedCurveMarkingLowPoles
 public import FLT.Mazur.GeneralizedCurveMarkingMonomialBasis
 public import FLT.Mazur.GeneralizedCurveMarkingMonomialIndependence
