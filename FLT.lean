@@ -6537,8 +6537,11 @@ public import FLT.Mazur.GeneralizedCurveMarkingAffineCubicMorphism
 public import FLT.Mazur.GeneralizedCurveMarkingAffineRestriction
 public import FLT.Mazur.GeneralizedCurveMarkingAllPoleBasis
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChange
+public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeAffine
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeCubic
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeEquation
+public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeEvaluation
+public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeMorphism
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeUnique
 public import FLT.Mazur.GeneralizedCurveMarkingCanonicalLine
 public import FLT.Mazur.GeneralizedCurveMarkingChartEquation
@@ -6552,6 +6555,8 @@ public import FLT.Mazur.GeneralizedCurveMarkingCubicFactorization
 public import FLT.Mazur.GeneralizedCurveMarkingCubicFinite
 public import FLT.Mazur.GeneralizedCurveMarkingCubicGeometricIso
 public import FLT.Mazur.GeneralizedCurveMarkingCubicPreimages
+public import FLT.Mazur.GeneralizedCurveMarkingCubicPullback
+public import FLT.Mazur.GeneralizedCurveMarkingCubicPullbackMorphism
 public import FLT.Mazur.GeneralizedCurveMarkingCubicRelation
 public import FLT.Mazur.GeneralizedCurveMarkingCubicResidueFields
 public import FLT.Mazur.GeneralizedCurveMarkingCubicTopology
@@ -14257,6 +14262,7 @@ public import FLT.Mazur.WeierstrassAffineCoordinateFlat
 public import FLT.Mazur.WeierstrassAffineEquationEvaluation
 public import FLT.Mazur.WeierstrassAffineEquationRigidity
 public import FLT.Mazur.WeierstrassAffineEvaluationInjective
+public import FLT.Mazur.WeierstrassAffineEvaluationNaturality
 public import FLT.Mazur.WeierstrassAffineEvaluationRange
 public import FLT.Mazur.WeierstrassAffineGeometricIntegral
 public import FLT.Mazur.WeierstrassAffineInputFactorization
@@ -14314,6 +14320,7 @@ public import FLT.Mazur.WeierstrassChangeGeneralizedNaturality
 public import FLT.Mazur.WeierstrassChangeParameter
 public import FLT.Mazur.WeierstrassChangePointedGeneralizedIso
 public import FLT.Mazur.WeierstrassChangeSubgroupScheme
+public import FLT.Mazur.WeierstrassChangedCoefficientEvaluation
 public import FLT.Mazur.WeierstrassCharacterCoefficientHom
 public import FLT.Mazur.WeierstrassCharacterCoefficientNaturality
 public import FLT.Mazur.WeierstrassChartArithmeticRestriction
