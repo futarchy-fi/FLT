@@ -12347,6 +12347,7 @@ public import FLT.Mazur.RelativeDoubleRankCofinalEquations
 public import FLT.Mazur.RelativeDoubleRankCompact
 public import FLT.Mazur.RelativeDoubleRankCompleteKernel
 public import FLT.Mazur.RelativeDoubleRankDetection
+public import FLT.Mazur.RelativeDoubleRankEqualOrderLifts
 public import FLT.Mazur.RelativeDoubleRankEventualRecovery
 public import FLT.Mazur.RelativeDoubleRankExactDenominators
 public import FLT.Mazur.RelativeDoubleRankGlobalLifts
