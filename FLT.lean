@@ -6515,6 +6515,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingComplementEquation
 public import FLT.Mazur.GeneralizedCurveMarkingComplementMonomials
 public import FLT.Mazur.GeneralizedCurveMarkingCubicRelation
 public import FLT.Mazur.GeneralizedCurveMarkingFramedProducts
+public import FLT.Mazur.GeneralizedCurveMarkingHigherMonomials
 public import FLT.Mazur.GeneralizedCurveMarkingLowPoles
 public import FLT.Mazur.GeneralizedCurveMarkingMonomialBasis
 public import FLT.Mazur.GeneralizedCurveNaturalIsoGluing
