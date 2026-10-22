@@ -16803,6 +16803,7 @@ public import FLT.Mazur.WeierstrassDividedSuccessiveTensorPair
 public import FLT.Mazur.WeierstrassDividedSuccessiveTensorPairAddition
 public import FLT.Mazur.WeierstrassDividedSuccessiveTensorPairSpectrum
 public import FLT.Mazur.WeierstrassDividedSuccessiveTensorPrimeCoordinates
+public import FLT.Mazur.WeierstrassDividedSuccessiveZeroMixedCoverage
 public import FLT.Mazur.WeierstrassDividedSuccessorActionAtlas
 public import FLT.Mazur.WeierstrassDividedSuccessorActionInput
 public import FLT.Mazur.WeierstrassDividedSuccessorAtlasCoordinates
