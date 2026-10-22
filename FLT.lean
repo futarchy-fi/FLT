@@ -3324,6 +3324,7 @@ public import FLT.Mazur.AffineNormCartesianGluing
 public import FLT.Mazur.AffineNormChartIndependence
 public import FLT.Mazur.AffineNormGluing
 public import FLT.Mazur.AffineNormGluingFiber
+public import FLT.Mazur.AffineObstructionBaseChange
 public import FLT.Mazur.AffineOpenCartesianSections
 public import FLT.Mazur.AffineOpenCechBoundary
 public import FLT.Mazur.AffineOpenClosedLimitDescent
@@ -7826,6 +7827,7 @@ public import FLT.Mazur.IdealCohomologyAmpleCriterion
 public import FLT.Mazur.IdealComplementFunctionExtension
 public import FLT.Mazur.IdealConditionAcyclic
 public import FLT.Mazur.IdealFamilyIsomorphism
+public import FLT.Mazur.IdealInclusionFlatExtension
 public import FLT.Mazur.IdealIsomorphismExtension
 public import FLT.Mazur.IdealMapPowerAnnihilator
 public import FLT.Mazur.IdealModuleAffineTensor
@@ -7835,6 +7837,9 @@ public import FLT.Mazur.IdealModulePullback
 public import FLT.Mazur.IdealModulePullbackCoherence
 public import FLT.Mazur.IdealModulePullbackRestrict
 public import FLT.Mazur.IdealModuleSheaf
+public import FLT.Mazur.IdealObstructionOrientation
+public import FLT.Mazur.IdealObstructionScalarExtension
+public import FLT.Mazur.IdealObstructionUnitCriterion
 public import FLT.Mazur.IdealPowerChartDescent
 public import FLT.Mazur.IdealPowerCompatibility
 public import FLT.Mazur.IdealPowerExtensionCharts
@@ -7854,6 +7859,8 @@ public import FLT.Mazur.IdealPresentationQuotient
 public import FLT.Mazur.IdealPullbackVanishingCriterion
 public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IdealQuotientSectionLift
+public import FLT.Mazur.IdealResidualFlatBaseChange
+public import FLT.Mazur.IdealResidualKernelSpan
 public import FLT.Mazur.IdealSheafAdicStalkSeparation
 public import FLT.Mazur.IdealSheafAffineTestErrors
 public import FLT.Mazur.IdealSheafClopenStabilization
@@ -8253,6 +8260,7 @@ public import FLT.Mazur.LocalLineTwistLocalization
 public import FLT.Mazur.LocalLocalizationCartier
 public import FLT.Mazur.LocalParameterFlatness
 public import FLT.Mazur.LocalProperIdealTensorCriterion
+public import FLT.Mazur.LocalScalarObstructionCriterion
 public import FLT.Mazur.LocalizationCech
 public import FLT.Mazur.LocalizationCechCompare
 public import FLT.Mazur.LocalizationCechExact
@@ -8268,6 +8276,7 @@ public import FLT.Mazur.LocalizationFixedInvolution
 public import FLT.Mazur.LocalizationJointRestriction
 public import FLT.Mazur.LocalizationRelationClosure
 public import FLT.Mazur.LocalizedAdicCompletion
+public import FLT.Mazur.LocalizedAffineObstructionCriterion
 public import FLT.Mazur.LocalizedBaseSectionNumerator
 public import FLT.Mazur.LocalizedCoefficientFiberCartier
 public import FLT.Mazur.LocalizedComparisonTransport
@@ -12778,6 +12787,8 @@ public import FLT.Mazur.RelativeTupleSections
 public import FLT.Mazur.RelativeUniversalDistinctLift
 public import FLT.Mazur.RelativeVeryAmpleLineBundle
 public import FLT.Mazur.RepeatedCubicRoots
+public import FLT.Mazur.ResidualFlatTargetExtension
+public import FLT.Mazur.ResidualKernelSpan
 public import FLT.Mazur.ResidualPresentationInjectivity
 public import FLT.Mazur.ResidualPresentationKernel
 public import FLT.Mazur.ResidualPresentationKernelMap
@@ -12859,6 +12870,7 @@ public import FLT.Mazur.ScalarExtensionDirectSum
 public import FLT.Mazur.ScalarExtensionImageReduction
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
+public import FLT.Mazur.ScalarExtensionUnit
 public import FLT.Mazur.ScalarFiniteDifferentialGenerators
 public import FLT.Mazur.ScalarFiniteTypeFiberTests
 public import FLT.Mazur.ScalarFiniteTypeJacobianEquations
@@ -12907,6 +12919,7 @@ public import FLT.Mazur.ScalarOrbitTensorComparison
 public import FLT.Mazur.ScalarOrbitTestLifts
 public import FLT.Mazur.ScalarPolynomialNormEquation
 public import FLT.Mazur.ScalarPolynomialResidueRigidity
+public import FLT.Mazur.ScalarPresentationKernel
 public import FLT.Mazur.ScalarPresentationResidueGradients
 public import FLT.Mazur.ScalarPresentedLocalizedJacobians
 public import FLT.Mazur.ScalarPrimeLocalizationCover
