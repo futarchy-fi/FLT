@@ -6540,6 +6540,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingChartEquation
 public import FLT.Mazur.GeneralizedCurveMarkingComplementCoordinates
 public import FLT.Mazur.GeneralizedCurveMarkingComplementEquation
 public import FLT.Mazur.GeneralizedCurveMarkingComplementMonomials
+public import FLT.Mazur.GeneralizedCurveMarkingComplementPullback
 public import FLT.Mazur.GeneralizedCurveMarkingCoordinateRing
 public import FLT.Mazur.GeneralizedCurveMarkingCoordinateSurjective
 public import FLT.Mazur.GeneralizedCurveMarkingCubicFactorization
