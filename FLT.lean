@@ -5948,6 +5948,7 @@ public import FLT.Mazur.FiniteArrowIntegerModel
 public import FLT.Mazur.FiniteBaseLocalizationDenominators
 public import FLT.Mazur.FiniteBaseLocalizedBoundaryLifts
 public import FLT.Mazur.FiniteBaseLocalizedKernels
+public import FLT.Mazur.FiniteBasisDifferencePolynomial
 public import FLT.Mazur.FiniteBoundaryEqualizerClearing
 public import FLT.Mazur.FiniteCartierIsomorphismNeighborhood
 public import FLT.Mazur.FiniteCartierLocalizedComparison
