@@ -1,0 +1,112 @@
+/-
+Copyright (c) 2026 krandder. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: krandder
+-/
+module
+
+public import FLT.Mazur.WeierstrassDividedFactoredCommonBranchOrdinate
+public import FLT.Mazur.WeierstrassDividedOwnSumDepthCoordinates
+public import FLT.Mazur.WeierstrassDividedCommonSumFormula
+public import FLT.Mazur.WeierstrassDividedUnequalDepthSecant
+
+/-!
+# Sum-depth coordinates retaining the quadratic quotient
+
+Both common-scale ordinates use the complete quadratic coefficient.
+Their constructed sum coordinates contract to the original secant without
+assuming that the second coefficient vanishes. This supplies the algebraic
+construction needed beyond the upper reflected boundary.
+-/
+
+@[expose] public noncomputable section
+namespace FLT.Mazur.WeierstrassDividedDepth
+open WeierstrassDilatation
+set_option quotPrecheck false
+universe u
+variable {R S : Type u} [CommRing R] [CommRing S] [Algebra R S] [IsDomain R]
+  [Module.Flat R S] {W : WeierstrassCurve R} {π : R} (hπ : π ≠ 0) {k l : ℕ}
+  (d : Data W π k) (e : Data W π l) (hkl : k ≤ l)
+  (dd : CommonBranchData d k) (ee : CommonBranchData e k) (z : Data W π (k + l))
+  (b2 : R) (h2 : W.a₂ = π ^ k * b2)
+  (a : Coordinate W (π ^ k) d.b3 d.b4 d.b6 →ₐ[R] S)
+  (c : Coordinate W (π ^ l) e.b3 e.b4 e.b6 →ₐ[R] S)
+local notation "s" => algebraMap R S (π ^ k)
+local notation "t" => algebraMap R S (π ^ (l - k))
+local notation "x₁" => a (x W (π ^ k) d.b3 d.b4 d.b6)
+local notation "y₁" => a (y W (π ^ k) d.b3 d.b4 d.b6)
+local notation "x₂" => c (x W (π ^ l) e.b3 e.b4 e.b6)
+local notation "y₂" => c (y W (π ^ l) e.b3 e.b4 e.b6)
+local notation "W'" => W.map (algebraMap R S)
+variable (hc : IsUnit (a (y W (π ^ k) d.b3 d.b4 d.b6) +
+    algebraMap R S W.a₁ * a (x W (π ^ k) d.b3 d.b4 d.b6) + algebraMap R S d.b3))
+  (hd : IsUnit (c (y W (π ^ l) e.b3 e.b4 e.b6) +
+    algebraMap R S W.a₁ * c (x W (π ^ l) e.b3 e.b4 e.b6) + algebraMap R S e.b3))
+  (hxu : IsUnit (a (x W (π ^ k) d.b3 d.b4 d.b6) *
+    c (x W (π ^ l) e.b3 e.b4 e.b6))) (i L : S)
+local notation "q" => factoredCommonBranchOrdinate d dd b2 a hc
+local notation "r" => factoredCommonBranchOrdinate e ee b2 c hd
+local notation "b" => sumDepthIntercept 1 x₁ x₂ q r i
+
+/-- The abscissa is constructed from the two actual branch-ordinate quotients. -/
+def factoredSumDepthX : S := sumDepthX 1 (algebraMap R S z.b3) (algebraMap R S z.b6)
+  x₁ x₂ q r i hxu
+
+/-- The corresponding ordinate is at the very same sum depth. -/
+def factoredSumDepthY : S := sumDepthY W' 1 (algebraMap R S z.b3) (algebraMap R S z.b6)
+  x₁ x₂ q r i L hxu
+
+local notation "X" => factoredSumDepthX d e dd ee z b2 a c hc hd hxu i
+local notation "Y" => factoredSumDepthY d e dd ee z b2 a c hc hd hxu i L
+variable (hi : i * (a (x W (π ^ k) d.b3 d.b4 d.b6) -
+    algebraMap R S (π ^ (l - k)) * c (x W (π ^ l) e.b3 e.b4 e.b6)) = 1)
+  (hL : L * (a (x W (π ^ k) d.b3 d.b4 d.b6) -
+    algebraMap R S (π ^ (l - k)) * c (x W (π ^ l) e.b3 e.b4 e.b6)) =
+      a (y W (π ^ k) d.b3 d.b4 d.b6) -
+        algebraMap R S (π ^ (l - k)) * c (y W (π ^ l) e.b3 e.b4 e.b6))
+
+omit [IsDomain R] [Module.Flat R S] in
+include h2 hkl hi hL in
+/-- The equation constructs the divided intercept; no ordinate quotient is assumed. -/
+theorem factoredSumDepth_intercept : y₁ - L * x₁ = s * t * b := by
+  apply commonSumDepthIntercept_scale s t x₁ y₁ x₂ y₂ q r i L hi hL
+  · exact factoredCommonBranchOrdinate_scale d dd b2 a hc le_rfl h2
+  · exact factoredCommonBranchOrdinate_scale e ee b2 c hd hkl h2
+
+include hπ h2 hkl hi hL in
+/-- The constructed abscissa scales to the original secant output. -/
+theorem factoredSumDepthX_scale :
+    algebraMap R S (π ^ (k + l)) * X =
+      (W').toAffine.addX (s * x₁) (s * (t * x₂)) L := by
+  rw [← ownSumDepth_scale hkl]
+  apply WeierstrassDilatation.commonSumDepthX_scale W' s t
+    (algebraMap R S z.b3) (algebraMap R S z.b6)
+    x₁ y₁ x₂ q r i L hxu
+  · exact WeierstrassIntegralChart.flatRingHom_isRegular _
+      (RingHom.flat_algebraMap_iff.mpr inferInstance)
+      (isRegular_iff_ne_zero.mpr (pow_ne_zero _ hπ))
+  · exact factoredSumDepth_intercept d e hkl dd ee b2 h2 a c hc hd i L hi hL
+  · have he := equation_map W (π ^ k) d.b3 d.b4 d.b6
+      (unequalDepthRight hπ d e hkl c)
+    simp only [unequalDepthRight_x, unequalDepthRight_y] at he
+    have hp := divided_secant_product W' s (algebraMap R S d.b3)
+      (algebraMap R S d.b4) (algebraMap R S d.b6) x₁ y₁ (t * x₂) (t * y₂) L
+      (equation_map W (π ^ k) d.b3 d.b4 d.b6 a) he
+      (isUnit_iff_exists_inv.mpr ⟨i, by rwa [mul_comm]⟩) hL
+    rwa [ownSumDepth_factor3 hπ d hkl z, ownSumDepth_factor6 hπ d hkl z] at hp
+
+include hπ h2 hkl hi hL in
+/-- The constructed ordinate scales to the same original secant output. -/
+theorem factoredSumDepthY_scale :
+    algebraMap R S (π ^ (k + l)) * Y =
+      (W').toAffine.addY (s * x₁) (s * (t * x₂)) (s * y₁) L := by
+  rw [← ownSumDepth_scale hkl]
+  apply WeierstrassDilatation.commonSumDepthY_scale W' s t
+    (algebraMap R S z.b3) (algebraMap R S z.b6)
+    x₁ y₁ x₂ q r i L hxu
+  · rw [WeierstrassCurve.map_a₃, z.factor3, map_mul, ownSumDepth_scale hkl]
+  · exact factoredSumDepth_intercept d e hkl dd ee b2 h2 a c hc hd i L hi hL
+  · rw [ownSumDepth_scale hkl]
+    exact factoredSumDepthX_scale hπ d e hkl dd ee z b2 h2 a c hc hd hxu i L hi hL
+
+end FLT.Mazur.WeierstrassDividedDepth
