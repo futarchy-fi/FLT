@@ -12499,6 +12499,7 @@ public import FLT.Mazur.RelativeFppfTargetOpen
 public import FLT.Mazur.RelativeFrameClosedRankCompleteness
 public import FLT.Mazur.RelativeFrameCompleteFinite
 public import FLT.Mazur.RelativeFrameCompletenessTransfer
+public import FLT.Mazur.RelativeFrameCoordinateSeparation
 public import FLT.Mazur.RelativeFrameDenseRankStrata
 public import FLT.Mazur.RelativeFrameEquationGeometry
 public import FLT.Mazur.RelativeFrameEquationProducts
