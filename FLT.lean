@@ -6479,6 +6479,7 @@ public import FLT.Mazur.GeneralizedCurveCartierDescent
 public import FLT.Mazur.GeneralizedCurveCartierGenerator
 public import FLT.Mazur.GeneralizedCurveCartierStalks
 public import FLT.Mazur.GeneralizedCurveCategory
+public import FLT.Mazur.GeneralizedCurveCoefficientGeometricFiber
 public import FLT.Mazur.GeneralizedCurveCoverMorphism
 public import FLT.Mazur.GeneralizedCurveCoverRefinement
 public import FLT.Mazur.GeneralizedCurveCyclicMarkingBaseChange
