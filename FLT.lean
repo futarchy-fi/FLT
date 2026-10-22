@@ -5950,6 +5950,7 @@ public import FLT.Mazur.FiniteArrowIntegerModel
 public import FLT.Mazur.FiniteBaseLocalizationDenominators
 public import FLT.Mazur.FiniteBaseLocalizedBoundaryLifts
 public import FLT.Mazur.FiniteBaseLocalizedKernels
+public import FLT.Mazur.FiniteBasisDifferencePolynomial
 public import FLT.Mazur.FiniteBoundaryEqualizerClearing
 public import FLT.Mazur.FiniteCartierIsomorphismNeighborhood
 public import FLT.Mazur.FiniteCartierLocalizedComparison
@@ -6090,12 +6091,17 @@ public import FLT.Mazur.FiniteFreeFrameOpenImage
 public import FLT.Mazur.FiniteFreeFramePasting
 public import FLT.Mazur.FiniteFreeFrameRestrictionSquare
 public import FLT.Mazur.FiniteFreeInheritedChartTransitions
+public import FLT.Mazur.FiniteFreePolynomialNorm
+public import FLT.Mazur.FiniteFreePolynomialNormSplitting
 public import FLT.Mazur.FiniteFreeProjectiveAtlasDiagram
 public import FLT.Mazur.FiniteFreeProjectiveChartRefinement
 public import FLT.Mazur.FiniteFreePullbackFrame
+public import FLT.Mazur.FiniteFreeQuotientComparisonEquation
 public import FLT.Mazur.FiniteFreeQuotientIdealPresentation
 public import FLT.Mazur.FiniteFreeRefinementPullback
 public import FLT.Mazur.FiniteFreeSectionLineTransport
+public import FLT.Mazur.FiniteFreeSplitCharpoly
+public import FLT.Mazur.FiniteFreeSplitComparisonEquation
 public import FLT.Mazur.FiniteFreeTensorSections
 public import FLT.Mazur.FiniteFreeTranslationNorm
 public import FLT.Mazur.FiniteFreeTranslationNormFiber
@@ -9428,6 +9434,7 @@ public import FLT.Mazur.OriginalBoundaryFaithfulTensorLift
 public import FLT.Mazur.OriginalBoundaryFieldArrowRank
 public import FLT.Mazur.OriginalBoundaryFieldStageEquations
 public import FLT.Mazur.OriginalBoundaryFiniteComparisonTests
+public import FLT.Mazur.OriginalBoundaryFiniteFreeScalarLift
 public import FLT.Mazur.OriginalBoundaryFiniteStageTests
 public import FLT.Mazur.OriginalBoundaryFiniteValuationRanks
 public import FLT.Mazur.OriginalBoundaryFlatImageGeometry
@@ -11489,6 +11496,7 @@ public import FLT.Mazur.PolynomialRelativeAffineNaturality
 public import FLT.Mazur.PolynomialRelativeAmbient
 public import FLT.Mazur.PolynomialRelativeCoverExtension
 public import FLT.Mazur.PolynomialSpectrumBaseChangeCover
+public import FLT.Mazur.PolynomialTensorSplitFrame
 public import FLT.Mazur.PositiveIntegerLocalization
 public import FLT.Mazur.PowerCohomologyHZeroSections
 public import FLT.Mazur.PowerCohomologyKernelGenerators
@@ -13959,6 +13967,7 @@ public import FLT.Mazur.SpectrumTranslationNormBasis
 public import FLT.Mazur.SplitEtaleTraceUnit
 public import FLT.Mazur.SplitEvaluationBaseChange
 public import FLT.Mazur.SplitEvaluationTensorKernel
+public import FLT.Mazur.SplitFrameDifferenceCoprime
 public import FLT.Mazur.SplitLineAffineNeighborhood
 public import FLT.Mazur.SplitLineAffinePresentation
 public import FLT.Mazur.SplitLineCoordinateCover
