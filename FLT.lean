@@ -6065,6 +6065,7 @@ public import FLT.Mazur.FiniteGroupEquivariantOpenBoundary
 public import FLT.Mazur.FiniteGroupEquivariantPullback
 public import FLT.Mazur.FiniteGroupFieldPointOrbits
 public import FLT.Mazur.FiniteGroupFreeBoundaryLift
+public import FLT.Mazur.FiniteGroupFreeEtale
 public import FLT.Mazur.FiniteGroupFreeFieldTest
 public import FLT.Mazur.FiniteGroupFreeIdealDescent
 public import FLT.Mazur.FiniteGroupFreeOrbitComparison
