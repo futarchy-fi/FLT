@@ -6094,6 +6094,7 @@ public import FLT.Mazur.FiniteFreePolynomialNormSplitting
 public import FLT.Mazur.FiniteFreeProjectiveAtlasDiagram
 public import FLT.Mazur.FiniteFreeProjectiveChartRefinement
 public import FLT.Mazur.FiniteFreePullbackFrame
+public import FLT.Mazur.FiniteFreeQuotientComparisonEquation
 public import FLT.Mazur.FiniteFreeQuotientIdealPresentation
 public import FLT.Mazur.FiniteFreeRefinementPullback
 public import FLT.Mazur.FiniteFreeSectionLineTransport
