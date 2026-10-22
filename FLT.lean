@@ -13655,6 +13655,7 @@ public import FLT.Mazur.SectionPointFrameBaseChange
 public import FLT.Mazur.SectionPointLineCoherence
 public import FLT.Mazur.SectionPointLineComposition
 public import FLT.Mazur.SectionPointPowerBaseChange
+public import FLT.Mazur.SectionPointPowerSectionComposition
 public import FLT.Mazur.SectionPointPowerTransport
 public import FLT.Mazur.SectionPoleAdaptedBasis
 public import FLT.Mazur.SectionPoleBaseChangeDifference
