@@ -6562,6 +6562,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingCubicRelation
 public import FLT.Mazur.GeneralizedCurveMarkingCubicResidueFields
 public import FLT.Mazur.GeneralizedCurveMarkingCubicTopology
 public import FLT.Mazur.GeneralizedCurveMarkingFamilyComplement
+public import FLT.Mazur.GeneralizedCurveMarkingFamilyEquation
 public import FLT.Mazur.GeneralizedCurveMarkingFamilyIso
 public import FLT.Mazur.GeneralizedCurveMarkingFamilyPoles
 public import FLT.Mazur.GeneralizedCurveMarkingFrameAffineChange
