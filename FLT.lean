@@ -5555,6 +5555,7 @@ public import FLT.Mazur.EquivalenceRelationBoundaryRankFiltration
 public import FLT.Mazur.EquivalenceRelationBoundaryRankRecovery
 public import FLT.Mazur.EquivalenceRelationBoundaryRankSeparation
 public import FLT.Mazur.EquivalenceRelationBoundaryRankThickenings
+public import FLT.Mazur.EquivalenceRelationBoundaryRigidity
 public import FLT.Mazur.EquivalenceRelationBoundaryScalarCeiling
 public import FLT.Mazur.EquivalenceRelationBoundaryScalarCharts
 public import FLT.Mazur.EquivalenceRelationBoundaryScalarRanks
