@@ -12846,6 +12846,7 @@ public import FLT.Mazur.ScalarExtensionDirectSum
 public import FLT.Mazur.ScalarExtensionImageReduction
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
+public import FLT.Mazur.ScalarExtensionUnit
 public import FLT.Mazur.ScalarFiniteDifferentialGenerators
 public import FLT.Mazur.ScalarFiniteTypeFiberTests
 public import FLT.Mazur.ScalarFiniteTypeJacobianEquations
