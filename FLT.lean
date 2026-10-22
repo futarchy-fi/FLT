@@ -12887,6 +12887,7 @@ public import FLT.Mazur.SchemeFiniteGroupDescent
 public import FLT.Mazur.SchemeFiniteGroupFiniteFiberTests
 public import FLT.Mazur.SchemeFiniteGroupFreeBoundary
 public import FLT.Mazur.SchemeFiniteGroupFreeBoundaryIdeal
+public import FLT.Mazur.SchemeFiniteGroupFreeEtale
 public import FLT.Mazur.SchemeFiniteGroupFreeFlat
 public import FLT.Mazur.SchemeFiniteGroupFreeRigidity
 public import FLT.Mazur.SchemeFiniteGroupGeometricTests
