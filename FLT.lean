@@ -8995,6 +8995,7 @@ public import FLT.Mazur.OneGonSmoothingZeroGenus
 public import FLT.Mazur.OneGonSplitTangentNormalForm
 public import FLT.Mazur.OneGonSquareZeroCoordinates
 public import FLT.Mazur.OneGonSquareZeroNormalForm
+public import FLT.Mazur.OneGonTangentCoverNormalForm
 public import FLT.Mazur.OneGonTransition
 public import FLT.Mazur.OneGonZeroTorusComparison
 public import FLT.Mazur.OpenAtlasTripleGluing
