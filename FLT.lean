@@ -9268,6 +9268,7 @@ public import FLT.Mazur.OriginalBoundaryDifferentialOpenLift
 public import FLT.Mazur.OriginalBoundaryDifferentialOpenNaturality
 public import FLT.Mazur.OriginalBoundaryDiscrepancyLocus
 public import FLT.Mazur.OriginalBoundaryDomainComparisonLift
+public import FLT.Mazur.OriginalBoundaryDoubleRankComparison
 public import FLT.Mazur.OriginalBoundaryDoubleRankTests
 public import FLT.Mazur.OriginalBoundaryEtaleImageLift
 public import FLT.Mazur.OriginalBoundaryFaithfulTensorLift
