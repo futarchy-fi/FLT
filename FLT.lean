@@ -6194,6 +6194,7 @@ public import FLT.Mazur.FiniteModuleAdicComplete
 public import FLT.Mazur.FiniteModuleAdicCompleteLarge
 public import FLT.Mazur.FiniteModuleFiberSurjective
 public import FLT.Mazur.FiniteModuleFiberVanishing
+public import FLT.Mazur.FiniteModuleMatrixPresentation
 public import FLT.Mazur.FiniteNeighborhoodAffineOpens
 public import FLT.Mazur.FiniteNeighborhoodQuotientCover
 public import FLT.Mazur.FiniteNeighborhoodQuotientOverlap
