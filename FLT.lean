@@ -6566,6 +6566,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingFamilyComplement
 public import FLT.Mazur.GeneralizedCurveMarkingFamilyCubic
 public import FLT.Mazur.GeneralizedCurveMarkingFamilyEquation
 public import FLT.Mazur.GeneralizedCurveMarkingFamilyIso
+public import FLT.Mazur.GeneralizedCurveMarkingFamilyMorphism
 public import FLT.Mazur.GeneralizedCurveMarkingFamilyPoles
 public import FLT.Mazur.GeneralizedCurveMarkingFrameAffineChange
 public import FLT.Mazur.GeneralizedCurveMarkingFrameCocycle
