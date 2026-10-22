@@ -12318,6 +12318,7 @@ public import FLT.Mazur.RegularParameterDomain
 public import FLT.Mazur.RegularParameterIdeals
 public import FLT.Mazur.RegularPrincipalOpenLiftExt
 public import FLT.Mazur.RegularPrincipalStructureQuotient
+public import FLT.Mazur.RelationComparisonEquation
 public import FLT.Mazur.RelativeAbelFiberOriginalSquare
 public import FLT.Mazur.RelativeAcyclicClassDivisor
 public import FLT.Mazur.RelativeAcyclicClassDivisorNaturality
