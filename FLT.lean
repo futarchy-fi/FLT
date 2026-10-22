@@ -6496,6 +6496,7 @@ public import FLT.Mazur.FlatSpectrumStructureRank
 public import FLT.Mazur.FlatStructureCohomology
 public import FLT.Mazur.FlatStructureScalarMonicity
 public import FLT.Mazur.FlatStructureSectionComplex
+public import FLT.Mazur.FlatTargetObstructionMap
 public import FLT.Mazur.FlatTensorEqualizer
 public import FLT.Mazur.FlatTensorFixedSubmodule
 public import FLT.Mazur.FormallyUnramifiedQuotientCriterion
