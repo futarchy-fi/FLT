@@ -15796,6 +15796,7 @@ public import FLT.Mazur.WeierstrassDividedLocalizedIntersection
 public import FLT.Mazur.WeierstrassDividedLowerData
 public import FLT.Mazur.WeierstrassDividedLowerDepthClosedFiber
 public import FLT.Mazur.WeierstrassDividedMiddleFieldSmooth
+public import FLT.Mazur.WeierstrassDividedMiddleSecantResidue
 public import FLT.Mazur.WeierstrassDividedMiddleTangentCoverage
 public import FLT.Mazur.WeierstrassDividedMiddleTangentResidue
 public import FLT.Mazur.WeierstrassDividedMixedKernelAction
