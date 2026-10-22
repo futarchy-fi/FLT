@@ -6080,6 +6080,7 @@ public import FLT.Mazur.FiniteGroupOpenCoefficientRefinement
 public import FLT.Mazur.FiniteGroupOpenRelationCoefficients
 public import FLT.Mazur.FiniteGroupOpenRestriction
 public import FLT.Mazur.FiniteGroupOrbitSpan
+public import FLT.Mazur.FiniteGroupOrbitTensorDetection
 public import FLT.Mazur.FiniteGroupPullbackAction
 public import FLT.Mazur.FiniteGroupPullbackComparison
 public import FLT.Mazur.FiniteGroupQuotientDescent
