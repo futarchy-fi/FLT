@@ -16103,6 +16103,7 @@ public import FLT.Mazur.WeierstrassDividedNodalRefinedBranchTerminal
 public import FLT.Mazur.WeierstrassDividedNodalRefinedBranchTerminalReindex
 public import FLT.Mazur.WeierstrassDividedNodalReflectedIndexed
 public import FLT.Mazur.WeierstrassDividedNodalReflectedResidue
+public import FLT.Mazur.WeierstrassDividedNodalReflectedSmooth
 public import FLT.Mazur.WeierstrassDividedNodalReflectedSource
 public import FLT.Mazur.WeierstrassDividedNodalSecantCases
 public import FLT.Mazur.WeierstrassDividedNodalSecondNormalization
