@@ -8264,6 +8264,7 @@ public import FLT.Mazur.LocalHilbertTranslationCover
 public import FLT.Mazur.LocalIdealTensorCriterion
 public import FLT.Mazur.LocalLineTwistLocalization
 public import FLT.Mazur.LocalLocalizationCartier
+public import FLT.Mazur.LocalMaximalStageCriterion
 public import FLT.Mazur.LocalParameterFlatness
 public import FLT.Mazur.LocalProperIdealTensorCriterion
 public import FLT.Mazur.LocalScalarObstructionCriterion
