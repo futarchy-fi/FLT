@@ -6606,6 +6606,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingGluedRecovery
 public import FLT.Mazur.GeneralizedCurveMarkingGluedSection
 public import FLT.Mazur.GeneralizedCurveMarkingHigherMonomials
 public import FLT.Mazur.GeneralizedCurveMarkingHomogeneousEquation
+public import FLT.Mazur.GeneralizedCurveMarkingIntegerModel
 public import FLT.Mazur.GeneralizedCurveMarkingLineBaseChange
 public import FLT.Mazur.GeneralizedCurveMarkingLineCoherence
 public import FLT.Mazur.GeneralizedCurveMarkingLocalCubic
