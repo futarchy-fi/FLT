@@ -13842,6 +13842,7 @@ public import FLT.Mazur.TensorPowerComparedSections
 public import FLT.Mazur.TensorPowerDistribution
 public import FLT.Mazur.TensorPowerFrameComparison
 public import FLT.Mazur.TensorPowerFramePullback
+public import FLT.Mazur.TensorPowerFramedComposition
 public import FLT.Mazur.TensorPowerGeneratorOpen
 public import FLT.Mazur.TensorPowerNestedSection
 public import FLT.Mazur.TensorPowerPullbackComparison
