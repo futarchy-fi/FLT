@@ -12549,6 +12549,7 @@ public import FLT.Mazur.ScalarComponentRankCeiling
 public import FLT.Mazur.ScalarConstructibleFiniteCover
 public import FLT.Mazur.ScalarConstructibleStrata
 public import FLT.Mazur.ScalarDifferentialAssociatedDenominator
+public import FLT.Mazur.ScalarDifferentialFiberDual
 public import FLT.Mazur.ScalarDifferentialJacobianAnnihilator
 public import FLT.Mazur.ScalarDifferentialPolynomialAnnihilator
 public import FLT.Mazur.ScalarDifferentialPrincipalRigidity
