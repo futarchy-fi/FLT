@@ -13082,6 +13082,7 @@ public import FLT.Mazur.SchemeDescentTransportTest
 public import FLT.Mazur.SchemeDisjointBaseChange
 public import FLT.Mazur.SchemeDisjointOpenPair
 public import FLT.Mazur.SchemeEffectiveEpiSections
+public import FLT.Mazur.SchemeEquationPullback
 public import FLT.Mazur.SchemeEtaleBoundaryTests
 public import FLT.Mazur.SchemeEtaleImageDenseModel
 public import FLT.Mazur.SchemeEtaleImageModelBaseChange
