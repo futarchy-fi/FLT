@@ -9392,6 +9392,7 @@ public import FLT.Mazur.OriginalBoundaryRankChartEndpointLift
 public import FLT.Mazur.OriginalBoundaryRankCollision
 public import FLT.Mazur.OriginalBoundaryRankDifferentialTower
 public import FLT.Mazur.OriginalBoundaryRankEndpointTransposition
+public import FLT.Mazur.OriginalBoundaryRankFrameCover
 public import FLT.Mazur.OriginalBoundaryRankLocalEquationLift
 public import FLT.Mazur.OriginalBoundaryRankOneComparison
 public import FLT.Mazur.OriginalBoundaryRankOneEqualizer
