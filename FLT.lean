@@ -6502,6 +6502,7 @@ public import FLT.Mazur.GeneralizedCurveGroupFiniteness
 public import FLT.Mazur.GeneralizedCurveGroupRelativeDimension
 public import FLT.Mazur.GeneralizedCurveGroupSectionComposition
 public import FLT.Mazur.GeneralizedCurveIdentityBaseChange
+public import FLT.Mazur.GeneralizedCurveIntegralMarkingAffineIso
 public import FLT.Mazur.GeneralizedCurveIntegralMarkingAmple
 public import FLT.Mazur.GeneralizedCurveIteratedProjection
 public import FLT.Mazur.GeneralizedCurveLocalCubicPresentation
