@@ -12211,6 +12211,7 @@ public import FLT.Mazur.RelativeCoefficientBaseChange
 public import FLT.Mazur.RelativeCoefficientBaseChangeEtale
 public import FLT.Mazur.RelativeCoefficientSourceCartesian
 public import FLT.Mazur.RelativeCoefficientSourceImage
+public import FLT.Mazur.RelativeCommonOpenEulerBaseChange
 public import FLT.Mazur.RelativeComparisonFiberIso
 public import FLT.Mazur.RelativeCompleteFrameComparison
 public import FLT.Mazur.RelativeCompleteFrameFiberIso
