@@ -16734,6 +16734,7 @@ public import FLT.Mazur.WeierstrassDividedOppositeSecantDomain
 public import FLT.Mazur.WeierstrassDividedOrderedAdjacentComponents
 public import FLT.Mazur.WeierstrassDividedOrderedPairCoverage
 public import FLT.Mazur.WeierstrassDividedOrderedRetainedSections
+public import FLT.Mazur.WeierstrassDividedOriginalChartContractions
 public import FLT.Mazur.WeierstrassDividedOriginalNodeBase
 public import FLT.Mazur.WeierstrassDividedOriginalScaleOpen
 public import FLT.Mazur.WeierstrassDividedOriginalSmoothPresentation
