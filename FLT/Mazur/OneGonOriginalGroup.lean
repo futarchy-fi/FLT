@@ -26,7 +26,7 @@ set_option backward.defeqAttrib.useBackward true
 variable {K : Type} [Field K]
   (E : GeneralizedEllipticCurve (Spec (.of K)))
   (p : components K 1 ⟶ E.curve) (q : nodes K 1 ⟶ E.curve)
-  (h : IsPushout (toComponents K 1 (by decide)) (toNodes K 1) p q)
+  (h : IsPushout (toComponents K 1 Nat.zero_lt_one) (toNodes K 1) p q)
 local notation "T" => MultiplicativeGroupScheme.gm K
 
 /-- The single canonical split component is the entire smooth group. -/
@@ -35,7 +35,7 @@ def splitTorusIso : (T) ≅ PolygonSplitGroup.model K 1 :=
 
 /-- Pinching identifies the actual smooth locus, before normalizing its identity. -/
 def unpointedIso : (T) ≅ E.group :=
-  splitTorusIso ≪≫ (smoothIso K 1 (by decide) p q h).symm ≪≫ E.smoothIso.symm
+  splitTorusIso ≪≫ (smoothIso K 1 Nat.zero_lt_one p q h).symm ≪≫ E.smoothIso.symm
 
 /-- The actual original identity expressed in the full torus chart. -/
 def identityCoordinate : 𝟙_ (Over (Spec (.of K))) ⟶ (T) :=
@@ -59,7 +59,7 @@ instance pointedIso_isMonHom : IsMonHom (pointedIso E p q h).hom :=
   TorusGroupLawRigidity.isMonHom_of_pointedIso _ (pointedIso_one E p q h)
 
 /-- An original abstract one-gon's smooth group is a torus as a group scheme. -/
-theorem exists_groupIso (hc : IsNeronNGon E.curve 1 (by decide)) :
+theorem exists_groupIso (hc : IsNeronNGon E.curve 1 Nat.zero_lt_one) :
     ∃ e : (T) ≅ E.group, IsMonHom e.hom := by
   obtain ⟨p, q, h⟩ := hc
   exact ⟨pointedIso E p q h, pointedIso_isMonHom E p q h⟩
