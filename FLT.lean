@@ -4187,6 +4187,7 @@ public import FLT.Mazur.CoefficientAcyclicClassDivisor
 public import FLT.Mazur.CoefficientAcyclicLineDivisor
 public import FLT.Mazur.CoefficientAffineFlatCharts
 public import FLT.Mazur.CoefficientAffineFlatRelation
+public import FLT.Mazur.CoefficientAffineRingSystem
 public import FLT.Mazur.CoefficientCartesianHomDescent
 public import FLT.Mazur.CoefficientCartesianProperty
 public import FLT.Mazur.CoefficientCartierCommonModel
