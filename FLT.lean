@@ -12404,6 +12404,7 @@ public import FLT.Mazur.RelativeFrameCompletenessTransfer
 public import FLT.Mazur.RelativeFrameDenseRankStrata
 public import FLT.Mazur.RelativeFrameExactRank
 public import FLT.Mazur.RelativeFrameMissingSection
+public import FLT.Mazur.RelativeFramePositiveRank
 public import FLT.Mazur.RelativeFrameRankBound
 public import FLT.Mazur.RelativeFrameRankImage
 public import FLT.Mazur.RelativeFrameRankJumpValuations
