@@ -6509,6 +6509,7 @@ public import FLT.Mazur.GeneralizedCurveLocalPointFrames
 public import FLT.Mazur.GeneralizedCurveNaturalIsoGluing
 public import FLT.Mazur.GeneralizedCurvePicardClasses
 public import FLT.Mazur.GeneralizedCurvePicardPresheaf
+public import FLT.Mazur.GeneralizedCurvePointTranslation
 public import FLT.Mazur.GeneralizedCurvePointedCubicFamily
 public import FLT.Mazur.GeneralizedCurvePointedCubicGroup
 public import FLT.Mazur.GeneralizedCurvePointedCubicPresentation
@@ -7905,10 +7906,12 @@ public import FLT.Mazur.LaurentLineActionEvaluation
 public import FLT.Mazur.LaurentNearIdentityAutomorphism
 public import FLT.Mazur.LaurentNilpotentReparametrization
 public import FLT.Mazur.LaurentNodePrincipalParts
+public import FLT.Mazur.LaurentNormalizedMorphism
 public import FLT.Mazur.LaurentNormalizedReduction
 public import FLT.Mazur.LaurentPairCoefficientNaturality
 public import FLT.Mazur.LaurentPairEvaluation
 public import FLT.Mazur.LaurentPairNaturality
+public import FLT.Mazur.LaurentPairProduct
 public import FLT.Mazur.LaurentPairReciprocalUnits
 public import FLT.Mazur.LaurentPairStageLift
 public import FLT.Mazur.LaurentPairSwap
@@ -8925,6 +8928,9 @@ public import FLT.Mazur.OneGonNormalizationFinite
 public import FLT.Mazur.OneGonNormalizationPullback
 public import FLT.Mazur.OneGonNormalizationTorus
 public import FLT.Mazur.OneGonNormalizedGeneralizedCurve
+public import FLT.Mazur.OneGonOriginalAction
+public import FLT.Mazur.OneGonOriginalCubic
+public import FLT.Mazur.OneGonOriginalGroup
 public import FLT.Mazur.OneGonOriginalGroupComparison
 public import FLT.Mazur.OneGonOverlap
 public import FLT.Mazur.OneGonOverlapGraph
@@ -10683,6 +10689,7 @@ public import FLT.Mazur.PolygonFirstPairReduction
 public import FLT.Mazur.PolygonFirstUniversalNodeReduction
 public import FLT.Mazur.PolygonGeneralizedCurve
 public import FLT.Mazur.PolygonGeneralizedCurveActionExt
+public import FLT.Mazur.PolygonGeneralizedPinchingIso
 public import FLT.Mazur.PolygonGenusOne
 public import FLT.Mazur.PolygonGeometricGenus
 public import FLT.Mazur.PolygonGeometricGraph
@@ -13472,6 +13479,7 @@ public import FLT.Mazur.SimultaneousEtaleAcyclicNeighborhood
 public import FLT.Mazur.SimultaneousSmoothAcyclicNeighborhood
 public import FLT.Mazur.SimultaneousSmoothHilbertParameters
 public import FLT.Mazur.SingleProperTranslationChart
+public import FLT.Mazur.SingularIntegralGeneralizedCubic
 public import FLT.Mazur.SmallAffineParameterBases
 public import FLT.Mazur.SmallHilbertPresentation
 public import FLT.Mazur.SmallHilbertPresentationPullback
@@ -13739,6 +13747,7 @@ public import FLT.Mazur.ToricHopfQuotientCoordinates
 public import FLT.Mazur.TorusArithmeticCyclicity
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TorusCyclotomicGenerator
+public import FLT.Mazur.TorusGroupLawRigidity
 public import FLT.Mazur.TorusPointUnitEquiv
 public import FLT.Mazur.TorusRootsOfUnityBaseChange
 public import FLT.Mazur.TorusRootsOfUnityCartier
