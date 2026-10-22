@@ -8996,6 +8996,7 @@ public import FLT.Mazur.OneGonSplitTangentNormalForm
 public import FLT.Mazur.OneGonSquareZeroCoordinates
 public import FLT.Mazur.OneGonSquareZeroNormalForm
 public import FLT.Mazur.OneGonTangentCoverNormalForm
+public import FLT.Mazur.OneGonTangentCoverPresentation
 public import FLT.Mazur.OneGonTangentEtaleCover
 public import FLT.Mazur.OneGonTransition
 public import FLT.Mazur.OneGonZeroTorusComparison
