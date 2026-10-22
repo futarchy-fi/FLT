@@ -6535,6 +6535,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingAffineCubicMorphism
 public import FLT.Mazur.GeneralizedCurveMarkingAffineRestriction
 public import FLT.Mazur.GeneralizedCurveMarkingAllPoleBasis
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChange
+public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeEquation
 public import FLT.Mazur.GeneralizedCurveMarkingCanonicalLine
 public import FLT.Mazur.GeneralizedCurveMarkingChartEquation
 public import FLT.Mazur.GeneralizedCurveMarkingComplementCoordinates
