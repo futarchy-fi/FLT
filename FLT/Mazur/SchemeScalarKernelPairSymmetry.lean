@@ -39,7 +39,7 @@ local notation "f" => scalarMorphism σ
 theorem scalarKernelPair_endpoints (a : R) :
     (pullback.fst f f).appTop (σ a) = (pullback.snd f f).appTop (σ a) := by
   have h := congrArg (fun g : pullback f f ⟶ Spec (.of R) ↦
-    g.appTop ((Scheme.ΓSpecIso (.of R)).inv a)) 
+    g.appTop ((Scheme.ΓSpecIso (.of R)).inv a))
       (show pullback.fst f f ≫ f = pullback.snd f f ≫ f from pullback.condition)
   change (pullback.fst f f).appTop ((f).appTop _) =
     (pullback.snd f f).appTop ((f).appTop _) at h
