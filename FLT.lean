@@ -3949,6 +3949,8 @@ public import FLT.Mazur.CartesianIdentityFiniteNeighborhood
 public import FLT.Mazur.CartesianIdentityQuasiFinite
 public import FLT.Mazur.CartesianImageChartImmersion
 public import FLT.Mazur.CartesianLineFieldCohomology
+public import FLT.Mazur.CartesianMarkingLineComparison
+public import FLT.Mazur.CartesianMarkingPowerComparison
 public import FLT.Mazur.CartesianModelSection
 public import FLT.Mazur.CartesianMonoGroup
 public import FLT.Mazur.CartesianMonoMonoid
@@ -4175,8 +4177,10 @@ public import FLT.Mazur.CoefficientAcyclicClassDivisor
 public import FLT.Mazur.CoefficientAcyclicLineDivisor
 public import FLT.Mazur.CoefficientCartesianHomDescent
 public import FLT.Mazur.CoefficientCartesianProperty
+public import FLT.Mazur.CoefficientCartierCommonModel
 public import FLT.Mazur.CoefficientCommonModel
 public import FLT.Mazur.CoefficientConnectedNeighborhood
+public import FLT.Mazur.CoefficientDimensionMarkingRefinement
 public import FLT.Mazur.CoefficientFactorizationDescent
 public import FLT.Mazur.CoefficientImmersionClosedDescent
 public import FLT.Mazur.CoefficientIndependentLineDescent
@@ -6557,6 +6561,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingAffineCartesian
 public import FLT.Mazur.GeneralizedCurveMarkingAffineCocycle
 public import FLT.Mazur.GeneralizedCurveMarkingAffineCubicMorphism
 public import FLT.Mazur.GeneralizedCurveMarkingAffineDiagram
+public import FLT.Mazur.GeneralizedCurveMarkingAffineIntegerModel
 public import FLT.Mazur.GeneralizedCurveMarkingAffineOverlap
 public import FLT.Mazur.GeneralizedCurveMarkingAffineRange
 public import FLT.Mazur.GeneralizedCurveMarkingAffineRestriction
@@ -6573,6 +6578,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeEquation
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeEvaluation
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeMorphism
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeUnique
+public import FLT.Mazur.GeneralizedCurveMarkingCanonicalIntegerModel
 public import FLT.Mazur.GeneralizedCurveMarkingCanonicalLine
 public import FLT.Mazur.GeneralizedCurveMarkingChartEquation
 public import FLT.Mazur.GeneralizedCurveMarkingComplementCoordinates
@@ -6593,6 +6599,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingCubicPullbackMorphism
 public import FLT.Mazur.GeneralizedCurveMarkingCubicRelation
 public import FLT.Mazur.GeneralizedCurveMarkingCubicResidueFields
 public import FLT.Mazur.GeneralizedCurveMarkingCubicTopology
+public import FLT.Mazur.GeneralizedCurveMarkingDimensionIntegerModel
 public import FLT.Mazur.GeneralizedCurveMarkingDirectCocycle
 public import FLT.Mazur.GeneralizedCurveMarkingDirectRestriction
 public import FLT.Mazur.GeneralizedCurveMarkingFamilyAffine
@@ -6675,6 +6682,7 @@ public import FLT.Mazur.GeneralizedCurveSmoothBaseCubic
 public import FLT.Mazur.GeneralizedCurveSmoothBaseDimension
 public import FLT.Mazur.GeneralizedCurveSmoothIntegral
 public import FLT.Mazur.GeneralizedCurveSmoothMarking
+public import FLT.Mazur.GeneralizedCurveSmoothOpenDimension
 public import FLT.Mazur.GeneralizedCurveSmoothPullback
 public import FLT.Mazur.GeneralizedCurveSquareProjection
 public import FLT.Mazur.GeneralizedCurveSquareTestTransport
@@ -9363,6 +9371,7 @@ public import FLT.Mazur.OriginalBoundaryDoubleRankArrowCriterion
 public import FLT.Mazur.OriginalBoundaryDoubleRankCoefficientDetection
 public import FLT.Mazur.OriginalBoundaryDoubleRankComparison
 public import FLT.Mazur.OriginalBoundaryDoubleRankCorrectedLift
+public import FLT.Mazur.OriginalBoundaryDoubleRankFramedComparison
 public import FLT.Mazur.OriginalBoundaryDoubleRankGlobalLifts
 public import FLT.Mazur.OriginalBoundaryDoubleRankResidualCorrections
 public import FLT.Mazur.OriginalBoundaryDoubleRankScalarKernel
@@ -9377,6 +9386,8 @@ public import FLT.Mazur.OriginalBoundaryFiniteStageTests
 public import FLT.Mazur.OriginalBoundaryFiniteValuationRanks
 public import FLT.Mazur.OriginalBoundaryFlatImageGeometry
 public import FLT.Mazur.OriginalBoundaryFlatRelationLift
+public import FLT.Mazur.OriginalBoundaryFramedEquationIdeal
+public import FLT.Mazur.OriginalBoundaryFramedEquations
 public import FLT.Mazur.OriginalBoundaryFullStalkJacobianLift
 public import FLT.Mazur.OriginalBoundaryGenericRankCoverage
 public import FLT.Mazur.OriginalBoundaryGenerizingRanks
@@ -9404,6 +9415,7 @@ public import FLT.Mazur.OriginalBoundaryRankChartEndpointLift
 public import FLT.Mazur.OriginalBoundaryRankCollision
 public import FLT.Mazur.OriginalBoundaryRankDifferentialTower
 public import FLT.Mazur.OriginalBoundaryRankEndpointTransposition
+public import FLT.Mazur.OriginalBoundaryRankFrameCover
 public import FLT.Mazur.OriginalBoundaryRankLocalEquationLift
 public import FLT.Mazur.OriginalBoundaryRankOneComparison
 public import FLT.Mazur.OriginalBoundaryRankOneEqualizer
@@ -12331,6 +12343,7 @@ public import FLT.Mazur.RegularParameterDomain
 public import FLT.Mazur.RegularParameterIdeals
 public import FLT.Mazur.RegularPrincipalOpenLiftExt
 public import FLT.Mazur.RegularPrincipalStructureQuotient
+public import FLT.Mazur.RelationComparisonEquation
 public import FLT.Mazur.RelativeAbelFiberOriginalSquare
 public import FLT.Mazur.RelativeAcyclicClassDivisor
 public import FLT.Mazur.RelativeAcyclicClassDivisorNaturality
@@ -12378,6 +12391,7 @@ public import FLT.Mazur.RelativeCyclicSubgroupRelabel
 public import FLT.Mazur.RelativeCyclicSubgroupSmoothOpen
 public import FLT.Mazur.RelativeDiagonalRankDetection
 public import FLT.Mazur.RelativeDimensionBaseChangeOpen
+public import FLT.Mazur.RelativeDimensionNeighborhood
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
 public import FLT.Mazur.RelativeDirectImageOpenResolution
@@ -12432,6 +12446,8 @@ public import FLT.Mazur.RelativeFrameClosedRankCompleteness
 public import FLT.Mazur.RelativeFrameCompleteFinite
 public import FLT.Mazur.RelativeFrameCompletenessTransfer
 public import FLT.Mazur.RelativeFrameDenseRankStrata
+public import FLT.Mazur.RelativeFrameEquationGeometry
+public import FLT.Mazur.RelativeFrameEquationSplitting
 public import FLT.Mazur.RelativeFrameExactRank
 public import FLT.Mazur.RelativeFrameMissingSection
 public import FLT.Mazur.RelativeFramePositiveRank
@@ -13095,6 +13111,7 @@ public import FLT.Mazur.SchemeDescentTransportTest
 public import FLT.Mazur.SchemeDisjointBaseChange
 public import FLT.Mazur.SchemeDisjointOpenPair
 public import FLT.Mazur.SchemeEffectiveEpiSections
+public import FLT.Mazur.SchemeEquationPullback
 public import FLT.Mazur.SchemeEtaleBoundaryTests
 public import FLT.Mazur.SchemeEtaleImageDenseModel
 public import FLT.Mazur.SchemeEtaleImageModelBaseChange
@@ -13655,7 +13672,9 @@ public import FLT.Mazur.SectionLinePointOverlapEquality
 public import FLT.Mazur.SectionLinePullbackFraction
 public import FLT.Mazur.SectionPointFrameBaseChange
 public import FLT.Mazur.SectionPointLineCoherence
+public import FLT.Mazur.SectionPointLineComposition
 public import FLT.Mazur.SectionPointPowerBaseChange
+public import FLT.Mazur.SectionPointPowerSectionComposition
 public import FLT.Mazur.SectionPointPowerTransport
 public import FLT.Mazur.SectionPoleAdaptedBasis
 public import FLT.Mazur.SectionPoleBaseChangeDifference
@@ -13822,6 +13841,7 @@ public import FLT.Mazur.SmoothHilbertSourceRepresentable
 public import FLT.Mazur.SmoothHilbertTestCover
 public import FLT.Mazur.SmoothInvariantOpenAllEtaleLifts
 public import FLT.Mazur.SmoothLocalNilpotentLift
+public import FLT.Mazur.SmoothMarkingNeighborhoodCartier
 public import FLT.Mazur.SmoothNilpotentLocalLift
 public import FLT.Mazur.SmoothNodalFamilyDimension
 public import FLT.Mazur.SmoothNonspecialDivisorCover
