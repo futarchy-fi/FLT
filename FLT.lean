@@ -7857,6 +7857,7 @@ public import FLT.Mazur.IdealSheafStableOpen
 public import FLT.Mazur.IdealSheafStableOpenMaximal
 public import FLT.Mazur.IdealSheafStableSupportCriterion
 public import FLT.Mazur.IdealSheafSupportPower
+public import FLT.Mazur.IdealTensorIntersection
 public import FLT.Mazur.IdealTensorKernelFinite
 public import FLT.Mazur.IdealTensorTransition
 public import FLT.Mazur.IdealTensorTrivialRelation
