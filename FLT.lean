@@ -6600,6 +6600,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingFramedProducts
 public import FLT.Mazur.GeneralizedCurveMarkingGluedMorphism
 public import FLT.Mazur.GeneralizedCurveMarkingGluedProper
 public import FLT.Mazur.GeneralizedCurveMarkingGluedRecovery
+public import FLT.Mazur.GeneralizedCurveMarkingGluedSection
 public import FLT.Mazur.GeneralizedCurveMarkingHigherMonomials
 public import FLT.Mazur.GeneralizedCurveMarkingHomogeneousEquation
 public import FLT.Mazur.GeneralizedCurveMarkingLineBaseChange
