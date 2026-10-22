@@ -5538,6 +5538,7 @@ public import FLT.Mazur.EquivalenceRelationBoundaryChartTransport
 public import FLT.Mazur.EquivalenceRelationBoundaryCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundaryComponentBounds
 public import FLT.Mazur.EquivalenceRelationBoundaryComponentRank
+public import FLT.Mazur.EquivalenceRelationBoundaryEtale
 public import FLT.Mazur.EquivalenceRelationBoundaryExcess
 public import FLT.Mazur.EquivalenceRelationBoundaryFaithful
 public import FLT.Mazur.EquivalenceRelationBoundaryFaithfulDifferences
@@ -5555,6 +5556,7 @@ public import FLT.Mazur.EquivalenceRelationBoundaryRankFiltration
 public import FLT.Mazur.EquivalenceRelationBoundaryRankRecovery
 public import FLT.Mazur.EquivalenceRelationBoundaryRankSeparation
 public import FLT.Mazur.EquivalenceRelationBoundaryRankThickenings
+public import FLT.Mazur.EquivalenceRelationBoundaryRigidity
 public import FLT.Mazur.EquivalenceRelationBoundaryScalarCeiling
 public import FLT.Mazur.EquivalenceRelationBoundaryScalarCharts
 public import FLT.Mazur.EquivalenceRelationBoundaryScalarRanks
@@ -6064,12 +6066,15 @@ public import FLT.Mazur.FiniteGroupEquivariantOpenBoundary
 public import FLT.Mazur.FiniteGroupEquivariantPullback
 public import FLT.Mazur.FiniteGroupFieldPointOrbits
 public import FLT.Mazur.FiniteGroupFreeBoundaryLift
+public import FLT.Mazur.FiniteGroupFreeEtale
 public import FLT.Mazur.FiniteGroupFreeFieldTest
 public import FLT.Mazur.FiniteGroupFreeIdealDescent
+public import FLT.Mazur.FiniteGroupFreeOrbitComparison
 public import FLT.Mazur.FiniteGroupFreeOrbitSeparation
 public import FLT.Mazur.FiniteGroupFreeProjective
 public import FLT.Mazur.FiniteGroupFreeTensorInvariants
 public import FLT.Mazur.FiniteGroupFreeTraceIdeal
+public import FLT.Mazur.FiniteGroupFreeUnramified
 public import FLT.Mazur.FiniteGroupInvariantAffineCover
 public import FLT.Mazur.FiniteGroupInvariantOpens
 public import FLT.Mazur.FiniteGroupInvariantPolynomial
@@ -6080,6 +6085,7 @@ public import FLT.Mazur.FiniteGroupOpenCoefficientRefinement
 public import FLT.Mazur.FiniteGroupOpenRelationCoefficients
 public import FLT.Mazur.FiniteGroupOpenRestriction
 public import FLT.Mazur.FiniteGroupOrbitSpan
+public import FLT.Mazur.FiniteGroupOrbitTensorDetection
 public import FLT.Mazur.FiniteGroupPullbackAction
 public import FLT.Mazur.FiniteGroupPullbackComparison
 public import FLT.Mazur.FiniteGroupQuotientDescent
@@ -12575,6 +12581,7 @@ public import FLT.Mazur.ScalarFiniteTypeFiberTests
 public import FLT.Mazur.ScalarFiniteTypeJacobianEquations
 public import FLT.Mazur.ScalarFirstOrderLocalRigidity
 public import FLT.Mazur.ScalarFirstOrderStalkRigidity
+public import FLT.Mazur.ScalarFreeActionRigidity
 public import FLT.Mazur.ScalarFullStalkJacobianClearing
 public import FLT.Mazur.ScalarFullStalkJacobianTests
 public import FLT.Mazur.ScalarFullStalkPresentation
@@ -12894,7 +12901,9 @@ public import FLT.Mazur.SchemeFiniteGroupDescent
 public import FLT.Mazur.SchemeFiniteGroupFiniteFiberTests
 public import FLT.Mazur.SchemeFiniteGroupFreeBoundary
 public import FLT.Mazur.SchemeFiniteGroupFreeBoundaryIdeal
+public import FLT.Mazur.SchemeFiniteGroupFreeEtale
 public import FLT.Mazur.SchemeFiniteGroupFreeFlat
+public import FLT.Mazur.SchemeFiniteGroupFreeRigidity
 public import FLT.Mazur.SchemeFiniteGroupGeometricTests
 public import FLT.Mazur.SchemeFiniteGroupInvariantPrincipal
 public import FLT.Mazur.SchemeFiniteGroupPrescribedBoundaryCorrection
