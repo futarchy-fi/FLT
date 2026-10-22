@@ -8360,6 +8360,7 @@ public import FLT.Mazur.NilpotentAlgebraEquivalence
 public import FLT.Mazur.NilpotentAlgebraErrorCommutation
 public import FLT.Mazur.NilpotentAlgebraHigherOrderError
 public import FLT.Mazur.NilpotentClosedRestriction
+public import FLT.Mazur.NilpotentEtaleEquivalence
 public import FLT.Mazur.NilpotentIdealContraction
 public import FLT.Mazur.NilpotentIdealSocle
 public import FLT.Mazur.NilpotentPolynomialEvaluation
