@@ -6597,6 +6597,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingMonomialIndependence
 public import FLT.Mazur.GeneralizedCurveMarkingNormalMonomials
 public import FLT.Mazur.GeneralizedCurveMarkingNormalizedChange
 public import FLT.Mazur.GeneralizedCurveMarkingNormalizedCoordinates
+public import FLT.Mazur.GeneralizedCurveMarkingOverlap
 public import FLT.Mazur.GeneralizedCurveMarkingPointedCubic
 public import FLT.Mazur.GeneralizedCurveMarkingPoleReduction
 public import FLT.Mazur.GeneralizedCurveMarkingPoleTwoExpansion
