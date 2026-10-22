@@ -6539,6 +6539,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingCubicPreimages
 public import FLT.Mazur.GeneralizedCurveMarkingCubicRelation
 public import FLT.Mazur.GeneralizedCurveMarkingCubicResidueFields
 public import FLT.Mazur.GeneralizedCurveMarkingCubicTopology
+public import FLT.Mazur.GeneralizedCurveMarkingFrameScaling
 public import FLT.Mazur.GeneralizedCurveMarkingFramedProducts
 public import FLT.Mazur.GeneralizedCurveMarkingHigherMonomials
 public import FLT.Mazur.GeneralizedCurveMarkingHomogeneousEquation
