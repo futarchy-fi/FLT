@@ -6519,6 +6519,7 @@ public import FLT.Mazur.GeneralizedCurvePointedCubicPresentation
 public import FLT.Mazur.GeneralizedCurvePointedCubicUnrestrictedFamily
 public import FLT.Mazur.GeneralizedCurvePullback
 public import FLT.Mazur.GeneralizedCurvePullbackCoherence
+public import FLT.Mazur.GeneralizedCurveRelativeMarkingSections
 public import FLT.Mazur.GeneralizedCurveRelativePointFrames
 public import FLT.Mazur.GeneralizedCurveSectionComposition
 public import FLT.Mazur.GeneralizedCurveSmoothBaseChange
