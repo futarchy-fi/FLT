@@ -18048,6 +18048,7 @@ public import FLT.Mazur.WeierstrassDividedZeroSplitCycleSeparation
 public import FLT.Mazur.WeierstrassDividedZeroSplitNormalizationSurjective
 public import FLT.Mazur.WeierstrassDividedZeroSplitOriginalIdentity
 public import FLT.Mazur.WeierstrassDividedZeroSplitPointClassification
+public import FLT.Mazur.WeierstrassDividedZeroStageOriginalGluing
 public import FLT.Mazur.WeierstrassDividedZeroTangentCoverage
 public import FLT.Mazur.WeierstrassDividedZeroTerminalTransport
 public import FLT.Mazur.WeierstrassDividedZeroThirdAnnihilation
