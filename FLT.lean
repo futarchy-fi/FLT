@@ -12419,6 +12419,7 @@ public import FLT.Mazur.RelativeFrameClosedRankCompleteness
 public import FLT.Mazur.RelativeFrameCompleteFinite
 public import FLT.Mazur.RelativeFrameCompletenessTransfer
 public import FLT.Mazur.RelativeFrameDenseRankStrata
+public import FLT.Mazur.RelativeFrameEquationSplitting
 public import FLT.Mazur.RelativeFrameExactRank
 public import FLT.Mazur.RelativeFrameMissingSection
 public import FLT.Mazur.RelativeFramePositiveRank
