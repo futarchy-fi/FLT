@@ -4350,6 +4350,7 @@ public import FLT.Mazur.ConstructibleImageGenerizations
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CoprimeFieldGroupTransport
 public import FLT.Mazur.CoprimeGroupMarkings
+public import FLT.Mazur.CoprimePolynomialContent
 public import FLT.Mazur.CoproductConstantSections
 public import FLT.Mazur.CorrectionCokernelBaseChange
 public import FLT.Mazur.CubicComponentBound
