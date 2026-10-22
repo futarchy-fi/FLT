@@ -12596,6 +12596,7 @@ public import FLT.Mazur.ScalarRestrictionImage
 public import FLT.Mazur.ScalarSourceOpenBaseFiniteness
 public import FLT.Mazur.ScalarSourceOpenElementEquations
 public import FLT.Mazur.ScalarSourceOpenEquationNeighborhoods
+public import FLT.Mazur.ScalarSourceOpenFullStalkJacobians
 public import FLT.Mazur.ScalarSourceOpenJacobianTests
 public import FLT.Mazur.ScalarSourceOpenLocalizedJacobians
 public import FLT.Mazur.ScalarSourceOpenRigidity
