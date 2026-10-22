@@ -12562,6 +12562,7 @@ public import FLT.Mazur.ScalarFiniteDifferentialGenerators
 public import FLT.Mazur.ScalarFiniteTypeFiberTests
 public import FLT.Mazur.ScalarFiniteTypeJacobianEquations
 public import FLT.Mazur.ScalarFirstOrderLocalRigidity
+public import FLT.Mazur.ScalarFirstOrderStalkRigidity
 public import FLT.Mazur.ScalarFullStalkJacobianClearing
 public import FLT.Mazur.ScalarFullStalkJacobianTests
 public import FLT.Mazur.ScalarFullStalkPresentation
