@@ -13521,6 +13521,7 @@ public import FLT.Mazur.SectionPoleBaseChangeFrames
 public import FLT.Mazur.SectionPoleBaseChangeNormalization
 public import FLT.Mazur.SectionPoleBaseChangeSections
 public import FLT.Mazur.SectionPoleCanonicalCoefficient
+public import FLT.Mazur.SectionPoleComplementBaseChange
 public import FLT.Mazur.SectionPoleFrameChange
 public import FLT.Mazur.SectionPoleGeneratorCover
 public import FLT.Mazur.SectionPoleHZeroMultiplication
