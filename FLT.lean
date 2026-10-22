@@ -6564,6 +6564,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingCubicExt
 public import FLT.Mazur.GeneralizedCurveMarkingCubicFactorization
 public import FLT.Mazur.GeneralizedCurveMarkingCubicFinite
 public import FLT.Mazur.GeneralizedCurveMarkingCubicGeometricIso
+public import FLT.Mazur.GeneralizedCurveMarkingCubicOpenProjection
 public import FLT.Mazur.GeneralizedCurveMarkingCubicPreimages
 public import FLT.Mazur.GeneralizedCurveMarkingCubicProjection
 public import FLT.Mazur.GeneralizedCurveMarkingCubicPullback
