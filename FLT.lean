@@ -12557,6 +12557,7 @@ public import FLT.Mazur.ScalarExtensionImageReduction
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
 public import FLT.Mazur.ScalarFiniteDifferentialGenerators
+public import FLT.Mazur.ScalarFiniteTypeFiberTests
 public import FLT.Mazur.ScalarFiniteTypeJacobianEquations
 public import FLT.Mazur.ScalarFullStalkJacobianClearing
 public import FLT.Mazur.ScalarFullStalkJacobianTests
