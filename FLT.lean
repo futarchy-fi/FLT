@@ -6534,8 +6534,13 @@ public import FLT.Mazur.GeneralizedCurveLocalCyclicCubicUnrestricted
 public import FLT.Mazur.GeneralizedCurveLocalMarkingFrames
 public import FLT.Mazur.GeneralizedCurveLocalPointFrames
 public import FLT.Mazur.GeneralizedCurveLocalProjectiveCubic
+public import FLT.Mazur.GeneralizedCurveMarkedCubicCocycle
+public import FLT.Mazur.GeneralizedCurveMarkedCubicComparison
+public import FLT.Mazur.GeneralizedCurveMarkedCubicNaturality
 public import FLT.Mazur.GeneralizedCurveMarkingAffineCartesian
+public import FLT.Mazur.GeneralizedCurveMarkingAffineCocycle
 public import FLT.Mazur.GeneralizedCurveMarkingAffineCubicMorphism
+public import FLT.Mazur.GeneralizedCurveMarkingAffineOverlap
 public import FLT.Mazur.GeneralizedCurveMarkingAffineRestriction
 public import FLT.Mazur.GeneralizedCurveMarkingAllPoleBasis
 public import FLT.Mazur.GeneralizedCurveMarkingAssociator
@@ -6562,6 +6567,7 @@ public import FLT.Mazur.GeneralizedCurveMarkingCubicExt
 public import FLT.Mazur.GeneralizedCurveMarkingCubicFactorization
 public import FLT.Mazur.GeneralizedCurveMarkingCubicFinite
 public import FLT.Mazur.GeneralizedCurveMarkingCubicGeometricIso
+public import FLT.Mazur.GeneralizedCurveMarkingCubicOpenProjection
 public import FLT.Mazur.GeneralizedCurveMarkingCubicPreimages
 public import FLT.Mazur.GeneralizedCurveMarkingCubicProjection
 public import FLT.Mazur.GeneralizedCurveMarkingCubicPullback
@@ -6597,6 +6603,12 @@ public import FLT.Mazur.GeneralizedCurveMarkingMonomialIndependence
 public import FLT.Mazur.GeneralizedCurveMarkingNormalMonomials
 public import FLT.Mazur.GeneralizedCurveMarkingNormalizedChange
 public import FLT.Mazur.GeneralizedCurveMarkingNormalizedCoordinates
+public import FLT.Mazur.GeneralizedCurveMarkingOpenCubic
+public import FLT.Mazur.GeneralizedCurveMarkingOverlap
+public import FLT.Mazur.GeneralizedCurveMarkingOverlapCocycle
+public import FLT.Mazur.GeneralizedCurveMarkingOverlapCubic
+public import FLT.Mazur.GeneralizedCurveMarkingOverlapCubicRefinement
+public import FLT.Mazur.GeneralizedCurveMarkingOverlapRefinement
 public import FLT.Mazur.GeneralizedCurveMarkingPointedCubic
 public import FLT.Mazur.GeneralizedCurveMarkingPoleReduction
 public import FLT.Mazur.GeneralizedCurveMarkingPoleTwoExpansion
