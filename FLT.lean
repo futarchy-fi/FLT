@@ -9378,6 +9378,7 @@ public import FLT.Mazur.OriginalBoundaryAffineAssociatedDetection
 public import FLT.Mazur.OriginalBoundaryAffineAssociatedLift
 public import FLT.Mazur.OriginalBoundaryAffineChartOrbitTests
 public import FLT.Mazur.OriginalBoundaryAffinePrincipalLift
+public import FLT.Mazur.OriginalBoundaryAmbientFiniteFreeLift
 public import FLT.Mazur.OriginalBoundaryAmbientScalarEquations
 public import FLT.Mazur.OriginalBoundaryAscendingComparisonTests
 public import FLT.Mazur.OriginalBoundaryAscendingRankKernel
