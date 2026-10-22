@@ -1,5 +1,5 @@
-
 module  -- shake: keep-all --deprecated_module: ignore
+
 public import FLT.AINTLIB.CebotarevDensity.NumberFieldEulerProduct
 public import FLT.AINTLIB.DedekindResidue.AuxiliaryFunction
 public import FLT.AINTLIB.DedekindResidue.CompletedZeta.AnalyticControl
@@ -7857,6 +7857,7 @@ public import FLT.Mazur.IdealSheafStableOpenMaximal
 public import FLT.Mazur.IdealSheafStableSupportCriterion
 public import FLT.Mazur.IdealSheafSupportPower
 public import FLT.Mazur.IdealTensorKernelFinite
+public import FLT.Mazur.IdealTensorTransition
 public import FLT.Mazur.IdealTwistCohomologyStabilization
 public import FLT.Mazur.IdealTwistCohomologySystem
 public import FLT.Mazur.IdealTwistCohomologyVanishing
