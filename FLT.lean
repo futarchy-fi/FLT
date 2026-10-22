@@ -5615,6 +5615,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteSubframeCompatibility
 public import FLT.Mazur.EquivalenceRelationCompleteSupportedTests
 public import FLT.Mazur.EquivalenceRelationCompleteTestCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteTestFinite
+public import FLT.Mazur.EquivalenceRelationCompleteTestInvariants
 public import FLT.Mazur.EquivalenceRelationCompleteTestPartition
 public import FLT.Mazur.EquivalenceRelationCompleteThickeningAction
 public import FLT.Mazur.EquivalenceRelationCompleteThickeningFinite
