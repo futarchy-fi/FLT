@@ -14251,6 +14251,7 @@ public import FLT.Mazur.WeierstrassAffineCoordinateFlat
 public import FLT.Mazur.WeierstrassAffineEquationEvaluation
 public import FLT.Mazur.WeierstrassAffineEquationRigidity
 public import FLT.Mazur.WeierstrassAffineEvaluationInjective
+public import FLT.Mazur.WeierstrassAffineEvaluationNaturality
 public import FLT.Mazur.WeierstrassAffineEvaluationRange
 public import FLT.Mazur.WeierstrassAffineGeometricIntegral
 public import FLT.Mazur.WeierstrassAffineInputFactorization
