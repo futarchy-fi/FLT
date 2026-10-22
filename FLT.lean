@@ -13381,6 +13381,7 @@ public import FLT.Mazur.SchemeScalarImageGeometry
 public import FLT.Mazur.SchemeScalarImageKernelGeometry
 public import FLT.Mazur.SchemeScalarImageKernelNeighborhood
 public import FLT.Mazur.SchemeScalarImageNeighborhoodCoverage
+public import FLT.Mazur.SchemeScalarImageNilpotence
 public import FLT.Mazur.SchemeScalarImageQuotient
 public import FLT.Mazur.SchemeScalarIntegralBadCover
 public import FLT.Mazur.SchemeScalarIntegralCover
