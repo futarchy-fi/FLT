@@ -12617,6 +12617,7 @@ public import FLT.Mazur.ScalarNilpotenceFlatBaseChange
 public import FLT.Mazur.ScalarNilpotenceMinimalFiber
 public import FLT.Mazur.ScalarOrbitBalancingIdeal
 public import FLT.Mazur.ScalarOrbitFiniteEquations
+public import FLT.Mazur.ScalarOrbitQuotientComparison
 public import FLT.Mazur.ScalarOrbitTensorComparison
 public import FLT.Mazur.ScalarPolynomialResidueRigidity
 public import FLT.Mazur.ScalarPresentationResidueGradients
