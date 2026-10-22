@@ -7910,6 +7910,7 @@ public import FLT.Mazur.LaurentNormalizedReduction
 public import FLT.Mazur.LaurentPairCoefficientNaturality
 public import FLT.Mazur.LaurentPairEvaluation
 public import FLT.Mazur.LaurentPairNaturality
+public import FLT.Mazur.LaurentPairProduct
 public import FLT.Mazur.LaurentPairReciprocalUnits
 public import FLT.Mazur.LaurentPairStageLift
 public import FLT.Mazur.LaurentPairSwap
