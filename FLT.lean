@@ -9186,6 +9186,7 @@ public import FLT.Mazur.OriginalBoundaryBranchScalars
 public import FLT.Mazur.OriginalBoundaryComparisonClosedImage
 public import FLT.Mazur.OriginalBoundaryComparisonLocalClosedImage
 public import FLT.Mazur.OriginalBoundaryComparisonNeighborhood
+public import FLT.Mazur.OriginalBoundaryDifferentialFiberLift
 public import FLT.Mazur.OriginalBoundaryDifferentialIdealPower
 public import FLT.Mazur.OriginalBoundaryDifferentialKernelSupport
 public import FLT.Mazur.OriginalBoundaryDifferentialOpenLift
@@ -12560,6 +12561,7 @@ public import FLT.Mazur.ScalarComponentRankCeiling
 public import FLT.Mazur.ScalarConstructibleFiniteCover
 public import FLT.Mazur.ScalarConstructibleStrata
 public import FLT.Mazur.ScalarDifferentialAssociatedDenominator
+public import FLT.Mazur.ScalarDifferentialFiberDual
 public import FLT.Mazur.ScalarDifferentialJacobianAnnihilator
 public import FLT.Mazur.ScalarDifferentialPolynomialAnnihilator
 public import FLT.Mazur.ScalarDifferentialPrincipalRigidity
@@ -12569,6 +12571,10 @@ public import FLT.Mazur.ScalarExtensionImageReduction
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
 public import FLT.Mazur.ScalarFiniteDifferentialGenerators
+public import FLT.Mazur.ScalarFiniteTypeFiberTests
+public import FLT.Mazur.ScalarFiniteTypeJacobianEquations
+public import FLT.Mazur.ScalarFirstOrderLocalRigidity
+public import FLT.Mazur.ScalarFirstOrderStalkRigidity
 public import FLT.Mazur.ScalarFullStalkJacobianClearing
 public import FLT.Mazur.ScalarFullStalkJacobianTests
 public import FLT.Mazur.ScalarFullStalkPresentation
@@ -12603,6 +12609,7 @@ public import FLT.Mazur.ScalarMinimalCharacterPropagation
 public import FLT.Mazur.ScalarNilpotenceFlatBaseChange
 public import FLT.Mazur.ScalarNilpotenceMinimalFiber
 public import FLT.Mazur.ScalarPolynomialResidueRigidity
+public import FLT.Mazur.ScalarPresentationResidueGradients
 public import FLT.Mazur.ScalarPresentedLocalizedJacobians
 public import FLT.Mazur.ScalarPrimeLocalizationCover
 public import FLT.Mazur.ScalarPrimeThickeningTransitions
@@ -12618,6 +12625,7 @@ public import FLT.Mazur.ScalarRestrictionImage
 public import FLT.Mazur.ScalarSourceOpenBaseFiniteness
 public import FLT.Mazur.ScalarSourceOpenElementEquations
 public import FLT.Mazur.ScalarSourceOpenEquationNeighborhoods
+public import FLT.Mazur.ScalarSourceOpenFiberTests
 public import FLT.Mazur.ScalarSourceOpenFullStalkJacobians
 public import FLT.Mazur.ScalarSourceOpenJacobianTests
 public import FLT.Mazur.ScalarSourceOpenLocalizedJacobians
