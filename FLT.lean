@@ -15598,6 +15598,7 @@ public import FLT.Mazur.WeierstrassDividedFactoredReflectedResidue
 public import FLT.Mazur.WeierstrassDividedFactoredReflectedSecantResidue
 public import FLT.Mazur.WeierstrassDividedFactoredSumCoordinates
 public import FLT.Mazur.WeierstrassDividedFactoredSumOutput
+public import FLT.Mazur.WeierstrassDividedFactoredSumResidueFormula
 public import FLT.Mazur.WeierstrassDividedFactoredWiderReflectedCoordinates
 public import FLT.Mazur.WeierstrassDividedFactoredWiderReflectedOutput
 public import FLT.Mazur.WeierstrassDividedFactoredWiderReflectedResidue
