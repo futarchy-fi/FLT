@@ -15590,6 +15590,7 @@ public import FLT.Mazur.WeierstrassDividedFactorRatioPolygonMaps
 public import FLT.Mazur.WeierstrassDividedFactorRatioPolygonNaturality
 public import FLT.Mazur.WeierstrassDividedFactorRatioRetainedBoundary
 public import FLT.Mazur.WeierstrassDividedFactoredCommonBranchOrdinate
+public import FLT.Mazur.WeierstrassDividedFactoredCommonBranchResidue
 public import FLT.Mazur.WeierstrassDividedFactoredDepthBranchLift
 public import FLT.Mazur.WeierstrassDividedFactoredDepthBranchOutput
 public import FLT.Mazur.WeierstrassDividedFactoredReflectedCoordinates
