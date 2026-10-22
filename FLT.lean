@@ -12572,6 +12572,7 @@ public import FLT.Mazur.RelativeRankCollisionIdeal
 public import FLT.Mazur.RelativeRankCollisionLocalization
 public import FLT.Mazur.RelativeRankCollisionValuations
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
+public import FLT.Mazur.RelativeRankOneSection
 public import FLT.Mazur.RelativeRankPullbackThickenings
 public import FLT.Mazur.RelativeRankResidualSectionDetection
 public import FLT.Mazur.RelativeRankStageFaithfulDetection
