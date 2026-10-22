@@ -16782,6 +16782,7 @@ public import FLT.Mazur.WeierstrassDividedTangentSchemeAction
 public import FLT.Mazur.WeierstrassDividedTangentSecantComparison
 public import FLT.Mazur.WeierstrassDividedTangentSecantOverlap
 public import FLT.Mazur.WeierstrassDividedTangentSecantScheme
+public import FLT.Mazur.WeierstrassDividedTangentSecantSmooth
 public import FLT.Mazur.WeierstrassDividedTangentSource
 public import FLT.Mazur.WeierstrassDividedTangentThreeDomainCover
 public import FLT.Mazur.WeierstrassDividedTangentTransport
