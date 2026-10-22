@@ -6510,6 +6510,7 @@ public import FLT.Mazur.GeneralizedCurveLocalMarkingFrames
 public import FLT.Mazur.GeneralizedCurveLocalPointFrames
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChange
 public import FLT.Mazur.GeneralizedCurveMarkingCanonicalLine
+public import FLT.Mazur.GeneralizedCurveMarkingComplementCoordinates
 public import FLT.Mazur.GeneralizedCurveMarkingCubicRelation
 public import FLT.Mazur.GeneralizedCurveMarkingFramedProducts
 public import FLT.Mazur.GeneralizedCurveMarkingLowPoles
