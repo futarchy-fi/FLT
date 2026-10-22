@@ -17599,6 +17599,7 @@ public import FLT.Mazur.WeierstrassEquationCoefficientChart
 public import FLT.Mazur.WeierstrassEquationCoefficientCongruence
 public import FLT.Mazur.WeierstrassEquationCoefficientProjection
 public import FLT.Mazur.WeierstrassEquationTransport
+public import FLT.Mazur.WeierstrassEvaluatedEquationRigidity
 public import FLT.Mazur.WeierstrassFactorRatioAffineTarget
 public import FLT.Mazur.WeierstrassFactorRatioNodeTarget
 public import FLT.Mazur.WeierstrassFieldChartPresentation
