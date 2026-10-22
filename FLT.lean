@@ -12551,6 +12551,7 @@ public import FLT.Mazur.ScalarLocalJacobianAnnihilator
 public import FLT.Mazur.ScalarLocalPolynomialResidueRigidity
 public import FLT.Mazur.ScalarLocalPolynomialTests
 public import FLT.Mazur.ScalarLocalizedIdealNilpotence
+public import FLT.Mazur.ScalarLocalizedMvPolynomialClearing
 public import FLT.Mazur.ScalarLocalizedPolynomialDescent
 public import FLT.Mazur.ScalarLocalizedSeparableEquations
 public import FLT.Mazur.ScalarLocalizedSeparableTests
