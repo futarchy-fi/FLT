@@ -4926,6 +4926,7 @@ public import FLT.Mazur.DivisorComplementExactPowers
 public import FLT.Mazur.DivisorComplementExhaustion
 public import FLT.Mazur.DivisorComplementFaithful
 public import FLT.Mazur.DivisorComplementFiltration
+public import FLT.Mazur.DivisorComplementFunctionPullback
 public import FLT.Mazur.DivisorComplementFunctions
 public import FLT.Mazur.DivisorComplementLeadingProduct
 public import FLT.Mazur.DivisorComplementLinear
@@ -6536,11 +6537,15 @@ public import FLT.Mazur.GeneralizedCurveMarkingAffineCubicMorphism
 public import FLT.Mazur.GeneralizedCurveMarkingAffineRestriction
 public import FLT.Mazur.GeneralizedCurveMarkingAllPoleBasis
 public import FLT.Mazur.GeneralizedCurveMarkingBaseChange
+public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeCubic
+public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeEquation
+public import FLT.Mazur.GeneralizedCurveMarkingBaseChangeUnique
 public import FLT.Mazur.GeneralizedCurveMarkingCanonicalLine
 public import FLT.Mazur.GeneralizedCurveMarkingChartEquation
 public import FLT.Mazur.GeneralizedCurveMarkingComplementCoordinates
 public import FLT.Mazur.GeneralizedCurveMarkingComplementEquation
 public import FLT.Mazur.GeneralizedCurveMarkingComplementMonomials
+public import FLT.Mazur.GeneralizedCurveMarkingComplementPullback
 public import FLT.Mazur.GeneralizedCurveMarkingCoordinateRing
 public import FLT.Mazur.GeneralizedCurveMarkingCoordinateSurjective
 public import FLT.Mazur.GeneralizedCurveMarkingCubicFactorization
@@ -6575,6 +6580,8 @@ public import FLT.Mazur.GeneralizedCurveMarkingPoleReduction
 public import FLT.Mazur.GeneralizedCurveMarkingPoleTwoExpansion
 public import FLT.Mazur.GeneralizedCurveMarkingProjectiveIso
 public import FLT.Mazur.GeneralizedCurveMarkingProjectiveSections
+public import FLT.Mazur.GeneralizedCurveMarkingTransportedCoordinates
+public import FLT.Mazur.GeneralizedCurveMarkingTransportedFrame
 public import FLT.Mazur.GeneralizedCurveMarkingTransportedLift
 public import FLT.Mazur.GeneralizedCurveNaturalIsoGluing
 public import FLT.Mazur.GeneralizedCurvePicardClasses
@@ -13528,6 +13535,8 @@ public import FLT.Mazur.SectionPoleBaseChangeFrames
 public import FLT.Mazur.SectionPoleBaseChangeNormalization
 public import FLT.Mazur.SectionPoleBaseChangeSections
 public import FLT.Mazur.SectionPoleCanonicalCoefficient
+public import FLT.Mazur.SectionPoleComplementBaseChange
+public import FLT.Mazur.SectionPoleComplementCartesian
 public import FLT.Mazur.SectionPoleFrameChange
 public import FLT.Mazur.SectionPoleGeneratorCover
 public import FLT.Mazur.SectionPoleHZeroMultiplication
@@ -13537,6 +13546,7 @@ public import FLT.Mazur.SectionPoleMultiplicativeCoordinates
 public import FLT.Mazur.SectionPoleNormalizedDifference
 public import FLT.Mazur.SectionPoleSpecifiedBasis
 public import FLT.Mazur.SectionPoleSplit
+public import FLT.Mazur.SectionPoleTransportedMultiplicativeFrame
 public import FLT.Mazur.SectionPowerGluing
 public import FLT.Mazur.SectionProjectiveFiniteNeighborhood
 public import FLT.Mazur.SectionProjectiveImmersion
@@ -13566,6 +13576,7 @@ public import FLT.Mazur.SectionRetainedProjOpens
 public import FLT.Mazur.SectionRetainedProjStructuralMap
 public import FLT.Mazur.SectionRetainedSheafEvaluation
 public import FLT.Mazur.SectionRetainedSourceLineEvaluation
+public import FLT.Mazur.SectionSquareTensorFrame
 public import FLT.Mazur.SectionSquareTransportFrame
 public import FLT.Mazur.SectionSumFiberDegree
 public import FLT.Mazur.SectionSumFieldLength
@@ -17700,6 +17711,7 @@ public import FLT.Mazur.WeierstrassEquationCoefficientChart
 public import FLT.Mazur.WeierstrassEquationCoefficientCongruence
 public import FLT.Mazur.WeierstrassEquationCoefficientProjection
 public import FLT.Mazur.WeierstrassEquationTransport
+public import FLT.Mazur.WeierstrassEvaluatedChangeUnique
 public import FLT.Mazur.WeierstrassEvaluatedEquationRigidity
 public import FLT.Mazur.WeierstrassFactorRatioAffineTarget
 public import FLT.Mazur.WeierstrassFactorRatioNodeTarget
