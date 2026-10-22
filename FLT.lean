@@ -5714,6 +5714,7 @@ public import FLT.Mazur.EquivalenceRelationOrbitSchemeArrows
 public import FLT.Mazur.EquivalenceRelationOriginalChartScalars
 public import FLT.Mazur.EquivalenceRelationOriginalOrbitComparison
 public import FLT.Mazur.EquivalenceRelationOriginalScalarFiber
+public import FLT.Mazur.EquivalenceRelationPairedAffineCover
 public import FLT.Mazur.EquivalenceRelationPairedNormalizedCover
 public import FLT.Mazur.EquivalenceRelationPrescribedQuotientCorrection
 public import FLT.Mazur.EquivalenceRelationPrincipalCompleteCharacters
