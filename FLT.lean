@@ -6053,6 +6053,7 @@ public import FLT.Mazur.FiniteFreeTranslationNormNeighborhood
 public import FLT.Mazur.FiniteFreeTranslationRefinement
 public import FLT.Mazur.FiniteGeneratorRingLift
 public import FLT.Mazur.FiniteGeometricEtaleTranslations
+public import FLT.Mazur.FiniteGeometricFiberClosedImmersion
 public import FLT.Mazur.FiniteGeometricGenericPrincipalInteriors
 public import FLT.Mazur.FiniteGeometricSections
 public import FLT.Mazur.FiniteGroupAffineNeighborhood
