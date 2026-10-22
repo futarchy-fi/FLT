@@ -7847,6 +7847,7 @@ public import FLT.Mazur.IdealPresentationQuotient
 public import FLT.Mazur.IdealPullbackVanishingCriterion
 public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IdealQuotientSectionLift
+public import FLT.Mazur.IdealResidualFlatBaseChange
 public import FLT.Mazur.IdealResidualKernelSpan
 public import FLT.Mazur.IdealSheafAdicStalkSeparation
 public import FLT.Mazur.IdealSheafAffineTestErrors
