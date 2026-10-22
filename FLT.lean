@@ -12335,6 +12335,7 @@ public import FLT.Mazur.RelativeDoubleRankResidualCorrections
 public import FLT.Mazur.RelativeDoubleRankScalarKernels
 public import FLT.Mazur.RelativeDoubleRankTestDetection
 public import FLT.Mazur.RelativeDoubleRankThickenings
+public import FLT.Mazur.RelativeDoubleRankTransposeScalars
 public import FLT.Mazur.RelativeDoubleRankTransposition
 public import FLT.Mazur.RelativeDoubleRankUniformRectangle
 public import FLT.Mazur.RelativeDoubleRankUniversal
