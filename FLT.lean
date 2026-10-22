@@ -7163,6 +7163,7 @@ public import FLT.Mazur.HilbertIdentityGroundOriginalSection
 public import FLT.Mazur.HilbertIdentityGroundQuotientChart
 public import FLT.Mazur.HilbertIdentityGroundSourceIso
 public import FLT.Mazur.HilbertIdentityQuotientCoordinates
+public import FLT.Mazur.HilbertIndependentRankScalarCharts
 public import FLT.Mazur.HilbertInjectiveMonomialImageCover
 public import FLT.Mazur.HilbertInteriorEquationTestLift
 public import FLT.Mazur.HilbertInteriorFiniteEquations
