@@ -5709,6 +5709,7 @@ public import FLT.Mazur.EquivalenceRelationNormalizedScalarComplete
 public import FLT.Mazur.EquivalenceRelationNormalizedStrictExtension
 public import FLT.Mazur.EquivalenceRelationNormalizedSubframe
 public import FLT.Mazur.EquivalenceRelationOpenChartScalars
+public import FLT.Mazur.EquivalenceRelationOriginalOrbitComparison
 public import FLT.Mazur.EquivalenceRelationOriginalScalarFiber
 public import FLT.Mazur.EquivalenceRelationPrescribedQuotientCorrection
 public import FLT.Mazur.EquivalenceRelationPrincipalCompleteCharacters
@@ -12600,6 +12601,8 @@ public import FLT.Mazur.ScalarFiniteTypeJacobianEquations
 public import FLT.Mazur.ScalarFirstOrderLocalRigidity
 public import FLT.Mazur.ScalarFirstOrderStalkRigidity
 public import FLT.Mazur.ScalarFreeActionRigidity
+public import FLT.Mazur.ScalarFreeInvariantFiniteness
+public import FLT.Mazur.ScalarFreeResidualFullness
 public import FLT.Mazur.ScalarFullStalkJacobianClearing
 public import FLT.Mazur.ScalarFullStalkJacobianTests
 public import FLT.Mazur.ScalarFullStalkPresentation
@@ -12633,6 +12636,11 @@ public import FLT.Mazur.ScalarMinimalCharacterNeighborhood
 public import FLT.Mazur.ScalarMinimalCharacterPropagation
 public import FLT.Mazur.ScalarNilpotenceFlatBaseChange
 public import FLT.Mazur.ScalarNilpotenceMinimalFiber
+public import FLT.Mazur.ScalarOrbitBalancingIdeal
+public import FLT.Mazur.ScalarOrbitFiniteEquations
+public import FLT.Mazur.ScalarOrbitQuotientComparison
+public import FLT.Mazur.ScalarOrbitTensorComparison
+public import FLT.Mazur.ScalarOrbitTestLifts
 public import FLT.Mazur.ScalarPolynomialResidueRigidity
 public import FLT.Mazur.ScalarPresentationResidueGradients
 public import FLT.Mazur.ScalarPresentedLocalizedJacobians
@@ -13302,6 +13310,7 @@ public import FLT.Mazur.SchemeScalarImageQuotient
 public import FLT.Mazur.SchemeScalarIntegralBadCover
 public import FLT.Mazur.SchemeScalarIntegralCover
 public import FLT.Mazur.SchemeScalarMinimalEndpoint
+public import FLT.Mazur.SchemeScalarOrbitComparison
 public import FLT.Mazur.SchemeScalarPrincipalNeighborhood
 public import FLT.Mazur.SchemeScalarPrincipalNeighborhoodFamily
 public import FLT.Mazur.SchemeScalarRelationPullback
