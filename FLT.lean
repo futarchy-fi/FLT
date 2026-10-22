@@ -4350,6 +4350,7 @@ public import FLT.Mazur.ConstructibleImageGenerizations
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CoprimeFieldGroupTransport
 public import FLT.Mazur.CoprimeGroupMarkings
+public import FLT.Mazur.CoprimePolynomialContent
 public import FLT.Mazur.CoproductConstantSections
 public import FLT.Mazur.CorrectionCokernelBaseChange
 public import FLT.Mazur.CubicComponentBound
@@ -5921,6 +5922,7 @@ public import FLT.Mazur.FilteredFiniteModuleFlatFamily
 public import FLT.Mazur.FilteredFlatChartRelations
 public import FLT.Mazur.FilteredFlatRelationDescent
 public import FLT.Mazur.FilteredFlatRelationFamily
+public import FLT.Mazur.FilteredIdealTensorKernel
 public import FLT.Mazur.FilteredMatrixFlatDescent
 public import FLT.Mazur.FilteredMatrixInnerInverse
 public import FLT.Mazur.FilteredPoleBasis
@@ -5986,6 +5988,8 @@ public import FLT.Mazur.FiniteDVRComplete
 public import FLT.Mazur.FiniteDiagramCoverModel
 public import FLT.Mazur.FiniteDiagramIntegerModel
 public import FLT.Mazur.FiniteDiagramUnitDescent
+public import FLT.Mazur.FiniteDifferencePolynomial
+public import FLT.Mazur.FiniteDifferenceProductPolynomial
 public import FLT.Mazur.FiniteDifferenceProducts
 public import FLT.Mazur.FiniteDivisorCohomology
 public import FLT.Mazur.FiniteDivisorComponentAvoidance
@@ -7856,6 +7860,13 @@ public import FLT.Mazur.IdealSheafStableOpen
 public import FLT.Mazur.IdealSheafStableOpenMaximal
 public import FLT.Mazur.IdealSheafStableSupportCriterion
 public import FLT.Mazur.IdealSheafSupportPower
+public import FLT.Mazur.IdealTensorAdicCriterion
+public import FLT.Mazur.IdealTensorAdicImage
+public import FLT.Mazur.IdealTensorIntersection
+public import FLT.Mazur.IdealTensorKernelFinite
+public import FLT.Mazur.IdealTensorPresentationCriterion
+public import FLT.Mazur.IdealTensorTransition
+public import FLT.Mazur.IdealTensorTrivialRelation
 public import FLT.Mazur.IdealTwistCohomologyStabilization
 public import FLT.Mazur.IdealTwistCohomologySystem
 public import FLT.Mazur.IdealTwistCohomologyVanishing
@@ -8223,6 +8234,7 @@ public import FLT.Mazur.LocalCompletionSmoothCriterion
 public import FLT.Mazur.LocalFiberRegularQuotient
 public import FLT.Mazur.LocalFiberTensorInjectivity
 public import FLT.Mazur.LocalHilbertTranslationCover
+public import FLT.Mazur.LocalIdealTensorCriterion
 public import FLT.Mazur.LocalLineTwistLocalization
 public import FLT.Mazur.LocalLocalizationCartier
 public import FLT.Mazur.LocalParameterFlatness
@@ -8343,6 +8355,7 @@ public import FLT.Mazur.ModuleGlobalUnitGenerator
 public import FLT.Mazur.ModuleHomIsomorphismOpen
 public import FLT.Mazur.ModuleHomOpenTransport
 public import FLT.Mazur.ModuleHomTrivialOpen
+public import FLT.Mazur.ModuleIdealTensorFinite
 public import FLT.Mazur.ModuleImageSection
 public import FLT.Mazur.ModuleInjectiveFlasque
 public import FLT.Mazur.ModuleLineBundleOpenCover
@@ -9404,6 +9417,8 @@ public import FLT.Mazur.OriginalBoundaryFiniteStageTests
 public import FLT.Mazur.OriginalBoundaryFiniteValuationRanks
 public import FLT.Mazur.OriginalBoundaryFlatImageGeometry
 public import FLT.Mazur.OriginalBoundaryFlatRelationLift
+public import FLT.Mazur.OriginalBoundaryFramePolynomial
+public import FLT.Mazur.OriginalBoundaryFrameScalarNorm
 public import FLT.Mazur.OriginalBoundaryFramedEquationIdeal
 public import FLT.Mazur.OriginalBoundaryFramedEquations
 public import FLT.Mazur.OriginalBoundaryFramedScalarProducts
@@ -12867,6 +12882,7 @@ public import FLT.Mazur.ScalarOrbitFiniteEquations
 public import FLT.Mazur.ScalarOrbitQuotientComparison
 public import FLT.Mazur.ScalarOrbitTensorComparison
 public import FLT.Mazur.ScalarOrbitTestLifts
+public import FLT.Mazur.ScalarPolynomialNormEquation
 public import FLT.Mazur.ScalarPolynomialResidueRigidity
 public import FLT.Mazur.ScalarPresentationResidueGradients
 public import FLT.Mazur.ScalarPresentedLocalizedJacobians
