@@ -15437,6 +15437,7 @@ public import FLT.Mazur.WeierstrassDividedFactorRatioRetainedBoundary
 public import FLT.Mazur.WeierstrassDividedFactoredCommonBranchOrdinate
 public import FLT.Mazur.WeierstrassDividedFactoredDepthBranchLift
 public import FLT.Mazur.WeierstrassDividedFactoredDepthBranchOutput
+public import FLT.Mazur.WeierstrassDividedFactoredReflectedCoordinates
 public import FLT.Mazur.WeierstrassDividedFaithfulActionDescent
 public import FLT.Mazur.WeierstrassDividedFifthDeepAtlas
 public import FLT.Mazur.WeierstrassDividedFifthDeepAtlasClosing
