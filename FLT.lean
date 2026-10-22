@@ -7835,6 +7835,7 @@ public import FLT.Mazur.IdealModulePullback
 public import FLT.Mazur.IdealModulePullbackCoherence
 public import FLT.Mazur.IdealModulePullbackRestrict
 public import FLT.Mazur.IdealModuleSheaf
+public import FLT.Mazur.IdealObstructionAnnihilator
 public import FLT.Mazur.IdealObstructionOrientation
 public import FLT.Mazur.IdealObstructionScalarExtension
 public import FLT.Mazur.IdealObstructionUnitCriterion
