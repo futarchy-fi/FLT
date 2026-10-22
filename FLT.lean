@@ -5922,6 +5922,7 @@ public import FLT.Mazur.FilteredFiniteModuleFlatFamily
 public import FLT.Mazur.FilteredFlatChartRelations
 public import FLT.Mazur.FilteredFlatRelationDescent
 public import FLT.Mazur.FilteredFlatRelationFamily
+public import FLT.Mazur.FilteredIdealTensorKernel
 public import FLT.Mazur.FilteredMatrixFlatDescent
 public import FLT.Mazur.FilteredMatrixInnerInverse
 public import FLT.Mazur.FilteredPoleBasis
@@ -7859,6 +7860,13 @@ public import FLT.Mazur.IdealSheafStableOpen
 public import FLT.Mazur.IdealSheafStableOpenMaximal
 public import FLT.Mazur.IdealSheafStableSupportCriterion
 public import FLT.Mazur.IdealSheafSupportPower
+public import FLT.Mazur.IdealTensorAdicCriterion
+public import FLT.Mazur.IdealTensorAdicImage
+public import FLT.Mazur.IdealTensorIntersection
+public import FLT.Mazur.IdealTensorKernelFinite
+public import FLT.Mazur.IdealTensorPresentationCriterion
+public import FLT.Mazur.IdealTensorTransition
+public import FLT.Mazur.IdealTensorTrivialRelation
 public import FLT.Mazur.IdealTwistCohomologyStabilization
 public import FLT.Mazur.IdealTwistCohomologySystem
 public import FLT.Mazur.IdealTwistCohomologyVanishing
@@ -8226,6 +8234,7 @@ public import FLT.Mazur.LocalCompletionSmoothCriterion
 public import FLT.Mazur.LocalFiberRegularQuotient
 public import FLT.Mazur.LocalFiberTensorInjectivity
 public import FLT.Mazur.LocalHilbertTranslationCover
+public import FLT.Mazur.LocalIdealTensorCriterion
 public import FLT.Mazur.LocalLineTwistLocalization
 public import FLT.Mazur.LocalLocalizationCartier
 public import FLT.Mazur.LocalParameterFlatness
@@ -8346,6 +8355,7 @@ public import FLT.Mazur.ModuleGlobalUnitGenerator
 public import FLT.Mazur.ModuleHomIsomorphismOpen
 public import FLT.Mazur.ModuleHomOpenTransport
 public import FLT.Mazur.ModuleHomTrivialOpen
+public import FLT.Mazur.ModuleIdealTensorFinite
 public import FLT.Mazur.ModuleImageSection
 public import FLT.Mazur.ModuleInjectiveFlasque
 public import FLT.Mazur.ModuleLineBundleOpenCover
