@@ -9628,6 +9628,7 @@ public import FLT.Mazur.PinchingPullbackTransport
 public import FLT.Mazur.PointDivisorIsoCohomology
 public import FLT.Mazur.PointLocalizedRingColimit
 public import FLT.Mazur.PointLocalizedRingDiagram
+public import FLT.Mazur.PointLocalizedRingMap
 public import FLT.Mazur.PointNormalizedAcyclicTests
 public import FLT.Mazur.PointNormalizedDirectImage
 public import FLT.Mazur.PointNormalizedDivisorBaseChange
