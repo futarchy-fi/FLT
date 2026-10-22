@@ -9280,6 +9280,10 @@ public import FLT.Mazur.OriginalBoundaryDifferentialOpenLift
 public import FLT.Mazur.OriginalBoundaryDifferentialOpenNaturality
 public import FLT.Mazur.OriginalBoundaryDiscrepancyLocus
 public import FLT.Mazur.OriginalBoundaryDomainComparisonLift
+public import FLT.Mazur.OriginalBoundaryDoubleRankArrowCriterion
+public import FLT.Mazur.OriginalBoundaryDoubleRankCoefficientDetection
+public import FLT.Mazur.OriginalBoundaryDoubleRankComparison
+public import FLT.Mazur.OriginalBoundaryDoubleRankGlobalLifts
 public import FLT.Mazur.OriginalBoundaryDoubleRankTests
 public import FLT.Mazur.OriginalBoundaryEtaleImageLift
 public import FLT.Mazur.OriginalBoundaryFaithfulTensorLift
@@ -12280,6 +12284,7 @@ public import FLT.Mazur.RelativeCyclicSubgroupComparison
 public import FLT.Mazur.RelativeCyclicSubgroupPullbackComparison
 public import FLT.Mazur.RelativeCyclicSubgroupRelabel
 public import FLT.Mazur.RelativeCyclicSubgroupSmoothOpen
+public import FLT.Mazur.RelativeDiagonalRankDetection
 public import FLT.Mazur.RelativeDimensionBaseChangeOpen
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
@@ -12290,7 +12295,9 @@ public import FLT.Mazur.RelativeDistinctFreeAction
 public import FLT.Mazur.RelativeDistinctSubframe
 public import FLT.Mazur.RelativeDistinctTupleLift
 public import FLT.Mazur.RelativeDistinctTuples
+public import FLT.Mazur.RelativeDoubleRankClosedLifts
 public import FLT.Mazur.RelativeDoubleRankDetection
+public import FLT.Mazur.RelativeDoubleRankGlobalLifts
 public import FLT.Mazur.RelativeDoubleRankRecovery
 public import FLT.Mazur.RelativeDoubleRankTestDetection
 public import FLT.Mazur.RelativeDoubleRankThickenings
@@ -15151,9 +15158,16 @@ public import FLT.Mazur.WeierstrassDividedArithmeticLabeledSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledSystem
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledSystemDescent
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledTerminalEdge
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedDouble
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedDoubleMiddleOutput
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedIndexed
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedMiddle
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedMiddleLocal
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedMiddleOutput
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedMiddleSmoothCover
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedMiddleZeroCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedShallow
+public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedTransfer
 public import FLT.Mazur.WeierstrassDividedArithmeticLastRetainedTriple
 public import FLT.Mazur.WeierstrassDividedArithmeticMixedAllMiddleCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticMixedCoverage
@@ -15239,6 +15253,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticSelfQuadrupleAddition
 public import FLT.Mazur.WeierstrassDividedArithmeticSelfReciprocalAddition
 public import FLT.Mazur.WeierstrassDividedArithmeticSelfSmoothSecantAddition
 public import FLT.Mazur.WeierstrassDividedArithmeticSelfSmoothTangentAddition
+public import FLT.Mazur.WeierstrassDividedArithmeticSmoothPairInclusion
 public import FLT.Mazur.WeierstrassDividedArithmeticSourceDifferenceAddition
 public import FLT.Mazur.WeierstrassDividedArithmeticSourcePairSpectrum
 public import FLT.Mazur.WeierstrassDividedArithmeticSourceSelfOriginalSmoothAddition
